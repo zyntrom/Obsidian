@@ -25,22 +25,22 @@
  ![[Pasted image 20250628220827.png]]
 
 - Control Statements:
-	if else:
+if else:
  ![[Pasted image 20250628221102.png]]
 
-While loop
+While loop:
  ![[Pasted image 20250628221613.png]]
 
-Break, continue,pass
+Break, continue,pass:
  ![[Pasted image 20250628221641.png]]
 
 - Data Structure: 
-list ,Tuples ,Sets ,Dictionaries.
+list ,Tuples ,Sets ,Dictionaries:
  ![[Pasted image 20250628221853.png]]
 
 - Functions:
 
-Functions and Lambda.
+Functions and Lambda:
  ![[Pasted image 20250628221949.png]]
 
 - Exception handling:
