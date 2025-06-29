@@ -14,7 +14,11 @@
 
 ![[Pasted image 20250629225509.png]]
 
+- Line/Screen Movement:
+
 ![[Pasted image 20250629225537.png]]
+
+- Scrolling:
 
 ![[Pasted image 20250629225553.png]]
 
@@ -22,7 +26,11 @@
 
 ![[Pasted image 20250629225630.png]]
 
+- Change:
+
 ![[Pasted image 20250629225713.png]]
+
+- Copy & Paste:
 
 ![[Pasted image 20250629225732.png]]
 
