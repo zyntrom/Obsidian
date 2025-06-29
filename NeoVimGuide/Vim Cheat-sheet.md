@@ -14,3 +14,28 @@
 
 ![[Pasted image 20250629225509.png]]
 
+![[Pasted image 20250629225537.png]]
+
+![[Pasted image 20250629225553.png]]
+
+- Editing:
+
+![[Pasted image 20250629225630.png]]
+
+![[Pasted image 20250629225713.png]]
+
+![[Pasted image 20250629225732.png]]
+
+- Visual Mode:
+
+![[Pasted image 20250629225809.png]]
+
+- Undo/Redo:
+
+![[Pasted image 20250629225837.png]]
+
+- Search and Replace:
+
+![[Pasted image 20250629225951.png]]
+
+
