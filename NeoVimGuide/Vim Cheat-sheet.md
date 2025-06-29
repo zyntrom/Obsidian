@@ -38,4 +38,8 @@
 
 ![[Pasted image 20250629225951.png]]
 
+- Marks and Jumps:
+
+![[Pasted image 20250629230106.png]]
+
 
