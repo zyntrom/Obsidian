@@ -1,1 +1,1 @@
-In c++ you can use # include <string>
+In c++ you can use # include < string > and string variable to to getline(cin,)
