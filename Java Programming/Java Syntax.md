@@ -42,3 +42,18 @@
 
 ![[Pasted image 20250630164944.png]]
 
+- Loops with break and continue:
+
+![[Pasted image 20250630165023.png]]
+
+- Strings Manipulation:
+
+![[Pasted image 20250630165105.png]]
+
+- Exception Handling:
+
+![[Pasted image 20250630165148.png]]
+
+- Comments:
+
+![[Pasted image 20250630165223.png]]
