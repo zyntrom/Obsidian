@@ -1,1 +1,3 @@
-In c++ you can use # include < string > and string variable to to getline(cin,)
+- To store a String You can use:
+
+![[Pasted image 20250630092645.png]]
