@@ -17,3 +17,7 @@ Print N numbers in reverse order:
 - Floating point formatting:
 
 ![[Pasted image 20250630093852.png]]
+
+- To find the vowels in a string:
+
+![[Pasted image 20250630100733.png]]
