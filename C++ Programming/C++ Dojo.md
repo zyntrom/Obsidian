@@ -14,3 +14,6 @@ Print N numbers in reverse order:
 
 ![[Pasted image 20250630090849.png]]
 
+- Floating point formatting:
+
+![[Pasted image 20250630093852.png]]
