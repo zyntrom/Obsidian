@@ -10,4 +10,7 @@
 
 ![[Pasted image 20250630090418.png]]
 
+Print N numbers in reverse order:
+
+![[Pasted image 20250630090849.png]]
 
