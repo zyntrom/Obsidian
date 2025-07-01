@@ -22,3 +22,4 @@
 
 ![[Pasted image 20250701112118.png]]
 
+To find the p
