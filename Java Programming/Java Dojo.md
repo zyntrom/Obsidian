@@ -10,3 +10,7 @@
 
 ![[Pasted image 20250701101406.png]]
 
+- Program to remove a a char or string from  Input String:
+
+![[Pasted image 20250701103535.png]]
+
