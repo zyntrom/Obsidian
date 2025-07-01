@@ -30,4 +30,7 @@
 
 ![[Pasted image 20250701124932.png]]
 
-Swap
+- Swapping the Last and First position of the Array:
+ 
+![[Pasted image 20250701140848.png]]
+
