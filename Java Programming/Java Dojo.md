@@ -22,4 +22,7 @@
 
 ![[Pasted image 20250701112118.png]]
 
-To find the p
+- To find the largest product of the n consecutive numbers:
+
+![[Pasted image 20250701123804.png]]
+
