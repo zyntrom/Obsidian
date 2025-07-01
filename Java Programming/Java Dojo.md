@@ -26,3 +26,7 @@
 
 ![[Pasted image 20250701123804.png]]
 
+- Buzz and Fizz Pattern printer continuous number sequence:
+
+![[Pasted image 20250701124932.png]]
+
