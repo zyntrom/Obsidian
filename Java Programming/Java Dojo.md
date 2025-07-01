@@ -18,3 +18,7 @@
 
 ![[Pasted image 20250701111549.png]]
 
+- Remove other characters from a String and print it:
+
+![[Pasted image 20250701112118.png]]
+
