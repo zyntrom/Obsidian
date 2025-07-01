@@ -14,3 +14,7 @@
 
 ![[Pasted image 20250701103535.png]]
 
+- Program to create Space after a Upper Case Letter:
+
+![[Pasted image 20250701111549.png]]
+
