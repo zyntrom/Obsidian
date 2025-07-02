@@ -38,4 +38,9 @@
 
 ![[Pasted image 20250702095127.png]]
 
-Program to print the n 
+- Program to print the multiples of n:
+
+![[Pasted image 20250702111039.png]]
+
+
+
