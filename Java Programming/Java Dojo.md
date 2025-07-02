@@ -59,3 +59,7 @@
 ![[Pasted image 20250702125153.png]]
 
 
+- Print Reverse number Ladder:
+
+![[Pasted image 20250702131138.png]]
+
