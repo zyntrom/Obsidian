@@ -34,4 +34,7 @@
  
 ![[Pasted image 20250701140848.png]]
 
+- Write a program to print Fibonacci series:
+
+![[Pasted image 20250702095127.png]]
 
