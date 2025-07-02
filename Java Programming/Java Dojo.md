@@ -54,3 +54,7 @@
 
 ![[Pasted image 20250702124427.png]]
 
+- Print the * in a Triangle Pattern:
+
+![[Pasted image 20250702125153.png]]
+
