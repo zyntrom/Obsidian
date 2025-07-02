@@ -63,3 +63,6 @@
 
 ![[Pasted image 20250702131138.png]]
 
+- Program to print n numbers in ladder:
+
+![[Pasted image 20250702152202.png]]
