@@ -38,3 +38,4 @@
 
 ![[Pasted image 20250702095127.png]]
 
+Program to print the n 
