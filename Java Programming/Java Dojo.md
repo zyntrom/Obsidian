@@ -50,5 +50,7 @@
 
 ![[Pasted image 20250702114507.png]]
 
-Check  Whether the number is Perfect number or Not:
+- To print Pascals Triangle:
+
+![[Pasted image 20250702124427.png]]
 
