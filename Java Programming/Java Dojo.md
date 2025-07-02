@@ -42,5 +42,7 @@
 
 ![[Pasted image 20250702111039.png]]
 
+- Armstrong Number program:
 
+![[Pasted image 20250702112240.png]]
 
