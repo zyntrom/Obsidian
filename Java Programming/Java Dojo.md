@@ -71,3 +71,6 @@
 
 ![[Pasted image 20250702165648.png]]
 
+- To print a half Diamond:
+
+![[Pasted image 20250702172301.png]]
