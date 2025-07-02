@@ -66,3 +66,8 @@
 - Program to print n numbers in ladder:
 
 ![[Pasted image 20250702152202.png]]
+
+- Print n numbers in  triangle ladder continuously for n times: 
+
+![[Pasted image 20250702165648.png]]
+
