@@ -49,3 +49,6 @@
 - Check  Whether the number is Perfect number or Not:
 
 ![[Pasted image 20250702114507.png]]
+
+Check  Whether the number is Perfect number or Not:
+
