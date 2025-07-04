@@ -75,7 +75,11 @@
 
 ![[Pasted image 20250702172301.png]]
 
-Print a 2D Matrix:
+- Print a 2D Matrix:
 
 ![[Pasted image 20250704171139.png]]
+
+- 2D matrix addition:
+
+![[Pasted image 20250704173326.png]]
 
