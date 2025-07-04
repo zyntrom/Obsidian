@@ -83,4 +83,7 @@
 
 ![[Pasted image 20250704173326.png]]
 
-2D matrix substraction 
+- 2D matrix subtraction:
+
+![[Pasted image 20250704174438.png]]
+
