@@ -74,3 +74,8 @@
 - To print a half Diamond:
 
 ![[Pasted image 20250702172301.png]]
+
+Print a 2D Matrix:
+
+![[Pasted image 20250704171139.png]]
+
