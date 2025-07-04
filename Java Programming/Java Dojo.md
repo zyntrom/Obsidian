@@ -83,3 +83,4 @@
 
 ![[Pasted image 20250704173326.png]]
 
+2D matrix substraction 
