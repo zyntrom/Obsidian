@@ -88,3 +88,6 @@
 ![[Pasted image 20250704174438.png]]
 
 - 2D matrix average:
+
+![[Pasted image 20250704175943.png]]
+
