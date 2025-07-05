@@ -94,3 +94,5 @@
 - 2D matrix diagonal swap:
 
 ![[Pasted image 20250705101549.png]]
+
+2D matrix to remove the numbers below the diagonal 
