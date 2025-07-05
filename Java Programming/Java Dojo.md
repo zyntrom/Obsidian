@@ -103,3 +103,6 @@
 
 ![[Pasted image 20250705110304.png]]
 
+- Multiplication of two Matrix :
+
+![[Pasted image 20250705111806.png]]
