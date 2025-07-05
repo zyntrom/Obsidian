@@ -99,3 +99,7 @@
 
 ![[Pasted image 20250705103933.png]]
 
+- 2D Matrix to replace the numbers above the main diagonal to zero:
+
+![[Pasted image 20250705110304.png]]
+
