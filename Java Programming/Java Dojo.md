@@ -95,4 +95,7 @@
 
 ![[Pasted image 20250705101549.png]]
 
-2D matrix to remove the numbers below the diagonal 
+- 2D matrix to remove the numbers below the diagonal to  zero:
+
+![[Pasted image 20250705103933.png]]
+
