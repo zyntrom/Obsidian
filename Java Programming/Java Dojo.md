@@ -105,4 +105,7 @@
 
 - Multiplication of two Matrix :
 
-![[Pasted image 20250705111806.png]]
+![[Pasted image 20250705113541.png]]
+
+
+
