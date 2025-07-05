@@ -91,3 +91,6 @@
 
 ![[Pasted image 20250704175943.png]]
 
+- 2D matrix diagonal swap:
+
+![[Pasted image 20250705101549.png]]
