@@ -118,3 +118,7 @@
 - Sorting + checking whether its sorted or not :
 
 ![[Pasted image 20250707122435.png]]
+
+- Separating even and odd from an array: 
+
+![[Pasted image 20250707123138.png]]
