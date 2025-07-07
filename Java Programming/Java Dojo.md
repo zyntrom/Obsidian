@@ -126,3 +126,7 @@
 - Reversing a array:
 
 ![[Pasted image 20250707124054.png]]
+
+- To find the prefix sum of an array then make a new sum array:
+
+![[Pasted image 20250707124640.png]]
