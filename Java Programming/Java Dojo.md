@@ -130,3 +130,7 @@
 - To find the prefix sum of an array then make a new sum array:
 
 ![[Pasted image 20250707124640.png]]
+
+- To find the suffix sum of an array: 
+
+![[Pasted image 20250707131453.png]]
