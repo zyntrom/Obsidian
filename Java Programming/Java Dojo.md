@@ -115,3 +115,6 @@
 
 ![[Pasted image 20250707114328.png]]
 
+- Sorting + checking whether its sorted or not :
+
+![[Pasted image 20250707122435.png]]
