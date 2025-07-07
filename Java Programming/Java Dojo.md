@@ -122,3 +122,7 @@
 - Separating even and odd from an array: 
 
 ![[Pasted image 20250707123138.png]]
+
+- Reversing a array:
+
+![[Pasted image 20250707124054.png]]
