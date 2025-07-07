@@ -134,3 +134,7 @@
 - To find the suffix sum of an array: 
 
 ![[Pasted image 20250707131453.png]]
+
+- Selection Sort of an array:
+
+![[Pasted image 20250707141555.png]]
