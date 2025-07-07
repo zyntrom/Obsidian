@@ -138,3 +138,7 @@
 - Selection Sort of an array:
 
 ![[Pasted image 20250707141555.png]]
+
+- Bubble Sort of an array:
+
+![[Pasted image 20250707161852.png]]
