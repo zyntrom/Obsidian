@@ -142,3 +142,8 @@
 - Bubble Sort of an array:
 
 ![[Pasted image 20250707161852.png]]
+
+- Insertion Sort of an array:
+
+![[Pasted image 20250707175514.png]]
+
