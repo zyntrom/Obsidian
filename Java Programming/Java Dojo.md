@@ -110,3 +110,8 @@
 - Make a new array and add elements:
 
 ![[Pasted image 20250705114835.png]]
+
+- Second Largest number in an array:
+
+![[Pasted image 20250707114328.png]]
+
