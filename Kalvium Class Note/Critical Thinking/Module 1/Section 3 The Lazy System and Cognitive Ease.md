@@ -19,3 +19,12 @@ This brings us to a big insight: 🧠 **The mind is a lazy system.**
 
 It’s always trying to **save energy**—and often takes shortcuts unless absolutely necessary. When we’re mentally exhausted, **System 2 (the analytical part of the mind)** goes off-duty, and quick, automatic decisions from **System 1** take over.
 
+When we’re mentally tired, these kinds of errors happen more frequently. System 2 is the gatekeeper that prevents faulty logic—but only when it has energy left.
+
+## Willpower and the Mind
+
+### Why Does This Matter?
+
+Because **willpower can be trained.** Every time you resist a distraction or temptation, you’re building that self-control muscle.
+## Cognitive Ease
+
