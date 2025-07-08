@@ -28,3 +28,24 @@ When we’re mentally tired, these kinds of errors happen more frequently. Syste
 Because **willpower can be trained.** Every time you resist a distraction or temptation, you’re building that self-control muscle.
 ## Cognitive Ease
 
+Your **System 1** runs all these checks automatically—and decides whether or not to engage **System 2**.
+
+Think of your mind working in two extreme states:
+
+- **Easy:** Everything feels smooth. You're relaxed, trust your intuition, and go with the flow.
+- **Strained:** A problem shows up. System 2 kicks in, you focus harder, analyze more, and think critically.
+
+When you’re in **cognitive ease**, you're:
+
+- Happy
+- Relaxed
+- Likely to believe what you hear
+- Less likely to question information
+
+But when you're under **strain**, you're:
+
+- Alert and suspicious
+- More analytical
+- Less prone to errors—but also less intuitive
+
+
