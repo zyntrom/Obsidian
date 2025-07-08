@@ -7,5 +7,11 @@
 - **Reasoning** – Explaining why we believe something
 - **Open-mindedness** – Changing our minds when facts change
 
-🧠 Our brain prefers **low-energy choices**. It’s easier to choose between A or B than to **question the premise**.
+
+1. 🧠 Our brain prefers **low-energy choices**. It’s easier to choose between A or B than to **question the premise**.
+
+2. 🧠 The brain **avoids effort** — especially in tough mental tasks like math.
+
+
+
 
