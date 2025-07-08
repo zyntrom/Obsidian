@@ -15,3 +15,15 @@ This shows how our mind operates:
 - But when we face **complex or unfamiliar problems**, System 2 kicks in to handle the load.
 
 In fact, your brain **always starts with System 1**—only when it struggles does it call in System 2 for backup.
+
+Let’s quickly review what we’ve learned:
+
+1. Your mind operates using **two systems of thinking**.
+2. **System 1** is automatic, fast, and intuitive.
+3. **System 2** is deliberate, slow, and effortful.
+4. System 1 tries to handle everything first. If it can’t, it calls on System 2.
+5. When System 2 is deeply focused, it narrows attention and filters out distractions.
+6. Sometimes, both systems conflict—especially when new tasks challenge old habits.
+7. With practice, tasks that require System 2 can eventually become System 1 habits.
+8. Our brains are vulnerable to **thinking errors**, especially from System 1 shortcuts.
+
