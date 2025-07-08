@@ -7,3 +7,4 @@
 - **Reasoning** – Explaining why we believe something
 - **Open-mindedness** – Changing our minds when facts change
 
+
