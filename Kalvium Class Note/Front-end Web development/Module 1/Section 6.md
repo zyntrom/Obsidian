@@ -11,42 +11,25 @@ This is where you **build confidence** with the real Git workflow:
 
 ### 🧪 Setting Up Your Git Playground
 
-bash
-
-CopyEdit
-
 `mkdir git_game      # Make a new folder cd git_game         # Move into it git init            # Initialize a Git repository`
 
 - `git init`: Turns any folder into a Git-tracked project.
-    
 - Think of it as activating Git's time machine in that folder.
-    
 
 ---
 
 ### 🧩 Challenge 1: Your First Git Snapshot
 
-bash
-
-CopyEdit
-
 `touch README.md     # Create a new file git add README.md   # Stage the file git commit -m "Initial commit: Added README.md"   # Commit with message`
 
 - `git add`: Adds file(s) to the **staging area** (think: "photo ready").
-    
 - `git commit -m`: Saves the snapshot to Git history with a message.
-    
 
 Check status:
-
-bash
-
-CopyEdit
 
 `git status`
 
 - Shows current file status — tracked, modified, staged, etc.
-    
 
 ---
 
@@ -54,54 +37,33 @@ CopyEdit
 
 Edit `README.md`:
 
-md
-
-CopyEdit
-
 `# Git Game This is a simple game to practice Git commands.`
 
 Then check Git’s response:
 
-bash
-
-CopyEdit
-
 `git status`
 
 - Git will say `modified: README.md` — it tracks every change automatically.
-    
 
 ---
 
 ### 💃 Challenge 3: The Add-Commit Dance (Main Workflow)
 
-bash
-
-CopyEdit
 
 `git add README.md                          # Stage changes git commit -m "Updated README.md content"  # Commit the update`
 
 After:
 
-bash
-
-CopyEdit
-
 `git status`
 
 - Should be a **clean working directory** → all changes committed.
-    
 
 📝 **Main Git Cycle**:
 
 1. Modify file
-    
 2. Stage file → `git add`
-    
 3. Commit changes → `git commit -m`
-    
 4. Check status → `git status`
-    
 
 ---
 
@@ -111,25 +73,13 @@ Sometimes you don’t want Git to track certain files (e.g., config files, local
 
 Steps:
 
-bash
-
-CopyEdit
-
 `touch config.txt touch .gitignore`
 
 Edit `.gitignore` and add:
 
-arduino
-
-CopyEdit
-
 `config.txt`
 
 Then check:
-
-bash
-
-CopyEdit
 
 `git status`
 
@@ -163,7 +113,5 @@ Git isn’t just about commands — it’s about a **workflow**.
 You should be able to:
 
 - Explain `git init → add → commit → status` in order
-    
 - Show how `.gitignore` is used
-    
 - Answer what `git status` reports at different stages

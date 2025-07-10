@@ -5,11 +5,8 @@ This lesson teaches the **basic structure** of an HTML document and the **core t
 You’ll learn:
 
 - How every HTML document is built (its blueprint)
-    
 - What tags like `<html>`, `<head>`, `<body>`, `<h1>`, and `<p>` do
-    
 - How to create **well-structured**, readable content
-    
 
 ---
 
@@ -17,11 +14,14 @@ You’ll learn:
 
 ### 📐 HTML Document Blueprint (Structure)
 
-html
-
-CopyEdit
-
-`<!DOCTYPE html> <html lang="en"> <head>   <meta charset="UTF-8">   <meta name="viewport" content="width=device-width, initial-scale=1.0">   <title>My First Webpage</title> </head> <body>   <!-- Your visible content goes here --> </body> </html>`
+`<!DOCTYPE html>` 
+`<html lang="en">` 
+`<head>`   
+`<meta charset="UTF-8">`  
+`<meta name="viewport" content="width=device-width, initial-scale=1.0">   <title>My First Webpage</title>` 
+`</head>` 
+`<body>   <!-- Your visible content goes here --> </body>` 
+`</html>`
 
 |Tag|Purpose|
 |---|---|
@@ -36,18 +36,14 @@ CopyEdit
 
 This part is **not visible to users**, but **vital for setup**.
 
-html
-
-CopyEdit
-
-`<head>   <meta charset="UTF-8">   <meta name="viewport" content="width=device-width, initial-scale=1.0">   <title>My Website</title> </head>`
+`<head>`   
+`<meta charset="UTF-8">`   
+`<meta name="viewport" content="width=device-width, initial-scale=1.0">   <title>My Website</title>` 
+`</head>`
 
 - `<meta charset="UTF-8">`: Allows special characters and emojis
-    
 - `<meta name="viewport"...>`: Makes site responsive on mobile
-    
 - `<title>`: Shows in browser tab and search engines
-    
 
 ---
 
@@ -55,11 +51,9 @@ CopyEdit
 
 Everything **inside `<body>`** is shown to users.
 
-html
-
-CopyEdit
-
-`<body>   <h1>Welcome to My Website</h1>   <p>This is a paragraph.</p> </body>`
+`<body>   <h1>Welcome to My Website</h1>   
+<p>This is a paragraph.</p> 
+</body>`
 
 Includes:
 

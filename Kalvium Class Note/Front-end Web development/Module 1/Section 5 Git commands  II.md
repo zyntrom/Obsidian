@@ -53,16 +53,12 @@ Shows files that are both modified.
 1. Open the file and manually edit the conflicting sections.
 2. Remove the conflict markers (`<<<<<<<`, `=======`, `>>>>>>>`).
 3. Stage the file:
+    
     `git add <file>`
     
 4. Complete the merge:
-    
-    bash
-    
-    CopyEdit
-    
+	
     `git commit`
-    
 
 > 💡 Tip: Always **test** your code after resolving conflicts to make sure everything works.
 
@@ -74,22 +70,14 @@ View all previous commits to understand your project's timeline.
 
 #### 📌 Command:
 
-bash
-
-CopyEdit
-
 `git log`
 
 Shows:
 
 - Commit hash (ID)
-    
 - Author
-    
 - Date and time
-    
 - Commit message
-    
 
 > 🧭 Use this to trace back changes, who made them, and when.
 
@@ -113,16 +101,10 @@ Shows:
 ## 📘 Exam-Focused Concepts to Remember
 
 - Branching allows safe, parallel development.
-    
 - Use `git checkout -b` to quickly start working on new features.
-    
 - Merging brings branches together. Understand the difference between fast-forward and true merges.
-    
 - Merge conflicts are common — know how to identify and resolve them.
-    
 - `git log` helps track and explain project changes.
-    
 - Know the **merge conflict markers** (`<<<<<<<`, `=======`, `>>>>>>>`).
-    
 
 ---
