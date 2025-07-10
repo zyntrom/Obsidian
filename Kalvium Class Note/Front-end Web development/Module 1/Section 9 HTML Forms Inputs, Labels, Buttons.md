@@ -3,32 +3,20 @@
 By the end of this, you should be able to:
 
 - Understand what an HTML form does.
-    
 - Use `<input>` fields for collecting various kinds of data.
-    
 - Associate `<label>` tags with inputs for better usability.
-    
 - Add buttons to trigger actions like submit, reset, or custom JavaScript.
-    
 - Build complete, interactive forms!
-    
 
 ---
 
 ## 🧾 1. What is an HTML Form?
 
 - An HTML form is like a **questionnaire** inside a web page.
-    
 - It collects user input like names, emails, passwords, etc.
-    
 - Form data is typically sent to a **server** for processing.
-    
 
 ### 🔧 Basic Structure
-
-html
-
-CopyEdit
 
 `<form>   <!-- form fields go here --> </form>`
 
@@ -53,10 +41,6 @@ The `<input>` tag is used to **collect** information.
 
 ### ✅ Example
 
-html
-
-CopyEdit
-
 `<form>   <input type="text" name="username">   <input type="email" name="email">   <input type="submit" value="Submit"> </form>`
 
 ---
@@ -67,16 +51,10 @@ The `<label>` element **describes** what each input field is for.
 
 ### 🔗 Important: Use `for` and `id`
 
-html
-
-CopyEdit
-
 `<label for="email">Email:</label> <input type="email" id="email" name="email">`
 
 - `for="email"` links the label to `<input id="email">`
-    
 - Clicking the label focuses the corresponding input
-    
 
 ---
 
@@ -92,21 +70,19 @@ There are **3 types** of buttons in HTML forms:
 
 ### 🧪 Example with Buttons
 
-html
-
-CopyEdit
-
-`<form>   <input type="text" name="name">    <input type="submit" value="Submit">   <input type="reset" value="Reset">   <button type="button" onclick="alert('Hello!')">Click Me</button> </form>`
+`<form>`   
+`<input type="text" name="name">`   
+`<input type="submit" value="Submit">`   
+`<input type="reset" value="Reset">`   
+`<button type="button" onclick="alert('Hello!')">Click Me</button>` 
+`</form>`
 
 ---
 
 ## 🧱 5. Full Example: A Basic Form
 
-html
-
-CopyEdit
-
-`<form>   <label for="name">Name:</label><br>   <input type="text" id="name" name="name"><br><br>    <label for="email">Email:</label><br>   <input type="email" id="email" name="email"><br><br>    <label for="password">Password:</label><br>   <input type="password" id="password" name="password"><br><br>    <input type="submit" value="Register"> </form>`
+`<form>   <label for="name">Name:</label><br>   
+<input type="text" id="name" name="name"><br><br>    <label for="email">Email:</label><br>   <input type="email" id="email" name="email"><br><br>    <label for="password">Password:</label><br>   <input type="password" id="password" name="password"><br><br>    <input type="submit" value="Register"> </form>`
 
 ---
 

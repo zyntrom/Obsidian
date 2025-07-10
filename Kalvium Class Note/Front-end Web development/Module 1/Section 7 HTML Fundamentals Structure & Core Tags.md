@@ -51,73 +51,52 @@ This part is **not visible to users**, but **vital for setup**.
 
 Everything **inside `<body>`** is shown to users.
 
-`<body>   <h1>Welcome to My Website</h1>   
-<p>This is a paragraph.</p> 
-</body>`
+`<body>   <h1>Welcome to My Website</h1>`   
+`<p>This is a paragraph.</p>` 
+`</body>`
 
 Includes:
 
 - Text
-    
 - Images
-    
 - Videos
-    
 - Buttons
-    
 - Forms
-    
 - Links
-    
 
 ---
 
 ### 📊 Content Hierarchy with Headings
 
-html
-
-CopyEdit
-
-`<h1>Main Title</h1> <h2>Chapter 1</h2> <h3>Section 1.1</h3> <h4>Details</h4> <h5>Smaller Details</h5> <h6>Footnote</h6>`
+`<h1>Main Title</h1>` 
+`<h2>Chapter 1</h2>` 
+`<h3>Section 1.1</h3>` 
+`<h4>Details</h4>` 
+`<h5>Smaller Details</h5>` 
+`<h6>Footnote</h6>`
 
 - Use **only one `<h1>`** per page (for SEO and accessibility)
-    
 - Headings define **structure**, like chapters in a book
-    
 
 ---
 
 ### 🧾 Organizing Text with Paragraphs
 
-html
-
-CopyEdit
-
 `<p>This is a paragraph of content.</p>`
 
 - Each `<p>` adds **space** between blocks of text
-    
 - Makes content **clean, readable, and organized**
-    
 - Great for **introductions, descriptions, articles, etc.**
-    
 
 ---
 
 ### 💬 Comments in HTML
 
-html
-
-CopyEdit
-
 `<!-- This is a comment -->`
 
 - Used to explain code
-    
 - Ignored by browser
-    
 - Good for documentation
-    
 
 ---
 
@@ -141,11 +120,19 @@ CopyEdit
 
 Try this starter code in VS Code and open in a browser:
 
-html
-
-CopyEdit
-
-`<!DOCTYPE html> <html lang="en"> <head>   <meta charset="UTF-8">   <meta name="viewport" content="width=device-width, initial-scale=1.0">   <title>Kalvium Test Page</title> </head> <body>   <h1>Hello Kalvians!</h1>   <h2>This is Module 1</h2>   <p>We are learning the structure of HTML.</p>   <p>Paragraphs and headings keep things organized.</p> </body> </html>`
+`<!DOCTYPE html>` 
+`<html lang="en">` 
+`<head>`   
+`<meta charset="UTF-8">`   
+`<meta name="viewport" content="width=device-width, initial-scale=1.0">   <title>Kalvium Test Page</title>` 
+`</head>` 
+`<body>`   
+`<h1>Hello Kalvians!</h1>`   
+`<h2>This is Module 1</h2>`   
+`<p>We are learning the structure of HTML.</p>`   
+`<p>Paragraphs and headings keep things organized.</p>` 
+`</body>` 
+`</html>`
 
 ---
 
