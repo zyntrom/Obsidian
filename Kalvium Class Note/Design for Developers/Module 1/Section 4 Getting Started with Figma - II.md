@@ -90,11 +90,8 @@ Guides act like invisible rulers. You can:
 You can:
 
 - Apply **uniform corner radius** to a shape (e.g., 10px)
-    
 - Customize **individual corners** (top-left: 0px, top-right: 20px, etc.)
-    
 - Round cards, buttons, images, or containers to enhance visual appeal
-    
 
 > 🎯 Rounded corners are part of modern, accessible, and touch-friendly UI design.
 
@@ -105,16 +102,10 @@ You can:
 In this lesson, you’ve taken your Figma skills to the next level by adding style, structure, and visual polish. You now know how to:
 
 - Use **gradients** to create depth
-    
 - Pick and manage colors using the **color picker**
-    
 - Format and align text with the **text tool**
-    
 - Import and manipulate **images**
-    
 - Ensure clean designs with **alignment and guides**
-    
 - Elevate your designs with **rounded corners**
-    
 
 These visual techniques make your interfaces look **professional**, **readable**, and **user-friendly**.

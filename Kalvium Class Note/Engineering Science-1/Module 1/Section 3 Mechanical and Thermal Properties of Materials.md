@@ -7,13 +7,9 @@
 By the end of this lesson, you should be able to:
 
 - Explain stress, strain, elasticity, plasticity, and interpret stress-strain curves.
-    
 - Describe thermal conductivity, expansion, and heat capacity.
-    
 - Understand how structure at the atomic level affects real-world material behavior.
-    
 - Choose suitable materials for specific engineering applications.
-    
 
 ---
 
@@ -22,13 +18,9 @@ By the end of this lesson, you should be able to:
 ### 💥 Stress & Strain
 
 - **Stress** = Force / Area (unit: Pascal, Pa)
-    
     - It’s the internal force experienced by a material.
-        
 - **Strain** = Change in length / Original length (unitless)
-    
     - It’s how much the material deforms under stress.
-        
 
 > Stress causes → Strain
 ![[Pasted image 20250710140648.png]]
@@ -76,11 +68,8 @@ By the end of this lesson, you should be able to:
 ### 🔬 Internal Structure & Defects
 
 - **Grain Size**: Smaller grains = stronger materials.
-    
 - **Crystal Structure**: Affects ductility, toughness.
-    
 - **Defects**: Dislocations allow deformation → affects strength.
-    
 
 ✅ _Real-World Tip:_ Fine-grained metals are used in aerospace for strength.
 
@@ -91,9 +80,7 @@ By the end of this lesson, you should be able to:
 ### 🔥 Thermal Conductivity
 
 - **High conductivity**: Transfers heat easily → _Copper, Aluminum_
-    
 - **Low conductivity**: Resists heat transfer → _Wood, Plastic_
-    
 
 > Metals = good conductors  
 > Insulators = poor conductors (used in handles, building insulation)
@@ -103,11 +90,8 @@ By the end of this lesson, you should be able to:
 ### 📏 Thermal Expansion
 
 - Most materials **expand when heated**, **contract when cooled**.
-    
 - Measured using **coefficient of thermal expansion**.
-    
 - Bridges use **expansion joints** to prevent cracking.
-    
 
 ---
 
@@ -158,9 +142,6 @@ By the end of this lesson, you should be able to:
 You now understand:
 
 - **Mechanical properties** like stress, strain, elasticity, plasticity, toughness, and fatigue.
-    
 - **Thermal properties** like conductivity, expansion, heat capacity, and shock resistance.
-    
 - How **atomic structure and defects** influence material behavior.
-    
 - The importance of **choosing the right material** for the job.
