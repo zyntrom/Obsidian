@@ -139,7 +139,7 @@ Asking clarifying questions is key. Don't shy away from querying colleagues, men
 
 ### 🏋️‍♀️ Practice Makes Progress
 
-She frames solution-mindedness as a **skill**, not a gift. Regularly apply your framework to daily problems and refine it over time—tuning your approach and gaining agility [YTScribe](https://ytscribe.com/v/LaYVqj1El1A?utm_source=chatgpt.com).
+She frames solution-mindedness as a **skill**, not a gift. Regularly apply your framework to daily problems and refine it over time—tuning your approach and gaining agility.
 
 ---
 
