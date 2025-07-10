@@ -1,136 +1,166 @@
-## 🧬 **Atomic and Crystal Structures of Materials — Notes**
+## ⚙️🧪 Mechanical and Thermal Properties of Materials — Notes
 
 ---
 
 ### 🎯 **Learning Objectives**
 
-- Understand the link between **atomic bonding**, **crystal structure**, and **material properties**.
+By the end of this lesson, you should be able to:
+
+- Explain stress, strain, elasticity, plasticity, and interpret stress-strain curves.
     
-- Identify **common crystal structures** and **crystallographic planes**.
+- Describe thermal conductivity, expansion, and heat capacity.
     
-- Explain the **types of defects** in solids and their effects.
+- Understand how structure at the atomic level affects real-world material behavior.
     
-- Learn how **engineers manipulate defects** to improve material performance.
+- Choose suitable materials for specific engineering applications.
     
 
 ---
 
-### 🔗 **Atomic Bonds and Material Properties**
+## 🛠️ **Mechanical Properties: Strength Under Stress**
 
-Atoms bond in different ways, just like LEGO blocks. The type of bond determines strength, flexibility, and conductivity.
+### 💥 Stress & Strain
 
-#### ⚛️ **Types of Atomic Bonds**:
+- **Stress** = Force / Area (unit: Pascal, Pa)
+    
+    - It’s the internal force experienced by a material.
+        
+- **Strain** = Change in length / Original length (unitless)
+    
+    - It’s how much the material deforms under stress.
+        
 
-|Type of Bond|Description|Example|Properties|
-|---|---|---|---|
-|**Ionic**|Electrons are **transferred** between atoms|NaCl|High melting point, brittle, poor conductivity (except in solution)|
-|**Covalent**|Electrons are **shared** between atoms|Diamond (Carbon)|Hard, high melting point, poor conductivity|
-|**Metallic**|Electrons are **delocalized** in a “sea”|Copper|Malleable, ductile, excellent conductivity|
-
+> Stress causes → Strain
+![[Pasted image 20250710140648.png]]
 ---
 
-### 🧱 **Crystal Structures: Atomic Arrangements**
+### 📈 **Stress-Strain Curve**
 
-A **crystal structure** is the 3D arrangement of atoms in a solid, repeated regularly.
-
-#### 🧩 Components:
-
-- **Lattice**: The 3D grid
-    
-- **Basis**: Atom(s) attached to each lattice point
-    
-- **Unit Cell**: Smallest repeatable unit of the structure
-    
-
-#### 🔷 **Common Crystal Structures**:
-
-|Structure|Atoms Placement|Found In|Notes|
-|---|---|---|---|
-|**SC** (Simple Cubic)|Corners only|Rare|~52% packing efficiency|
-|**BCC** (Body-Centered Cubic)|Corners + center|Iron (room temp)|~68% efficiency|
-|**FCC** (Face-Centered Cubic)|Corners + face centers|Aluminum, Copper|~74% efficiency|
-|**HCP** (Hexagonal Close-Packed)|Hexagonal pattern|Magnesium|Also ~74% efficiency|
-
-✅ **Real-World Link**: Steel can switch between BCC and FCC based on temperature, affecting strength.
-
----
-
-### 📦 **Packing Efficiency & Density**
-
-**Packing Efficiency** = % of volume filled by atoms  
-Higher efficiency = Stronger, denser material
-
-|Structure|Packing Efficiency|
+|Region|Description|
 |---|---|
-|FCC / HCP|~74%|
-|BCC|~68%|
-|SC|~52%|
-
-✅ _Example:_ Aluminum (FCC) is both lightweight and strong — ideal for aerospace.
-
----
-
-### 📐 **Miller Indices**
-
-**Miller Indices**: Shorthand to represent crystal planes.
-
-**Steps to Determine**:
-
-1. Find X, Y, Z intercepts of the plane
-    
-2. Take reciprocals
-    
-3. Multiply to remove fractions
-    
-4. Write as (hkl), e.g., (110)
-    
-
-✅ _Why it matters:_ Used to analyze crystal deformation, fracture, and growth.
+|**Elastic Region**|Material returns to original shape|
+|**Yield Point**|Permanent deformation begins|
+|**Ultimate Tensile Strength (UTS)**|Max stress the material can handle|
+|**Fracture Point**|Material breaks|
 
 ---
 
-### 🧨 **Imperfections in Solids**
+### 🧵 Elasticity vs. Plasticity
 
-No real material is perfect. **Defects** significantly influence properties.
-
-#### 🔎 Types of Defects:
-
-|Type|Description|Impact|
+|Property|Description|Example|
 |---|---|---|
-|**Point Defects**|Vacancies, interstitials|Affects strength, conductivity|
-|**Line Defects** (Dislocations)|Misaligned atom rows|Allow ductility and deformation|
-|**Surface Defects**|Grain boundaries, external surfaces|Affect crack propagation, strength|
-
-✅ _Smaller grains = stronger metals_ (more grain boundaries block dislocation movement)
+|**Elasticity**|Temporary deformation|Rubber band|
+|**Plasticity**|Permanent deformation|Bent paperclip|
 
 ---
 
-### 🛠️ **Manipulating Defects: Engineering Use Cases**
+### 🧱 Strength, Toughness & Hardness
 
-Engineers **intentionally introduce defects** to improve material behavior:
-
-|Method|What It Does|Example|
+|Property|Description|Example|
 |---|---|---|
-|**Tempering**|Induces surface stress|Toughened glass|
-|**Doping**|Adds atoms to change conductivity|Silicon → semiconductor chips|
-|**Alloying**|Mixes atoms to enhance strength|Iron + Carbon = Steel|
-
-✅ _Example:_ Doping silicon with boron/phosphorus makes transistors function.
+|**Yield Strength**|Resistance to permanent shape change|Steel frame|
+|**Toughness**|Energy absorbed before fracture|Crash-resistant bumper|
+|**Hardness**|Surface resistance to scratches/dents|Diamond tip tools|
 
 ---
 
-### 🧾 **Summary**
+### ⏳ Time-Dependent Behaviors
 
-- **Bond types** (ionic, covalent, metallic) define material behavior.
-    
-- **Crystal structures** organize atoms — packing efficiency impacts density.
-    
-- **Miller indices** help describe crystal planes.
-    
-- **Imperfections** can weaken or improve materials.
-    
-- Engineers **use defects** to create stronger, more functional materials.
+|Behavior|Cause|Example|
+|---|---|---|
+|**Fatigue**|Repeated stress cycles|Airplane wings|
+|**Creep**|Constant stress over time (especially at high temp)|Jet engine blades|
 
-![[Pasted image 20250710140044.png]]
+---
 
-![[Pasted image 20250710140117.png]]
+### 🔬 Internal Structure & Defects
+
+- **Grain Size**: Smaller grains = stronger materials.
+    
+- **Crystal Structure**: Affects ductility, toughness.
+    
+- **Defects**: Dislocations allow deformation → affects strength.
+    
+
+✅ _Real-World Tip:_ Fine-grained metals are used in aerospace for strength.
+
+---
+
+## 🌡️ **Thermal Properties: Responding to Heat**
+
+### 🔥 Thermal Conductivity
+
+- **High conductivity**: Transfers heat easily → _Copper, Aluminum_
+    
+- **Low conductivity**: Resists heat transfer → _Wood, Plastic_
+    
+
+> Metals = good conductors  
+> Insulators = poor conductors (used in handles, building insulation)
+
+---
+
+### 📏 Thermal Expansion
+
+- Most materials **expand when heated**, **contract when cooled**.
+    
+- Measured using **coefficient of thermal expansion**.
+    
+- Bridges use **expansion joints** to prevent cracking.
+    
+
+---
+
+### 🧪 Heat Capacity & Thermal Diffusivity
+
+|Property|Description|Example|
+|---|---|---|
+|**Heat Capacity**|Heat needed to raise temp|Cast iron retains heat|
+|**Thermal Diffusivity**|How fast a material changes temperature|Aluminum cools fast, heats fast|
+
+---
+
+### ⚠️ Thermal Stress & Shock
+
+|Concept|Description|Example|
+|---|---|---|
+|**Thermal Stress**|Caused by uneven heating/cooling|Glass cracking with boiling water|
+|**Thermal Shock Resistance**|Resistance to cracking under sudden temperature changes|Pyrex cookware|
+
+---
+![[Pasted image 20250710140723.png]]
+
+## 🔍 Real-World Engineering Applications
+
+### ✅ **Material Selection**
+
+|Field|Material|Reason|
+|---|---|---|
+|Aerospace|Aluminum, carbon fiber|Strong + lightweight|
+|Electronics|Copper, aluminum|High thermal/electrical conductivity|
+|Construction|Foam, fiberglass|Good insulators|
+
+---
+
+### ❌ **Failure Case Studies**
+
+|Case|Cause|
+|---|---|
+|**Tacoma Narrows Bridge**|Aerodynamic vibrations + material resonance|
+|**Challenger Shuttle**|O-rings failed due to cold weather|
+
+**Lesson:** Material behavior under real conditions is crucial for safety.
+
+---
+
+## 🧾 Summary: What You’ve Learned
+
+You now understand:
+
+- **Mechanical properties** like stress, strain, elasticity, plasticity, toughness, and fatigue.
+    
+- **Thermal properties** like conductivity, expansion, heat capacity, and shock resistance.
+    
+- How **atomic structure and defects** influence material behavior.
+    
+- The importance of **choosing the right material** for the job.
