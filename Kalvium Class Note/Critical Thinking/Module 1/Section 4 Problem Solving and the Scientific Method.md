@@ -66,14 +66,11 @@
 
 - Look at the outcomes: if the toaster works after being plugged in, the hypothesis is supported; if not, it’s rejected.
 - Even supported hypotheses aren’t proof—they simply gain credibility through testing.
-    
 
 **5. Iteration**
 
 - If results don’t fit expectations, refine the hypothesis or pose a new one.
-    
 - Rinse and repeat until findings become reliable.
-    
 
 **6. Broader Understanding & Communication**
 
@@ -128,11 +125,7 @@ New ways of working take time. Be patient with your process and the people invol
 ### 🎯 Underlying Message
 
 - **Mindset**: Believe you _can_ solve it.
-    
 - **Structure**: Use a method that suits your thinking style.
-    
 - **Questions**: Clarify the problem before jumping to solutions.
-    
 - **Practice**: Build proficiency through repetition.
-    
 - **Patience**: Growth comes through sustained effort and collaboration.

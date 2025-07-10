@@ -11,13 +11,9 @@ Gradients add richness and dimension beyond flat color fills.
 **Gradient Types in Figma:**
 
 - 🔁 Linear – Smooth transition from one color to another in a line
-    
 - 🌐 Radial – Transition radiating from a central point (like a glow)
-    
 - 🔄 Angular – Color transition that rotates around a central point
-    
 - 💎 Diamond – Transitions in a diamond shape
-    
 
 > 🎯 Use gradients to **highlight buttons**, **create depth in cards**, or **establish visual hierarchy**.
 
@@ -28,13 +24,9 @@ Gradients add richness and dimension beyond flat color fills.
 Figma’s **color picker** allows you to:
 
 - Select **solid colors**, **gradients**, or **image fills**
-    
 - Adjust **opacity and hex values**
-    
 - Use the **eyedropper tool** to pick colors from anywhere on the screen
-    
 - Create and manage **custom color styles** for consistent branding
-    
 
 > 🧠 Tip: Save reusable colors as **Styles** to ensure consistency across your design.
 
@@ -45,19 +37,12 @@ Figma’s **color picker** allows you to:
 Text is one of the most important elements in UI design. In Figma, you can:
 
 - Insert text using the **Text Tool (T)**
-    
 - Change:
-    
     - **Font family, size, and weight**
-        
     - **Line height (leading)** and **letter spacing**
-        
     - **Alignment** (left, center, right)
-        
     - **Text color** and **style**
-        
 - Choose from Google Fonts directly in Figma
-    
 
 > 🎯 Use heading, subheading, and paragraph styles for content hierarchy.
 
@@ -68,13 +53,9 @@ Text is one of the most important elements in UI design. In Figma, you can:
 In Figma, you can:
 
 - **Import images** via drag-and-drop or `File → Place Image`
-    
 - Resize, crop, or rotate images
-    
 - **Mask images** into shapes (e.g., circular avatars)
-    
 - Replace placeholder images with real content (e.g., logos, icons, illustrations)
-    
 
 > 🧠 Tip: Use Unsplash, Icons8, or other Figma plugins to insert assets quickly.
 
@@ -85,11 +66,8 @@ In Figma, you can:
 Figma has built-in tools to **align and distribute** elements precisely:
 
 - **Align** left, right, top, bottom, vertical center, or horizontal center
-    
 - **Distribute spacing** between multiple elements evenly
-    
 - Use **smart guides** and **snap-to-grid** for accuracy
-    
 
 > 🎯 Clean alignment improves **readability, balance, and professionalism**.
 
@@ -100,11 +78,8 @@ Figma has built-in tools to **align and distribute** elements precisely:
 Guides act like invisible rulers. You can:
 
 - Drag **horizontal/vertical guides** from the top/left rulers
-    
 - Create **grids or columns** in frames (especially useful for responsive layouts)
-    
 - Lock guides and use them to align multiple UI components
-    
 
 > 🧠 Tip: Use guides to simulate margins, spacing rules, and layout grids.
 

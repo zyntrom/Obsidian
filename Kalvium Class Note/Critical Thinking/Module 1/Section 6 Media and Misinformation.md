@@ -13,13 +13,9 @@ Using this framework and verifying information across **multiple diverse sources
 ### 🌐 Why Media Literacy Matters
 
 - Today’s internet users face **information overload**.
-    
 - Not everything online is true; there are **no filters**.
-    
 - With greater access comes the need for **greater discretion**.
-    
 - **Fake news** is widespread—users must verify what they see or receive.
-    
 
 ---
 
@@ -38,20 +34,14 @@ Using this framework and verifying information across **multiple diverse sources
 ## 🧩 Practical Tip: Use **Multiple Sources**
 
 - Don’t rely on a single website or article.
-    
 - Cross-check from **different perspectives, formats, and fields**.
-    
 - Common facts across multiple sources are more likely to be true.
-    
 
 ---
 
 ## 💡 Final Takeaways
 
 - **Critical thinking is essential** to combat misinformation in today’s digital world.
-    
 - Use the **5-point credibility test** to assess any content you consume.
-    
 - Adopt a **research-oriented mindset** — it helps not only in academics but also in daily life.
-    
 - Educate others (e.g. advising family on WhatsApp forwards) using these strategies.

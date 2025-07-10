@@ -9,53 +9,39 @@ The brain doesn’t just passively receive information — it actively **predict
 ### 🟡 **The Dress Illusion**
 
 - People saw the same photo differently (white/gold vs black/blue).
-    
 - This wasn't about eyesight, but **how the brain interprets ambiguous sensory input**.
-    
 - Brain fills in gaps based on **assumptions and context**.
-    
 
 ---
 
 ### 🔵 **Prediction: A Survival Tool**
 
 - The brain constantly builds a **model of the world** to predict outcomes.
-    
 - Example: Predicting a falling bag from an overhead rack.
-    
 - Helps avoid danger through instinctive correction or prevention.
-    
 
 ---
 
 ### 🌟 **Filling in the Gaps**
 
 - Example: “Twinkle twinkle little…” → Brain predicts “star”.
-    
 - Shows how the brain uses **pattern recognition** to complete familiar phrases or expectations.
-    
 
 ---
 
 ### 🤭 **Tickling & Illusions**
 
 - Even without touch, ticklish people react — showing how **expectation triggers response**.
-    
 - Rubber Hand Illusion: Brain’s model makes people **feel pain** in a fake hand.
-    
 - Shows that **perception is constructed**, not always real.
-    
 
 ---
 
 ### 🔴 **Limits of Prediction**
 
 - The predictive brain evolved to **keep us safe in threatening environments**.
-    
 - In modern, safer settings, it can lead to **biases and incorrect conclusions**.
-    
 - Our brains might still “jump to conclusions” inappropriately.
-    
 
 ---
 
@@ -67,16 +53,12 @@ The brain doesn’t just passively receive information — it actively **predict
 |System 2|Slow, logical, deliberate|Can override System 1, analyze more deeply, and reduce errors.|
 
 - **Predictive brain mostly operates in System 1**.
-    
 - But for better judgment and problem-solving, **System 2 must be engaged**.
-    
 
 ---
 
 ## 📝 Conclusion
 
 - The brain’s **predictive nature** is powerful and efficient but not always accurate.
-    
 - **Awareness of prediction errors** and using **System 2 thinking** can improve decision-making.
-    
 - Balance intuition with analysis to avoid biases and perception errors.
