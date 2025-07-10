@@ -1,1 +1,2 @@
-# Obsidian
+## My Obsidian Notes 
+[[]()]
