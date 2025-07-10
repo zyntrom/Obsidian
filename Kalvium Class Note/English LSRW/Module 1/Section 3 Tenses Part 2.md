@@ -29,15 +29,10 @@
 ## 📍 **Signal Words for Future Tense**
 
 - **Simple Future**: tomorrow, next week, later, soon, in 2025
-    
 - **Be Going To**: tonight, this weekend, next month
-    
 - **Future Continuous**: at 5 PM, this time tomorrow
-    
 - **Future Perfect**: by 6 PM, before evening, by next month
-    
 - **Future Perfect Continuous**: for 3 hours, since morning, by then
-    
 
 ---
 
@@ -102,19 +97,12 @@ Fill in the blanks with correct past forms (simple/past perfect):
 Last week, Riya visited her grandmother...
 
 ### a) **Simple Present Tense**
-
 Riya visits her grandmother... wakes up early... helps... walks... enjoys...
-
 ### b) **Present Continuous Tense**
-
 Riya is visiting her grandmother... is waking up... is helping... is walking...
-
 ### c) **Present Perfect Tense**
-
 Riya has visited her grandmother... has woken up... has helped... has walked...
-
 ### d) **Present Perfect Continuous Tense**
-
 Riya has been visiting... has been helping... has been reading...
 
 ---

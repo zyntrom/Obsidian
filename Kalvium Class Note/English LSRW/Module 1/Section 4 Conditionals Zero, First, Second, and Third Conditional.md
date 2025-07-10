@@ -3,9 +3,7 @@
 Conditional sentences are used to express **possibilities**, **facts**, **hypotheticals**, and **regrets**. They contain:
 
 - **Condition (if-clause)**
-    
 - **Result (main clause)**
-    
 
 Example:  
 _If it rains (condition), we will stay indoors (result)._
@@ -16,10 +14,8 @@ _If it rains (condition), we will stay indoors (result)._
 
 - If **if-clause comes first**, use a comma.  
     ➤ _If it rains, we will stay indoors._
-    
 - If **main clause comes first**, no comma.  
     ➤ _We will stay indoors if it rains._
-    
 
 ---
 
@@ -28,11 +24,8 @@ _If it rains (condition), we will stay indoors (result)._
 Used for:
 
 - Scientific facts
-    
 - Rules
-    
 - Always true situations
-    
 
 **Structure:**  
 `If + present simple, … present simple`
@@ -49,9 +42,7 @@ Used for:
 ❌ Common Mistakes:
 
 - ❌ If an object had more density → ✅ If an object **has** more density
-    
 - ❌ If plants didn’t get sunlight → ✅ If plants **don’t get** sunlight
-    
 
 ---
 
@@ -60,9 +51,7 @@ Used for:
 Used for:
 
 - Likely future events
-    
 - Promises, warnings, advice
-    
 
 **Structure:**  
 `If + present simple, … will + base verb`  
@@ -84,11 +73,8 @@ _If you’re feeling sick, you should see a doctor._
 Used for:
 
 - **Unreal or imaginary** situations in the **present/future**
-    
 - **Advice**
-    
 - **Improbable events**
-    
 
 **Structure:**  
 `If + past simple, … would + base verb`
@@ -105,9 +91,7 @@ Used for:
 ❌ Common Mistakes:
 
 - ❌ If I am you → ✅ If I **were** you
-    
 - ❌ If she knows how to code → ✅ If she **knew** how to code
-    
 
 ---
 
@@ -116,11 +100,8 @@ Used for:
 Used for:
 
 - Regret
-    
 - Missed opportunities
-    
 - Imaginary past events
-    
 
 **Structure:**  
 `If + past perfect, … would have + past participle`
@@ -142,7 +123,6 @@ Used for:
 Used for:
 
 - Connecting **different time frames**
-    
 
 ---
 
@@ -183,25 +163,15 @@ Used for:
 ## 🧠 **Practice – Identify the Conditional Type**
 
 1. If my parents had not consented, my life would have been different. → **Third**
-    
 2. If we let them know, they will do something. → **First**
-    
 3. If I had an invisibility cloak, I could disappear. → **Second**
-    
 4. If she had not gone home, she would have been happier. → **Third**
-    
 5. If nobody understood you, you could leave. → **Second**
-    
 6. If you don’t follow rules, you will be punished. → **First**
-    
 7. If I had magical powers, I could change the world. → **Second**
-    
 8. If you eat fast food daily, you get sick. → **Zero**
-    
 9. If they stay indoors, they will not get sick. → **First**
-    
 10. If I were a bird, I’d fly around. → **Second**
-    
 
 ---
 
@@ -209,15 +179,11 @@ Used for:
 
 - **Zero:**  
     If you mix red and white, you get pink.
-    
 - **First:**  
     If you drink this, you will feel better.
-    
 - **Second:**  
     If I were the teacher, I would give less homework.
-    
 - **Third:**  
     If she had spoken up, we would have known the truth.
-    
 - **Mixed:**  
     If I had joined that course, I would be skilled now.

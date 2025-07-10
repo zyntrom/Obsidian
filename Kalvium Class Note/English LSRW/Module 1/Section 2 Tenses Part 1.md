@@ -7,11 +7,8 @@
 Tenses indicate **when** an action happens:
 
 - **Present** – Now or generally true
-    
 - **Past** – Already happened
-    
 - (Future – will be covered in Part 2)
-    
 
 Tense choice affects **clarity, impact, and meaning** of your message.
 
@@ -110,13 +107,10 @@ Tense choice affects **clarity, impact, and meaning** of your message.
 
 - **Martin Luther King Jr.**:  
     _“I have a dream”_ → Present Perfect → Ongoing relevance
-    
 - **Julius Caesar**:  
     _“I came, I saw, I conquered”_ → Simple Past → Completed success
-    
 - **Richard Nixon**:  
     _“I am not a crook”_ vs _“I was not a crook”_ → Changes public perception
-    
 
 ---
 

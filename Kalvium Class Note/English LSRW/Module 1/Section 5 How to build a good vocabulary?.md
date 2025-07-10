@@ -9,9 +9,7 @@ Prefixes and suffixes are **word parts** that attach to the **root word** to cha
 ### ✅ Prefix
 
 - **Added to the beginning** of a word
-    
 - **Changes the word’s meaning**
-    
 
 **Examples:**
 
@@ -31,9 +29,7 @@ If you know the **meaning of the prefix**, you can guess the word's meaning.
 ### ✅ Suffix
 
 - **Added to the end** of a word
-    
 - Often **changes word type** (noun, verb, adjective, etc.)
-    
 
 **Examples:**
 
@@ -163,10 +159,8 @@ It is **not a full sentence**, but adds **detail, emotion, or meaning**.
 ### 🆚 Phrase vs Phrasal Verb
 
 - **Phrase** = Descriptive group of words
-    
 - **Phrasal Verb** = Verb + preposition with new meaning  
     → _Look up, break down, run out, put off_
-    
 
 ---
 
@@ -174,19 +168,14 @@ It is **not a full sentence**, but adds **detail, emotion, or meaning**.
 
 1. **Learn root words, prefixes, suffixes**  
     → Helps guess meanings
-    
 2. **Use entertainment (movies, songs)**  
     → Makes learning memorable
-    
 3. **Group similar words together**  
     → Example: Malnutrition, Malpractice (mal = bad)
-    
 4. **Practice with phrases & idioms**  
     → Helps with fluency and understanding tone
-    
 5. **Review regularly**  
     → Space repetition helps long-term memory
-    
 
 ---
 

@@ -7,13 +7,9 @@
 By the end of this lesson, you will be able to:
 
 - Explain how materials conduct electricity and interact with light.
-    
 - Distinguish between **conductors**, **semiconductors**, and **insulators**.
-    
 - Define **resistivity**, **dielectric behavior**, and **refractive index**.
-    
 - Identify real-world applications of electrical and optical materials.
-    
 
 ---
 
@@ -30,11 +26,8 @@ By the end of this lesson, you will be able to:
 💡 **Band Theory** explains these:
 
 - **Conductors**: No energy gap between bands
-    
 - **Semiconductors**: Small, controllable gap
-    
 - **Insulators**: Large gap → electrons can't jump
-    
 ![[Pasted image 20250710141022.png]]
 ---
 
@@ -49,24 +42,17 @@ By the end of this lesson, you will be able to:
 🔌 Example:
 
 - **Copper**: Low resistivity → ideal for wiring.
-    
 - **Nichrome**: High resistivity → used in heaters.
-    
 - **Superconductors**: Zero resistivity below critical temperatures → no energy loss!
-    
 
 ---
 
 ### 🧲 **Dielectric Properties**
 
 - **Dielectrics** don’t conduct electricity, but store electrical energy in an electric field.
-    
 - Used in **capacitors**.
-    
 - **Relative Permittivity (εr)**: Indicates how much energy a dielectric can store.
-    
 - Examples: Glass, mica, ceramic.
-    
 
 🔋 _Think of dielectrics as energy “sponges.”_
 
@@ -86,11 +72,8 @@ By the end of this lesson, you will be able to:
 🎨 **Transparency**:
 
 - **Transparent**: Light passes through (glass)
-    
 - **Translucent**: Some light passes (frosted glass)
-    
 - **Opaque**: No light passes (wood)
-    
 
 ---
 
@@ -107,11 +90,8 @@ By the end of this lesson, you will be able to:
 🔦 **Examples**:
 
 - **LEDs**: Emit light when current flows.
-    
 - **Lasers**: Emit focused, coherent light.
-    
 - **Photodetectors**: Detect light (e.g. in cameras, remotes).
-    
 
 ---
 
@@ -160,11 +140,7 @@ By the end of this lesson, you will be able to:
 ## 🧾 Summary — What You've Learned
 
 - **Electrical behavior** depends on **resistivity** and **material type** (conductor, semiconductor, insulator).
-    
 - **Dielectrics** store electrical energy → essential for **capacitors**.
-    
 - **Optical behavior** includes **reflection, refraction, absorption, transmission**.
-    
 - **Refractive index** and **photoelectric effects** power modern tech like **LEDs**, **solar cells**, and **fiber optics**.
-    
 - **Material choice matters** — electronics, vehicles, and communications all depend on matching the right properties to the job.
