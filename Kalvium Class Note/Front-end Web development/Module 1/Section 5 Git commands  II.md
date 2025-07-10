@@ -9,15 +9,9 @@ This lesson dives into **advanced Git concepts** such as **branching, merging, m
 ### 🌿 Branching: Creating Parallel Universes
 
 - **Branch**: A separate line of development.
-    
 - Useful when working on new features without affecting the main code.
-    
 
 #### 📌 Commands:
-
-bash
-
-CopyEdit
 
 `git branch <branch_name>       # Create a branch` 
 `git checkout <branch_name>     # Switch to a branch` 
@@ -34,28 +28,17 @@ Merging integrates changes from one branch (like a feature branch) into another 
 
 #### 📌 Commands:
 
-bash
-
-CopyEdit
-
 `git checkout main              # Switch to main branch git merge <branch_name>        # Merge the branch into main`
 
 - **Fast-forward merge**: When the target branch has no new commits, Git just moves the pointer.
-    
 - **True merge**: When both branches have diverged; Git creates a _merge commit_.
-    
 
 ---
 
 ### ⚠️ Merge Conflicts: When Timelines Collide
 
 Conflicts happen when two branches have conflicting changes in the same file.
-
 #### 🛠 Identifying Conflicts:
-
-bash
-
-CopyEdit
 
 `git status`
 
@@ -63,24 +46,13 @@ Shows files that are both modified.
 
 #### 🛠 Conflict Markers in Code:
 
-text
-
-CopyEdit
-
 `<<<<<<< HEAD Code from current branch ======= Code from the branch you're merging >>>>>>> new-feature`
 
 #### 🛠 Steps to Resolve:
 
 1. Open the file and manually edit the conflicting sections.
-    
 2. Remove the conflict markers (`<<<<<<<`, `=======`, `>>>>>>>`).
-    
 3. Stage the file:
-    
-    bash
-    
-    CopyEdit
-    
     `git add <file>`
     
 4. Complete the merge:

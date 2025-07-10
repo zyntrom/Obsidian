@@ -76,20 +76,14 @@ Websites work by a browser requesting data from a server and rendering the conte
 Use these free platforms to **revise and practice**:
 
 - [freeCodeCamp.org](https://www.freecodecamp.org/)
-    
 - [Codecademy](https://www.codecademy.com/)
-    
 - [Khan Academy](https://www.khanacademy.org/computing/computer-programming)
-    
 
 ---
 
 ## 📌 Final Tip for Exams
 
 - Understand the **workflow** of how websites load and work.
-    
 - Be ready to **explain the frontend-backend difference**.
-    
 - Use real-life analogies (restaurant example) to explain terms clearly.
-    
 - Review basic HTML & CSS structure before the next module.

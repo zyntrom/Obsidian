@@ -5,11 +5,8 @@ A **development environment** is the set of tools and software used to **write, 
 This lesson guides you through preparing your computer with:
 
 - A **code editor** (Visual Studio Code)
-    
 - A **browser with developer tools** (like Google Chrome)
-    
 - **Useful extensions**, good practices, and troubleshooting tips
-    
 
 ---
 
@@ -18,11 +15,8 @@ This lesson guides you through preparing your computer with:
 ### 🧰 What is a Development Environment?
 
 - It’s like an **artist’s studio** for developers.
-    
 - A space with all tools needed to **create, edit, view, and fix** your websites.
-    
 - Helps improve speed, accuracy, and organization in your work.
-    
 
 ---
 
@@ -39,34 +33,22 @@ This lesson guides you through preparing your computer with:
 ### 💻 Installing Visual Studio Code (VS Code)
 
 1. Go to [https://code.visualstudio.com](https://code.visualstudio.com) and download it.
-    
 2. Install it using default settings (keep clicking **Next**).
-    
 3. Launch it and explore the interface (sidebar, editor space, etc.)
-    
 
 ---
 
 ### 🌐 Setting Up Google Chrome for Web Dev
 
 - Download from [https://google.com/chrome](https://google.com/chrome) if not already installed.
-    
 - **Open Developer Tools**:
-    
     - Right-click → “Inspect”
-        
     - Or press `F12` / `Ctrl+Shift+I` (`Cmd+Opt+I` on Mac)
-        
 - Use DevTools to inspect:
-    
     - **HTML structure**
-        
     - **CSS styles**
-        
     - **JavaScript**
-        
     - **Network performance**
-        
 
 ---
 
@@ -97,26 +79,17 @@ Click Extensions icon in VS Code → Search → Click **Install**
 ### 🧼 Best Practices for Your Coding Workspace
 
 - **Keep it clean**: Close unrelated files/tabs to reduce clutter.
-    
 - **Save often**: Use `Ctrl+S` / `Cmd+S` regularly.
-    
 - **Use meaningful file names**: e.g., `contact-form.html`, not `test.html`.
-    
 - **Backup regularly**: Use cloud storage or external drives.
-    
 
 ---
 
 ## 📘 Important Points to Remember (Exam-Focused)
 
 - **Development Environment** = workspace with tools for coding websites.
-    
 - VS Code = Most popular free code editor for frontend dev.
-    
 - Chrome Developer Tools = Helps inspect, test, and debug web pages.
-    
 - Extensions improve **workflow**, **speed**, and **accuracy**.
-    
 - Live Server = Real-time preview tool; helps while learning HTML/CSS.
-    
 - Good habits early = Clean, efficient code and projects.

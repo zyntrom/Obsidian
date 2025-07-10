@@ -9,19 +9,12 @@ A **Version Control System (VCS)** is a tool that tracks changes in code and fil
 ### 🛠️ What is a Version Control System?
 
 - VCS = “**Time machine for code**”
-    
 - Tracks every change made to files.
-    
 - Lets you:
-    
     - See change history
-        
     - Restore old versions
-        
     - Collaborate with others safely
-        
 - Example: Instead of `project_final_v2_reallyfinal.html`, Git gives you clean, timestamped versions.
-    
 
 ---
 
@@ -52,9 +45,7 @@ VCS = Avoids chaos and ensures **organized, reliable teamwork**.
 ### 🧠 Meet Git: The Industry Standard
 
 - Created by **Linus Torvalds** (creator of Linux).
-    
 - Used by companies like **Google, Meta, Netflix**.
-    
 
 **Why Git is so popular:**
 
@@ -84,19 +75,11 @@ Multiple developers can work on the same codebase without overwriting each other
 ## 📘 Important Points to Remember (Exam-Focused)
 
 - **VCS** = system to **track, manage, and restore** code changes.
-    
 - Git = most used **distributed version control system**.
-    
 - Git is **free, fast, flexible**, and **highly reliable**.
-    
 - Git solves major developer problems like:
-    
     - Mistakes
-        
     - Loss of code
-        
     - Multi-person conflicts
-        
 - Distributed > Centralized > Local (in terms of capability)
-    
 - Git enables **branching**, which supports safer experimentation.
