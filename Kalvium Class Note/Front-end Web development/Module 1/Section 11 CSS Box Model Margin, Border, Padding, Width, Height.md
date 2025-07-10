@@ -1,23 +1,15 @@
 ## 🎯 Learning Objectives
 
 - Understand the **CSS box model**
-    
 - Use **margin**, **padding**, and **border** to space and style elements
-    
 - Control element dimensions using **width** and **height**
-    
 - Visualize how all parts of a box add up in layout
-    
 
 ---
 
 ## 📦 What is the CSS Box Model?
 
 Each HTML element is a _rectangle box_ made of 4 parts:
-
-mathematica
-
-CopyEdit
 
 `| Margin |   ← Outside spacing | Border |   ← Visible outline | Padding | ← Inside spacing | Content | ← Actual text or media`
 
@@ -31,10 +23,6 @@ Think of it like:
 
 Adds space _outside_ the border — keeps distance from other elements.
 
-css
-
-CopyEdit
-
 `.box {   margin-top: 20px;   margin-right: 30px;   margin-bottom: 15px;   margin-left: 25px; }`
 
 🔹 Shorthand: `margin: 20px 30px 15px 25px; /* top right bottom left */`
@@ -45,19 +33,11 @@ CopyEdit
 
 Draws a line around the element (outside padding).
 
-css
-
-CopyEdit
-
 `.box {   border-width: 3px;   border-style: solid;   border-color: black; }`
 
 🎨 **Styles**: `solid`, `dashed`, `dotted`, `double`, `ridge`, `groove`
 
 Custom sides:
-
-css
-
-CopyEdit
 
 `.box {   border-top: 2px dashed red;   border-bottom: 3px dotted blue; }`
 
@@ -66,10 +46,6 @@ CopyEdit
 ## 🟢 **Padding** – Inside Space
 
 Creates space between content and border (inside the box).
-
-css
-
-CopyEdit
 
 `.box {   padding-top: 10px;   padding-right: 15px;   padding-bottom: 10px;   padding-left: 15px; }`
 
@@ -81,17 +57,9 @@ CopyEdit
 
 Controls only the content area size (not padding, border, or margin).
 
-css
-
-CopyEdit
-
 `.box {   width: 200px;   height: 100px; }`
 
 📱 Responsive:
-
-css
-
-CopyEdit
 
 `.box {   width: 50%;   height: 30vh; }`
 
@@ -103,10 +71,6 @@ CopyEdit
 `width + padding (L+R) + border (L+R) + margin (L+R)`
 
 ### Example:
-
-css
-
-CopyEdit
 
 `.box {   width: 200px;   height: 100px;   padding: 20px;   border: 5px solid;   margin: 30px; }`
 

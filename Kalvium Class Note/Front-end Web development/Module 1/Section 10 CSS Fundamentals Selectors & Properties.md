@@ -1,11 +1,8 @@
 ## 🧠 Learning Objectives
 
 - Understand **CSS selectors** and their use
-    
 - Style elements using **tag, class, ID,** and **pseudo-class** selectors
-    
 - Build responsive, interactive designs with proper targeting
-    
 
 ---
 
@@ -23,15 +20,7 @@ These apply styles to **all tags** of a specific type.
 
 ### 🧪 Example:
 
-html
-
-CopyEdit
-
 `<h1>Hello</h1> <p>This is a paragraph.</p>`
-
-css
-
-CopyEdit
 
 `h1 {   color: blue; } p {   font-size: 16px; }`
 
@@ -46,15 +35,7 @@ Target **multiple** elements that share the same class.
 
 ### 🧪 Example:
 
-html
-
-CopyEdit
-
 `<p class="highlight">Important text</p> <div class="highlight">Special div</div>`
-
-css
-
-CopyEdit
 
 `.highlight {   background-color: yellow;   padding: 10px; }`
 
@@ -68,15 +49,7 @@ Used to target **exactly one unique** element on the page.
 
 ### 🧪 Example:
 
-html
-
-CopyEdit
-
 `<h1 id="main-title">My Website</h1>`
-
-css
-
-CopyEdit
 
 `#main-title {   color: green;   text-align: center; }`
 
@@ -90,15 +63,7 @@ These apply styles based on **user interaction** or **element state**.
 
 ### 🧪 Example:
 
-html
-
-CopyEdit
-
 `<a href="#">Hover over me</a>`
-
-css
-
-CopyEdit
 
 `a {   color: blue;   text-decoration: none; }  a:hover {   color: red;   text-decoration: underline; }`
 
