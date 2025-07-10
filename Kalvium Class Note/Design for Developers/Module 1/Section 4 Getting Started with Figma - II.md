@@ -1,12 +1,3 @@
----
-
-## 🧠 Design for Developers — Lesson 4 Notes
-
-**Lesson Title:** _Getting Started with Figma – II_  
-**Module:** Why Design for Developers
-
----
-
 ## 🎨 Building Visual Polish in Figma
 
 After learning the basics of Figma’s interface and tools in the previous lesson, this lesson focuses on **visual design**, **alignment**, and **precision techniques** to make your interfaces look **clean, modern, and professional**.
