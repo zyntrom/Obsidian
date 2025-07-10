@@ -111,13 +111,13 @@ CopyEdit
 
 ## ✅ Summary
 
-|Feature|Description|
-|---|---|
-|Flexbox|Used for navigation and horizontal layouts|
-|Grid|Used for multi-column pizza/menu layout|
-|Media Queries|Mobile-friendly stacking and responsive design|
-|Fonts/Colors|Custom font, bold palette for brand identity|
-|Spacing & Padding|Controlled with rem/px and border-radius|
-|Hover Effects|Interactive buttons with transitions|
-|Units|`%`, `vw`, `rem` for flexible layouts|
-|Positioning & Z-Index|Layering content with `absolute`, `z-index`|
+| Feature               | Description                                    |
+| --------------------- | ---------------------------------------------- |
+| Flexbox               | Used for navigation and horizontal layouts     |
+| Grid                  | Used for multi-column pizza/menu layout        |
+| Media Queries         | Mobile-friendly stacking and responsive design |
+| Fonts/Colors          | Custom font, bold palette for brand identity   |
+| Spacing & Padding     | Controlled with rem/px and border-radius       |
+| Hover Effects         | Interactive buttons with transitions           |
+| Units                 | `%`, `vw`, `rem` for flexible layouts          |
+| Positioning & Z-Index | Layering content with `absolute`, `z-index`    |
