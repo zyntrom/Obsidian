@@ -122,9 +122,9 @@ Tense choice affects **clarity, impact, and meaning** of your message.
 
 ## ✍️ **Summary Chart: Present vs Past Tenses**
 
-|Tense Type|Present|Past|
-|---|---|---|
-|Simple|She **goes** to school.|She **went** to school.|
-|Continuous|She **is going** to school.|She **was going** to school.|
-|Perfect|She **has gone** to school.|She **had gone** to school.|
-|Perfect Continuous|She **has been going** to school.|She **had been going** to school.|
+| Tense Type         | Present                           | Past                              |
+| ------------------ | --------------------------------- | --------------------------------- |
+| Simple             | She **goes** to school.           | She **went** to school.           |
+| Continuous         | She **is going** to school.       | She **was going** to school.      |
+| Perfect            | She **has gone** to school.       | She **had gone** to school.       |
+| Perfect Continuous | She **has been going** to school. | She **had been going** to school. |
