@@ -36,17 +36,21 @@ Understand how to convert **mathematical formulas** and logic into **code instru
 
 **Python:**
 
-`speed = 60  # km/h` 
-`time = 2    # hours` 
-`distance = speed * time` 
-`print(distance)  # 120`
+```python
+speed = 60  # km/h 
+time = 2    # hours 
+distance = speed * time 
+print(distance)  # 120
+```
 
 **C++:**
 
-`int speed = 60;` 
-`int time = 2;` 
-`int distance = speed * time;` 
-`cout << distance;  // 120`
+```c++
+int speed = 60; 
+int time = 2; 
+int distance = speed * time; 
+cout << distance;  // 120
+```
 
 ---
 
@@ -57,20 +61,24 @@ Understand how to convert **mathematical formulas** and logic into **code instru
 
 **Python:**
 
-`import math` 
-`r = 5 area = math.pi * r ** 2` 
-`print(area)  # 78.53981633974483`
+```python
+import math 
+r = 5 area = math.pi * r ** 2 
+print(area)  # 78.53981633974483
+```
 
 **C++:**
 
-`#include <iostream>` 
-`#include <cmath>` 
-`using namespace std;`  
-`int main() {`     
-`double r = 5;`     
-`double area = M_PI * pow(r, 2);`     
-`cout << area;  // 78.5398`     
-`return 0; }``
+```c++
+#include <iostream> 
+#include <cmath> 
+using namespace std;  
+int main() {     
+double r = 5;     
+double area = M_PI * pow(r, 2);     
+cout << area;  // 78.5398     
+return 0; }
+```
 
 🧠 **Note:**
 

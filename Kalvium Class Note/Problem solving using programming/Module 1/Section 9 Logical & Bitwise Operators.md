@@ -21,10 +21,12 @@ Logical operators help a program **make decisions** based on conditions that are
 
 #### 🧪 Python Example:
 
-`age = 25` 
-`has_license = True`  
-`if age >= 18 and has_license:`     
-`print("Eligible to drive")  # ✅`
+```python
+age = 25 
+has_license = True  
+if age >= 18 and has_license:     
+print("Eligible to drive")  # ✅
+```
 
 ---
 
@@ -45,14 +47,16 @@ Bitwise operators act on **individual bits** (0 or 1) of integers, offering **lo
 
 #### 🧪 Python Example:
 
-`a = 5  # 0101` 
-`b = 3  # 0011`  
-`print(a & b)  # 1` 
-`print(a | b)  # 7` 
-`print(a ^ b)  # 6` 
-`print(~a)     # -6` 
-`print(a << 2) # 20` 
-`print(20 >> 2)# 5`
+```python
+a = 5  # 0101 
+b = 3  # 0011  
+print(a & b)  # 1 
+print(a | b)  # 7 
+print(a ^ b)  # 6 
+print(~a)     # -6 
+print(a << 2) # 20 
+print(20 >> 2)# 5
+```
 
 ---
 
@@ -73,16 +77,18 @@ Bitwise operators act on **individual bits** (0 or 1) of integers, offering **lo
 
 ### 🔒 Real-World Example: File Permissions
 
-`READ = 4     # 100` 
-`WRITE = 2    # 010` 
-`EXECUTE = 1  # 001`  
-`user_permissions = 5  # 101 → READ & EXECUTE`  
-`if user_permissions & READ:`     
-`print("Read access ✅")` 
-`if user_permissions & WRITE:`     
-`print("Write access ✅")` 
-`else:`     
-`print("No Write access ❌")`
+```
+READ = 4     # 100 
+WRITE = 2    # 010 
+EXECUTE = 1  # 001  
+user_permissions = 5  # 101 → READ & EXECUTE  
+if user_permissions & READ:     
+print("Read access ✅") 
+if user_permissions & WRITE:     
+print("Write access ✅") 
+else:     
+print("No Write access ❌")
+```
 
 ---
 
