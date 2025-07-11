@@ -3,11 +3,8 @@
 Flexbox Froggy is an **interactive game** where you:
 
 - Use **CSS Flexbox** properties
-    
 - Guide **frogs** to their correct **lilypads**
-    
 - Practice and understand layout techniques in a **fun**, **visual** way
-    
 
 ---
 
@@ -17,13 +14,9 @@ By playing this game, you will:
 
 - Practice important Flexbox properties:  
     `justify-content`, `align-items`, `flex-direction`
-    
 - Improve **problem-solving** using layout rules
-    
 - Gain **hands-on experience** with layout positioning
-    
 - Build confidence in **real-world CSS usage**
-    
 
 ---
 

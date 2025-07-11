@@ -1,9 +1,7 @@
 ## 📦 What is Flexbox?
 
 - **Flexbox (Flexible Box)** is a CSS layout model that helps arrange items **in one direction** — either row or column.
-    
 - Great for **responsive**, **neatly aligned**, and **evenly spaced** layouts.
-    
 
 > Think of it like arranging books or buttons on a shelf that can stretch, shrink, or align smartly.
 
@@ -13,11 +11,9 @@
 
 Make any element a flex container using:
 
-css
-
-CopyEdit
-
-`.container {   display: flex; /* or inline-flex */ }`
+```css
+.container {   display: flex; /* or inline-flex */ }
+```
 
 Inside, **child elements** become flex items.
 
@@ -31,7 +27,14 @@ css
 
 CopyEdit
 
-`.container {   flex-direction: row;         /* default: left to right */   flex-direction: row-reverse; /* right to left */   flex-direction: column;      /* top to bottom */   flex-direction: column-reverse; /* bottom to top */ }`
+```css
+.container {   
+	flex-direction: row;         /* default: left to right */   
+	flex-direction: row-reverse; /* right to left */   
+	flex-direction: column;      /* top to bottom */   
+	flex-direction: column-reverse; /* bottom to top */ 
+	}
+```
 
 🧭 Main axis = Direction of flow  
 🕸️ Cross axis = Perpendicular to main axis
@@ -46,7 +49,15 @@ css
 
 CopyEdit
 
-`.container {   justify-content: flex-start;    /* default */   justify-content: flex-end;   justify-content: center;   justify-content: space-between;   justify-content: space-around;   justify-content: space-evenly; }`
+```css
+.container {   
+justify-content: flex-start;    /* default */   
+justify-content: flex-end;   
+justify-content: center;   
+justify-content: space-between;   
+justify-content: space-around;   
+justify-content: space-evenly; }
+```
 
 🧠 Use for spacing: evenly, centered, pushed to sides, etc.
 
@@ -60,23 +71,37 @@ css
 
 CopyEdit
 
-`.container {   align-items: stretch;      /* default - fills container */   align-items: flex-start;   /* top */   align-items: flex-end;     /* bottom */   align-items: center;       /* center vertically */   align-items: baseline;     /* aligns text baselines */ }`
+```css
+.container {   
+align-items: stretch;      /* default - fills container */   
+align-items: flex-start;   /* top */   
+align-items: flex-end;     /* bottom */   
+align-items: center;       /* center vertically */   
+align-items: baseline;     /* aligns text baselines */ }
+```
 
 ---
 
 ## ✍️ Example
 
-html
+```html
+<div class="container">   
+	<div class="item">A</div>   
+	<div class="item">B</div>   
+	<div class="item">C</div>
+</div>
+```
 
-CopyEdit
-
-`<div class="container">   <div class="item">A</div>   <div class="item">B</div>   <div class="item">C</div> </div>`
-
-css
-
-CopyEdit
-
-`.container {   display: flex;   flex-direction: row;   justify-content: space-around;   align-items: center; } .item {   padding: 20px;   background: lightblue; }`
+```css
+.container {   
+	display: flex;   
+	flex-direction: row;   
+	justify-content: space-around;   
+	align-items: center; } 
+.item {   
+	padding: 20px;   
+	background: lightblue; }
+```
 
 ---
 

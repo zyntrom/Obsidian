@@ -32,23 +32,33 @@ It gives you **fine-grained control** over layout, movement, and stacking order.
 
 #### Static (Default)
 
-`div {   position: static; }`
+```css
+div {   position: static; }
+```
 
 #### Relative
 
-`div {   position: relative;   top: 20px;   left: 10px; }`
+```css
+div {   position: relative;   top: 20px;   left: 10px; }
+```
 
 #### Absolute
 
-`.container {   position: relative; }  .child {   position: absolute;   top: 50px;   left: 0; }`
+```css
+.container {   position: relative; }  .child {   position: absolute;   top: 50px;   left: 0; }
+```
 
 #### Fixed
 
-`.footer {   position: fixed;   bottom: 0;   width: 100%; }`
+```css
+.footer {   position: fixed;   bottom: 0;   width: 100%; }
+```
 
 #### Sticky
 
-`.header {   position: sticky;   top: 0;   background: lightblue; }`
+```css
+.header {   position: sticky;   top: 0;   background: lightblue; }
+```
 
 ---
 

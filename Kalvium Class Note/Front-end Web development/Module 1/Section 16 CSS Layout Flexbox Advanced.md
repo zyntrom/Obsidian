@@ -1,38 +1,27 @@
 ## 🌟 What You’ll Learn
 
 - `flex-grow`: distribute **extra** space
-    
 - `flex-shrink`: control how items **shrink**
-    
 - `flex-basis`: set **initial size**
-    
 - `flex`: shorthand for all three
-    
 - `order`: rearrange item **positions**
-    
 
 ---
 
 ## 🔼 1. `flex-grow`: Who gets the extra space?
 
 - Controls how much an item **grows** if extra space is available.
-    
 - Default is `0` (does **not** grow).
-    
 
-css
-
-CopyEdit
-
-`.item {   flex-grow: 1; /* all items share space equally */ }`
+```css
+.item {   flex-grow: 1; /* all items share space equally */ }
+```
 
 If:
 
-css
-
-CopyEdit
-
-`.item-1 { flex-grow: 2; } .item-2 { flex-grow: 1; }`
+```css
+.item-1 { flex-grow: 2; } .item-2 { flex-grow: 1; }
+```
 
 → Item 1 gets **2x** more extra space than Item 2.
 
@@ -41,23 +30,17 @@ CopyEdit
 ## 🔽 2. `flex-shrink`: Who shrinks when space is tight?
 
 - Controls how much an item **shrinks** when there’s **not enough space**.
-    
 - Default is `1` (can shrink).
-    
 
-css
-
-CopyEdit
-
-`.item {   flex-shrink: 1; }`
+```css
+.item {   flex-shrink: 1; }
+```
 
 If:
 
-css
-
-CopyEdit
-
-`.item-1 { flex-shrink: 2; } .item-2 { flex-shrink: 1; }`
+```css
+.item-1 { flex-shrink: 2; } .item-2 { flex-shrink: 1; }
+```
 
 → Item 1 shrinks **twice as fast**.
 
@@ -66,13 +49,10 @@ CopyEdit
 ## 📏 3. `flex-basis`: Starting size of the item
 
 - Sets the **initial** width/height before grow or shrink is applied.
-    
 
-css
-
-CopyEdit
-
-`.item {   flex-basis: 200px; }`
+```css
+.item {   flex-basis: 200px; }
+```
 
 Can be in `px`, `%`, `em`, or `auto`.
 
@@ -80,11 +60,9 @@ Can be in `px`, `%`, `em`, or `auto`.
 
 ## ✂️ 4. `flex`: Shorthand for all three
 
-css
-
-CopyEdit
-
-`.item {   flex: <flex-grow> <flex-shrink> <flex-basis>; }`
+```css
+.item {   flex: <flex-grow> <flex-shrink> <flex-basis>; }
+```
 
 ### Common Shorthand Examples:
 
@@ -104,7 +82,9 @@ css
 
 CopyEdit
 
-`.item {   order: 2; /* default is 0 */ }`
+```css
+.item {   order: 2; /* default is 0 */ }
+```
 
 Lower `order` value appears **first**. Use to reorder elements **visually** without changing HTML.
 
@@ -112,20 +92,14 @@ Lower `order` value appears **first**. Use to reorder elements **visually** with
 
 ## 🎯 Final Example
 
-css
-
-CopyEdit
-
-`.item {   flex: 2 1 150px;   order: 1; }`
+```css
+.item {   flex: 2 1 150px;   order: 1; }
+```
 
 - Grows a lot
-    
 - Shrinks if needed
-    
 - Starts at 150px
-    
 - Appears after `order: 0` items
-    
 
 ---
 
