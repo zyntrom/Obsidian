@@ -98,6 +98,8 @@ The course is split into **5 modules** that blend science with real-world and te
 
 ### 🧠 Final Takeaway
 
+![[Pasted image 20250711143549.png]]
+
 You now know:
 
 - **Science is the invisible engine** behind everyday tools and technologies.

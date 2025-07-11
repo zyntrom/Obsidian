@@ -24,6 +24,8 @@ These everyday experiences are all governed by **heat and temperature**—invisi
 
 ## 🔁 What Is Heat Transfer?
 
+![[Pasted image 20250711143621.png]]
+
 **Heat = energy in motion**, always trying to spread from hot to cold. It travels through **3 modes**:
 
 |Mode|Medium Needed?|How it Works|Real-Life Example|
@@ -57,6 +59,8 @@ These everyday experiences are all governed by **heat and temperature**—invisi
 ---
 
 ### 🌬️ **2. Convection: Heat by Flowing Fluids**
+
+![[Pasted image 20250711143635.png]]
 
 > **Definition**: Transfer of heat through **movement of liquids or gases**.
 
@@ -118,6 +122,8 @@ These everyday experiences are all governed by **heat and temperature**—invisi
 
 ### 🔹 Zeroth Law: **Thermal Equilibrium**
 
+![[Pasted image 20250711143652.png]]
+
 If A = B and B = C, then A = C (All reach the same temp over time)
 
 🧊 _Hot tea cools in room until same temp as air_
@@ -164,6 +170,7 @@ If A = B and B = C, then A = C (All reach the same temp over time)
     ✅ Classify it as **conduction**, **convection**, or **radiation**
 
 ---
+![[Pasted image 20250711143703.png]]
 
 ## 🧠 Final Recap
 

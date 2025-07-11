@@ -20,6 +20,8 @@ By the end of this lesson, you will:
 
 ### 🧪 **Definitions of Acids & Bases**
 
+![[Pasted image 20250711143745.png]]
+
 #### 1. **Arrhenius Theory**
 
 - **Acid**: Produces H⁺ in water. (e.g., HCl → H⁺ + Cl⁻)
@@ -51,6 +53,8 @@ By the end of this lesson, you will:
 
 ### ⚗️ **Neutralization Reactions**
 
+![[Pasted image 20250711143807.png]]
+
 - **Definition**: Acid + Base → Salt + Water
 - **Example**:  
     HCl + NaOH → NaCl + H₂O
@@ -75,12 +79,23 @@ By the end of this lesson, you will:
 
 ### 🧪 **Acid-Base Indicators**
 
-|Indicator|In Acid|In Base|
-|---|---|---|
-|Litmus Paper|Blue → Red|Red → Blue|
-|Phenolphthalein|Colorless|Pink|
-|Bromothymol Blue|Yellow|Blue|
-|Universal Indicator|Red/Orange (Acid) → Blue/Purple (Base)||
+Litmus Paper:
+![[Pasted image 20250711143823.png]]
+
+Phenolphthalein:
+![[Pasted image 20250711143831.png]]
+
+
+![[Pasted image 20250711144031.png]]
+
+![[Pasted image 20250711144018.png]]
+
+| Indicator           | In Acid                                | In Base    |
+| ------------------- | -------------------------------------- | ---------- |
+| Litmus Paper        | Blue → Red                             | Red → Blue |
+| Phenolphthalein     | Colorless                              | Pink       |
+| Bromothymol Blue    | Yellow                                 | Blue       |
+| Universal Indicator | Red/Orange (Acid) → Blue/Purple (Base) |            |
 
 ---
 
