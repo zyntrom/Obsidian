@@ -22,3 +22,6 @@
 
 ![[Pasted image 20250711131435.png]]
 
+- Adding the 2nd last digits of both numbers: 
+
+![[Pasted image 20250711165102.png]]
