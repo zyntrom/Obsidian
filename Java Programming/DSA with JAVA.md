@@ -25,7 +25,13 @@
 
 - Definition:
 
-`class ListNode {     int val;     ListNode next;     ListNode(int x) { val = x; } }`
+```java
+class ListNode {     
+	int val;     
+	ListNode next;    
+	ListNode(int x) { val = x; } 
+}
+```
 
 - Traversal: `while (node != null) { node = node.next; }`
 
@@ -55,7 +61,13 @@
 
 - Definition:
 
-`class TreeNode {     int val;     TreeNode left, right;     TreeNode(int x) { val = x; } }`
+```java
+class TreeNode {     
+	int val;     
+	TreeNode left, right;     
+	TreeNode(int x) { val = x; } 
+}
+```
 
 - Traversal: Preorder, Inorder, Postorder, Level-order (BFS)
 
@@ -76,7 +88,9 @@
 
 - Representation:
 
-`List<List<Integer>> adj = new ArrayList<>(); Map<Integer, List<Integer>> graph = new HashMap<>();`
+```java
+List<List<Integer>> adj = new ArrayList<>(); Map<Integer, List<Integer>> graph = new HashMap<>();
+```
 
 - Traversal: DFS, BFS
 
@@ -88,7 +102,12 @@
 
 - TrieNode class with 26 children (for lowercase letters)
 
-`class TrieNode {     TrieNode[] children = new TrieNode[26];     boolean isEnd; }`
+```java
+class TrieNode {     
+	TrieNode[] children = new TrieNode[26];     
+	boolean isEnd; 
+}
+```
 
 **Key Topics:** Insert/Search, Prefix Match, Word Dictionary, Ternary Search Tree
 
@@ -104,7 +123,10 @@
 
 ### 11. Disjoint Set (Union Find)
 
-`int[] parent = new int[n]; int find(int x) { return parent[x] == x ? x : (parent[x] = find(parent[x])); } void union(int a, int b) { parent[find(a)] = find(b); }`
+```java
+int[] parent = new int[n]; 
+int find(int x) { return parent[x] == x ? x : (parent[x] = find(parent[x])); } void union(int a, int b) { parent[find(a)] = find(b); }
+```
 
 **Key Topics:** Connected Components, Kruskal’s Algorithm, Cycle Detection
 
@@ -140,7 +162,17 @@
 
 - Template:
 
-`int low = 0, high = n; while (low <= high) {     int mid = (low + high) / 2;     if (condition) high = mid - 1;     else low = mid + 1; }`
+```java
+int low = 0, 
+high = n; 
+while (low <= high) {     
+	int mid = (low + high) / 2;     
+	if (condition) 
+		high = mid - 1;     
+	else 
+		low = mid + 1; 
+}
+```
 
 ---
 
