@@ -75,9 +75,13 @@ Like oranges stacked in a pattern, **crystal structures** describe **how atoms a
 - **Basis**: Atoms attached to lattice points
 - **Unit Cell**: Smallest repeatable unit of the lattice
 
+![[Pasted image 20250711142912.png]]
+
 ---
 
 ### 📦 **Common Crystal Structures**
+
+![[Pasted image 20250711142929.png]]
 
 |Structure|Atoms per Unit Cell|Example|Notes|
 |---|---|---|---|
@@ -138,7 +142,7 @@ Engineers **intentionally add defects** to improve material properties.
 ❗Example: Pure iron + carbon = **steel** (stronger & more useful)
 
 ---
-
+![[Pasted image 20250711142955.png]]
 ## 📚 **Summary**
 
 - **Bond type** → determines strength, conductivity, flexibility.

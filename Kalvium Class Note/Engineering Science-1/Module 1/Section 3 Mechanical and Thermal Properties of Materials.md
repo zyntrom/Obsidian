@@ -136,7 +136,7 @@ By the end of this lesson, you should be able to:
 **Lesson:** Material behavior under real conditions is crucial for safety.
 
 ---
-
+![[Pasted image 20250711143024.png]]
 ## 🧾 Summary: What You’ve Learned
 
 You now understand:
