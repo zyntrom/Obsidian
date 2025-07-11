@@ -17,3 +17,8 @@
 - printing basic Mathematics operation:
 
 ![[Pasted image 20250711130924.png]]
+
+- Finding the last 2nd last integer in a number:
+
+![[Pasted image 20250711131435.png]]
+
