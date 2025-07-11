@@ -1,15 +1,10 @@
 ### 🎯 Learning Objectives
 
 - Use **tag name selectors** (e.g., `plate`)
-    
 - Apply **class selectors** (e.g., `.fancy`)
-    
 - Target unique elements with **ID selectors** (e.g., `#special`)
-    
 - Use **pseudo-class selectors** (e.g., `:hover`, `:nth-child(n)`)
-    
 - Reinforce CSS selector logic with interactive practice
-    
 
 ---
 

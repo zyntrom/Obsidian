@@ -3,11 +3,8 @@
 By the end of this lesson, you should be able to:
 
 - Use **pseudo-classes** to style elements based on **user interaction** or **position**
-    
 - Use **pseudo-elements** to style specific parts of an element or insert new content
-    
 - **Combine selectors** to apply complex styling rules
-    
 
 ---
 
@@ -17,11 +14,9 @@ _Style elements based on their current **state**, **position**, or **user intera
 
 ### 🔧 Syntax:
 
-css
-
-CopyEdit
-
-`selector:pseudo-class {   property: value; }`
+```css
+selector:pseudo-class {   property: value; }
+```
 
 ### 🔹 Common Pseudo-Classes:
 
@@ -40,7 +35,12 @@ css
 
 CopyEdit
 
-`a:hover {   color: red; }  input:focus {   background-color: lightyellow; }  li:first-child {   font-weight: bold; }  li:nth-child(odd) {   background-color: #f2f2f2; }`
+```css
+a:hover {   color: red; }  
+input:focus {   background-color: lightyellow; }  
+li:first-child {   font-weight: bold; }  
+li:nth-child(odd) {   background-color: #f2f2f2; }
+```
 
 ---
 
@@ -54,7 +54,9 @@ css
 
 CopyEdit
 
-`selector::pseudo-element {   property: value; }`
+```css
+selector::pseudo-element {   property: value; }
+```
 
 ### 🔹 Common Pseudo-Elements:
 
@@ -73,7 +75,11 @@ css
 
 CopyEdit
 
-`p::first-letter {   font-size: 2em;   color: #333; }  input::placeholder {   color: gray;   font-style: italic; }  .decorated::before {   content: "★ ";   color: gold; }  .decorated::after {   content: " ★";   color: gold; }`
+```css
+p::first-letter {   font-size: 2em;   color: #333; }  
+input::placeholder {   color: gray;   font-style: italic; }  .decorated::before {   content: "★ ";   color: gold; }  
+.decorated::after {   content: " ★";   color: gold; }
+```
 
 ---
 
@@ -87,7 +93,11 @@ css
 
 CopyEdit
 
-`/* First paragraph's first letter turns red on hover */ p:first-child::first-letter:hover {   color: red; }  /* Show (end) after last list item on hover */ li:last-child:hover::after {   content: " (end)";   color: gray; }`
+```css
+/* First paragraph's first letter turns red on hover */ 
+p:first-child::first-letter:hover {   color: red; }  /* Show (end) after last list item on hover */ 
+li:last-child:hover::after {   content: " (end)";   color: gray; }
+```
 
 ---
 

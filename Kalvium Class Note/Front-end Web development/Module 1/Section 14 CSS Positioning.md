@@ -3,13 +3,9 @@
 ### 🎯 Learning Objectives:
 
 - Understand types of CSS positioning
-    
 - Learn how they affect layout behavior
-    
 - Control layout and overlapping using `z-index`
-    
 - Apply practical layout patterns using positioning
-    
 
 ---
 
@@ -36,41 +32,21 @@ It gives you **fine-grained control** over layout, movement, and stacking order.
 
 #### Static (Default)
 
-css
-
-CopyEdit
-
 `div {   position: static; }`
 
 #### Relative
-
-css
-
-CopyEdit
 
 `div {   position: relative;   top: 20px;   left: 10px; }`
 
 #### Absolute
 
-css
-
-CopyEdit
-
 `.container {   position: relative; }  .child {   position: absolute;   top: 50px;   left: 0; }`
 
 #### Fixed
 
-css
-
-CopyEdit
-
 `.footer {   position: fixed;   bottom: 0;   width: 100%; }`
 
 #### Sticky
-
-css
-
-CopyEdit
 
 `.header {   position: sticky;   top: 0;   background: lightblue; }`
 
@@ -79,13 +55,7 @@ CopyEdit
 ### 🧊 `z-index`: Layering Elements
 
 - `z-index` controls which element appears **on top** when they overlap.
-    
 - Only works on **positioned elements** (`relative`, `absolute`, `fixed`, `sticky`)
-    
-
-css
-
-CopyEdit
 
 `.box1 {   position: absolute;   z-index: 2; }  .box2 {   position: absolute;   z-index: 1; }`
 

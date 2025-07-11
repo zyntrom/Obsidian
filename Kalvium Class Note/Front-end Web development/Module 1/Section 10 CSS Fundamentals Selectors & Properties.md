@@ -21,13 +21,15 @@ These apply styles to **all tags** of a specific type.
 ### 🧪 Example:
 
 ```html
-<h1>Hello</h1> <p>This is a paragraph.</p>
+<h1>Hello</h1> 
+<p>This is a paragraph.</p>
+```
 
+```css
+h1 {   color: blue; } 
+p {   font-size: 16px; }
 ```
-```
-```
-h1 {   color: blue; } p {   font-size: 16px; }
-```
+
 
 🔹 _All_ `<h1>` become blue  
 🔹 _All_ `<p>` get 16px font
@@ -40,9 +42,14 @@ Target **multiple** elements that share the same class.
 
 ### 🧪 Example:
 
-`<p class="highlight">Important text</p> <div class="highlight">Special div</div>`
+```html
+<p class="highlight">Important text</p> 
+<div class="highlight">Special div</div>
+```
 
-`.highlight {   background-color: yellow;   padding: 10px; }`
+```css
+.highlight {   background-color: yellow;   padding: 10px; }
+```
 
 ✅ Great for applying **common styles** to **many elements** regardless of tag type.
 
@@ -54,9 +61,13 @@ Used to target **exactly one unique** element on the page.
 
 ### 🧪 Example:
 
-`<h1 id="main-title">My Website</h1>`
+```html
+<h1 id="main-title">My Website</h1>
+```
 
-`#main-title {   color: green;   text-align: center; }`
+```css
+#main-title {   color: green;   text-align: center; }
+```
 
 ⚠️ Only **one element** should have a specific ID!
 
@@ -68,9 +79,13 @@ These apply styles based on **user interaction** or **element state**.
 
 ### 🧪 Example:
 
-`<a href="#">Hover over me</a>`
+```html
+<a href="#">Hover over me</a>
+```
 
-`a {   color: blue;   text-decoration: none; }  a:hover {   color: red;   text-decoration: underline; }`
+```css
+a {   color: blue;   text-decoration: none; }  a:hover {   color: red;   text-decoration: underline; }
+```
 
 🎯 Common pseudo-classes:
 

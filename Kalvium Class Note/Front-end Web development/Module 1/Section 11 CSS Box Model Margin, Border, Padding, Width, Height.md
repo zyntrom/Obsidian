@@ -23,7 +23,9 @@ Think of it like:
 
 Adds space _outside_ the border — keeps distance from other elements.
 
-`.box {   margin-top: 20px;   margin-right: 30px;   margin-bottom: 15px;   margin-left: 25px; }`
+```css
+.box {   margin-top: 20px;   margin-right: 30px;   margin-bottom: 15px;   margin-left: 25px; }
+```
 
 🔹 Shorthand: `margin: 20px 30px 15px 25px; /* top right bottom left */`
 
@@ -33,13 +35,17 @@ Adds space _outside_ the border — keeps distance from other elements.
 
 Draws a line around the element (outside padding).
 
-`.box {   border-width: 3px;   border-style: solid;   border-color: black; }`
+```css
+.box {   border-width: 3px;   border-style: solid;   border-color: black; }
+```
 
 🎨 **Styles**: `solid`, `dashed`, `dotted`, `double`, `ridge`, `groove`
 
 Custom sides:
 
-`.box {   border-top: 2px dashed red;   border-bottom: 3px dotted blue; }`
+```css
+.box {   border-top: 2px dashed red;   border-bottom: 3px dotted blue; }
+```
 
 ---
 
@@ -47,7 +53,9 @@ Custom sides:
 
 Creates space between content and border (inside the box).
 
-`.box {   padding-top: 10px;   padding-right: 15px;   padding-bottom: 10px;   padding-left: 15px; }`
+```css
+.box {   padding-top: 10px;   padding-right: 15px;   padding-bottom: 10px;   padding-left: 15px; }
+```
 
 🔹 Shorthand: `padding: 10px 15px;` (top-bottom, left-right)
 
@@ -57,12 +65,16 @@ Creates space between content and border (inside the box).
 
 Controls only the content area size (not padding, border, or margin).
 
-`.box {   width: 200px;   height: 100px; }`
+```css
+.box {   width: 200px;   height: 100px; }
+```
 
 📱 Responsive:
 
-`.box {   width: 50%;   height: 30vh; }`
+```css
+.box {   width: 50%;   height: 30vh; }
 
+```
 ---
 
 ## 📐 Box Size Formula
@@ -72,7 +84,9 @@ Controls only the content area size (not padding, border, or margin).
 
 ### Example:
 
-`.box {   width: 200px;   height: 100px;   padding: 20px;   border: 5px solid;   margin: 30px; }`
+```css
+.box {   width: 200px;   height: 100px;   padding: 20px;   border: 5px solid;   margin: 30px; }
+```
 
 **Total Width** = 200 (content) + 40 (padding) + 10 (border) + 60 (margin) = `310px`  
 **Total Height** = 100 (content) + 40 (padding) + 10 (border) + 60 (margin) = `210px`
