@@ -33,3 +33,9 @@
 - Swapping two numbers:
 
 ![[Pasted image 20250711170018.png]]
+
+- Swap to numbers without temp:
+
+![[Pasted image 20250711170559.png]]
+
+- Bit shifting in Javascript:
