@@ -108,6 +108,7 @@ While not directly about coding, these concepts are useful in:
     - Water carries everything away
 
 ---
+
 ![[Pasted image 20250711144535.png]]
 
 ### 📌 **Summary**

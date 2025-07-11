@@ -10,11 +10,8 @@
 Problem solving is the **systematic approach** to:
 
 - Identifying and analyzing challenges
-    
 - Breaking them into smaller steps
-    
 - Using **logic and creativity** to develop effective solutions
-    
 
 In **programming**, this means:
 
@@ -23,11 +20,8 @@ In **programming**, this means:
 📌 **Examples in Programming**:
 
 - Organizing large data sets
-    
 - Finding shortest routes on maps
-    
 - Automating repetitive tasks (e.g., reminders, scheduling)
-    
 
 ---
 
@@ -36,20 +30,14 @@ In **programming**, this means:
 Problem solving is **essential across every profession**:
 
 - 🧑‍⚕️ **Doctors**: Analyze symptoms → Decide treatment
-    
 - 👷 **Engineers**: Design structures by solving material and safety challenges
-    
 - 👨‍🍳 **Chefs**: Create and adapt recipes, manage unexpected changes
-    
 
 In programming, it allows developers to:
 
 - Design **efficient** and **reliable** software
-    
 - **Debug and optimize** code
-    
 - Create **innovative apps** and systems
-    
 
 Without strong problem-solving skills, developers **struggle with logic, structure, and debugging**.
 
@@ -60,13 +48,9 @@ Without strong problem-solving skills, developers **struggle with logic, structu
 Problem solving is everywhere in software and technology:
 
 - Designing **algorithms**
-    
 - Handling **errors and bugs**
-    
 - Making **code efficient**
-    
 - Creating **secure and scalable systems**
-    
 
 > It's used daily in software engineering, app development, AI, cybersecurity, and more.
 
@@ -77,27 +61,19 @@ Problem solving is everywhere in software and technology:
 1. **Enhances Logical Thinking**
     
     - Learn cause-effect relationships
-        
     - Understand how parts of a system interact
-        
 2. **Boosts Creativity**
     
     - Think of **new approaches** when standard ones don’t work
-        
     - Important for UI/UX, product design, and innovation
-        
 3. **Builds Confidence**
     
     - Each problem solved strengthens your belief in your capabilities
-        
     - Makes you more comfortable with **uncertainty and complexity**
-        
 4. **Opens Career Opportunities**
     
     - Highly valued by employers
-        
     - Applicable in software, data science, product management, etc.
-        
 
 ---
 
@@ -107,14 +83,11 @@ Think of problem-solving like playing a **treasure hunt** game:
 
 1. 🧾 **Read the Clue**  
     → Understand the problem statement (what’s given vs. what’s required)
-    
 2. 🔍 **Break It Down**  
     → Divide it into steps or sub-problems
-    
 3. 🗺️ **Make a Plan**  
     → Choose how to solve each part  
     → Decide on logic, approach, data structures
-    
 4. 👨‍💻 **Search for Treasure**  
     → Write code based on your plan
     
