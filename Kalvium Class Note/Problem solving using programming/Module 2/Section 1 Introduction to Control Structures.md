@@ -29,19 +29,17 @@ Without them, your code would just run line-by-line — no decisions, no loops, 
 
 #### ✅ Example (Python):
 
-python
-
-CopyEdit
-
-`print("Open the fridge") print("Take out the milk") print("Pour into glass")`
+```python
+print("Open the fridge") 
+print("Take out the milk") 
+print("Pour into glass")
+```
 
 #### ✅ Example (C++):
 
-cpp
-
-CopyEdit
-
-`cout << "Open the fridge" << endl; cout << "Take out the milk" << endl; cout << "Pour into glass" << endl;`
+```c++
+cout << "Open the fridge" << endl; cout << "Take out the milk" << endl; cout << "Pour into glass" << endl;
+```
 
 🧾 _Think of it as reading a recipe line-by-line with no skips or repeats._
 
@@ -52,29 +50,28 @@ CopyEdit
 Makes decisions using conditions like:
 
 - `if`
-    
 - `else if`
-    
 - `else`
-    
 - `switch` (in C/C++)
-    
 
 #### ✅ Python:
 
-python
-
-CopyEdit
-
-`number = 5 if number > 0:     print("Positive") else:     print("Zero or Negative")`
+```python
+number = 5 
+if number > 0:     
+print("Positive") else:     
+print("Zero or Negative")
+```
 
 #### ✅ C++:
 
-cpp
-
-CopyEdit
-
-`int number = 0; if (number == 0)     cout << "Zero"; else     cout << "Not zero";`
+```c++
+int number = 0; 
+if (number == 0)     
+cout << "Zero"; 
+else     
+cout << "Not zero";
+```
 
 🧾 _It’s like choosing between clothes based on the weather: “If it’s cold → wear jacket.”_
 
@@ -86,27 +83,24 @@ Repeats a block of code until a condition is no longer true.
 
 #### ✅ Python `for` loop:
 
-python
-
-CopyEdit
-
-`for i in range(5):     print(i)`
+```python
+for i in range(5):
+print(i)
+```
 
 #### ✅ C++ `for` loop:
 
-cpp
-
-CopyEdit
-
-`for (int i = 0; i < 5; i++) {     cout << i << endl; }`
+```c++
+for (int i = 0; i < 5; i++) {     
+cout << i << endl; 
+}
+```
 
 #### ✅ C++ `do-while` loop (runs at least once):
 
-cpp
-
-CopyEdit
-
-`int count = 0; do {     cout << count << endl;     count++; } while (count < 5);`
+```c++
+int count = 0; do {     cout << count << endl;     count++; } while (count < 5);
+```
 
 🧾 _Think: brushing teeth daily – it repeats every day, conditionally._
 

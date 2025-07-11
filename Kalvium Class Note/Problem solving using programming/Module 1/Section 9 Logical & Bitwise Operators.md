@@ -77,7 +77,7 @@ print(20 >> 2)# 5
 
 ### 🔒 Real-World Example: File Permissions
 
-```
+```c
 READ = 4     # 100 
 WRITE = 2    # 010 
 EXECUTE = 1  # 001  
@@ -96,13 +96,15 @@ print("No Write access ❌")
 
 #### ✅ Using XOR:
 
-`a = 10` 
-`b = 20`  
-`a = a ^ b` 
-`b = a ^ b` 
-`a = a ^ b`  
-`print("a:", a)  # 20` 
-`print("b:", b)  # 10`
+```python
+a = 10 
+b = 20  
+a = a ^ b 
+b = a ^ b 
+a = a ^ b  
+print("a:", a)  # 20 
+print("b:", b)  # 10
+```
 
 ---
 

@@ -33,7 +33,8 @@ Learn to:
 
 #Integer 
 input age = int(input("Enter your age: "))  
-#String input name = input("Enter your name: ")  
+#String 
+input name = input("Enter your name: ")  
 print("Your name is:", name) 
 print("Your age is:", age)
 
@@ -80,7 +81,11 @@ return 0;
 
 ### 💡 Special Formatting Case: Decimal Places
 
-`price = 25.5 print(f"Price: {price:.2f}")  # Output: Price: 25.50`
+```python
+price = 25.5 
+print(f"Price: {price:.2f}")  
+Output: Price: 25.50
+```
 
 - `.2f` means round and show **exactly 2 digits** after decimal.
 - Used for prices, scores, measurements, etc.
