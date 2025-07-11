@@ -3,11 +3,8 @@
 Responsive web design means building a **single website** that:
 
 - **Adapts automatically** to any screen size or orientation
-    
 - Works on **mobile, tablet, desktop**, etc.
-    
 - Provides a **great user experience** everywhere
-    
 
 **Benefits:**  
 ✅ Mobile-friendly  
@@ -20,13 +17,9 @@ Responsive web design means building a **single website** that:
 ## 🎯 Learning Objectives
 
 - Understand **responsive design**
-    
 - Use **media queries** to apply styles conditionally
-    
 - Create layouts that **adapt across screen sizes**
-    
 - Debug and test for **multiple devices**
-    
 
 ---
 
@@ -36,19 +29,14 @@ Media queries let you apply CSS **only when specific conditions are met** (like 
 
 ### 🔹 Syntax
 
-css
-
-CopyEdit
-
-`@media (condition) {   /* CSS styles here */ }`
-
+```css
+@media (condition) {   /* CSS styles here */ }
+```
 ### 🔹 Example
 
-css
-
-CopyEdit
-
-`body {   font-size: 16px; }  @media (max-width: 600px) {   body {     font-size: 14px;   } }`
+```css
+body {   font-size: 16px; }  @media (max-width: 600px) {   body {     font-size: 14px;   } }
+```
 
 If the screen is **≤ 600px**, font becomes **14px**.
 
@@ -69,11 +57,9 @@ If the screen is **≤ 600px**, font becomes **14px**.
 
 ### ✅ `max-width`
 
-css
-
-CopyEdit
-
-`@media (max-width: 768px) {   .container {     width: 100%;   } }`
+```css
+@media (max-width: 768px) {   .container {     width: 100%;   } }
+```
 
 Used for small screens like phones/tablets.
 
@@ -85,7 +71,9 @@ css
 
 CopyEdit
 
-`@media (min-width: 992px) {   .menu {     display: block;   } }`
+```css
+@media (min-width: 992px) {   .menu {     display: block;   } }
+```
 
 Used for larger screens like desktops.
 
@@ -93,11 +81,9 @@ Used for larger screens like desktops.
 
 ### ✅ `orientation`
 
-css
-
-CopyEdit
-
-`@media (orientation: landscape) {   .box {     width: 300px;   } }`
+```css
+@media (orientation: landscape) {   .box {     width: 300px;   } }
+```
 
 Adapts layout based on phone/tablet orientation.
 
@@ -107,19 +93,29 @@ Adapts layout based on phone/tablet orientation.
 
 ### 🔸 HTML
 
-html
-
-CopyEdit
-
-`<nav>   <a href="#" class="logo">My Website</a>   <ul class="menu">     <li><a href="#">Home</a></li>     ...   </ul> </nav>`
+```css
+<nav>   
+<a href="#" class="logo">My Website</a>   
+<ul class="menu">     
+<li><a href="#">Home</a>
+</li>    
+</ul> 
+</nav>
+```
 
 ### 🔸 CSS
 
-css
-
-CopyEdit
-
-`nav {   display: flex;   justify-content: space-between; }  @media (max-width: 768px) {   nav {     flex-direction: column;   }   .menu {     flex-direction: column;     width: 100%;   } }`
+```css
+nav {   
+	display: flex;   
+	justify-content: space-between; }  
+@media (max-width: 768px) {   
+nav {     
+		flex-direction: column;   }   
+.menu {     
+	flex-direction: column;     
+	width: 100%;   } }
+```
 
 **➡️ On desktop**: Horizontal  
 **➡️ On mobile**: Vertical stacking
