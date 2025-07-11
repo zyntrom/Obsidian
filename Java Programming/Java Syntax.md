@@ -161,7 +161,11 @@
 
 ### 🔹 **Recursion Template**
 
-`void recur(int i) {   if (i == n) return;   // do something   recur(i + 1); }`
+```java
+void recur(int i) {   if (i == n) return;   
+	// do something   recur(i + 1); 
+}
+```
 
 Use cases:
 
@@ -174,7 +178,22 @@ Use cases:
 
 ### 🔹 **Backtracking Template**
 
-`void backtrack(List<Integer> temp, boolean[] used, int[] nums) {   if (temp.size() == nums.length) {     res.add(new ArrayList<>(temp));     return;   }    for (int i = 0; i < nums.length; i++) {     if (used[i]) continue;      used[i] = true;     temp.add(nums[i]);     backtrack(temp, used, nums);     temp.remove(temp.size() - 1);     used[i] = false;   } }`
+```java
+void backtrack(List<Integer> temp, boolean[] used, int[] nums) {   
+	if (temp.size() == nums.length) {     
+		res.add(new ArrayList<>(temp));     
+		return;   
+	}    
+	for (int i = 0; i < nums.length; i++) {
+	     if (used[i]) 
+		     continue;      
+		used[i] = true;     
+		temp.add(nums[i]);     
+		backtrack(temp, used, nums);     
+		temp.remove(temp.size() - 1);     
+		used[i] = false;   
+} }
+```
 
 Use cases:
 
@@ -332,10 +351,11 @@ Arrays.sort(arr, (a, b) -> {
 
 For sorting custom objects:
 
-**java**
-
-java
-
-CopyEdit
-
-`class Pair {   int x, y;   Pair(int x, int y) { this.x = x; this.y = y; } }  Arrays.sort(pairs, (a, b) -> {   if (a.x == b.x) return a.y - b.y;   return a.x - b.x; });`
+```java
+class Pair {   int x, y;   Pair(int x, int y) { 
+	this.x = x; this.y = y; } }  
+Arrays.sort(pairs, (a, b) -> {   
+	if (a.x == b.x) return a.y - b.y;   
+	return a.x - b.x; 
+});
+```
