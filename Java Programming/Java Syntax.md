@@ -212,12 +212,6 @@ Use cases:
 
 ### 🔹 **DFS Template (Graph)**
 
-**java**
-
-java
-
-CopyEdit
-
 ```java
 void dfs(int node, boolean[] visited, List<List<Integer>> graph) {   
 	visited[node] = true;    
@@ -231,125 +225,110 @@ void dfs(int node, boolean[] visited, List<List<Integer>> graph) {
 Use cases:
 
 - Connected Components
-    
 - Island Count
-    
 - Topological Sort (with stack)
-    
 - Cycle Detection
-    
 
 ---
 
 ### 🔹 **BFS Template (Graph)**
 
-**java**
-
-java
-
-CopyEdit
-
-`Queue<Integer> queue = new LinkedList<>(); queue.offer(start); visited[start] = true;  while (!queue.isEmpty()) {   int node = queue.poll();    for (int neighbor : graph.get(node)) {     if (!visited[neighbor]) {       queue.offer(neighbor);       visited[neighbor] = true;     }   } }`
+```java
+Queue<Integer> queue = new LinkedList<>(); queue.offer(start); visited[start] = true;  
+while (!queue.isEmpty()) {   
+	int node = queue.poll();    
+	for (int neighbor : graph.get(node)) {     
+		if (!visited[neighbor]) {       
+			queue.offer(neighbor);       
+			visited[neighbor] = true;     
+		}   
+	} 
+}
+```
 
 Use cases:
 
 - Shortest path (unweighted)
-    
 - Word Ladder
-    
 - Maze problems
-    
 - Bipartite Graph
-    
 
 ---
 
 ### 🔹 **TreeNode Structure**
 
-**java**
-
-java
-
-CopyEdit
-
-`class TreeNode {   int val;   TreeNode left, right;    TreeNode(int val) {     this.val = val;   } }`
+```java
+class TreeNode {   
+	int val;   
+	TreeNode left, right;    
+	TreeNode(int val) {     this.val = val;   } 
+}
+```
 
 Use cases:
 
 - Binary Tree Traversal
-    
 - BST operations
-    
 - Lowest Common Ancestor
-    
 
 ---
 
 ### 🔹 **ListNode Structure**
 
-**java**
-
-java
-
-CopyEdit
-
-`class ListNode {   int val;   ListNode next;    ListNode(int val) {     this.val = val;   } }`
+```java
+class ListNode {   
+	int val;   
+	ListNode next;    
+	ListNode(int val) {     this.val = val;   } 
+}
+```
 
 Use cases:
 
 - Reverse Linked List
-    
 - Merge Sorted Lists
-    
 - Detect Cycle
-    
 - Palindrome Linked List
-    
 
 ---
 
 ### 🔹 **Dynamic Programming Template (Top-Down with Memo)**
 
-**java**
-
-java
-
-CopyEdit
-
-`int dp(int i, int[] memo) {   if (i <= 1) return i;   if (memo[i] != -1) return memo[i];    return memo[i] = dp(i - 1, memo) + dp(i - 2, memo); }`
+```java
+int dp(int i, int[] memo) {   
+	if (i <= 1) return i;   
+		if (memo[i] != -1) 
+			return memo[i];    
+		return memo[i] = dp(i - 1, memo) + dp(i - 2, memo); 
+}
+```
 
 ### 🔹 **Dynamic Programming Template (Bottom-Up)**
 
-**java**
-
-java
-
-CopyEdit
-
-`int[] dp = new int[n + 1]; dp[0] = 0; dp[1] = 1;  for (int i = 2; i <= n; i++) {   dp[i] = dp[i - 1] + dp[i - 2]; }`
+```java
+int[] dp = new int[n + 1]; 
+dp[0] = 0; dp[1] = 1;  
+for (int i = 2; i <= n; i++) {   
+	dp[i] = dp[i - 1] + dp[i - 2]; 
+}
+```
 
 Use cases:
 
 - Fibonacci
-    
 - Knapsack
-    
 - Longest Increasing Subsequence
-    
 - Coin Change
-    
 
 ---
 
 ### 🔹 **Custom Comparator for Sorting**
 
-**java**
-
-java
-
-CopyEdit
-
-`Arrays.sort(arr, (a, b) -> {   // ascending: return a - b;   // descending: return b - a; });`
+```java
+Arrays.sort(arr, (a, b) -> {   
+	// ascending: return a - b;   
+	// descending: return b - a; });
+```
 
 For sorting custom objects:
 
