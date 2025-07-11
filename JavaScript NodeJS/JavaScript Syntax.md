@@ -99,4 +99,76 @@
 
 ---
 
-`
+## ✅ 1. **Creating a 2D Array**
+
+`// Example: 3 rows, 4 columns initialized with 0 let matrix = Array.from({ length: 3 }, () => Array(4).fill(0));  // Manual way let matrix = [   [1, 2, 3],   [4, 5, 6],   [7, 8, 9] ];`
+
+---
+
+## ✅ 2. **Accessing Elements**
+
+`console.log(matrix[0][1]); // Row 0, Col 1 => 2 matrix[2][2] = 10;         // Change value at (2,2)`
+
+---
+
+## ✅ 3. **Traversing a 2D Array**
+
+### 🔁 Full traversal (rows and columns):
+
+`for (let i = 0; i < matrix.length; i++) {   for (let j = 0; j < matrix[0].length; j++) {     console.log(matrix[i][j]);   } }`
+
+### 🔁 Row-wise traversal using for-of:
+
+`for (let row of matrix) {   for (let value of row) {     console.log(value);   } }`
+
+---
+
+## ✅ 4. **Printing 2D Array**
+
+`console.log(matrix); // Prints array of arrays  matrix.forEach(row => console.log(row.join(' '))); // Example output: // 1 2 3 // 4 5 6 // 7 8 9`
+
+---
+
+## ✅ 5. **Input for 2D Array on LeetCode**
+
+LeetCode often **provides 2D arrays as arguments**, like:
+
+`var transpose = function(matrix) {   // matrix is already parsed };`
+
+But if you're simulating input manually:
+
+``let input = `1 2 3 4 5 6 7 8 9`;  let matrix = input.split('\n').map(row => row.split(' ').map(Number)); console.log(matrix); // [[1, 2, 3], [4, 5, 6], [7, 8, 9]]``
+
+---
+
+## ✅ 6. **Common Matrix Operations**
+
+### 🔁 Transpose:
+
+`let transpose = matrix[0].map((_, i) => matrix.map(row => row[i]));`
+
+### 🔁 Reverse rows:
+
+`matrix.forEach(row => row.reverse());`
+
+### 🔁 Reverse full matrix:
+
+`matrix.reverse();  // Reverses the order of rows`
+
+---
+
+## ✅ 7. **Diagonal Traversal**
+
+### Primary Diagonal (top-left to bottom-right):
+
+`for (let i = 0; i < matrix.length; i++) {   console.log(matrix[i][i]); }`
+
+### Secondary Diagonal (top-right to bottom-left):
+
+`for (let i = 0; i < matrix.length; i++) {   console.log(matrix[i][matrix.length - 1 - i]); }`
+
+---
+
+## ✅ 8. **Some Built-in 2D Array Tips**
+
+`let flat = matrix.flat(); // Flattens to 1D array let sum = flat.reduce((acc, x) => acc + x, 0); // Sum of all elements`
