@@ -6,3 +6,10 @@
 
 ![[Pasted image 20250711125126.png]]
 
+- Printing the last digit:
+
+![[Pasted image 20250711125725.png]]
+
+- Printing the letter in 4th index:
+
+![[Pasted image 20250711130122.png]]
