@@ -30,3 +30,6 @@
 
 ![[Pasted image 20250711165646.png]]
 
+- Swapping two numbers:
+
+![[Pasted image 20250711170018.png]]
