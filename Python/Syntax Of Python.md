@@ -1,5 +1,6 @@
 ## ✅ Basic Syntax
 
+
 |Concept|Syntax / Example|Description|
 |---|---|---|
 |Variable|`x = 10`|Assign value|
@@ -177,3 +178,56 @@
 |`divmod(a, b)`|Get quotient and remainder|
 |`map(func, iterable)`|Apply function to all items|
 |`filter(func, iterable)`|Filter items|
+## ✅ 2D Array (Matrix) Operations in Python
+
+#### 🧩 Declare & Access
+
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]  
+value = matrix[0][2] # Access element (1st row, 3rd col) → 3  
+matrix[1][1] = 99 # Update value
+
+#### 🔁 Loop Through 2D Array
+
+for row in matrix:  
+  for val in row:  
+    print(val, end=" ")
+
+---
+
+## ✅ Extra String Methods (Useful Ones)
+
+|Method|Description|Example|
+|---|---|---|
+|str.zfill(5)|Pad with zeros on the left|"42".zfill(5) → "00042"|
+|str.center(w, ch)|Center string in width `w` using `ch`|"hi".center(6, "-") → "--hi--"|
+|str.ljust(n), rjust(n)|Left or right justify with spaces|"ok".rjust(5) → " ok"|
+|str.partition(x)|Split into 3 parts around x|"abc:def".partition(":")|
+|str.swapcase()|Swap upper and lower case|"AbC".swapcase() → "aBc"|
+|str.casefold()|Stronger lower() for comparisons|"straße".casefold() → "strasse"|
+
+---
+
+## ✅ List Tricks You Might’ve Missed
+
+|Method/Usage|Description|Example|
+|---|---|---|
+|[0] * n|Create list with `n` zeros|[0] * 5 → [0, 0, 0, 0, 0]|
+|list(range(n))|List from 0 to n-1|range(5) → [0, 1, 2, 3, 4]|
+|[x for x in list]|List comprehension|[x*x for x in range(3)] → [0, 1, 4]|
+|zip(a, b)|Combine two lists|zip([1,2], [3,4]) → (1,3), (2,4)|
+|reversed(list)|Reverse iterator|list(reversed([1,2,3])) → [3,2,1]|
+
+---
+
+## ✅ Python Input/Output for 2D Array
+
+#### 📥 Input Example (single-line row-wise)
+
+matrix = [list(map(int, input().split())) for _ in range(3)]
+
+# Input: 1 2 3 ↵ 4 5 6 ↵ 7 8 9
+
+#### 📤 Output Example
+
+for row in matrix:  
+  print(" ".join(map(str, row)))
