@@ -176,7 +176,11 @@ It consists of:
 - **Dynamically typed** — no need to declare type
 - Type inferred from assigned value
 
-`age = 25          # int name = "ZynTrom"  # str pi = 3.14         # float`
+```python
+age = 25          # int 
+name = "ZynTrom"  # str 
+pi = 3.14         # float
+```
 
 ---
 
@@ -185,9 +189,11 @@ It consists of:
 - **Statically typed** — type must be declared
 - Strict rules help avoid bugs
 
-`int age = 25; float pi = 3.14; char grade = 'A';`
-
-`#include <iostream> using namespace std;  int main() {     char name[] = "Kalvium";     int age = 1;     cout << name << endl;     cout << age;     return 0; }`
+```
+int age = 25; 
+float pi = 3.14; char grade = 'A';
+#include <iostream> using namespace std;  int main() {     char name[] = "Kalvium";     int age = 1;     cout << name << endl;     cout << age;     return 0; }
+```
 
 📤 **Output:**
 

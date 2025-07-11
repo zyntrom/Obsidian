@@ -94,14 +94,16 @@ Computational thinking is the **foundation** of solving problems using computers
 
 **Pseudocode**:
 
-`Start`     
-`Input radius`     
-`Set π to 3.14`     
-`Compute area = π × radius × radius`     
-`Compute perimeter = 2 × π × radius`     
-`Output "Area of the circle is: ", area`     
-`Output "Perimeter of the circle is: ", perimeter` 
-`End`
+```
+Start     
+Input radius     
+Set π to 3.14     
+Compute area = π × radius × radius     
+Compute perimeter = 2 × π × radius     
+Output "Area of the circle is: ", area     
+Output "Perimeter of the circle is: ", perimeter 
+End
+```
 
 ---
 
