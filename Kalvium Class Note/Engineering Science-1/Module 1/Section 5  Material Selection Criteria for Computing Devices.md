@@ -23,6 +23,8 @@ Every component in a computing deviceâ€”like smartphones, laptops, and tabletsâ€
 - **Cost-effectiveness**
 - **Sustainability**
 
+![[Pasted image 20250711143138.png]]
+
 ---
 
 ## ðŸ§ª Key Properties for Material Selection
@@ -32,6 +34,7 @@ Every component in a computing deviceâ€”like smartphones, laptops, and tabletsâ€
 - **Conductors** (e.g., copper, gold): Carry signals efficiently
 - **Insulators** (e.g., plastic, ceramics): Prevent electrical interference
 - Critical in **circuit boards, connectors, and cables**
+![[Pasted image 20250711143203.png]]
 
 ---
 
@@ -40,6 +43,7 @@ Every component in a computing deviceâ€”like smartphones, laptops, and tabletsâ€
 - Devices generate heat during operation
 - **Heat-conducting materials** (e.g., aluminum) are used in heat sinks
 - **Thermal insulators** (e.g., ceramics) protect delicate parts
+![[Pasted image 20250711143214.png]]
 
 ---
 
@@ -48,6 +52,7 @@ Every component in a computing deviceâ€”like smartphones, laptops, and tabletsâ€
 - Must resist drops, impacts, and bending
 - **Lightweight yet strong materials** (e.g., polycarbonate, aluminum)
 - Essential for **casings, frames, and internal supports**
+![[Pasted image 20250711143237.png]]
 
 ---
 
@@ -69,6 +74,8 @@ Every component in a computing deviceâ€”like smartphones, laptops, and tabletsâ€
 ---
 
 ## ðŸ§° Material Selection Process in Computing Hardware
+
+![[Pasted image 20250711143249.png]]
 
 ### Step 1: **Identify Requirements**
 
@@ -145,6 +152,7 @@ Every component in a computing deviceâ€”like smartphones, laptops, and tabletsâ€
 |**Nanomaterials**|Designed at atomic level|Improve heat management, durability, and energy efficiency|
 
 ---
+![[Pasted image 20250711143306.png]]
 
 ## ðŸ§¾ Summary â€” What You've Learned
 

@@ -30,6 +30,7 @@ Why test materials?
 - Meet **quality control standards**
 
 ---
+![[Pasted image 20250711143354.png]]
 
 ## ⚙️ Key Mechanical Properties
 
@@ -66,6 +67,8 @@ Why test materials?
 
 ## 🪨 Hardness Testing Techniques
 
+![[Pasted image 20250711143411.png]]
+
 **Goal:** Measure how resistant a material is to **indentation or scratching**
 
 |Method|How it works|Best for|
@@ -91,6 +94,8 @@ Each test has its **own scale** and is chosen based on **material type and thick
 
 ## 🌍 Real-World Applications
 
+![[Pasted image 20250711143434.png]]
+
 - **Aerospace**: Ensures aircraft materials handle high stress + temperature
 - **Automotive**: Checks strength of frames, hardness of engine parts
 - **Construction**: Validates steel beams, cables, and load-bearing structures
@@ -108,6 +113,7 @@ Material testing = **Prevention of failure**, **quality control**, and **safety 
 Lab safety = Protects you + ensures accurate test results
 
 ---
+![[Pasted image 20250711143442.png]]
 
 ## 🧾 Summary — What You’ve Learned
 

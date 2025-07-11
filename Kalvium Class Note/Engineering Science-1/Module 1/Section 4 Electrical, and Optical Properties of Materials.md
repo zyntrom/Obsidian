@@ -136,6 +136,7 @@ By the end of this lesson, you will be able to:
 |**Solar Panels**|Use semiconductors (e.g. silicon) to convert light into electricity|
 
 ---
+![[Pasted image 20250711143053.png]]
 
 ## 🧾 Summary — What You've Learned
 
