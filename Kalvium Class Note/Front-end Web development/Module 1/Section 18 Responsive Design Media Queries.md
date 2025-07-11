@@ -112,9 +112,11 @@ nav {
 @media (max-width: 768px) {   
 nav {     
 		flex-direction: column;   }   
-.menu {     
-	flex-direction: column;     
-	width: 100%;   } }
+	.menu {     
+		flex-direction: column;     
+		width: 100%;  
+	} 
+}
 ```
 
 **➡️ On desktop**: Horizontal  

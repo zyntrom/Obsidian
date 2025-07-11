@@ -9,15 +9,10 @@ Use Grid when you need **precise control** over both horizontal and vertical lay
 ## 🎯 Learning Objectives
 
 - Understand the **CSS Grid system**
-    
 - Define **rows** and **columns**
-    
 - **Place** items using lines or area names
-    
 - Create **responsive layouts**
-    
 - Use **gap**, `minmax()`, and `auto-fit` effectively
-    
 
 ---
 
@@ -25,11 +20,9 @@ Use Grid when you need **precise control** over both horizontal and vertical lay
 
 Make any element a grid container:
 
-css
-
-CopyEdit
-
-`.container {   display: grid; }`
+```css
+.container {   display: grid; }
+```
 
 ---
 
@@ -37,26 +30,19 @@ CopyEdit
 
 ### ✅ `grid-template-columns`
 
-css
-
-CopyEdit
-
-`.container {   grid-template-columns: 100px 200px 1fr; }`
+```css
+.container {   grid-template-columns: 100px 200px 1fr; }
+```
 
 - `100px`: Fixed
-    
 - `200px`: Fixed
-    
 - `1fr`: Remaining flexible space
-    
 
 ### ✅ `grid-template-rows`
 
-css
-
-CopyEdit
-
-`.container {   grid-template-rows: 150px auto 1fr; }`
+```css
+.container {   grid-template-rows: 150px auto 1fr; }
+```
 
 ---
 
@@ -64,16 +50,16 @@ CopyEdit
 
 ### Method 1: Grid Line Numbers
 
-css
-
-CopyEdit
-
-`.item1 {   grid-column-start: 1;   grid-column-end: 3;   grid-row-start: 1;   grid-row-end: 2; }`
+```css
+.item1 {   
+	grid-column-start: 1;   
+	grid-column-end: 3;   
+	grid-row-start: 1;   
+	grid-row-end: 2; }
+```
 
 - Spans 2 columns (1 to 3)
-    
 - Spans 1 row (1 to 2)
-    
 
 ---
 
@@ -81,11 +67,13 @@ CopyEdit
 
 #### ✅ Define layout visually
 
-css
-
-CopyEdit
-
-`.container {   display: grid;   grid-template-columns: repeat(3, 1fr);   grid-template-rows: auto 1fr auto;   grid-template-areas:     "header header header"     "sidebar content content"     "footer footer footer";   gap: 10px; }`
+```css
+.container {   
+	display: grid;   
+	grid-template-columns: repeat(3, 1fr);   
+	grid-template-rows: auto 1fr auto;   
+	grid-template-areas:     "header header header"     "sidebar content content"     "footer footer footer";   gap: 10px; }
+```
 
 #### ✅ Assign area names
 
