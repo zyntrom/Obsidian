@@ -1,53 +1,164 @@
-- Basic vim commands:
+# 🧠 **Vim Modes**
 
-![[Pasted image 20250629225121.png]]
+|Mode|Enter With|Purpose|
+|---|---|---|
+|Normal|`Esc`|Navigation & commands|
+|Insert|`i`, `a`, `o`|Typing/editing text|
+|Visual|`v`, `V`, `Ctrl+v`|Text selection|
+|Command/Ex|`:`|File, search, and settings|
+|Replace|`R`|Overwrite text|
 
-- Modes in vim:
+---
 
-![[Pasted image 20250629225306.png]]
+## 📝 **1. Insert Mode Entry Keys**
 
-- Insertion Mode Shortcut:
+|Key|Meaning|
+|---|---|
+|`i`|Insert before cursor|
+|`I`|Insert at start of line|
+|`a`|Append after cursor|
+|`A`|Append at end of line|
+|`o`|Open new line below|
+|`O`|Open new line above|
 
-![[Pasted image 20250629225411.png]]
+---
 
-- Navigation key-binds:
+## 🧭 **2. Normal Mode Navigation**
 
-![[Pasted image 20250629225509.png]]
+### 🔼 Movement by Character, Word, Line:
 
-- Line/Screen Movement:
+|Key|Description|
+|---|---|
+|`h`|Move left|
+|`l`|Move right|
+|`j`|Move down|
+|`k`|Move up|
+|`0`|Start of line|
+|`^`|First non-whitespace|
+|`$`|End of line|
+|`w`|Start of next word|
+|`W`|Start of next WORD|
+|`e`|End of word|
+|`b`|Beginning of word|
 
-![[Pasted image 20250629225537.png]]
+### 📜 Movement by Screen/Paragraph:
 
-- Scrolling:
+|Key|Description|
+|---|---|
+|`H`|Top of screen|
+|`M`|Middle of screen|
+|`L`|Bottom of screen|
+|`{`/`}`|Previous/Next paragraph|
+|`gg`|Start of file|
+|`G`|End of file|
+|`:n`|Go to line `n`|
 
-![[Pasted image 20250629225553.png]]
+---
 
-- Editing:
+## 🔨 **3. Editing Commands (Normal Mode)**
 
-![[Pasted image 20250629225630.png]]
+|Key|Description|
+|---|---|
+|`x`|Delete character|
+|`dd`|Delete line|
+|`dw`|Delete word|
+|`D`|Delete to end of line|
+|`yy`|Yank (copy) line|
+|`yw`|Yank word|
+|`p`|Paste after cursor|
+|`P`|Paste before cursor|
+|`u`|Undo|
+|`Ctrl+r`|Redo|
+|`r<char>`|Replace one character|
+|`J`|Join next line|
+|`>>` / `<<`|Indent / unindent line|
+|`~`|Toggle case|
 
-- Change:
+---
 
-![[Pasted image 20250629225713.png]]
+## 🔍 **4. Searching and Replacing**
 
-- Copy & Paste:
+|Command|Description|
+|---|---|
+|`/word`|Search forward|
+|`?word`|Search backward|
+|`n` / `N`|Repeat search forward/backward|
+|`:%s/old/new/g`|Replace all in file|
+|`:%s/old/new/gc`|Replace with confirmation|
+|`:noh`|Remove search highlighting|
 
-![[Pasted image 20250629225732.png]]
+---
 
-- Visual Mode:
+## 👓 **5. Visual Mode (Selection)**
 
-![[Pasted image 20250629225809.png]]
+|Key|Description|
+|---|---|
+|`v`|Start character-wise visual mode|
+|`V`|Start line-wise visual mode|
+|`Ctrl+v`|Start block-wise visual mode|
+|`y`|Yank selection|
+|`d`|Delete selection|
+|`>` / `<`|Indent / unindent selection|
+|`~`|Toggle case on selection|
 
-- Undo/Redo:
+---
 
-![[Pasted image 20250629225837.png]]
+## 📂 **6. File & Buffer Management (Ex Mode)**
 
-- Search and Replace:
+|Command|Description|
+|---|---|
+|`:w`|Save|
+|`:w filename`|Save as|
+|`:q`|Quit|
+|`:q!`|Quit without saving|
+|`:wq` or `ZZ`|Save and quit|
+|`:e filename`|Open file|
+|`:bn` / `:bp`|Next/Previous buffer|
+|`:ls`|List open buffers|
+|`:bd`|Delete buffer (close file)|
 
-![[Pasted image 20250629225951.png]]
+---
 
-- Marks and Jumps:
+## 🔄 **7. Window Splits & Tabs**
 
-![[Pasted image 20250629230106.png]]
+|Command|Description|
+|---|---|
+|`:split` or `:sp`|Horizontal split|
+|`:vsplit` or `:vsp`|Vertical split|
+|`Ctrl+w` then `h/j/k/l`|Move between splits|
+|`:tabnew`|Open new tab|
+|`gt`, `gT`|Next/Previous tab|
 
+---
 
+## 🧩 **8. Macros and Repeats**
+
+|Key|Description|
+|---|---|
+|`.`|Repeat last change|
+|`q<letter>`|Start recording macro|
+|`@<letter>`|Run macro|
+
+---
+
+## 🔧 **9. Useful Settings & Shortcuts**
+
+|Command|Description|
+|---|---|
+|`:set number`|Show line numbers|
+|`:set relativenumber`|Show relative line numbers|
+|`:set hlsearch`|Highlight search results|
+|`:set incsearch`|Incremental search|
+|`:syntax on`|Enable syntax highlighting|
+
+---
+
+## 🎮 **10. Special Key Combos**
+
+|Key Combo|Description|
+|---|---|
+|`Ctrl + o`|Go to older cursor position|
+|`Ctrl + i`|Go to newer cursor position|
+|`Ctrl + d` / `u`|Scroll half page down/up|
+|`Ctrl + e` / `y`|Scroll screen down/up (without moving cursor)|
+|`Ctrl + ^`|Toggle between last two files|

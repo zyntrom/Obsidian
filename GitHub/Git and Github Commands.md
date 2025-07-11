@@ -99,21 +99,12 @@ Check if added:
 ## 🚀 7. GitHub Pages Hosting (HTML Website)
 
 1. Go to your repo → Settings → Pages
-    
 2. Choose:
-    
     - Branch: `main`
-        
     - Folder: `/root`
-        
 3. Save → You’ll get a public link like:
     
-    arduino
-    
-    CopyEdit
-    
     `https://yourusername.github.io/yourrepo/`
-    
 
 ---
 
@@ -121,41 +112,21 @@ Check if added:
 
 ### See list of branches
 
-bash
-
-CopyEdit
-
 `git branch`
 
 ### Delete a branch
-
-bash
-
-CopyEdit
 
 `git branch -d branchname`
 
 ### Stash changes temporarily
 
-bash
-
-CopyEdit
-
 `git stash git stash pop`
 
 ### Clone a repo
 
-bash
-
-CopyEdit
-
 `git clone https://github.com/username/repo.git`
 
 ### Pull latest changes from GitHub
-
-bash
-
-CopyEdit
 
 `git pull`
 
