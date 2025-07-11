@@ -12,12 +12,19 @@ By the end of this lesson, you should be able to:
 
 ### 🌍 **The Four States of Matter**
 
-|**State**|**Properties**|**Examples**|**Scientific Application**|
-|---|---|---|---|
-|**Solid**|Fixed shape and volume. Tightly packed particles that vibrate.|Ice cube, cricket ball, book|SSDs (Solid State Drives): store data in solid semiconductor chips.|
-|**Liquid**|Fixed volume, no fixed shape. Particles slide past each other.|Water, juice, oil|Liquid Cooling: Used in gaming PCs and servers to remove heat.|
-|**Gas**|No fixed shape or volume. Particles move freely and spread out.|Steam, perfume, balloon air|Chip fabrication: Plasma etching, Chemical Vapor Deposition.|
-|**Plasma**|Ionized gas; extremely energetic with charged particles.|Lightning, neon signs, sun|Used in chip-making and future tech like nuclear fusion.|
+Solid:
+![[Pasted image 20250711144218.png]]
+
+Liquid:
+![[Pasted image 20250711144237.png]]
+
+
+| **State**  | **Properties**                                                  | **Examples**                 | **Scientific Application**                                          |
+| ---------- | --------------------------------------------------------------- | ---------------------------- | ------------------------------------------------------------------- |
+| **Solid**  | Fixed shape and volume. Tightly packed particles that vibrate.  | Ice cube, cricket ball, book | SSDs (Solid State Drives): store data in solid semiconductor chips. |
+| **Liquid** | Fixed volume, no fixed shape. Particles slide past each other.  | Water, juice, oil            | Liquid Cooling: Used in gaming PCs and servers to remove heat.      |
+| **Gas**    | No fixed shape or volume. Particles move freely and spread out. | Steam, perfume, balloon air  | Chip fabrication: Plasma etching, Chemical Vapor Deposition.        |
+| **Plasma** | Ionized gas; extremely energetic with charged particles.        | Lightning, neon signs, sun   | Used in chip-making and future tech like nuclear fusion.            |
 
 ---
 
@@ -43,6 +50,9 @@ A **physical change** affects form but **not** chemical identity. The substance 
 ---
 
 ### ⚗️ **Chemical Changes**
+
+![[Pasted image 20250711144257.png]]
+
 
 A **chemical change** creates a **new substance** with different properties. Usually **irreversible** and involves **chemical bonds**.
 

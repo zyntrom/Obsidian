@@ -11,6 +11,8 @@
 
 ### 🧪 **1. What are Surfactants?**
 
+![[Pasted image 20250711144449.png]]
+
 **Surfactant = Surface Active Agent**
 
 - **Purpose:** Reduces surface tension so water can spread and clean better.
@@ -106,6 +108,7 @@ While not directly about coding, these concepts are useful in:
     - Water carries everything away
 
 ---
+![[Pasted image 20250711144535.png]]
 
 ### 📌 **Summary**
 

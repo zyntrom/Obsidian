@@ -85,9 +85,10 @@ Litmus Paper:
 Phenolphthalein:
 ![[Pasted image 20250711143831.png]]
 
-
+Bromothymol Blue:
 ![[Pasted image 20250711144031.png]]
 
+Universal Indicator:
 ![[Pasted image 20250711144018.png]]
 
 | Indicator           | In Acid                                | In Base    |
@@ -121,7 +122,7 @@ Phenolphthalein:
 **Observe**: pH value, indicator color, and classification (Acid/Base/Neutral).
 
 ---
-
+![[Pasted image 20250711144140.png]]
 ### 🧠 **Summary**
 
 - Acids & bases influence daily life—from food and cleaning to electronics.
