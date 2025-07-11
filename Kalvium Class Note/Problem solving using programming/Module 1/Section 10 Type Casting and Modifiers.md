@@ -22,21 +22,39 @@ Type casting is **changing one data type into another**, like pouring juice into
 
 ### ✅ Python Examples
 
-python
-
-CopyEdit
-
-`# Implicit a = 10 b = 3.5 c = a + b    # int + float = float print(c)     # 13.5  # Explicit x = 10.7 y = int(x) print(y)     # 10  # String to int s = "123" num = int(s) print(num + 10)  # 133`
+`#Implicit` 
+`a = 10 b = 3.5 c = a + b    # int + float = float` 
+`print(c)     # 13.5`  
+`#Explicit` 
+`x = 10.7 y = int(x)` 
+`print(y)     # 10`  
+`#String to int` 
+`s = "123"` 
+`num = int(s)` 
+`print(num + 10)  # 133`
 
 ---
 
 ### ✅ C++ Examples
 
-cpp
-
-CopyEdit
-
-`#include <iostream> #include <string> using namespace std;  int main() {     // Implicit     int a = 5;     float b = 2.5;     float c = a + b;     cout << c << endl;  // 7.5      // Explicit     float x = 8.9;     int y = (int)x;     cout << y << endl;  // 8      // String to int     string s = "123";     int num = stoi(s);     cout << num + 10 << endl;  // 133 }`
+`#include <iostream>` 
+`#include <string>` 
+`using namespace std;`  
+`int main() {`     
+`// Implicit`     
+`int a = 5;`     
+`float b = 2.5;`     
+`float c = a + b;`     
+`cout << c << endl;  // 7.5`      
+`// Explicit`     
+`float x = 8.9;`     
+`int y = (int)x;`     
+`cout << y << endl;  // 8`      
+`// String to int`     
+`string s = "123";`     
+`int num = stoi(s);`     
+`cout << num + 10 << endl;  // 133` 
+`}``
 
 ---
 

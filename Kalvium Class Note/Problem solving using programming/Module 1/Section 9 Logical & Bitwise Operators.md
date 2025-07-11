@@ -73,10 +73,16 @@ Bitwise operators act on **individual bits** (0 or 1) of integers, offering **lo
 
 ### 🔒 Real-World Example: File Permissions
 
-`READ = 4     # 100 
-WRITE = 2    # 010 
-EXECUTE = 1  # 001  
-user_permissions = 5  # 101 → READ & EXECUTE  if user_permissions & READ:     print("Read access ✅") if user_permissions & WRITE:     print("Write access ✅") else:     print("No Write access ❌")`
+`READ = 4     # 100` 
+`WRITE = 2    # 010` 
+`EXECUTE = 1  # 001`  
+`user_permissions = 5  # 101 → READ & EXECUTE`  
+`if user_permissions & READ:`     
+`print("Read access ✅")` 
+`if user_permissions & WRITE:`     
+`print("Write access ✅")` 
+`else:`     
+`print("No Write access ❌")`
 
 ---
 
@@ -84,7 +90,13 @@ user_permissions = 5  # 101 → READ & EXECUTE  if user_permissions & READ:     
 
 #### ✅ Using XOR:
 
-`a = 10 b = 20  a = a ^ b b = a ^ b a = a ^ b  print("a:", a)  # 20 print("b:", b)  # 10`
+`a = 10` 
+`b = 20`  
+`a = a ^ b` 
+`b = a ^ b` 
+`a = a ^ b`  
+`print("a:", a)  # 20` 
+`print("b:", b)  # 10`
 
 ---
 

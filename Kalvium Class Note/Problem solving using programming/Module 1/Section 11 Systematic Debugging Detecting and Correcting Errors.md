@@ -11,9 +11,7 @@
 In **coding challenges and interviews**, your code’s output is **automatically checked** — which means:
 
 - A single **extra space**, wrong **capital letter**, or incorrect **decimal precision** = ❌ failed test.
-    
 - You must match the **input and output format exactly** as shown.
-    
 
 ---
 
@@ -22,11 +20,8 @@ In **coding challenges and interviews**, your code’s output is **automatically
 Learn to:
 
 - **Take inputs** as specified
-    
 - **Print output** in **exact required format**
-    
 - Use **systematic debugging** to fix small, often overlooked issues
-    
 
 ---
 
@@ -34,22 +29,17 @@ Learn to:
 
 #### ✅ Python Example:
 
-python
-
-CopyEdit
-
-`# Integer input age = int(input("Enter your age: "))  # String input name = input("Enter your name: ")  print("Your name is:", name) print("Your age is:", age)`
+`# Integer 
+input age = int(input("Enter your age: "))  
+# String input name = input("Enter your name: ")  
+print("Your name is:", name) print("Your age is:", age)`
 
 #### 🔍 Important Points:
 
 - `int()` converts string input into an integer.
-    
 - `input()` always reads a string.
-    
 - If data types mismatch, errors will occur.
-    
 - Remember type casting (from previous lessons).
-    
 
 ---
 
@@ -57,17 +47,9 @@ CopyEdit
 
 #### ✅ Python Example (f-string and `.format()`):
 
-python
-
-CopyEdit
-
 `name = "Alice" age = 30  # Using f-string print(f"Hello, my name is {name} and I am {age} years old.")  # Using format method print("Hello, my name is {} and I am {} years old.".format(name, age))`
 
 #### ✅ C++ Example:
-
-cpp
-
-CopyEdit
 
 `#include <iostream> #include <iomanip> using namespace std;  int main() {     float price = 25.5;     cout << fixed << setprecision(2);     cout << "Price: " << price << endl;  // Output: Price: 25.50     return 0; }`
 
@@ -75,16 +57,10 @@ CopyEdit
 
 ### 💡 Special Formatting Case: Decimal Places
 
-python
-
-CopyEdit
-
 `price = 25.5 print(f"Price: {price:.2f}")  # Output: Price: 25.50`
 
 - `.2f` means round and show **exactly 2 digits** after decimal.
-    
 - Used for prices, scores, measurements, etc.
-    
 
 ---
 
@@ -104,28 +80,16 @@ CopyEdit
 Write a program that:
 
 - Takes:
-    
     - An integer input for **age**
-        
     - A string input for **name**
-        
 - Outputs:  
     `"Your name is <name> and you are <age> years old."`
-    
 
 #### ✅ Python Solution:
-
-python
-
-CopyEdit
 
 `name = input() age = int(input()) print(f"Your name is {name} and you are {age} years old.")`
 
 #### ✅ C++ Solution:
-
-cpp
-
-CopyEdit
 
 `#include <iostream> using namespace std;  int main() {     string name;     int age;      cin >> name;     cin >> age;      cout << "Your name is " << name << " and you are " << age << " years old." << endl;     return 0; }`
 
