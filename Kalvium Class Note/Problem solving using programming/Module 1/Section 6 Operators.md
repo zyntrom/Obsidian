@@ -9,26 +9,20 @@
 ### 🔍 What Are Operators and Operands?
 
 - **Operators**: Symbols like `+`, `-`, `==`, `>`, etc., used to perform actions on data.
-    
 - **Operands**: The values the operators work on.
-    
 
 **Example**:  
 `5 + 3`
 
 - `+` is the operator
-    
 - `5` and `3` are operands
-    
 
 ---
 
 ### ❓ Why Are Operators Important?
 
 - Operators let you **manipulate data**, **compare values**, and **make decisions**.
-    
 - Without them, code would just be static data with no intelligence or functionality.
-    
 
 ---
 
@@ -115,31 +109,27 @@ Work with **a single operand**.
 ### 🎓 Summary
 
 - **Arithmetic Operators** → Do math
-    
 - **Relational Operators** → Compare values
-    
 - **Assignment Operators** → Store & update variables
-    
 - **Unary Operators** → Modify single values (negate or increment)
-    
 
 ---
 
 ### 📝 Sample Code (Python)
 
-python
-
-CopyEdit
-
 `a = 10 b = 5  print(a + b)  # 15 print(a == b) # False a += 2        # a becomes 12 print(a)`
 
 ### 📝 Sample Code (C++)
 
-cpp
-
-CopyEdit
-
-`#include <iostream> using namespace std;  int main() {     int a = 10, b = 5;     cout << (a + b) << endl;     cout << (a == b) << endl;     a += 2;     cout << a << endl;     return 0; }`
+`#include <iostream>` 
+`using namespace std;`  
+`int main() {     int a = 10, b = 5;`     
+`cout << (a + b) << endl;`     
+`cout << (a == b) << endl;`     
+`a += 2;`     
+`cout << a << endl;`     
+`return 0;` 
+`}`
 
 ---
 

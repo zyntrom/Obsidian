@@ -109,10 +109,6 @@ Read age (int) and full name (with space), and print in format:
 
 ### ✅ C++ Code Example:
 
-cpp
-
-CopyEdit
-
 `#include <iostream> #include <string> using namespace std;  int main() {     int age;     string name;     getline(cin, name);     cin >> age;     cout << name << " is " << age << " years old." << endl;     return 0; }`
 
 ---
@@ -120,9 +116,6 @@ CopyEdit
 ## ✅ Key Takeaways
 
 - **Input = user talks to the program.**
-    
 - **Output = program talks back.**
-    
 - **Formatting must be _exact_.**
-    
 - Always test with **expected input/output format** when submitting to coding platforms.
