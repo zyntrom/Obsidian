@@ -13,7 +13,6 @@
 |`p` (in NvimTree)|Paste file|
 
 ---
-
 ## 🔍 File Finding (Telescope)
 
 |Keybinding|Description|
