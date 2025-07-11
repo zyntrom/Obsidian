@@ -59,19 +59,15 @@ Problem solving is everywhere in software and technology:
 ### 🧠 How Does Problem Solving Help?
 
 1. **Enhances Logical Thinking**
-    
     - Learn cause-effect relationships
     - Understand how parts of a system interact
 2. **Boosts Creativity**
-    
     - Think of **new approaches** when standard ones don’t work
     - Important for UI/UX, product design, and innovation
 3. **Builds Confidence**
-    
     - Each problem solved strengthens your belief in your capabilities
     - Makes you more comfortable with **uncertainty and complexity**
 4. **Opens Career Opportunities**
-    
     - Highly valued by employers
     - Applicable in software, data science, product management, etc.
 
@@ -90,11 +86,9 @@ Think of problem-solving like playing a **treasure hunt** game:
     → Decide on logic, approach, data structures
 4. 👨‍💻 **Search for Treasure**  
     → Write code based on your plan
-    
 5. 🛠️ **Fix & Celebrate**  
     → Debug and optimize  
     → Celebrate when your code works!
-    
 
 ---
 
@@ -103,22 +97,15 @@ Think of problem-solving like playing a **treasure hunt** game:
 You may use:
 
 - C / C++
-    
 - Python
-    
 - Java
-    
 - NodeJS
-    
 
 ✅ **Recommended:** **C++**
 
 - Strong for **Data Structures & Algorithms**
-    
 - Good for **placements/internships**
-    
 - Teaches you to **think deeply and write optimized logic**
-    
 
 📌 **Live sessions** and resources will focus only on **C++ and Python**.  
 If you choose others, learn their syntax independently.
@@ -128,33 +115,19 @@ If you choose others, learn their syntax independently.
 ### 📚 How to Take This Course Effectively
 
 1. 🛤️ **Follow the Ideal Path**
-    
     - Stick to the structure in Livebooks (especially if you're a beginner)
-        
 2. 🧠 **Plan Your Logic First**
-    
     - Don’t rush to code — think through solutions step-by-step
-        
 3. ⚙️ **Focus on Logic Over Syntax**
-    
     - The **approach** matters more than language-specific syntax
-        
 4. 🧪 **Practice, Practice, Practice**
-    
     - Solve all problems, including bonus ones
-        
 5. ❌ **Avoid Solution Hopping**
-    
     - Don’t peek at answers too early
-        
     - Try reading problems multiple times, and discuss with peers first
-        
 6. ⏱️ **Challenge Yourself**
-    
     - Time your solutions
-        
     - Improve efficiency and reduce code size
-        
 
 ---
 

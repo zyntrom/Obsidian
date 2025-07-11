@@ -48,25 +48,19 @@ You **cannot** use them as identifiers.
 #### ✅ Rules:
 
 - Start with a **letter or underscore (_)**
-    
 - Can contain **letters, digits, underscores**
-    
 - **Cannot** start with a digit
-    
 - **Case-sensitive** in both Python and C++
-    
 
 #### 🐍 Python Naming Convention:
 
 - **snake_case** is preferred  
     Example: `total_marks`, `student_name`
-    
 
 #### 💻 C++ Naming Convention:
 
 - No enforced rule; commonly uses **camelCase** or **snake_case**  
     Example: `totalMarks`, `student_name`
-    
 
 ---
 
@@ -78,13 +72,9 @@ They don’t have names.
 #### Examples:
 
 - **Integer**: `100`, `0`, `-5`
-    
 - **Float**: `3.14`, `-0.01`
-    
 - **String**: `"Hello"`, `'World'`
-    
 - **Boolean**: `True`, `False`
-    
 
 ---
 
@@ -95,13 +85,9 @@ They don’t have names.
 #### Types:
 
 - **Arithmetic**: `+`, `-`, `*`, `/`, `%`
-    
 - **Comparison**: `==`, `!=`, `>`, `<`, `>=`, `<=`
-    
 - **Assignment**: `=`, `+=`, `-=`, `*=`, etc.
-    
 - **Logical**: `and`, `or`, `not` (Python); `&&`, `||`, `!` (C++)
-    
 
 ---
 
@@ -146,52 +132,31 @@ CopyEdit
 **Tokens**:
 
 - `variable` → Identifier
-    
 - `=` → Assignment Operator
-    
 - `5`, `3` → Literals
-    
 - `+` → Arithmetic Operator
-    
 - `print` → Built-in function (identifier)
-    
 - `(`, `)`, `","` → Delimiters
-    
 
 ---
 
 #### 📌 C++:
-
-cpp
-
-CopyEdit
 
 `int result = 5 + 3; std::cout << "Result: " << result << std::endl;`
 
 **Tokens**:
 
 - `int` → Keyword
-    
 - `result` → Identifier
-    
 - `=` → Operator
-    
 - `5`, `3` → Literals
-    
 - `+` → Operator
-    
 - `;` → Delimiter
-    
 - `std::cout` → Namespace-qualified identifier
-    
 - `"Result: "` → String literal
-    
 - `<<` → Output operator
-    
 - `endl` → Identifier (manipulator)
-    
 - `::` → Scope resolution operator
-    
 
 ---
 
@@ -201,24 +166,15 @@ A **variable** is a **named container** that stores data.
 It consists of:
 
 - **Name** (identifier)
-    
 - **Type** (what kind of data)
-    
 - **Value** (actual data)
-    
 
 ---
 
 #### 🐍 Variables in Python
 
 - **Dynamically typed** — no need to declare type
-    
 - Type inferred from assigned value
-    
-
-python
-
-CopyEdit
 
 `age = 25          # int name = "ZynTrom"  # str pi = 3.14         # float`
 
@@ -227,27 +183,13 @@ CopyEdit
 #### 💻 Variables in C++
 
 - **Statically typed** — type must be declared
-    
 - Strict rules help avoid bugs
-    
-
-cpp
-
-CopyEdit
 
 `int age = 25; float pi = 3.14; char grade = 'A';`
-
-cpp
-
-CopyEdit
 
 `#include <iostream> using namespace std;  int main() {     char name[] = "Kalvium";     int age = 1;     cout << name << endl;     cout << age;     return 0; }`
 
 📤 **Output:**
-
-nginx
-
-CopyEdit
 
 `Kalvium 1`
 
@@ -261,24 +203,15 @@ Write a simple code snippet using a variety of tokens.
 
 Example:
 
-python
-
-CopyEdit
-
 `if score >= 50:     print("Pass") else:     print("Fail")`
 
 Then label the tokens:
 
 - `if` = keyword
-    
 - `score` = identifier
-    
 - `>=` = operator
-    
 - `:` = delimiter
-    
 - `"Pass"` = literal
-    
 
 ---
 
@@ -287,20 +220,14 @@ Then label the tokens:
 ✅ Valid variable names:
 
 - `total_marks`
-    
 - `user_age`
-    
 - `temperature_celsius`
-    
 
 ❌ Invalid/confusing names:
 
 - `1stValue` (starts with digit)
-    
 - `my-variable` (invalid `-`)
-    
 - `class` (reserved keyword)
-    
 
 Then pass the paper around, review others’ answers, and give feedback.
 
@@ -311,7 +238,5 @@ Then pass the paper around, review others’ answers, and give feedback.
 Understanding **tokens** and **variables** gives you the foundation to:
 
 - **Write clear, structured code**
-    
 - **Avoid common syntax errors**
-    
 - **Build logic that computers understand**

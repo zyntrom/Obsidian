@@ -9,11 +9,8 @@
 ### 🔍 Why Is Input and Output Important?
 
 - Like a **vending machine**, your program needs input (user choice) and must return correct output (the snack).
-    
 - **Automated systems (judges)** test your code with strict input/output format rules.
-    
 - Even a **small mistake in formatting** (like a missing space or wrong word) can make your answer **fail** — even if your logic is perfect.
-    
 
 ---
 
@@ -72,17 +69,9 @@
 
 ### ✅ C++ (Use `<iomanip>`)
 
-cpp
-
-CopyEdit
-
 `#include <iomanip> cout << fixed << setprecision(2); cout << "Weight: " << weight << " kg";`
 
 ### ✅ Python
-
-python
-
-CopyEdit
 
 `print(f"Weight: {weight:.2f} kg")`
 
@@ -101,15 +90,7 @@ CopyEdit
 
 ### Example:
 
-python
-
-CopyEdit
-
 `print("Name:\tJohn\nQuote: \"Practice makes perfect!\"")`
-
-cpp
-
-CopyEdit
 
 `cout << "Name:\tJohn\nQuote: \"Practice makes perfect!\"\n";`
 
@@ -123,10 +104,6 @@ Read age (int) and full name (with space), and print in format:
 > `Alice Johnson is 21 years old.`
 
 ### ✅ Python Code Example:
-
-python
-
-CopyEdit
 
 `age = int(input()) name = input() print(f"{name} is {age} years old.")`
 

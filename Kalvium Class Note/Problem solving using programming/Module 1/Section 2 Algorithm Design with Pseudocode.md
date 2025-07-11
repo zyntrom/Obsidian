@@ -17,13 +17,9 @@ It uses **plain English** mixed with programming concepts like `INPUT`, `OUTPUT`
 ### 🔎 Why Pseudocode?
 
 - Helps **visualize logic** clearly before coding
-    
 - Makes it easier to **communicate algorithms** to others
-    
 - Encourages **logical thinking** over syntax memorization
-    
 - Makes the **transition to real code** smoother
-    
 
 ---
 
@@ -74,16 +70,12 @@ Computational thinking is the **foundation** of solving problems using computers
 #### Step 1️⃣: Crack the Logic
 
 - Analyze the **inputs**, **processing**, and **expected output**
-    
 - Think through **conditions**, **calculations**, and **loops**
-    
 
 #### Step 2️⃣: Write the Pseudocode
 
 - Convert the logic into structured steps using pseudocode
-    
 - Focus on **clarity**, not coding syntax
-    
 
 ---
 
@@ -97,19 +89,19 @@ Computational thinking is the **foundation** of solving problems using computers
 **Formulas**:
 
 - Area = π × r × r
-    
 - Perimeter = 2 × π × r
-    
 - Use π ≈ 3.14
-    
 
 **Pseudocode**:
 
-pgsql
-
-CopyEdit
-
-`Start     Input radius     Set π to 3.14     Compute area = π × radius × radius     Compute perimeter = 2 × π × radius     Output "Area of the circle is: ", area     Output "Perimeter of the circle is: ", perimeter End`
+`Start`     
+`Input radius`     
+`Set π to 3.14`     
+`Compute area = π × radius × radius`     
+`Compute perimeter = 2 × π × radius`     
+`Output "Area of the circle is: ", area`     
+`Output "Perimeter of the circle is: ", perimeter` 
+`End`
 
 ---
 
@@ -119,20 +111,20 @@ CopyEdit
 
 **Pseudocode**:
 
-mathematica
-
-CopyEdit
-
-`Start     Input age     If age >= 18 Then         Output "You are eligible to vote."     Else         Output "You are not eligible to vote."     End If End`
+`Start`     
+`Input age`     
+`If age >= 18 Then`         
+`Output "You are eligible to vote."`     
+`Else`         
+`Output "You are not eligible to vote."`     
+`End If` 
+`End`
 
 **Edge Cases to Consider**:
 
 - Age = 18 (boundary condition)
-    
 - Negative age (optional validation)
-    
 - Decimal values (optional handling)
-    
 
 ---
 
@@ -141,10 +133,7 @@ CopyEdit
 Pseudocode helps you:
 
 - Think **logically**
-    
 - Focus on **problem-solving**, not syntax
-    
 - **Plan before coding**, reducing bugs and confusion
-    
 
 You’ll use this skill throughout your programming journey — especially in writing algorithms and designing logic-heavy solutions.

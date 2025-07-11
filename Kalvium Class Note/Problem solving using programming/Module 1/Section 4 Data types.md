@@ -8,11 +8,8 @@
 ### 📦 What Are Data Types?
 
 - **Definition**: Data types tell the **compiler/interpreter** what kind of data is being stored and how to handle it.
-    
 - **Real-Life Analogy**: Like labeled jars in your kitchen — you don’t want to mistake salt for sugar!
-    
 - **Purpose**: Helps the computer understand the **type, size, and operations** allowed on a piece of data.
-    
 
 ---
 
@@ -35,10 +32,6 @@ These are the **most basic, built-in** data types. They hold **single values** a
 🧪 **C++ Note**: You must declare the type (static typing)
 
 #### 🚨 Type Error Example:
-
-python
-
-CopyEdit
 
 `result = 5 + "five"  # ❌ Error: Can't add integer and string`
 
@@ -71,17 +64,9 @@ These are **collections** of primitive types bundled together.
 
 #### 📌 Python Object Example:
 
-python
-
-CopyEdit
-
 `class Student:     def __init__(self, name, grade):         self.name = name         self.grade = grade     def attend_class(self):         print(f"{self.name} is attending class.")`
 
 #### 📌 C++ Object Example:
-
-cpp
-
-CopyEdit
 
 `class Student { public:     string name;     int grade;     void attendClass() {         cout << name << " is attending class." << endl;     } };`
 
@@ -119,13 +104,9 @@ When built-in types are not enough, you can create your **own custom types** usi
 ### 💡 Why Does Size & Range Matter?
 
 - **Memory Optimization**: Pick the smallest suitable type.
-    
 - **Performance**: Smaller types = faster execution.
-    
 - **Accuracy**: `float` vs `double` for precision needs.
-    
 - **Safety**: Prevent overflow/underflow using appropriate types (e.g., unsigned for non-negative values).
-    
 
 ---
 
