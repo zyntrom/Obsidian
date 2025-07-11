@@ -25,10 +25,6 @@
 
 - Definition:
 
-java
-
-CopyEdit
-
 `class ListNode {     int val;     ListNode next;     ListNode(int x) { val = x; } }`
 
 - Traversal: `while (node != null) { node = node.next; }`
@@ -59,10 +55,6 @@ CopyEdit
 
 - Definition:
 
-java
-
-CopyEdit
-
 `class TreeNode {     int val;     TreeNode left, right;     TreeNode(int x) { val = x; } }`
 
 - Traversal: Preorder, Inorder, Postorder, Level-order (BFS)
@@ -84,10 +76,6 @@ CopyEdit
 
 - Representation:
 
-java
-
-CopyEdit
-
 `List<List<Integer>> adj = new ArrayList<>(); Map<Integer, List<Integer>> graph = new HashMap<>();`
 
 - Traversal: DFS, BFS
@@ -99,10 +87,6 @@ CopyEdit
 ### 9. Tries
 
 - TrieNode class with 26 children (for lowercase letters)
-
-java
-
-CopyEdit
 
 `class TrieNode {     TrieNode[] children = new TrieNode[26];     boolean isEnd; }`
 
@@ -119,10 +103,6 @@ CopyEdit
 ---
 
 ### 11. Disjoint Set (Union Find)
-
-java
-
-CopyEdit
 
 `int[] parent = new int[n]; int find(int x) { return parent[x] == x ? x : (parent[x] = find(parent[x])); } void union(int a, int b) { parent[find(a)] = find(b); }`
 
