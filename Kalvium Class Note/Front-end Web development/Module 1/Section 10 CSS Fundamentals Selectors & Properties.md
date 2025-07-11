@@ -20,9 +20,14 @@ These apply styles to **all tags** of a specific type.
 
 ### 🧪 Example:
 
-`<h1>Hello</h1> <p>This is a paragraph.</p>`
+```html
+<h1>Hello</h1> <p>This is a paragraph.</p>
 
-`h1 {   color: blue; } p {   font-size: 16px; }`
+```
+```
+```
+h1 {   color: blue; } p {   font-size: 16px; }
+```
 
 🔹 _All_ `<h1>` become blue  
 🔹 _All_ `<p>` get 16px font

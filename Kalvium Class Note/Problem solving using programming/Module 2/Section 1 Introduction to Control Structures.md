@@ -99,7 +99,10 @@ cout << i << endl;
 #### ✅ C++ `do-while` loop (runs at least once):
 
 ```c++
-int count = 0; do {     cout << count << endl;     count++; } while (count < 5);
+int count = 0; do {     
+cout << count << endl;     
+count++; } 
+while (count < 5);
 ```
 
 🧾 _Think: brushing teeth daily – it repeats every day, conditionally._
@@ -119,22 +122,16 @@ int count = 0; do {     cout << count << endl;     count++; } while (count < 5);
 ### ✅ Best Practices with Control Structures
 
 - **Use Clear Variable Names:** e.g. `temperature` > `x`
-    
 - **Keep Logic Simple:** Avoid too many nested `if` or loops
-    
 - **Comment When Needed:** Explain why a condition matters
-    
 - **Pick the Right Structure:** `for` for fixed loops, `while` for unknown counts
-    
 
 ---
 
 ### 🔗 Bonus Resources:
 
 - Control Structures | Educba
-    
 - [Control structures in computer programming | Britannica](https://www.britannica.com/topic/control-structure)
-    
 
 ---
 
@@ -143,13 +140,9 @@ int count = 0; do {     cout << count << endl;     count++; } while (count < 5);
 Control structures are what make your code _think_. They give your program the ability to:
 
 - Decide
-    
 - Repeat
-    
 - React
-    
 - Adapt
-    
 
 You’ve now learned the **three fundamental ways** all programs control behavior. Mastering these will unlock **real programming power** in your future projects.
 
@@ -158,7 +151,5 @@ You’ve now learned the **three fundamental ways** all programs control behavio
 Would you like to:
 
 - ✅ Practice with **if-else**, `for` and `while`?
-    
 - 🧪 Get a **quiz** to reinforce this?
-    
 - 📚 Jump to the next topic: **Simple If and If-Else**?

@@ -39,7 +39,9 @@ This brings life to your previously plain structure.
 
 #### Image from the web:
 
-`<img src="https://example.com/cat.png" alt="Cat">`
+```html
+<img src="https://example.com/cat.png" alt="Cat">
+```
 
 ---
 
@@ -49,7 +51,9 @@ All HTML elements can have **attributes** — extra data/settings written inside
 
 #### Example with `<p>`:
 
-`<p id="intro" class="note" style="color: red;" title="This is a tooltip">   This paragraph has styling and a tooltip! </p>`
+```html
+<p id="intro" class="note" style="color: red;" title="This is a tooltip">   This paragraph has styling and a tooltip! </p>
+```
 
 |Attribute|What it does|
 |---|---|

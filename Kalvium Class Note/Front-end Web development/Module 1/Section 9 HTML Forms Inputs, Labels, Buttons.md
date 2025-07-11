@@ -41,7 +41,13 @@ The `<input>` tag is used to **collect** information.
 
 ### ✅ Example
 
-`<form>   <input type="text" name="username">   <input type="email" name="email">   <input type="submit" value="Submit"> </form>`
+```html
+<form>   
+<input type="text" name="username">   
+<input type="email" name="email">   
+<input type="submit" value="Submit"> 
+</form>
+```
 
 ---
 
@@ -70,25 +76,29 @@ There are **3 types** of buttons in HTML forms:
 
 ### 🧪 Example with Buttons
 
-`<form>`   
-`<input type="text" name="name">`   
-`<input type="submit" value="Submit">`   
-`<input type="reset" value="Reset">`   
-`<button type="button" onclick="alert('Hello!')">Click Me</button>` 
-`</form>`
+```html
+<form>   
+<input type="text" name="name">   
+<input type="submit" value="Submit">   
+<input type="reset" value="Reset">   
+<button type="button" onclick="alert('Hello!')">Click Me</button> 
+</form>
+```
 
 ---
 
 ## 🧱 5. Full Example: A Basic Form
 
-`<form>   <label for="name">Name:</label><br>`   
-`<input type="text" id="name" name="name"><br><br>`    
-`<label for="email">Email:</label><br>`  
-`<input type="email" id="email" name="email"><br><br>`    
-`<label for="password">Password:</label><br>`   
-`<input type="password" id="password" name="password"><br><br>`    
-`<input type="submit" value="Register">` 
-`</form>`
+```html
+<form>   <label for="name">Name:</label><br>   
+<input type="text" id="name" name="name"><br><br>    
+<label for="email">Email:</label><br>  
+<input type="email" id="email" name="email"><br><br>    
+<label for="password">Password:</label><br>   
+<input type="password" id="password" name="password"><br><br>    
+<input type="submit" value="Register"> 
+</form>
+```
 
 ---
 
