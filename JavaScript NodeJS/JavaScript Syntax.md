@@ -1,9 +1,5 @@
 ## ✅ 1. **Variable Declaration**
 
-js
-
-CopyEdit
-
 `let a = 10;    // can be reassigned` 
 `const b = 5;   // constant value` 
 `var c = 15;    // older way, avoid it`
@@ -12,19 +8,11 @@ CopyEdit
 
 ## ✅ 2. **Data Types**
 
-js
-
-CopyEdit
-
 `let num = 123;            // Number let str = "Hello";        // String let bool = true;          // Boolean let arr = [1, 2, 3];      // Array let obj = {a: 1, b: 2};   // Object`
 
 ---
 
 ## ✅ 3. **Conditionals**
-
-js
-
-CopyEdit
 
 `if (a > b) {   // do something }` 
 `else if (a == b) {   // do something else }` 
@@ -33,10 +21,6 @@ CopyEdit
 ---
 
 ## ✅ 4. **Loops**
-
-js
-
-CopyEdit
 
 `for (let i = 0; i < arr.length; i++)`
 	`{   console.log(arr[i]); }`  
@@ -49,20 +33,12 @@ CopyEdit
 
 ## ✅ 5. **Functions**
 
-js
-
-CopyEdit
-
 `function add(a, b)` 
 	`{   return a + b; }  // Arrow Function const add = (a, b) => a + b;`
 
 ---
 
 ## ✅ 6. **Arrays Methods**
-
-js
-
-CopyEdit
 
 `arr.push(4);           // add to end` 
 `arr.pop();             // remove from end` 
@@ -80,10 +56,6 @@ CopyEdit
 
 ## ✅ 7. **Strings**
 
-js
-
-CopyEdit
-
 `let s = "leetcode";` 
 `s.length; s[0];               // character` 
 `s.charAt(1);` 
@@ -97,10 +69,6 @@ CopyEdit
 
 ## ✅ 8. **Objects / Hashmaps**
 
-js
-
-CopyEdit
-
 `let map = {   a: 1,   b: 2 };` 
 `map["a"];         // 1` 
 `map.a;            // 1` 
@@ -110,10 +78,6 @@ CopyEdit
 ---
 
 ## ✅ 9. **Set and Map (ES6)**
-
-js
-
-CopyEdit
 
 `let set = new Set([1, 2, 3]);` 
 `set.add(4); set.has(2);      // true` 
@@ -127,10 +91,6 @@ CopyEdit
 
 ## ✅ 10. **Classes (used in some OOP problems)**
 
-js
-
-CopyEdit
-
 `class Node {`   
 	`constructor(val) {`     
 		`this.val = val;`     
@@ -139,24 +99,4 @@ CopyEdit
 
 ---
 
-## ✅ 11. **Common LeetCode Patterns**
-
-### Two pointers:
-
-js
-
-CopyEdit
-
-`let left = 0, right = arr.length - 1;` 
-`while (left < right) {`   
-	`// logic   left++;   right--;` 
-`}`
-
-### Binary Search:
-
-js
-
-CopyEdit
-
-`let l = 0, r = arr.length - 1; 
-while (l <= r) {   let mid = Math.floor((l + r) / 2);   if (arr[mid] === target) return mid;   else if (arr[mid] < target) l = mid + 1;   else r = mid - 1; }`
+`
