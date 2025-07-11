@@ -187,7 +187,19 @@ Use cases:
 
 ### 🔹 **Binary Search Template**
 
-`int left = 0, right = arr.length - 1;  while (left <= right) {   int mid = left + (right - left) / 2;    if (arr[mid] == target)     return mid;   else if (arr[mid] < target)     left = mid + 1;   else     right = mid - 1; }`
+```java
+int left = 0, 
+right = arr.length - 1;  
+while (left <= right) {   
+	int mid = left + (right - left) / 2;    
+	if (arr[mid] == target)     
+		return mid;   
+	else if (arr[mid] < target)     
+		left = mid + 1;   
+	else     
+		right = mid - 1; 
+	}
+```
 
 Use cases:
 
@@ -206,7 +218,15 @@ java
 
 CopyEdit
 
-`void dfs(int node, boolean[] visited, List<List<Integer>> graph) {   visited[node] = true;    for (int neighbor : graph.get(node)) {     if (!visited[neighbor])       dfs(neighbor, visited, graph);   } }`
+```java
+void dfs(int node, boolean[] visited, List<List<Integer>> graph) {   
+	visited[node] = true;    
+	for (int neighbor : graph.get(node)) {     
+		if (!visited[neighbor])       
+		dfs(neighbor, visited, graph);   
+	} 
+}
+```
 
 Use cases:
 
