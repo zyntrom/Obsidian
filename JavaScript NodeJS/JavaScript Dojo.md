@@ -25,3 +25,8 @@
 - Adding the 2nd last digits of both numbers: 
 
 ![[Pasted image 20250711165102.png]]
+
+- First digit after the decimal:
+
+![[Pasted image 20250711165646.png]]
+
