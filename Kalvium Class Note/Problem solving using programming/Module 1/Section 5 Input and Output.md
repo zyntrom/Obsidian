@@ -69,11 +69,17 @@
 
 ### ✅ C++ (Use `<iomanip>`)
 
-`#include <iomanip> cout << fixed << setprecision(2); cout << "Weight: " << weight << " kg";`
+```c++
+#include <iomanip> 
+cout << fixed << setprecision(2); 
+cout << "Weight: " << weight << " kg";
+```
 
 ### ✅ Python
 
-`print(f"Weight: {weight:.2f} kg")`
+```python
+print(f"Weight: {weight:.2f} kg")
+```
 
 📌 `:.2f` → show float with 2 decimal places.
 
@@ -105,11 +111,27 @@ Read age (int) and full name (with space), and print in format:
 
 ### ✅ Python Code Example:
 
-`age = int(input()) name = input() print(f"{name} is {age} years old.")`
+```python
+age = int(input()) 
+name = input() 
+print(f"{name} is {age} years old.")
+```
 
 ### ✅ C++ Code Example:
 
-`#include <iostream> #include <string> using namespace std;  int main() {     int age;     string name;     getline(cin, name);     cin >> age;     cout << name << " is " << age << " years old." << endl;     return 0; }`
+```c++
+#include <iostream> 
+#include <string> 
+using namespace std;  
+int main() {     
+int age;     
+string name;     
+getline(cin, name);     
+cin >> age;     
+cout << name << " is " << age << " years old." << endl;     
+return 0; 
+}
+```
 
 ---
 

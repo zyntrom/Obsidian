@@ -24,11 +24,13 @@ To extract characters:
 
 ### 🐍 Python Examples
 
-`name = "Alice"`  
-`print(name[0])   # A` 
-`print(name[1])   # l` 
-`print(name[4])   # e` 
-`print(name[-1])  # e → last character using negative index`
+```python
+name = "Alice"  
+print(name[0])   # A 
+print(name[1])   # l 
+print(name[4])   # e 
+print(name[-1])  # e → last character using negative index
+```
 
 📌 **Note:**
 
@@ -40,16 +42,18 @@ To extract characters:
 
 ### 💻 C++ Examples
 
-`#include <iostream>` 
-`#include <string>` 
-`using namespace std;`  
-`int main() {`     
-`string name = "Alice";`     
-`cout << name[0] << endl;  // A`     
-`cout << name[1] << endl;  // l`     
-`cout << name[4] << endl;  // e`     
-`return 0;` 
-`}``
+```c++
+#include <iostream> 
+#include <string> 
+using namespace std;  
+int main() {     
+string name = "Alice";     
+cout << name[0] << endl;  // A     
+cout << name[1] << endl;  // l     
+cout << name[4] << endl;  // e     
+return 0; 
+}
+```
 
 📌 **Note:**
 

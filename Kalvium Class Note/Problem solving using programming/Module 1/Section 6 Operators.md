@@ -117,19 +117,28 @@ Work with **a single operand**.
 
 ### 📝 Sample Code (Python)
 
-`a = 10 b = 5  print(a + b)  # 15 print(a == b) # False a += 2        # a becomes 12 print(a)`
+```python
+a = 10 
+b = 5  
+print(a + b)  # 15 
+print(a == b) # False 
+a += 2        # a becomes 12 
+print(a)
+```
 
 ### 📝 Sample Code (C++)
 
-`#include <iostream>` 
-`using namespace std;`  
-`int main() {     int a = 10, b = 5;`     
-`cout << (a + b) << endl;`     
-`cout << (a == b) << endl;`     
-`a += 2;`     
-`cout << a << endl;`     
-`return 0;` 
-`}`
+```c++
+#include <iostream> 
+using namespace std;  
+int main() {     int a = 10, b = 5;     
+cout << (a + b) << endl;     
+cout << (a == b) << endl;     
+a += 2;     
+cout << a << endl;     
+return 0; 
+}
+```
 
 ---
 
