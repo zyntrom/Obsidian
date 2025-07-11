@@ -29,11 +29,15 @@ Learn to:
 
 #### ✅ Python Example:
 
-`# Integer` 
-`input age = int(input("Enter your age: "))`  
-#`String input name = input("Enter your name: ")`  
-`print("Your name is:", name)` 
-`print("Your age is:", age)`
+```python
+
+#Integer 
+input age = int(input("Enter your age: "))  
+#String input name = input("Enter your name: ")  
+print("Your name is:", name) 
+print("Your age is:", age)
+
+```
 
 #### 🔍 Important Points:
 
@@ -48,7 +52,7 @@ Learn to:
 
 #### ✅ Python Example (f-string and `.format()`):
 
-```
+```python
 name = "Alice" 
 age = 30  
 #Using f-string 
@@ -59,7 +63,7 @@ print("Hello, my name is {} and I am {} years old.".format(name, age))
 
 #### ✅ C++ Example:
 
-```
+```c++
 #include <iostream> 
 #include <iomanip> 
 using namespace std;  
@@ -106,7 +110,7 @@ Write a program that:
 
 #### ✅ Python Solution:
 
-```
+```python
 name = input()
 age = int(input()) 
 print(f"Your name is {name} and you are {age} years old.")
@@ -114,10 +118,17 @@ print(f"Your name is {name} and you are {age} years old.")
 
 #### ✅ C++ Solution:
 
-```
+```c++
 #include <iostream> 
 using namespace std;  
-int main() {     string name;     int age;      cin >> name;     cin >> age;      cout << "Your name is " << name << " and you are " << age << " years old." << endl;     return 0; }
+int main() {     
+string name;     
+int age;      
+cin >> name;     
+cin >> age;      
+cout << "Your name is " << name << " and you are " << age << " years old." << endl;     
+return 0; 
+}
 ```
 
 ---
