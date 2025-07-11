@@ -7,11 +7,8 @@
 Ever noticed…
 
 - A **metal spoon** in tea feels ice cold on a winter morning?
-    
 - A **blanket** feels warm instantly?
-    
 - **Tiles in the sun** burn your feet, while shaded ones stay cool?
-    
 
 These everyday experiences are all governed by **heat and temperature**—invisible but powerful scientific principles shaping our lives and devices.
 
@@ -20,11 +17,8 @@ These everyday experiences are all governed by **heat and temperature**—invisi
 ## 🧭 What You Will Learn
 
 - **How heat moves**: Conduction, Convection, Radiation
-    
 - **Why materials heat up differently**: Specific Heat
-    
 - **Rules behind heat and energy**: Thermodynamics
-    
 
 ---
 
@@ -48,26 +42,17 @@ These everyday experiences are all governed by **heat and temperature**—invisi
 `Q = (k × A × ΔT) / d`
 
 - `Q`: Heat transfer rate (W)
-    
 - `k`: Thermal conductivity
-    
 - `A`: Cross-sectional area
-    
 - `ΔT`: Temperature difference
-    
 - `d`: Thickness
-    
 
 #### ✅ Examples:
 
 - **Cooking**: Pan heating evenly on a stove
-    
 - **Computer Heat Sink**: Transfers CPU heat to surroundings
-    
 - **Ironing Clothes**: Hot plate presses heat into fabric
-    
 - **PCB Boards**: Copper tracks conduct electricity _and_ heat
-    
 
 ---
 
@@ -79,20 +64,14 @@ These everyday experiences are all governed by **heat and temperature**—invisi
 `Q = h × A × ΔT`
 
 - `h`: Convection heat transfer coefficient
-    
 - `A`: Area
-    
 - `ΔT`: Temperature difference
-    
 
 #### ✅ Examples:
 
 - **Data Centers**: Cool air circulates to remove server heat
-    
 - **Hot Air Balloons**: Heated air rises, lifting balloon
-    
 - **Room Radiators**: Warm air rises, cold air falls → cycle
-    
 
 ---
 
@@ -104,24 +83,16 @@ These everyday experiences are all governed by **heat and temperature**—invisi
 `Q = ε × σ × A × (Tr⁴ − Tc⁴)`
 
 - `ε`: Emissivity (0–1)
-    
 - `σ`: 5.67×10⁻⁸ W/m²·K⁴
-    
 - `A`: Area
-    
 - `Tr`: Radiating temp
-    
 - `Tc`: Surrounding temp
-    
 
 #### ✅ Examples:
 
 - **Bonfire Warmth**: Heat reaches you without contact
-    
 - **Infrared Lamps**: Used in kitchens and outdoor heaters
-    
 - **Thermal Cameras**: Detect radiation from circuit boards
-    
 
 ---
 
@@ -137,9 +108,7 @@ These everyday experiences are all governed by **heat and temperature**—invisi
 ✅ **Applications**:
 
 - **Water** in car radiators
-    
 - **Sand** heats up faster than sea water at the beach
-    
 
 ---
 
@@ -162,11 +131,8 @@ If A = B and B = C, then A = C (All reach the same temp over time)
 📝 Formula: `ΔU = Q − W`
 
 - `Q`: Heat added
-    
 - `W`: Work done
-    
 - `ΔU`: Internal energy change
-    
 
 🔋 _Laptop battery stores energy, then uses it to power screen later_
 
@@ -193,11 +159,9 @@ If A = B and B = C, then A = C (All reach the same temp over time)
 ## 🕵️‍♂️ Activity: **Heat Transfer Detective**
 
 - Teacher gives real-life situation (e.g., making tea, walking barefoot).
-    
 - Your job:  
     ✅ Identify where **heat transfer** happens  
     ✅ Classify it as **conduction**, **convection**, or **radiation**
-    
 
 ---
 

@@ -10,11 +10,8 @@
 Science isn’t just textbooks or formulas — it’s how we **understand the natural world**, from atoms to electricity. It shapes:
 
 - The way your phone works 📱
-    
 - How soap removes grease 🧼
-    
 - Why your laptop heats up 🔥
-    
 
 **Science is everywhere**, silently working behind the scenes in your daily routines.
 
@@ -25,11 +22,8 @@ Science isn’t just textbooks or formulas — it’s how we **understand the na
 > 🧠 "You can't build great technology without understanding the science behind it."
 
 - Physics explains **hardware**, **energy**, **motion**, and **waves**.
-    
 - Chemistry explains **materials**, **batteries**, **semiconductors**, and **reactions**.
-    
 - Both are essential for **innovation**, **optimization**, and **problem-solving** in tech.
-    
 
 ---
 
@@ -107,5 +101,4 @@ The course is split into **5 modules** that blend science with real-world and te
 You now know:
 
 - **Science is the invisible engine** behind everyday tools and technologies.
-    
 - As a computer science student, understanding **physics and chemistry** helps you become a smarter, more innovative tech creator.

@@ -5,11 +5,8 @@
 By the end of this lesson, you should be able to:
 
 - Identify the four states of matter.
-    
 - Explain phase changes: evaporation, condensation, sublimation, etc.
-    
 - Distinguish between physical and chemical changes with examples.
-    
 
 ---
 
@@ -31,13 +28,9 @@ A **physical change** affects form but **not** chemical identity. The substance 
 #### 🔸 Properties:
 
 - No new substance formed
-    
 - Often reversible
-    
 - Change in state, size, or shape
-    
 - May involve energy but no chemical reaction
-    
 
 #### 🔹 Types:
 
@@ -56,13 +49,9 @@ A **chemical change** creates a **new substance** with different properties. Usu
 #### 🔸 Properties:
 
 - New substance formed
-    
 - Usually irreversible
-    
 - Energy change (heat, light)
-    
 - Change in molecular structure
-    
 
 #### 🔹 Types of Chemical Reactions:
 
@@ -90,16 +79,12 @@ A **chemical change** creates a **new substance** with different properties. Usu
 ### 🔁 **Example to Compare**
 
 - **Melting Sugar** → Physical Change
-    
 - **Caramelizing Sugar** (heating till it browns) → Chemical Change
-    
 
 ---
 
 ### 📌 **Summary**
 
 - You explored **solids, liquids, gases, and plasma**, each with unique particle behavior and real-world uses.
-    
 - You learned the difference between **physical changes** (reversible, no new substance) and **chemical changes** (irreversible, new substances).
-    
 - These concepts help you understand **everyday changes** and the **science behind tech like SSDs, cooling systems, and chip production**.
