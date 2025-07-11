@@ -21,11 +21,10 @@ Logical operators help a program **make decisions** based on conditions that are
 
 #### 🧪 Python Example:
 
-python
-
-CopyEdit
-
-`age = 25 has_license = True  if age >= 18 and has_license:     print("Eligible to drive")  # ✅`
+`age = 25` 
+`has_license = True`  
+`if age >= 18 and has_license:`     
+`print("Eligible to drive")  # ✅`
 
 ---
 
@@ -46,11 +45,14 @@ Bitwise operators act on **individual bits** (0 or 1) of integers, offering **lo
 
 #### 🧪 Python Example:
 
-python
-
-CopyEdit
-
-`a = 5  # 0101 b = 3  # 0011  print(a & b)  # 1 print(a | b)  # 7 print(a ^ b)  # 6 print(~a)     # -6 print(a << 2) # 20 print(20 >> 2)# 5`
+`a = 5  # 0101` 
+`b = 3  # 0011`  
+`print(a & b)  # 1` 
+`print(a | b)  # 7` 
+`print(a ^ b)  # 6` 
+`print(~a)     # -6` 
+`print(a << 2) # 20` 
+`print(20 >> 2)# 5`
 
 ---
 
@@ -59,38 +61,28 @@ CopyEdit
 #### ✅ Logical Operators:
 
 - Validate login: `if user and password_correct`
-    
 - Check multiple conditions: `if score > 80 and attendance > 90`
-    
 
 #### ✅ Bitwise Operators:
 
 - Embedded systems
-    
 - Permission flags (e.g., read/write/execute)
-    
 - Fast operations on large datasets
-    
 
 ---
 
 ### 🔒 Real-World Example: File Permissions
 
-python
-
-CopyEdit
-
-`READ = 4     # 100 WRITE = 2    # 010 EXECUTE = 1  # 001  user_permissions = 5  # 101 → READ & EXECUTE  if user_permissions & READ:     print("Read access ✅") if user_permissions & WRITE:     print("Write access ✅") else:     print("No Write access ❌")`
+`READ = 4     # 100 
+WRITE = 2    # 010 
+EXECUTE = 1  # 001  
+user_permissions = 5  # 101 → READ & EXECUTE  if user_permissions & READ:     print("Read access ✅") if user_permissions & WRITE:     print("Write access ✅") else:     print("No Write access ❌")`
 
 ---
 
 ### 🔁 Bitwise Task: Swap Two Numbers Without a Temp Variable
 
 #### ✅ Using XOR:
-
-python
-
-CopyEdit
 
 `a = 10 b = 20  a = a ^ b b = a ^ b a = a ^ b  print("a:", a)  # 20 print("b:", b)  # 10`
 

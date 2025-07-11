@@ -92,7 +92,9 @@ Output: `"A.P.J"`
 **Example Task:** Extract the **second-last digit** of a number.  
 Technique: Convert to string → access `[-2]` index.
 
-`num = 73542 num_str = str(num) print(num_str[-2])  # 4`
+`num = 73542` 
+`num_str = str(num)` 
+`print(num_str[-2])  # 4`
 
 ---
 

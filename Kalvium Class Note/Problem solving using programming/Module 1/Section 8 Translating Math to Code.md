@@ -26,9 +26,7 @@ Understand how to convert **mathematical formulas** and logic into **code instru
 ### 🤖 Analogy: Robot Delivery or Baking Assistant
 
 - **Math** is the **recipe** or **blueprint**.
-    
 - **Code** is the **robot** or **machine** that executes it repeatedly, accurately, and instantly.
-    
 
 ---
 
@@ -38,19 +36,17 @@ Understand how to convert **mathematical formulas** and logic into **code instru
 
 **Python:**
 
-python
-
-CopyEdit
-
-`speed = 60  # km/h time = 2    # hours distance = speed * time print(distance)  # 120`
+`speed = 60  # km/h` 
+`time = 2    # hours` 
+`distance = speed * time` 
+`print(distance)  # 120`
 
 **C++:**
 
-cpp
-
-CopyEdit
-
-`int speed = 60; int time = 2; int distance = speed * time; cout << distance;  // 120`
+`int speed = 60;` 
+`int time = 2;` 
+`int distance = speed * time;` 
+`cout << distance;  // 120`
 
 ---
 
@@ -61,28 +57,26 @@ CopyEdit
 
 **Python:**
 
-python
-
-CopyEdit
-
-`import math r = 5 area = math.pi * r ** 2 print(area)  # 78.53981633974483`
+`import math` 
+`r = 5 area = math.pi * r ** 2` 
+`print(area)  # 78.53981633974483`
 
 **C++:**
 
-cpp
-
-CopyEdit
-
-`#include <iostream> #include <cmath> using namespace std;  int main() {     double r = 5;     double area = M_PI * pow(r, 2);     cout << area;  // 78.5398     return 0; }`
+`#include <iostream>` 
+`#include <cmath>` 
+`using namespace std;`  
+`int main() {`     
+`double r = 5;`     
+`double area = M_PI * pow(r, 2);`     
+`cout << area;  // 78.5398`     
+`return 0; }``
 
 🧠 **Note:**
 
 - Python uses `**` for power.
-    
 - C++ uses `pow()` and needs `<cmath>` header.
-    
 - C++ constant `M_PI` is defined in `cmath`.
-    
 
 ---
 
@@ -102,11 +96,8 @@ CopyEdit
 Whenever you see a formula:
 
 1. Identify **inputs** (variables)
-    
 2. Determine **operations** (like multiply, square, add)
-    
 3. Translate using appropriate **syntax**
-    
 
 ---
 
@@ -118,10 +109,6 @@ Print the 5th multiple of a given number:
 `5th multiple = 5 × n`
 
 **Python:**
-
-python
-
-CopyEdit
 
 `n = int(input()) print(5 * n)`
 
