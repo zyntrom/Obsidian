@@ -1,12 +1,17 @@
 ## 🧰 1. Git Setup (First Time Only)
 
-`git config --global user.name "Your Name"` 
-`git config --global user.email "your@email.com"` 
-`git config --global init.defaultBranch main     # Use 'main' instead of 'master'`
+```bash
+git config --global user.name "Your Name" 
+git config --global user.email "your@email.com" 
+git config --global init.defaultBranch main     
+# Use 'main' instead of 'master'
+```
 
 Check settings:
 
-`git config --list`
+```bash
+git config --list
+```
 
 ---
 
@@ -14,23 +19,33 @@ Check settings:
 
 ### ✅ Initialize Git repo
 
-`git init`
+```bash
+git init
+```
 
 ### ✅ Check status
 
-`git status`
+```bash
+git status
+```
 
 ### ✅ Add files to staging area
 
-`git add <filename> git add .       # All files`
+```bash
+git add <filename> git add .       # All files
+```
 
 ### ✅ Commit staged files
 
-`git commit -m "First commit"`
+```bash
+git commit -m "First commit"
+```
 
 ### ✅ View commit history
 
-`git log`
+```bash
+git log
+```
 
 ---
 
@@ -38,11 +53,15 @@ Check settings:
 
 ### ✅ Add a remote repository
 
-`git remote add origin https://github.com/yourusername/yourrepo.git`
+```bash
+git remote add origin https://github.com/yourusername/yourrepo.git
+```
 
 Check if added:
 
-`git remote -v`
+```bash
+git remote -v
+```
 
 ---
 
@@ -52,11 +71,15 @@ Check if added:
 
 #### ✅ Fetch and merge with local repo
 
-`git fetch origin git merge origin/main --allow-unrelated-histories`
+```bash
+git fetch origin git merge origin/main --allow-unrelated-histories
+```
 
 #### 🔃 Push merged repo to GitHub
 
-`git push -u origin main`
+```bash
+git push -u origin main
+```
 
 ---
 
@@ -64,7 +87,11 @@ Check if added:
 
 #### ✅ Push local repo to GitHub
 
-`git branch -M main              # Rename current branch to main git remote add origin https://github.com/yourusername/yourrepo.git git push -u origin main`
+```bash
+git branch -M main              
+# Rename current branch to main git remote add origin https://github.com/yourusername/yourrepo.git 
+git push -u origin main
+```
 
 ---
 
@@ -72,15 +99,22 @@ Check if added:
 
 ### ✅ Create and switch to new branch
 
-`git checkout -b feature-branch`
+```bash
+git checkout -b feature-branch
+```
 
 ### ✅ Switch branches
 
-`git switch main                # Or git checkout main`
+```bash
+git switch main                # Or 
+git checkout main
+```
 
 ### ✅ Merge branch into main
 
-`git checkout main git merge feature-branch`
+```bash
+git checkout main git merge feature-branch
+```
 
 ---
 
@@ -88,11 +122,15 @@ Check if added:
 
 ### Discard unstaged changes:
 
-`git checkout -- <filename>`
+```bash
+git checkout -- <filename>
+```
 
 ### Unstage a file:
 
-`git reset <filename>`
+```bash
+git reset <filename>
+```
 
 ---
 
@@ -112,34 +150,44 @@ Check if added:
 
 ### See list of branches
 
-`git branch`
+```bash
+git branch
+```
 
 ### Delete a branch
 
-`git branch -d branchname`
+```bash
+git branch -d branchname
+```
 
 ### Stash changes temporarily
 
-`git stash git stash pop`
+```bash
+git stash git stash pop
+```
 
 ### Clone a repo
 
-`git clone https://github.com/username/repo.git`
+```bash
+git clone https://github.com/username/repo.git
+```
 
 ### Pull latest changes from GitHub
 
-`git pull`
+```bash
+git pull
+```
 
 ---
 
 ## 🧾 Common Git Workflow Summary
 
-|Action|Command|
-|---|---|
-|Start a project|`git init`|
-|Stage and commit|`git add . && git commit -m "msg"`|
-|Connect to GitHub|`git remote add origin <url>`|
-|Push code|`git push -u origin main`|
-|Merge remote changes|`git fetch origin && git merge origin/main`|
-|Clone repo|`git clone <url>`|
-|Host HTML site on GitHub Pages|GitHub → Settings → Pages|
+| Action                         | Command                                     |
+| ------------------------------ | ------------------------------------------- |
+| Start a project                | `git init`                                  |
+| Stage and commit               | `git add . && git commit -m "msg"`          |
+| Connect to GitHub              | `git remote add origin <url>`               |
+| Push code                      | `git push -u origin main`                   |
+| Merge remote changes           | `git fetch origin && git merge origin/main` |
+| Clone repo                     | `git clone <url>`                           |
+| Host HTML site on GitHub Pages | GitHub → Settings → Pages                   |
