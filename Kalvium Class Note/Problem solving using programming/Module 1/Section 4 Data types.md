@@ -64,11 +64,27 @@ These are **collections** of primitive types bundled together.
 
 #### 📌 Python Object Example:
 
-`class Student:     def __init__(self, name, grade):         self.name = name         self.grade = grade     def attend_class(self):         print(f"{self.name} is attending class.")`
+```python
+class Student:     
+	def __init__(self, name, grade):         
+		self.name = name         
+		self.grade = grade     
+		def attend_class(self):         
+			print(f"{self.name} is attending class.")
+```
 
 #### 📌 C++ Object Example:
 
-`class Student { public:     string name;     int grade;     void attendClass() {         cout << name << " is attending class." << endl;     } };`
+```c++
+class Student { 
+public:     
+	string name;     
+	int grade;     
+	void attendClass() {         
+	cout << name << " is attending class." << endl;     
+	}
+};
+```
 
 ---
 

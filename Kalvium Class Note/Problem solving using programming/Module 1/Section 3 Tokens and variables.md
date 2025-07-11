@@ -189,10 +189,19 @@ pi = 3.14         # float
 - **Statically typed** — type must be declared
 - Strict rules help avoid bugs
 
-```
+```c++
 int age = 25; 
-float pi = 3.14; char grade = 'A';
-#include <iostream> using namespace std;  int main() {     char name[] = "Kalvium";     int age = 1;     cout << name << endl;     cout << age;     return 0; }
+float pi = 3.14; 
+char grade = 'A';
+#include <iostream> 
+using namespace std;  
+int main() {     
+	char name[] = "Kalvium";     
+	int age = 1;     
+	cout << name << endl;     
+	cout << age;     
+	return 0; 
+}
 ```
 
 📤 **Output:**
@@ -209,7 +218,11 @@ Write a simple code snippet using a variety of tokens.
 
 Example:
 
-`if score >= 50:     print("Pass") else:     print("Fail")`
+```python
+if score >= 50:     
+print("Pass") else:     
+print("Fail")
+```
 
 Then label the tokens:
 
