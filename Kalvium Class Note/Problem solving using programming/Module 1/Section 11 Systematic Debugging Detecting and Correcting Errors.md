@@ -29,10 +29,11 @@ Learn to:
 
 #### ✅ Python Example:
 
-`# Integer 
-input age = int(input("Enter your age: "))  
-# String input name = input("Enter your name: ")  
-print("Your name is:", name) print("Your age is:", age)`
+`# Integer` 
+`input age = int(input("Enter your age: "))`  
+#`String input name = input("Enter your name: ")`  
+`print("Your name is:", name)` 
+`print("Your age is:", age)`
 
 #### 🔍 Important Points:
 
@@ -47,11 +48,29 @@ print("Your name is:", name) print("Your age is:", age)`
 
 #### ✅ Python Example (f-string and `.format()`):
 
-`name = "Alice" age = 30  # Using f-string print(f"Hello, my name is {name} and I am {age} years old.")  # Using format method print("Hello, my name is {} and I am {} years old.".format(name, age))`
+```
+name = "Alice" 
+age = 30  
+#Using f-string 
+print(f"Hello, my name is {name} and I am {age} years old.")  
+#Using format method 
+print("Hello, my name is {} and I am {} years old.".format(name, age))
+```
 
 #### ✅ C++ Example:
 
-`#include <iostream> #include <iomanip> using namespace std;  int main() {     float price = 25.5;     cout << fixed << setprecision(2);     cout << "Price: " << price << endl;  // Output: Price: 25.50     return 0; }`
+```
+#include <iostream> 
+#include <iomanip> 
+using namespace std;  
+int main() {     
+float price = 25.5;     
+cout << fixed << setprecision(2);     
+cout << "Price: " << price << endl;  
+// Output: Price: 25.50     
+return 0; 
+}``
+```
 
 ---
 
@@ -87,11 +106,19 @@ Write a program that:
 
 #### ✅ Python Solution:
 
-`name = input() age = int(input()) print(f"Your name is {name} and you are {age} years old.")`
+```
+name = input()
+age = int(input()) 
+print(f"Your name is {name} and you are {age} years old.")
+```
 
 #### ✅ C++ Solution:
 
-`#include <iostream> using namespace std;  int main() {     string name;     int age;      cin >> name;     cin >> age;      cout << "Your name is " << name << " and you are " << age << " years old." << endl;     return 0; }`
+```
+#include <iostream> 
+using namespace std;  
+int main() {     string name;     int age;      cin >> name;     cin >> age;      cout << "Your name is " << name << " and you are " << age << " years old." << endl;     return 0; }
+```
 
 ---
 
