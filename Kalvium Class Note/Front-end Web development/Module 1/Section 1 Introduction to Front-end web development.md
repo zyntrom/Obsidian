@@ -1,4 +1,4 @@
-## ✅ **Summary
+## ✅ Summary
 
 Frontend web development is all about **what users see and interact with on websites** — buttons, layouts, colors, forms, animations, etc. It combines **creativity** (design, layout) and **technology** (HTML, CSS, JS).
 
