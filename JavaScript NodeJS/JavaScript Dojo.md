@@ -38,4 +38,7 @@
 
 ![[Pasted image 20250711170559.png]]
 
-- Bit shifting in Javascript:
+- Bit shifting in JavaScript:
+
+![[Pasted image 20250711170953.png]]
+
