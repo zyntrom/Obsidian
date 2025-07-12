@@ -45,3 +45,7 @@
 - Floating number formatting:
 
 ![[Pasted image 20250712092731.png]]
+
+- Area and perimeter format program:
+
+![[Pasted image 20250712095033.png]]
