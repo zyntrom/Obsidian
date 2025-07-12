@@ -66,16 +66,16 @@
 
 ### 🔹 **HashMap Syntax Table**
 
-|**Operation**|**Syntax**|**Notes**|
-|---|---|---|
-|Declare|`Map<Integer, String> map = new HashMap<>();`|Generic types required|
-|Add/Update Entry|`map.put(key, val);`|Replaces if key exists|
-|Get Value|`map.get(key);`|Returns null if key absent|
-|Check Key|`map.containsKey(k);`|Returns boolean|
-|Check Value|`map.containsValue(v);`|Slower, use when needed|
-|Remove Entry|`map.remove(k);`|Removes key-value pair|
-|Size|`map.size();`|Number of entries|
-|Loop Entries|`for (Map.Entry<K,V> e : map.entrySet())`|`e.getKey()`, `e.getValue()`|
+| **Operation**    | **Syntax**                                    | **Notes**                    |
+| ---------------- | --------------------------------------------- | ---------------------------- |
+| Declare          | `Map<Integer, String> map = new HashMap<>();` | Generic types required       |
+| Add/Update Entry | `map.put(key, val);`                          | Replaces if key exists       |
+| Get Value        | `map.get(key);`                               | Returns null if key absent   |
+| Check Key        | `map.containsKey(k);`                         | Returns boolean              |
+| Check Value      | `map.containsValue(v);`                       | Slower, use when needed      |
+| Remove Entry     | `map.remove(k);`                              | Removes key-value pair       |
+| Size             | `map.size();`                                 | Number of entries            |
+| Loop Entries     | `for (Map.Entry<K,V> e : map.entrySet())`     | `e.getKey()`, `e.getValue()` |
 
 ---
 
