@@ -42,3 +42,6 @@
 
 ![[Pasted image 20250711170953.png]]
 
+- Floating number formatting:
+
+![[Pasted image 20250712092731.png]]
