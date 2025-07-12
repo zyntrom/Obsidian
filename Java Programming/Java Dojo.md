@@ -150,3 +150,8 @@
 - Power function with recursion: 
 
 ![[Pasted image 20250707182901.png]]
+
+- Change Characters in a String to other Case:
+
+![[Pasted image 20250712130513.png]]
+
