@@ -49,3 +49,8 @@
 - Area and perimeter format program:
 
 ![[Pasted image 20250712095033.png]]
+
+- ASCII Character conversation: 
+
+![[Pasted image 20250712095709.png]] 
+
