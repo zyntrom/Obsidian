@@ -1,4 +1,4 @@
-[[Section 2 Two Systems]]
+[[Section 2 Two Systems|>>]]
 ## What is Critical Thinking?
 
 ### Key Traits of Critical Thinking
