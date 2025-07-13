@@ -1,3 +1,6 @@
+
+Next: [[Section 2 Getting started with your design education]]
+
 ## 🎨 Design for Developers — Lesson 1 Notes
 
 **Lesson Title:** _Why Design for Developers_  
