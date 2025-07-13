@@ -3,10 +3,7 @@
 
 
 ```dataview
-table file.name as "Note Title", file.ctime as "Created"
-from ""
-where file.name != "README" and !file.name.endsWith(".png") and !file.name.endsWith(".jpg")
-sort file.name asc
-```
-
-
+table file.name as "📄 Note", file.folder as "📁 Folder", file.ctime as "🕒 Created"
+from "Kalvium Class Note"
+where !contains(file.folder, "Images") and file.name != "README"
+sort file.folder asc, file.name asc
