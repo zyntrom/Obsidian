@@ -5,14 +5,22 @@ const pages = dv.pages("")
   .where(p => !p.file.folder.includes("Images") && !p.file.name.includes("README"))
   .sort(p => p.file.folder + "/" + p.file.name);
 
-dv.header(2, "📁 All Notes");
+// Function to get last 2 folder parts
+function getFolder(path) {
+  const parts = path.split("/");
+  return parts.slice(-2).join(" › ");
+}
+
+dv.header(2, "📚 Note Index (Grouped by Folder)");
 
 dv.table(
-  ["📂 Folder", "📄 Note"],
+  ["📁 Folder", "📝 Note"],
   pages.map(p => [
-    p.file.folder.replace(/\//g, " › "),
-    `[${p.file.name}]([[${p.file.path}]])`
+    getFolder(p.file.folder),
+    `[[${p.file.path}|${p.file.name}]]`
   ])
 );
 ```
+
+
 
