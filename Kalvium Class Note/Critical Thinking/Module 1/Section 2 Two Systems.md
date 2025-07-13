@@ -1,3 +1,4 @@
+[[Section 3 The Lazy System and Cognitive Ease]]
 ## The Two Systems of Thinking
 
 To make sense of how we think, psychologists Keith Stanovich and Richard West introduced the idea of two mental systems: **System 1** and **System 2**.

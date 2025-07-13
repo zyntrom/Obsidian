@@ -1,3 +1,4 @@
+[[Section 4 Problem Solving and the Scientific Method]]
 ## Ego Depletion
 
 Let’s start with a powerful idea: the human brain is like a power unit. And like any power unit, it has **limited capacity**—especially when it comes to mental energy. To preserve this energy, your brain often tries to conserve effort whenever possible.
