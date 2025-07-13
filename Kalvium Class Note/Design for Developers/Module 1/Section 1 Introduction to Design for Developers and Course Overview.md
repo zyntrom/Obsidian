@@ -1,4 +1,3 @@
- [[Section 2 Getting started with your design education]]
  
  ## 🎨 Design for Developers — Lesson 1 Notes
 
@@ -117,4 +116,4 @@ Though originally for physical products, these principles apply to digital produ
 - Good design is **intuitive, functional, consistent**
 - You’ll learn to design using tools like **Figma** and principles like **UX** and **visual hierarchy**
 
-> "Design isn’t about how it looks—it’s about how it **feels** to the user."
+> "Design isn’t about how it looks—it’s about how it **feels** to the user." [[Section 2 Getting started with your design education]]

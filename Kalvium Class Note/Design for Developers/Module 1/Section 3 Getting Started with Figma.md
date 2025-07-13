@@ -1,4 +1,3 @@
-[[Section 4 Getting Started with Figma - II]]
 ## 🧠 Design for Developers — Lesson 3 Notes
 
 **Lesson Title:** _Getting Started with Figma_  
