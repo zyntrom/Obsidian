@@ -1,4 +1,4 @@
-[[Section 5 The Brain as a Prediction Machine]]
+[[Section 5 The Brain as a Prediction Machine|>>]]
 
 ![[Pasted image 20250708224014.png]]
 

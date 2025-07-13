@@ -1,4 +1,4 @@
-[[Section 6 Media and Misinformation]]
+[[Section 6 Media and Misinformation|>>]]
 ## ✅ **Summary**
 
 The brain doesn’t just passively receive information — it actively **predicts** what’s happening based on past experiences. This predictive nature helps us navigate the world efficiently but can also lead to **errors in perception** and **judgement**, especially when we rely too much on **System 1** thinking (fast and intuitive). Recognizing when to switch to **System 2** (slow and analytical) is essential for better problem-solving and decision-making.
