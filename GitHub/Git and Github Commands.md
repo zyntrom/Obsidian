@@ -62,13 +62,13 @@ git push -u origin main
 
 # 🔀 5. Branching & Merging
 
-|Action|Command|
-|---|---|
-|Create + switch branch|`git checkout -b feature`|
-|Switch to a branch|`git switch main` or `git checkout main`|
-|See all branches|`git branch`|
-|Merge into main|`git checkout main` → `git merge feature`|
-|Delete a branch|`git branch -d branchname`|
+| Action                 | Command                                   |
+| ---------------------- | ----------------------------------------- |
+| Create + switch branch | `git checkout -b feature`                 |
+| Switch to a branch     | `git switch main` or `git checkout main`  |
+| See all branches       | `git branch`                              |
+| Merge into main        | `git checkout main` → `git merge feature` |
+| Delete a branch        | `git branch -d branchname`                |
 
 ---
 
@@ -153,7 +153,9 @@ For example:
 
 ## 🔑 Basic Git Merge Syntax:
 
-`git checkout main git merge feature`
+```bash
+git checkout main git merge feature
+```
 
 ### ✅ This does 3 things:
 
@@ -167,15 +169,21 @@ For example:
 
 ### 🛠️ Step 1: View all branches
 
-`git branch`
+```bash
+git branch
+```
 
 ### 🧭 Step 2: Switch to the branch you want to merge **into**
 
-`git checkout main`
+```bash
+git checkout main
+```
 
 ### 🔁 Step 3: Merge the other branch (e.g., `feature`)
 
-`git merge feature`
+```bash
+git merge feature
+```
 
 - If everything is clean → Git auto-merges and adds a commit
 - If there are conflicts → Git will mark conflict areas in the files
@@ -191,11 +199,15 @@ For example:
 2. Edit the file and keep only what you want.
 3. Then stage the resolved file:
 
-`git add <filename>`
+```bash
+git add <filename>
+```
 
 4. Finally, complete the merge with:
 
-`git commit`
+```bash
+git commit
+```
 
 Git will create a “merge commit” with both branch histories.
 
@@ -203,7 +215,9 @@ Git will create a “merge commit” with both branch histories.
 
 ## 🔎 Optional: Check Merge Info
 
-`git log --oneline --graph --all`
+```bash
+git log --oneline --graph --all
+```
 
 Shows a nice visual of your merges.
 
@@ -213,7 +227,9 @@ Shows a nice visual of your merges.
 
 If the merge gets messy:
 
-`git merge --abort`
+```bash
+git merge --abort
+```
 
 ---
 
@@ -221,13 +237,26 @@ If the merge gets messy:
 
 Once your merge is done locally:
 
-`git push origin main`
+```bash
+git push origin main
+```
 
 ---
 
 ## 🧪 Example Workflow Summary
 
-`# Create and switch to a new feature branch git checkout -b feature  # Make changes, commit them git add . git commit -m "Work on feature"  # Switch to main git checkout main  # Merge feature into main git merge feature  # Push to GitHub git push origin main`
+```bash
+# Create and switch to a new feature branch 
+git checkout -b feature  
+# Make changes, commit them 
+git add . 
+git commit -m "Work on feature"  
+# Switch to main 
+git checkout main  
+# Merge feature into main 
+git merge feature  
+# Push to GitHub git push origin main
+```
 # 🧾 Quick Reference Table
 
 |Task|Command|
