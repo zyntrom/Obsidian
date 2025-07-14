@@ -8,7 +8,7 @@
 
 ### 🔍 What Are Operators and Operands?
 
-- **Operators**: Symbols like `+`, `-`, `==`, `>`, etc., used to perform actions on data.
+- **Operators**: Symbols like `+`, `-`, == , `>`, etc., used to perform actions on data.
 - **Operands**: The values the operators work on.
 
 **Example**:  
@@ -51,14 +51,14 @@ In C++, `/` gives **integer division** if both operands are integers.
 
 Used to compare two values and return a **boolean** (`True`/`False` in Python, `1`/`0` in C++).
 
-|Operator|Meaning|Example|Result|
-|---|---|---|---|
-|`==`|Equal to|`5 == 5`|`True`|
-|`!=`|Not equal to|`5 != 3`|`True`|
-|`>`|Greater than|`5 > 3`|`True`|
-|`<`|Less than|`5 < 3`|`False`|
-|`>=`|Greater than or equal to|`5 >= 5`|`True`|
-|`<=`|Less than or equal to|`5 <= 4`|`False`|
+| Operator | Meaning                  | Example  | Result  |
+| -------- | ------------------------ | -------- | ------- |
+| ==       | Equal to                 | `5 == 5` | `True`  |
+| `!=`     | Not equal to             | `5 != 3` | `True`  |
+| `>`      | Greater than             | `5 > 3`  | `True`  |
+| `<`      | Less than                | `5 < 3`  | `False` |
+| `>=`     | Greater than or equal to | `5 >= 5` | `True`  |
+| `<=`     | Less than or equal to    | `5 <= 4` | `False` |
 
 ---
 
