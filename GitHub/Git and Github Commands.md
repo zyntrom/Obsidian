@@ -52,7 +52,9 @@ git push -u origin main
 
 ### Case 2: GitHub repo is empty (New)
 
-`git branch -M main git remote add origin https://github.com/yourusername/yourrepo.git git push -u origin main`
+```bash
+git branch -M main git remote add origin https://github.com/yourusername/yourrepo.git git push -u origin main
+```
 
 ---
 
@@ -71,25 +73,18 @@ git push -u origin main
 # ⚔️ 6. Merge Conflicts (If Any)
 
 - Git will **highlight conflicting lines**.
-    
-- Manually fix them in the files (look for `<<<<<<<`, `=======`, `>>>>>>>`).
-    
+- Manually fix them in the files (look for <<<<<<<,====== ,>>>>>>>).
 - After fixing:
-    
 
-bash
-
-CopyEdit
-
-`git add conflicted-file.txt git commit    # Finalize merge`
+```bash
+git add conflicted-file.txt git commit    # Finalize merge
+```
 
 ✅ You can avoid Vim and use Nano with:
 
-bash
-
-CopyEdit
-
-`git config --global core.editor "nano"`
+```bash
+git config --global core.editor "nano"
+```
 
 ---
 
@@ -107,9 +102,7 @@ CopyEdit
 # 🌐 8. GitHub Pages Hosting (for HTML/CSS)
 
 1. Push your HTML files to the repo
-    
 2. Go to **GitHub → Your Repo → Settings → Pages**
-    
 3. Choose:
     
     - **Branch**: `main`
