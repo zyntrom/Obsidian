@@ -53,7 +53,9 @@ git push -u origin main
 ### Case 2: GitHub repo is empty (New)
 
 ```bash
-git branch -M main git remote add origin https://github.com/yourusername/yourrepo.git git push -u origin main
+git branch -M main 
+git remote add origin https://github.com/yourusername/yourrepo.git 
+git push -u origin main
 ```
 
 ---
@@ -106,9 +108,7 @@ git config --global core.editor "nano"
 3. Choose:
     
     - **Branch**: `main`
-        
     - **Folder**: `/root` or `/docs`
-        
 4. GitHub will give you a public website link like:  
     👉 `https://yourusername.github.io/yourrepo/`
     
@@ -127,14 +127,107 @@ git config --global core.editor "nano"
 
 # 📘 10. Common Git Workflow (Cheat Sheet)
 
-bash
-
-CopyEdit
-
-`# Start a new project git init  # Work on files git add .  git commit -m "Initial commit"  # Connect to GitHub git remote add origin https://github.com/username/repo.git  # Push to GitHub git push -u origin main  # If GitHub repo already has files (README, license) git fetch origin git merge origin/main --allow-unrelated-histories git push -u origin main`
+```bash
+# Start a new project 
+git init  # Work on files git add .  
+git commit -m "Initial commit"  # Connect to GitHub 
+git remote add origin https://github.com/username/repo.git#Push to GitHub 
+git push -u origin main  # If GitHub repo already has files (README, license) 
+git fetch origin 
+git merge origin/main --allow-unrelated-histories 
+git push -u origin main
+```
 
 ---
 
+## 🧬 What Is Git Merging?
+
+Merging means combining changes from one branch into another.
+
+For example:
+
+- You’re on `main`
+- You want to **merge changes from `feature` branch** into `main`
+
+---
+
+## 🔑 Basic Git Merge Syntax:
+
+`git checkout main git merge feature`
+
+### ✅ This does 3 things:
+
+1. Switches to the `main` branch
+2. Merges the changes from the `feature` branch
+3. Auto-merges if no conflicts, or asks you to resolve them if there are conflicts
+
+---
+
+## 📘 Step-by-Step: Git Merge from Command Line
+
+### 🛠️ Step 1: View all branches
+
+`git branch`
+
+### 🧭 Step 2: Switch to the branch you want to merge **into**
+
+`git checkout main`
+
+### 🔁 Step 3: Merge the other branch (e.g., `feature`)
+
+`git merge feature`
+
+- If everything is clean → Git auto-merges and adds a commit
+- If there are conflicts → Git will mark conflict areas in the files
+
+---
+
+## ⚔️ What to Do if There Are Merge Conflicts
+
+1. Git will show `CONFLICT` markers in the affected files like:
+
+`<<<<<<< HEAD this is from main branch ======= this is from feature branch >>>>>>> feature`
+
+2. Edit the file and keep only what you want.
+3. Then stage the resolved file:
+
+`git add <filename>`
+
+4. Finally, complete the merge with:
+
+`git commit`
+
+Git will create a “merge commit” with both branch histories.
+
+---
+
+## 🔎 Optional: Check Merge Info
+
+`git log --oneline --graph --all`
+
+Shows a nice visual of your merges.
+
+---
+
+## 🧽 Abort a Merge (if you want to cancel)
+
+If the merge gets messy:
+
+`git merge --abort`
+
+---
+
+## 📤 Push Merged Result to GitHub
+
+Once your merge is done locally:
+
+`git push origin main`
+
+---
+
+## 🧪 Example Workflow Summary
+
+`# Create and switch to a new feature branch git checkout -b feature  # Make changes, commit them git add . git commit -m "Work on feature"  # Switch to main git checkout main  # Merge feature into main git merge feature  # Push to GitHub git push origin main`
 # 🧾 Quick Reference Table
 
 |Task|Command|
