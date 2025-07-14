@@ -129,12 +129,21 @@ git config --global core.editor "nano"
 
 ```bash
 # Start a new project 
+<<<<<<< HEAD
 git init  # Work on files git add .  
+=======
+git init  
+# Work on files git add .  
+>>>>>>> origin/main
 git commit -m "Initial commit"  
 # Connect to GitHub 
 git remote add origin https://github.com/username/repo.git
 #Push to GitHub 
+<<<<<<< HEAD
 git push -u origin main  
+=======
+git push -u origin main   
+>>>>>>> origin/main
 # If GitHub repo already has files (README, license) 
 git fetch origin 
 git merge origin/main --allow-unrelated-histories 
