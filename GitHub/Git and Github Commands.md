@@ -7,6 +7,15 @@ git config --global init.defaultBranch main
 # Use 'main' instead of 'master'
 ```
 
+## ✅ Change Git Default Editor to Nano (Globally)
+
+Run this command in your terminal or Git Bash:
+
+```bash
+git config --global core.editor "nano"
+```
+
+Now whenever Git needs you to write a commit message (like during a merge), it'll open **Nano** instead of Vim.
 Check settings:
 
 ```bash
@@ -141,11 +150,50 @@ git reset <filename>
     - Branch: `main`
     - Folder: `/root`
 3. Save → You’ll get a public link like:
-    
     `https://yourusername.github.io/yourrepo/`
 
 ---
+## 🔑 Basic Git Merge Syntax:
 
+`git checkout main git merge feature`
+
+### ✅ This does 3 things:
+
+1. Switches to the `main` branch
+2. Merges the changes from the `feature` branch
+3. Auto-merges if no conflicts, or asks you to resolve them if there are conflicts
+
+---
+
+## 📘 Step-by-Step: Git Merge from Command Line
+
+### 🛠️ Step 1: View all branches
+
+bash
+
+CopyEdit
+
+`git branch`
+
+### 🧭 Step 2: Switch to the branch you want to merge **into**
+
+bash
+
+CopyEdit
+
+`git checkout main`
+
+### 🔁 Step 3: Merge the other branch (e.g., `feature`)
+
+bash
+
+CopyEdit
+
+`git merge feature`
+
+- If everything is clean → Git auto-merges and adds a commit
+    
+- If there are conflicts → Git will mark conflict areas in the files
 ## 🛠️ 8. Other Useful Git Commands
 
 ### See list of branches
