@@ -155,7 +155,9 @@ git reset <filename>
 ---
 ## 🔑 Basic Git Merge Syntax:
 
-`git checkout main git merge feature`
+```bash
+git checkout main git merge feature
+```
 
 ### ✅ This does 3 things:
 
@@ -169,30 +171,23 @@ git reset <filename>
 
 ### 🛠️ Step 1: View all branches
 
-bash
-
-CopyEdit
-
-`git branch`
+```bash
+git branch
+```
 
 ### 🧭 Step 2: Switch to the branch you want to merge **into**
 
-bash
-
-CopyEdit
-
-`git checkout main`
+```bash
+git checkout main
+```
 
 ### 🔁 Step 3: Merge the other branch (e.g., `feature`)
 
-bash
-
-CopyEdit
-
-`git merge feature`
+```bash
+git merge feature
+```
 
 - If everything is clean → Git auto-merges and adds a commit
-    
 - If there are conflicts → Git will mark conflict areas in the files
 ## 🛠️ 8. Other Useful Git Commands
 
