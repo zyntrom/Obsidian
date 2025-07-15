@@ -49,19 +49,22 @@ esac
 ### 👉 For Loop
 
 ```bash
-for var in list; do   echo "$var" done
+for var in list; do   
+echo "$var" done
 ```
 
 ### 👉 While Loop
 
 ```bash
-while [ condition ]; do   # code done
+while [ condition ]; do   
+# code done
 ```
 
 ### 👉 Until Loop
 
 ```bash
-until [ condition ]; do   # code done
+until [ condition ]; do   
+# code done
 ```
 
 ---
