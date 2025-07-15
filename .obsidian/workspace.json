@@ -29,12 +29,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kalvium Class Note/Engineering Science-1/Module 1/Section 2 Atomic and Crystal Structures of Materials.md",
+                "file": "Kalvium Class Note/Front-end Web development/Module 1/Section 1 Introduction to Front-end web development.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Section 2 Atomic and Crystal Structures of Materials"
+              "title": "Section 1 Introduction to Front-end web development"
             }
           }
         ],
@@ -188,6 +188,7 @@
   },
   "active": "1d5680e17a2ef7df",
   "lastOpenFiles": [
+    "Kalvium Class Note/Engineering Science-1/Module 1/Section 2 Atomic and Crystal Structures of Materials.md",
     "Kalvium Class Note/Critical Thinking/Module 1/Section 5 The Brain as a Prediction Machine.md",
     "Kalvium Class Note/Critical Thinking/Module 1/Section 3 The Lazy System and Cognitive Ease.md",
     "Kalvium Class Note/Critical Thinking/Module 1/Section 1 Orientation.md",
