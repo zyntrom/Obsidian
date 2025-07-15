@@ -3,7 +3,9 @@
 - **Shebang line** (at top of script):  
     `#!/bin/bash`
 - **Running a script**:  
-    `bash script.sh` or `./script.sh` (after `chmod +x script.sh`)
+```bash
+    bash script.sh or ./script.sh (after chmod +x script.sh)
+```
 - **Comments**:  
     `# This is a comment`
 
@@ -36,25 +38,39 @@ fi
 
 ### 👉 Case
 
-`case $var in   pattern1) commands ;;   pattern2) commands ;;   *) default ;; esac`
+```bash
+case $var in   
+	pattern1) commands ;;   
+	pattern2) commands ;;   
+	*) default ;; 
+esac
+```
 
 ### 👉 For Loop
 
-`for var in list; do   echo "$var" done`
+```bash
+for var in list; do   echo "$var" done
+```
 
 ### 👉 While Loop
 
-`while [ condition ]; do   # code done`
+```bash
+while [ condition ]; do   # code done
+```
 
 ### 👉 Until Loop
 
-`until [ condition ]; do   # code done`
+```bash
+until [ condition ]; do   # code done
+```
 
 ---
 
 ## 🔢 **4. Arithmetic**
 
-`result=$((a + b)) let a=5+3 expr 5 + 3`
+```bash
+result=$((a + b)) let a=5+3 expr 5 + 3
+```
 
 - Increment/Decrement: `((i++))`, `let i+=1`
 
@@ -64,8 +80,9 @@ fi
 
 ```bash
 my_function() {   
-# code 
-} my_function  # call
+	# code 
+} 
+my_function  # call
 ```
 
 - Return: `return 0`
