@@ -62,7 +62,11 @@ fi
 
 ## ⚙️ **5. Functions**
 
-`my_function() {   # code } my_function  # call`
+```bash
+my_function() {   
+# code 
+} my_function  # call
+```
 
 - Return: `return 0`
 - Get function output: `result=$(my_function)`
@@ -71,7 +75,9 @@ fi
 
 ## 📁 **6. File & Directory**
 
-`ls, cd, pwd, mkdir, rm, rmdir cp source dest mv old new touch file.txt`
+```bash
+ls, cd, pwd, mkdir, rm, rmdir cp source dest mv old new touch file.txt
+```
 
 ---
 
@@ -87,133 +93,104 @@ fi
 - **Pipe**: `command1 | command2`
 - **Heredoc**:
 
-bash
-
-CopyEdit
-
-`cat << EOF Multiline Text EOF`
+```bash
+cat << EOF Multiline Text EOF
+```
 
 ---
 
 ## 🧪 **8. Conditions**
 
 - **File tests**:
-    
     - `-e file`: exists
-        
     - `-f file`: regular file
-        
     - `-d dir`: directory
-        
     - `-r file`: readable
-        
     - `-w file`: writable
-        
     - `-x file`: executable
-        
 - **String tests**:
     
     - `[ "$a" = "$b" ]`
-        
     - `[ "$a" != "$b" ]`
-        
     - `[ -z "$a" ]`: empty
-        
     - `[ -n "$a" ]`: not empty
-        
 - **Number tests**:
     
     - `-eq, -ne, -lt, -le, -gt, -ge`
-        
 
 ---
 
 ## ⚡ **9. Operators**
 
 - **Logical**: `&&`, `||`, `!`
-    
 - **Arithmetic**: `+`, `-`, `*`, `/`, `%`
-    
-- **Comparison (inside (( )) )**: `==`, `!=`, `<`, `>`, `<=`, `>=`
-    
+- **Comparison (inside (( )) )**: , !=, <, >, <=, >=
 
 ---
 
 ## 🧰 **10. Special Variables**
 
 - `$0`: Script name
-    
 - `$1` to `$9`: Positional arguments
-    
 - `$@`: All args (individually quoted)
-    
 - `$*`: All args (as single word)
-    
 - `"$@"`: Best practice
-    
 - `$#`: Number of args
-    
 - `$$`: PID of script
-    
 - `$?`: Exit status of last command
-    
 - `$_`: Last argument of previous command
-    
 
 ---
 
 ## 🗃️ **11. Arrays**
 
-bash
-
-CopyEdit
-
-`arr=(apple banana cherry) echo "${arr[1]}" arr[2]="grape" echo "${arr[@]}"   # all elements echo "${#arr[@]}"  # length`
+```bash
+arr=(apple banana cherry) 
+echo "{arr[1]}" 
+arr[2]="grape" 
+echo "{arr@}"   # all elements 
+echo "${#arr@}"  # length
+```
 
 ---
 
 ## 🛠️ **12. Useful Commands**
 
-bash
-
-CopyEdit
-
-`basename /path/to/file dirname /path/to/file date "+%Y-%m-%d" sleep 5 clear`
+```bash
+basename /path/to/file 
+dirname /path/to/file 
+date "+%Y-%m-%d" 
+sleep 5 clear
+```
 
 ---
 
 ## 🔄 **13. Loops with Command Output**
 
-bash
-
-CopyEdit
-
-`for file in $(ls *.txt); do   echo "$file" done`
+```bash
+for file in $(ls *.txt); do   
+	echo "$file" done
+```
 
 Or with while-read:
 
-bash
-
-CopyEdit
-
-`cat file.txt | while read line; do   echo "$line" done`
+```bash
+cat file.txt | while read line; do   
+	echo "$line" done
+```
 
 ---
 
 ## 🧵 **14. Exit & Trap**
 
-bash
-
-CopyEdit
-
-`exit 0 trap "echo Caught SIGINT" SIGINT`
+```bash
+exit 0 trap "echo Caught SIGINT" SIGINT
+```
 
 ---
 
 ## 🔐 **15. Permissions & Execution**
 
-bash
-
-CopyEdit
-
-`chmod +x script.sh ./script.sh`
+```bash
+chmod +x script.sh ./script.sh
+```
