@@ -11,7 +11,10 @@ This is where you **build confidence** with the real Git workflow:
 
 ### 🧪 Setting Up Your Git Playground
 
-`mkdir git_game      # Make a new folder cd git_game         # Move into it git init            # Initialize a Git repository`
+```bash
+mkdir git_game      # Make a new folder cd git_game        # Move into it 
+git init            # Initialize a Git repository
+```
 
 - `git init`: Turns any folder into a Git-tracked project.
 - Think of it as activating Git's time machine in that folder.
@@ -20,14 +23,20 @@ This is where you **build confidence** with the real Git workflow:
 
 ### 🧩 Challenge 1: Your First Git Snapshot
 
-`touch README.md     # Create a new file git add README.md   # Stage the file git commit -m "Initial commit: Added README.md"   # Commit with message`
+```bash
+touch README.md     # Create a new file 
+git add README.md   # Stage the file 
+git commit -m "Initial commit: Added README.md"   # Commit with message
+```
 
 - `git add`: Adds file(s) to the **staging area** (think: "photo ready").
 - `git commit -m`: Saves the snapshot to Git history with a message.
 
 Check status:
 
-`git status`
+```bash
+git status
+```
 
 - Shows current file status — tracked, modified, staged, etc.
 
@@ -41,7 +50,9 @@ Edit `README.md`:
 
 Then check Git’s response:
 
-`git status`
+```bash
+git status
+```
 
 - Git will say `modified: README.md` — it tracks every change automatically.
 
@@ -50,7 +61,10 @@ Then check Git’s response:
 ### 💃 Challenge 3: The Add-Commit Dance (Main Workflow)
 
 
-`git add README.md                          # Stage changes git commit -m "Updated README.md content"  # Commit the update`
+```bash
+git add README.md                          # Stage changes 
+git commit -m "Updated README.md content"  # Commit the update
+```
 
 After:
 
@@ -73,7 +87,9 @@ Sometimes you don’t want Git to track certain files (e.g., config files, local
 
 Steps:
 
-`touch config.txt touch .gitignore`
+```bash
+touch config.txt touch .gitignore
+```
 
 Edit `.gitignore` and add:
 

@@ -17,10 +17,11 @@ You’ll learn:
 ```html
 <!DOCTYPE html> 
 <html lang="en"> 
-<head>   
-<meta charset="UTF-8">  
-<meta name="viewport" content="width=device-width, initial-scale=1.0">   <title>My First Webpage</title> 
-</head> 
+	<head>   
+		<meta charset="UTF-8">  
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">   
+		<title>My First Webpage</title> 
+	</head> 
 <body>   <!-- Your visible content goes here --> </body> 
 </html>
 ```
@@ -40,8 +41,9 @@ This part is **not visible to users**, but **vital for setup**.
 
 ```html
 <head>   
-<meta charset="UTF-8">   
-<meta name="viewport" content="width=device-width, initial-scale=1.0">   <title>My Website</title> 
+	<meta charset="UTF-8">   
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">   
+	<title>My Website</title> 
 </head>
 ```
 
@@ -57,8 +59,8 @@ Everything **inside `<body>`** is shown to users.
 
 ```html
 <body>   
-<h1>Welcome to My Website</h1>   
-<p>This is a paragraph.</p> 
+	<h1>Welcome to My Website</h1>   
+	<p>This is a paragraph.</p> 
 </body>
 ```
 

@@ -46,12 +46,14 @@ git clone https://github.com/username/project-name.git
 This is the basic 3-step cycle for saving changes:
 
 1. **Stage the changes**  
-```
+```bash
     git add filename or git add .
 ```
 1. **Commit the changes**  
-    `git commit -m "Write a message"`
-2. **Push (optional, once remote is set)**  
+```bash
+    git commit -m "Write a message"
+```
+1. **Push (optional, once remote is set)**  
     This lesson doesn’t cover `git push`, but remember it's the step that sends your commits to GitHub.
 
 ---
@@ -59,7 +61,9 @@ This is the basic 3-step cycle for saving changes:
 ### 📊 Tracking Progress
 
 - **Check status**
-    `git status`
+```bash
+    git status
+```
     
     Tells you:
     - Which files were modified
@@ -67,7 +71,9 @@ This is the basic 3-step cycle for saving changes:
     - What Git is currently tracking
 - **See commit history**
 - 
-    `git log`
+```bash
+    git log
+```
     Shows:
     
     - Every past commit
@@ -79,8 +85,6 @@ This is the basic 3-step cycle for saving changes:
 
 ### 💻 Practice Example
 
-
-C
 
 This full example covers the **init ➝ add ➝ commit ➝ log** flow.
 

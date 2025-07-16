@@ -13,10 +13,12 @@ This lesson dives into **advanced Git concepts** such as **branching, merging, m
 
 #### 📌 Commands:
 
-`git branch <branch_name>       # Create a branch` 
-`git checkout <branch_name>     # Switch to a branch` 
-`git checkout -b <branch_name>  # Create and switch in one step` 
-`git branch                     # List all branches (* shows current)`
+```bash
+git branch <branch_name>       # Create a branch 
+git checkout <branch_name>     # Switch to a branch 
+git checkout -b <branch_name>  # Create and switch in one step 
+git branch                     # List all branches (* shows current)
+```
 
 > 📘 Analogy: Branches are like creating alternate timelines where you can safely experiment.
 
@@ -28,7 +30,10 @@ Merging integrates changes from one branch (like a feature branch) into another 
 
 #### 📌 Commands:
 
-`git checkout main              # Switch to main branch git merge <branch_name>        # Merge the branch into main`
+```bash
+git checkout main              # Switch to main branch 
+git merge <branch_name>        # Merge the branch into main
+```
 
 - **Fast-forward merge**: When the target branch has no new commits, Git just moves the pointer.
 - **True merge**: When both branches have diverged; Git creates a _merge commit_.
@@ -40,7 +45,9 @@ Merging integrates changes from one branch (like a feature branch) into another 
 Conflicts happen when two branches have conflicting changes in the same file.
 #### 🛠 Identifying Conflicts:
 
-`git status`
+```bash
+git status
+```
 
 Shows files that are both modified.
 
@@ -54,11 +61,15 @@ Shows files that are both modified.
 2. Remove the conflict markers (<<<<<<<, ======= ,  >>>>>>>).
 3. Stage the file:
     
-    `git add <file>`
+```bash
+    git add <file>
+```
     
 4. Complete the merge:
 	
-    `git commit`
+```bash
+    git commit
+```
 
 > 💡 Tip: Always **test** your code after resolving conflicts to make sure everything works.
 
@@ -70,7 +81,9 @@ View all previous commits to understand your project's timeline.
 
 #### 📌 Command:
 
-`git log`
+```bash
+git log
+```
 
 Shows:
 
