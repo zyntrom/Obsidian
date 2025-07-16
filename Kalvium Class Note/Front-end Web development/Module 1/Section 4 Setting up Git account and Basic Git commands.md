@@ -76,12 +76,7 @@ This is the basic 3-step cycle for saving changes:
 ### 💻 Practice Example
 
 
-`touch hello.txt` 
-`echo "Welcome!" > hello.txt` 
-`git status` 
-`git add hello.txt` 
-`git commit -m "Add welcome message"` 
-`git log`
+C
 
 This full example covers the **init ➝ add ➝ commit ➝ log** flow.
 

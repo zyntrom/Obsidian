@@ -51,7 +51,7 @@ Shows files that are both modified.
 #### 🛠 Steps to Resolve:
 
 1. Open the file and manually edit the conflicting sections.
-2. Remove the conflict markers (`<<<<<<<`, `=======`, `>>>>>>>`).
+2. Remove the conflict markers (<<<<<<<, ======= ,  >>>>>>>).
 3. Stage the file:
     
     `git add <file>`
@@ -105,6 +105,6 @@ Shows:
 - Merging brings branches together. Understand the difference between fast-forward and true merges.
 - Merge conflicts are common — know how to identify and resolve them.
 - `git log` helps track and explain project changes.
-- Know the **merge conflict markers** (`<<<<<<<`, `=======`, `>>>>>>>`).
+- Know the **merge conflict markers (<<<<<<<, ======= , >>>>>>>).
 
 ---
