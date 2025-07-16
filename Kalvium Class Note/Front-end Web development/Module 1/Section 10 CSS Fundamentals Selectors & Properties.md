@@ -50,7 +50,9 @@ Target **multiple** elements that share the same class.
 ```
 
 ```css
-.highlight {   background-color: yellow;   padding: 10px; }
+.highlight {   
+	background-color: yellow;   
+	padding: 10px; }
 ```
 
 ✅ Great for applying **common styles** to **many elements** regardless of tag type.
@@ -68,7 +70,9 @@ Used to target **exactly one unique** element on the page.
 ```
 
 ```css
-#main-title {   color: green;   text-align: center; }
+#main-title {   
+	color: green;   
+	text-align: center; }
 ```
 
 ⚠️ Only **one element** should have a specific ID!
@@ -86,7 +90,12 @@ These apply styles based on **user interaction** or **element state**.
 ```
 
 ```css
-a {   color: blue;   text-decoration: none; }  a:hover {   color: red;   text-decoration: underline; }
+a {   
+	color: blue;   
+	text-decoration: none; }  
+a:hover {   
+	color: red;   
+	text-decoration: underline; }
 ```
 
 🎯 Common pseudo-classes:

@@ -15,7 +15,8 @@ _Style elements based on their current **state**, **position**, or **user intera
 ### 🔧 Syntax:
 
 ```css
-selector:pseudo-class {   property: value; }
+selector:pseudo-class {   
+	property: value; }
 ```
 
 ### 🔹 Common Pseudo-Classes:
@@ -36,10 +37,14 @@ css
 CopyEdit
 
 ```css
-a:hover {   color: red; }  
-input:focus {   background-color: lightyellow; }  
-li:first-child {   font-weight: bold; }  
-li:nth-child(odd) {   background-color: #f2f2f2; }
+a:hover {   
+	color: red; }  
+input:focus {   
+	background-color: lightyellow; }  
+li:first-child {   
+	font-weight: bold; }  
+li:nth-child(odd) {   
+	background-color: #f2f2f2; }
 ```
 
 ---
@@ -55,7 +60,8 @@ css
 CopyEdit
 
 ```css
-selector::pseudo-element {   property: value; }
+selector::pseudo-element {   
+	property: value; }
 ```
 
 ### 🔹 Common Pseudo-Elements:
@@ -76,9 +82,18 @@ css
 CopyEdit
 
 ```css
-p::first-letter {   font-size: 2em;   color: #333; }  
-input::placeholder {   color: gray;   font-style: italic; }  .decorated::before {   content: "★ ";   color: gold; }  
-.decorated::after {   content: " ★";   color: gold; }
+p::first-letter {   
+	font-size: 2em;   
+	color: #333; }  
+input::placeholder {   
+	color: gray;   
+	font-style: italic; }  
+.decorated::before {   
+	content: "★ ";   
+	color: gold; }  
+.decorated::after {   
+	content: " ★";   
+	color: gold; }
 ```
 
 ---
@@ -89,14 +104,13 @@ Combine **pseudo-classes** and **pseudo-elements** for complex interactions.
 
 ### 🧪 Example:
 
-css
-
-CopyEdit
-
 ```css
 /* First paragraph's first letter turns red on hover */ 
-p:first-child::first-letter:hover {   color: red; }  /* Show (end) after last list item on hover */ 
-li:last-child:hover::after {   content: " (end)";   color: gray; }
+p:first-child::first-letter:hover {   
+	color: red; }  /* Show (end) after last list item on hover */ 
+li:last-child:hover::after {   
+	content: " (end)";   
+	color: gray; }
 ```
 
 ---
