@@ -26,8 +26,10 @@ These apply styles to **all tags** of a specific type.
 ```
 
 ```css
-h1 {   color: blue; } 
-p {   font-size: 16px; }
+h1 {   
+	color: blue; } 
+p {   
+	font-size: 16px; }
 ```
 
 

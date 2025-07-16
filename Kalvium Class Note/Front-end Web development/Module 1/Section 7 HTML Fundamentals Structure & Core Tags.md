@@ -93,7 +93,9 @@ Includes:
 
 ### 🧾 Organizing Text with Paragraphs
 
-`<p>This is a paragraph of content.</p>`
+```html
+<p>This is a paragraph of content.</p>
+```
 
 - Each `<p>` adds **space** between blocks of text
 - Makes content **clean, readable, and organized**
@@ -135,14 +137,15 @@ Try this starter code in VS Code and open in a browser:
 <!DOCTYPE html> 
 <html lang="en"> 
 <head>   
-<meta charset="UTF-8">   
-<meta name="viewport" content="width=device-width, initial-scale=1.0">   <title>Kalvium Test Page</title> 
+	<meta charset="UTF-8">   
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">   
+	<title>Kalvium Test Page</title> 
 </head> 
 <body>   
-<h1>Hello Kalvians!</h1>   
-<h2>This is Module 1</h2>   
-<p>We are learning the structure of HTML.</p>   
-<p>Paragraphs and headings keep things organized.</p> 
+	<h1>Hello Kalvians!</h1>   
+	<h2>This is Module 1</h2>   
+	<p>We are learning the structure of HTML.</p>   
+	<p>Paragraphs and headings keep things organized.</p> 
 </body> 
 </html>
 ```

@@ -14,7 +14,9 @@ This brings life to your previously plain structure.
 
 ### 🔗 **Hyperlinks** — “The Web’s Teleporters”
 
-`<a href="https://example.com">Click Me!</a>`
+```html
+<a href="https://example.com">Click Me!</a>
+```
 
 - `<a>` = Anchor tag (used to make links)
 - `href` = "Hypertext REFerence", the **destination URL**
@@ -22,7 +24,9 @@ This brings life to your previously plain structure.
 
 #### Open in a New Tab:
 
-`<a href="https://youtube.com" target="_blank">YouTube</a>`
+```html
+<a href="https://youtube.com" target="_blank">YouTube</a>
+```
 
 - `target="_blank"` → opens link in a **new browser tab**
 
@@ -52,7 +56,8 @@ All HTML elements can have **attributes** — extra data/settings written inside
 #### Example with `<p>`:
 
 ```html
-<p id="intro" class="note" style="color: red;" title="This is a tooltip">   This paragraph has styling and a tooltip! </p>
+<p id="intro" class="note" style="color: red;" 
+title="This is a tooltip">   This paragraph has styling and a tooltip! </p>
 ```
 
 |Attribute|What it does|
@@ -66,10 +71,12 @@ All HTML elements can have **attributes** — extra data/settings written inside
 
 ## 🧪 Bonus Tip: Combine Everything!
 
-`<h2>My Favorite Website</h2> <p>Click below to visit:</p>` 
-`<a href="https://kalvium.com" target="_blank">`   
-`<img src="kalvium-logo.png" alt="Kalvium Logo" width="200">` 
-`</a>`
+```
+<h2>My Favorite Website</h2> <p>Click below to visit:</p> 
+<a href="https://kalvium.com" target="_blank">   
+	<img src="kalvium-logo.png" alt="Kalvium Logo" width="200"> 
+</a>
+```
 
 This makes the **image itself clickable**!
 
