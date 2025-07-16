@@ -61,11 +61,12 @@ Make your layout mobile-friendly:
 
 ### 4️⃣ Typography
 
-css
-
-CopyEdit
-
-`body {   font-family: 'Poppins', sans-serif;   color: #333;   line-height: 1.6; }`
+```css
+body {   
+	font-family: 'Poppins', sans-serif;   
+	color: #333;   
+	line-height: 1.6; }
+```
 
 ---
 
@@ -75,47 +76,61 @@ css
 
 CopyEdit
 
-`.card {   padding: 16px;   margin-bottom: 20px;   border-radius: 10px;   background-color: #fefefe; }`
+```css
+.card {   
+	padding: 16px;   
+	margin-bottom: 20px;   
+	border-radius: 10px;   
+	background-color: #fefefe; }
+```
 
 ---
 
 ### 6️⃣ Brand Theme & Color Palette
 
-css
-
-CopyEdit
-
-`.header {   background-color: #111;   color: #fff; }`
+```css
+.header {   
+	background-color: #111;   
+	color: #fff; }
+```
 
 ---
 
 ### 7️⃣ Hover Effects and Transitions
 
-css
-
-CopyEdit
-
-`.btn {   background-color: #ff5500;   color: white;   padding: 12px 24px;   border-radius: 5px;   border: none; }  .btn:hover {   background-color: #ff7700;   transition: background-color 0.3s ease; }`
+```css
+.btn {   
+	background-color: #ff5500;   
+	color: white;   
+	padding: 12px 24px;   
+	border-radius: 5px;   
+	border: none; }  
+.btn:hover {   
+	background-color: #ff7700;   
+	transition: background-color 0.3s ease; }
+```
 
 ---
 
 ### 8️⃣ Responsive Units
 
-css
-
-CopyEdit
-
-`.container {   max-width: 90vw;   padding: 2rem; }`
+```css
+.container {   
+	max-width: 90vw;   
+	padding: 2rem; }
+```
 
 ---
 
 ### 9️⃣ Z-Index & Absolute Positioning
 
-css
-
-CopyEdit
-
-`.hero-text {   position: absolute;   top: 50px;   left: 30px;   z-index: 10; }`
+```css
+.hero-text {   
+	position: absolute;   
+	top: 50px;   
+	left: 30px;   
+	z-index: 10; }
+```
 
 ---
 
