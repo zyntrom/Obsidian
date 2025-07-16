@@ -77,7 +77,13 @@ Use buttons or links for interaction:
 Use `<form>` to collect emails:
 
 ```html
-<section id="contact">   <h2>Stay Updated!</h2>   <form>     <input type="email" placeholder="Your email" required />     <button type="submit">Subscribe</button>   </form> </section>
+<section id="contact">   
+	<h2>Stay Updated!</h2>   
+	<form>     
+		<input type="email" placeholder="Your email" required />
+		<button type="submit">Subscribe</button>   
+	</form> 
+</section>
 ```
 
 ---
@@ -86,7 +92,7 @@ Use `<form>` to collect emails:
 
 Use headings **in order** for clarity:
 
-`<h1>CodeCrust</h1>         <!-- Main Title --> <h2>Our Top Pizzas</h2>    <!-- Section Title --> <h3>Best Seller: Binary Margherita</h3> <!-- Subsection -->`
+C
 
 ---
 
