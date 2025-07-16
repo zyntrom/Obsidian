@@ -34,7 +34,9 @@ This brings life to your previously plain structure.
 
 ### 🖼️ **Images** — “Visual Appeal in HTML”
 
-`<img src="dog.jpg" alt="Cute dog" width="400" height="300">`
+```html
+<img src="dog.jpg" alt="Cute dog" width="400" height="300">
+```
 
 - `<img>` is a **self-closing tag** — no `</img>`
 - `src` → path/URL of the image
@@ -71,8 +73,9 @@ title="This is a tooltip">   This paragraph has styling and a tooltip! </p>
 
 ## 🧪 Bonus Tip: Combine Everything!
 
-```
-<h2>My Favorite Website</h2> <p>Click below to visit:</p> 
+```html
+<h2>My Favorite Website</h2> 
+<p>Click below to visit:</p> 
 <a href="https://kalvium.com" target="_blank">   
 	<img src="kalvium-logo.png" alt="Kalvium Logo" width="200"> 
 </a>
