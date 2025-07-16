@@ -19,21 +19,26 @@ Now, you bring the page to life with layout, color, spacing, and **responsivenes
 
 ### 1️⃣ Flexbox for Navigation & Testimonials
 
-css
-
-CopyEdit
-
-`nav {   display: flex;   justify-content: space-between;   align-items: center; }  .testimonials {   display: flex;   gap: 1.5rem; }`
+```css
+nav {   
+	display: flex;   
+	justify-content: space-between;   
+	align-items: center; }  
+.testimonials {   
+	display: flex;   
+	gap: 1.5rem; }
+```
 
 ---
 
 ### 2️⃣ Grid for Pizza Menu Section
 
-css
-
-CopyEdit
-
-`.menu {   display: grid;   grid-template-columns: repeat(3, 1fr);  /* 3 equal columns */   gap: 20px; }`
+```css
+.menu {   
+	display: grid;   
+	grid-template-columns: repeat(3, 1fr);  /* 3 equal columns */   
+	gap: 20px; }
+```
 
 ---
 
@@ -41,11 +46,16 @@ CopyEdit
 
 Make your layout mobile-friendly:
 
-css
-
-CopyEdit
-
-`@media (max-width: 768px) {   .menu {     grid-template-columns: 1fr;  /* Stack pizzas vertically */   }    .testimonials {     flex-direction: column;   }    nav {     flex-direction: column;     align-items: flex-start;   } }`
+```css
+@media (max-width: 768px) {   
+	.menu {     
+		grid-template-columns: 1fr;  /* Stack pizzas vertically */   }
+	.testimonials {     
+		flex-direction: column;   }    
+	nav {     
+		flex-direction: column;     
+		align-items: flex-start;   } }
+```
 
 ---
 

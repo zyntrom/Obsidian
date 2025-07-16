@@ -92,7 +92,12 @@ Use `<form>` to collect emails:
 
 Use headings **in order** for clarity:
 
-C
+```html
+<h1>CodeCrust</h1> <!-- Main Title -->
+<h2>Our Top Pizzas</h2> <!-- Section Title -->
+<h3>Best Seller: Binary Margherita</h3> <!-- Subsection -->
+```
+
 
 ---
 
