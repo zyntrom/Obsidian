@@ -93,7 +93,8 @@ Used for larger screens like desktops.
 @media (orientation: landscape) {   
 	.box {     
 		width: 300px;   
-	} }
+	} 
+}
 ```
 
 Adapts layout based on phone/tablet orientation.
@@ -106,11 +107,10 @@ Adapts layout based on phone/tablet orientation.
 
 ```css
 <nav>   
-<a href="#" class="logo">My Website</a>   
-<ul class="menu">     
-<li><a href="#">Home</a>
-</li>    
-</ul> 
+	<a href="#" class="logo">My Website</a>   
+	<ul class="menu">     
+		<li><a href="#">Home</a></li>    
+	</ul> 
 </nav>
 ```
 
@@ -138,13 +138,10 @@ nav {
 ## 🧪 Debugging & Testing Tips
 
 - Use **DevTools (F12)** → Responsive mode
-    
 - Try **emulators** or real devices
-    
 - Tools:  
     🔗 [Responsinator](https://www.responsinator.com/)  
     🔗 [BrowserStack](https://www.browserstack.com/)
-    
 
 ---
 

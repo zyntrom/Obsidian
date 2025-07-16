@@ -21,7 +21,8 @@ Use Grid when you need **precise control** over both horizontal and vertical lay
 Make any element a grid container:
 
 ```css
-.container {   display: grid; }
+.container {   
+	display: grid; }
 ```
 
 ---
@@ -31,7 +32,8 @@ Make any element a grid container:
 ### ✅ `grid-template-columns`
 
 ```css
-.container {   grid-template-columns: 100px 200px 1fr; }
+.container {   
+	grid-template-columns: 100px 200px 1fr; }
 ```
 
 - `100px`: Fixed
@@ -41,7 +43,8 @@ Make any element a grid container:
 ### ✅ `grid-template-rows`
 
 ```css
-.container {   grid-template-rows: 150px auto 1fr; }
+.container {   
+	grid-template-rows: 150px auto 1fr; }
 ```
 
 ---
@@ -72,7 +75,8 @@ Make any element a grid container:
 	display: grid;   
 	grid-template-columns: repeat(3, 1fr);   
 	grid-template-rows: auto 1fr auto;   
-	grid-template-areas:     "header header header"     "sidebar content content"     "footer footer footer";   gap: 10px; }
+	grid-template-areas:     "header header header"     "sidebar content content"     "footer footer footer";   
+	gap: 10px; }
 ```
 
 #### ✅ Assign area names
@@ -95,11 +99,11 @@ footer {
 Add spacing between rows and columns:
 
 ```css
-.container {   grid-gap: 20px; }
-```
-
-```css
-row-gap: 20px; column-gap: 10px;
+.container {   
+	grid-gap: 20px; 
+	row-gap: 20px; 
+	column-gap: 10px;
+	}
 ```
 
 ---
