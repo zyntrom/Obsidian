@@ -23,7 +23,7 @@ This lesson walks you through the **basics of Git** and **GitHub**, including se
 ### 📁 Creating a Local Git Repository
 
 
-`cd Desktop mkdir my-first-repo cd my-first-repo git init`
+C
 
 - `git init`: Creates a hidden `.git` folder to start tracking changes in the project.
 - This folder is the **control center** of Git in that directory.
@@ -33,7 +33,9 @@ This lesson walks you through the **basics of Git** and **GitHub**, including se
 ### 📥 Cloning an Existing Repository
 
 
-`git clone https://github.com/username/project-name.git`
+```bash
+git clone https://github.com/username/project-name.git
+```
 
 - Downloads an existing project along with its entire history and branches to your local system.
 
@@ -44,10 +46,12 @@ This lesson walks you through the **basics of Git** and **GitHub**, including se
 This is the basic 3-step cycle for saving changes:
 
 1. **Stage the changes**  
-    `git add filename` or `git add .`
-2. **Commit the changes**  
+```
+    git add filename or git add .
+```
+1. **Commit the changes**  
     `git commit -m "Write a message"`
-3. **Push (optional, once remote is set)**  
+2. **Push (optional, once remote is set)**  
     This lesson doesn’t cover `git push`, but remember it's the step that sends your commits to GitHub.
 
 ---
