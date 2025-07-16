@@ -118,9 +118,7 @@ Add spacing between rows and columns:
 ```
 
 - `minmax(200px, 1fr)`: Columns are at least 200px but can grow
-    
 - `auto-fit`: Adjusts number of columns based on space
-    
 
 ---
 
