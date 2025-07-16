@@ -10,15 +10,10 @@ Your goal is to **build their homepage** — clean, semantic, accessible, and re
 Build a solid **HTML structure** for CodeCrust’s homepage using semantic tags. Your page should include:
 
 1. ✅ **Header** — site name + navigation
-    
 2. ✅ **Pizza Menu** — list of top items
-    
 3. ✅ **Testimonials/Reviews**
-    
 4. ✅ **Contact or Subscribe Form**
-    
 5. ✅ **Footer** — copyright
-    
 
 ---
 
@@ -28,21 +23,13 @@ Build a solid **HTML structure** for CodeCrust’s homepage using semantic tags.
 
 Use clear HTML5 layout tags for better accessibility and SEO:
 
-html
-
-CopyEdit
-
-`<header>   <h1>CodeCrust</h1>   <nav>     <a href="#menu">Menu</a>     <a href="#testimonials">Reviews</a>   </nav> </header>`
+C
 
 ---
 
 ### 2. ✅ Pizza Menu (List)
 
 Use `<ul>` or `<ol>` to list pizzas:
-
-html
-
-CopyEdit
 
 `<section id="menu">   <h2>Our Top Pizzas</h2>   <ul>     <li>Margherita 2.0</li>     <li>Cheesy Code Combo</li>     <li>Bug-Free Pepperoni</li>   </ul> </section>`
 
@@ -52,10 +39,6 @@ CopyEdit
 
 Make your site **visual and accessible**:
 
-html
-
-CopyEdit
-
 `<img src="cheesy-slice.png" alt="A slice of cheesy pepperoni pizza" />`
 
 ---
@@ -63,10 +46,6 @@ CopyEdit
 ### 4. ✅ Call-to-Actions (CTAs)
 
 Use buttons or links for interaction:
-
-html
-
-CopyEdit
 
 `<a href="#order" class="btn">Order Now</a> <button>Send Feedback</button>`
 
@@ -76,10 +55,6 @@ CopyEdit
 
 Use `<form>` to collect emails:
 
-html
-
-CopyEdit
-
 `<section id="contact">   <h2>Stay Updated!</h2>   <form>     <input type="email" placeholder="Your email" required />     <button type="submit">Subscribe</button>   </form> </section>`
 
 ---
@@ -87,10 +62,6 @@ CopyEdit
 ### 6. ✅ Logical Heading Structure
 
 Use headings **in order** for clarity:
-
-html
-
-CopyEdit
 
 `<h1>CodeCrust</h1>         <!-- Main Title --> <h2>Our Top Pizzas</h2>    <!-- Section Title --> <h3>Best Seller: Binary Margherita</h3> <!-- Subsection -->`
 

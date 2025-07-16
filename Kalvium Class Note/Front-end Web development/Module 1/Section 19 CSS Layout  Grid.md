@@ -77,11 +77,16 @@ Make any element a grid container:
 
 #### ✅ Assign area names
 
-css
-
-CopyEdit
-
-`header { grid-area: header; } sidebar { grid-area: sidebar; } content { grid-area: content; } footer { grid-area: footer; }`
+```css
+header { 
+	grid-area: header; } 
+sidebar { 
+	grid-area: sidebar; } 
+content { 
+	grid-area: content; } 
+footer { 
+	grid-area: footer; }
+```
 
 ---
 
@@ -89,29 +94,24 @@ CopyEdit
 
 Add spacing between rows and columns:
 
-css
+```css
+.container {   grid-gap: 20px; }
+```
 
-CopyEdit
-
-`.container {   grid-gap: 20px; }`
-
-Or use:
-
-css
-
-CopyEdit
-
-`row-gap: 20px; column-gap: 10px;`
+```css
+row-gap: 20px; column-gap: 10px;
+```
 
 ---
 
 ## 📱 Responsive Grid with `minmax()` and `auto-fit`
 
-css
-
-CopyEdit
-
-`.container {   display: grid;   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));   grid-gap: 20px; }`
+```css
+.container {   
+	display: grid;   
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));   
+	grid-gap: 20px; }
+```
 
 - `minmax(200px, 1fr)`: Columns are at least 200px but can grow
     
