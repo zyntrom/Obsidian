@@ -35,7 +35,13 @@ Media queries let you apply CSS **only when specific conditions are met** (like 
 ### 🔹 Example
 
 ```css
-body {   font-size: 16px; }  @media (max-width: 600px) {   body {     font-size: 14px;   } }
+body {   
+	font-size: 16px; }  
+@media (max-width: 600px) {   
+	body {     
+		font-size: 14px;   
+	} 
+}
 ```
 
 If the screen is **≤ 600px**, font becomes **14px**.
@@ -58,7 +64,11 @@ If the screen is **≤ 600px**, font becomes **14px**.
 ### ✅ `max-width`
 
 ```css
-@media (max-width: 768px) {   .container {     width: 100%;   } }
+@media (max-width: 768px) {   
+	.container {     
+		width: 100%;   
+	} 
+}
 ```
 
 Used for small screens like phones/tablets.
@@ -67,12 +77,10 @@ Used for small screens like phones/tablets.
 
 ### ✅ `min-width`
 
-css
-
-CopyEdit
-
 ```css
-@media (min-width: 992px) {   .menu {     display: block;   } }
+@media (min-width: 992px) {   
+	.menu {     
+		display: block;   } }
 ```
 
 Used for larger screens like desktops.
@@ -82,7 +90,10 @@ Used for larger screens like desktops.
 ### ✅ `orientation`
 
 ```css
-@media (orientation: landscape) {   .box {     width: 300px;   } }
+@media (orientation: landscape) {   
+	.box {     
+		width: 300px;   
+	} }
 ```
 
 Adapts layout based on phone/tablet orientation.

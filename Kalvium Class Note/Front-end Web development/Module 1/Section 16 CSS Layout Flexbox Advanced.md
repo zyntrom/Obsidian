@@ -20,7 +20,10 @@
 If:
 
 ```css
-.item-1 { flex-grow: 2; } .item-2 { flex-grow: 1; }
+.item-1 { 
+	flex-grow: 2; } 
+.item-2 { 
+	flex-grow: 1; }
 ```
 
 → Item 1 gets **2x** more extra space than Item 2.
@@ -33,13 +36,17 @@ If:
 - Default is `1` (can shrink).
 
 ```css
-.item {   flex-shrink: 1; }
+.item {   
+	flex-shrink: 1; }
 ```
 
 If:
 
 ```css
-.item-1 { flex-shrink: 2; } .item-2 { flex-shrink: 1; }
+.item-1 { 
+	flex-shrink: 2; } 
+.item-2 { 
+	flex-shrink: 1; }
 ```
 
 → Item 1 shrinks **twice as fast**.
@@ -51,7 +58,8 @@ If:
 - Sets the **initial** width/height before grow or shrink is applied.
 
 ```css
-.item {   flex-basis: 200px; }
+.item {   
+	flex-basis: 200px; }
 ```
 
 Can be in `px`, `%`, `em`, or `auto`.
@@ -61,7 +69,8 @@ Can be in `px`, `%`, `em`, or `auto`.
 ## ✂️ 4. `flex`: Shorthand for all three
 
 ```css
-.item {   flex: <flex-grow> <flex-shrink> <flex-basis>; }
+.item {   
+	flex: <flex-grow> <flex-shrink> <flex-basis>; }
 ```
 
 ### Common Shorthand Examples:
@@ -78,12 +87,9 @@ Can be in `px`, `%`, `em`, or `auto`.
 
 ## 🔢 5. `order`: Control display order (not based on HTML)
 
-css
-
-CopyEdit
-
 ```css
-.item {   order: 2; /* default is 0 */ }
+.item {   
+	order: 2; /* default is 0 */ }
 ```
 
 Lower `order` value appears **first**. Use to reorder elements **visually** without changing HTML.
@@ -93,7 +99,9 @@ Lower `order` value appears **first**. Use to reorder elements **visually** with
 ## 🎯 Final Example
 
 ```css
-.item {   flex: 2 1 150px;   order: 1; }
+.item {   
+	flex: 2 1 150px;   
+	order: 1; }
 ```
 
 - Grows a lot
