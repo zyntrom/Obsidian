@@ -71,7 +71,8 @@ div {
 ```css
 .header {   
 	position: sticky;   
-	top: 0;   background: lightblue; }
+	top: 0;   
+	background: lightblue; }
 ```
 
 ---
@@ -81,7 +82,7 @@ div {
 - `z-index` controls which element appears **on top** when they overlap.
 - Only works on **positioned elements** (`relative`, `absolute`, `fixed`, `sticky`)
 
-`.box1 {   position: absolute;   z-index: 2; }  .box2 {   position: absolute;   z-index: 1; }`
+C
 
 > 🔺 Higher `z-index` = closer to viewer  
 > 🔻 Lower `z-index` = behind other elements
