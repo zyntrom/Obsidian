@@ -55,10 +55,6 @@ _Style **specific parts** of an element or insert **virtual content**_
 
 ### 🔧 Syntax:
 
-css
-
-CopyEdit
-
 ```css
 selector::pseudo-element {   
 	property: value; }
