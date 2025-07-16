@@ -72,10 +72,6 @@ body {
 
 ### 5️⃣ Spacing and Box Styling
 
-css
-
-CopyEdit
-
 ```css
 .card {   
 	padding: 16px;   
