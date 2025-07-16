@@ -23,7 +23,15 @@ Build a solid **HTML structure** for CodeCrust’s homepage using semantic tags.
 
 Use clear HTML5 layout tags for better accessibility and SEO:
 
-C
+```html
+<header> 
+  <h1>CodeCrust</h1> 
+  <nav> 
+    <a href="#menu">Menu</a> 
+    <a href="#testimonials">Reviews</a> 
+  </nav> 
+</header>
+```
 
 ---
 
@@ -31,7 +39,16 @@ C
 
 Use `<ul>` or `<ol>` to list pizzas:
 
-`<section id="menu">   <h2>Our Top Pizzas</h2>   <ul>     <li>Margherita 2.0</li>     <li>Cheesy Code Combo</li>     <li>Bug-Free Pepperoni</li>   </ul> </section>`
+```html
+<section id="menu">   
+	<h2>Our Top Pizzas</h2>   
+	<ul>     
+		<li>Margherita 2.0</li>     
+		<li>Cheesy Code Combo</li>     
+		<li>Bug-Free Pepperoni</li>   
+	</ul> 
+</section>
+```
 
 ---
 
@@ -39,7 +56,9 @@ Use `<ul>` or `<ol>` to list pizzas:
 
 Make your site **visual and accessible**:
 
-`<img src="cheesy-slice.png" alt="A slice of cheesy pepperoni pizza" />`
+```html
+<img src="cheesy-slice.png" alt="A slice of cheesy pepperoni pizza" />
+```
 
 ---
 
@@ -47,7 +66,9 @@ Make your site **visual and accessible**:
 
 Use buttons or links for interaction:
 
-`<a href="#order" class="btn">Order Now</a> <button>Send Feedback</button>`
+```html
+<a href="#order" class="btn">Order Now</a> <button>Send Feedback</button>
+```
 
 ---
 
@@ -55,7 +76,9 @@ Use buttons or links for interaction:
 
 Use `<form>` to collect emails:
 
-`<section id="contact">   <h2>Stay Updated!</h2>   <form>     <input type="email" placeholder="Your email" required />     <button type="submit">Subscribe</button>   </form> </section>`
+```html
+<section id="contact">   <h2>Stay Updated!</h2>   <form>     <input type="email" placeholder="Your email" required />     <button type="submit">Subscribe</button>   </form> </section>
+```
 
 ---
 
