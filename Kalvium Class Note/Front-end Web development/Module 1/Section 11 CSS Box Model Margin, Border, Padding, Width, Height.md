@@ -30,8 +30,10 @@ Adds space _outside_ the border — keeps distance from other elements.
 	margin-bottom: 15px;   
 	margin-left: 25px; }
 ```
-
-🔹 Shorthand: `margin: 20px 30px 15px 25px; /* top right bottom left */`
+🔹 Shorthand:
+```css
+margin: 20px 30px 15px 25px; /* top right bottom left /
+```
 
 ---
 
