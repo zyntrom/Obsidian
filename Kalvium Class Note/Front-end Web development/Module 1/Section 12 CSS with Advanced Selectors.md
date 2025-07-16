@@ -73,10 +73,6 @@ selector::pseudo-element {
 
 ### 🧪 Example:
 
-css
-
-CopyEdit
-
 ```css
 p::first-letter {   
 	font-size: 2em;   
