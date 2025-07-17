@@ -20,7 +20,7 @@
 | **Keywords**              | Predefined reserved words used to define program structure and logic |
 | **Identifiers**           | Names created by programmers (variables, functions, classes, etc.)   |
 | **Literals**              | Fixed values used directly in the code (e.g., `5`, `"Hello"` )       |
-| **Operators**             | Symbols that perform actions on data (e.g., `+`, `-`, `==`)          |
+| **Operators**             | Symbols that perform actions on data (e.g., +, -, == )               |
 | **Delimiters**            | Characters that organize code (e.g., `()`, `{}`, `;`, `:`)           |
 | **Comments & Whitespace** | Help explain and format code; ignored by the compiler                |
 
