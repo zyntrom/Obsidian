@@ -155,3 +155,6 @@
 
 ![[Pasted image 20250712130513.png]]
 
+- To find the frequency of repeating char and printing them in alpha order (Hashmap): 
+
+![[Pasted image 20250717131825.png]]
