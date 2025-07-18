@@ -276,3 +276,32 @@ if (/^[a-zA-Z]/.test(str)) {
 ```
 
 ---
+
+**✅ Checks**
+
+```js
+let c = 'a';  
+if (/[a-zA-Z]/.test(c)) 
+	console.log("Letter"); 
+if (/[0-9]/.test(c)) 
+	console.log("Digit"); 
+if (/[a-z]/.test(c)) 
+	console.log("Lowercase"); 
+if (/[A-Z]/.test(c)) 
+	console.log("Uppercase"); 
+if (/\s/.test(c)) 
+	console.log("Whitespace"); 
+if (/\w/.test(c)) 
+	console.log("Alphanumeric");   
+	// same as [a-zA-Z0-9] 
+if (/[\p{P}]/u.test(c)) 
+	console.log("Punctuation"); // Unicode punctuation
+```
+
+**🔄 Conversion**
+
+```js
+let lower = c.toLowerCase(); let upper = c.toUpperCase();
+```
+
+> ✅ Works for `char = str[i]` or single-character strings.
