@@ -19,3 +19,20 @@ std::sort(v.begin(), v.end()) // Sort
 std::reverse(v.begin(), v.end()) // Reverse 
 std::find(v.begin(), v.end(), x) // Find element
 ```
+
+## 🔤 Strings
+
+### 🟦 C++
+
+```c++
+str.length()            // Length 
+str.empty()             // Is empty 
+str[i]                  // Access char 
+str.substr(pos, len)    // Substring 
+str.find("abc")         // Find substring 
+str.replace(pos, len, "x") // Replace part 
+str.append("abc") str += "abc"            // Add to end 
+str.insert(pos, "abc") 
+str.erase(pos, len) std::stoi(str), 
+std::to_string(num) std::getline(cin, str)  // Input line
+```
