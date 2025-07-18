@@ -31,8 +31,11 @@ str[i]                  // Access char
 str.substr(pos, len)    // Substring 
 str.find("abc")         // Find substring 
 str.replace(pos, len, "x") // Replace part 
-str.append("abc") str += "abc"            // Add to end 
+str.append("abc") 
+str += "abc"            // Add to end 
 str.insert(pos, "abc") 
-str.erase(pos, len) std::stoi(str), 
-std::to_string(num) std::getline(cin, str)  // Input line
+str.erase(pos, len) 
+std::stoi(str), 
+std::to_string(num) 
+std::getline(cin, str)  // Input line
 ```
