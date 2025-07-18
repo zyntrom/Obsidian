@@ -248,21 +248,29 @@ let sum = flat.reduce((acc, x) => acc + x, 0); // Sum of all elements
 ## ✅ JavaScript: Using Regex Checks in `if` Statements
 
 ```js
-let str = "abc123";  // Check if all digits 
+let str = "abc123"; 
+// Check if all digits 
 if (/^\d+$/.test(str)) {     
-	console.log("Only digits"); }  // Check if all letters 
+	console.log("Only digits"); }  
+	// Check if all letters 
 if (/^[a-zA-Z]+$/.test(str)) {     
-	console.log("Only letters"); }  // Check if all lowercase 
+	console.log("Only letters"); }  
+	// Check if all lowercase 
 if (/^[a-z]+$/.test(str)) {     
-	console.log("All lowercase letters"); }  // Check if all uppercase 
+	console.log("All lowercase letters"); }  
+	// Check if all uppercase 
 if (/^[A-Z]+$/.test(str)) {     
-	console.log("All uppercase letters"); }  // Check if alphanumeric (no special characters) 
+	console.log("All uppercase letters"); }  
+	// Check if alphanumeric (no special characters) 
 if (/^[a-zA-Z0-9]+$/.test(str)) {     
-	console.log("Alphanumeric only"); }  // Check if only whitespace 
+	console.log("Alphanumeric only"); }  
+	// Check if only whitespace 
 if (/^\s+$/.test(str)) {     
-	console.log("Only whitespace"); }  // Check if string contains at least one digit 
+	console.log("Only whitespace"); }  
+	// Check if string contains at least one digit 
 if (/\d/.test(str)) {     
-	console.log("Contains at least one digit"); }  // Check if string starts with a letter 
+	console.log("Contains at least one digit"); }  
+	// Check if string starts with a letter 
 if (/^[a-zA-Z]/.test(str)) {     
 	console.log("Starts with a letter"); }
 ```
