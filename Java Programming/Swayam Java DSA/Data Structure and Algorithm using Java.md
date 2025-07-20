@@ -72,4 +72,4 @@ public class Array{
 }
 ```
 
-Generic Integer Swap program 
+Generic < T > Swap Program (Change the Integer to Any data Type)
