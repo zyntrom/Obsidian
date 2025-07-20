@@ -42,3 +42,34 @@ public class Array{
 
 Its does not require to create an instance of the class (Because its static)
 
+### Example Program:
+
+```java
+import java.io.*;
+import java.util.*;
+class Box<T>{
+	T value;
+	Box(T value){
+		this.value=value;
+	}
+}
+public class Array{
+	
+	public static <T> void swap(Box<T> x, Box<T> y){
+		T temp;
+		temp=x.value;
+		x.value=y.value;
+		y.value=temp;
+	}
+	public static void main(String[] args){
+		
+		Box<Integer >x=new Box<>(56);
+		Box<Integer >y= new Box<>(676);
+		System.out.println("x : "+x.value+" "+"y : "+y.value);
+		swap(x,y);
+		System.out.println("x : "+x.value+" "+"y : "+y.value);
+	}
+}
+```
+
+Generic Integer Swap program 
