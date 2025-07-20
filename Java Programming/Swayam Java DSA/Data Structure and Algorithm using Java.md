@@ -40,3 +40,5 @@ public class Array{
 }
 ```
 
+Its does not require to create an instance of the class (Because its static)
+
