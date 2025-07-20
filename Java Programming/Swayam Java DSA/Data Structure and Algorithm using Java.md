@@ -44,6 +44,8 @@ Its does not require to create an instance of the class (Because its static)
 
 ### Example Program:
 
+- Generic < T > Swap Program (Change the Integer to Any data Type)
+
 ```java
 import java.io.*;
 import java.util.*;
@@ -72,4 +74,43 @@ public class Array{
 }
 ```
 
-Generic < T > Swap Program (Change the Integer to Any data Type)
+- Generic Program to wrap tow objects:
+
+```java
+import java.io.*;
+import java.util.*;
+class Box<T>{
+	T value;
+	Box(T value){
+		this.value=value;
+	}
+}
+
+class Person{
+	String name;
+	double mark;
+
+	Person(String name,double mark){
+		this.name=name;
+		this.mark=mark;
+	}
+	public String toString(){
+		return name +" : "+ mark;
+	}
+}
+public class Array{
+	public static <T> void swap(Box<T> x,Box<T> y ){
+		T t= x.value;
+		x.value=y.value;
+		y.value=t;
+	}
+	public static void main(String[] args){
+		Box<Person >x =new Box<>(new Person("Alen",343.454));
+		Box<Person >y= new Box<>(new Person("Lajeesh",656.343));
+
+		System.out.println(x.value+" "+y.value);
+		swap(x,y);
+		System.out.println(x.value+" "+y.value);
+	}
+}
+```
