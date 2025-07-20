@@ -206,6 +206,66 @@ class Circle extends Shape {
 }
 ```
 
+## 🔧 How to Achieve Abstraction in Java?
+
+### 1. Using **Abstract Classes**
+
+An abstract class:
+
+- Can have **abstract methods** (no body)
+- Can have **regular methods** too
+    
+
+```java
+abstract class Animal {     
+	abstract void sound();  // no body = must be implemented by subclass
+	void eat() {         
+		System.out.println("This animal eats food");     
+	} 
+}
+```
+
+### 2. Using **Interfaces**
+
+An interface:
+
+- Is **100% abstract** by default (Java 8+ allows default methods though)
+- All methods are **public and abstract** unless stated otherwise
+- A class **implements** an interface
+
+CopyEdit
+
+`interface Shape {     void draw();  // no body }`
+
+---
+
+## 🧪 Example with Abstract Class
+
+java
+
+CopyEdit
+
+`abstract class Animal {     abstract void sound();  // abstract method      void sleep() {         System.out.println("Sleeping...");     } }  class Dog extends Animal {     void sound() {         System.out.println("Barks");     } }`
+
+**Output:**
+
+nginx
+
+CopyEdit
+
+`Barks Sleeping...`
+
+You can’t do: `Animal a = new Animal();` (it's abstract)
+
+---
+
+## 🧪 Example with Interface
+
+java
+
+CopyEdit
+
+`interface Shape {     void draw();  // abstract method }  class Circle implements Shape {     public void draw() {         System.out.println("Drawing Circle");     } }`
 ---
 
 ## 🧰 7. Constructors
