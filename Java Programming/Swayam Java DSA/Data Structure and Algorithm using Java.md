@@ -142,3 +142,24 @@ public class Array{
 	}
 }
 ```
+
+- Method 2: (Ellipsis)
+
+```java
+import java.io.;
+import java.util.;
+public class Array{
+	public static <T> void vararg(T ...v){
+		System.out.println("The var length "+v.length);
+		for(T i: v){
+			System.out.print(i+" ");
+		}
+		System.out.println();
+	} 
+	public static void main(String[] args){
+		vararg(1,4,-1,"ssfs");
+		vararg("34","878");
+		vararg(76.565,576.343);
+	}
+}
+```
