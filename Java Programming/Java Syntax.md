@@ -128,21 +128,34 @@ Wrap data + code together (like above).
 
 Use `private` + `getters/setters`:
 
-java
-
-CopyEdit
-
-`class Person {     private int age;      public void setAge(int a) {         age = a;     }      public int getAge() {         return age;     } }`
+```java
+class Person {     
+	private int age;      
+	public void setAge(int a) {         
+		age = a;     
+	}      
+	public int getAge() {         
+		return age;     
+	} 
+}
+```
 
 ---
 
 ### 🔹 Inheritance
 
-java
-
-CopyEdit
-
-`class Animal {     void eat() {         System.out.println("eating...");     } }  class Dog extends Animal {     void bark() {         System.out.println("barking...");     } }`
+```java
+class Animal {     
+	void eat() {         
+		System.out.println("eating...");     
+	} 
+}  
+class Dog extends Animal {     
+	void bark() {         
+		System.out.println("barking...");     
+	} 
+}
+```
 
 ---
 
@@ -150,19 +163,31 @@ CopyEdit
 
 #### Method Overloading (same method name, different args)
 
-java
-
-CopyEdit
-
-`class Math {     int add(int a, int b) {         return a + b;     }      double add(double a, double b) {         return a + b;     } }`
+```java
+class Math {     
+	int add(int a, int b) {         
+		return a + b;     
+	}      
+	double add(double a, double b) {         
+		return a + b;     
+	} 
+}
+```
 
 #### Method Overriding (child replaces parent method)
 
-java
-
-CopyEdit
-
-`class Animal {     void sound() {         System.out.println("Some sound");     } }  class Cat extends Animal {     void sound() {         System.out.println("Meow");     } }`
+```java
+class Animal {     
+	void sound() {         
+		System.out.println("Some sound");     
+	} 
+}  
+class Cat extends Animal {     
+	void sound() {         
+		System.out.println("Meow");     
+	} 
+}
+```
 
 ---
 
@@ -170,11 +195,16 @@ CopyEdit
 
 **Using abstract class**:
 
-java
-
-CopyEdit
-
-`abstract class Shape {     abstract void draw(); }  class Circle extends Shape {     void draw() {         System.out.println("Drawing Circle");     } }`
+```java
+abstract class Shape {     
+	abstract void draw(); 
+}  
+class Circle extends Shape {     
+	void draw() {         
+		System.out.println("Drawing Circle");     
+	} 
+}
+```
 
 ---
 
