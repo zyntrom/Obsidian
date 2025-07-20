@@ -114,3 +114,31 @@ public class Array{
 	}
 }
 ```
+
+## Variable Number of Arguments
+
+- Method 1: (Arrays)
+
+```java
+import java.io.*;
+import java.util.*;
+public class Array{
+	public static <T> void varargsMethod1(T v[]){
+		System.out.println("The number of args "+v.length+" ,The elements are :");
+
+		for(int i=0;i<v.length;i++){
+			System.out.print(v[i]+" ");
+		}
+		System.out.println();
+	}
+	public static void main(String[] args){
+		Integer x[]={1,2,3,4};
+		Integer y[]={1,2,3}; 
+		Integer z[]={1,2};
+		
+		varargsMethod1(x);
+		varargsMethod1(y);
+		varargsMethod1(z);
+	}
+}
+```
