@@ -78,29 +78,45 @@ while (j < 5) {
 
 ## 🧮 4. Functions (Methods)
 
-java
-
-CopyEdit
-
-`public class Main {     static int add(int a, int b) {         return a + b;     }      public static void main(String[] args) {         int result = add(3, 4);         System.out.println(result); // 7     } }`
+```java
+public class Main {     
+	public static int add(int a, int b) {         
+		return a + b;     
+}      
+	public static void main(String[] args) {         
+		int result = add(3, 4);         
+		System.out.println(result); // 7     
+		} 
+}
+```
 
 **Syntax:**
 
-java
-
-CopyEdit
-
-`[access_modifier] [static] return_type function_name(parameters) {     // body }`
+```java
+[access_modifier] [static] return_type function_name(parameters) {     
+	// body 
+}
+```
 
 ---
 
 ## 🧱 5. Classes and Objects
 
-java
-
-CopyEdit
-
-`class Dog {     String breed;      void bark() {         System.out.println("Woof!");     } }  public class Main {     public static void main(String[] args) {         Dog myDog = new Dog();     // object created         myDog.breed = "Labrador";         myDog.bark();     } }`
+```java
+class Dog {     
+	String breed;      
+	void bark() {         
+		System.out.println("Woof!");     
+	} 
+}  
+public class Main {     
+	public static void main(String[] args) {         
+		Dog myDog = new Dog();     // object created         
+		myDog.breed = "Labrador";         
+		myDog.bark();     
+	} 
+}
+```
 
 ---
 
