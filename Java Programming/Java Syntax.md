@@ -233,27 +233,36 @@ An interface:
 - All methods are **public and abstract** unless stated otherwise
 - A class **implements** an interface
 
-CopyEdit
-
-`interface Shape {     void draw();  // no body }`
+```java
+interface Shape {     
+	void draw();  // no body 
+}
+```
 
 ---
 
 ## 🧪 Example with Abstract Class
 
-java
-
-CopyEdit
-
-`abstract class Animal {     abstract void sound();  // abstract method      void sleep() {         System.out.println("Sleeping...");     } }  class Dog extends Animal {     void sound() {         System.out.println("Barks");     } }`
+```java
+abstract class Animal {     
+	abstract void sound();  // abstract method      
+	void sleep() {         
+		System.out.println("Sleeping...");     
+	} 
+}  
+class Dog extends Animal {    
+	void sound() {         
+		System.out.println("Barks");     
+	} 
+}
+```
 
 **Output:**
 
-nginx
-
-CopyEdit
-
-`Barks Sleeping...`
+```
+Barks 
+Sleeping...
+```
 
 You can’t do: `Animal a = new Animal();` (it's abstract)
 
@@ -261,20 +270,27 @@ You can’t do: `Animal a = new Animal();` (it's abstract)
 
 ## 🧪 Example with Interface
 
-java
-
-CopyEdit
-
-`interface Shape {     void draw();  // abstract method }  class Circle implements Shape {     public void draw() {         System.out.println("Drawing Circle");     } }`
+```java
+interface Shape {     
+	void draw();  // abstract method }  
+class Circle implements Shape {     
+	public void draw() {         
+		System.out.println("Drawing Circle");     
+	} 
+}
+```
 ---
 
 ## 🧰 7. Constructors
 
-java
-
-CopyEdit
-
-`class Student {     String name;      Student(String n) {         name = n;     } }`
+```java
+class Student {     
+	String name;      
+	Student(String n) {         
+		name = n;     
+	} 
+}
+```
 
 ---
 
@@ -294,14 +310,6 @@ CopyEdit
 You can practice all these in:
 
 - Online: [https://replit.com](https://replit.com) or [https://www.jdoodle.com](https://www.jdoodle.com)
-    
 - Or run using terminal and `javac filename.java` + `java ClassName`
-    
 
 ---
-
-Let me know if you want **exercises**, **cheat sheets**, or a **step-by-step project**!
-
-Is this conversation helpful so far?
-
-Ask ChatGPT
