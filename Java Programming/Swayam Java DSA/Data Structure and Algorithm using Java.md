@@ -163,3 +163,23 @@ public class Array{
 	}
 }
 ```
+
+- Method 3: (Object)
+
+```java
+import java.io.;
+import java.util.;
+public class Array{
+	public static void varargs(Object ...obj){
+		for(Object i: obj){
+			System.out.print(i+" ");
+		}
+		System.out.println();
+	}
+	public static void main(String args){
+		varargs(1,3,"sds",343.343);
+		varargs(1232,"dvdsdds",433343.343);
+		varargs(832,3,"sds",343.343);
+	}
+} 
+```
