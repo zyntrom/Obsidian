@@ -221,3 +221,31 @@ public class Array{
 	}
 }
 ```
+
+## Passing Two Values to Generic Class
+
+```java
+import java.io.*;
+import java.util.*;
+class Generic2<T, V>{
+	T obj1;
+	V obj2;
+
+	Generic2(T obj1, V obj2){
+		this.obj1=obj1;
+		this.obj2=obj2;
+	}
+
+	void print(){
+		System.out.print(obj1+" "+obj2);
+	} 
+}
+public class Array{
+	public static void main(String[] args){
+		
+		Generic2<Integer, String> a=new Generic2<>(1,"Hello");
+
+		a.print();
+	}
+}  
+```
