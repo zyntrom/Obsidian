@@ -183,3 +183,41 @@ public class Array{
 	}
 } 
 ```
+
+## Generic Class 
+
+```java
+import java.io.*;
+import java.util.*;
+class SpecArray<T>{
+	T a[];
+	SpecArray(T a[]){
+		this.a=a;
+	}
+	void printint(){
+		for(T i:a){
+			System.out.print(i+" ");
+		}
+		System.out.println();
+	}
+	void reverseInt(){
+		int j=a.length-1;
+		for(int i=0;i<j;i++){
+			T temp=a[i];
+			a[i]=a[j];
+			a[j]=temp;
+			j--;
+		}
+	}
+}
+public class Array{
+
+	public static void main(String[] args){
+		Object a[]= {"2323",344.454,3454,'D'};
+		SpecArray<Object> arr= new SpecArray<>(a);
+		arr.printint();
+		arr.reverseInt();
+		arr.printint();
+	}
+}
+```
