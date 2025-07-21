@@ -224,6 +224,8 @@ public class Array{
 
 ## Passing Two Values to Generic Class
 
+- Example 1:
+
 ```java
 import java.io.*;
 import java.util.*;
@@ -248,4 +250,38 @@ public class Array{
 		a.print();
 	}
 }  
+```
+
+- Example 2:
+
+```java
+import java.io.*;
+import java.util.*;
+class PairData<T ,V>{
+
+	T x;
+	V y;
+
+	PairData(T a,V b){
+		x=a;
+		y=b;
+	}
+
+	T getValue1(){
+		return x;
+	}
+	V getValue2(){
+		return y;
+	}
+
+	void printData(){
+		System.out.print(getValue1()+" "+getValue2());
+	}
+}
+public class Array{
+	public static void main(String[] args){
+		PairData<Integer, String> a= new PairData<>(23,"fdfdf");
+		a.printData();
+	}
+}   
 ```
