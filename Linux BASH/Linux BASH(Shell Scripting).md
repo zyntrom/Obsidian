@@ -177,21 +177,19 @@ echo "Arg count: $#"
 
 Run:
 
-bash
-
-CopyEdit
-
-`./myscript.sh hello world`
+```bash
+./myscript.sh hello world
+```
 
 ---
 
 ## 10. 🧨 Error Handling
 
-bash
-
-CopyEdit
-
-`command || echo "Failed" command && echo "Succeeded"  set -e     # Exit on first error set -u     # Exit if using undefined variables`
+```bash
+command || echo "Failed" 
+command && echo "Succeeded"  
+set -e     # Exit on first error set -u     # Exit if using undefined variables
+```
 
 ---
 
