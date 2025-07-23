@@ -48,42 +48,43 @@ let "c = a * b"     # using let
 
 ## 4. 📥 Input / Output
 
-`read name echo "You entered: $name"  read -p "Enter your age: " age`
+```bash
+read name 
+echo "You entered: $name"  
+read -p "Enter your age: " age
+```
 
 ---
 
 ## 5. 🧪 Conditionals
 
-bash
-
-CopyEdit
-
-`if [ $age -ge 18 ]; then     echo "Adult" elif [ $age -gt 12 ]; then     echo "Teen" else     echo "Child" fi`
+```bash
+if [ $age -ge 18 ]; then     
+	echo "Adult" 
+elif [ $age -gt 12 ]; then     
+	echo "Teen" 
+else     
+echo "Child" 
+fi
+```
 
 ### ✅ Comparison Operators
 
 #### Numbers
 
 - `-eq` (equal), `-ne` (not equal)
-    
 - `-lt` (less), `-le` (less or equal)
-    
 - `-gt` (greater), `-ge` (greater or equal)
-    
 
 #### Strings
 
-- `=` (equal), `!=` (not equal)
-    
+- = (equal), != (not equal)
 - `-z` (empty), `-n` (not empty)
-    
 
 #### Files
 
 - `-e` (exists), `-f` (regular file), `-d` (directory)
-    
 - `-r`, `-w`, `-x` (read/write/execute permission)
-    
 
 ---
 
@@ -91,45 +92,47 @@ CopyEdit
 
 ### For Loop
 
-bash
-
-CopyEdit
-
-`for i in 1 2 3; do     echo $i done`
+```bash
+for i in 1 2 3; do     
+	echo $i done
+```
 
 ### C-style For Loop
 
-bash
-
-CopyEdit
-
-`for ((i = 0; i < 5; i++)); do     echo $i done`
+```bash
+for ((i = 0; i < 5; i++)); do     
+	echo $i done
+```
 
 ### While Loop
 
-bash
-
-CopyEdit
-
-`count=1 while [ $count -le 5 ]; do     echo $count     ((count++)) done`
+```bash
+count=1 
+while [ $count -le 5 ]; do     
+	echo $count     
+	((count++)) 
+done
+```
 
 ### Until Loop
 
-bash
-
-CopyEdit
-
-`count=1 until [ $count -gt 5 ]; do     echo $count     ((count++)) done`
+```bash
+count=1 
+until [ $count -gt 5 ]; do     
+	echo $count     
+	((count++)) 
+done
+```
 
 ---
 
 ## 7. 🧰 Functions
 
-bash
-
-CopyEdit
-
-`greet() {     echo "Hello, $1" }  greet "ZynTrom"`
+```bash
+greet() {     
+	echo "Hello, $1" }  
+greet "ZynTrom"
+```
 
 ---
 
@@ -137,37 +140,40 @@ CopyEdit
 
 ### Write and Append
 
-bash
-
-CopyEdit
-
-`echo "Hello" > file.txt       # Overwrite echo "Another line" >> file.txt  # Append`
+```bash
+echo "Hello" > file.txt       
+# Overwrite 
+echo "Another line" >> file.txt  # Append
+```
 
 ### Read Line-by-Line
 
-bash
-
-CopyEdit
-
-`while read line; do     echo "$line" done < file.txt`
+```bash
+while read line; do     
+	echo "$line" 
+done 
+< file.txt
+```
 
 ### Check File
 
-bash
-
-CopyEdit
-
-`if [ -f file.txt ]; then     echo "Exists and is a file" fi`
+```bash
+if [ -f file.txt ]; then     
+	echo "Exists and is a file" 
+fi
+```
 
 ---
 
 ## 9. 🧵 Command Line Arguments
 
-bash
-
-CopyEdit
-
-`echo "Script name: $0" echo "1st arg: $1" echo "2nd arg: $2" echo "All args: $@" echo "Arg count: $#"`
+```bash
+echo "Script name: $0" 
+echo "1st arg: $1" 
+echo "2nd arg: $2" 
+echo "All args: $@" 
+echo "Arg count: $#"
+```
 
 Run:
 
