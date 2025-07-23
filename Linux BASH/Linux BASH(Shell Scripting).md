@@ -5,53 +5,48 @@
 ## 1. 🧠 What is Bash?
 
 - Bash (Bourne Again SHell) is a Unix shell and scripting language.
-    
 - Used for: automation, file management, system control.
-    
 
 ---
 
 ## 2. 📄 Basic Structure of a Bash Script
 
-bash
-
-CopyEdit
-
-`#!/bin/bash      # Shebang: defines the interpreter # This is a comment  echo "Hello, World"   # Print to terminal`
+```bash
+#!/bin/bash      # Shebang: defines the interpreter 
+# This is a comment  
+echo "Hello, World"   # Print to terminal
+```
 
 ### ✨ Making a Script Executable
 
-bash
-
-CopyEdit
-
-`chmod +x script.sh    # Make script executable ./script.sh           # Run the script`
+```bash
+chmod +x script.sh    # Make script executable 
+./script.sh           # Run the script
+```
 
 ---
 
 ## 3. 📦 Variables
 
-bash
-
-CopyEdit
-
-`name="ZynTrom" echo "Hello $name"         # Use variable echo "Hello ${name}"       # Safe syntax`
+```bash
+name="ZynTrom" 
+echo "Hello $name"         # Use variable echo "Hello ${name}"       
+# Safe syntax
+```
 
 ### 🔢 Arithmetic
 
-bash
-
-CopyEdit
-
-`a=5 b=3 echo $((a + b))     # 8 ((a++))             # increment let "c = a * b"     # using let`
+```bash
+a=5 
+b=3 
+echo $((a + b))     # 8 
+((a++))             # increment 
+let "c = a * b"     # using let
+```
 
 ---
 
 ## 4. 📥 Input / Output
-
-bash
-
-CopyEdit
 
 `read name echo "You entered: $name"  read -p "Enter your age: " age`
 
