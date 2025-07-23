@@ -180,17 +180,9 @@ String Functions:
 
 ### 🟦 12. Structures
 
-c
-
-CopyEdit
-
 `struct Student {   char name[20];   int age; };`
 
 Usage:
-
-c
-
-CopyEdit
 
 `struct Student s1; strcpy(s1.name, "Alen"); s1.age = 21;`
 
@@ -198,40 +190,25 @@ CopyEdit
 
 ### 🟦 13. Unions
 
-c
-
-CopyEdit
-
 `union Data {   int i;   float f; }; union Data d1; d1.i = 5;`
 
 - Memory shared for all fields.
     
-
 ---
 
 ### 🟦 14. Enums
 
-c
-
-CopyEdit
-
 `enum Day {Mon, Tue, Wed}; enum Day today = Tue;`
 
 - Assigns names to integral constants.
-    
 
 ---
 
 ### 🟦 15. Typedef
 
-c
-
-CopyEdit
-
 `typedef unsigned int uint; uint a = 100;`
 
 - Creates an alias name for types.
-    
 
 ---
 
@@ -245,10 +222,6 @@ CopyEdit
 |`free()`|Free allocated memory|
 
 Example:
-
-c
-
-CopyEdit
 
 `int *arr = (int*)malloc(5 * sizeof(int)); free(arr);`
 
