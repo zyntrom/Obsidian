@@ -71,10 +71,10 @@ Format Specifiers:
 
 #### Relational & Logical Operators
 
-| Type       | Operators                        | Description    |
-| ---------- | -------------------------------- | -------------- |
-| Relational | `==`, `!=`, `<`, `>`, `<=`, `>=` | Compare values |
-| Logical    | `&&`, `                          |                |
+| Type       | Operators            | Description    |
+| ---------- | -------------------- | -------------- |
+| Relational | ==, !=, <, >, <=, >= | Compare values |
+| Logical    | `&&`, `              |                |
 
 #### Assignment Operators
 
@@ -91,19 +91,22 @@ Format Specifiers:
 
 #### If-Else
 
-c
-
-CopyEdit
-
-`if (a > b) {   // code } else {   // code }`
-
+```c
+if (a > b) {   
+	// code 
+} 
+else {   
+	// code 
+}
+```
 #### Switch
 
-c
-
-CopyEdit
-
-`switch (var) {   case 1: break;   default: break; }`
+```c
+switch (var) {   
+	case 1: break;   
+	default: break; 
+}
+```
 
 ---
 
