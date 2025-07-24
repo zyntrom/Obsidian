@@ -1,3 +1,4 @@
+- Dynamic Array:
 
 ```java
 import java.io.;
@@ -41,7 +42,6 @@ class DynamicArray <T> implements Iterable <T>{
 				T new_array[]= (T[])new Object[capacity];
 				for(int i=0;i<len;i++){
 					new_array[i]=arr[i];
-
 				}
 				arr=new_array;
 			}
@@ -108,7 +108,6 @@ public class Array{
 		DynamicArray<Object> arr = new DynamicArray<>();
 		arr.add("Hello");
 		arr.add(1);
-
 		System.out.println(arr);
 	}
 }   
