@@ -15,12 +15,12 @@
 ---
 ## 🔍 File Finding (Telescope)
 
-|Keybinding|Description|
-|---|---|
-|`<leader>ff`|Find files|
-|`<leader>fg`|Live grep|
-|`<leader>fb`|List buffers|
-|`<leader>fh`|Help tags|
+| Keybinding   | Description  |
+| ------------ | ------------ |
+| `<leader>ff` | Find files   |
+| `<leader>fg` | Live grep    |
+| `<leader>fb` | List buffers |
+| `<leader>fh` | Help tags    |
 
 ---
 
