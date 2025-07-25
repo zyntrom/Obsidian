@@ -178,4 +178,103 @@ public class Linkedlist{
 }
 ```
 
-## 
+## Doubly Linked List :(ChatGpt)
+
+```java
+import java.io.*;
+import java.util.*;
+class Node{
+	int data;
+	Node next;
+	Node prev;
+
+	Node(int data){
+		this.data=data;
+		this.next=null;
+		this.prev=null;
+	}
+
+}
+class DoubleLinked{
+	Node head;
+	void add(int data){
+		Node newNode= new Node(data);
+		if(head==null){
+			head=newNode;
+			return;
+		}
+
+		Node curr=head;
+		while(curr.next!=null){
+			curr=curr.next;
+		}
+		curr.next=newNode;
+		newNode.prev=curr;
+	}
+	void delete(int value){
+		if(head==null)return;
+		Node curr=head;
+		if(head.data==value){
+			head=head.next;
+			if(head!=null){
+				head.prev=null;
+			}
+			return;
+		}
+		while(curr!=null && curr.data!=value){
+			curr=curr.next;
+		}
+		if(curr==null) return;
+
+		if(curr.prev!=null) curr.prev.next=curr.next;
+		if(curr.next!=null) curr.next.prev=curr.prev;
+	}
+	void printNext(){
+	Node curr = head;
+	while(curr != null){
+		System.out.print(curr.data);
+		if(curr.next != null)
+			System.out.print("<->");
+		curr = curr.next;
+	}
+	System.out.println("<->null\n");
+	}
+	
+	void printPrev(){
+		if(head == null) return;
+
+		Node curr = head;
+		// Go to the last node
+		while(curr.next != null){
+			curr = curr.next;
+		}
+		System.out.print("null<->");
+		while(curr != null){
+			System.out.print(curr.data);
+			if(curr.prev != null)
+				System.out.print("<->");
+			curr = curr.prev;
+			}
+		System.out.println();
+	}
+}
+	
+public class Linkedlist{
+	public static void main(String[] args){
+		DoubleLinked arr= new DoubleLinked();	
+		arr.add(23);
+		arr.add(876);
+		arr.add(233);
+		arr.add(2);
+
+		arr.printNext();
+		arr.printPrev();
+
+		arr.delete(876);
+
+		arr.printNext();
+		arr.printPrev();
+
+	}
+}
+```
