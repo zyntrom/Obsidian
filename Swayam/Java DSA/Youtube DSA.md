@@ -1,4 +1,4 @@
-- Dynamic Array:
+## Dynamic Array:
 
 ```java
 import java.io.;
@@ -111,4 +111,69 @@ public class Array{
 		System.out.println(arr);
 	}
 }   
+```
+
+## Linked List: (ChatGpt Ver.)
+
+```java
+import java.io.*;
+import java.util.*;
+class Node{
+	int data;
+	Node next;
+	Node(int data){
+		this.data=data;
+		this.next=null;
+	}
+}
+class Linked{
+	Node head;
+	void add(int data){
+		Node newNode = new Node(data);
+		if(head==null){
+			head=newNode;
+			return;
+		}
+		Node curr=head;
+		while(curr.next!=null){
+			curr=curr.next;
+		}
+		curr.next=newNode;
+				
+	}
+	void print(){
+		Node curr = head;
+		while(curr!=null){
+			System.out.print(curr.data+"->");
+			curr=curr.next;
+		}
+		System.out.print("null");
+	}
+	void delete(int value){
+		if(head==null) return;
+		if(head.data==value){
+			head=head.next;
+			return;
+		}
+		Node curr=head;
+		while(curr.next!=null && curr.next.data!=value){
+			curr=curr.next;
+		}
+		if(curr.next!=null){
+			curr.next=curr.next.next;
+		}
+	}
+
+}
+public class Linkedlist{
+	public static void main(String[] args){
+		Linked arr= new Linked();
+		arr.add(844);
+		arr.add(343);
+		arr.add(8);
+		arr.print();
+		arr.delete(343);
+		arr.print();
+	}
+}
 ```
