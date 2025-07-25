@@ -281,6 +281,61 @@ public class Linkedlist{
 
 ## Stack  (ChatGpt)
 
-```
+```java
+import java.io.*;
+import java.util.*;
 
+class Stack{
+	int maxSize=100;
+	int stack[] = new int[maxSize];
+	int top=-1;
+	void push(int value){
+		if(top==maxSize-1){
+			System.out.print("Statck Overflow");
+			return;
+		}
+		top++;
+		stack[top]=value;
+	}
+	int pop(){
+		if(top==-1){
+			System.out.print("Stack underflow");
+			return -1;
+		}
+		int val= stack[top];
+		top--;
+		return val;
+	}
+	int peek(){
+		if(top==-1){
+			System.out.print("Stack is empty");
+			return -1;
+		}
+		return stack[top];
+	}
+	boolean isEmpty(){
+		return top==-1;
+	}
+	void print(){
+		for(int i=top;i>=0;i--){
+			System.out.print(stack[i]+" ");
+		}
+		System.out.println();
+	}
+}
+public class Linkedlist{
+	public static void main(String[] args){
+		Stack stack= new Stack();
+
+		stack.push(23);
+		stack.push(454);
+		stack.push(27878);
+		stack.push(3);
+
+		stack.print();
+		System.out.println(stack.pop());
+		System.out.println(stack.pop());
+		stack.print();
+	}
+}
 ```
