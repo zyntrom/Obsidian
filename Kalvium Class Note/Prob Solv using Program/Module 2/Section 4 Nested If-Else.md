@@ -48,23 +48,25 @@ bool has_ticket = true;
 int age = 12;  
 	if (has_ticket) {     
 		if (age >= 13) {         
-			cout << "You can watch the movie.";     } else {         cout << "You are too young to watch the movie.";     } } else {     cout << "You need a ticket to enter."; }
+			cout << "You can watch the movie.";     
+		} 
+		else {         
+			cout << "You are too young to watch the movie.";     
+		} 
+	} 
+	else {     
+		cout << "You need a ticket to enter."; 
+}
 ```
 
 ### ✅ Step-by-Step Logic:
 
 1. **Check `has_ticket`**:
-    
     - If `False`: print "You need a ticket."
-        
     - If `True`: check age
-        
 2. **Check `age >= 13`**:
-    
     - If `True`: print "You can watch the movie."
-        
     - Else: print "You are too young."
-        
 
 ---
 
@@ -72,82 +74,97 @@ int age = 12;
 
 ### Python
 
-python
-
-CopyEdit
-
-`x = 10 y = 10  if x >= y:     if x == y:         print("Both are equal.")     else:         print("x is greater.") else:     print("y is greater.")`
+```python
+x = 10 
+y = 10  
+if x >= y:     
+	if x == y:         
+		print("Both are equal.")     
+	else:         
+		print("x is greater.") 
+else:     
+	print("y is greater.")
+```
 
 ### C++
 
-cpp
-
-CopyEdit
-
-`int x = 10, y = 10;  if (x >= y) {     if (x == y) {         cout << "Both are equal.";     } else {         cout << "x is greater.";     } } else {     cout << "y is greater."; }`
+```c++
+`int x = 10, 
+y = 10;  
+if (x >= y) {     
+	if (x == y) {         
+		cout << "Both are equal.";     
+	} 
+	else {         
+		cout << "x is greater.";     
+	} 
+} 
+else {     
+	cout << "y is greater."; 
+}`
+```
 
 ### 🧠 Step-by-Step:
 
 1. Outer check: `x >= y`
-    
     - If `False`: y is greater
-        
     - If `True`: check `x == y`
-        
         - If `True`: both are equal
-            
         - Else: x is greater
-            
 
 ---
 
 ## ✍️ How to Write Nested If-Else
 
 - Start with a primary `if`
-    
 - Inside that block, write another `if-else`
-    
 - You can nest as deep as needed (usually keep it to 1-2 levels)
-    
 
 ### Example (Compare Two Numbers)
 
 #### Python
 
-python
-
-CopyEdit
-
-`a = 15 b = 25  if a == b:     print("Both numbers are equal.") else:     if a > b:         print("a is greater.")     else:         print("b is greater.")`
+```python
+a = 15 
+b = 25  
+if a == b:     
+	print("Both numbers are equal.") 
+else:     
+	if a > b:         
+		print("a is greater.")     
+	else:         
+		print("b is greater.")
+```
 
 #### C++
 
-cpp
-
-CopyEdit
-
-`int a = 15, b = 25;  if (a == b) {     cout << "Both numbers are equal."; } else {     if (a > b) {         cout << "a is greater.";     } else {         cout << "b is greater.";     } }`
+```c++
+int a = 15, b = 25;  
+if (a == b) {     
+	cout << "Both numbers are equal."; 
+} 
+else {     
+	if (a > b) {         
+		cout << "a is greater.";     
+	} 
+	else {         
+		cout << "b is greater.";     
+	} 
+}
+```
 
 ---
 
 ## 🔁 Visualizing the Logic
 
 Nested if-else works like a **decision tree**:
-
 - One branch opens another
-    
 - Each condition unlocks the next layer
-    
 - Ensures **layered thinking** like:
-    
     - "If it's Saturday"
-        
         - "And if mom said yes"
-            
             - "And if Wi-Fi is working"
-                
                 - "Then play Fortnite 🎮"
-                    
 
 ---
 
