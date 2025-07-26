@@ -58,17 +58,24 @@ int main() {
 
 **Python**
 
-```
+```python
 i = 1 while i <= 5:     print(i)     i += 1
 ```
 
 **C++**
 
-cpp
-
-CopyEdit
-
-`#include <iostream> using namespace std;  int main() {     int i = 1;     while (i <= 5) {         cout << i << endl;         i++;     }     return 0; }`
+```c++
+#include <iostream> 
+using namespace std;  
+int main() {     
+	int i = 1;     
+	while (i <= 5) {         
+		cout << i << endl;         
+		i++;     
+	}     
+	return 0; 
+}
+```
 
 ---
 
@@ -77,7 +84,6 @@ CopyEdit
 ### ✅ Use When:
 
 - You want the block to run **at least once**, even if the condition is false initially.
-    
 
 ### 💡 Example:
 
@@ -85,24 +91,30 @@ CopyEdit
 
 **C++**
 
-cpp
-
-CopyEdit
-
-`#include <iostream> using namespace std;  int main() {     int guess;     do {         cout << "Guess the number: ";         cin >> guess;     } while (guess != 7);     return 0; }`
+```c++
+#include <iostream> 
+using namespace std;  
+int main() {     
+	int guess;     
+	do {         
+		cout << "Guess the number: ";         
+		cin >> guess;     
+	} while (guess != 7);     
+	return 0; 
+}
+```
 
 - Runs once before checking `guess != 7`
-    
 - Continues until guess is correct
-    
 
 ⚠️ **Python Note**: No built-in `do-while` loop. You can use:
 
-python
-
-CopyEdit
-
-`while True:     guess = int(input("Guess the number: "))     if guess == 7:         break`
+```python
+while True:     
+	guess = int(input("Guess the number: "))     
+	if guess == 7:         
+		break
+```
 
 ---
 
@@ -119,11 +131,7 @@ CopyEdit
 ## 🧠 Summary
 
 - Loops are powerful tools to **automate repetition**.
-    
 - Choose the right loop type based on:
-    
     - Whether you know the count (`for`)
-        
     - Need to check conditions (`while`)
-        
     - Must run at least once (`do-while`)
