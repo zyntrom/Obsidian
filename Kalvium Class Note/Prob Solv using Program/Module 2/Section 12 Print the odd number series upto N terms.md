@@ -43,15 +43,14 @@ int main() {
 	for (int i = 1; i <= n; i++) {         
 		cout << 2 * i - 1 << " ";     
 	}     
-	return 0; }
+	return 0; 
+}
 ```
 
 ### 🔍 Explanation
 
 - `2 * i - 1` → prints the `i-th` odd number
-    
 - Loop from `1` to `n` inclusive
-    
 
 ---
 
@@ -59,12 +58,12 @@ int main() {
 
 **Input**
 
-CopyEdit
-
-`5`
+```
+5
+```
 
 **Output**
 
-CopyEdit
-
-`1 3 5 7 9`
+```
+1 3 5 7 9
+```
