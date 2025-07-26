@@ -67,22 +67,24 @@ input.addEventListener('keydown', function(event) {   console.log('Key pressed:'
 
 #### 🐭 Mouse (`mouseover` / `mouseout`)
 
-`<div id="myDiv">Hover over me</div>`
+```html
+<div id="myDiv">Hover over me</div>
+```
 
-js
-
-CopyEdit
-
-`div.addEventListener('mouseover', function() {   div.style.backgroundColor = 'yellow'; });  div.addEventListener('mouseout', function() {   div.style.backgroundColor = 'white'; });`
+```js
+div.addEventListener('mouseover', function() { 
+	div.style.backgroundColor = 'yellow'; 
+});  
+div.addEventListener('mouseout', function() {   
+	div.style.backgroundColor = 'white'; 
+});
+```
 
 ---
 
 ### 📚 **Summary**
 
 - `addEventListener()` attaches events to DOM elements.
-    
 - Handlers define what should happen.
-    
 - Use the **event object** to get more info about the action.
-    
 - Combine with DOM manipulation to make **interactive** pages.
