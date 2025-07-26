@@ -43,54 +43,53 @@ If you're preparing notes or studying, this summary can be structured like this:
 
 - **Code Logic:** 2 nested loops (rows × cols)
 - **Python:**  
-    `for i in range(n): for j in range(n): print("*", end="")`
-    
+```python
+    for i in range(n): 
+	    for j in range(n): 
+		    print("*", end="")
+```
 - **C++:**  
-    `for(i) for(j) cout << "*";`
-    
+```c++    
+for(i=0;i<n;i++) {
+	for(j=0;j<n;j++) {
+		cout << "*";
+	}
+}
+```
 - **Output:**
-    
-    markdown
-    
-    CopyEdit
-    
-    `**** **** **** ****`
-    
+```
+    **** 
+    **** 
+    **** 
+    ****
+```
 
 #### 🔹 Pattern 2: Pyramid Pattern
 
 - **Code Logic:** 3 steps:
     
     1. Loop over rows
-        
     2. Print spaces: `rows - i - 1`
-        
     3. Print stars: `2*i + 1`
-        
 - **Python:** Uses `" " * n` and `"*"` in one `print()`
-    
 - **C++:** Separate inner loops for spaces and stars
-    
 
 **Output:**
 
-markdown
-
-CopyEdit
-
-   `*   ***  ***** *******`
+```
+	   *   
+	  ***  
+     ***** 
+    *******
+```
 
 #### ❗ Common Mistakes
 
 - Forgetting `end=""` in Python
-    
 - Wrong space-star count
-    
 - Inner loop printing newline by mistake
-    
 
 #### 🧠 Tips
 
 - Try changing number of rows
-    
 - Make right-aligned, inverted, or diamond shapes
