@@ -142,5 +142,4 @@
 
 - Forces drive all motion — use Newton's Laws to analyze them.
 - Friction and circular motion are critical in real-world mechanics (turning, launching).
-    
 - Solve problems using equations of motion and Newton’s Second Law.
