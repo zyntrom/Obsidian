@@ -42,17 +42,11 @@ timer = setInterval(function () {
 ```
 
 - Generates a **random integer** between 1 and 3:
-    
     - `Math.random()` gives a number between 0 and 1.
-        
     - `* 3` makes it between 0 and 2.999...
-        
     - `Math.floor()` makes it 0, 1, or 2.
-        
     - `+1` shifts it to 1, 2, or 3.
-        
 - So each time, a **random mole** is selected.
-    
 
 ---
 
@@ -60,51 +54,80 @@ timer = setInterval(function () {
 
 Each of the `if` / `else if` blocks below **checks which mole number** was randomly picked and updates the button colors:
 
-js
-
-CopyEdit
-
-`if (random == 1) {   c1.style.backgroundColor = "green";   c2.style.backgroundColor = "grey";   c3.style.backgroundColor = "grey"; }`
+```js
+if (random == 1) {   
+	c1.style.backgroundColor = "green";   
+	c2.style.backgroundColor = "grey";   
+	c3.style.backgroundColor = "grey"; 
+}
+```
 
 - If `1` is selected:
-    
     - `c1` turns **green** (mole appears).
-        
     - Others become **grey** (no mole).
-        
 
 ---
 
-js
-
-CopyEdit
-
-`else if (random == 2) {   c1.style.backgroundColor = "gray";   c2.style.backgroundColor = "green";   c3.style.backgroundColor = "grey"; }`
+```js
+else if (random == 2) {   
+	c1.style.backgroundColor = "gray";   
+	c2.style.backgroundColor = "green";   
+	c3.style.backgroundColor = "grey"; 
+}
+```
 
 - If `2` is selected:
-    
     - `c2` turns **green**, rest are **grey**.
-        
 
 ---
 
-js
-
-CopyEdit
-
-`else if (random == 3) {   c1.style.backgroundColor = "grey";   c2.style.backgroundColor = "grey";   c3.style.backgroundColor = "green"; }`
+```js
+else if (random == 3) {   
+	c1.style.backgroundColor = "grey";   
+	c2.style.backgroundColor = "grey";   
+	c3.style.backgroundColor = "green"; 
+}
+```
 
 - If `3` is selected:
-    
     - `c3` turns **green**, rest are **grey**.
-        
 
 ---
 
 ### ⏱️ Summary:
 
 - Every 500ms, a random button (`c1`, `c2`, or `c3`) turns green.
-    
 - This simulates the **mole "popping up"**.
-    
 - The rest of the buttons reset to grey, simulating "mole not present".
+
+## Whole Code:
+
+```js
+let random=1;
+let timer=null;
+const c1=document.getElementById("c1");
+const c2=document.getElementById("c2");
+const c3=document.getElementById("c3");
+timer=setInterval(function(){
+	random=Math.floor(Math.random()*3)+1;
+	if(random==1){
+		c1.style.backgroundColor="green";
+		c2.style.backgroundColor="grey";
+		c3.style.backgroundColor="grey";
+	}
+	else if(random==2){
+		c1.style.backgroundColor="gray";
+		c2.style.backgroundColor="green";
+		c3.style.backgroundColor="grey";
+
+	}
+	else if(random==3){
+		c1.style.backgroundColor="grey";
+		c2.style.backgroundColor="grey";
+		c3.style.backgroundColor="green";
+
+	}
+
+
+},500) 
+```
