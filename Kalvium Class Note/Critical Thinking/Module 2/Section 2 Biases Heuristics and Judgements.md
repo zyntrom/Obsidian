@@ -36,8 +36,7 @@
 - Which is riskier: Shark diver or cattle rancher?
 - **What happened?**
     - You likely said "shark diver", though **cattle-related deaths are more 
-    - 
-common**.
+    common**.
     - This is due to **availability heuristic** – we overestimate risk based on **how easily examples come to mind** (shark attacks are more dramatic).
 
 ---
@@ -46,33 +45,22 @@ common**.
 
 - After reading about a plane crash, would you still go to Singapore?
 - Most would avoid the trip, **even though the event is rare**.
-    
 - This shows how **recent events** and **emotions** bias your thinking.
-    
 - A **heuristic** influenced by **availability + emotion**.
-    
 
 ---
 
 ### 🔸 **Exercise #4: Context & Ambiguity**
 
 - You saw:
-    
     - A B C
-        
     - 12 13 14  
         → But the **"B" and "13" were identical**!
-        
 - Why did you interpret it differently?
-    
     - **Context** guided your reading.
-        
     - System 1 **constructed a single, plausible story** and ignored ambiguity.
-        
     - System 1 doesn’t consider alternate meanings.
-        
 - Example: "Bank" can mean **money** or **riverbank**, but your brain chooses one based on context.
-    
 
 ---
 
@@ -81,32 +69,21 @@ common**.
 **WYSIATI = What You See Is All There Is**
 
 - You believe that the limited information available is the full picture.
-    
 - Example:
-    
     - "Mindik is intelligent and strong" → You think she’s a good leader.
-        
     - If we add: "corrupt and cruel", your opinion would change drastically.
-        
 - System 1 jumps to conclusions without asking for **missing information**.
-    
 - System 2 requires **effort** and usually stays **lazy**.
-    
 
 ---
 
 ### 🔸 **Exercise #5: Playground Swing Decision**
 
 - Child 1 → Positive swing memory = low risk, runs to play.
-    
 - Child 2 → Negative swing memory = high risk, avoids swings.
-    
 - Why?
-    
     - **Emotional heuristics** based on **past experience**.
-        
     - Shows how **emotions strongly influence judgments**.
-        
 
 ---
 
@@ -125,32 +102,20 @@ common**.
 ### 🧠 **Tips for Overcoming Biases & Heuristics**
 
 - **Activate System 2**: Question your first thoughts.
-    
 - **Pause before judging**: Ask for more info.
-    
 - **Be aware of emotional influence**: Check if fear or memory is driving your decision.
-    
 - **Recognize context**: Don't let it trick you into false certainty.
-    
 - **Don't trust only what you see**: There may be more to the story.
-    
 
 ---
 
 ### ✅ **Full Lesson Summary**
 
 - We often rely on **heuristics** and **System 1** thinking to make fast decisions.
-    
 - These shortcuts are efficient but **prone to errors and biases**.
-    
 - **Judgments are often emotional and context-dependent**.
-    
 - **WYSIATI** explains how we wrongly assume we know everything from limited info.
-    
 - To avoid poor decisions:
-    
     - Use **System 2** thinking.
-        
     - Question your assumptions.
-        
     - Look for **alternate possibilities**.
