@@ -38,4 +38,53 @@ Create the basic visual layout and styling for a simple “Whack-a-Mole” game 
 - **Active Mole State**:
     - `.mole.active`: changes color to green (`#4caf50`) to visually show an active (clickable) mole.
 
-Index.html
+### Index.html
+
+```html
+<html>
+	<head>
+		<title>
+			Welcome to my Game
+		</title>
+		<link rel="stylesheet" href="index.css">
+	</head>
+	<body>
+		<div>
+			<h2>Whack-a-mole</h2>
+			<h4>Score: 0</h4>
+		</div>
+		<div class="wack">
+			<div class ="circle" id="c1"></div>
+			<div class ="circle" id="c2"></div>
+			<div class ="circle" id="c3"></div>
+		</div>
+		<script src=sript.js></script>
+	</body>
+</html> 
+```
+
+### index.css
+
+```css
+body{
+	background-color: lightblue;
+}
+h2{
+	text-align: center;
+}
+h4{
+	text-align: center ;
+}
+.wack{
+	display:flex;
+	justify-content:center;
+}
+.circle{
+	background-color:grey;
+	height:200px;
+	width:200px;
+	margin:40px;
+	border-radius: 100px;
+	 
+}
+```
