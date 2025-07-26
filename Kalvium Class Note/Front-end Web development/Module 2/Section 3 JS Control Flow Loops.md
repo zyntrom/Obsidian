@@ -15,15 +15,14 @@ Use when you **know** how many times to repeat.
 **Syntax:**
 
 ```js
-for (let i = 1; i <= 5; i++) {   console.log("Iteration number: " + i); }
+for (let i = 1; i <= 5; i++) {   
+	console.log("Iteration number: " + i); 
+}
 ```
 
 - Starts with: `let i = 1` (initialization)
-    
 - Runs while: `i <= 5` (condition)
-    
 - Increases i: `i++` (increment)
-    
 
 ✅ Best when: You know the number of repetitions.
 
@@ -35,11 +34,13 @@ Use when you **don’t know** in advance how many times to repeat.
 
 **Syntax:**
 
-javascript
-
-CopyEdit
-
-`let i = 1; while (i <= 5) {   console.log("Iteration number: " + i);   i++; }`
+```js
+let i = 1; 
+while (i <= 5) {   
+	console.log("Iteration number: " + i);   
+	i++; 
+}
+```
 
 ✅ Best when: You loop **as long as a condition is true**.
 
@@ -51,11 +52,13 @@ Use when you want to **guarantee at least one run**, even if the condition is fa
 
 **Syntax:**
 
-javascript
-
-CopyEdit
-
-`let i = 6; do {   console.log("Iteration number: " + i);   i++; } while (i <= 5);`
+```js
+let i = 6; 
+do {   
+	console.log("Iteration number: " + i);   
+	i++; 
+} while (i <= 5);
+```
 
 ✅ Best when: You **must run** the loop body **at least once**.
 
@@ -74,7 +77,5 @@ CopyEdit
 ### 🧠 Real-Life Examples:
 
 - **`for`**: Print 1 to 100
-    
 - **`while`**: Keep asking user input until it's valid
-    
 - **`do...while`**: Show welcome message at least once
