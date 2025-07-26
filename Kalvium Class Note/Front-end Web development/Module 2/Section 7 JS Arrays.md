@@ -23,38 +23,35 @@ fruits[2]; // 'orange'
 
 📏 **Length of Array:**
 
-`fruits.length; // 3`
+```js
+fruits.length; // 3
+```
 
 ➕➖ **Add/Remove Items:**
 
-js
-
-CopyEdit
-
-`fruits.push('grape');    // add to end fruits.pop();            // remove from end fruits.unshift('mango'); // add to start fruits.shift();          // remove from start`
+```js
+fruits.push('grape');    // add to end 
+fruits.pop();            // remove from end 
+fruits.unshift('mango'); // add to start 
+fruits.shift();          // remove from start
+```
 
 ✏️ **Update Elements:**
 
-js
-
-CopyEdit
-
-`fruits[1] = 'grape'; // changes 'banana' to 'grape'`
+```js
+fruits[1] = 'grape'; // changes 'banana' to 'grape'
+```
 
 🧰 **Array Methods to Know:**
 
 - `splice(index, count, item)` → add/remove at index  
     `fruits.splice(1, 1, 'grape');`
-    
 - `slice(start, end)` → copy part of array  
     `fruits.slice(1, 3);`
-    
 - `indexOf(value)` → find position  
     `fruits.indexOf('banana');`
-    
 - `join(separator)` → convert array to string  
     `fruits.join(', '); // "apple, banana, orange"`
-    
 
 ---
 
@@ -67,12 +64,8 @@ Arrays make it easy to handle **dynamic lists**—something you'll constantly us
 ### ✅ **Remember:**
 
 - Arrays = `[]`
-    
 - Index starts from `0`
-    
 - Use `push`, `pop`, `shift`, `unshift` to manage them.
-    
 - Master methods like `splice`, `slice`, `indexOf`, `join`.
-    
 
 ---
