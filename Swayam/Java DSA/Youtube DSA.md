@@ -1,3 +1,4 @@
+![[Pasted image 20250726122213.png]]
 ## Dynamic Array:
 
 ```java
