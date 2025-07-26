@@ -33,7 +33,13 @@ num = 12345 count = 0 while num > 0:     count += 1     num //= 10 print("Total 
 #### ✅ C++ Code:
 
 ```C++
-int num = 12345; int count = 0; while (num > 0) {     count++;     num /= 10; } cout << "Total digits: " << count;
+int num = 12345; 
+int count = 0; 
+while (num > 0) {     
+	count++;     
+	num /= 10; 
+} 
+cout << "Total digits: " << count;
 ```
 
 #### 💡 Explanation:
@@ -41,26 +47,18 @@ int num = 12345; int count = 0; while (num > 0) {     count++;     num /= 10; } 
 Each loop iteration:
 
 - Increases the count
-    
 - Removes the last digit using integer division
-    
 
 ---
 
 ### 🔁 Loop Trace:
 
 - 12345 → count = 1
-    
 - 1234 → count = 2
-    
 - 123 → count = 3
-    
 - 12 → count = 4
-    
 - 1 → count = 5
-    
 - Ends when num = 0
-    
 
 ---
 
@@ -68,54 +66,51 @@ Each loop iteration:
 
 #### ✅ Python Code:
 
-python
-
-CopyEdit
-
-`num = 1234 rev = 0 while num > 0:     digit = num % 10     rev = rev * 10 + digit     num //= 10 print("Reversed:", rev)`
+```python
+num = 1234 
+rev = 0 
+while num > 0:     
+	digit = num % 10     
+	rev = rev * 10 + digit     
+	num //= 10 
+print("Reversed:", rev)
+```
 
 #### ✅ C++ Code:
 
-cpp
-
-CopyEdit
-
-`int num = 1234, rev = 0; while (num > 0) {     int digit = num % 10;     rev = rev * 10 + digit;     num /= 10; } cout << "Reversed: " << rev;`
+```c++
+int num = 1234, rev = 0; 
+while (num > 0) {     
+	int digit = num % 10;     
+	rev = rev * 10 + digit;     
+	num /= 10; 
+} 
+cout << "Reversed: " << rev;
+```
 
 #### 💡 Explanation:
 
 - `%` extracts the last digit
-    
 - `rev = rev * 10 + digit` builds the reversed number
-    
 - `/= 10` drops the last digit from the original number
-    
 
 ---
 
 ### 🔄 Loop Trace:
 
 - 1234 → rev = 4
-    
 - 123 → rev = 43
-    
 - 12 → rev = 432
-    
 - 1 → rev = 4321
-    
 - Done
-    
 
 ---
 
 ### ⚠️ Common Mistakes:
 
 - Forgetting to store the **original number** (if needed later)
-    
 - Using **floating point division** in Python (use `//` instead of `/`)
-    
 - Incorrect loop conditions (e.g., `while num != 0` may behave unexpectedly for negatives)
-    
 
 ---
 
