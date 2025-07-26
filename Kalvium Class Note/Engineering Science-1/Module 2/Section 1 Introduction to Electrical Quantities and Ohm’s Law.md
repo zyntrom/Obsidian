@@ -140,9 +140,7 @@ Think of any device:
 
 - Where is the **voltage** coming from?
 - What’s acting as a **resistor**?
-    
 - How does **current** flow?
-    
 
 ---
 
@@ -151,11 +149,7 @@ Think of any device:
 You now know:
 
 - What **voltage, current**, and **resistance** are
-    
 - How to use **Ohm’s Law** (V = IR)
-    
 - How to calculate **electrical power**
-    
 - The key **parts of a circuit**
-    
 - How these principles apply in **real-life devices**
