@@ -86,21 +86,13 @@ Even experts fall for it — **Robert Cialdini** avoids signing petitions becaus
 From **The Decision Lab**:
 
 1. **Challenge the need for consistency**
-    
     - Ask: “Does this still reflect who I am and what I want?”
-        
 2. **Normalize changing your mind**
-    
     - Growth and change are natural — not signs of failure.
-        
 3. **Let go of fear of judgment**
-    
     - Most people **respect honesty** more than blind consistency.
-        
 4. **Focus on future benefits**
-    
     - Make decisions based on **what will help you now**, not what you've already said or done.
-        
 
 ---
 
