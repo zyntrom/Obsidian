@@ -21,7 +21,9 @@ A `do-while` loop is a control structure that **executes a block of code at leas
 ## 🧪 Syntax (C++)
 
 ```c++
-do {     // Code to run } while (condition);
+do {     
+	// Code to run 
+} while (condition);
 ```
 
 - Code inside the `do` block runs first.
@@ -37,33 +39,30 @@ do {     // Code to run } while (condition);
 using namespace std;  
 int main() {     
 	int count = 0;     
-	do {         cout << "Count: " << count << endl;         count++;     } while (count < 5);     return 0; }
+	do {         
+		cout << "Count: " << count << endl;         
+		count++;     
+	} while (count < 5);     
+	return 0; 
+}
 ```
 
 ### 🔎 Output:
 
-makefile
-
-CopyEdit
-
-`Count: 0  Count: 1  Count: 2  Count: 3  Count: 4`
+```
+Count: 0  Count: 1  Count: 2  Count: 3  Count: 4
+```
 
 ---
 
 ## 🧠 When to Use a Do-While Loop?
 
 - When you want the loop to run **at least once**.
-    
 - When the **condition depends on the result of running** the code.
-    
 - Examples:
-    
     - Menu systems
-        
     - Input validation (ask again if invalid)
-        
     - Retry mechanisms (like re-attempting network connection)
-        
 
 ---
 
@@ -71,11 +70,11 @@ CopyEdit
 
 Use `while True` with a `break` condition.
 
-python
-
-CopyEdit
-
-`while True:     # do something     if condition_to_stop:         break`
+```python
+while True:     # do something     
+	if condition_to_stop:         
+	break
+```
 
 ✅ This simulates the same behavior as a C++ `do-while`.
 
@@ -86,6 +85,5 @@ CopyEdit
 1. **User Prompt Loop**  
     Ask the user: "Do you want to continue? (yes/no)"  
     Keep looping until user enters "no".
-    
 2. **Temperature Simulator**  
     Print "Still heating..." until temperature reaches 100°C.
