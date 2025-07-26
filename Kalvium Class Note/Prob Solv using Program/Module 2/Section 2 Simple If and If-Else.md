@@ -52,9 +52,7 @@ else:
 ### **Key Points:**
 
 - Only **one** of the blocks runs.
-    
 - Always results in **some** action.
-    
 
 ---
 
@@ -62,38 +60,36 @@ else:
 
 ### **Syntax (Python):**
 
+```python
 score = 72  
 result = "You passed!" if score >= 80 else "You failed."  
 print(result)
+```
 
 ### **Syntax (C++):**
 
+```c++
 int score = 72;  
 string result = (score >= 80) ? "You passed!" : "You failed.";  
 cout << result;
+```
 
 ### **Explanation:**
 
 - One-line shortcut for if-else.
-    
 - Format:  
       **condition ? true_output : false_output**
-    
 - Used mainly for **simple assignments or print operations**.
-    
 
 ---
 
 ## **5. 🎯 Problem Example**
 
 **Problem:** Build a grading system using the ternary operator.
-
 ### **Logic:**
 
 - If score ≥ 80 → print "You passed!"
-    
 - Else → print "You failed."
-    
 
 **Result with score = 72:** You failed.
 
@@ -112,7 +108,5 @@ cout << result;
 ## **7. 🧠 Real-Life Application**
 
 - **Voting App**: If age ≥ 18 → allow vote.
-    
 - **Shopping App**: If cart value ≥ 500 → apply discount.
-    
 - **Game**: If health = 0 → game over.
