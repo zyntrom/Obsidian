@@ -22,40 +22,34 @@ element.addEventListener('eventType', handlerFunction);
 
 HTML:
 
-```js
+```html
 <button id="myButton">Click Me!</button>
 ```
 
 JS:
 
-js
-
-CopyEdit
-
-`const button = document.getElementById('myButton'); button.addEventListener('click', function() {   alert('Button clicked!'); });`
+```js
+const button = document.getElementById('myButton'); button.addEventListener('click', function() {   
+	alert('Button clicked!'); 
+});
+```
 
 ---
 
 ### 🧠 **Event Handler Functions**
 
 - Run when event occurs.
-    
 - Can:
-    
     - Change text/content
-        
     - Change styles
-        
     - Use the **event object** to get details (`event.target`, `event.key`, etc.)
-        
 
 Example:
-
-js
-
-CopyEdit
-
-`button.addEventListener('click', function(event) {   event.target.textContent = 'Clicked!'; });`
+```js
+button.addEventListener('click', function(event) { 
+	event.target.textContent = 'Clicked!'; 
+});
+```
 
 ---
 
@@ -63,23 +57,15 @@ CopyEdit
 
 #### 🔡 Keyboard (`keydown`)
 
-html
+```html
+<input type="text" id="myInput" />
+```
 
-CopyEdit
-
-`<input type="text" id="myInput" />`
-
-js
-
-CopyEdit
-
-`input.addEventListener('keydown', function(event) {   console.log('Key pressed:', event.key); });`
+```js
+input.addEventListener('keydown', function(event) {   console.log('Key pressed:', event.key); });
+```
 
 #### 🐭 Mouse (`mouseover` / `mouseout`)
-
-html
-
-CopyEdit
 
 `<div id="myDiv">Hover over me</div>`
 
