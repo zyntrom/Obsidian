@@ -46,29 +46,22 @@
 
 - A wife recalls a neighbor who didn’t lock his house and was never robbed.
 - Uses that **single case** to argue the area is safe — ignoring real crime rates.
-    
 
 ---
 
 ### 🌀 **Other Real-Life Examples**
 
 - A woman robbed once begins distrusting all men, even family.
-    
 - A fisherman overestimates shark attacks after hearing about one case.
-    
 - Politicians use individual cold days to deny global warming, despite **global climate data**.
-    
 - A sports coach repeats old strategies just because they worked before, even if they’re **outdated** now.
-    
 - Fear of flying arises from **media stories about plane crashes**, not from **actual flying safety stats**.
-    
 
 ---
 
 ### 📌 **Conclusion**
 
 - **Availability bias** affects how we judge risk, safety, and truth.
-    
 - It’s based on **emotion, vividness, and recall**, not logic or data.
-    
-- Being aware of this bias helps us make **more rational, evidence-based decisions**.
+- Being aware of this bias helps us make **more rational, evidence-based 
+decisions**.
