@@ -66,7 +66,13 @@ print("The glass is full!")
 #### ✅ C++
 
 ```c++
-int water = 0; int glassCapacity = 5; while (water < glassCapacity) {     water++;     cout << "Added water. Current level: " << water << endl; } cout << "The glass is full!" << endl;
+int water = 0; 
+int glassCapacity = 5; 
+while (water < glassCapacity) {     
+	water++;     
+	cout << "Added water. Current level: " << water << endl; 
+} 
+cout << "The glass is full!" << endl;
 ```
 
 ---
@@ -74,7 +80,5 @@ int water = 0; int glassCapacity = 5; while (water < glassCapacity) {     water+
 ### 🔄 Use Cases
 
 - **Games** (e.g., keep guessing until correct)
-    
 - **Timers** (e.g., countdowns)
-    
 - **Sensor checks** (e.g., while temperature > limit)
