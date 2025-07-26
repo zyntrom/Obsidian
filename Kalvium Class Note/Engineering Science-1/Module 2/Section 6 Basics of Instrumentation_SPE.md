@@ -23,31 +23,22 @@ Instrumentation is like a machine’s nervous system—**sensors gather data**, 
 - They **convert real-world input into electrical signals**, often using:
     - **Resistive, capacitive, piezoelectric** techniques.
     - Signals are **conditioned (amplified, filtered)** and **converted to digital** using ADCs.
-        
 
 🎛️ **Control Instruments:**
 
 - Use processed sensor data to regulate systems (like a thermostat).
-    
 - Can be mechanical, electronic (e.g., PLCs), or software-based (e.g., PID controllers).
-    
 
 ---
 
 ### 🌍 **Where It’s Used:**
 
 - 🚗 **Self-driving cars**: Navigate using LiDAR, radar, and more.
-    
 - 🏠 **Smart homes**: Auto-control lights, temperature, and energy.
-    
 - 🏭 **Factories**: Monitor pressure, speed, and flow.
-    
 - 🚜 **Smart farming**: Water plants only when needed.
-    
 - 🏥 **Healthcare**: Monitor patients in real time.
-    
 - ⚡ **Energy grids**: Balance electricity use across regions.
-    
 
 ---
 
