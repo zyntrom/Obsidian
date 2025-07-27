@@ -104,7 +104,16 @@ class Person {
 public class SwapTest {     
 	public static <T> void swap(T x, T y) {         
 		T temp = x;         
-		x = y;         y = temp;         System.out.println("x = " + x + ", y = " + y);     }      public static void main(String[] args) {         Person p1 = new Person("Alen");         Person p2 = new Person("John");         swap(p1, p2);     } }
+		x = y;         
+		y = temp;         
+		System.out.println("x = " + x + ", y = " + y);     
+}      
+public static void main(String[] args) {         
+	Person p1 = new Person("Alen");         
+	Person p2 = new Person("John");         
+	swap(p1, p2);     
+	} 
+}
 ```
 
 ---
@@ -112,49 +121,70 @@ public class SwapTest {
 ## 🔁 Static Generic Methods
 
 - Static methods can also be generic:
-    
 
-java
-
-CopyEdit
-
-`public class StaticGeneric {     public static <T> void print(T value) {         System.out.println("Value: " + value);     }      public static void main(String[] args) {         print(123);         print("Static call");     } }`
+```java
+public class StaticGeneric {     
+	public static <T> void print(T value) {  
+		System.out.println("Value: " + value);     
+	}      
+	public static void main(String[] args) {         
+		print(123);         
+		print("Static call");     
+	} 
+}
+```
 
 ---
 
 ## 📥 Parameter Passing in Generic Methods
 
 - Generic methods can also accept **variable number of parameters** (varargs).
-    
 
 ### Ways:
 
 1. **Using Array**
-    
 2. **Using Ellipses (`...`)**
-    
 3. **Using `Object` type**
-    
 
 ---
 
 ## 1️⃣ Using Array
-
-java
-
-CopyEdit
-
-`public class VarArgArray {     public static void show(int[] values) {         for (int v : values)             System.out.print(v + " ");         System.out.println();     }      public static void main(String[] args) {         int[] a = {1, 3, 5, 7};         int[] b = {2, 4};         int[] c = {};         show(a); show(b); show(c);     } }`
+```java
+public class VarArgArray {     
+	public static void show(int[] values) {         
+		for (int v : values)             
+			System.out.print(v + " ");         
+		System.out.println();     
+	}      
+	public static void main(String[] args) {         
+		int[] a = {1, 3, 5, 7};         
+		int[] b = {2, 4};         
+		int[] c = {};         
+		show(a); 
+		show(b); 
+		show(c);     
+	} 
+}
+```
 
 ---
 
 ## 2️⃣ Using Ellipses (`...`)
 
-java
-
-CopyEdit
-
-`public class VarArgEllipsis {     public static void show(int... values) {         for (int v : values)             System.out.print(v + " ");         System.out.println();     }      public static void main(String[] args) {         show(1, 3, 5, 7);         show(10, 20);         show(); // no arguments     } }`
+```java
+public class VarArgEllipsis {     
+	public static void show(int... values) {         
+		for (int v : values)             
+			System.out.print(v + " ");         
+		System.out.println();     
+	}      
+	public static void main(String[] args) {         
+		show(1, 3, 5, 7);         
+		show(10, 20);         
+		show(); // no arguments     
+	} 
+}
+```
 
 > ✅ Cleaner and more flexible than array method.
 
@@ -162,11 +192,20 @@ CopyEdit
 
 ## 3️⃣ Using `Object...` for Generic Type & Number
 
-java
-
-CopyEdit
-
-`public class VarArgObject {     public static void show(Object... values) {         for (Object v : values)             System.out.print(v + " ");         System.out.println();     }      public static void main(String[] args) {         show(1, "Hi", 3.14, true);         show("Single");         show();     } }`
+```java
+public class VarArgObject {     
+	public static void show(Object... values) {         
+		for (Object v : values)             
+			System.out.print(v + " ");         
+		System.out.println();     
+	}      
+	public static void main(String[] args) {         
+		show(1, "Hi", 3.14, true);         
+		show("Single");         
+		show();     
+	} 
+}
+```
 
 > 🔁 Accepts any number of arguments of any type (Integer, String, Float, Boolean, etc.)
 
