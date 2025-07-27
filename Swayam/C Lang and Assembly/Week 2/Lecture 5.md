@@ -147,11 +147,8 @@ printf("%d", i);
 ### Assembly:
 
 - Translated to **multiple lines of assembly**.
-    
 - Can be optimized with **inline assembly** for better performance.
-    
 - Include `#include <stdio.h>` to avoid `printf` error.
-    
 
 ---
 
@@ -159,55 +156,38 @@ printf("%d", i);
 
 ### Integer:
 
-c
-
-CopyEdit
-
-`int x = 10, y = 2; int q = x / y;  // → idiv in assembly`
+```c
+int x = 10, y = 2; 
+int q = x / y;  // → idiv in assembly
+```
 
 - `mov eax, x`
-    
 - `cdq`
-    
 - `idiv y`
-    
 - `mov q, eax`
-    
 
 ### Floating Point:
 
-c
-
-CopyEdit
-
-`float q = 10.0 / y;`
+```c
+float q = 10.0 / y;
+```
 
 - Generates **completely different instructions**:
-    
     - Uses SSE/XMM registers (`xmm0`, `xmm1`, etc.)
-        
     - Offloaded to **coprocessor**
-        
 
 ### Key Point:
 
 - Stick to **integer operations** in this course.
-    
 - Floating-point adds unnecessary complexity for this level.
-    
 
 ---
 
 ## ✅ Takeaways for Exam:
 
 - Understand how **simple C operations** translate to **assembly**.
-    
 - Know how compiler optimization affects **generated code**.
-    
 - Be able to write and interpret **inline assembly** in C.
-    
 - Recognize **memory size impact** in pointer arithmetic.
-    
 - Identify when compiler uses `idiv`, `cdq`, or SSE for different data types.
-    
 - Use **Compiler Explorer** to experiment with code and understand low-level execution.
