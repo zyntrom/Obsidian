@@ -60,46 +60,31 @@ int main() {
 ### 🔍 Characteristics:
 
 - **Start**: `/*`
-    
 - **End**: `*/`
-    
 - Compiler **ignores comments**.
-    
 - Can be **single line** or **multi-line**.
-    
 - Used to explain:
-    
     - Logic of code
-        
     - Functionality
-        
     - Section headers
-        
 
 > ✅ **Best Practice**: Always comment your code to improve **readability** and aid **team collaboration**.
 
 ### 📌 Example:
 
-c
-
-CopyEdit
-
-`/* This program demonstrates use of printf() */`
+```c
+/* This program demonstrates use of printf() */
+```
 
 ---
 
 ## 🧵 More About `printf()` Function
 
 ### 🌟 `printf()` is a Library Function:
-
 - Comes from the **standard I/O library (`stdio.h`)**
-    
 - Used for **output**
-    
 - Accepts a **string (in double quotes)** as its **argument**
-    
 - Anything between `" "` gets printed **as-is**
-    
 
 ---
 
@@ -107,39 +92,29 @@ CopyEdit
 
 ### ✍️ Syntax:
 
-c
-
-CopyEdit
-
-`printf("Line1\nLine2\n");`
+```c
+printf("Line1\nLine2\n");
+```
 
 ### 🔍 What it Does:
 
 - **`\n`** tells the terminal to:
-    
     - End the current line
-        
     - **Start a new one**
-        
 
 ### 🧪 Example:
 
-c
-
-CopyEdit
-
-`printf("Welcome to\n\nC\n\nProgramming\n");`
+```c
+printf("Welcome to\n\nC\n\nProgramming\n");
+```
 
 ### 🧾 Output:
 
-css
-
-CopyEdit
-
-`Welcome to  C  Programming`
+```
+Welcome to  C  Programming
+```
 
 - **Multiple `\n` characters** create **blank lines** or **vertical spacing**
-    
 
 ---
 
@@ -162,9 +137,6 @@ CopyEdit
 Try editing your sample programs to:
 
 1. **Remove** or **add** `\n` and observe output changes.
-    
 2. Add meaningful **comments** to each line of your code.
-    
 3. Experiment with multiple `\n` in a single `printf()`.
-    
 4. Trace execution line by line and predict output before running.
