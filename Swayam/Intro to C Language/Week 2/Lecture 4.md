@@ -85,7 +85,8 @@ while (1) {
 	if (length > maxlen)         
 		maxlen = length;     
 		p = c; 
-	}  printf("Length of longest increasing contiguous subsequence is %d\n", maxlen);
+}  
+printf("Length of longest increasing contiguous subsequence is %d\n", maxlen);
 ```
 
 ---
@@ -93,5 +94,4 @@ while (1) {
 ### 📌 **Final Notes**
 
 - This problem is excellent for understanding **loop control**, **condition-based resets**, and **tracking running max**.
-    
 - You will likely implement this as a full program in the next part.
