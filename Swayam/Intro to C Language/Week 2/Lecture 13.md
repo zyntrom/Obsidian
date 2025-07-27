@@ -5,7 +5,8 @@
 ```
 a2+b2=c2
 ```
-    Example: (3, 4, 5)
+
+Example: (3, 4, 5)
 
 ---
 
@@ -50,42 +51,31 @@ a2+b2=c2
     - From the **third positive number** onward:
         - You now have a triple: `prev2`, `prev`, `current`.
         - Check if:
-            prev22+prev2=current2prev2^2 + prev^2 = current^2prev22+prev2=current2
+            prev2^2 + prev^2  = current^2
         - If true, print the Pythagorean triple.
-            
 5. **Shifting the Window**:
-    
     - After processing a triple:
-        
         - `prev2 = prev`
-            
         - `prev = current`
-            
     - This maintains the **sliding window of 3 consecutive positive numbers**.
-        
 
 ---
 
 ### 🔷 **Use of `continue`**
 
 - The `continue` statement is used **to skip non-positive numbers** without doing further processing in the current iteration.
-    
 - This keeps the logic clean and avoids nested `if` conditions.
-    
 
 ---
 
 ### 🔷 **Advantages Highlighted**
 
 - `continue` helps **simplify code readability**, especially when you want to **ignore specific values early** in a loop.
-    
 - Eliminates the need for **extra nested `if` blocks**.
-    
 
 ---
 
 ### 🔷 **Edge Conditions**
 
 - At least **2 positive numbers** must be encountered before a triple can be checked.
-    
 - If there are **not enough positive numbers**, no triple will be printed.
