@@ -33,23 +33,29 @@ Learn how to:
 ### 🔢 Formula:
 
 ```
-		F=(95×C)+32
+	F=(95×C)+32
 ```
 
 ### 🧰 Variables:
 
 - `centigrade` → Celsius input
-    
 - `fahrenheit` → Fahrenheit result
-    
 
 ### 🧾 Code:
 
-c
-
-CopyEdit
-
-`#include <stdio.h>  int main() {     float centigrade;     float fahrenheit;      centigrade = 50;     fahrenheit = (9 * centigrade) / 5 + 32;      printf("The temperature ");     printf("%f Celsius = ", centigrade);     printf("%f Fahrenheit\n", fahrenheit);      return 0; }`
+```c
+#include <stdio.h>  
+int main() {     
+	float centigrade;     
+	float fahrenheit;      
+	centigrade = 50;     
+	fahrenheit = (9 * centigrade) / 5 + 32;      
+	printf("The temperature ");     
+	printf("%f Celsius = ", centigrade);     
+	printf("%f Fahrenheit\n", fahrenheit);      
+	return 0; 
+}
+```
 
 ---
 
@@ -57,45 +63,34 @@ CopyEdit
 
 ### 1. 🧾 Variable Declaration
 
-c
-
-CopyEdit
-
-`float centigrade; float fahrenheit;`
+```c
+float centigrade; 
+float fahrenheit;
+```
 
 - Tells the compiler to:
-    
     - Create memory space (boxes)
-        
     - Allow only **real numbers** (floating point) to be stored
-        
 - `float` = type for **real numbers** (e.g., 12.3, 0.5, 122.0)
-    
 
 ---
 
-### 2. 🎯 Assignment Operation (`=`)
+### 2. 🎯 Assignment Operation (=)
 
-c
+```
+centigrade = 50; 
+fahrenheit = (9 * centigrade) / 5 + 32;
+```
 
-CopyEdit
-
-`centigrade = 50; fahrenheit = (9 * centigrade) / 5 + 32;`
-
-- `=` means **copy value on right → to the variable on left**
-    
+- = means **copy value on right → to the variable on left**
 - Not the same as **mathematical equality**
-    
 - Assignment is **directional**, not **symmetric**
-    
 
 📌 Example:
 
-c
-
-CopyEdit
-
-`b = 3; a = b; // a becomes 3, b remains 3`
+```c
+b = 3; a = b; // a becomes 3, b remains 3
+```
 
 ---
 
@@ -115,35 +110,24 @@ CopyEdit
 
 #### 🔍 Example:
 
-c
-
-CopyEdit
-
-`printf("%f", centigrade);`
+```c
+printf("%f", centigrade);
+```
 
 - `%f`: Format specifier for **float** type
-    
 - Tells the program: _"Print the value stored in this float variable"_
-    
 
 📌 Key Points:
-
 - First `printf()`: just a string
-    
 - Second `printf("%f", centigrade)`: has **2 parts**:
-    
     1. **Format string**: `"%f"`
-        
     2. **Variable**: `centigrade`
-        
 
 #### Sample Output:
 
-nginx
-
-CopyEdit
-
-`The temperature 50.000000 Celsius = 122.000000 Fahrenheit`
+```
+The temperature 50.000000 Celsius = 122.000000 Fahrenheit
+```
 
 > 🛠️ Note: Default precision shows **6 decimal places** for floats.
 
@@ -152,13 +136,9 @@ CopyEdit
 ## 🧪 What is a Float?
 
 - `float` stands for **floating-point number**
-    
 - Used for **real numbers** (not just integers)
-    
 - Stored in computer memory with **limited precision**
-    
 - E.g., 50 → stored as 50.000000
-    
 
 ---
 
@@ -167,59 +147,39 @@ CopyEdit
 ✅ **Valid Names:**
 
 - Use letters (A–Z, a–z), numbers (0–9), and underscores `_`
-    
 - Must **start with a letter or underscore**
-    
 - Can contain digits _after_ the first character
-    
 
 ❌ **Invalid Examples:**
 
 - `2centigrade` → ❌ (starts with number)
-    
 
 ✅ **Valid Examples:**
 
 - `centigrade`
-    
 - `centigrade1`
-    
 - `c_temp`
-    
 - `_fahrenheit`
-    
 
 🔍 **Case Sensitivity:**
 
 - `Centigrade` ≠ `centigrade`
-    
 - C distinguishes between uppercase and lowercase
-    
 
 ---
 
 ## 🔁 Types in C
 
 ### 1. `int` → Integer
-
 - Whole numbers (e.g., 1, -5, 100)
-    
-
 ### 2. `float` → Floating-point
-
 - Real numbers with decimals (e.g., 3.14, -0.5)
-    
-
 ### 🔐 Memory Limits:
 
 - C uses **finite bits** to store variables
-    
 - E.g., on a 32-bit machine:
-    
     - `int` range: approx −2,147,483,648 to +2,147,483,647
-        
     - `float` range: large but finite (limited precision)
-        
 
 ---
 
@@ -239,15 +199,9 @@ CopyEdit
 ## 📌 Summary
 
 - A **C program** to convert Celsius to Fahrenheit uses:
-    
     - `float` variables
-        
     - Basic arithmetic
-        
     - `printf()` with format specifiers (`%f`)
-        
 - Understand **variable declarations, types, naming rules**
-    
 - **Assignment is one-way** (right → left)
-    
 - Always **declare variables before using them**
