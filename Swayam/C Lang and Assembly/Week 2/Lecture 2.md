@@ -131,18 +131,14 @@ MOV e, EDX
 
 Right after:
 
-asm
-
-CopyEdit
-
-`IDIV y`
+```c
+IDIV y
+```
 
 Because:
 
 - `EAX` stores **quotient**
-    
 - `EDX` stores **remainder**
-    
 
 ---
 
@@ -161,13 +157,8 @@ Because:
 ## 💭 Final Notes
 
 - Optimization significantly reduces the number of instructions.
-    
 - Reduces memory access and speeds up program execution.
-    
 - Understanding this helps in:
-    
     - Writing better inline assembly
-        
     - Reading compiler output
-        
     - Debugging performance issues
