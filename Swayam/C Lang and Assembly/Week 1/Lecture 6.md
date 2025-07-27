@@ -46,7 +46,6 @@
 ```
 MOV AX, WORD PTR [EBP - 4]  ; Load 2 bytes from (EBP - 4)
 ```
-    
 
 ---
 
@@ -85,7 +84,6 @@ LOC_FUN:
 	SUB ECX, 4     
 	RET
 ```
-    
 
 ---
 
