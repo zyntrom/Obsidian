@@ -150,4 +150,6 @@ This uses a **temporary variable** to hold a value during the swap.
 
 ## 📌 Equation to Remember
 
-GCD(a,b)=GCD(b,a%b)\text{GCD}(a, b) = \text{GCD}(b, a \% b)GCD(a,b)=GCD(b,a%b)
+```
+	GCD(a,b)=GCD(b,a%b)
+```
