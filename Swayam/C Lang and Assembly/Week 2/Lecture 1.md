@@ -84,12 +84,25 @@ Evaluate:
 
 ### Code:
 
-`int x = 2, y = 3, a = 4, b = 5;  __asm {     mov EAX, x     ; EAX = x     mul y          ; EAX = EAX * y (EDX:EAX = result)     add EAX, a     ; EAX += a     sub EAX, b     ; EAX -= b }  __asm {     mov EBX, x     ; EBX = x     xor EBX, y     ; EBX ^= y     mov ECX, a     ; ECX = a     and ECX, b     ; ECX = a & b     or EBX, ECX    ; EBX |= ECX }`
+```c
+int x = 2, y = 3, a = 4, b = 5;  
+__asm {     
+	mov EAX, x     ; EAX = x     
+	mul y          ; EAX = EAX * y (EDX:EAX = result)     
+	add EAX, a     ; EAX += a     
+	sub EAX, b     ; EAX -= b 
+}  
+__asm {     
+	mov EBX, x     ; EBX = x     
+	xor EBX, y     ; EBX ^= y     
+	mov ECX, a     ; ECX = a     
+	and ECX, b     ; ECX = a & b     
+	or EBX, ECX    ; EBX |= ECX 
+}
+```
 
 - `EAX` stores `x * y + a - b`
-    
 - `EBX` stores `x ^ y | (a & b)`
-    
 
 ---
 
@@ -101,20 +114,25 @@ Compute `z = x * y` using **repeated addition** instead of `mul`.
 
 ### Code:
 
-c
-
-CopyEdit
-
-`int x = 2, y = 3, z = 0;  __asm {     xor EAX, EAX     ; EAX = 0 (accumulator)     mov ECX, y       ; ECX = counter (y)  MULT:     add EAX, x       ; EAX += x     dec ECX          ; ECX--     jnz MULT         ; If ECX != 0, jump to MULT      mov z, EAX       ; z = result in EAX }  printf("%d\n", z);  // Output: 6`
+```c
+int x = 2, y = 3, z = 0;  
+__asm {     
+	xor EAX, EAX     ; EAX = 0 (accumulator)     
+	mov ECX, y       ; ECX = counter (y)  
+MULT:     
+	add EAX, x       ; EAX += x     
+	dec ECX          ; ECX--     
+	jnz MULT         ; If ECX != 0, jump to MULT      
+	mov z, EAX       ; z = result in EAX 
+}  
+printf("%d\n", z);  // Output: 6
+```
 
 ✔ Shows how to:
 
 - Use `jnz` (Jump if Not Zero)
-    
 - Simulate multiplication via addition
-    
 - Use labels like `MULT` for loops
-    
 
 ---
 
@@ -138,12 +156,8 @@ CopyEdit
 ## 🧠 Concepts Reinforced
 
 - Accessing and using **C variables** in inline assembly
-    
 - Using **assembly registers** for arithmetic and logic
-    
 - Understanding how **data types** map between C and assembly
-    
 - Implementing **loops and branching** in assembly
-    
 
 ---
