@@ -156,7 +156,10 @@ A year is a leap year if:
 ### 🧾 Logical Expression (in C):
 
 ```c
-	if ((year % 4 == 0) && (!(year % 100 == 0) || (year % 400 == 0)))printf("%d is a leap year\n", year); else     printf("%d is not a leap year\n", year);
+if ((year % 4 == 0) && (!(year % 100 == 0) || (year % 400 == 0)))
+	printf("%d is a leap year\n", year); 
+else     
+	printf("%d is not a leap year\n", year);
 ```
 
 ### 🧪 Breakdown:
@@ -176,33 +179,22 @@ A year is a leap year if:
 #### ✅ Year = 400:
 
 - Divisible by 4 ✅
-    
 - Divisible by 100 ✅
-    
 - Divisible by 400 ✅
-    
 - → Leap year ✅
-    
 
 #### ❌ Year = 1900:
 
 - Divisible by 4 ✅
-    
 - Divisible by 100 ✅
-    
 - Not divisible by 400 ❌
-    
 - → Not a leap year ❌
-    
 
 #### ✅ Year = 2004:
 
 - Divisible by 4 ✅
-    
 - Not divisible by 100 ✅
-    
 - → Leap year ✅
-    
 
 ---
 
