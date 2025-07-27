@@ -85,17 +85,11 @@
 ### 3. **Run**
 
 - After successful compilation:
-    
     - Run the program using:
-        
-        bash
-        
-        CopyEdit
-        
-        `./a.out`
-        
+```
+        ./a.out
+```
 - The output will be printed in the terminal.
-    
 
 ---
 
@@ -103,11 +97,13 @@
 
 ### 📝 Sample Program (sample.c)
 
-c
-
-CopyEdit
-
-`#include <stdio.h>  int main() {     printf("Welcome to C\n");     return 0; }`
+```c
+#include <stdio.h>  
+int main() {     
+	printf("Welcome to C\n");     
+	return 0; 
+}
+```
 
 ---
 
@@ -165,8 +161,9 @@ CopyEdit
 
 ## 🔄 Full Cycle Example
 
-plaintext
-
-CopyEdit
-
-``1. Write code in `sample.c` 2. Compile:   gcc sample.c 3. Run:       ./a.out 4. Output:    Welcome to C``
+```
+1. Write code in `sample.c` 
+2. Compile:   gcc sample.c 
+3. Run:       ./a.out 
+4. Output:    Welcome to C
+```
