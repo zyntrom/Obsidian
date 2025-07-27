@@ -63,24 +63,17 @@ while (test condition) {
 
 ### 🔁 Loop Structure:
 
-c
-
-CopyEdit
-
-`for (i = 1; i <= 100; i++) {     reciprocal_sum += 1.0 / i; }`
+```c
+for (i = 1; i <= 100; i++) {     reciprocal_sum += 1.0 / i; }
+```
 
 ### 🔍 Dry Run (from 1 to 4):
 
 - i = 1 → sum = 0 + 1 = 1.0
-    
 - i = 2 → sum = 1.0 + 0.5 = 1.5
-    
 - i = 3 → sum = 1.5 + 0.333 = 1.833
-    
 - i = 4 → sum = 1.833 + 0.25 = 2.083
-    
 - i = 5 → test fails (`5 > 4`) → loop ends
-    
 
 ---
 
@@ -89,23 +82,25 @@ CopyEdit
 ### ✏️ Problem:
 
 - First line: `m` (number of integers to sum)
-    
 - Second line: `m` integers  
     ➡️ Output the sum of those `m` integers
-    
 
 ### 🔣 Variables:
 
-- `int m, i, sum = 0, num;`
-    
+```c
+int m, i, sum = 0, num;
+```
 
 ### 🔁 Loop Structure:
 
-c
-
-CopyEdit
-
-`scanf("%d", &m); sum = 0; for (i = 0; i < m; i++) {     scanf("%d", &num);     sum += num; }`
+```c
+scanf("%d", &m); 
+sum = 0; 
+for (i = 0; i < m; i++) {     
+	scanf("%d", &num);     
+	sum += num; 
+}
+```
 
 > ✅ In C, it's **more common** to loop from `i = 0` to `i < m`.
 
@@ -114,11 +109,8 @@ CopyEdit
 ## ✅ **Advantages of `for` loop over `while` loop**
 
 1. **Clarity**: Initialization, test, and update are on a single line → easy to read.
-    
 2. **Compactness**: Requires fewer lines of code.
-    
 3. **Preferred by C programmers** for clarity and style.
-    
 
 ---
 
@@ -126,21 +118,18 @@ CopyEdit
 
 You can initialize multiple variables in one statement using the **comma operator**:
 
-c
-
-CopyEdit
-
-`for (sum = 0, i = 0; i < m; i++) {     // loop body }`
+```c
+for (sum = 0, i = 0; i < m; i++) {     
+	// loop body 
+}
+```
 
 - Executes left to right
-    
 - Helps keep initialization clean and compact
-    
 
 ---
 
 ## 📝 **Practice Recommendation**
 
 - Rewrite a `for` loop using a `while` loop, and vice versa.
-    
 - Understand how both can model the same logic but with different structure.
