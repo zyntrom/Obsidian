@@ -165,7 +165,5 @@ End
 - This course builds **step-by-step** from no prior experience.
 - **Problem-solving using algorithms** is the core of programming.
 - **C programming** is just a tool to express the logic clearly and efficiently.
-    
 - **Clarity and precision** are crucial in both algorithms and code.
-    
 - Beginners should **practice using flowcharts** for better understanding.
