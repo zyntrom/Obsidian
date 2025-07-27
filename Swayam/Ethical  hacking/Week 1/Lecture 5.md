@@ -92,82 +92,55 @@
 ## **7. Fragmentation-Related Fields**
 
 - **Identification**, **Flags**, and **Fragment Offset** used to:
-    
     - Break packets into smaller fragments (if size exceeds MTU).
-        
     - Reassemble fragments at the destination.
-        
 - To be discussed in detail in fragmentation lecture.
-    
 
 ---
 
 ## **8. Options Field**
 
 - Used **only when required**, e.g., for **source routing**.
-    
 - Source routing allows sender to specify the exact path the packet should take.
-    
 - Optional and variable in size.
-    
 
 ---
 
 ## **9. Packet Sniffing Tools**
 
 - Software tools used to **capture and analyze** network packets.
-    
 - Can capture **IP packets** and **inspect header fields**.
-    
 
 ### Examples:
 
 - **Wireshark** (most popular)
-    
 - **tcpdump**
-    
 - **Ettercap**
-    
 - **Snort**
-    
 
 ### Wireshark Features:
 
 - Real-time packet capture.
-    
 - Displays protocol (TCP, UDP, HTTP, DNS, etc.), IP addresses, and header info.
-    
 - Allows filtering and deep inspection of headers (TTL, Protocol, Checksum, etc.).
-    
 
 ---
 
 ## **10. Importance of Understanding IP**
 
 - Core to understanding **network communication**.
-    
 - Critical for **network analysis**, **troubleshooting**, and **ethical hacking**.
-    
 - All hacking involves understanding **packet flow, protocol behavior**, and **vulnerabilities**.
-    
 
 ---
 
 ## ✅ Summary
 
 - IP provides best-effort, connectionless packet delivery.
-    
 - Each datagram is treated independently.
-    
 - IP header has crucial routing and control info.
-    
 - TTL prevents routing loops.
-    
 - Checksum ensures header integrity.
-    
 - Sniffer tools like Wireshark are vital for analyzing network behavior and learning how attacks may be performed.
-    
 
 ---
-
-Would you like this in **PDF or DOCX format** for easier reference or printing? Let me know if you want similar notes for the **next lecture** as well.
