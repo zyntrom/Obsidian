@@ -32,14 +32,13 @@ F → D → E
 
 - For `M` instructions between `X` and `Y`:
     
-    `F1 D1 E1 F2 D2 E2 ... FM DM EM`
+```
+F1 D1 E1 F2 D2 E2 ... FM DM EM
+```
     
 - Modern microprocessors use **pipelining**:
-    
     - Parallelizes fetch, decode, and execute phases.
-        
     - Increases **throughput** using **instruction prefetching**.
-        
 
 ---
 
@@ -48,17 +47,11 @@ F → D → E
 ### 🧭 Instruction Pointer (IP/EIP)
 
 - Stores the **current instruction address**.
-    
 - For example:
-    
-    text
-    
-    CopyEdit
-    
-    `IP ← X  (Start of program)`
-    
+```
+IP ← X  (Start of program)
+```
 - After each execution, it's automatically incremented by the instruction's length `N`.
-    
 
 |Register|Width|Description|
 |---|---|---|
@@ -72,9 +65,7 @@ F → D → E
 ### 🧮 Arithmetic Logic Unit (ALU)
 
 - Requires **two operands**.
-    
 - Typically one operand is a **general-purpose register**.
-    
 
 ---
 
@@ -83,11 +74,8 @@ F → D → E
 Each has:
 
 - A 16-bit form: e.g., `AX`
-    
 - 8-bit subparts: `AH` (high), `AL` (low)
-    
 - 32-bit extended form: `EAX`
-    
 
 |Register|8-bit High|8-bit Low|16-bit|32-bit|
 |---|---|---|---|---|
@@ -110,11 +98,8 @@ Each has:
 |BP|BP|EBP|Base Pointer (Frame Access)|
 
 > LIFO memory structure used for:
-> 
 > - Function calls
->     
 > - Local variable storage
->     
 
 ---
 
@@ -143,25 +128,15 @@ Used to partition memory into logical segments:
 ### 🔄 Address Construction
 
 - Full address is **not** just EIP or ESP.
-    
 - Constructed as:
-    
-    text
-    
-    CopyEdit
-    
-    `Segment:Offset`
-    
+```
+Segment:Offset
+```
     Examples:
-    
     - Code: `CS:EIP`
-        
     - Stack: `SS:ESP` or `SS:EBP`
-        
     - Data: `DS:EAX`, `DS:EBX`
-        
     - Extra: `ES:EDI`
-        
 
 ---
 
@@ -185,17 +160,11 @@ Indicates the outcome of ALU operations:
 To execute the **Fetch-Decode-Execute (F-D-E)** cycle, a microprocessor needs:
 
 - **Instruction Register (EIP)** – tracks current instruction.
-    
 - **General Purpose Registers** – store operands and results.
-    
 - **Stack Registers** – handle call stacks and function scopes.
-    
 - **Index Registers** – support string/array operations.
-    
 - **Segment Registers** – map logical segments to memory.
-    
 - **Flag Register** – enables decision-making in code.
-    
 
 ---
 
@@ -204,7 +173,5 @@ To execute the **Fetch-Decode-Execute (F-D-E)** cycle, a microprocessor needs:
 Will likely cover:
 
 - **Move instructions**
-    
 - **ALU operations**
-    
 - **Practical register usage in C**
