@@ -16,11 +16,13 @@ However, this allows **any type**, which can cause **type errors** if we try to 
 
 Example Problem:
 
-java
-
-CopyEdit
-
-`T[] a; double sum = 0; for (int i = 0; i < a.length; i++) {     sum += a[i].doubleValue(); // ❌ Error! T might not have doubleValue() }`
+```java
+T[] a; double sum = 0; 
+for (int i = 0; i < a.length; i++) {     
+	sum += a[i].doubleValue(); 
+	// ❌ Error! T might not have doubleValue() 
+}
+```
 
 **Solution:** Use bounded type parameters.
 
@@ -32,11 +34,9 @@ A **bounded type parameter** restricts the types that can be used as arguments.
 
 ### 🔸 Syntax:
 
-java
-
-CopyEdit
-
-`<T extends ClassName>`
+```java
+<T extends ClassName>
+```
 
 This ensures that T must be **ClassName or a subclass**.
 
@@ -44,29 +44,38 @@ This ensures that T must be **ClassName or a subclass**.
 
 ### ✅ Example 1: Bounded by `Number`
 
-java
-
-CopyEdit
-
-`class Average<T extends Number> {     T[] a;      Average(T[] a) {         this.a = a;     }      double average() {         double sum = 0;         for (int i = 0; i < a.length; i++) {             sum += a[i].doubleValue();  // ✅ Allowed because T extends Number         }         return sum / a.length;     } }`
+```java
+class Average<T extends Number> {     
+	T[] a;      
+	Average(T[] a) {         
+		this.a = a;     }      
+	double average() {         
+		double sum = 0;         
+		for (int i = 0; i < a.length; i++) {             
+			sum += a[i].doubleValue();  
+			// ✅ Allowed because T extends Number         
+		}         
+	return sum / a.length;     
+	} 
+}
+```
 
 ### 🧪 Usage:
 
-java
-
-CopyEdit
-
-`Integer[] i = {1, 2, 3, 4, 5}; Average<Integer> ai = new Average<>(i); System.out.println("Average: " + ai.average());`
+```java
+Integer[] i = {1, 2, 3, 4, 5}; 
+Average<Integer> ai = new Average<>(i); 
+System.out.println("Average: " + ai.average());
+```
 
 ---
 
 ## ❌ Trying With Non-Number Types
 
-java
-
-CopyEdit
-
-`String[] s = {"A", "B", "C"}; Average<String> as = new Average<>(s); // ❌ Compile-time error!`
+```java
+String[] s = {"A", "B", "C"}; 
+Average<String> as = new Average<>(s); // ❌ Compile-time error!
+```
 
 Because `String` doesn't extend `Number`, it cannot be used.
 
@@ -75,19 +84,14 @@ Because `String` doesn't extend `Number`, it cannot be used.
 ## 📘 Type Hierarchy (for reference)
 
 Java wrapper classes for primitives all extend `Number`:
-
 - `Integer`, `Double`, `Float`, `Short`, `Long`, `Byte` → extend `Number`
-    
 - `String` does **not**
-    
 
 Thus:
 
-java
-
-CopyEdit
-
-`Average<Integer> ✅ Average<Double>  ✅ Average<String>  ❌`
+```java
+Average<Integer> ✅ Average<Double>  ✅ Average<String>  ❌
+```
 
 ---
 
@@ -95,39 +99,37 @@ CopyEdit
 
 To compare two objects using generics:
 
-java
-
-CopyEdit
-
-`class Compare<T extends Number> {     T x, y;      Compare(T x, T y) {         this.x = x;         this.y = y;     }      boolean areEqual() {         return x.doubleValue() == y.doubleValue();     } }`
+```java
+class Compare<T extends Number> {     
+	T x, y;      
+	Compare(T x, T y) {        
+		this.x = x;         
+		this.y = y;     
+	}      
+	boolean areEqual() {         
+		return x.doubleValue() == y.doubleValue();     
+	} 
+}
+```
 
 ### 💡 Why `doubleValue()`?
 
 Because all subclasses of `Number` have:
 
 - `intValue()`
-    
 - `doubleValue()`
-    
 - `floatValue()`, etc.
-    
 
 ---
 
 ## 🔷 Key Points
 
 - Bounded type parameters **allow access** to superclass methods (like `doubleValue()` from `Number`).
-    
 - It **restricts usage** to only certain types, improving type safety.
-    
 - Java does **not support multiple bounds with classes**, but it does with interfaces:
-    
-    java
-    
-    CopyEdit
-    
-    `<T extends Number & Comparable<T>>  ✅`
-    
+```java
+<T extends Number & Comparable<T>>  ✅
+```
 
 ---
 
@@ -136,11 +138,8 @@ Because all subclasses of `Number` have:
 Bounded generics:
 
 - Solve the problem of calling specific methods on generic types.
-    
 - Provide **compile-time safety**.
-    
 - Are used widely in real-world Java code (e.g., in `Collections`, `Comparable`, etc.)
-    
 
 ---
 
@@ -149,5 +148,4 @@ Bounded generics:
 In the next lecture:
 
 - **Wildcards in Generics**
-    
 - `<?>`, `<? extends T>`, `<? super T>` – usage, benefits, and limitations.
