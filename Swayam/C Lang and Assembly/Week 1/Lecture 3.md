@@ -77,7 +77,10 @@ MOV AX, [BX]      ; AX ← Memory[BX]
 
 Example:
 
-`MOV EAX, DWORD PTR [BX] ; EAX ← 32 bits at address in BX MOV BX, WORD PTR [CX]   ; BX ← 16 bits at address in CX`
+```
+MOV EAX, DWORD PTR [BX] ; EAX ← 32 bits at address in BX 
+MOV BX, WORD PTR [CX]   ; BX ← 16 bits at address in CX
+```
 
 ---
 
@@ -98,32 +101,24 @@ Example:
 
 ### ➕ ADD
 
-asm
-
-CopyEdit
-
-`ADD AX, BX     ; AX ← AX + BX`
+```
+ADD AX, BX     ; AX ← AX + BX
+```
 
 ### ➖ SUB
 
-asm
-
-CopyEdit
-
-`SUB AX, BX     ; AX ← AX - BX`
+```
+SUB AX, BX     ; AX ← AX - BX
+```
 
 ### ✖️ MUL (Unsigned Multiply)
 
-asm
-
-CopyEdit
-
-`MOV AX, 0x4500 MUL BX         ; AX × BX → DX:AX`
+```
+MOV AX, 0x4500 MUL BX         ; AX × BX → DX:AX
+```
 
 - **Implicit operand**: AX
-    
 - Result spans **DX:AX**
-    
 
 ### 🧮 Bitwise Logic
 
@@ -136,11 +131,9 @@ CopyEdit
 
 #### Clear a Register (Fast)
 
-asm
-
-CopyEdit
-
-`XOR AX, AX     ; AX ← 0 (sets Zero Flag)`
+```
+XOR AX, AX     ; AX ← 0 (sets Zero Flag)
+```
 
 ---
 
@@ -157,45 +150,31 @@ ALU operations **update flags**:
 
 Example:
 
-asm
-
-CopyEdit
-
-`AND AX, AX ; If AX was zero → ZF = 1`
+```
+AND AX, AX ; If AX was zero → ZF = 1
+```
 
 ---
 
 ## 📌 Notes on Segment:Offset Addressing
 
 - Memory addresses in x86 are calculated using:
-    
-    java
-    
-    CopyEdit
-    
-    `Physical Address = Segment × 16 + Offset`
-    
+```
+Physical Address = Segment × 16 + Offset
+```
 - Example:
-    
-    asm
-    
-    CopyEdit
-    
-    `MOV AX, [DS:CX]  ; DS = segment, CX = offset`
-    
+```
+MOV AX, [DS:CX]  ; DS = segment, CX = offset
+```
 
 ---
 
 ## 🧠 Summary
 
 - Assembly provides **fine control** over memory and CPU
-    
 - **Data transfer** and **ALU instructions** are the most common
-    
 - Addressing modes determine how operands are fetched
-    
 - Flags enable **conditional branching**
-    
 
 ---
 
@@ -204,14 +183,9 @@ CopyEdit
 You only need to master:
 
 1. **Register Direct**
-    
 2. **Immediate**
-    
 3. **Direct**
-    
 4. **Register Indirect**
-    
 5. **Register Indirect + Offset**
-    
 
 (Scaled addressing is out of scope)
