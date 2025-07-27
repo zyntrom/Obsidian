@@ -88,30 +88,22 @@ Developed by ISO in 1984 to **standardize communication systems**.
 ### 1. 🧊 Encapsulation
 
 - Each layer hides its complexity.
-    
 - Protects upper layers from internal changes.
-    
 
 ### 2. 🧩 Modularity
 
 - Layers can be **independently developed, tested, or upgraded**.
-    
 - Example: Upgrading from Wi-Fi 5 to Wi-Fi 6 affects only Layer 1 & 2.
-    
 
 ### 3. 🌍 Interoperability
 
 - Devices using **different operating systems** can communicate.
-    
 - As long as they follow the same layer protocols (e.g., HTTP over TCP/IP).
-    
 
 ### 4. 📈 Scalability
 
 - Networks grow from LAN to WAN **without changing application logic**.
-    
 - Supports new tech (e.g., quantum networking) by updating only one layer.
-    
 
 ---
 
@@ -144,22 +136,16 @@ Developed by ISO in 1984 to **standardize communication systems**.
 ## 💡 Impact on Innovation
 
 - **QUIC Protocol**: Google’s improvement over TCP; adopted at transport layer only.
-    
 - **SDN (Software Defined Networking)**: Separates routing logic from physical infrastructure.
-    
 - **MQTT**: Lightweight protocol for IoT, works at application layer.
-    
 
 ---
 
 ## 🏗️ Example: Hybrid Cloud
 
 - VPN (Network layer) secures traffic
-    
 - TLS (Presentation layer) secures data
-    
 - Microservices exchange JSON via API (Application layer)
-    
 
 Each layer functions **independently and securely**—demonstrating real-world modularity.
 
@@ -178,20 +164,14 @@ Layered defense makes networks more secure:
 Each layer's **independent controls** help with:
 
 - Faster patch deployment
-    
 - Better compliance
-    
 - More robust protection
-    
 
 ---
 
 ## ✅ Summary
 
 - Layered architecture is **foundational** to modern networks.
-    
 - Provides **structure, modularity, security, and innovation support**.
-    
 - Enables cross-vendor compatibility and **real-world scalability**.
-    
 - Prepares the ground for **next-gen networks** (IoT, quantum, 5G, etc.).
