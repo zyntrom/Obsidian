@@ -51,13 +51,9 @@ POP y     ; Next (original x) goes into y
 ### 🔍 Key Points:
 
 - Uses **stack (LIFO)** to reverse values
-    
 - Does **not need any registers**
-    
 - May use same or more memory than temp-var version
-    
 - **More elegant** in inline assembly
-    
 
 ---
 
@@ -74,27 +70,20 @@ POP y     ; Next (original x) goes into y
 
 ### ✅ C Function Attempt:
 
-c
-
-CopyEdit
-
-`void swap(int x, int y) {     int temp = x;     x = y;     y = temp; }`
+```c
+void swap(int x, int y) {     int temp = x;     x = y;     y = temp; }
+```
 
 ### ❌ Problem:
 
 - Swaps **copies** of `x` and `y`
-    
 - **Does not affect original values** in `main`
-    
 - Prints before and after show same values
-    
 
 ### 💡 Why?
 
 - C **passes arguments by value** (not by reference)
-    
 - `swap(a, b)` passes _copies_ of `a` and `b`
-    
 
 ---
 
@@ -102,11 +91,13 @@ CopyEdit
 
 ### ✅ Updated Function:
 
-c
-
-CopyEdit
-
-`void swap(int *x, int *y) {     int temp = *x;     *x = *y;     *y = temp; }`
+```c
+void swap(int *x, int *y) {     
+	int temp = *x;     
+	*x = *y;     
+	*y = temp; 
+}
+```
 
 Now `swap(&a, &b)` will correctly update `a` and `b`.
 
@@ -116,61 +107,52 @@ Now `swap(&a, &b)` will correctly update `a` and `b`.
 
 ### ❌ Invalid Attempt:
 
-asm
-
-CopyEdit
-
-`PUSH DWORD PTR [x] PUSH DWORD PTR [y] POP  DWORD PTR [x] POP  DWORD PTR [y]`
+```c
+PUSH DWORD PTR [x] 
+PUSH DWORD PTR [y] 
+POP  DWORD PTR [x] 
+POP  DWORD PTR [y]
+```
 
 ### ❗ Why Not?
 
 - Inline assembly **can’t directly dereference** pointers with `PUSH`/`POP` like this
-    
 - Must **load pointers into registers** first
-    
 
 ---
 
 ## ✅ Correct Inline Assembly with Pointers
 
-asm
-
-CopyEdit
-
-`MOV EAX, x       ; x points to address of a MOV EBX, y       ; y points to address of b  MOV ECX, [EAX]   ; ECX = *x MOV EDX, [EBX]   ; EDX = *y  MOV [EAX], EDX   ; *x = *y MOV [EBX], ECX   ; *y = *x`
+```c
+MOV EAX, x       ; x points to address of a 
+MOV EBX, y       ; y points to address of b  
+MOV ECX, [EAX]   ; ECX = *x 
+MOV EDX, [EBX]   ; EDX = *y  
+MOV [EAX], EDX   ; *x = *y 
+MOV [EBX], ECX   ; *y = *x
+```
 
 ### 💡 Summary:
 
 - Use `MOV` to **load and store** contents via pointers
-    
 - Registers like `EAX`, `EBX`, `ECX`, `EDX` used
-    
 - More control and precision in swap logic
-    
 
 ---
 
 ## 🔍 Why the Stack Version Fails with Pointers
 
 - `PUSH [x]` requires **direct memory access**
-    
 - But `x` is already a pointer — using `[x]` adds another level of indirection
-    
 - Inline assembly in C **cannot resolve [pointer-to-pointer]** without register involvement
-    
 
 ---
 
 ## 💬 Final Thoughts
 
 - Swapping is a great example to learn about:
-    
     - Pass-by-value vs. pass-by-reference
-        
     - Use of stack
-        
     - Pointer arithmetic
-        
     - Register/memory operations
-        
 - Sets the stage for **memory layout discussion** in Module 3
