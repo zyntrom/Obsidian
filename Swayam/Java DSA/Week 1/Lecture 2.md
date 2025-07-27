@@ -228,9 +228,6 @@ public class VarArgObject {
 ## 📚 Practice Tips
 
 - Always use **wrapper classes** (e.g., `Integer` not `int`) in generics.
-    
 - `Object...` gives maximum flexibility for any type/number.
-    
 - Combine **generics + varargs** for powerful reusable APIs.
-    
 - Use descriptive type parameters (`<T>`, `<K, V>`) in real-world projects.
