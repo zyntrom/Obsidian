@@ -36,98 +36,72 @@ Only the diagonal elements (where row index = column index) are summed.
 ## 🧰 **Variables Used**
 
 - `int i, j` → loop counters for rows and columns
-    
 - `int n` → matrix size
-    
 - `float a` → current matrix element
-    
 - `float trace = 0;` → accumulator for the sum of diagonal elements
-    
 
 ---
 
 ## 🧾 **Program Flow**
 
 1. **Input**: Read `n` (size of matrix).
-    
 2. Use **nested `for` loops**:
-    
     - Outer loop: iterate over rows (`i = 0; i < n; i++`)
-        
     - Inner loop: iterate over columns (`j = 0; j < n; j++`)
-        
     - Inside the inner loop:
-        
         - Read each matrix element `a`.
-            
         - If `i == j` (diagonal), add `a` to `trace`.
-            
 
 ---
 
 ## 🧪 **Sample Matrix Input**
 
-diff
-
-CopyEdit
-
+```
 `3 2 0 -1 1 3 4 -1 0 1`
+```
 
 ### 📊 Matrix:
 
-css
-
-CopyEdit
-
-`[2,  0, -1] [1,  3,  4] [-1, 0,  1]`
+```
+[2,  0, -1] 
+[1,  3,  4] 
+[-1, 0,  1]
+```
 
 ### 📈 Trace Calculation:
 
 - Row 0, Col 0 → 2 ✅
-    
 - Row 1, Col 1 → 3 ✅
-    
 - Row 2, Col 2 → 1 ✅  
     **Trace = 2 + 3 + 1 = 6**
-    
 
 ---
 
 ## 💡 **C Language Notes**
 
 - Braces `{}` are **optional** for `if` blocks with only **one statement**.
-    
 
-c
-
-CopyEdit
-
-`if (i == j)     trace += a;`
+```c
+if (i == j)     
+	trace += a;
+```
 
 - This is valid and **common** in C style.
-    
 
 ---
 
 ## 🔁 **Why `for` Loops Are Ideal Here**
 
 - Matrix size is **known beforehand** → makes it easier to plan iterations.
-    
 - Loop counters (`i` and `j`) are naturally suited for `for` loop structure.
-    
 - More **compact and readable** than using `while`.
-    
 
 ---
 
 ## ✅ **Program Summary**
 
 - Initialize `trace = 0`.
-    
 - Use nested `for` loops:
-    
     - Read elements row-wise.
-        
     - Check if diagonal → add to `trace`.
-        
 - Final result: trace value is stored in `trace`.
