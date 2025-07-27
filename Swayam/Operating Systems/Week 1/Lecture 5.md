@@ -58,24 +58,17 @@
     - Ensures **fairness** and **priority**.
 - **High-priority tasks** (e.g., real-time sensors) get more CPU time.
 - **Low-priority tasks** (e.g., compiling code) are delayed if needed.
-    
 
 ---
 
 ### 6. **Isolation**
 
 - Prevents interference between applications.
-    
 - Achieved via **privilege levels (rings)**:
-    
     - **Ring 0**: Kernel mode (OS runs here).
-        
     - **Ring 3**: User mode (applications run here).
-        
 - Applications cannot directly access hardware or each other’s data.
-    
 - Must go through **system calls** to access OS services.
-    
 
 ---
 
@@ -84,16 +77,12 @@
 #### a. **User Authentication**
 
 - Usernames, passwords, biometrics (e.g., fingerprint scanning).
-    
 - Prevents unauthorized access.
-    
 
 #### b. **Access Control**
 
 - Determines which user can access which file/resource.
-    
 - Example: Access Matrix:
-    
 
 |User|File1|File2|File3|Program1|
 |---|---|---|---|---|
@@ -104,16 +93,13 @@
 #### c. **Cryptography**
 
 - Used for data protection, especially in communication and storage.
-    
 
 ---
 
 ### 8. **System Security Evaluation**
 
 - **Mathematical analysis** and **manual/semi-automated verification** used to assess security.
-    
 - Especially important in critical environments (military, defense).
-    
 
 ---
 
