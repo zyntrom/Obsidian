@@ -12,13 +12,9 @@
 
 - **Internet = Interconnected collection of networks**
 - Networks use different:
-    
     - Operating systems (Windows, Linux, macOS)
-        
     - Network technologies (Ethernet, ATM, WAN protocols)
-        
 - **TCP/IP bridges the gap** between heterogeneous platforms.
-    
 
 ---
 
@@ -35,46 +31,33 @@
 |Physical||
 
 - **OSI Model:** 7 layers (3 point-to-point + 4 host-to-host)
-    
 - **TCP/IP Model:** 4 layers (simplified):
-    
     1. **Application**
-        
     2. **Transport**
-        
     3. **Network (Internet)**
-        
     4. **Link (Data Link + Physical)**
-        
 
 ---
 
 ## 🔁 Data Flow in the TCP/IP Stack
 
 - **Sender A → Intermediate B → Receiver C**
-    
 - Data flows **down the layers on sender side**, across the network, and then **up the layers on receiver side**.
-    
 
 ### Data Transmission Path:
 
-css
-
-CopyEdit
-
-`A (App) → Transport → Network → Link → B (Router) → Network → Link → C → Network → Transport → App`
+```
+A (App) → Transport → Network → Link → B (Router) → Network → Link → C → Network → Transport → App
+```
 
 - **Transport & Application Layers**: Host-to-host (A ↔ C)
-    
 - **Intermediate Routers** (e.g., B): Only concerned with **Network and Link Layers**
-    
 
 ---
 
 ## 📦 TCP/IP Protocol Suite = Family of Protocols
 
 - Based on **Datagram (connectionless)** communication, **not virtual circuits**
-    
 - Messages are divided into packets (datagrams), which may take **different paths**.
     
 
@@ -83,35 +66,23 @@ CopyEdit
 #### 🔹 Network (Internet) Layer:
 
 - **IP (Internet Protocol)**: Handles packet routing
-    
 - **ICMP**: Error messages (e.g., service unavailable)
-    
 - **IGMP**: Multicast group management
-    
 - **ARP**: IP → MAC address translation
-    
 - **RARP**: MAC → IP address translation
-    
 
 #### 🔹 Transport Layer:
 
 - **TCP** (Transmission Control Protocol): Reliable, connection-oriented
-    
 - **UDP** (User Datagram Protocol): Unreliable, connectionless
-    
 
 #### 🔹 Application Layer:
 
 - Protocol examples:
-    
     - **FTP, TFTP** – File Transfer
-        
     - **SMTP** – Email
-        
     - **DNS** – Domain Name Resolution
-        
     - **SNMP** – Network Management
-        
 
 ---
 
@@ -119,24 +90,18 @@ CopyEdit
 
 ### Option 1 – Using TCP:
 
-arduino
-
-CopyEdit
-
-`User Process → TCP → IP → Ethernet`
+```
+User Process → TCP → IP → Ethernet
+```
 
 ### Option 2 – Using UDP:
 
-arduino
-
-CopyEdit
-
-`User Process → UDP → IP → Ethernet`
+```
+User Process → UDP → IP → Ethernet
+```
 
 - **TCP or UDP** can be chosen based on application need
-    
 - Both **use IP** underneath for packet delivery
-    
 
 ---
 
@@ -145,39 +110,26 @@ CopyEdit
 ### 📍IP (Internet Protocol)
 
 - Routes **datagrams** from source to destination
-    
 - May **fragment** large packets
-    
 - **Unreliable**: Packets may be lost, duplicated, or out-of-order
-    
 
 ### 📍TCP (Transmission Control Protocol)
 
 - **Reliable and connection-oriented**
-    
 - Adds features like:
-    
     - Acknowledgements
-        
     - Retransmission on failure
-        
     - Packet ordering
-        
     - Message reassembly
-        
 - Hides IP unreliability from applications
     
 
 ### 📍UDP (User Datagram Protocol)
 
 - **Unreliable, connectionless**
-    
 - No ordering, error correction, or retransmission
-    
 - Used when **speed > reliability**
-    
     - Example: real-time status updates, VoIP, streaming
-        
 
 ---
 
@@ -190,13 +142,9 @@ CopyEdit
 |Transport|**Port Number**|16 bits|Identifies application/process|
 
 - Every packet contains:
-    
     - **Source & Destination IPs**
-        
     - **Source & Destination MACs**
-        
     - **Source & Destination Ports**
-        
 
 ---
 
@@ -205,7 +153,6 @@ CopyEdit
 ### Scenario:
 
 - A **TFTP client** sends **200 bytes** of data using **UDP**.
-    
 
 ### Headers and Trailers Added:
 
@@ -228,24 +175,14 @@ CopyEdit
 ## 📌 Summary of Key Points
 
 - TCP/IP is a simplified, robust, and widely adopted protocol suite.
-    
 - It has **4 layers**: Application, Transport, Network, Link.
-    
 - **IP** handles routing but is unreliable.
-    
 - **TCP** ensures reliability through acknowledgment and retransmission.
-    
 - **UDP** is fast but unreliable; used in speed-critical or non-critical apps.
-    
 - Data encapsulation adds headers at each layer for proper communication.
-    
 - Three types of addresses involved:
-    
     - **MAC Address**: Hardware
-        
     - **IP Address**: Logical/Network
-        
     - **Port Number**: Application
-        
 
 ---
