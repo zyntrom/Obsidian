@@ -32,7 +32,12 @@ int main() {
 		if (len > maxlen) {             
 			maxlen = len;         
 		}          
-		// Advance prev to current         prev = curr;     }      printf("%d\n", maxlen);      return 0; }
+		// Advance prev to current         
+		prev = curr;     
+	}      
+	printf("%d\n", maxlen);      
+	return 0; 
+}
 ```
 
 ---
@@ -42,51 +47,59 @@ int main() {
 #### **Example 1**:
 
 **Input**:  
-`9 2 4 0 3 4 6 9 2 -1`  
+```
+9 2 4 0 3 4 6 9 2 -1  
+```
 **Output**:  
-`5`
+```
+5
+```
 
 #### **Example 2**:
 
 **Input**:  
-`11 9 7 8 11 12 15 15 -1`  
+```
+11 9 7 8 11 12 15 15 -1  
+```
 **Output**:  
+```
 `5`
+```
 
 #### **Example 3**:
 
 **Input**:  
-`5 -1`  
+```
+5 -1  
+```
 **Output**:  
-`1`
+```
+1
+```
 
 #### **Example 4**:
 
 **Input**:  
-`-1`  
+```
+-1  
+```
 **Output**:  
-`0`
+```
+0
+```
 
 ---
 
 ### ✅ **Explanation of Key Parts**
 
 - `scanf("%d", &prev);` reads the first number.
-    
 - If it's `-1`, we immediately exit since there's no sequence.
-    
 - The loop reads each subsequent number.
-    
 - We compare `curr` with `prev`:
-    
     - If `curr > prev`: the sequence is increasing → `len++`.
-        
     - Else → reset `len = 1`.
-        
 - After every update, we check if the `len` is greater than `maxlen` and update accordingly.
-    
 - After the loop ends, we print `maxlen`.
-    
 
 ---
 
@@ -95,9 +108,6 @@ int main() {
 Compared to earlier versions:
 
 - Introduced and used `maxlen` properly.
-    
 - Handled edge case: input starts directly with `-1`.
-    
 - Clean advancement of `prev` to `curr`.
-    
 - Handled very short sequences (1 or 0 elements) correctly.
