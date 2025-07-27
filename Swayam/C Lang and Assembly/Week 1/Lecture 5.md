@@ -86,5 +86,4 @@ REP MOVSB                    ; Copy all bytes
 - Always initialize `ECX` as the loop counter for these instructions.
 - Segment registers matter:
     - `SI` uses **DS**
-        
     - `DI` uses **ES**
