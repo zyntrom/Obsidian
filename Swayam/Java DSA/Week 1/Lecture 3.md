@@ -73,15 +73,37 @@ g3.printData(); // Output: 45.6
 
 ### Class Structure:
 
-`class GenericArray<T> {     T[] arr;      GenericArray(T[] arr) {         this.arr = arr;     }      void printData() {         for (T elem : arr) {             System.out.print(elem + " ");         }     }      void reverseArray() {         for (int i = 0; i < arr.length / 2; i++) {             T temp = arr[i];             arr[i] = arr[arr.length - 1 - i];             arr[arr.length - 1 - i] = temp;         }     } }`
+```java
+class GenericArray<T> {     
+	T[] arr;      
+	GenericArray(T[] arr) {         
+		this.arr = arr;     
+	}
+	void printData() {         
+		for (T elem : arr) {             
+			System.out.print(elem + " ");         
+		}     
+	}      
+	void reverseArray() {         
+		for (int i = 0; i < arr.length / 2; i++) {             
+			T temp = arr[i];            
+			arr[i] = arr[arr.length - 1 - i];             
+			arr[arr.length - 1 - i] = temp;         
+		}     
+	} 
+}
+```
 
 ### Usage:
 
-java
-
-CopyEdit
-
-`Integer[] intArr = {1, 2, 3}; GenericArray<Integer> gInt = new GenericArray<>(intArr);  String[] strArr = {"apple", "banana", "cherry"}; GenericArray<String> gStr = new GenericArray<>(strArr);  gInt.printData(); gStr.reverseArray();`
+```java
+Integer[] intArr = {1, 2, 3}; 
+GenericArray<Integer> gInt = new GenericArray<>(intArr);  
+String[] strArr = {"apple", "banana", "cherry"}; 
+GenericArray<String> gStr = new GenericArray<>(strArr);
+gInt.printData(); 
+gStr.reverseArray();
+```
 
 ⚠️ **Note:** Must use wrapper classes (like `Integer`, `Double`) instead of primitives (`int`, `double`) due to Java generics type erasure.
 
@@ -91,11 +113,22 @@ CopyEdit
 
 ### Example:
 
-java
+```java
+class Student {     
+	String name;     
+	float marks;      
+	Student(String name, float marks) {         
+		this.name = name;         
+		this.marks = marks;     
+	}      
+	public String toString() {         
+		return name + ": " + marks;     
+	} 
+}  
 
-CopyEdit
-
-`class Student {     String name;     float marks;      Student(String name, float marks) {         this.name = name;         this.marks = marks;     }      public String toString() {         return name + ": " + marks;     } }  Generic<Student> gStu = new Generic<>(new Student("Alice", 85.5f)); gStu.printData(); // Output: Alice: 85.5`
+Generic<Student> gStu = new Generic<>(new Student("Alice", 85.5f)); 
+gStu.printData(); // Output: Alice: 85.5
+```
 
 ✅ This proves that **generic classes work for user-defined types** too, not just built-in data types.
 
@@ -104,26 +137,17 @@ CopyEdit
 ## 🧠 **Key Takeaways**
 
 - Generic classes provide **flexibility and reusability**.
-    
 - Eliminate redundant code.
-    
 - Can work with **arrays** and **user-defined types**.
-    
 - Must use **object types** (e.g., `Integer` not `int`).
-    
 - Follow standard syntax: `class ClassName<T> {}` and use `T` throughout the class.
-    
 
 ---
 
 ## 🔜 **Next Steps (Upcoming Lecture Topics)**
 
 - Advanced topics in generics, such as:
-    
     - **Bounded types**
-        
     - **Wildcards (`?`)**
-        
     - **Generic interfaces**
-        
     - **Generic constraints**
