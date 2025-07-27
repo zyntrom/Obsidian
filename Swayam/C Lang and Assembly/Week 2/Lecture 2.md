@@ -103,8 +103,16 @@ MOV d, EAX
 
 ### ✅ Optimized Assembly:
 
-```
-MOV EAX, x ADD EAX, y       ; EAX = x + y MOV a, EAX       ; Save 'a'  SUB EAX, y       ; EAX = a - y MOV b, EAX       ; Save 'b'  IMUL y           ; EAX = b * y MOV c, EAX       ; Save 'c'  IDIV y           ; EAX = c / y MOV d, EAX       ; Save 'd'
+```c
+MOV EAX, x 
+ADD EAX, y       ; EAX = x + y 
+MOV a, EAX       ; Save 'a'  
+SUB EAX, y       ; EAX = a - y 
+MOV b, EAX       ; Save 'b'  
+IMUL y           ; EAX = b * y 
+MOV c, EAX       ; Save 'c'  
+IDIV y           ; EAX = c / y 
+MOV d, EAX       ; Save 'd'
 ```
 
 ✔️ **No unnecessary MOVs**  
@@ -117,11 +125,9 @@ MOV EAX, x ADD EAX, y       ; EAX = x + y MOV a, EAX       ; Save 'a'  SUB EAX, 
 
 If you want both `d = c / y` and `e = c % y`, you can simply add:
 
-asm
-
-CopyEdit
-
-`MOV e, EDX`
+```c
+MOV e, EDX
+```
 
 Right after:
 
