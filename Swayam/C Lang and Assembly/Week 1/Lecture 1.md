@@ -66,58 +66,36 @@ After completing the course, you will be able to:
 - Introduction to the **8086 processor architecture**
 - Commonly used **assembly instructions**
 - Usage of **stack instructions**
-    
 - Deep dive into **call** and **return** instructions
-    
 
 ### 🧵 Module 2 (Week 2): Inline Assembly in C
 
 - Syntax and use of **inline assembly** in C
-    
 - Mapping **C data types to low-level memory**
-    
 - Hands-on examples:
-    
     - ALU operations
-        
     - `strlen()` operation
-        
     - Multiplication using repeated addition
-        
     - **Swapping variables** in C and using inline assembly
-        
 
 ### ⚙️ Module 3 (Week 3): Translating C to Assembly
 
 - Focused on **function translation** into assembly
-    
 - Introduction to **function prologue and epilogue**
-    
 - Visual **animation** of memory segments:
-    
     - Code segment
-        
     - Data segment
-        
     - Stack segment
-        
 - Study of **calling conventions** and **parameter passing**
-    
 
 ### 🧭 Module 4 (Week 4): C vs C++ in Assembly
 
 - Compare **structs in C** vs **classes in C++**
-    
 - Observe **access control** differences at assembly level
-    
 - Optimization using **hardware loops** for functions like:
-    
     - `memcpy()`
-        
     - `strlen()`
-        
 - Discuss converting **recursion into iteration** for better performance
-    
 
 ---
 
@@ -126,33 +104,26 @@ After completing the course, you will be able to:
 ### 📦 Microprocessor = "Black Box" for Computation
 
 Connected to:
-
 - **RAM** (Random Access Memory)
-    
 - Communicates via:
-    
     - **Data Bus** (bidirectional)
-        
     - **Address Bus** (unidirectional)
-        
     - **Control Signals**: `RD` (read), `WR` (write)
-        
 
 ### 📊 Logical Memory Map
 
 - **Address Bus** = N bits → Can address `2^N` locations.
-    
 - **Each location** = K bits (commonly 8 bits per byte).
-    
 
-plaintext
-
-CopyEdit
-
-`Logical Map: +----------------+    Address 0 (8 bits) +----------------+    Address 1 (8 bits) ... +----------------+    Address 2^N - 1 (8 bits)`
+```
+Logical Map: 
++----------------+    Address 0 (8 bits) 
++----------------+    Address 1 (8 bits) 
+...
++----------------+    Address 2^N - 1 (8 bits)
+```
 
 - Logical addressing separates the **programmer's view** from the **physical memory layout**.
-    
 
 ### 💡 Example
 
@@ -163,11 +134,8 @@ Even if **physically** each location is 16 or 32 bits wide, **logically** the me
 ## 🧠 Key Takeaways
 
 - The course will **bridge theory and hardware reality**.
-    
 - You'll learn how high-level code (C/C++) maps to **micro-level instructions**.
-    
 - Understanding memory access, the stack, and function internals is **key to mastering systems programming**.
-    
 
 ---
 
@@ -176,9 +144,6 @@ Even if **physically** each location is 16 or 32 bits wide, **logically** the me
 🔜 Begin **Module 1**:
 
 - 8086 architecture
-    
 - Basic instructions
-    
 - Stack operations
-    
 - `CALL` and `RET` in assembly
