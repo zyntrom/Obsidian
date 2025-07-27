@@ -144,15 +144,14 @@ for (i = 0; i < max_chars && flag == 0; i++) {
 ```c
 for (i = 0; i < 10; i++) {     
 	if (i % 2 == 1)         
-		break; } printf("%d\n", i);
+		break; 
+} 
+printf("%d\n", i);
 ```
 
 - `i = 0` → no break
-    
 - `i = 1` → `1 % 2 == 1` → break
-    
 - `printf` prints **1**, not 2
-    
 
 > Because `i++` is **not executed** after break.
 
@@ -161,13 +160,8 @@ for (i = 0; i < 10; i++) {
 ## 🔚 **Summary**
 
 - `while(1)` creates infinite loops; useful for indefinite input.
-    
 - `break` exits **innermost loop**, even if nested.
-    
 - You can **simulate break** using `flag` variables and structured conditions.
-    
 - Be aware that `break` **bypasses** the loop's update step.
-    
 - Prefer `for` loops when number of iterations is **known**, e.g., reading `n` items.
-    
 - Use style (`break` vs. `flag`) that offers **clearer logic and readability** in your context.
