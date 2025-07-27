@@ -84,21 +84,21 @@ Same concept is used in **variable swapping**.
 
 ### 4. **Main GCD Loop**
 
-c
-
-CopyEdit
-
-`while (b != 0) {     t = a;        // store original a     a = b;        // a becomes b     b = t % b;    // b becomes old a % b }`
+```c
+while (b != 0) {     
+	t = a;        // store original a     
+	a = b;        // a becomes b     
+	b = t % b;    // b becomes old a % b 
+}
+```
 
 ---
 
 ### 5. **Output Result**
 
-c
-
-CopyEdit
-
-`printf("GCD is %d", a);`
+```c
+printf("GCD is %d", a);
+```
 
 When `b == 0`, loop ends. At that point, `a` is the **GCD**.
 
@@ -108,11 +108,9 @@ When `b == 0`, loop ends. At that point, `a` is the **GCD**.
 
 Input:
 
-plaintext
-
-CopyEdit
-
-`a = 16, b = 9`
+```c
+a = 16, b = 9
+```
 
 |Iteration|a|b|t|b ≠ 0?|Comment|
 |---|---|---|---|---|---|
@@ -141,20 +139,15 @@ A **loop invariant** is a **property that holds true** at the beginning of **eve
 ### ✅ **Why It Matters**:
 
 - Ensures the logic is correct.
-    
 - When the loop ends (`b == 0`), `a` is the **GCD(A, B)`.
-    
 
 ---
 
 ## 🧮 **Why We Use Loop Invariants**
 
 - Helps **prove correctness** of your code.
-    
 - Important in understanding loop behavior and debugging.
-    
 - Commonly tested in theoretical or MCQ-based questions.
-    
 
 ---
 
@@ -173,9 +166,6 @@ A **loop invariant** is a **property that holds true** at the beginning of **eve
 ## ✅ **Key Takeaways**
 
 - Use `%` to compute remainders in GCD.
-    
 - Always **preserve original values** using temp variables when needed.
-    
 - Loop invariants help in both understanding and **verifying correctness**.
-    
 - A well-written `while` loop can efficiently solve mathematical problems.
