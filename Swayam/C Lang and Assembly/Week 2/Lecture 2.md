@@ -28,25 +28,31 @@ int z, r;  z = x / y; r = x % y;
 ```c
 MOV x, 0x000A     ; x = 10 
 MOV y, 0x0014     ; y = 20  
-MOV EAX, x IDIV y            ; EAX = x / y, EDX = x % y MOV z, EAX        ; store quotient  MOV EAX, x        ; redundant: reload x IDIV y            ; repeat division MOV r, EDX        ; store remainder
+MOV EAX, x 
+IDIV y            ; EAX = x / y, EDX = x % y 
+MOV z, EAX        ; store quotient  
+MOV EAX, x        ; redundant: reload x 
+IDIV y            ; repeat division 
+MOV r, EDX        ; store remainder
 ```
 
 ### 🔍 Observations:
 
 - **Two division operations** for quotient and remainder — **redundant**.
-    
 - Compiler does **not track** register contents between operations.
-    
 
 ---
 
 ### ✅ Optimized Assembly:
 
-asm
-
-CopyEdit
-
-`MOV x, 0x000A MOV y, 0x0014  MOV EAX, x IDIV y MOV z, EAX MOV r, EDX`
+```c
+MOV x, 0x000A 
+MOV y, 0x0014  
+MOV EAX, x 
+IDIV y 
+MOV z, EAX 
+MOV r, EDX
+```
 
 ✔️ **Only one division**, both quotient and remainder used directly.  
 ✔️ This is what an **optimized compiler** would do.
@@ -57,40 +63,49 @@ CopyEdit
 
 ### ✅ C Code:
 
-c
-
-CopyEdit
-
-`int a, b, c, d; int x = 10, y = 5;  a = x + y; b = a - y; c = b * y; d = c / y;`
+```c
+int a, b, c, d; 
+int x = 10, y = 5;  
+a = x + y; 
+b = a - y; 
+c = b * y; 
+d = c / y;
+```
 
 ---
 
 ### 🧾 Unoptimized Assembly (Line-by-Line):
 
-asm
-
-CopyEdit
-
-`MOV x, 0x000A MOV y, 0x0005  ; a = x + y MOV EAX, x ADD EAX, y MOV a, EAX  ; b = a - y MOV EBX, a       ; redundant SUB EBX, y MOV b, EBX  ; c = b * y MOV EAX, b       ; redundant IMUL y MOV c, EAX  ; d = c / y MOV EAX, c       ; redundant IDIV y MOV d, EAX`
+```c
+MOV x, 0x000A 
+MOV y, 0x0005    ; a = x + y 
+MOV EAX, x 
+ADD EAX, y 
+MOV a, EAX       ; b = a - y 
+MOV EBX, a       ; redundant 
+SUB EBX, y 
+MOV b, EBX  ; c = b * y 
+MOV EAX, b       ; redundant 
+IMUL y 
+MOV c, EAX  ; d = c / y 
+MOV EAX, c       ; redundant 
+IDIV y 
+MOV d, EAX
+```
 
 🔍 **Issues**:
 
 - Registers like `EAX` are reloaded unnecessarily.
-    
 - MOV operations done even when the correct value is already in the register.
-    
 - Every step reinitializes values without considering the previous state.
-    
 
 ---
 
 ### ✅ Optimized Assembly:
 
-asm
-
-CopyEdit
-
-`MOV EAX, x ADD EAX, y       ; EAX = x + y MOV a, EAX       ; Save 'a'  SUB EAX, y       ; EAX = a - y MOV b, EAX       ; Save 'b'  IMUL y           ; EAX = b * y MOV c, EAX       ; Save 'c'  IDIV y           ; EAX = c / y MOV d, EAX       ; Save 'd'`
+```
+MOV EAX, x ADD EAX, y       ; EAX = x + y MOV a, EAX       ; Save 'a'  SUB EAX, y       ; EAX = a - y MOV b, EAX       ; Save 'b'  IMUL y           ; EAX = b * y MOV c, EAX       ; Save 'c'  IDIV y           ; EAX = c / y MOV d, EAX       ; Save 'd'
+```
 
 ✔️ **No unnecessary MOVs**  
 ✔️ Registers reused wisely  
