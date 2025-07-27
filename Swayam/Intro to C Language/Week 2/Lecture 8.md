@@ -11,11 +11,7 @@
     - Then **square** that row sum
     - Then **sum all** these squared values
 
-#### 📐 **Mathematical Representation**
-
-- Formula:
-    
-- For each row `i`, compute the row sum, square it, then sum over all rows
+![[Pasted image 20250728000728.png]]
 
 #### 📥 **Example Input**
 
@@ -94,9 +90,6 @@
 
 - Array indices start from 0 in C
 - Outer loop tracks `rowindex`
-    
 - Inner loop tracks `colindex`
-    
 - `rowsum` must be reset to 0 for every new row
-    
 - Care must be taken not to let old values affect the next row’s computation
