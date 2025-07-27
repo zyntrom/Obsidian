@@ -149,36 +149,37 @@ class Student {
 		this.marks = marks;     
 	}      
 	void printStudent() {         
-			System.out.println(name + " Total: " +Arrays.stream(marks).sum());     } }
+	System.out.println(name + " Total: " + Arrays.stream(marks).sum());    } 
+}
 ```
 
 Then use it with generics:
 
-java
-
-CopyEdit
-
+```java
 `MyGeneric<String, Student> data = new MyGeneric<>("ID123", new Student("Alice", new int[]{90, 80, 70}));`
+```
 
 ---
 
 ## ❗ Error When Using Unknown Methods on Type T
 
-java
-
-CopyEdit
-
-`T[] arr;  double avg() {     double sum = 0;     for (T val : arr) {         sum += val.doubleValue(); // ❌ May not compile!     }     return sum / arr.length; }`
+```java
+T[] arr;  double avg() {     
+	double sum = 0;     
+	for (T val : arr) {         
+		sum += val.doubleValue(); // ❌ May not compile!     
+	}    
+	return sum / arr.length; 
+}
+```
 
 - Not all types `T` have `doubleValue()`. Only **Number subclasses** do.
-    
 - Solution: Use **bounded type parameters**:
-    
-    java
-    
-    CopyEdit
-    
-    `class MyAverage<T extends Number> {     ... }`
+```java
+class MyAverage<T extends Number> {     
+	... 
+}
+```
     
 
 ---
@@ -186,28 +187,18 @@ CopyEdit
 ## 🔜 What’s Next?
 
 In the **next lecture**, you'll learn about:
-
 - **Bounded type parameters** (`<T extends Number>`)
-    
 - **Wildcards** (`<?>`, `<? extends T>`, `<? super T>`)
-    
 - Advanced use cases to avoid type errors and ensure safe operations
-    
 
 ---
 
 ## 📝 Final Notes
 
 - Java Generics is **compile-time** mechanism: avoids casting, adds safety.
-    
 - You can use it with:
-    
     - Classes
-        
     - Methods (static and instance)
-        
     - Interfaces
-        
     - Constructors
-        
 - Multiple types? Just list them like `<T, U, V>`.
