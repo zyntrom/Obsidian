@@ -70,36 +70,23 @@
 
 - Each process has its **own page table**.
 - Page tables are stored in **Kernel Space**.
-    
     - Not accessible by user-space programs.
-        
 - Physical RAM is shared among processes:
-    
     - Process 1 → Blue frames
-        
     - Process 2 → Yellow frames
-        
     - Process 3 → Orange frames
-        
 
 ---
 
 ## 🔁 Context Switching
 
 - At any time, **only one process executes** on CPU.
-    
 - During execution:
-    
     - **That process’s page table is active**.
-        
 - During context switch:
-    
     - Active page table is switched to the next process.
-        
 - **Isolation**:
-    
     - Process 1 cannot access memory of Process 2 or 3.
-        
 
 ---
 
@@ -110,11 +97,8 @@
 ### 📍 Key Observation:
 
 - **Locality of Reference**:
-    
     - Programs access a **small portion of memory repeatedly**.
-        
     - Many blocks may **never be accessed**.
-        
 
 ---
 
@@ -123,31 +107,21 @@
 ### 🔹 Swap Space:
 
 - A dedicated section of disk that stores **all process blocks**.
-    
 - Only **required blocks are loaded** into RAM **on demand**.
-    
 
 ### 🔹 Page Fault:
 
 - If a block is **not in RAM**, the **present bit = 0**.
-    
 - Accessing this block triggers a **Page Fault Interrupt**.
-    
 
 ### 🔹 Page Fault Handling Steps:
 
 1. MMU detects missing block (present bit = 0).
-    
 2. **OS handles the page fault**.
-    
 3. Loads required block from disk (swap) → RAM.
-    
 4. Updates page table:
-    
     - Sets **Page Frame Number**
-        
     - Sets **Present Bit = 1**
-        
 
 ---
 
@@ -156,14 +130,11 @@
 ### 🔹 Scenario:
 
 - All page frames are full.
-    
 - A new block must be loaded → OS must **remove** an old block.
-    
 
 ### 🔹 Decision:
 
 - **Which page to remove?** → Decided by **Page Replacement Algorithms**
-    
 
 ### 🔹 Common Algorithms:
 
@@ -185,11 +156,8 @@
 ### 🔹 Dirty Bit (D-bit)
 
 - **Indicates whether a page was modified in RAM.**
-    
 - D = 1 → Page is **modified** → Must **write back to disk** (Swap Out required).
-    
 - D = 0 → Page is **unchanged** → **No need to write back**.
-    
 
 ---
 
@@ -198,27 +166,19 @@
 ### 🔹 Present Bit (P-bit)
 
 - 1 = Page is in RAM
-    
 - 0 = Page is in disk → causes **Page Fault**
-    
 
 ### 🔹 Dirty Bit (D-bit)
 
 - 1 = Page was modified
-    
 - 0 = Page unchanged
-    
 
 ### 🔹 Protection Bits
 
 - Define **access rights**:
-    
     - Executable
-        
     - Read-only
-        
     - Kernel vs. User mode
-        
 
 ---
 
