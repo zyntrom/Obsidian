@@ -15,20 +15,14 @@
 ### 🔹 Page Frames
 
 - RAM is divided into **equal-sized blocks** called **Page Frames**.
-    
 - Typical size: **4 KB** (may vary on modern CPUs).
-    
 - RAM example: 14 page frames (numbered 1 to 14).
-    
 
 ### 🔹 Process Blocks (Pages)
 
 - Process memory is also split into equal-sized **blocks**.
-    
 - **Block size = Page Frame size**.
-    
 - OS can map **any process block to any page frame**.
-    
 
 ---
 
@@ -37,18 +31,13 @@
 ### 🔹 Role:
 
 - OS maintains a **page table for each process**.
-    
 - Maps **process blocks** to **RAM page frames**.
-    
 
 ### 🔹 Example Mappings:
 
 - Block 1 → Frame 14
-    
 - Block 2 → Frame 2
-    
 - Block 3 → Frame 13
-    
 
 → Process blocks **need not be contiguous in RAM**.
 
@@ -59,36 +48,27 @@
 ### 🔹 How it Works:
 
 1. Process accesses a memory location.
-    
 2. **Memory Management Unit (MMU)**:
-    
     - Looks up the **process's page table**.
-        
     - Finds the corresponding **physical address** (frame).
-        
 3. RAM is accessed using the **physical address**.
-    
 
 ### 🔹 Overhead:
 
 - Page table lookup is required for **every memory access**.
-    
 
 ### 🔹 Optimization:
 
 - **TLB (Translation Lookaside Buffer)**:
-    
     - A cache that **stores recent page table entries**.
-        
     - Reduces lookup time.
-        
+
 
 ---
 
 ## 🧍 Multiple Processes
 
 - Each process has its **own page table**.
-    
 - Page tables are stored in **Kernel Space**.
     
     - Not accessible by user-space programs.
