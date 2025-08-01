@@ -174,3 +174,7 @@
 - Two Sum Problem:
 
 ![[Pasted image 20250801140738.png]]
+
+- Linked List reverse Print:
+
+![[Pasted image 20250801154038.png]]
