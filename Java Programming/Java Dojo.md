@@ -167,3 +167,6 @@
 
 ![[Pasted image 20250801122047.png]]
 
+- Rotate And compare:
+
+![[Pasted image 20250801135207.png]]
