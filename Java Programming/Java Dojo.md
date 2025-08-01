@@ -170,3 +170,7 @@
 - Rotate And compare:
 
 ![[Pasted image 20250801135207.png]]
+
+- Two Sum Problem:
+
+![[Pasted image 20250801140738.png]]
