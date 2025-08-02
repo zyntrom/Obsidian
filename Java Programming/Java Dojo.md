@@ -182,3 +182,5 @@
 - Find Middle node in linked List:
 
 ![[Pasted image 20250802112113.png]]
+
+Flower bed 
