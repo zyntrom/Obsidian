@@ -186,3 +186,8 @@
 - Array as a Flower bed:
 
 ![[Pasted image 20250802123034.png]]
+
+- Code to check a linked list is cycling or not:
+
+![[Pasted image 20250802124939.png]]
+
