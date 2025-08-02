@@ -183,4 +183,6 @@
 
 ![[Pasted image 20250802112113.png]]
 
-Flower bed 
+- Array as a Flower bed:
+
+![[Pasted image 20250802123034.png]]
