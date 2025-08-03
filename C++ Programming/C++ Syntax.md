@@ -277,7 +277,7 @@ try {
 ---
 ## 📘 1. **String Library**
 
-```
+```c++
 #include <string>
 ```
 
@@ -302,11 +302,9 @@ try {
 
 ## 📘 2. **Character Functions**
 
-cpp
-
-CopyEdit
-
-`#include <cctype>`
+```c++
+#include <cctype>
+```
 
 ## 📌 Useful Char Functions (for `char ch`)
 
@@ -325,11 +323,12 @@ CopyEdit
 
 ## 📘 3. **Numeric Functions**
 
-cpp
-
-CopyEdit
-
-`#include <cmath> #include <cstdlib> #include <limits> #include <numeric>`
+```c++
+#include <cmath> 
+#include <cstdlib> 
+#include <limits> 
+#include <numeric>
+```
 
 ## 📌 Math / Numeric Functions
 
@@ -349,26 +348,27 @@ CopyEdit
 
 ## 📌 Random Numbers
 
-cpp
-
-CopyEdit
-
-`#include <cstdlib> #include <ctime>  srand(time(0));       // Seed random int r = rand() % 100; // Random number from 0 to 99`
+```c++
+#include <cstdlib> 
+#include <ctime>  
+srand(time(0));       // Seed random 
+int r = rand() % 100; // Random number from 0 to 99
+```
 
 ---
 
 ## 📘 4. **Limits & Constants**
 
-cpp
-
-CopyEdit
-
-`#include <limits>`
+```c++
+#include <limits>
+```
 
 ## 📌 Examples:
 
-cpp
-
-CopyEdit
-
-`INT_MAX   // Max value of int INT_MIN   // Min value of int LONG_MAX  // Max of long DBL_MAX   // Max double numeric_limits<int>::max() numeric_limits<double>::lowest()`
+```c++
+INT_MAX   // Max value of int 
+INT_MIN   // Min value of int L
+ONG_MAX  // Max of long 
+DBL_MAX   // Max double 
+numeric_limits<int>::max() numeric_limits<double>::lowest()
+```
