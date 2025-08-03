@@ -196,77 +196,179 @@ accumulate(v.begin(), v.end(), 0);
 
 ### Binary Search
 
-
-CopyEdit
-
-`binary_search(v.begin(), v.end(), value);`
+```c++
+binary_search(v.begin(), v.end(), value);
+```
 
 ### Lower/Upper Bound
 
-cpp
-
-CopyEdit
-
-`lower_bound(v.begin(), v.end(), value); upper_bound(v.begin(), v.end(), value);`
+```c++
+lower_bound(v.begin(), v.end(), value); 
+upper_bound(v.begin(), v.end(), value);
+```
 
 ### Next Permutation
 
-cpp
-
-CopyEdit
-
-`next_permutation(s.begin(), s.end());`
+```c++
+next_permutation(s.begin(), s.end());
+```
 
 ---
 
 ## 📘 4. **Math Functions**
 
-cpp
-
-CopyEdit
-
-`#include <cmath>  sqrt(x);     // Square root pow(x, y);   // x^y abs(x);      // Absolute ceil(x);     // Round up floor(x);    // Round down round(x);    // Nearest integer log(x); log10(x);`
+```c++
+#include <cmath>  
+sqrt(x);     // Square root 
+pow(x, y);   // x^y 
+abs(x);      // Absolute 
+ceil(x);     // Round up 
+floor(x);    // Round down 
+round(x);    // Nearest integer 
+log(x); 
+log10(x);
+```
 
 ---
 
 ## 📘 5. **Time & Random**
 
-cpp
-
-CopyEdit
-
-`#include <ctime> #include <cstdlib>  srand(time(0)); int r = rand() % 100;`
+```c++
+#include <ctime> 
+#include <cstdlib>  
+srand(time(0)); 
+int r = rand() % 100;
+```
 
 ---
 
 ## 📘 6. **Useful Macros and Typedefs**
 
-cpp
-
-CopyEdit
-
-`#define fastIO ios::sync_with_stdio(0); cin.tie(0); #define all(x) x.begin(), x.end() typedef long long ll;`
+```c++
+#define fastIO ios::sync_with_stdio(0); 
+cin.tie(0); 
+#define all(x) x.begin(), x.end() typedef long long ll;
+```
 
 ---
 
 ## 📘 7. **File I/O**
 
-cpp
-
-CopyEdit
-
-`#include <fstream>  ifstream in("input.txt"); ofstream out("output.txt"); in >> x; out << x;`
+```c++
+#include <fstream>  
+ifstream in("input.txt"); 
+ofstream out("output.txt"); 
+in >> x; 
+out << x;
+```
 
 ---
 
 ## 📘 8. **Exception Handling**
 
+```c++
+try {     
+	// code 
+} catch (exception &e) {     
+	cout << e.what(); 
+}
+```
+
+---
+## 📘 1. **String Library**
+
+```
+#include <string>
+```
+
+## 📌 Common String Methods (for `std::string`)
+
+|Function|Description|
+|---|---|
+|`s.length()` or `s.size()`|Returns length of string|
+|`s.empty()`|Checks if string is empty|
+|`s.append("abc")`|Appends string|
+|`s += "abc"`|Concatenates|
+|`s.substr(pos, len)`|Substring from position|
+|`s.find("abc")`|Returns index of first occurrence|
+|`s.rfind("abc")`|Returns index of last occurrence|
+|`s.erase(pos, len)`|Erases part of the string|
+|`s.insert(pos, "abc")`|Inserts string at position|
+|`s.replace(pos, len, "xyz")`|Replaces part of string|
+|`s.c_str()`|Converts to C-style char* string|
+|`s.compare("abc")`|Compares strings (returns 0 if equal)|
+
+---
+
+## 📘 2. **Character Functions**
+
 cpp
 
 CopyEdit
 
-`try {     // code } catch (exception &e) {     cout << e.what(); }`
+`#include <cctype>`
+
+## 📌 Useful Char Functions (for `char ch`)
+
+|Function|Description|
+|---|---|
+|`isalpha(ch)`|True if letter (a-zA-Z)|
+|`isdigit(ch)`|True if digit (0-9)|
+|`isalnum(ch)`|True if letter or digit|
+|`islower(ch)`|True if lowercase|
+|`isupper(ch)`|True if uppercase|
+|`isspace(ch)`|True if space, tab, newline|
+|`tolower(ch)`|Converts to lowercase|
+|`toupper(ch)`|Converts to uppercase|
 
 ---
 
-If you want, I can give:
+## 📘 3. **Numeric Functions**
+
+cpp
+
+CopyEdit
+
+`#include <cmath> #include <cstdlib> #include <limits> #include <numeric>`
+
+## 📌 Math / Numeric Functions
+
+|Function|Description|
+|---|---|
+|`abs(x)`|Absolute value|
+|`pow(x, y)`|x raised to power y|
+|`sqrt(x)`|Square root|
+|`log(x)`|Natural log|
+|`log10(x)`|Base-10 log|
+|`floor(x)`|Largest int ≤ x|
+|`ceil(x)`|Smallest int ≥ x|
+|`round(x)`|Nearest integer|
+|`max(a, b)`|Maximum|
+|`min(a, b)`|Minimum|
+|`accumulate(begin, end, init)`|Sum of range from `<numeric>`|
+
+## 📌 Random Numbers
+
+cpp
+
+CopyEdit
+
+`#include <cstdlib> #include <ctime>  srand(time(0));       // Seed random int r = rand() % 100; // Random number from 0 to 99`
+
+---
+
+## 📘 4. **Limits & Constants**
+
+cpp
+
+CopyEdit
+
+`#include <limits>`
+
+## 📌 Examples:
+
+cpp
+
+CopyEdit
+
+`INT_MAX   // Max value of int INT_MIN   // Min value of int LONG_MAX  // Max of long DBL_MAX   // Max double numeric_limits<int>::max() numeric_limits<double>::lowest()`
