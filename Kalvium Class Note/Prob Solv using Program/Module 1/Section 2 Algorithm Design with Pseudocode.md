@@ -113,14 +113,16 @@ End
 
 **Pseudocode**:
 
-`Start`     
-`Input age`     
-`If age >= 18 Then`         
-`Output "You are eligible to vote."`     
-`Else`         
-`Output "You are not eligible to vote."`     
-`End If` 
-`End`
+```
+Start     
+Input age     
+If age >= 18 Then         
+Output "You are eligible to vote."     
+Else         
+Output "You are not eligible to vote."     
+End If 
+End
+```
 
 **Edge Cases to Consider**:
 

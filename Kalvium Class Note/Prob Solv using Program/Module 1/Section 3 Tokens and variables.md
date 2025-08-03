@@ -33,11 +33,15 @@ You **cannot** use them as identifiers.
 
 #### 📌 Python Keywords (some examples):
 
-`if`, `else`, `while`, `def`, `class`, `import`, `return`, `in`, `try`, `except`, `True`, `False`, `None`
+```
+if, else, while, def, class, import, return, in, try, except, True, False, None
+```
 
 #### 📌 C++ Keywords (some examples):
 
-`int`, `float`, `char`, `if`, `else`, `switch`, `for`, `while`, `return`, `class`, `public`, `private`, `try`, `catch`
+```
+int, float, char, if, else, switch, for, while, return, class, public, private, try, catch
+```
 
 ---
 
