@@ -57,7 +57,7 @@ Imagine sorting students into rows:
 ```python
 score = int(input("Enter your score: "))  
 if score >= 90 and score <= 100:  
- print("Grade A")  
+print("Grade A")  
 elif score >= 80 and score <= 89:  
  print("Grade B")  
 elif score >= 70 and score <= 79:  

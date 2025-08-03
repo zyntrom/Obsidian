@@ -78,7 +78,7 @@ cout << result;
 
 - One-line shortcut for if-else.
 - Format:  
-      **condition ? true_output : false_output**
+	**condition ? true_output : false_output**
 - Used mainly for **simple assignments or print operations**.
 
 ---

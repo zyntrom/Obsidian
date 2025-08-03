@@ -59,8 +59,9 @@ Makes decisions using conditions like:
 ```python
 number = 5 
 if number > 0:     
-print("Positive") else:     
-print("Zero or Negative")
+	print("Positive") 
+else:     
+	print("Zero or Negative")
 ```
 
 #### ✅ C++:
@@ -68,9 +69,9 @@ print("Zero or Negative")
 ```c++
 int number = 0; 
 if (number == 0)     
-cout << "Zero"; 
+	cout << "Zero"; 
 else     
-cout << "Not zero";
+	cout << "Not zero";
 ```
 
 🧾 _It’s like choosing between clothes based on the weather: “If it’s cold → wear jacket.”_
@@ -85,7 +86,7 @@ Repeats a block of code until a condition is no longer true.
 
 ```python
 for i in range(5):
-print(i)
+	print(i)
 ```
 
 #### ✅ C++ `for` loop:
@@ -101,8 +102,7 @@ cout << i << endl;
 ```c++
 int count = 0; do {     
 cout << count << endl;     
-count++; } 
-while (count < 5);
+count++; }while (count < 5);
 ```
 
 🧾 _Think: brushing teeth daily – it repeats every day, conditionally._
