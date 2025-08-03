@@ -77,17 +77,17 @@ print(20 >> 2)# 5
 
 ### 🔒 Real-World Example: File Permissions
 
-```c
+```python
 READ = 4     # 100 
 WRITE = 2    # 010 
 EXECUTE = 1  # 001  
-user_permissions = 5  # 101 → READ & EXECUTE  
+user_permissions = 5  #101 → READ & EXECUTE  
 if user_permissions & READ:     
-print("Read access ✅") 
+	print("Read access ✅") 
 if user_permissions & WRITE:     
-print("Write access ✅") 
+	print("Write access ✅") 
 else:     
-print("No Write access ❌")
+	print("No Write access ❌")
 ```
 
 ---

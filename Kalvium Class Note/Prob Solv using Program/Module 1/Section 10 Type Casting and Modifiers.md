@@ -3,7 +3,6 @@
 **Course:** Problem Solving Using Programming  
 **Module:** Getting Started with Problem Solving  
 **Lesson:** Type Casting and Modifiers  
-**Certified Score:** ✅ 30/30
 
 ---
 
@@ -44,19 +43,19 @@ print(num + 10)  # 133
 #include <string> 
 using namespace std;  
 int main() {     
-// Implicit     
-int a = 5;     
-float b = 2.5;     
-float c = a + b;     
-cout << c << endl;  // 7.5      
-// Explicit     
-float x = 8.9;     
-int y = (int)x;     
-cout << y << endl;  // 8      
-// String to int     
-string s = "123";     
-int num = stoi(s);     
-cout << num + 10 << endl;  // 133 
+	// Implicit     
+	int a = 5;     
+	float b = 2.5;     
+	float c = a + b;     
+	cout << c << endl;  // 7.5      
+	// Explicit     
+	float x = 8.9;     
+	int y = (int)x;     
+	cout << y << endl;  // 8      
+	// String to int     
+	string s = "123";     
+	int num = stoi(s);     
+	cout << num + 10 << endl;  // 133 
 }``
 ```
 

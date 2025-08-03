@@ -69,11 +69,11 @@ print("Hello, my name is {} and I am {} years old.".format(name, age))
 #include <iomanip> 
 using namespace std;  
 int main() {     
-float price = 25.5;     
-cout << fixed << setprecision(2);     
-cout << "Price: " << price << endl;  
-// Output: Price: 25.50     
-return 0; 
+	float price = 25.5;     
+	cout << fixed << setprecision(2);     
+	cout << "Price: " << price << endl;  
+	// Output: Price: 25.50     
+	return 0; 
 }``
 ```
 
@@ -127,12 +127,12 @@ print(f"Your name is {name} and you are {age} years old.")
 #include <iostream> 
 using namespace std;  
 int main() {     
-string name;     
-int age;      
-cin >> name;     
-cin >> age;      
-cout << "Your name is " << name << " and you are " << age << " years old." << endl;     
-return 0; 
+	string name;     
+	int age;      
+	cin >> name;     
+	cin >> age;      
+	cout << "Your name is " << name << " and you are " << age << " years old." << endl;     
+	return 0; 
 }
 ```
 
