@@ -23,7 +23,8 @@
 **Python**
 
 ```python
-for i in range(1, 6):     print(i)
+for i in range(1, 6):     
+	print(i)
 ```
 
 **C++**
@@ -59,7 +60,10 @@ int main() {
 **Python**
 
 ```python
-i = 1 while i <= 5:     print(i)     i += 1
+i = 1 
+while i <= 5:     
+	print(i)     
+	i += 1
 ```
 
 **C++**

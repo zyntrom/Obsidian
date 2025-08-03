@@ -96,7 +96,7 @@ int main() {
 ```python
 n = int(input("Enter a number: "))  
 for i in range(n, 0, -1):  
- print(i)
+	print(i)
 ```
 
 ### 💻 C++ Code:

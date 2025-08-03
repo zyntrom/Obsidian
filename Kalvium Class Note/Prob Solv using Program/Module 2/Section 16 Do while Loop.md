@@ -50,7 +50,11 @@ int main() {
 ### 🔎 Output:
 
 ```
-Count: 0  Count: 1  Count: 2  Count: 3  Count: 4
+Count: 0  
+Count: 1  
+Count: 2  
+Count: 3  
+Count: 4
 ```
 
 ---
@@ -73,7 +77,7 @@ Use `while True` with a `break` condition.
 ```python
 while True:     # do something     
 	if condition_to_stop:         
-	break
+		break
 ```
 
 ✅ This simulates the same behavior as a C++ `do-while`.

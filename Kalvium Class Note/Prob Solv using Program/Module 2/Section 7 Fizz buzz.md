@@ -90,13 +90,13 @@ int main() {
 	cout << "Enter a number: ";     
 	cin >> number;      
 	if (number % 3 == 0 && number % 5 == 0)         
-		cout << "FizzBuzz" << endl;     
+	cout << "FizzBuzz" << endl;     
 	else if (number % 3 == 0)         
-		cout << "Fizz" << endl;     
+	cout << "Fizz" << endl;     
 	else if (number % 5 == 0)         
-		cout << "Buzz" << endl;     
+	cout << "Buzz" << endl;     
 	else         
-		cout << "-1" << endl;      
+	cout << "-1" << endl;      
 	return 0; 
 }
 ```

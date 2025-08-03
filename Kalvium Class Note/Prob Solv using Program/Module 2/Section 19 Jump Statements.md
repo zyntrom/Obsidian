@@ -87,7 +87,7 @@ Output: 1 3 5 7 9
 ```c++
 for (int i = 1; i <= 10; i++) {  
  if (i % 2 == 0) continue;  
- cout << i << " ";  
+	 cout << i << " ";  
 }  
 ```
 
@@ -111,8 +111,8 @@ Used when a function finishes execution.
 
 ```python
 def sum(a, b):  
- return a + b  
-print(sum(5, 3))  
+	return a + b  
+	print(sum(5, 3))  
 ```
 
 **Output**: 8
@@ -121,12 +121,12 @@ print(sum(5, 3))
 
 ```c++
 int sum(int a, int b) {  
- return a + b;  
+	return a + b;  
 }  
 
 int main() {  
- cout << sum(5, 3);  
- return 0;  
+	cout << sum(5, 3);  
+	return 0;  
 }
 ```
 
@@ -148,7 +148,8 @@ Only if absolutely necessary — discouraged in modern code.
 
 ```c++
 int num = 10;  
-if (num == 10) goto label;  
+if (num == 10) 
+goto label;  
 cout << "Skipped this!";  
 label:  
 cout << "Jumped to label!";  
