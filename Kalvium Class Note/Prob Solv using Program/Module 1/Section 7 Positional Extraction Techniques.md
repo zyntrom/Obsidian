@@ -68,26 +68,47 @@ return 0;
 
 **Use Case:** Check if a password starts with an uppercase letter.
 
-`password = "Abc123" if 'A' <= password[0] <= 'Z':     print("Starts with uppercase!")`
+```
+password = "Abc123" 
+if 'A' <= password[0] <= 'Z':     
+	print("Starts with uppercase!")
+```
 
 #### 2. ✅ Extracting Initials from Full Name
 
 Input: `"Abdul Pakir Jainulabdeen"`  
 Output: `"A.P.J"`
 
-`name = "Abdul Pakir Jainulabdeen" parts = name.split() initials = ".".join([p[0] for p in parts]) print(initials + ".")  # A.P.J.`
+```
+name = "Abdul Pakir Jainulabdeen" 
+parts = name.split() 
+initials = ".".join([p[0] for p in parts]) 
+print(initials + ".")  # A.P.J.
+```
 
 #### 3. ✅ Phone Number Check (Country Code)
 
-`phone = "+919876543210" if phone[:3] == "+91":     print("Indian number")`
+```
+phone = "+919876543210" 
+if phone[:3] == "+91":     
+	print("Indian number")
+```
 
 #### 4. ✅ File Type Detection from Extension
 
-`filename = "notes.pdf" if filename[-4:] == ".pdf":     print("Document file")`
+```
+filename = "notes.pdf" 
+if filename[-4:] == ".pdf":     
+	print("Document file")
+```
 
 #### 5. ✅ Email Validation (presence of '@' and end with '.com')
 
-`email = "example@domain.com" if "@" in email and email.endswith(".com"):     print("Valid email")`
+```
+email = "example@domain.com" 
+if "@" in email and email.endswith(".com"):     
+	print("Valid email")
+```
 
 ---
 

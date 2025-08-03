@@ -89,8 +89,8 @@ They don’t have names.
 #### Types:
 
 - **Arithmetic**: `+`, `-`, `*`, `/`, `%`
-- **Comparison**: `==`, `!=`, `>`, `<`, `>=`, `<=`
-- **Assignment**: `=`, `+=`, `-=`, `*=`, etc.
+- **Comparison**: == , !=, >, <, >=, <=
+- **Assignment**: =, +=, -=, *=, etc.
 - **Logical**: `and`, `or`, `not` (Python); `&&`, `||`, `!` (C++)
 
 ---
@@ -127,16 +127,16 @@ They don’t have names.
 
 #### 📌 Python:
 
-python
-
-CopyEdit
-
-`variable = 5 + 3 print("Result: ", variable)`
+```c++
+.
+variable = 5 + 3 
+print("Result: ", variable)
+```
 
 **Tokens**:
 
 - `variable` → Identifier
-- `=` → Assignment Operator
+- = → Assignment Operator
 - `5`, `3` → Literals
 - `+` → Arithmetic Operator
 - `print` → Built-in function (identifier)
@@ -146,13 +146,16 @@ CopyEdit
 
 #### 📌 C++:
 
-`int result = 5 + 3; std::cout << "Result: " << result << std::endl;`
+```c++
+int result = 5 + 3; 
+td::cout << "Result: " << result << std::endl;
+```
 
 **Tokens**:
 
 - `int` → Keyword
 - `result` → Identifier
-- `=` → Operator
+- = → Operator
 - `5`, `3` → Literals
 - `+` → Operator
 - `;` → Delimiter
@@ -224,8 +227,8 @@ Example:
 
 ```python
 if score >= 50:     
-print("Pass") else:     
-print("Fail")
+	print("Pass") else:     
+	print("Fail")
 ```
 
 Then label the tokens:

@@ -33,7 +33,9 @@ These are the **most basic, built-in** data types. They hold **single values** a
 
 #### 🚨 Type Error Example:
 
-`result = 5 + "five"  # ❌ Error: Can't add integer and string`
+```python
+result = 5 + "five"  # ❌ Error: Can't add integer and string
+```
 
 ---
 
@@ -81,7 +83,7 @@ public:
 	string name;     
 	int grade;     
 	void attendClass() {         
-	cout << name << " is attending class." << endl;     
+		cout << name << " is attending class." << endl;     
 	}
 };
 ```

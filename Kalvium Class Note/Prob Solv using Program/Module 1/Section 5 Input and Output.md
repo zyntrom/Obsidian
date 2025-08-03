@@ -2,7 +2,6 @@
 
 **Lesson Title:** _Input and Output_  
 **Module:** Getting Started with Problem Solving  
-**Certified Score:** ✅ 30/30
 
 ---
 
@@ -96,9 +95,13 @@ print(f"Weight: {weight:.2f} kg")
 
 ### Example:
 
-`print("Name:\tJohn\nQuote: \"Practice makes perfect!\"")`
+```python
+print("Name:\tJohn\nQuote: \"Practice makes perfect!\"")
+```
 
-`cout << "Name:\tJohn\nQuote: \"Practice makes perfect!\"\n";`
+```c++
+cout << "Name:\tJohn\nQuote: \"Practice makes perfect!\"\n";
+```
 
 ---
 
