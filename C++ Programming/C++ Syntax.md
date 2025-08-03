@@ -54,16 +54,20 @@ for (int i = 0; i < n; i++) {
 
 } 
 while (condition) { 
-} do { } while (condition);
+
+} do { 
+
+} while (condition);
 ```
 
 ### Functions
 
-cpp
-
-CopyEdit
-
-`returnType functionName(parameters) {     // body     return value; }`
+```c++
+returnType functionName(parameters) {     
+	// body     
+	return value; 
+}
+```
 
 ---
 
@@ -71,113 +75,127 @@ CopyEdit
 
 ### Arrays
 
-cpp
-
-CopyEdit
-
-`int arr[5] = {1, 2, 3, 4, 5}; int arr2D[3][3];`
+```c++
+int arr[5] = {1, 2, 3, 4, 5}; 
+int arr2D[3][3];
+```
 
 ### Strings
 
-cpp
-
-CopyEdit
-
-`#include <string>  string s = "hello"; s.length(); s.size(); s += " world"; s.substr(0, 3); s.find("lo"); s.erase(pos, len);`
+```c++
+#include <string> 
+string s = "hello"; 
+s.length(); 
+s.size(); 
+s += " world"; 
+s.substr(0, 3); 
+s.find("lo"); 
+s.erase(pos, len);
+```
 
 ### Vectors
 
-cpp
-
-CopyEdit
-
-`#include <vector>  vector<int> v; v.push_back(10); v.pop_back(); v.size(); v.clear(); v.begin(); v.end();`
+```c++
+#include <vector>  
+vector<int> v; 
+v.push_back(10); 
+v.pop_back(); 
+v.size();
+v.clear(); 
+v.begin(); 
+v.end();
+```
 
 ### Pairs
 
-cpp
-
-CopyEdit
-
-`#include <utility>  pair<int, int> p = {1, 2}; p.first; p.second;`
+```c++
+#include <utility>  
+pair<int, int> p = {1, 2}; 
+p.first; 
+p.second;
+```
 
 ### Sets
 
-cpp
-
-CopyEdit
-
-`#include <set>  set<int> s; s.insert(5); s.erase(5); s.count(5); s.find(5);`
+```c++
+#include <set>  
+set<int> s;
+s.insert(5); 
+s.erase(5); 
+s.count(5); 
+s.find(5);
+```
 
 ### Maps
 
-cpp
-
-CopyEdit
-
-`#include <map>  map<string, int> m; m["apple"] = 3; m.count("apple");`
+```c++
+#include <map>  
+map<string, int> m; 
+m["apple"] = 3; 
+m.count("apple");
+```
 
 ### Stack
 
-cpp
-
-CopyEdit
-
-`#include <stack>  stack<int> s; s.push(1); s.top(); s.pop(); s.empty();`
+```c++
+#include <stack>  
+stack<int> s; s
+.push(1); 
+s.top(); 
+s.pop(); 
+s.empty();
+```
 
 ### Queue
 
-cpp
-
-CopyEdit
-
-`#include <queue>  queue<int> q; q.push(1); q.front(); q.back(); q.pop();`
+```c++
+#include <queue>  
+queue<int> q; 
+q.push(1); 
+q.front(); 
+q.back(); 
+q.pop();
+```
 
 ### Priority Queue
 
-cpp
-
-CopyEdit
-
-`#include <queue>  priority_queue<int> maxHeap; priority_queue<int, vector<int>, greater<int>> minHeap;`
+```c++
+#include <queue>  
+priority_queue<int> maxHeap; 
+priority_queue<int, vector<int>, greater<int>> minHeap;
+```
 
 ---
 
 ## 📘 3. **Algorithms Library**
 
-cpp
-
-CopyEdit
-
-`#include <algorithm>`
+```c++
+#include <algorithm>
+```
 
 ### Sorting & Reversing
 
-cpp
-
-CopyEdit
-
-`sort(v.begin(), v.end()); reverse(v.begin(), v.end());`
+```c++
+sort(v.begin(), v.end()); 
+reverse(v.begin(), v.end());
+```
 
 ### Min/Max
 
-cpp
-
-CopyEdit
-
-`min(a, b); max(a, b);`
+```c++
+min(a, b); 
+max(a, b);
+```
 
 ### Accumulate (Sum)
 
-cpp
-
-CopyEdit
-
-`#include <numeric> accumulate(v.begin(), v.end(), 0);`
+```c++
+#include <numeric> 
+accumulate(v.begin(), v.end(), 0);
+```
 
 ### Binary Search
 
-cpp
 
 CopyEdit
 
