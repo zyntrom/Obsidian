@@ -191,3 +191,6 @@
 
 ![[Pasted image 20250802124939.png]]
 
+- Addition of two linked list:
+
+![[Pasted image 20250804122741.png]]
