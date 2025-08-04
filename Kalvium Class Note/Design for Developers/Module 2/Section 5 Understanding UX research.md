@@ -103,17 +103,11 @@
 ## 🧩 Steps for Analyzing UX Research
 
 1. **Set goals** – What do you want to learn?
-    
 2. **Take notes immediately** after sessions.
-    
 3. **Review all data** – Identify patterns and themes.
-    
 4. **Organize data** – Label, tag, and categorize.
-    
 5. **Identify trends** – Link findings to research questions.
-    
 6. **Write recommendations** – Actionable insights for design.
-    
 
 ---
 
@@ -122,9 +116,7 @@
 ### ❗ What are Biases?
 
 - Unconscious distortions that affect how data is collected or interpreted.
-    
 - Based on assumptions, stereotypes, or emotions.
-    
 
 ### ⚠️ Types of Biases:
 
@@ -142,19 +134,12 @@
 ## 🛡️ Preventing Bias in Research
 
 - **Use neutral wording** in questions.
-    
 - **Encourage independent thinking**: Ask individuals before group discussions.
-    
 - **Avoid specific language**: Let users rate experiences freely.
-    
 - **Limit guidance**: Let users explore on their own.
-    
 - **Watch tone and body language**—but confirm interpretations.
-    
 - **Plan ahead**: Recruit users matching personas.
-    
 - **Stay open-minded**: Don’t anchor on early responses.
-    
 
 ---
 
@@ -167,48 +152,32 @@ Explore the feasibility of a **student volunteer food delivery app** within camp
 ### ✅ Conduct:
 
 - **Interview at least 5 students** (not your classmates).
-    
 - **Ask minimum 10 questions** (5 mandatory).
-    
 - **Document responses** and analyze trends.
-    
 
 ### 🔑 5 Mandatory Questions:
 
 1. How many meals per week do you eat _outside_ the hostel mess?
-    
 2. Which days do you prefer to eat out?
-    
 3. What types of food do you eat outside the mess?
-    
 4. Would you use an app to order from campus stalls with student volunteer delivery?
-    
 5. Would you pay a delivery fee? If yes, how much % of order value?
-    
 
 ---
 
 ## 🧭 Bonus Tools & Resources
 
 - **Nielsen Norman Group** – Field studies, card sorting articles.
-    
 - **UX Pin** – A/B testing guide.
-    
 - **Invision** – Guerrilla testing guide.
-    
 - **Hotjar & Microsoft Clarity** – Screen recording user analysis.
-    
 - **Mind Map** – (Refer slide/lesson material).
-    
 
 ---
 
 ## 🧠 Final Tips
 
 - UX research is **iterative**.
-    
 - Use insights to make **data-driven design decisions**.
-    
 - Focus on **what users do, think, and feel**.
-    
 - Always consider **biases**, and plan for **diverse perspectives**.
