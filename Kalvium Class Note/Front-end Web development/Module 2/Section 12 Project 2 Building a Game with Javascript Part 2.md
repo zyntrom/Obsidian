@@ -7,17 +7,11 @@
 ### 🚨 Scenario
 
 - Your dinosaur can now jump.
-    
 - Now it's time to add danger:
-    
     - Create obstacles (like cacti).
-        
     - Move them across the screen.
-        
     - Detect collisions.
-        
     - Show “Game Over” when dino hits obstacle.
-        
 
 ---
 
@@ -26,13 +20,9 @@
 By the end of this lesson, you will:
 
 - Dynamically create elements using **JavaScript** (`createElement`)
-    
 - Animate objects using **`setInterval()`**
-    
 - Detect collision using **position comparison**
-    
 - Handle game over conditions with alerts or reloads
-    
 
 ---
 
@@ -40,18 +30,13 @@ By the end of this lesson, you will:
 
 **Creating obstacles (cactus, rock, etc.) using JS:**
 
-js
-
-CopyEdit
-
-`const obs = document.createElement('div'); obs.classList.add('obstacle'); game.appendChild(obs);`
+```js
+const obs = document.createElement('div'); obs.classList.add('obstacle'); game.appendChild(obs);
+```
 
 - `document.createElement('div')`: Makes a new `<div>`
-    
 - `.classList.add('obstacle')`: Adds styling class
-    
 - `game.appendChild(obs)`: Adds it inside the game area
-    
 
 ---
 
@@ -59,11 +44,11 @@ CopyEdit
 
 **Move obstacle to the left continuously:**
 
-js
-
-CopyEdit
-
-`let obsLeft = 1000;  setInterval(() => {   obsLeft -= 10;   obs.style.left = obsLeft + 'px'; }, 20);`
+```js
+let obsLeft = 1000;  setInterval(() => {   
+	obsLeft -= 10;   
+	obs.style.left = obsLeft + 'px'; }, 20);
+```
 
 - `obsLeft -= 10`: Moves obstacle 10px left every time
     
