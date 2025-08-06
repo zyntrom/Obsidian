@@ -65,11 +65,8 @@ if (obsLeft < 100 && obsLeft > 50 && dinoTop < 50) {   alert("Game Over"); }
 ```
 
 - `getComputedStyle(...)`: Gets CSS properties
-    
 - `bottom` value: How high the dino is
-    
 - If obstacle is in front of the dino **and** dino is low (not jumping), collision happens
-    
 
 ---
 
@@ -78,38 +75,26 @@ if (obsLeft < 100 && obsLeft > 50 && dinoTop < 50) {   alert("Game Over"); }
 #### 1. **Create Obstacles Dynamically**
 
 - Use `createElement()`
-    
 - Add class `obstacle`
-    
 - Append to game div using `appendChild()`
-    
 
 #### 2. **Animate Obstacle Movement**
 
 - Use `setInterval()` to:
-    
     - Decrease left position
-        
     - Update `style.left`
-        
 
 #### 3. **Detect Collision**
 
 - Use `getComputedStyle()` to get dino position
-    
 - Check if obstacle is within crash zone
-    
 - Check if dino is not jumping (i.e. low)
-    
 
 #### 4. **Trigger Game Over**
 
 - On collision:
-    
     - Show alert: `"Game Over"`
-        
     - Optionally reload page or stop intervals
-        
 
 ---
 
@@ -128,9 +113,6 @@ if (obsLeft < 100 && obsLeft > 50 && dinoTop < 50) {   alert("Game Over"); }
 You have:
 
 - 🚧 Created obstacles in JavaScript
-    
 - 🏃 Made them move across the screen
-    
 - 💥 Detected collision using positions
-    
 - ☠️ Shown Game Over and stopped the game
