@@ -51,23 +51,18 @@ let obsLeft = 1000;  setInterval(() => {
 ```
 
 - `obsLeft -= 10`: Moves obstacle 10px left every time
-    
 - `obs.style.left`: Updates its position on screen
-    
 - `setInterval(..., 20)`: Runs every 20ms → smooth animation
-    
 
 ---
 
 ### 💥 Collision Detection
 
 **Check if dino and obstacle overlap:**
-
-js
-
-CopyEdit
-
-`const dinoTop = parseInt(getComputedStyle(dino).getPropertyValue("bottom"));  if (obsLeft < 100 && obsLeft > 50 && dinoTop < 50) {   alert("Game Over"); }`
+```js
+const dinoTop = parseInt(getComputedStyle(dino).getPropertyValue("bottom"));  
+if (obsLeft < 100 && obsLeft > 50 && dinoTop < 50) {   alert("Game Over"); }
+```
 
 - `getComputedStyle(...)`: Gets CSS properties
     
