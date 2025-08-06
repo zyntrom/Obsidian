@@ -27,50 +27,48 @@ By the end of this lesson, you will:
 
 ```html
 <div class="game">   
-<div id="dino" class="dino"></div>   
-<div class="ground"></div> 
+	<div id="dino" class="dino"></div>   
+	<div class="ground"></div> 
 </div>
 ```
 
 **Explanation:**
 
 - `.game`: Main container (the game area).
-    
 - `#dino` / `.dino`: Player (dinosaur).
-    
 - `.ground`: Ground line/floor.
-    
 
 ---
 
 ### 🎨 CSS Styling
 
-css
-
-CopyEdit
-
-`.dino {   width: 50px;   height: 50px;   background-color: green;   position: absolute;   bottom: 0;   left: 50px; }`
-
+```css
+.dino {   
+	width: 50px;   
+	height: 50px;   
+	background-color: green;   
+	position: absolute;   
+	bottom: 0;   
+	left: 50px; 
+}
+```
 **Explanation:**
 
 - `position: absolute`: Fixes dino at the bottom.
-    
 - `bottom: 0`: Dino rests on the ground.
-    
 - `left: 50px`: Horizontal position from left.
-    
 - `background-color`: Simple green box for now.
-    
 
 ---
 
 ### 🕹️ JavaScript Jump Logic
 
-javascript
-
-CopyEdit
-
-`document.addEventListener('keydown', function () {   dino.classList.add('jump');   setTimeout(() => dino.classList.remove('jump'), 500); });`
+```js
+document.addEventListener('keydown', function () {
+	dino.classList.add('jump');   
+	setTimeout(() => dino.classList.remove('jump'), 500); 
+});
+```
 
 **Explanation:**
 
