@@ -29,7 +29,7 @@ const c3 = document.getElementById("c3");
 ---
 
 ```js
-timer = setInterval(function () {
+timer = setInterval(function () {},500);
 ```
 
 - Starts a **repeating timer** (every 500ms).
