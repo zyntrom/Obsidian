@@ -85,17 +85,17 @@ Other ideas:
 
 Alternative to `location.reload()`:
 
-
 ```html
 <button id="restart" style="display:none;">Play Again</button>
 ```
 
-```
-document.getElementById("restart").addEventListener("click", () => {   window.location.reload(); });
+```js
+document.getElementById("restart").addEventListener("click", () => {   
+	window.location.reload(); 
+});
 ```
 
 - Show this button only on game over.
-    
 
 ---
 
@@ -116,17 +116,11 @@ document.getElementById("restart").addEventListener("click", () => {   window.lo
 ✅ Game works with:
 
 - Dino jump using key press
-    
 - Obstacle movement with collision
-    
 - Score increasing automatically
-    
 - Game over on collision
-    
 - Option to restart
-    
 - Styled layout
-    
 
 ✅ Hosted on GitHub Pages / Netlify / Vercel  
 ✅ GitHub repo link shared  
@@ -137,7 +131,5 @@ document.getElementById("restart").addEventListener("click", () => {   window.lo
 ### 🧪 Example Output
 
 - A basic clone of the Chrome Dino game
-    
 - Neatly styled, score tracking in real-time
-    
 - Game over message and restart option
