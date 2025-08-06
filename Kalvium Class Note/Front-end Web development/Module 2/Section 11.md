@@ -73,11 +73,8 @@ document.addEventListener('keydown', function () {
 **Explanation:**
 
 - Listens for any **keyboard press**.
-    
 - Adds the `jump` class to animate the dino.
-    
 - Removes it after 500ms (animation duration).
-    
 
 ---
 
@@ -86,53 +83,44 @@ document.addEventListener('keydown', function () {
 #### ✅ 1. Create the Game Layout
 
 - Create 3 `<div>`s:
-    
     - `.game`
-        
     - `#dino` / `.dino`
-        
     - `.ground`
-        
 
 #### ✅ 2. Style the Dinosaur & Ground
 
 - Use CSS:
-    
     - `width`, `height`, `background-color`
-        
     - `position: absolute`, `bottom`, `left`
-        
 
 #### ✅ 3. Implement the Jump Animation
 
 - Add a `.jump` class in CSS using `@keyframes`
-    
 - Move the dino **up** and then **down**
-    
 
-css
-
-CopyEdit
-
-`@keyframes jump {   0% { bottom: 0; }   50% { bottom: 100px; }   100% { bottom: 0; } }  .jump {   animation: jump 0.5s ease; }`
+```css
+@keyframes jump {   
+	0% { bottom: 0; }   
+	50% { bottom: 100px; }   
+	100% { bottom: 0; } 
+}  
+.jump {   
+	animation: jump 0.5s ease; 
+}
+```
 
 #### ✅ 4. Trigger the Jump with JavaScript
 
 - On `keydown`, add `.jump` class
-    
 - Use `setTimeout` to remove `.jump` class after 0.5s
-    
 
 ---
 
 ### 💡 Explanation
 
 - The `.jump` class gives a **temporary bounce effect**.
-    
 - JavaScript **responds to user input** by changing CSS class.
-    
 - **CSS animations** handle the smooth visual movement.
-    
 
 ---
 
@@ -141,9 +129,6 @@ CopyEdit
 You have:
 
 - ✅ Structured a basic game UI using **HTML**.
-    
 - ✅ Styled the dino and ground with **CSS**.
-    
 - ✅ Enabled the dino to jump with **JavaScript** and **CSS animations**.
-    
 - ✅ Linked **keyboard events** to game interactivity.
