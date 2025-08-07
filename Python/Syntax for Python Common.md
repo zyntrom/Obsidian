@@ -8,16 +8,14 @@
 ```python
 #This is a comment
 ```
-    
 - **Multi-line (docstring-style) comment**:  
 ```python
 '''This is a multi-line comment'''  
 ```
-    or  
+- or  
 ```python
-    """This is another multi-line comment"""
+"""This is another multi-line comment"""
 ```
-    
 
 ---
 
