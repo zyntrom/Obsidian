@@ -1,7 +1,7 @@
 # 🐍 Python Full Basic Syntax Reference
 
 ---
-
+1
 ## 📌 1. **Comments**
 
 - **Single-line comment**:  
