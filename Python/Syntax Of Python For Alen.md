@@ -30,15 +30,15 @@
 
 ## ✅ Operators
 
-|Type|Operators|Description|
-|---|---|---|
-|Arithmetic|`+ - * / // % **`|Basic math|
-|Assignment|`= += -= *= /= //= **= %=`|Modify and assign|
-|Comparison|`== != > < >= <=`|Compare values|
-|Logical|`and or not`|Combine conditions|
-|Bitwise|`&|^ ~ << >>`|
-|Membership|`in`, `not in`|Check if value is in sequence|
-|Identity|`is`, `is not`|Compare object identity|
+| Type       | Operators                | Description                   |
+| ---------- | ------------------------ | ----------------------------- |
+| Arithmetic | `+ - * / // % **`        | Basic math                    |
+| Assignment | = += -= *= /= //= **= %= | Modify and assign             |
+| Comparison | == != > < >= <=          | Compare values                |
+| Logical    | `and or not`             | Combine conditions            |
+| Bitwise    | `&                       | ^ ~ << >>`                    |
+| Membership | `in`, `not in`           | Check if value is in sequence |
+| Identity   | `is`, `is not`           | Compare object identity       |
 
 ---
 
