@@ -6,15 +6,15 @@
 
 - **Single-line comment**:  
 ```python
-# This is a comment
+#This is a comment
 ```
     
 - **Multi-line (docstring-style) comment**:  
-```
+```python
 '''This is a multi-line comment'''  
 ```
     or  
-```
+```python
     """This is another multi-line comment"""
 ```
     
@@ -24,12 +24,10 @@
 ## 📌 2. **Variables and Data Types**
 
 - **Declaration**:  
-```
+```python
 x = 10
 ```
-    
 - **Dynamic typing**: No need to declare the type.
-    
 
 ### **Common Data Types**
 
@@ -50,17 +48,21 @@ x = 10
 ## 📌 3. **Input & Output**
 
 - **Input**:  
-    `x = input("Enter: ")` → Always returns a string
-    
+```python
+x = input("Enter: ") # Always returns a string
+```
 - **Convert input**:  
-    `x = int(input())`, `float()`, `str()`
-    
+```python
+x = int(input()), float(), str()
+```
 - **Output**:  
-    `print("Hello", x)`
-    
+```python
+print("Hello", x)
+```
 - **Formatted strings**:  
-    `f"Name is {name}"`
-    
+```python
+print(f"Name is {name})"
+```
 
 ---
 
@@ -101,11 +103,14 @@ x = 10
 
 ## 📌 5. **Conditionals**
 
-python
-
-CopyEdit
-
-`if condition:     # block elif condition:     # block else:     # block`
+```python
+if condition:     
+	# block 
+elif condition:     
+	# block 
+else:     
+	# block
+```
 
 ---
 
@@ -113,27 +118,25 @@ CopyEdit
 
 ### **while loop**
 
-python
-
-CopyEdit
-
-`i = 0 while i < 5:     print(i)     i += 1`
+```python
+i = 0 
+while i < 5:     
+	print(i)     
+	i += 1
+```
 
 ### **for loop**
 
-python
-
-CopyEdit
-
-`for i in range(5):     print(i)`
+```python
+for i in range(5):     
+	print(i)
+```
 
 ### **range(start, stop, step)**
 
-python
-
-CopyEdit
-
-`range(1, 10, 2)  # 1, 3, 5, 7, 9`
+```python
+range(1, 10, 2)  # 1, 3, 5, 7, 9
+```
 
 ### **Loop controls**
 
@@ -149,27 +152,23 @@ CopyEdit
 
 ### **Define function**
 
-python
-
-CopyEdit
-
-`def greet(name):     return "Hello " + name`
+```python
+def greet(name):     
+	return "Hello " + name
+```
 
 ### **Call function**
 
-python
-
-CopyEdit
-
-`greet("Zyn")`
+```python
+greet("Zyn")
+```
 
 ### **Default arguments**
 
-python
-
-CopyEdit
-
-`def add(a, b=5): return a + b`
+```python
+def add(a, b=5): 
+	return a + b
+```
 
 ---
 
@@ -177,11 +176,9 @@ CopyEdit
 
 ### **Common String Operations**
 
-python
-
-CopyEdit
-
-`s = "  Hello World!  "`
+```python
+s = "  Hello World!  "
+```
 
 |Method|Description|
 |---|---|
@@ -205,11 +202,9 @@ CopyEdit
 
 ## 📌 9. **Math Functions** (import math)
 
-python
-
-CopyEdit
-
-`import math`
+```python
+import math
+```
 
 |Function|Description|
 |---|---|
@@ -230,11 +225,9 @@ CopyEdit
 
 ## 📌 10. **Lists**
 
-python
-
-CopyEdit
-
-`fruits = ["apple", "banana", "cherry"]`
+```python
+fruits = ["apple", "banana", "cherry"]
+```
 
 |Operation|Usage|
 |---|---|
@@ -253,28 +246,21 @@ CopyEdit
 
 ## 📌 11. **Tuples**
 
-python
-
-CopyEdit
-
-`t = (1, 2, 3)`
+```python
+t = (1, 2, 3)
+```
 
 - Immutable
-    
 - Access like lists: `t[0]`
-    
 - Can unpack: `a, b, c = t`
-    
 
 ---
 
 ## 📌 12. **Dictionaries**
 
-python
-
-CopyEdit
-
-`d = {"name": "Zyn", "age": 21}`
+```python
+d = {"name": "Zyn", "age": 21}
+```
 
 |Operation|Usage|
 |---|---|
@@ -290,11 +276,9 @@ CopyEdit
 
 ## 📌 13. **Sets**
 
-python
-
-CopyEdit
-
-`s = {1, 2, 3}`
+```python
+s = {1, 2, 3}
+```
 
 |Operation|Usage|
 |---|---|
@@ -323,21 +307,25 @@ CopyEdit
 
 ## 📌 15. **Exception Handling**
 
-python
-
-CopyEdit
-
-`try:     x = 10 / 0 except ZeroDivisionError:     print("Cannot divide by zero") finally:     print("Always runs")`
+```python
+try:     
+	x = 10 / 0 
+except ZeroDivisionError:     
+	print("Cannot divide by zero") 
+finally:     
+	print("Always runs")
+```
 
 ---
 
 ## 📌 16. **Modules**
 
-python
-
-CopyEdit
-
-`import math import random  from math import pi, sqrt`
+```python
+import math 
+import random  
+from math 
+import pi, sqrt
+```
 
 ---
 
