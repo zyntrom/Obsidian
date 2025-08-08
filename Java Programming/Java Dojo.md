@@ -198,3 +198,7 @@
 - Insertion in an index of doubly linked list:
 
 ![[Pasted image 20250808110033.png]]
+
+- Linked list sorting :
+
+![[Pasted image 20250808122646.png]]
