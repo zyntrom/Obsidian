@@ -21,3 +21,7 @@ Print N numbers in reverse order:
 - To find the vowels in a string:
 
 ![[Pasted image 20250630100733.png]]
+
+- Binary search:
+
+![[Pasted image 20250812093715.png]]
