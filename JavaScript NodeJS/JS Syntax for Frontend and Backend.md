@@ -169,19 +169,27 @@ function sum(...nums) { return nums.reduce((a,b) => a+b, 0); }
 
 ### 7.1 Create
 
-`const person = { name: "John", age: 30 };`
+```js
+const person = { name: "John", age: 30 };
+```
 
 ### 7.2 Access
 
-`console.log(person.name); console.log(person["age"]);`
+```js
+console.log(person.name); console.log(person["age"]);
+```
 
 ### 7.3 Destructuring
 
-`const {name, age} = person;`
+```js
+const {name, age} = person;
+```
 
 ### 7.4 Spread Operator
 
-`const newObj = { ...person, city: "NY" };`
+```js
+const newObj = { ...person, city: "NY" };
+```
 
 ---
 
@@ -189,18 +197,16 @@ function sum(...nums) { return nums.reduce((a,b) => a+b, 0); }
 
 ### 8.1 Create
 
-`let arr = [1,2,3];`
+```js
+let arr = [1,2,3];
+```
 
 ### 8.2 Methods
 
 - `push()`, `pop()`, `shift()`, `unshift()`
-    
 - `map()`, `filter()`, `reduce()`
-    
 - `forEach()`, `find()`, `some()`, `every()`
-    
 - `includes()`, `indexOf()`, `concat()`, `slice()`, `splice()`
-    
 
 ---
 
@@ -208,26 +214,20 @@ function sum(...nums) { return nums.reduce((a,b) => a+b, 0); }
 
 ### 9.1 Template Literals
 
-``let name = "John"; console.log(`Hello, ${name}!`);``
+```js
+let name = "John"; console.log(`Hello, ${name}!`);
+```
 
 ### 9.2 Common Methods
 
 - `length`
-    
 - `toUpperCase()`, `toLowerCase()`
-    
 - `trim()`
-    
 - `slice(start,end)`
-    
 - `substring(start,end)`
-    
 - `split()`
-    
 - `replace()`
-    
 - `includes()`
-    
 
 ---
 
@@ -237,19 +237,41 @@ function sum(...nums) { return nums.reduce((a,b) => a+b, 0); }
 
 Function inside function remembers outer scope.
 
-`function outer() {   let count = 0;   return function inner() { count++; return count; }; } const counter = outer();`
+```js
+function outer() {   
+	let count = 0;   
+	return function inner() { 
+		count++; 
+		return count; 
+	}; 
+} 
+const counter = outer();
+```
 
 ### 10.2 Callbacks
 
-`function greet(cb) { cb("Hello"); } greet(msg => console.log(msg));`
+```js
+function greet(cb) { cb("Hello"); } 
+greet(msg => console.log(msg));
+```
 
 ### 10.3 Promises
 
-`let promise = new Promise((resolve,reject)=>{   resolve("Success"); }); promise.then(res=>console.log(res));`
+```js
+let promise = new Promise((resolve,reject)=>{   
+	resolve("Success"); }); 
+promise.then(res=>console.log(res));
+```
 
 ### 10.4 Async/Await
 
-`async function fetchData() {   let res = await fetch("url");   let data = await res.json(); }`
+```js
+async function fetchData() {   
+	let res = await 
+	fetch("url");   
+	let data = await res.json(); 
+}
+```
 
 ---
 
@@ -257,28 +279,38 @@ Function inside function remembers outer scope.
 
 ### 11.1 Selectors
 
-`document.getElementById("id"); document.querySelector(".class"); document.querySelectorAll("p");`
+```js
+document.getElementById("id"); 
+document.querySelector(".class"); 
+document.querySelectorAll("p");
+```
 
 ### 11.2 Manipulation
 
-`element.textContent = "New Text"; element.style.color = "red"; element.setAttribute("href", "#");`
+```js
+element.textContent = "New Text"; 
+element.style.color = "red";
+element.setAttribute("href", "#");
+```
 
 ### 11.3 Events
 
-`button.addEventListener("click", () => alert("Clicked"));`
+```js
+button.addEventListener("click", () => alert("Clicked"));
+```
 
 ---
 
 ## 12. ES6+ Features
 
 - **Destructuring**
-    
 - **Spread & Rest**
-    
 - **Modules**
-    
 
-`// export.js export const pi = 3.14; // import.js import { pi } from "./export.js";`
+```js
+// 
+export.js export const pi = 3.14; // import.js import { pi } from "./export.js";
+```
 
 - **Classes**
     
