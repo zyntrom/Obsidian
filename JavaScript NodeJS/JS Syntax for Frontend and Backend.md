@@ -308,14 +308,24 @@ button.addEventListener("click", () => alert("Clicked"));
 - **Modules**
 
 ```js
-// 
-export.js export const pi = 3.14; // import.js import { pi } from "./export.js";
+//export.js 
+export const pi = 3.14; 
+// import.js 
+import { pi } from "./export.js";
 ```
 
 - **Classes**
-    
 
-`class Person {   constructor(name) { this.name = name; }   greet() { console.log("Hi " + this.name); } }`
+```js
+class Person {   
+	constructor(name) { 
+		this.name = name; 
+	}   
+	greet() { 
+		console.log("Hi " + this.name); 
+	}
+}
+```
 
 ---
 
@@ -323,15 +333,22 @@ export.js export const pi = 3.14; // import.js import { pi } from "./export.js";
 
 ### 13.1 Modules
 
-`const fs = require("fs");`
+```js
+const fs = require("fs");
+```
 
 ### 13.2 File System
 
-`fs.readFile("file.txt", "utf-8", (err, data)=>{});`
+```js
+fs.readFile("file.txt", "utf-8", (err, data)=>{});
+```
 
 ### 13.3 HTTP Server
 
-`const http = require("http"); http.createServer((req,res)=> {   res.end("Hello Server"); }).listen(5000);`
+```js
+const http = require("http"); 
+http.createServer((req,res)=> {   res.end("Hello Server"); }).listen(5000);
+```
 
 ### 13.4 npm & Packages
 
