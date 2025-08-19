@@ -347,18 +347,26 @@ fs.readFile("file.txt", "utf-8", (err, data)=>{});
 
 ```js
 const http = require("http"); 
-http.createServer((req,res)=> {   res.end("Hello Server"); }).listen(5000);
+http.createServer((req,res)=> {   
+	res.end("Hello Server"); 
+}).listen(5000);
 ```
 
 ### 13.4 npm & Packages
 
 - Install: `npm install express`
-    
 - Use in code.
-    
 
 ---
 
 ## 14. Error Handling
 
-`try {   throw new Error("Something went wrong"); } catch(err) {   console.error(err.message); } finally {   console.log("Cleanup"); }`
+```js
+try {   
+	throw new Error("Something went wrong"); 
+} catch(err) {   
+	console.error(err.message); 
+} finally {   
+	console.log("Cleanup"); 
+}
+```
