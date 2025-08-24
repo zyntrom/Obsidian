@@ -27,16 +27,21 @@ The program should search for a target element in a sorted array and return the 
 
 **Input**
 
-`Array: 11 14 26 28 33 49 Target: 28`
+```
+Array: 11 14 26 28 33 49 Target: 28
+```
 
 **Steps**
 
 - `low = 0, high = 5 → mid = 2 → arr[2] = 26` (target > 26 → search right half).
 - `low = 3, high = 5 → mid = 4 → arr[4] = 33` (target < 33 → search left half).
 - `low = 3, high = 3 → mid = 3 → arr[3] = 28` (FOUND at index 3).
+
 **Output**
 
-`3`
+```
+3
+```
 
 ---
 
@@ -44,32 +49,117 @@ The program should search for a target element in a sorted array and return the 
 
 ### 🔹 C++ Code
 
-`#include <iostream> using namespace std;  int binarySearch(int arr[], int n, int target) {     int low = 0, high = n - 1;      while (low <= high) {         int mid = (low + high) / 2;          if (arr[mid] == target) {             return mid; // Found target         } else if (arr[mid] < target) {             low = mid + 1; // Search right half         } else {             high = mid - 1; // Search left half         }     }     return -1; // Not found }  int main() {     int n;     cin >> n;     int arr[n];      // Input array     for (int i = 0; i < n; i++) {         cin >> arr[i];     }      int target;     cin >> target;      int result = binarySearch(arr, n, target);     cout << result << endl;      return 0; }`
+```c++
+#include <iostream>
+using namespace std;
+
+int binarySearch(int arr[], int n, int target) {
+    int low = 0, high = n - 1;
+    while (low <= high) {
+        int mid = (low + high) / 2;
+        if (arr[mid] == target) {
+            return mid; // Found target
+        } else if (arr[mid] < target) {
+            low = mid + 1; // Search right half
+        } else {
+            high = mid - 1; // Search left half
+        }
+    }
+    return -1; // Not found
+}
+
+int main() {
+    int n;
+    cin >> n;
+    int arr[n];
+    // Input array
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+    int target;
+    cin >> target;
+    int result = binarySearch(arr, n, target);
+    cout << result << endl;
+    return 0;
+}
+
+```
 
 ---
 
 ### 🔹 Python Code
 
-`def binary_search(arr, target):     low = 0     high = len(arr) - 1      while low <= high:         mid = (low + high) // 2  # middle index          if arr[mid] == target:             return mid  # found         elif arr[mid] < target:             low = mid + 1  # move right         else:             high = mid - 1  # move left      return -1  # not found  # Input n = int(input()) arr = list(map(int, input().split())) target = int(input())  result = binary_search(arr, target) print(result)`
+```python
+def binary_search(arr, target):
+    low = 0
+    high = len(arr) - 1
+    while low <= high:
+        mid = (low + high) // 2  # middle index
+        if arr[mid] == target:
+            return mid  # found
+        elif arr[mid] < target:
+            low = mid + 1  # move right
+        else:
+            high = mid - 1  # move left
+    return -1  # not found
+
+# Input
+n = int(input())
+arr = list(map(int, input().split()))
+target = int(input())
+
+result = binary_search(arr, target)
+print(result)
+
+```
 
 ---
 
 ### 🔹 Java Code
 
-`import java.util.Scanner;  public class BinarySearch {     public static int binarySearch(int[] arr, int target) {         int low = 0;         int high = arr.length - 1;          while (low <= high) {             int mid = (low + high) / 2;              if (arr[mid] == target) {                 return mid; // found             } else if (arr[mid] < target) {                 low = mid + 1; // search right             } else {                 high = mid - 1; // search left             }         }         return -1; // not found     }      public static void main(String[] args) {         Scanner sc = new Scanner(System.in);          int n = sc.nextInt();         int[] arr = new int[n];          // Input array         for (int i = 0; i < n; i++) {             arr[i] = sc.nextInt();         }          int target = sc.nextInt();          int result = binarySearch(arr, target);         System.out.println(result);          sc.close();     } }`
+```java
+import java.util.Scanner;
+
+public class BinarySearch {
+    public static int binarySearch(int[] arr, int target) {
+        int low = 0;
+        int high = arr.length - 1;
+        while (low <= high) {
+            int mid = (low + high) / 2;
+            if (arr[mid] == target) {
+                return mid; // found
+            } else if (arr[mid] < target) {
+                low = mid + 1; // search right
+            } else {
+                high = mid - 1; // search left
+            }
+        }
+        return -1; // not found
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        // Input array
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        int target = sc.nextInt();
+        int result = binarySearch(arr, target);
+        System.out.println(result);
+        sc.close();
+    }
+}
+
+```
 
 ---
 
 ## 🎯 Key Points
 
 - Binary Search only works on **sorted arrays**.
-    
 - Much faster than Linear Search.
-    
 - **Time Complexity:**
-    
     - Worst case: **O(log n)**
-        
     - Best case: **O(1)** (if found at first mid).
-        
 - Useful when you have **large datasets** and need frequent searches.
