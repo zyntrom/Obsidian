@@ -1,98 +1,102 @@
 # Matrix Operations – Notes
 
-## 1. Matrix Transpose
+## 1. Matrix Addition
 
-- Definition: The transpose of a matrix **A** is another matrix **AT** obtained by flipping rows and columns.
-- Formula:  
-    AT[j][i] = A[i][j]
+- **Definition**: Add corresponding elements of two matrices of the same size.
+- **Formula**:  
+    C[i][j] = A[i][j] + B[i][j]
 
 ### Example:
 
-If  
-A =  
-[ 1 2 3 ]  
-[ 4 5 6 ]
+A = [ [1, 2], [3, 4] ]  
+B = [ [5, 6], [7, 8] ]  
+C = [ [6, 8], [10, 12] ]
 
-Then  
-AT =  
-[ 1 4 ]  
-[ 2 5 ]  
-[ 3 6 ]
+### Python Code
 
-### Code Examples
-
-**C**
-
-```c
-for (i = 0; i < rows; i++) {     
-	for (j = 0; j < cols; j++) {         
-		AT[j][i] = A[i][j];     
-	} 
-}
+```python
+def matrix_addition(A, B):     
+	rows, cols = len(A), len(A[0])     
+	C = [[0]*cols for _ in range(rows)]     
+	for i in range(rows):         
+		for j in range(cols):             
+			C[i][j] = A[i][j] + B[i][j]     
+	return C
 ```
 
-**C++**
+### C++ Code
 
 ```c++
 for (int i = 0; i < rows; i++) {     
 	for (int j = 0; j < cols; j++) {         
-		AT[j][i] = A[i][j];     
+		C[i][j] = A[i][j] + B[i][j];     
 	} 
 }
-```
-
-**Java**
-
-```java
-for (int i = 0; i < rows; i++) {     
-	for (int j = 0; j < cols; j++) {         
-		AT[j][i] = A[i][j];     
-	} 
-}
-```
-
-**Python**
-
-```python
-for i in range(rows):     
-	for j in range(cols):         
-		AT[j][i] = A[i][j]
 ```
 
 ---
 
-## 2. Scalar Multiplication of a Matrix
+## 2. Matrix Subtraction
 
-- Definition: Multiplying every element of a matrix **A** by a scalar value **s** produces a new matrix **C**.
-- Formula:  
-    C[i][j] = s * A[i][j]
+- **Definition**: Subtract corresponding elements of two matrices of the same size.
+- **Formula**:  
+    C[i][j] = A[i][j] - B[i][j]
 
 ### Example:
 
-If  
-s = 3  
-A =  
-[ 1 2 ]  
-[ 3 4 ]
+A = [ [9, 7], [6, 4] ]  
+B = [ [5, 6], [2, 3] ]  
+C = [ [4, 1], [4, 1] ]
 
-Then  
-C =  
-[ 3 6 ]  
-[ 9 12 ]
+### Python Code
 
-### Code Examples
+```python
+def matrix_subtraction(A, B):     
+	rows, cols = len(A), len(A[0])     
+	C = [[0]*cols for _ in range(rows)]     
+	for i in range(rows):         
+		for j in range(cols):             
+			C[i][j] = A[i][j] - B[i][j]     
+return C
+```
 
-**C**
+### C++ Code
 
-```c
-for (i = 0; i < rows; i++) {     
-	for (j = 0; j < cols; j++) {         
-		C[i][j] = s * A[i][j];     
+```c++
+for (int i = 0; i < rows; i++) {     
+	for (int j = 0; j < cols; j++) {         
+		C[i][j] = A[i][j] - B[i][j];     
 	} 
 }
 ```
 
-**C++**
+---
+
+## 3. Scalar Multiplication
+
+- **Definition**: Multiply each element of a matrix by a scalar.
+- **Formula**:  
+    C[i][j] = s * A[i][j]
+
+### Example:
+
+s = 3  
+A = [ [1, 2], [3, 4] ]  
+C = [ [3, 6], [9, 12] ]
+
+### Python Code
+
+```python
+def scalar_multiplication(s, A):     
+	rows, cols = len(A), len(A[0])     
+		C = [[0]*cols for _ in range(rows)]     
+			for i in range(rows):         
+				for j in range(cols):             
+					C[i][j] = s * A[i][j]     
+return C
+```
+
+### C++ Code
 
 ```c++
 for (int i = 0; i < rows; i++) {     
@@ -102,20 +106,57 @@ for (int i = 0; i < rows; i++) {
 }
 ```
 
-**Java**
+---
 
-```java
-for (int i = 0; i < rows; i++) {     
-	for (int j = 0; j < cols; j++) {         
-		C[i][j] = s * A[i][j];     
-	} 
-}
-```
+## 4. Matrix Transpose
 
-**Python**
+- **Definition**: Flip a matrix over its diagonal → rows become columns.
+- **Formula**:  
+    AT[j][i] = A[i][j]
+
+### Example:
+
+A = [ [1, 2, 3], [4, 5, 6] ]  
+AT = [ [1, 4], [2, 5], [3, 6] ]
+
+### Python Code
 
 ```python
-for i in range(rows):     
-	for j in range(cols):         
-		C[i][j] = s * A[i][j]
+def matrix_transpose(A):     
+	rows, cols = len(A), len(A[0])     
+	AT = [[0]*rows for _ in range(cols)]     
+	for i in range(rows):         for j in range(cols):             AT[j][i] = A[i][j]     return AT
 ```
+
+### C++ Code
+
+`for (int i = 0; i < rows; i++) {     for (int j = 0; j < cols; j++) {         AT[j][i] = A[i][j];     } }`
+
+---
+
+## 5. Diagonal Sum (Square Matrix)
+
+- **Definition**: Sum of elements on primary and secondary diagonals.
+    
+- **Formulas**:  
+    Primary diagonal → A[i][i]  
+    Secondary diagonal → A[i][n - i - 1]
+    
+
+### Example:
+
+A =  
+[ [1, 2, 3],  
+[4, 5, 6],  
+[7, 8, 9] ]
+
+Primary = 1 + 5 + 9 = 15  
+Secondary = 3 + 5 + 7 = 15
+
+### Python Code
+
+`def diagonal_sum(A):     n = len(A)     primary = sum(A[i][i] for i in range(n))     secondary = sum(A[i][n-i-1] for i in range(n))     return primary, secondary`
+
+### C++ Code
+
+`int primary = 0, secondary = 0; for (int i = 0; i < n; i++) {     primary += A[i][i];     secondary += A[i][n - i - 1]; }`
