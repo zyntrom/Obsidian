@@ -125,29 +125,36 @@ AT = [ [1, 4], [2, 5], [3, 6] ]
 def matrix_transpose(A):     
 	rows, cols = len(A), len(A[0])     
 	AT = [[0]*rows for _ in range(cols)]     
-	for i in range(rows):         for j in range(cols):             AT[j][i] = A[i][j]     return AT
+	for i in range(rows):         
+		for j in range(cols):             
+			AT[j][i] = A[i][j]     
+return AT
 ```
 
 ### C++ Code
 
-`for (int i = 0; i < rows; i++) {     for (int j = 0; j < cols; j++) {         AT[j][i] = A[i][j];     } }`
+```c++
+for (int i = 0; i < rows; i++) {     
+	for (int j = 0; j < cols; j++) {         
+		AT[j][i] = A[i][j];     
+	} 
+}
+```
 
 ---
 
 ## 5. Diagonal Sum (Square Matrix)
 
 - **Definition**: Sum of elements on primary and secondary diagonals.
-    
 - **Formulas**:  
     Primary diagonal → A[i][i]  
     Secondary diagonal → A[i][n - i - 1]
-    
 
 ### Example:
 
 A =  
 [ [1, 2, 3],  
-[4, 5, 6],  
+[ 4, 5, 6 ],  
 [7, 8, 9] ]
 
 Primary = 1 + 5 + 9 = 15  
@@ -155,8 +162,23 @@ Secondary = 3 + 5 + 7 = 15
 
 ### Python Code
 
-`def diagonal_sum(A):     n = len(A)     primary = sum(A[i][i] for i in range(n))     secondary = sum(A[i][n-i-1] for i in range(n))     return primary, secondary`
+```python
+def diagonal_sum(A):     
+	n = len(A)     
+	primary = sum(A[i][i] 
+	for i in range(n)):     
+		secondary = sum(A[i][n-i-1] 
+		for i in range(n))     
+return primary, secondary
+```
 
 ### C++ Code
 
-`int primary = 0, secondary = 0; for (int i = 0; i < n; i++) {     primary += A[i][i];     secondary += A[i][n - i - 1]; }`
+```c++
+int primary = 0, secondary = 0; 
+for (int i = 0; i < n; i++) {     
+	primary += A[i][i];     
+	secondary += A[i][n - i - 1]; 
+}
+
+```
