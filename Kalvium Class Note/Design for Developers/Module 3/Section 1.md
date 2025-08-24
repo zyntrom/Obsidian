@@ -2,6 +2,8 @@
 
 ## 1. What is Information Architecture?
 
+![[Pasted image 20250824215847.png]]
+
 - **Definition**:  
     Information Architecture (IA) is the process of organizing, structuring, and labeling content so that it is **easy to find, navigate, and understand**.
 - **Analogy**: Like an **architect of a digital kingdom**—designing clear pathways for users.
@@ -15,6 +17,8 @@
     - What value does the content provide?
     - How do users use the information?
 
+![[Pasted image 20250824220024.png]]
+
 ---
 
 ## 2. Why is IA Important?
@@ -27,6 +31,8 @@
     - Better lead generation.
     - Improved customer service.
     - Higher user satisfaction.
+
+[https://youtu.be/UmFpvz2WiTI]()
 
 ---
 
@@ -45,6 +51,8 @@
 - Well-structured websites/apps with **clear categories, navigation, and labels**.
 - Example video (9:38–16:10): shows structured and user-friendly IA.
 
+[https://youtu.be/OJLfjgVlwDo]()
+
 ---
 
 ## 4. How to Create an Information Architecture?
@@ -57,6 +65,8 @@
     5. **Design navigation** → menus, links, search.
     6. **Test with users** → ensure it’s easy to use.
 - **Tip**: Use **mind maps** or **visual diagrams** (shapes/colors) to represent IA without building a full prototype.
+
+[https://youtu.be/akWDacn5lIA]()
 
 ---
 
