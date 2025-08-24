@@ -39,6 +39,8 @@ aspectRatio: "56.25"
 
 ## 3. Types of Wireframes
 
+![[Pasted image 20250824222017.png]]
+
 ### 1. **Low-Fidelity Wireframes**
 
 - Rough sketches (hand-drawn or simple digital).
@@ -49,6 +51,8 @@ aspectRatio: "56.25"
     - No colors, images, or typography.
     - Quick to create & modify.
     - Good for brainstorming but limited for usability testing.
+
+![[Pasted image 20250824222028.png]]
 
 ---
 
@@ -63,6 +67,8 @@ aspectRatio: "56.25"
     - Useful for **stakeholder reviews**.
     - Can be tested for usability (basic).
 
+![[Pasted image 20250824222038.png]]
+
 ---
 
 ### 3. **High-Fidelity Wireframes**
@@ -74,6 +80,8 @@ aspectRatio: "56.25"
     - Includes **real content, images, typography, and colors**.
     - May include **interactive elements** (buttons, dropdowns, hover effects).
     - Ideal for **usability testing**, stakeholder approval, and developer handoff.
+
+![[Pasted image 20250824222053.png]]
 
 ---
 
@@ -92,6 +100,15 @@ aspectRatio: "56.25"
     3. Add details & interactivity (high-fidelity).
     4. Test usability and gather feedback.
     5. Use tools like **Figma, Justinmind, Visily, etc.**
+
+```embed
+title: "Figma UX tutorial for beginners - Wireframe"
+image: "https://i.ytimg.com/vi/D4NyQ5iOMF0/maxresdefault.jpg"
+description: "📄 UX/Product Design Career Guide (Free): https://alienacai.gumroad.com/l/uxroadmap📖 My UX Design Career Accelerator: https://fasttrackux.com☕️ My Email Lis..."
+url: "https://youtu.be/D4NyQ5iOMF0"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ---
 
