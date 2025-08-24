@@ -107,6 +107,25 @@ int main() {
     - Calculating row sums / column sums
     - Finding border elements
 
+```embed
+title: "iGCSE Computer Science - Python - 2D Arrays"
+image: "https://i.ytimg.com/vi/2tPOjPJ6D1E/maxresdefault.jpg"
+description: "This tutorial goes through some iGCSE-style problems pertaining to 2D arrays."
+url: "https://youtu.be/2tPOjPJ6D1E"
+favicon: ""
+aspectRatio: "56.25"
+```
+
+```embed
+title: "2D Arrays in C++ | 2D array addition & Subtraction"
+image: "https://i.ytimg.com/vi/OJC84pYXB_U/maxresdefault.jpg"
+description: "Support Simple Snippets by Donations -Google Pay UPI ID - tanmaysakpal11@okiciciPayPal - paypal.me/tanmaysakpal11--------------------------------------------..."
+url: "https://youtu.be/OJC84pYXB_U"
+favicon: ""
+aspectRatio: "56.25"
+```
+
+
 ---
 
 ## 🔹 Real-Life Applications
@@ -136,11 +155,7 @@ int main() {
 ## 🔹 Summary (Quick Revision)
 
 - **2D Array = Array of arrays** (rows × columns).
-    
 - **Access element** → `arr[row][col]`.
-    
 - **Nested loops** are key for traversal.
-    
 - **Applications**: games, images, seating, spreadsheets.
-    
 - **Exam tip**: Always specify **row index first, then column index**.
