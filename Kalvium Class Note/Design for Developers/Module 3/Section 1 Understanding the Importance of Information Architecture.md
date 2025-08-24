@@ -86,3 +86,5 @@
 - [What is IA? | Figma]
 - [Guide for IA | Careerfoundry]
 - NNGroup article – Difference between IA & Navigation
+
+![[Pasted image 20250824220329.png]]
