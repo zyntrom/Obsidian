@@ -65,23 +65,59 @@ C[0][0] = (1_4) + (2_7) + (3*10) = 4 + 14 + 30 = 48
 # Matrix Multiplication in Python  
 A = [     
 	[1, 2, 3],     
-	[4, 5, 6],     [7, 8, 9] ]  B = [     [4, 5, 6],     [7, 8, 9],     [10, 11, 12] ]  rows, cols = len(A), len(B[0]) C = [[0 for _ in range(cols)] for _ in range(rows)]  for i in range(rows):     for j in range(cols):         for k in range(len(B)):             C[i][j] += A[i][k] * B[k][j]  print("Resultant Matrix C:") for row in C:     print(row)
+	[4, 5, 6],     
+	[7, 8, 9] 
+]  
+B = [     
+	[4, 5, 6],     
+	[7, 8, 9],     
+	[10, 11, 12] 
+]  
+rows, cols = len(A), len(B[0]) 
+C = [[0 for _ in range(cols)] for _ in range(rows)]  
+for i in range(rows):     
+	for j in range(cols):         
+		for k in range(len(B)):             
+			C[i][j] += A[i][k] * B[k][j]  
+			print("Resultant Matrix C:") 
+for row in C:     
+	print(row)
 ```
 
 ---
 
 ## 6. Implementation in C++
 
-`#include <iostream> using namespace std;  int main() {     int A[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};     int B[3][3] = {{4, 5, 6}, {7, 8, 9}, {10, 11, 12}};     int C[3][3] = {0};      for (int i = 0; i < 3; i++) {         for (int j = 0; j < 3; j++) {             for (int k = 0; k < 3; k++) {                 C[i][j] += A[i][k] * B[k][j];             }         }     }      cout << "Resultant Matrix C:" << endl;     for (int i = 0; i < 3; i++) {         for (int j = 0; j < 3; j++) {             cout << C[i][j] << " ";         }         cout << endl;     }      return 0; }`
+```c++
+#include <iostream> 
+using namespace std;  
+int main() {     
+	int A[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};     
+	int B[3][3] = {{4, 5, 6}, {7, 8, 9}, {10, 11, 12}};     
+	int C[3][3] = {0};      
+	for (int i = 0; i < 3; i++) {         
+		for (int j = 0; j < 3; j++) {             
+			for (int k = 0; k < 3; k++) {                 
+				C[i][j] += A[i][k] * B[k][j];             
+			}         
+		}     
+	}      
+	cout << "Resultant Matrix C:" << endl;     
+	for (int i = 0; i < 3; i++) {         
+		for (int j = 0; j < 3; j++) {             
+			cout << C[i][j] << " ";         
+		}         
+		cout << endl;     
+	}      
+	return 0; 
+}
+```
 
 ---
 
 ## 7. Applications of Matrix Multiplication
 
 - 🎨 Computer graphics and image processing
-    
 - 📐 Solving systems of linear equations
-    
 - 🤖 Machine learning and neural networks
-    
 - 🔐 Cryptography and secure communications
