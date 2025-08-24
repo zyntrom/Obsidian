@@ -75,7 +75,14 @@ int main() {
 
 ---
 
-
+```embed
+title: "L3. Check if a Number if Prime or not | Maths Playlist"
+image: "https://i.ytimg.com/vi/MJcckSfoYdI/maxresdefault.jpg"
+description: "Check out TUF+:https://takeuforward.org/plus?source=youtubeFind DSA, LLD, OOPs, Core Subjects, 1000+ Premium Questions company wise, Aptitude, SQL, AI doubt ..."
+url: "https://youtu.be/MJcckSfoYdI"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ✅ This matches exactly what your assignment requires:
 
