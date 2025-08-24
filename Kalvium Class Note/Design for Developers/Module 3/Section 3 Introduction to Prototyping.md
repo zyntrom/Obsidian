@@ -50,6 +50,8 @@
     - No real interactivity.
     - Limited to simple UI ideas.
 
+![[Pasted image 20250824222815.png]]
+
 ---
 
 ### 2. **Low-Fidelity Prototypes**
@@ -60,6 +62,8 @@
     - Focus on UX & flow, not visuals.
 - **Disadvantages**:
     - Easy to misinterpret by clients/stakeholders.
+
+![[Pasted image 20250824222824.png]]
 
 ---
 
@@ -74,6 +78,8 @@
     - Time-consuming and costly to create.
     - Resistance to change (too polished).
 
+![[Pasted image 20250824222838.png]]
+
 ---
 
 ### 4. **Interactive Prototypes**
@@ -84,6 +90,8 @@
 - **Disadvantages**:
     - Time-consuming for complex projects.
 
+![[Pasted image 20250824222847.png]]
+
 ---
 
 ### 5. **Mobile App Prototypes**
@@ -93,6 +101,8 @@
     - User-centered, detects usability issues early.
 - **Disadvantages**:
     - Time-consuming and costly (requires tools + multiple devices).
+
+![[Pasted image 20250824222858.png]]
 
 ---
 
@@ -105,6 +115,24 @@
     4. Test with users.
     5. Iterate based on feedback.
 - Tools: **Figma, Adobe XD, InVision, Marvel, Axure**.
+
+```embed
+title: "Figma UX tutorial for beginners - Prototype"
+image: "https://i.ytimg.com/vi/v1UKB-0EUhQ/maxresdefault.jpg"
+description: "📄 2025 UX Career Guide (Free): https://alienacai.gumroad.com/l/uxroadmap📖 My UX Design Career Accelerator: https://fasttrackux.com☕️ My Email List (Free): ..."
+url: "https://youtu.be/v1UKB-0EUhQ"
+favicon: ""
+aspectRatio: "56.25"
+```
+
+```embed
+title: "Figma Tutorial: Prototyping (older version)"
+image: "https://i.ytimg.com/vi/-sAAa-CCOcg/maxresdefault.jpg"
+description: "Figma is free to use. Sign up here: http://bit.ly/figma-prototypingIn this video we'll learn the basics of prototyping your designs in Figma. If you have que..."
+url: "https://youtu.be/-sAAa-CCOcg"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ---
 
