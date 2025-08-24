@@ -7,11 +7,15 @@
 
 Input:
 
-`1 2 3 4 5 6 7 8 9`
+```
+1 2 3 4 5 6 7 8 9
+```
 
 Output (after 90° clockwise rotation):
 
-`7 4 1 8 5 2 9 6 3`
+```
+7 4 1 8 5 2 9 6 3
+```
 
 ---
 
@@ -91,7 +95,7 @@ def rotate_matrix(matrix):
 #include <iostream> 
 #include <vector> 
 using namespace std;  
-void rotateMatrix(vector<vector<int>>& matrix) {     
+void rotateMatrix(matrix) {     
 	int n = matrix.size();          
 	// Step 1: Transpose     
 	for (int i = 0; i < n; i++) {         
@@ -104,7 +108,23 @@ void rotateMatrix(vector<vector<int>>& matrix) {
 		reverse(matrix[i].begin(), matrix[i].end());     
 	} 
 }  
-int main() {     int n = 3;     vector<vector<int>> matrix = {         {1, 2, 3},         {4, 5, 6},         {7, 8, 9}     };          rotateMatrix(matrix);          cout << "Rotated Matrix:" << endl;     for (int i = 0; i < n; i++) {         for (int j = 0; j < n; j++) {             cout << matrix[i][j] << " ";         }         cout << endl;     }          return 0; }
+int main() {     
+	int n = 3;     
+	int matrix = {         
+		{1, 2, 3},         
+		{4, 5, 6},         
+		{7, 8, 9}     
+	};          
+	rotateMatrix(matrix);          
+	cout << "Rotated Matrix:" << endl;     
+	for (int i = 0; i < n; i++) {         
+		for (int j = 0; j < n; j++) {             
+			cout << matrix[i][j] << " ";         
+		}         
+	cout << endl;     
+	}          
+	return 0; 
+}
 ```
 
 ---
@@ -112,18 +132,13 @@ int main() {     int n = 3;     vector<vector<int>> matrix = {         {1, 2, 3}
 ## 7. Time Complexity
 
 - **Transpose**: O(n²)
-    
 - **Reverse rows**: O(n²)
-    
 - Total: **O(n²)**
-    
 
 ---
 
 ## 8. Applications
 
 - 🖼 Image rotation in graphics processing
-    
 - 🎮 Game development (rotating grids/boards)
-    
 - 🔢 Mathematical transformations in linear algebra
