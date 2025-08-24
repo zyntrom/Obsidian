@@ -131,6 +131,8 @@ aspectRatio: "56.25"
 
 ---
 
+![[Pasted image 20250824222442.png]]
+
 ## 8. Extra Resources (Bonus)
 
 - [What is Wireframing | Figma]

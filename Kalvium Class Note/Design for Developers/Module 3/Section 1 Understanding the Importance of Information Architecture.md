@@ -32,6 +32,16 @@
     - Improved customer service.
     - Higher user satisfaction.
 
+```embed
+title: "What is Information Architecture? (UX Tips and Examples)"
+image: "https://i.ytimg.com/vi/UmFpvz2WiTI/maxresdefault.jpg"
+description: "Wondering what Information Architecture is and how you can use it? Watch Andrea Eppy break it down for you using simple language and real-world examples. ► D..."
+url: "https://youtu.be/UmFpvz2WiTI"
+favicon: ""
+aspectRatio: "56.25"
+```
+
+
 ## 3. Bad & Good Examples of IA
 
 ### Bad Examples (poor IA)
@@ -47,6 +57,16 @@
 - Well-structured websites/apps with **clear categories, navigation, and labels**.
 - Example video (9:38–16:10): shows structured and user-friendly IA.
 
+```embed
+title: "What Is Information Architecture? (UX Design Guide)"
+image: "https://i.ytimg.com/vi/OJLfjgVlwDo/maxresdefault.jpg"
+description: "📲 Curious about a career in UX Design? Book a call with a program advisor: https://bit.ly/3HwYAZc Information architecture is vital when creating a good use..."
+url: "https://youtu.be/OJLfjgVlwDo"
+favicon: ""
+aspectRatio: "56.25"
+```
+
+
 ---
 
 ## 4. How to Create an Information Architecture?
@@ -60,7 +80,15 @@
     6. **Test with users** → ensure it’s easy to use.
 - **Tip**: Use **mind maps** or **visual diagrams** (shapes/colors) to represent IA without building a full prototype.
 
-[https://youtu.be/akWDacn5lIA]()
+```embed
+title: "Information Architecture guide for UX designers"
+image: "https://i.ytimg.com/vi/akWDacn5lIA/maxresdefault.jpg"
+description: "Information architecture is a discipline that focuses on organizing information within digital products. Information architecture aims to structure a content..."
+url: "https://youtu.be/akWDacn5lIA"
+favicon: ""
+aspectRatio: "56.25"
+```
+
 
 ---
 
