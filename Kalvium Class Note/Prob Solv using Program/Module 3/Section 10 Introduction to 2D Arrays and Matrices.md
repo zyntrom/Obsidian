@@ -35,11 +35,20 @@ matrix = []
 matrix = [     
 	[1, 2, 3],     
 	[4, 5, 6],     
-	[7, 8, 9] ]
+	[7, 8, 9] 
+]
 ```
 ### In C++ 💻
 
-`// Declaration int matrix[3][4]; // 3 rows, 4 columns  // Initialization int matrix[3][3] = {     {1, 2, 3},     {4, 5, 6},     {7, 8, 9} };`
+```c++
+// Declaration 
+int matrix[3][4]; // 3 rows, 4 columns  // Initialization 
+int matrix[3][3] = {     
+	{1, 2, 3},     
+	{4, 5, 6},     
+	{7, 8, 9} 
+};
+```
 
 ---
 
@@ -47,68 +56,80 @@ matrix = [
 
 ### Python Example
 
-`rows = int(input("Enter rows: ")) cols = int(input("Enter columns: "))  matrix = [] for i in range(rows):     row = []     for j in range(cols):         val = int(input(f"Enter element at {i+1},{j+1}: "))         row.append(val)     matrix.append(row)  # Print matrix for row in matrix:     print(row)`
+```python
+rows = int(input("Enter rows: ")) 
+cols = int(input("Enter columns: "))  
+matrix = []  
+for i in range(rows):    
+	row = []     
+	for j in range(cols):         
+		val = int(input(f"Enter element at {i+1},{j+1}: ")) 
+		row.append(val)     
+	matrix.append(row)  # Print matrix for row in matrix:     
+print(row)
+```
 
 ### C++ Example
 
-`#include <iostream> using namespace std;  int main() {     int rows, cols;     cin >> rows >> cols;     int matrix[100][100]; // Max size      // Input     for (int i=0; i<rows; i++) {         for (int j=0; j<cols; j++) {             cin >> matrix[i][j];         }     }      // Output     for (int i=0; i<rows; i++) {         for (int j=0; j<cols; j++) {             cout << matrix[i][j] << " ";         }         cout << endl;     } }`
+```c++
+#include <iostream>
+using namespace std;
 
+int main() {
+    int rows, cols;
+    cin >> rows >> cols;
+    int matrix[100][100]; // Max size
+    // Input
+    for (int i=0; i<rows; i++) {
+        for (int j=0; j<cols; j++) {
+            cin >> matrix[i][j];
+        }
+    }
+    // Output
+    for (int i=0; i<rows; i++) {
+        for (int j=0; j<cols; j++) {
+            cout << matrix[i][j] << " ";
+        }
+        cout << endl;
+    }
+}
+
+```
 ---
 
 ## 🔹 Processing a 2D Array
 
 - Uses **nested loops**
-    
     - Outer loop → Rows
-        
     - Inner loop → Columns
-        
 - Example:
-    
     - Printing all elements
-        
     - Calculating row sums / column sums
-        
     - Finding border elements
-        
 
 ---
 
 ## 🔹 Real-Life Applications
 
 - **Cinema hall seating** → rows & seat numbers
-    
 - **Chessboard/board games** → 8x8 grid
-    
 - **Image representation** → pixels in matrix form
-    
 - **Spreadsheets** → Excel tables
-    
 
 ---
 
 ## 🔹 Example Problem – Treasure Island Pathfinding
 
 - Represent island as a 2D array:
-    
     - `0 = Safe zone`
-        
     - `1 = Moderate danger`
-        
     - `2 = High danger`
-        
 - Find safest path from `(0,0)` → `(rows-1, cols-1)`.
-    
 - Steps:
-    
     1. Initialize grid (matrix).
-        
     2. Use **recursion / backtracking** to explore paths.
-        
     3. Calculate total risk for each path.
-        
     4. Mark safest path with `-1`.
-        
 
 ---
 
