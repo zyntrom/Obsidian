@@ -138,11 +138,10 @@ for (int i = 0; i < 5; i++) {
 ### (b) Based on Dimensions
 
 - **1D Array**: Single line of elements (e.g., marks of students).
-- **2D Array**: Rows & columns like a table (e.g., student marks in subjects).
-- ![[Pasted image 20250824223811.png]]
-- **Multi-Dimensional Array**: Higher-level (3D, etc.) → cube-like structure (e.g., Rubik’s cube, 3D modeling).
-
 ![[Pasted image 20250824223800.png]]
+- **2D Array**: Rows & columns like a table (e.g., student marks in subjects). 
+![[Pasted image 20250824223811.png]]
+- **Multi-Dimensional Array**: Higher-level (3D, etc.) → cube-like structure (e.g., Rubik’s cube, 3D modeling).
 
 ---
 
