@@ -25,7 +25,15 @@
 - **Efficient** – allows quick changes before investing in detailed visuals.
 - **Collaboration tool** – gives all team members and stakeholders a clear reference.
 
-[https://youtu.be/-4Ngcx0gFcQ]()
+```embed
+title: "A Beginner’s Guide to Wireframing"
+image: "https://i.ytimg.com/vi/-4Ngcx0gFcQ/maxresdefault.jpg"
+description: "Learn what wireframing is and how to use it in your web design projects. And why not make your life easy by using these ready-made wireframing UI kits: https..."
+url: "https://youtu.be/-4Ngcx0gFcQ"
+favicon: ""
+aspectRatio: "56.25"
+```
+
 
 ---
 
