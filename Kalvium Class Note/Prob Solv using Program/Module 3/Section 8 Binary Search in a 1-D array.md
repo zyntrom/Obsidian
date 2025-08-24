@@ -155,6 +155,15 @@ public class BinarySearch {
 
 ---
 
+```embed
+title: "Binary search in 4 minutes"
+image: "https://i.ytimg.com/vi/fDKIpRe8GW4/maxresdefault.jpg"
+description: "Binary search in 4 minutes.Code: https://github.com/msambol/dsa/blob/master/search/binary_search.pySources:1. Introduction To Algorithms, Third Edition (CLRS..."
+url: "https://youtu.be/fDKIpRe8GW4"
+favicon: ""
+aspectRatio: "56.25"
+```
+
 ## 🎯 Key Points
 
 - Binary Search only works on **sorted arrays**.
