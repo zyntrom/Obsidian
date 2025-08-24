@@ -89,10 +89,10 @@ C = [ [3, 6], [9, 12] ]
 ```python
 def scalar_multiplication(s, A):     
 	rows, cols = len(A), len(A[0])     
-		C = [[0]*cols for _ in range(rows)]     
-			for i in range(rows):         
-				for j in range(cols):             
-					C[i][j] = s * A[i][j]     
+	C = [[0]*cols for _ in range(rows)]     
+	for i in range(rows):         
+		for j in range(cols):             
+			C[i][j] = s * A[i][j]     
 return C
 ```
 
@@ -153,9 +153,7 @@ for (int i = 0; i < rows; i++) {
 ### Example:
 
 A =  
-[ [1, 2, 3],  
-[ 4, 5, 6 ],  
-[7, 8, 9] ]
+[ [1, 2,3], [4, 5, 6] , [7, 8, 9] ]
 
 Primary = 1 + 5 + 9 = 15  
 Secondary = 3 + 5 + 7 = 15
@@ -180,5 +178,4 @@ for (int i = 0; i < n; i++) {
 	primary += A[i][i];     
 	secondary += A[i][n - i - 1]; 
 }
-
 ```
