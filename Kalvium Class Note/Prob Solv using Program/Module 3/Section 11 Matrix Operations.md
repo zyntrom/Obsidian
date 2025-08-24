@@ -4,7 +4,9 @@
 
 - **Definition**: Add corresponding elements of two matrices of the same size.
 - **Formula**:  
-    C[i][j] = A[i][j] + B[i][j]
+```
+C[i][j] = A[i][j] + B[i][j]
+```
 
 ### Example:
 
@@ -40,7 +42,9 @@ for (int i = 0; i < rows; i++) {
 
 - **Definition**: Subtract corresponding elements of two matrices of the same size.
 - **Formula**:  
-    C[i][j] = A[i][j] - B[i][j]
+```
+C[i][j] = A[i][j] - B[i][j]
+```
 
 ### Example:
 
@@ -76,7 +80,9 @@ for (int i = 0; i < rows; i++) {
 
 - **Definition**: Multiply each element of a matrix by a scalar.
 - **Formula**:  
-    C[i][j] = s * A[i][j]
+```
+C[i][j] = s * A[i][j]
+```
 
 ### Example:
 
@@ -112,7 +118,9 @@ for (int i = 0; i < rows; i++) {
 
 - **Definition**: Flip a matrix over its diagonal → rows become columns.
 - **Formula**:  
-    AT[j][i] = A[i][j]
+```
+AT[j][i] = A[i][j]
+```
 
 ### Example:
 
