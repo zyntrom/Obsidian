@@ -39,7 +39,27 @@ print(count)
 
 ## ✅ Java Solution
 
-`import java.util.Scanner;  public class Main {     public static void main(String[] args) {         Scanner sc = new Scanner(System.in);         String str = sc.nextLine();         int count = 0;          for (int i = 0; i < str.length() - 1; i++) {             char ch1 = str.charAt(i);             char ch2 = str.charAt(i + 1);              if (Character.isLowerCase(ch1) && Character.isUpperCase(ch2)) {                 count++;             }         }          System.out.println(count);         sc.close();     } }`
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        int count = 0;
+        for (int i = 0; i < str.length() - 1; i++) {
+            char ch1 = str.charAt(i);
+            char ch2 = str.charAt(i + 1);
+            if (Character.isLowerCase(ch1) && Character.isUpperCase(ch2)) {
+                count++;
+            }
+        }
+        System.out.println(count);
+        sc.close();
+    }
+}
+
+```
 
 ---
 
@@ -47,10 +67,14 @@ print(count)
 
 **Input:**
 
-`heLLo`
+```
+heLLo
+```
 
 **Output:**
 
-`1`
+```
+1
+```
 
 👉 Because `"eL"` is the only lowercase–uppercase pair.
