@@ -40,13 +40,44 @@ int main() {
 
 ### ✅ Python Solution
 
-`# input string s = input().strip() # input start and length start, n = map(int, input().split())  # extract substring using slicing substring = s[start:start+n]  print(substring)`
+```python
+# input string
+s = input().strip()
+# input start and length
+start, n = map(int, input().split())
+
+# extract substring using slicing
+substring = s[start:start+n]
+
+print(substring)
+
+```
 
 ---
 
 ### ✅ Java Solution
 
-`import java.util.Scanner;  public class Main {     public static void main(String[] args) {         Scanner sc = new Scanner(System.in);                  String str = sc.next();         // input string         int start = sc.nextInt();       // starting position         int n = sc.nextInt();           // length                  // make sure substring doesn't go out of range         int end = Math.min(start + n, str.length());                  String result = "";         for (int i = start; i < end; i++) {             result += str.charAt(i);         }                  System.out.println(result);     } }`
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        String str = sc.next();         // input string
+        int start = sc.nextInt();       // starting position
+        int n = sc.nextInt();           // length
+        // make sure substring doesn't go out of range
+        int end = Math.min(start + n, str.length());
+        String result = "";
+        for (int i = start; i < end; i++) {
+            result += str.charAt(i);
+        }
+        System.out.println(result);
+    }
+}
+
+```
 
 ---
 
@@ -54,8 +85,13 @@ int main() {
 
 **Input**
 
-`abcdefgh 2 4`
+```
+abcdefgh 
+2 4
+```
 
 **Output**
 
-`cdef`
+```
+cdef
+```
