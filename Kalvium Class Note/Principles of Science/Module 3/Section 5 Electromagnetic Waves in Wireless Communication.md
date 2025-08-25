@@ -113,6 +113,15 @@ aspectRatio: "56.25"
     - Uses short-range, low-power radio waves.
     - Designed for **energy efficiency & security** in close-range device connections.
 
+```embed
+title: "How does Bluetooth Work?"
+image: "https://i.ytimg.com/vi/1I1vxu5qIUM/maxresdefault.jpg"
+description: "A ton of your devices use Bluetooth to communicate wirelessly.  But how does Bluetooth work?  In this video, we'll dive into the details of how your smartpho..."
+url: "https://youtu.be/1I1vxu5qIUM"
+favicon: ""
+aspectRatio: "56.25"
+```
+
 ---
 
 ## 8. Summary
@@ -122,3 +131,4 @@ aspectRatio: "56.25"
 - **Factors Affecting Signal**: Frequency, power, obstacles, interference.
 - **Wave Behavior**: Reflection, refraction, diffraction shape signal travel.
 - **Applications**: Wi-Fi, Bluetooth, mobile communication.
+![[Pasted image 20250826003213.png]]
