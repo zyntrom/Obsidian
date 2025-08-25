@@ -9,6 +9,16 @@
     - **Accelerating charge** → produces a self-sustaining **electromagnetic wave**.
 - **Key Point**: EM waves can travel in a **vacuum** (no medium required).
 - **Examples**: Radio signals, visible light, X-rays.
+![[Pasted image 20250826002716.png]]
+
+```embed
+title: "A Brief Guide to Electromagnetic Waves | Electromagnetism"
+image: "https://i.ytimg.com/vi/k3GQYBD5hbI/maxresdefault.jpg"
+description: "Electromagnetic waves are all around us. Electromagnetic waves are a type of energy that can travel through space. They are created by the vibration of elect..."
+url: "https://youtu.be/k3GQYBD5hbI"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ---
 
@@ -54,6 +64,15 @@
     - **X-Rays**: Medical imaging → bones, internal organs.
     - **Gamma Rays**: Nuclear reactions → cancer treatment, very high energy.
 
+```embed
+title: "A Brief Guide to Electromagnetic Waves | Electromagnetism"
+image: "https://i.ytimg.com/vi/k3GQYBD5hbI/maxresdefault.jpg"
+description: "Electromagnetic waves are all around us. Electromagnetic waves are a type of energy that can travel through space. They are created by the vibration of elect..."
+url: "https://youtu.be/k3GQYBD5hbI"
+favicon: ""
+aspectRatio: "56.25"
+```
+
 ---
 
 ## 5. Summary / Recap
@@ -62,5 +81,6 @@
 - Properties: Travel at speed of light, no medium needed, carry energy.
 - Equation: **c = f × λ** links speed, frequency, wavelength.
 - Spectrum: Radio → Microwaves → Infrared → Visible → UV → X-rays → Gamma.
+![[Pasted image 20250826002849.png]]
 
 ---
