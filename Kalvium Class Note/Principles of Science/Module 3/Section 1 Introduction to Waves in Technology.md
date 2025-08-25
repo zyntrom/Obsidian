@@ -115,3 +115,5 @@ aspectRatio: "56.25"
 **Q8.** Frequency ↑ → More cycles per second  
 **Q9.** Amplitude ↑ → Taller, stronger waves  
 **Q10.** Boundary condition effect? → Affects reflection & wave pattern
+
+![[Pasted image 20250826001723.png]]
