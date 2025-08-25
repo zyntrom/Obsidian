@@ -21,6 +21,16 @@ Being able to “read between the lines” helps avoid misunderstandings and mak
 - Angry → “You broke something.”
 - Sarcastic → “That was a joke.”
 
+```embed
+title: "Tone Matters!  How we say it is more important that the words we use"
+image: "https://i.ytimg.com/vi/m0SstuhI79A/maxresdefault.jpg"
+description: "Quick whiteboard lesson about the importance of how we say what we say, rather than the actual words we use.  This is shown through showing multiple examples..."
+url: "https://youtu.be/m0SstuhI79A"
+favicon: ""
+aspectRatio: "56.25"
+```
+
+
 ---
 
 ## 🔹 2. **Intent – What the Speaker Really Means**
