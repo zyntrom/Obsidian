@@ -35,13 +35,9 @@ News: “Recent floods in the northern region displaced thousands.”
 **Details to catch:**
 
 - Names, dates, places
-    
 - Numbers, stats, treaties
-    
 - Steps in a process
-    
 - Definitions
-    
 
 **Example:**  
 Lecture: “In **1997**, the **Kyoto Protocol** was signed to reduce emissions.”  
@@ -54,27 +50,20 @@ Lecture: “In **1997**, the **Kyoto Protocol** was signed to reduce emissions.�
 ### 🔹 Why Separate Gist & Detail?
 
 - If you chase _every word_ → you miss the main idea.
-    
 - If you only catch _gist_ → you miss accuracy.
-    
 
 🎥 Think of it like watching a film:
 
 - Storyline = **gist**
-    
 - Dialogue & facts = **detail**
-    
 
 ---
 
 ### 🔹 Using Both in Real Life
 
 - Lecture: first gist (main argument), then details (facts).
-    
 - Meeting: gist (discussion flow), details (deadlines/tasks).
-    
 - Announcement: gist (delay), details (time/location).
-    
 
 ✅ **Good listeners shift flexibly** between gist & detail.
 
@@ -91,9 +80,6 @@ This sets your _listening mode_ → gist, detail, or both.
 ## ✅ Quick Summary
 
 - **Gist** = big picture (overall meaning).
-    
 - **Detail** = accuracy (specific info).
-    
 - Skilled listeners **switch between the two** depending on context.
-    
 - Improves comprehension, learning, and professional communication.
