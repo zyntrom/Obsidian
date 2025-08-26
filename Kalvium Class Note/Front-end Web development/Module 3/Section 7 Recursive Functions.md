@@ -49,12 +49,19 @@ function countdown(n) {
 	if (n === 0) {     
 		console.log("Liftoff!");   
 	} 
-	else {     console.log(n);     countdown(n - 1);   } }  countdown(5);
+	else {     
+		console.log(n);     
+		countdown(n - 1);   
+	} 
+}  
+countdown(5);
 ```
 
 Output:
 
-`5   4   3   2   1   Liftoff!`  
+```bash
+5   4   3   2   1   Liftoff!  
+```
 
 ✔ Each call prints number, then recurses with `n - 1`.
 
@@ -65,11 +72,8 @@ Output:
 ✅ Good for problems that **repeat in smaller versions**:
 
 - Factorial, Fibonacci numbers
-    
 - Tree traversal (DOM, file systems)
-    
 - Searching nested data (arrays/objects)
-    
 
 ---
 
@@ -78,22 +82,38 @@ Output:
 Every recursive function **must have a base case**.  
 Otherwise → **stack overflow error**.
 
-`function endless() {   return endless(); // ❌ No base case → infinite loop }`
+```js
+function endless() {   
+	return endless(); // ❌ No base case → infinite loop 
+}
+```
 
 ---
 
 ## 🔹 7. Recursive vs Iterative
 
 - **Iteration** (loops) → may be faster, uses less memory.
-    
 - **Recursion** → cleaner, matches problem structure (especially with nested/branching data).
-    
 
 ---
 
 ## 🔹 8. Real-World Example – Sum of Nested Array
 
-`function sumNestedArray(arr) {   let sum = 0;   arr.forEach(element => {     if (Array.isArray(element)) {       sum += sumNestedArray(element); // Recursive call     } else {       sum += element;     }   });   return sum; }  console.log(sumNestedArray([1, [2, [3, 4]], 5])); // 15`
+```js
+function sumNestedArray(arr) {   
+	let sum = 0;   
+	arr.forEach(element => {    
+		if (Array.isArray(element)) {       
+			sum += sumNestedArray(element); // Recursive call     
+		} 
+		else {       
+			sum += element;     
+		}   
+	});   
+	return sum; 
+}  
+console.log(sumNestedArray([1, [2, [3, 4]], 5])); // 15
+```
 
 ✔ Keeps going deeper into nested arrays until all numbers are added.
 
@@ -102,22 +122,24 @@ Otherwise → **stack overflow error**.
 ## 🔹 9. Practice Exercises
 
 1. Recursive function to calculate **sum from 1 to n**
-    
 2. Recursive function to **reverse a string**
-    
 3. Recursive function to **print all elements of a nested object**
-    
 
 ---
 
 ## 📝 Summary
 
 - Recursion = function calling itself.
-    
 - Needs **Base Case** (stop) + **Recursive Case** (repeat).
-    
 - Useful for **nested or tree-like problems**.
-    
 - Watch out for **infinite recursion** (stack overflow).
-    
 - Can replace loops, but not always memory-efficient.
+
+```embed
+title: "Best Javascript Recursion Explanation on YouTube"
+image: "https://i.ytimg.com/vi/LteNqj4DFD8/maxresdefault.jpg"
+description: "What is recursion?The process in which a function calls itself is called recursion. The corresponding function is called a recursive function. A recursive fu..."
+url: "https://youtu.be/LteNqj4DFD8"
+favicon: ""
+aspectRatio: "56.25"
+```
