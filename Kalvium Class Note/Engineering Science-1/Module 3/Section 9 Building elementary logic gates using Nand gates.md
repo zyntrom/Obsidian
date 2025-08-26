@@ -75,6 +75,16 @@ aspectRatio: "56.25"
 - Step 1: Create OR (from NAND)
 - Step 2: Add NOT → (A + B)’
 - **Rule:** NOR = NOT(OR)
+![[Pasted image 20250826102725.png]]
+
+```embed
+title: "NAND gate as Universal Gate"
+image: "https://i.ytimg.com/vi/cNFgilYDxuA/maxresdefault.jpg"
+description: "In this video, different logic gates (AND, OR, NOT, XOR, etc.) are implemented using only NAND gates. The following topics are covered in the video:0:00 Intr..."
+url: "https://youtu.be/cNFgilYDxuA"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ---
 
@@ -86,7 +96,7 @@ Steps:
 2. NAND2 = (A·NAND1)’
 3. NAND3 = (B·NAND1)’
 4. NAND4 = (NAND2·NAND3)’ → Final XOR
-
+![[Pasted image 20250826102750.png]]
 ### XOR Truth Table
 
 | A   | B   | NAND1 | NAND2 | NAND3 | XOR |
@@ -103,6 +113,16 @@ Steps:
 - XNOR = NOT(XOR)
 - Build XOR from NAND, then add NOT
 - **Rule:** XNOR = XOR + NOT
+![[Pasted image 20250826102759.png]]
+
+```embed
+title: "NAND gate as Universal Gate"
+image: "https://i.ytimg.com/vi/cNFgilYDxuA/maxresdefault.jpg"
+description: "In this video, different logic gates (AND, OR, NOT, XOR, etc.) are implemented using only NAND gates. The following topics are covered in the video:0:00 Intr..."
+url: "https://youtu.be/cNFgilYDxuA"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ---
 
@@ -117,3 +137,4 @@ Steps:
     - XOR → 4 NAND combination
     - XNOR → XOR + NOT
 - **Applications:** CPUs, memory units, efficient circuit design
+![[Pasted image 20250826102835.png]]
