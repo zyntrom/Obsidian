@@ -83,8 +83,14 @@ outer(); // Logs: "I am outside!"
 
 Example:
 
-```
-function createCounter() {   let count = 0;   return function() {     return count++;   }; }  let counter = createCounter(); // count stays in memory due to closure
+```js
+function createCounter() {   
+	let count = 0;   
+	return function() {     
+		return count++;   
+	}; 
+}  
+let counter = createCounter(); // count stays in memory due to closure
 ```
 
 ---
@@ -92,61 +98,76 @@ function createCounter() {   let count = 0;   return function() {     return cou
 ## 🔹 5. Closures in Asynchronous Programming
 
 - Useful for **callbacks, promises, and timers**.
-    
 - Retain state between async operations.
-    
 
 Example with `setTimeout`:
 
-`function delayedMessage(message, delay) {   setTimeout(function() {     console.log(message);   }, delay); }  delayedMessage("Hello, world!", 2000); // logs after 2 seconds`
+```js
+function delayedMessage(message, delay) {   
+	setTimeout(function() {     
+		console.log(message);   
+	}, delay); 
+}  
+delayedMessage("Hello, world!", 2000); // logs after 2 seconds
 
+```
 ✔ The inner function keeps `message` and `delay` accessible even after the outer function finishes.
 
 ---
 
 ## 🔹 6. Exercise – Lexical Scoping
 
-`function outer() {   let outerVar = 'I am outside!';      function inner() {     let innerVar = 'I am inside!';     console.log(outerVar); // ?     console.log(innerVar); // ?   }      inner(); }  outer();`
+```js
+function outer() {   
+	let outerVar = 'I am outside!';      
+	function inner() {     
+		let innerVar = 'I am inside!';     
+			console.log(outerVar); // ?     
+			console.log(innerVar); // ?   
+		}      
+	inner(); 
+}  
+outer();
+```
 
 Questions:
 
 1. Where is `outerVar` defined and accessible?
-    
 2. Where is `innerVar` defined and accessible?
-    
 3. What will be logged by `inner()`?
-    
 
 **Answers:**
 
 - `outerVar` → defined in `outer()`, accessible inside `inner()` due to closure.
-    
 - `innerVar` → defined inside `inner()`, accessible only in `inner()`.
-    
 - Logs:
-    
 
-`I am outside! I am inside!`
+```
+I am outside! I am inside!
+```
 
 ---
 
 ## 🔹 7. Key Takeaways
 
 - **Closures** allow inner functions to access outer function variables.
-    
 - **Lexical scoping** determines variable access based on **definition location**.
-    
 - Closures are **crucial in async JS** and **data privacy**.
-    
 - Watch out for **memory leaks** if closures hold large objects unnecessarily.
-    
+
+```embed
+title: "Learn JavaScript Scoping In 10 Minutes"
+image: "https://i.ytimg.com/vi/TkFN6e9ZDMw/maxresdefault.jpg"
+description: "One of the biggest mistakes JavaScript developers make is not fully understanding how scoping works. There are 4 different levels of scoping and if you don’t..."
+url: "https://youtu.be/TkFN6e9ZDMw"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ---
 
 ## 🔹 8. Useful Resources
 
 - [FreeCodeCamp – Closures in JavaScript](https://www.freecodecamp.org/news/closures-in-javascript-explained-with-examples/)
-    
 - [MDN – Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
-    
 - [FreeCodeCamp – Lexical Scope](https://www.freecodecamp.org/news/javascript-lexical-scope-tutorial/)
