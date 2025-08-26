@@ -77,72 +77,49 @@
 Use Boolean algebra / K-map:
 
 - **D1 = Q0**
-    
 - **D0 = !Q1** (NOT Q1)
-    
 
 Where:
 
 - Q1 = current MSB
-    
 - Q0 = current LSB
-    
 
 ---
 
 ### 5. Circuit Steps in CircuitVerse
 
 1. Add **2 D Flip-Flops**.
-    
 2. Connect outputs (Q1, Q0) → Logic gates → Inputs (D1, D0).
-    
 3. Equations:
-    
     - D1 = Q0
-        
     - D0 = NOT Q1
-        
 4. Add **3 LEDs** (Red, Green, Yellow).
-    
     - Red ON when state = 00
-        
     - Green ON when state = 01
-        
     - Yellow ON when state = 10
-        
 5. Add a **Clock** signal.
-    
 6. Simulate → Watch sequence cycle correctly.
-    
 
 ---
 
 ## 🔹 Testing & Debugging
 
 - Run simulation → check sequence order.
-    
 - Adjust **clock frequency** for timing.
-    
 - If wrong sequence → check wiring & logic.
-    
 
 ---
 
 ## 🔹 Key Takeaways
 
 - **Sequential Logic** = depends on history.
-    
 - **D Flip-Flops** provide memory.
-    
 - **Logic Gates** control state transitions.
-    
 - Traffic Light Cycle → implemented via state machine with binary encoding.
-    
 
 ---
 
 👉 This is the **final simplified implementation**:
 
 - **D1 = Q0**
-    
 - **D0 = NOT Q1**
