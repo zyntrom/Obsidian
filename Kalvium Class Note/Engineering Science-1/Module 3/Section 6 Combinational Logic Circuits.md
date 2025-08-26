@@ -6,7 +6,7 @@
 - **No Memory**: They don’t store past input values (unlike sequential circuits).
 - **Components**: Built from **logic gates** (AND, OR, NOT, NAND, NOR, XOR).
 - **Analogy**: Like a **light switch** – output (light on/off) depends only on present input (switch position).
-
+![[Pasted image 20250826101233.png]]
 ---
 
 ## 2. Design Process
@@ -54,7 +54,7 @@ Designing combinational circuits follows a systematic process:
 
 - Takes **1 input** and routes it to **one of many outputs**.
 - Analogy: **Water pipe** directing flow into one room at a time.
-
+![[Pasted image 20250826101243.png]]
 ---
 
 ### (d) Encoders
@@ -70,8 +70,16 @@ Designing combinational circuits follows a systematic process:
 - Reverse of encoder: **binary input → activates one output line**.
 - Example: 3-to-8 decoder → 3 inputs → 8 outputs.
 - Analogy: Guide that maps digital input → specific action.
-
+![[Pasted image 20250826101315.png]]
 ---
+```embed
+title: "Lec -25: Introduction to Encoder and Decoder | Digital Electronics"
+image: "https://i.ytimg.com/vi/DqCDQH44y9w/maxresdefault.jpg"
+description: "What is Encoder and Decoder in Digital Electronics? In this video, Varun Sir will break down the basics of Encoders and Decoders—what they are, how they work..."
+url: "https://youtu.be/DqCDQH44y9w"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ### (f) Arithmetic Logic Unit (ALU)
 
@@ -103,9 +111,7 @@ Designing combinational circuits follows a systematic process:
 ## 6. Summary
 
 - **Combinational circuits**: Output depends only on current inputs.
-    
 - **Design flow**: Specification → Truth Table → Simplify → Implement → Test.
-    
 - **Building blocks**: Adders, MUX/DEMUX, Encoders/Decoders, ALU.
-    
 - **Applications**: CPUs, memory, encryption, keyboards, communication systems.
+![[Pasted image 20250826101338.png]]
