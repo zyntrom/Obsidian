@@ -6,6 +6,15 @@
 - Violates **basic probability law**:  
     P(A ∧ B) ≤ P(A) and P(A ∧ B) ≤ P(B)
 
+```embed
+title: "Can you outsmart this logical fallacy? - Alex Gendler"
+image: "https://i.ytimg.com/vi/Ghbkv0MKV-w/maxresdefault.jpg"
+description: "Explore the psychology of the cognitive bias known as the conjunction fallacy, where we assume specific conditions are more probable than general ones. --Mee..."
+url: "https://youtu.be/Ghbkv0MKV-w"
+favicon: ""
+aspectRatio: "56.25"
+```
+
 ---
 
 ## 🔹 Classic Examples
@@ -50,43 +59,28 @@
 ## 🔹 Why Does It Happen?
 
 - **System 1 (fast, intuitive):**
-    
     - Loves detail-rich, coherent stories.
-        
     - Quickly judges "representativeness."
-        
 - **System 2 (slow, logical):**
-    
     - Should apply probability rules (Venn diagrams).
-        
     - But often “lazy” and not triggered.
-        
 - Outcome → System 1 overrides logic → Fallacy occurs.
-    
 
 ---
 
 ## 🔹 Visualization Example (Kahneman’s Health Survey)
 
 - **Group 1 (abstract phrasing):** Asked percentages of men with heart attacks vs. men >55 with heart attacks.
-    
 - **Group 2 (concrete sample of 100 men):** Same question framed with actual numbers.
-    
 - **Finding:** Concrete visualization reduces error → people see subset relationships more clearly.
-    
 
 ---
 
 ## 🔹 Key Takeaways
 
 - **Conjunction fallacy = detail bias.**
-    
 - People wrongly think **specific + vivid stories** are more likely than general ones.
-    
 - To avoid it:
-    
     - Trigger **System 2** thinking.
-        
     - Use **probability rules** (subset logic).
-        
     - Frame problems with **concrete numbers/visuals**.
