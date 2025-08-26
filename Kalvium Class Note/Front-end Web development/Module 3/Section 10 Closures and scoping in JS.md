@@ -164,6 +164,24 @@ favicon: ""
 aspectRatio: "56.25"
 ```
 
+```embed
+title: "Learn Closures In 7 Minutes"
+image: "https://i.ytimg.com/vi/3a0I8ICR1Vg/maxresdefault.jpg"
+description: "The most infamous interview question for JavaScript has got to be explaining closures. Because of this it may seem that closures are a complex topic, but in ..."
+url: "https://youtu.be/3a0I8ICR1Vg"
+favicon: ""
+aspectRatio: "56.25"
+```
+
+```embed
+title: "What is lexical scope in JavaScript"
+image: "https://i.ytimg.com/vi/nypbHfbPG84/maxresdefault.jpg"
+description: "In this video, you'll learn, with an example, how lexical scope in JavaScript works....📚 FREE COURSES at https://codewithahsan.dev/courses🎥🎤📷 GEAR for Co..."
+url: "https://youtu.be/nypbHfbPG84"
+favicon: ""
+aspectRatio: "56.25"
+```
+
 ---
 
 ## 🔹 8. Useful Resources
