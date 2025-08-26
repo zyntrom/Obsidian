@@ -55,6 +55,14 @@ Even though JS is single-threaded, it can handle **asynchronous tasks** (like ti
 4. **Event Loop** constantly checks:
     - If stack is empty → take tasks from **microtask queue** first.
     - Then take tasks from **macrotask queue**.
+```embed
+title: "How does event loop work? -- Event Loop Visualized"
+image: "https://i.ytimg.com/vi/3Jma9VYvSz8/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGDogXShyMA8=&rs=AOn4CLAJUSxp_AUVYffbA3YNb4X1sgnq8w"
+description: "Knowing how JavaScript is running behind the browser's screen is essential to understanding the behavior of a program on the web. This video shows a deep exp..."
+url: "https://youtu.be/3Jma9VYvSz8"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ---
 
@@ -155,7 +163,9 @@ Promise.resolve().then(() => console.log("Task 3"));
 Actual Output:
 
 ```
-Task 1 Task 3 Task 2
+Task 1 
+Task 3 
+Task 2
 ```
 
 ✔ Because Promise (microtask) runs before `setTimeout` (macrotask).
