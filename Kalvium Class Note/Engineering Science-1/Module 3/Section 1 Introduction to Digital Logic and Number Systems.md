@@ -132,6 +132,14 @@ aspectRatio: "56.25"
 ### Subtraction (Borrow Method)
 
 Similar to decimal, but only with 0 and 1.
+```embed
+title: "Lec-17: Binary Addition➕ and Subtraction➖ | Number System"
+image: "https://i.ytimg.com/vi/4cjs2GrOf6Y/maxresdefault.jpg"
+description: "👉Subscribe to our new channel:https://www.youtube.com/@varunainashots►Digital Logic(Complete Playlist):https://www.youtube.com/playlist?list=PLxCzCOWd7aiGmX..."
+url: "https://youtu.be/4cjs2GrOf6Y"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ### Multiplication Rules
 
@@ -139,10 +147,26 @@ Similar to decimal, but only with 0 and 1.
 - 0 × 1 = 0
 - 1 × 0 = 0
 - 1 × 1 = 1
+```embed
+title: "Lec-14: Binary Multiplication with example"
+image: "https://i.ytimg.com/vi/mVcoDEXzcOg/maxresdefault.jpg"
+description: "👉Subscribe to our new channel:https://www.youtube.com/@varunainashotsThis video is Binary Multiplication with example. ►Number System (Complete Playlist):ht..."
+url: "https://youtu.be/mVcoDEXzcOg"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ### Division
 
 - Same as decimal long division, but simpler (divisor = 0 or 1).
+```embed
+title: "Binary Division"
+image: "https://i.ytimg.com/vi/VKemv9u40gc/maxresdefault.jpg"
+description: "Digital Electronics: Binary DivisionTopics discussed:1) Division of binary numbers.2) Examples of dividing two binary numbers.Follow Neso Academy on Instagra..."
+url: "https://youtu.be/VKemv9u40gc"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ---
 
@@ -199,3 +223,4 @@ aspectRatio: "56.25"
 - Complements (1’s and 2’s) simplify subtraction.
 - Gray code prevents multi-bit errors.
 - Digital systems are fast, reliable, and accurate.
+![[Pasted image 20250826094831.png]]
