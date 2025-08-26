@@ -132,3 +132,4 @@ aspectRatio: "56.25"
 5. GPS accuracy depends on precise timing and orbital mechanics.
 6. Satellite constellations (e.g., Starlink) use coordinated orbits for global communication.
 7. Gravity is the invisible force enabling modern connectivity (GPS, internet, TV, weather, etc.).
+![[Pasted image 20250826094225.png]]
