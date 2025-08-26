@@ -28,7 +28,7 @@
 |0|1|0|
 |1|0|0|
 |1|1|1|
-
+![[Pasted image 20250826095216.png]]
 ---
 
 ### b) OR (+, ∨)
@@ -37,13 +37,13 @@
 - Analogy: A restaurant gives a discount if you order **burger OR pizza**.
 - Example: A + B
 
-|A|B|A + B|
-|---|---|---|
-|0|0|0|
-|0|1|1|
-|1|0|1|
-|1|1|1|
-
+| A   | B   | A + B |
+| --- | --- | ----- |
+| 0   | 0   | 0     |
+| 0   | 1   | 1     |
+| 1   | 0   | 1     |
+| 1   | 1   | 1     |
+![[Pasted image 20250826095228.png]]
 ---
 
 ### c) NOT (¬, ′, overbar)
@@ -54,11 +54,11 @@
 - Analogy: A reverse switch that flips the state.
 - Example: A′
 
-|A|A′|
-|---|---|
-|0|1|
-|1|0|
-
+| A   | A′  |
+| --- | --- |
+| 0   | 1   |
+| 1   | 0   |
+![[Pasted image 20250826095254.png]]
 ---
 
 ## 3. Boolean Expressions & Truth Tables
@@ -69,7 +69,7 @@
 - Helps to:
     - **Analyze circuits**.
     - **Verify correctness** of design.
-
+![[Pasted image 20250826095307.png]]
 ---
 
 ## 4. Fundamental Laws of Boolean Algebra
@@ -129,6 +129,14 @@
 Example:  
 (A + A′ • B) = (A + B)  
 (using Absorption + Complement laws)
+```embed
+title: "Boolean Algebra Examples (Part 1)"
+image: "https://i.ytimg.com/vi/k04ksfLBuak/maxresdefault.jpg"
+description: "Digital Electronics: Solved questions on Boolean algebra.Topics discussed:1) Minimization of AB + AB'2) minimization of AB + AB'C + AB'C'Follow Neso Academy ..."
+url: "https://youtu.be/k04ksfLBuak"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ---
 
@@ -154,5 +162,5 @@ Example:
 - Theorems (De Morgan’s) → rewrite negated expressions.
 - Simplification → fewer gates, efficient circuits.
 - Boolean algebra = backbone of **digital logic design**.
-
+![[Pasted image 20250826095331.png]]
 ---
