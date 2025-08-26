@@ -71,9 +71,11 @@ aspectRatio: "56.25"
     - Made of copper/aluminum.
     - Larger surface area = better dissipation (fins/ridges).
     - Uses thermal paste for efficient transfer.
+![[Pasted image 20250826003702.png]]
 2. **Active Cooling (Fans & Airflow)**
     - Fans move hot air out, draw cool air in.
     - Efficiency depends on speed (RPM), placement, dust control.
+![[Pasted image 20250826003712.png]]
 3. **Liquid Cooling**
     - Uses pump, cold plate, radiator, coolant.
     - More efficient than air cooling.
@@ -81,7 +83,16 @@ aspectRatio: "56.25"
 4. **Phase-Change Cooling**
     - Thermal paste → fills air gaps.
     - Vapor chambers → spread heat evenly (used in GPUs, laptops).
-5. **Advanced Cooling**
+```embed
+title: "What is a Vapor Chamber?"
+image: "https://i.ytimg.com/vi/CE4CrpBxHZs/maxresdefault.jpg"
+description: "A vapor chamber is a vacuum sealed heat spreader with a wick structure lining its inside walls. The wick is saturated with a working fluid and when heat is a..."
+url: "https://youtu.be/CE4CrpBxHZs"
+favicon: ""
+aspectRatio: "56.25"
+```
+
+1. **Advanced Cooling**
     - Peltier (TEC) coolers → move heat using current.
     - Immersion cooling → components submerged in dielectric liquid (data centers).
 
@@ -96,6 +107,14 @@ aspectRatio: "56.25"
 - **Results**:
     - Better FPS, stable performance.
     - Less thermal throttling.
+```embed
+title: "Water Cooling Explained: How It Works and What Parts You Need"
+image: "https://i.ytimg.com/vi/iTD6Sayd8uw/maxresdefault.jpg"
+description: "Video explanation and diagram of how liquid cooling works, as well as a list of what parts you need to build a water cooled PC.0:00 How Liquid Cooling Works1..."
+url: "https://youtu.be/iTD6Sayd8uw"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ---
 
@@ -112,7 +131,7 @@ aspectRatio: "56.25"
     - Spacecraft: Conduction + radiation (no air, so no convection).
 - **Industrial Systems**
     - Factories, Power plants: Cooling for control systems & heavy machinery.
-
+![[Pasted image 20250826003741.png]]
 ---
 
 ## 8. Summary
@@ -126,3 +145,5 @@ aspectRatio: "56.25"
     - Hybrid → combination.
 5. Advanced systems: **liquid cooling, vapor chambers, immersion cooling**.
 6. Applications: Electronics, data centers, EVs, aerospace, industry.
+
+![[Pasted image 20250826003751.png]]
