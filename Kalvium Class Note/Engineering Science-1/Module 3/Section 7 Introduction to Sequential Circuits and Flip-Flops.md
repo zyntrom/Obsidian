@@ -133,3 +133,4 @@
 - Registers store multiple bits; counters track events.
 - FSMs (Mealy & Moore) model real-world sequential behavior.
 - Used in RAM, CPUs, timers, clocks, vending machines, and robotics.
+![[Pasted image 20250826101740.png]]
