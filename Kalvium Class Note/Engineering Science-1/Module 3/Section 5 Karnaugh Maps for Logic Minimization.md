@@ -63,14 +63,14 @@ Simplify: **F(A, B, C) = Σm(0, 2, 4, 5, 6)**
 
 ### Step 1 – 3-variable K-Map layout
 
-`BC      00 01 11 10 A=0   1   0   0   1 A=1   1   1   0   1`
+```
+BC      00 01 11 10 A=0   1   0   0   1 A=1   1   1   0   1
+```
 
 ### Step 2 – Group 1s
 
 - Group (0, 2, 4, 6) → simplifies to **C’**
-    
 - Group (4, 5) → simplifies to **AB**
-    
 
 ### Step 3 – Final Expression
 
@@ -81,35 +81,24 @@ F = C’ + AB
 ## 7. K-Maps vs Boolean Algebra
 
 - **Boolean algebra**: algebraic manipulation, can get complicated for many variables.
-    
 - **K-Maps**: visual, faster, less chance of error, especially for 3–4 variables.
-    
 
 ---
 
 ## 8. Real-World Applications
 
 - **Microprocessors** → faster ALU design.
-    
 - **Memory chips** → compact, efficient circuits.
-    
 - **Control systems** → washing machines, elevators, automation.
-    
 - **Embedded systems** → fitness trackers, smart thermostats (low power).
-    
 - **Industrial automation** → predictable, reliable sensor/actuator control.
-    
 
 ---
 
 ## 9. Summary
 
 - K-Maps: Visual tool for Boolean simplification.
-    
 - Gray Code ensures adjacency for grouping.
-    
 - Groups: powers of 2, wrapping allowed, overlapping possible.
-    
 - Output = simpler Boolean expression → fewer gates.
-    
 - Used in real-world digital systems for speed, power efficiency, and size reduction.
