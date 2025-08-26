@@ -31,6 +31,15 @@ function testVar() {
 
 - **`let`** → block-scoped, re-assignable.
 - **`const`** → block-scoped, cannot be reassigned (but object properties can still change).
+```embed
+title: "Differences Between Var, Let, and Const"
+image: "https://i.ytimg.com/vi/9WIJQDvt4Us/maxresdefault.jpg"
+description: "You have probably watched many different tutorials, and you may have noticed that some tutorials use var to declare variables while others use let or even co..."
+url: "https://youtu.be/9WIJQDvt4Us"
+favicon: ""
+aspectRatio: "56.25"
+```
+
 
 Example:
 
@@ -94,31 +103,39 @@ console.log(`Hi, I’m ${user} and I’m ${age} years old.`);
 
 Challenge:
 
-``let city = "Chennai"; let temp = 32; console.log(`The temperature in ${city} is ${temp}°C.`);``
+```js
+let city = "Chennai"; 
+let temp = 32; 
+console.log(`The temperature in ${city} is ${temp}°C.`);
+```
 
 ---
 
 ## 5. Destructuring
 
 - Extract values from **objects** and **arrays** easily.
-    
 
 ### Object Destructuring
 
-`const user = { name: "Alice", age: 22 }; const { name, age } = user; console.log(name); // "Alice"`
+```js
+const user = { name: "Alice", age: 22 }; 
+const { name, age } = user; 
+console.log(name); // "Alice"
+```
 
 ### Array Destructuring
 
-`const arr = [10, 20]; const [a, b] = arr; console.log(a, b); // 10 20`
+```js
+const arr = [10, 20]; 
+const [a, b] = arr; 
+console.log(a, b); // 10 20
+```
 
 ---
 
 ## 6. Key Benefits of ES6 Features
 
 - **let/const** → safer variable declarations.
-    
 - **Arrow functions** → cleaner functions, better `this` handling.
-    
 - **Template literals** → more readable string formatting.
-    
 - **Destructuring** → concise data extraction from arrays/objects.
