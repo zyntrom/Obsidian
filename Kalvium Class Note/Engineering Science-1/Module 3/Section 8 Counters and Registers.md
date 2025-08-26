@@ -39,7 +39,7 @@
 ---
 
 ## Types of Registers
-
+![[Pasted image 20250826102230.png]]
 ### 1. General-Purpose Registers (GPRs)
 
 - Store temporary data, variables, and intermediate results
@@ -74,7 +74,7 @@
 4. **Increment/Decrement**
     - `INC R1` → add 1
     - `DEC R1` → subtract 1
-
+![[Pasted image 20250826102241.png]]
 ---
 
 ## Shift Registers
@@ -154,3 +154,4 @@
 - **Counters:** Count clock pulses
     - Asynchronous (slow), Synchronous (fast)
     - Up, Down, Up/Down counters for real-world use
+![[Pasted image 20250826102322.png]]
