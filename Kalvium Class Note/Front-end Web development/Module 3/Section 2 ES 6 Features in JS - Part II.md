@@ -130,7 +130,8 @@ export function add(a, b) {
 **Import (main.js):**
 
 ```js
-import { add } from './math.js';  console.log(add(2, 3)); // 5
+import { add } from './math.js';  
+console.log(add(2, 3)); // 5
 ```
 
 ✅ **Why useful?** → Code reuse, cleaner project structure.
