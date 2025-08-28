@@ -81,64 +81,57 @@ login("admin", "1234")
 
 ## 🔹 5. Using `.finally()`
 
-`myPromise   .then(result => console.log(result))   .catch(error => console.log(error))   .finally(() => console.log("Promise completed"));`
+```js
+myPromise
+.then(result => console.log(result))   
+.catch(error => console.log(error))   
+.finally(() => console.log("Promise completed"));
+```
 
 - `.finally()` runs **regardless of outcome**.
-    
 - Useful for **cleanup tasks** (e.g., hide loader).
-    
 
 ---
 
 ## 🔹 6. Chaining Promises
 
 - Avoids **callback hell** by chaining multiple async actions:
-    
 
-`getUser()   .then(user => getPosts(user.id))   .then(posts => displayPosts(posts))   .catch(error => console.error("Error:", error));`
+```js
+getUser()   
+.then(user => getPosts(user.id))   
+.then(posts => displayPosts(posts))   
+.catch(error => console.error("Error:", error));
+```
 
 - Each `.then()` returns a new Promise → smooth, readable flow.
-    
 
 ---
 
 ## 🔹 7. Interactive Exercises
 
 1. Create a Promise that **resolves with `"Loaded!"`** after 1 second.
-    
 2. Write `fetchData()` that **randomly resolves or rejects** and log the result.
-    
 3. Chain three `.then()` methods:
-    
     - Simulate loading
-        
     - Transform data
-        
     - Log result
-        
 
 - Helps **replace nested callbacks** with clean async code.
-    
 
 ---
 
 ## 🔹 8. Key Takeaways
 
 - Promises handle **asynchronous operations** in a modern, readable way.
-    
 - States: **pending, fulfilled, rejected**.
-    
 - Use **.then()** for success, **.catch()** for errors, **.finally()** for cleanup.
-    
 - Promises **simplify async flows**, reduce nesting, and make debugging easier.
-    
 
 ---
 
 ## 🔹 9. Useful Resources
 
 - MDN – Promise
-    
 - JavaScript.info – Promises
-    
 - Eloquent JavaScript – Async Programming
