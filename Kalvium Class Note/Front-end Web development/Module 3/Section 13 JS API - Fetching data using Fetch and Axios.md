@@ -31,56 +31,64 @@ fetch("https://jsonplaceholder.typicode.com/posts/1")
 ### Explanation:
 
 - `fetch(url)` → sends GET request.
-    
 - `response.json()` → parses response into JS object.
-    
 - `.then(data => …)` → works with actual data.
-    
 - `.catch(error => …)` → handles errors.
-    
 
 ---
 
 ## 🔹 3. Fetching Multiple Items
 
-`fetch("https://jsonplaceholder.typicode.com/posts")   .then(response => response.json())   .then(posts => {     posts.forEach(post => {       console.log(post.title);     });   });`
+```js
+fetch("https://jsonplaceholder.typicode.com/posts")   
+.then(response => response.json())   
+.then(posts => {     posts.forEach(post => {       
+	console.log(post.title);     
+	});   
+});
+```
 
 - Useful for lists → **blog posts, products, users, etc.**
-    
 
 ---
 
 ## 🔹 4. Axios (3rd-Party Library)
 
 - Axios simplifies API requests.
-    
 - Automatically parses JSON.
-    
 - Works in older browsers.
-    
 - Easier to send headers or post data.
-    
 
 ### Include Axios
 
-`<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>`
+```js
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+```
 
 ### Example
 
-`axios.get("https://jsonplaceholder.typicode.com/posts/1")   .then(response => {     console.log("Post Title:", response.data.title);   })   .catch(error => {     console.error("Error fetching with Axios:", error);   });`
+```js
+axios.get("https://jsonplaceholder.typicode.com/posts/1")   .then(response => {     console.log("Post Title:", response.data.title);   })   
+.catch(error => {     console.error("Error fetching with Axios:", error);   });
+```
 
 **Key Difference**:
 
 - Axios → data inside `response.data`.
-    
 - Fetch → need `response.json()`.
-    
 
 ---
 
 ## 🔹 5. Real-world Example: User List
 
-``fetch("https://jsonplaceholder.typicode.com/users")   .then(response => response.json())   .then(users => {     users.forEach(user => {       console.log(`${user.name} - ${user.email}`);     });   });``
+```js
+fetch("https://jsonplaceholder.typicode.com/users")   
+.then(response => response.json())   
+.then(users => {     users.forEach(user => {  
+		console.log(`${user.name} - ${user.email}`);     
+	});   
+});
+```
 
 👉 Use cases: **team members, students, customers, etc.**
 
@@ -89,13 +97,9 @@ fetch("https://jsonplaceholder.typicode.com/posts/1")
 ## 🔹 6. Common API Request Types
 
 - **GET** → fetch data.
-    
 - **POST** → send new data.
-    
 - **PUT/PATCH** → update existing data.
-    
 - **DELETE** → remove data.
-    
 
 _(Both Fetch & Axios support all request types.)_
 
@@ -104,35 +108,24 @@ _(Both Fetch & Axios support all request types.)_
 ## 🔹 7. Interactive Exercises
 
 1. Use **Fetch** → get users from `https://jsonplaceholder.typicode.com/users` and log all usernames.
-    
 2. Use **Axios** → fetch a post by ID and print the title.
-    
 3. Use **Fetch** → handle an error (wrong URL) and log a custom error message.
-    
 4. **Bonus** → Create a search bar that fetches posts containing a keyword.
-    
 
 ---
 
 ## 🔹 8. Summary
 
 - APIs let JS **talk to servers** → fetch & send data.
-    
 - **Fetch API** → built-in, returns Promises.
-    
 - **Axios** → simplifies API work, automatically parses JSON.
-    
 - Both allow **GET, POST, PUT, DELETE** requests.
-    
 - Useful for **dynamic, real-world applications**.
-    
 
 ---
 
 ## 🔹 9. Useful Resources
 
 - MDN – Fetch API
-    
 - [Axios GitHub](https://github.com/axios/axios?utm_source=chatgpt.com)
-    
 - [JSONPlaceholder test API](https://jsonplaceholder.typicode.com/?utm_source=chatgpt.com)
