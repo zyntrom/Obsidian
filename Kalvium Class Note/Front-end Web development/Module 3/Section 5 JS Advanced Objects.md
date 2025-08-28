@@ -140,7 +140,7 @@ Book.prototype.describe = function() {
 ## 📝 Summary
 
 - **Prototypes** = hidden links that form inheritance chains.
-- **Prototypal Inheritance** → objects share methods without duplication.
+- **Prototype Inheritance** → objects share methods without duplication.
 - **Object methods** (`keys`, `values`, `entries`, `assign`) → inspect & manipulate objects easily.
 - Mastering these = **deeper control** over JS object system.
 
