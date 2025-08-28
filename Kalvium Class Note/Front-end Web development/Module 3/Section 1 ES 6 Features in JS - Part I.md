@@ -83,7 +83,7 @@ Mini Challenge:
 function greet(name) {   
 	return "Hello, " + name; 
 }  // ES6 Arrow Function 
-let greet = name => `Hello, ${name}`;
+let greet = (name) => `Hello, ${name}`;
 ```
 
 ---
