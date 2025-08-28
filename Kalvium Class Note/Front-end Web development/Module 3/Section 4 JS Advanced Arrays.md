@@ -72,7 +72,8 @@ const students = [
 	{ name: "David", grade: 60 } ];  
 const totalGrade = students.reduce((acc, student) => 
 	acc + student.grade, 0); 
-const average = totalGrade / students.length;  console.log(average); // 75
+const average = totalGrade / students.length;  
+console.log(average); // 75
 ```
 
 ---
