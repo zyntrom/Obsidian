@@ -1,19 +1,22 @@
 ### ✅ C Program
 
-```c
-#include <stdio.h>  
-int main() {     
-	int n;     
-	scanf("%d", &n);   // read array size     
-	int arr[n];      
-	for (int i = 0; i < n; i++) {         
-		scanf("%d", &arr[i]);  // read array elements     
-	}      
-	for (int i = 0; i < n; i++) {         
-		printf("%d ", arr[i]);  // print elements     
-	}      
-	return 0; 
+```c++
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;  // read array size
+    int arr[n];  // declare array of size n
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];  // read array elements
+    }
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";  // print elements
+    }
+    return 0;
 }
+
 ```
 
 ---
