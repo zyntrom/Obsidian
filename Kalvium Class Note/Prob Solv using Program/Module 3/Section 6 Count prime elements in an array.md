@@ -47,13 +47,10 @@ print(prime_count)
 using namespace std;
 
 // Function to check if a number is prime
-bool isPrime(int num) {
-    if (num <= 1) return false;
-    for (int i = 2; i <= sqrt(num); i++) {
-        if (num % i == 0) return false;
-    }
-    return true;
-}
+#include <iostream>
+#include <cmath>
+using namespace std;
+
 int main() {
     int arr[6];
     
@@ -64,13 +61,26 @@ int main() {
     int count = 0;
     // Count prime numbers
     for (int i = 0; i < 6; i++) {
-        if (isPrime(arr[i])) {
+        int num = arr[i];
+        bool prime = true;
+        if (num <= 1) {
+            prime = false;
+        } else {
+            for (int j = 2; j <num; j++) {
+                if (num % j == 0) {
+                    prime = false;
+                    break;
+                }
+            }
+        }
+        if (prime) {
             count++;
         }
     }
     cout << count << endl;
     return 0;
 }
+
 ```
 
 ---
