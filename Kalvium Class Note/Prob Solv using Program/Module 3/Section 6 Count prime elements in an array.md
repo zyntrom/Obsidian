@@ -41,7 +41,7 @@ print(prime_count)
 
 ### 🔹 C++ Implementation
 
-```c++
+```cpp
 #include <iostream>
 #include <cmath>
 using namespace std;

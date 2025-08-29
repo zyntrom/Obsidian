@@ -96,18 +96,18 @@ Think of problem-solving like playing a **treasure hunt** game:
 
 You may use:
 
-- C / C++
+- C / cpp
 - Python
 - Java
 - NodeJS
 
-✅ **Recommended:** **C++**
+✅ **Recommended:** **cpp**
 
 - Strong for **Data Structures & Algorithms**
 - Good for **placements/internships**
 - Teaches you to **think deeply and write optimized logic**
 
-📌 **Live sessions** and resources will focus only on **C++ and Python**.  
+📌 **Live sessions** and resources will focus only on **cpp and Python**.  
 If you choose others, learn their syntax independently.
 
 ---

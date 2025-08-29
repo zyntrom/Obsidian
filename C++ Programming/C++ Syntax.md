@@ -2,7 +2,7 @@
 
 ### Headers & Main Function
 
-```c++
+```cpp
 #include <iostream> 
 using namespace std;  
 int main() {     
@@ -13,26 +13,26 @@ int main() {
 
 ### Input/Output
 
-```c++
+```cpp
 cin >> var;           // input 
 cout << var << endl;  // output
 ```
 
 ### Variables & Data Types
 
-```c++
+```cpp
 int, float, double, char, bool; long, long long, unsigned int;
 ```
 
 ### Constants
 
-```c++
+```cpp
 const int x = 10; 
 #define PI 3.14
 ```
 
 ### Conditionals
-```c++
+```cpp
 if (condition) { 
 
 } 
@@ -49,7 +49,7 @@ switch (var) {
 
 ### Loops
 
-```c++
+```cpp
 for (int i = 0; i < n; i++) { 
 
 } 
@@ -62,7 +62,7 @@ while (condition) {
 
 ### Functions
 
-```c++
+```cpp
 returnType functionName(parameters) {     
 	// body     
 	return value; 
@@ -75,14 +75,14 @@ returnType functionName(parameters) {
 
 ### Arrays
 
-```c++
+```cpp
 int arr[5] = {1, 2, 3, 4, 5}; 
 int arr2D[3][3];
 ```
 
 ### Strings
 
-```c++
+```cpp
 #include <string> 
 string s = "hello"; 
 s.length(); 
@@ -95,7 +95,7 @@ s.erase(pos, len);
 
 ### Vectors
 
-```c++
+```cpp
 #include <vector>  
 vector<int> v; 
 v.push_back(10); 

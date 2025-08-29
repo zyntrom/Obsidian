@@ -1,6 +1,6 @@
 - Linked List:
 
-```c++
+```cpp
 #include<iostream> 
 using namespace std;
 struct Node{
@@ -43,7 +43,7 @@ int main(){
 
 - Doubly LinkedList:
 
-```c++
+```cpp
 #include <iostream>
 using namespace std;
 
