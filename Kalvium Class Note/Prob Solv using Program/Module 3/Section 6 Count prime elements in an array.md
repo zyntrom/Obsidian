@@ -32,7 +32,7 @@ array arr = list(map(int, input().split()))
 Count primes prime_count = 0 
 for element in arr:     
 	if is_prime(element):         
-		prime_count += 1  
+		prime_count += 1  2
 # Step 3: Output result 
 print(prime_count)
 ```

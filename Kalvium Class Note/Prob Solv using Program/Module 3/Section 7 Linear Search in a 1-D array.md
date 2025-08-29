@@ -46,31 +46,24 @@ If the target was `12`, it would not be found, so output would be `-1`.
 #include <iostream>
 using namespace std;
 
-int linearSearch(int arr[], int n, int target) {
-    for (int i = 0; i < n; i++) {
-        if (arr[i] == target) {
-            return i; // return index if found
-        }
-    }
-    return -1; // not found
-}
-
 int main() {
     int n;
     cin >> n;
     int arr[n];
-    
     // Input array
     for (int i = 0; i < n; i++) {
         cin >> arr[i];
     }
-    
     int target;
     cin >> target;
-    
-    int result = linearSearch(arr, n, target);
+    int result = -1; // assume not found
+    for (int i = 0; i < n; i++) {
+        if (arr[i] == target) {
+            result = i; // store index
+            break;      // exit loop when found
+        }
+    }
     cout << result << endl;
-    
     return 0;
 }
 
