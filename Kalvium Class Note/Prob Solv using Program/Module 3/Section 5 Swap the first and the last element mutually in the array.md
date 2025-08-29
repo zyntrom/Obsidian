@@ -28,9 +28,9 @@ Output:
 
 ---
 
-## C++ Solution
+## cpp Solution
 
-```c++
+```cpp
 #include <iostream>
 using namespace std;
 int main() {

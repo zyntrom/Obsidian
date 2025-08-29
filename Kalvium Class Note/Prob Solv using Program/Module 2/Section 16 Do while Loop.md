@@ -1,4 +1,4 @@
-# 🔁 Do-While Loop (C++)
+# 🔁 Do-While Loop (cpp)
 
 ## 📌 Definition
 
@@ -18,9 +18,9 @@ A `do-while` loop is a control structure that **executes a block of code at leas
 
 ---
 
-## 🧪 Syntax (C++)
+## 🧪 Syntax (cpp)
 
-```c++
+```cpp
 do {     
 	// Code to run 
 } while (condition);
@@ -34,7 +34,7 @@ do {
 
 ## 🧾 Example: Count from 0 to 4
 
-```c++
+```cpp
 #include <iostream> 
 using namespace std;  
 int main() {     
@@ -80,7 +80,7 @@ while True:     # do something
 		break
 ```
 
-✅ This simulates the same behavior as a C++ `do-while`.
+✅ This simulates the same behavior as a cpp `do-while`.
 
 ---
 

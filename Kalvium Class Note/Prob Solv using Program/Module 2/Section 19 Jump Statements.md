@@ -10,14 +10,14 @@ They are used to:
 
 - Exit loops/functions early
 - Skip certain iterations in loops
-- Directly jump to a labeled statement (C++ only)
+- Directly jump to a labeled statement (cpp only)
 
 These include:
 
 1. **break**
 2. **continue**
 3. **return**
-4. **goto** (C++ only)
+4. **goto** (cpp only)
 
 ---
 
@@ -44,9 +44,9 @@ for i in range(1, 11):
 Output: 1 2 3 4
 ```
 
-#### C++ Example:
+#### cpp Example:
 
-```c++
+```cpp
 for (int i = 1; i <= 10; i++) {  
  if (i == 5) break;  
  cout << i << " ";  
@@ -82,9 +82,9 @@ for i in range(1, 11):
 Output: 1 3 5 7 9
 ```
 
-#### C++ Example:
+#### cpp Example:
 
-```c++
+```cpp
 for (int i = 1; i <= 10; i++) {  
  if (i % 2 == 0) continue;  
 	 cout << i << " ";  
@@ -117,9 +117,9 @@ def sum(a, b):
 
 **Output**: 8
 
-#### C++ Example:
+#### cpp Example:
 
-```c++
+```cpp
 int sum(int a, int b) {  
 	return a + b;  
 }  
@@ -134,7 +134,7 @@ int main() {
 
 ---
 
-### 4️⃣ Goto Statement (Only in C++)
+### 4️⃣ Goto Statement (Only in cpp)
 
 #### 🔧 Function:
 
@@ -144,9 +144,9 @@ Jumps to a labeled line in the code.
 
 Only if absolutely necessary — discouraged in modern code.
 
-#### C++ Example:
+#### cpp Example:
 
-```c++
+```cpp
 int num = 10;  
 if (num == 10) 
 goto label;  

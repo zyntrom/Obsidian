@@ -24,9 +24,9 @@ for i in range(1, 4):
 		print(f"i = {i}, j = {j}")
 ```
 
-#### ✅ C++ Example:
+#### ✅ cpp Example:
 
-```c++
+```cpp
 for (int i = 1; i <= 3; ++i) {     
 	for (int j = 1; j <= 3; ++j) {         
 		cout << "i = " << i << ", j = " << j << endl;    
@@ -64,7 +64,7 @@ i = 3, j = 3
 |Language|Loop Range|Note|
 |---|---|---|
 |Python|`range(1, 4)`|Runs 1 to 3 (`4` not included)|
-|C++|`i <= 3`|Runs from 1 to 3 inclusive|
+|cpp|`i <= 3`|Runs from 1 to 3 inclusive|
 
 ✅ You can nest:
 

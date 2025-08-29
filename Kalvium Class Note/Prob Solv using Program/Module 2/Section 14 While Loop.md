@@ -22,9 +22,9 @@ while i <= 5:
 	i += 1
 ```
 
-#### ✅ C++
+#### ✅ cpp
 
-```c++
+```cpp
 int i = 1; 
 while (i <= 5) {     
 	cout << i << endl;     
@@ -38,7 +38,7 @@ while (i <= 5) {
 
 Always update a value inside the loop, or it may run **forever**!
 
-```c++
+```cpp
 # Infinite loop example (❌) 
 i = 1 
 while i <= 5:     
@@ -63,9 +63,9 @@ while water < glass_capacity:
 print("The glass is full!")
 ```
 
-#### ✅ C++
+#### ✅ cpp
 
-```c++
+```cpp
 int water = 0; 
 int glassCapacity = 5; 
 while (water < glassCapacity) {     

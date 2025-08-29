@@ -45,8 +45,8 @@
 **Python**  
 temperature = int(input("Enter the temperature in Celsius: "))
 
-**C++**  :
-```c++
+**cpp**  :
+```cpp
 include <iostream>  
 using namespace std;  
 int main() {  
@@ -85,9 +85,9 @@ else:
 
 ---
 
-### 💠 C++ Version
+### 💠 cpp Version
 
-```c++
+```cpp
 include <iostream>  
 using namespace std;  
 int main() {  

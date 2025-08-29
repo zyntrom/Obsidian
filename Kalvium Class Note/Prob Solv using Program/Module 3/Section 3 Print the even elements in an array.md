@@ -33,9 +33,9 @@ Output:
 
 ## 💻 Code Implementations
 
-### ✅ C++ Code
+### ✅ cpp Code
 
-```c++
+```cpp
 #include <iostream> 
 using namespace std;  
 int main() {     

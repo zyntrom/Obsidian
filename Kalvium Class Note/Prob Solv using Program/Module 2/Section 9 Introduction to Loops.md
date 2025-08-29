@@ -27,9 +27,9 @@ for i in range(1, 6):
 	print(i)
 ```
 
-**C++**
+**cpp**
 
-```c++
+```cpp
 #include <iostream> 
 using namespace std;  
 int main() {     
@@ -66,9 +66,9 @@ while i <= 5:
 	i += 1
 ```
 
-**C++**
+**cpp**
 
-```c++
+```cpp
 #include <iostream> 
 using namespace std;  
 int main() {     
@@ -83,7 +83,7 @@ int main() {
 
 ---
 
-## 🔁 The `do-while` Loop – Run At Least Once (C++ Only)
+## 🔁 The `do-while` Loop – Run At Least Once (cpp Only)
 
 ### ✅ Use When:
 
@@ -93,9 +93,9 @@ int main() {
 
 **Guessing Game**
 
-**C++**
+**cpp**
 
-```c++
+```cpp
 #include <iostream> 
 using namespace std;  
 int main() {     
@@ -128,7 +128,7 @@ while True:
 |---|---|---|---|
 |`for`|Known number of repetitions|❌|Counting, printing tables|
 |`while`|Condition-based|❌|User input, waiting for event|
-|`do-while`|Guaranteed one execution|✅|Menus, guessing games (C++ only)|
+|`do-while`|Guaranteed one execution|✅|Menus, guessing games (cpp only)|
 
 ---
 

@@ -47,9 +47,9 @@ Array: 11 14 26 28 33 49 Target: 28
 
 ## 💻 Code Implementations
 
-### 🔹 C++ Code
+### 🔹 cpp Code
 
-```c++
+```cpp
 #include <iostream>
 using namespace std;
 

@@ -8,7 +8,7 @@
 
 ### 🎯 Lesson Objective
 
-Understand how to convert **mathematical formulas** and logic into **code instructions** in programming languages like Python and C++.
+Understand how to convert **mathematical formulas** and logic into **code instructions** in programming languages like Python and cpp.
 
 ---
 
@@ -43,9 +43,9 @@ distance = speed * time
 print(distance)  # 120
 ```
 
-**C++:**
+**cpp:**
 
-```c++
+```cpp
 int speed = 60; 
 int time = 2; 
 int distance = speed * time; 
@@ -67,9 +67,9 @@ r = 5 area = math.pi * r ** 2
 print(area)  # 78.53981633974483
 ```
 
-**C++:**
+**cpp:**
 
-```c++
+```cpp
 #include <iostream> 
 #include <cmath> 
 using namespace std;  
@@ -83,14 +83,14 @@ return 0; }
 🧠 **Note:**
 
 - Python uses `**` for power.
-- C++ uses `pow()` and needs `<cmath>` header.
-- C++ constant `M_PI` is defined in `cmath`.
+- cpp uses `pow()` and needs `<cmath>` header.
+- cpp constant `M_PI` is defined in `cmath`.
 
 ---
 
 ### 🔄 Symbol Translation Summary
 
-|Math Symbol|Python|C++|
+|Math Symbol|Python|cpp|
 |---|---|---|
 |×|`*`|`*`|
 |÷|`/`|`/`|

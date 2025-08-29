@@ -5,9 +5,9 @@
 |Why pattern printing is important|✅|Discussed with logic, iteration, and interviews|
 |Basics of loops (for/while)|✅|Mentioned as foundational knowledge|
 |Use of `print()` in Python|✅|Examples and explanation included|
-|Use of `cout` in C++|✅|Examples and explanation included|
-|**Square Pattern**|✅|With Python and C++ code + output explanation|
-|**Pyramid Pattern (with spacing)**|✅|With Python and C++ code + output explanation|
+|Use of `cout` in cpp|✅|Examples and explanation included|
+|**Square Pattern**|✅|With Python and cpp code + output explanation|
+|**Pyramid Pattern (with spacing)**|✅|With Python and cpp code + output explanation|
 |How to calculate spaces & stars|✅|Explained in pyramid logic|
 |Common mistakes to avoid|✅|Includes list of typical beginner issues|
 |Motivation and practice tips|✅|Ends with encouragement to try own patterns|
@@ -18,7 +18,7 @@
 ### 🔍 **Languages Covered**
 
 - **Python:** Fully covered with indentation and logic
-- **C++:** Fully covered with loop structure and syntax
+- **cpp:** Fully covered with loop structure and syntax
 
 ---
 
@@ -48,8 +48,8 @@ If you're preparing notes or studying, this summary can be structured like this:
 	    for j in range(n): 
 		    print("*", end="")
 ```
-- **C++:**  
-```c++    
+- **cpp:**  
+```cpp    
 for(i=0;i<n;i++) {
 	for(j=0;j<n;j++) {
 		cout << "*";
@@ -72,7 +72,7 @@ for(i=0;i<n;i++) {
     2. Print spaces: `rows - i - 1`
     3. Print stars: `2*i + 1`
 - **Python:** Uses `" " * n` and `"*"` in one `print()`
-- **C++:** Separate inner loops for spaces and stars
+- **cpp:** Separate inner loops for spaces and stars
 
 **Output:**
 

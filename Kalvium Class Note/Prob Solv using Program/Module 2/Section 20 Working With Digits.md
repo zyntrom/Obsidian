@@ -16,7 +16,7 @@ Digit-level operations are essential for:
 |Operation|Purpose|Example|
 |---|---|---|
 |`%`|Gets the **last digit**|`123 % 10 = 3`|
-|`//` (Python) / `/` (C++)|Removes the **last digit**|`123 // 10 = 12`|
+|`//` (Python) / `/` (cpp)|Removes the **last digit**|`123 // 10 = 12`|
 
 > 🟡 Analogy: `%` gives the **last banana**, `//` or `/` removes it from the bunch 🍌
 
@@ -35,9 +35,9 @@ while num > 0:
 print("Total digits:", count)
 ```
 
-#### ✅ C++ Code:
+#### ✅ cpp Code:
 
-```C++
+```cpp
 int num = 12345; 
 int count = 0; 
 while (num > 0) {     
@@ -81,9 +81,9 @@ while num > 0:
 print("Reversed:", rev)
 ```
 
-#### ✅ C++ Code:
+#### ✅ cpp Code:
 
-```c++
+```cpp
 int num = 1234, rev = 0; 
 while (num > 0) {     
 	int digit = num % 10;     

@@ -32,9 +32,9 @@ for ch in s:
 
 ---
 
-## 💻 C++ Program
+## 💻 cpp Program
 
-```c++
+```cpp
 #include <iostream> 
 using namespace std;  
 int main() {     

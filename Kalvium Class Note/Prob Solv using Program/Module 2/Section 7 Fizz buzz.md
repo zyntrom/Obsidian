@@ -37,7 +37,7 @@ FizzBuzz is a classic beginner-level programming challenge used to teach **contr
     - Then: only 3
     - Then: only 5
     - Else: not divisible by either
-- Use logical **AND** operator (`&&` in C++, `and` in Python) to check for both conditions.
+- Use logical **AND** operator (`&&` in cpp, `and` in Python) to check for both conditions.
 
 ---
 
@@ -80,9 +80,9 @@ else:
 
 ---
 
-## 🔹 C++
+## 🔹 cpp
 
-```c++
+```cpp
 #include <iostream> 
 using namespace std;  
 int main() {     

@@ -13,7 +13,7 @@ Logical operators help a program **make decisions** based on conditions that are
 
 #### ✅ Common Logical Operators:
 
-|Operator|Meaning|Syntax (Python/C++)|Example|
+|Operator|Meaning|Syntax (Python/cpp)|Example|
 |---|---|---|---|
 |`and` / `&&`|Logical AND|`if a and b:`|Executes only if both conditions are True|
 |`or` / `||`|Logical OR|
@@ -36,7 +36,7 @@ Bitwise operators act on **individual bits** (0 or 1) of integers, offering **lo
 
 #### 🧮 Key Bitwise Operators:
 
-|Operator|Name|Description|Python / C++ Example|Result (a = 5, b = 3)|
+|Operator|Name|Description|Python / cpp Example|Result (a = 5, b = 3)|
 |---|---|---|---|---|
 |`&`|AND|1 if both bits are 1|`5 & 3` → `0001` → `1`|1|
 |`|`|OR|1 if either bit is 1|`5|

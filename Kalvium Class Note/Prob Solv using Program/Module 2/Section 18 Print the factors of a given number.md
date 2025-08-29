@@ -9,9 +9,9 @@ for i in range(1, n + 1):
 
 ---
 	
-### 💠 C++ Code – Factors of a Number
+### 💠 cpp Code – Factors of a Number
 
-```c++
+```cpp
 #include <iostream> 
 using namespace std;  
 int main() {     

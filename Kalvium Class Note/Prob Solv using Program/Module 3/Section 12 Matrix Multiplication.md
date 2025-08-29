@@ -86,9 +86,9 @@ for row in C:
 
 ---
 
-## 6. Implementation in C++
+## 6. Implementation in cpp
 
-```c++
+```cpp
 #include <iostream> 
 using namespace std;  
 int main() {     

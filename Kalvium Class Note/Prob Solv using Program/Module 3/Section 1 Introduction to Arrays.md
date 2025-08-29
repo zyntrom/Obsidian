@@ -50,9 +50,9 @@ numbers = [10, 20, 30, 40, 50]   # With values
 numbers = []                     # Empty list
 ```
 
-**C++**
+**cpp**
 
-```c++
+```cpp
 int numbers[] = {10, 20, 30, 40, 50}; 
 int empty_array[5];   // Uninitialized, fixed size
 ```
@@ -68,9 +68,9 @@ numbers[0] = 10
 numbers[3] = 40
 ```
 
-**C++**
+**cpp**
 
-```c++
+```cpp
 int numbers[5]; 
 numbers[0] = 10; 
 numbers[3] = 40;
@@ -89,9 +89,9 @@ numbers = [10, 20, 30, 40, 50]
 first = numbers[0] 
 fourth = numbers[3]
 ```
-**C++**
+**cpp**
 
-```c++
+```cpp
 int numbers[] = {10, 20, 30, 40, 50}; 
 int first = numbers[0]; 
 int fourth = numbers[3];
@@ -109,9 +109,9 @@ for i in range(5):
 	print(numbers[i])
 ```
 
-**C++**
+**cpp**
 
-```c++
+```cpp
 int numbers[] = {10, 20, 30, 40, 50}; 
 for (int i = 0; i < 5; i++) {     
 	cout << numbers[i] << endl; 
@@ -129,7 +129,7 @@ for (int i = 0; i < 5; i++) {
     - Risk: memory wastage or shortage.
 - **Dynamic Size Arrays**
     - Can grow/shrink at runtime.
-    - Examples: Python `list`, C++ `vector`, Java `ArrayList`.
+    - Examples: Python `list`, cpp `vector`, Java `ArrayList`.
 
 ![[Pasted image 20250824223745.png]]
 

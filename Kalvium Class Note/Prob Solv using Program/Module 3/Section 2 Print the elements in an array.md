@@ -1,4 +1,4 @@
-### ✅ C++ Program
+### ✅ cpp Program
 
 ```cpp
 #include <iostreamwd>

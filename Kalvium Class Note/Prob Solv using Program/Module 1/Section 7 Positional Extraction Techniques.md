@@ -40,9 +40,9 @@ print(name[-1])  # e → last character using negative index
 
 ---
 
-### 💻 C++ Examples
+### 💻 cpp Examples
 
-```c++
+```cpp
 #include <iostream> 
 #include <string> 
 using namespace std;  
@@ -133,5 +133,5 @@ print(num_str[-2])  # 4
 | Starts at      | `0` (first character)                                            |
 | Negative Index | `-1` = last, `-2` = second-last, etc.                            |
 | Python         | Easy, readable string slicing                                    |
-| C++            | Behaves like arrays; `string[i]`                                 |
+| cpp            | Behaves like arrays; `string[i]`                                 |
 | Common Uses    | Initials, email/phone check, file type detection, password rules |

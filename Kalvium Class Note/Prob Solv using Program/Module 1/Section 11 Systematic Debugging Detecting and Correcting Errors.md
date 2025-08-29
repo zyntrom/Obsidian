@@ -62,9 +62,9 @@ print(f"Hello, my name is {name} and I am {age} years old.")
 print("Hello, my name is {} and I am {} years old.".format(name, age))
 ```
 
-#### ✅ C++ Example:
+#### ✅ cpp Example:
 
-```c++
+```cpp
 #include <iostream> 
 #include <iomanip> 
 using namespace std;  
@@ -121,9 +121,9 @@ age = int(input())
 print(f"Your name is {name} and you are {age} years old.")
 ```
 
-#### ✅ C++ Solution:
+#### ✅ cpp Solution:
 
-```c++
+```cpp
 #include <iostream> 
 using namespace std;  
 int main() {     
@@ -140,7 +140,7 @@ int main() {
 
 ### 📌 Summary Table
 
-| Concept             | Python                                          | C++                        |
+| Concept             | Python                                          | cpp                        |
 | ------------------- | ----------------------------------------------- | -------------------------- |
 | Input               | `input()`, `int()`                              | `cin >> variable;`         |
 | Output              | `print()`, f-strings, `.format()`               | `cout << "text" << var;`   |

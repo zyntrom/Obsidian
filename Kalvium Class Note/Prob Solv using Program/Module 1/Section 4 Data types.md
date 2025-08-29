@@ -29,7 +29,7 @@ These are the **most basic, built-in** data types. They hold **single values** a
 |**bool**|True or False values (logical decisions)|`True`, `False`|
 
 🧪 **Python Note**: No separate `char` type — use single-character strings  
-🧪 **C++ Note**: You must declare the type (static typing)
+🧪 **cpp Note**: You must declare the type (static typing)
 
 #### 🚨 Type Error Example:
 
@@ -39,7 +39,7 @@ result = 5 + "five"  # ❌ Error: Can't add integer and string
 
 ---
 
-### ✨ Data Type Modifiers (Mainly C++)
+### ✨ Data Type Modifiers (Mainly cpp)
 
 Modifiers **extend or limit** primitive types.
 
@@ -75,9 +75,9 @@ class Student:
 			print(f"{self.name} is attending class.")
 ```
 
-#### 📌 C++ Object Example:
+#### 📌 cpp Object Example:
 
-```c++
+```cpp
 class Student { 
 public:     
 	string name;     
@@ -96,7 +96,7 @@ When built-in types are not enough, you can create your **own custom types** usi
 
 |Type|Purpose|
 |---|---|
-|**struct**|Groups variables of different types (C++)|
+|**struct**|Groups variables of different types (cpp)|
 |**class**|Combines data and methods (OOP foundation)|
 |**enum**|Set of named constant values (for choices/states)|
 
@@ -135,6 +135,6 @@ When built-in types are not enough, you can create your **own custom types** usi
 |**Primitive**|`int`, `float`, `char`, `bool`|Simple, single-value storage|
 |**Composite**|`list`, `array`, `object`, `tuple`|Grouping related data values|
 |**User-Defined**|`struct`, `class`, `enum`|Custom structures for real-world modeling|
-|**Modifiers (C++)**|`unsigned`, `short`, `long`, etc.|Fine-tuning memory usage and value range|
+|**Modifiers (cpp)**|`unsigned`, `short`, `long`, etc.|Fine-tuning memory usage and value range|
 
 ---

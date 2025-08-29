@@ -1,10 +1,10 @@
-Here are solutions in **C++** and **Python** (since your course is using those two):
+Here are solutions in **cpp** and **Python** (since your course is using those two):
 
 ---
 
-## ✅ C++ Solution
+## ✅ cpp Solution
 
-```c++
+```cpp
 #include <iostream>
 using namespace std;
 

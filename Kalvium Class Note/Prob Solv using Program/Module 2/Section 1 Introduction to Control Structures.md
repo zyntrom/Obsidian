@@ -35,9 +35,9 @@ print("Take out the milk")
 print("Pour into glass")
 ```
 
-#### ✅ Example (C++):
+#### ✅ Example (cpp):
 
-```c++
+```cpp
 cout << "Open the fridge" << endl; cout << "Take out the milk" << endl; cout << "Pour into glass" << endl;
 ```
 
@@ -52,7 +52,7 @@ Makes decisions using conditions like:
 - `if`
 - `else if`
 - `else`
-- `switch` (in C/C++)
+- `switch` (in C/cpp)
 
 #### ✅ Python:
 
@@ -64,9 +64,9 @@ else:
 	print("Zero or Negative")
 ```
 
-#### ✅ C++:
+#### ✅ cpp:
 
-```c++
+```cpp
 int number = 0; 
 if (number == 0)     
 	cout << "Zero"; 
@@ -89,17 +89,17 @@ for i in range(5):
 	print(i)
 ```
 
-#### ✅ C++ `for` loop:
+#### ✅ cpp `for` loop:
 
-```c++
+```cpp
 for (int i = 0; i < 5; i++) {     
 cout << i << endl; 
 }
 ```
 
-#### ✅ C++ `do-while` loop (runs at least once):
+#### ✅ cpp `do-while` loop (runs at least once):
 
-```c++
+```cpp
 int count = 0; do {     
 cout << count << endl;     
 count++; }while (count < 5);

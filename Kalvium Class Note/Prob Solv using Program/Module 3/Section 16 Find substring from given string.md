@@ -10,9 +10,9 @@ Then print the substring starting at `start` with length `n`.
 
 ---
 
-### ✅ C++ Solution
+### ✅ cpp Solution
 
-```c++
+```cpp
 #include <iostream>
 using namespace std;
 

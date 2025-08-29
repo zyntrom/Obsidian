@@ -39,7 +39,7 @@ print(prime_count)
 
 ---
 
-### 🔹 C++ Implementation
+### 🔹 cpp Implementation
 
 ```cpp
 #include <iostream>

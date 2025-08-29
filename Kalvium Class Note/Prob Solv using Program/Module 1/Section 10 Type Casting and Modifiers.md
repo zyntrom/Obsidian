@@ -36,9 +36,9 @@ print(num + 10)  # 133
 
 ---
 
-### ✅ C++ Examples
+### ✅ cpp Examples
 
-```c++
+```cpp
 #include <iostream> 
 #include <string> 
 using namespace std;  
@@ -61,11 +61,11 @@ int main() {
 
 ---
 
-### 🏷️ What Are Modifiers? (C++ Only)
+### 🏷️ What Are Modifiers? (cpp Only)
 
 Modifiers are **keywords** that **change the size, range, or sign** of a data type — like adding a label on a glass: “Only positive!” or “Extra large!”
 
-#### 🧾 Common C++ Modifiers:
+#### 🧾 Common cpp Modifiers:
 
 |Modifier|Purpose|Range (32-bit system)|
 |---|---|---|
@@ -94,7 +94,7 @@ Modifiers are **keywords** that **change the size, range, or sign** of a data ty
 
 ### ✨ Summary
 
-| Concept       | Python          | C++                                 |
+| Concept       | Python          | cpp                                 |
 | ------------- | --------------- | ----------------------------------- |
 | Implicit Cast | Yes             | Yes                                 |
 | Explicit Cast | `int(x)`        | `(int)x`                            |

@@ -43,13 +43,13 @@ Used for basic math operations.
 |`**`|Exponentiation|`2 ** 3`|`8`|
 
 **📌 Note:**  
-In C++, `/` gives **integer division** if both operands are integers.
+In cpp, `/` gives **integer division** if both operands are integers.
 
 ---
 
 ### 2. ✅ Relational / Comparison Operators
 
-Used to compare two values and return a **boolean** (`True`/`False` in Python, `1`/`0` in C++).
+Used to compare two values and return a **boolean** (`True`/`False` in Python, `1`/`0` in cpp).
 
 | Operator | Meaning                  | Example  | Result  |
 | -------- | ------------------------ | -------- | ------- |
@@ -74,7 +74,7 @@ Assign values to variables and optionally combine with arithmetic.
 |`*=`|Multiply and assign|`x *= 4`|
 |`/=`|Divide and assign|`x /= 2`|
 
-📌 In **C++**, `/=` performs **integer division** if variables are integers.
+📌 In **cpp**, `/=` performs **integer division** if variables are integers.
 
 ---
 
@@ -86,17 +86,17 @@ Work with **a single operand**.
 |---|---|---|---|
 |`+`|Unary plus|`+a`|`a`|
 |`-`|Unary minus (negate)|`-a`|`-a`|
-|`++`|Increment (C++ only)|`++a`|`a+1`|
-|`--`|Decrement (C++ only)|`--a`|`a-1`|
+|`++`|Increment (cpp only)|`++a`|`a+1`|
+|`--`|Decrement (cpp only)|`--a`|`a-1`|
 
 ✅ Python supports only `+a` and `-a`.  
 🚫 Python **does not support** `++a` or `--a`.
 
 ---
 
-## 🧪 Quick Comparison Between Python & C++ Syntax
+## 🧪 Quick Comparison Between Python & cpp Syntax
 
-|Task|Python|C++|
+|Task|Python|cpp|
 |---|---|---|
 |Add 2 numbers|`a + b`|`a + b`|
 |Compare 2 values|`a > b`|`a > b`|
@@ -126,9 +126,9 @@ a += 2        # a becomes 12
 print(a)
 ```
 
-### 📝 Sample Code (C++)
+### 📝 Sample Code (cpp)
 
-```c++
+```cpp
 #include <iostream> 
 using namespace std;  
 int main() {     int a = 10, b = 5;     
@@ -146,4 +146,4 @@ return 0;
 
 ✅ The symbols that make your code smart  
 ✅ How to do math, compare values, and update variables  
-✅ Differences between Python and C++ operator behavior
+✅ Differences between Python and cpp operator behavior

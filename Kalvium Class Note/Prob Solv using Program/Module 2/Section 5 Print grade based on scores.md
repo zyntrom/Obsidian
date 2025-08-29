@@ -5,7 +5,7 @@
 This program determines a student's grade based on their score using **multi-branch conditional statements**:
 
 - In **Python**: `if-elif-else` ladder
-- In **C++**: `if-else-if` ladder
+- In **cpp**: `if-else-if` ladder
 
 These ladders check one condition at a time, top-down, and execute the first condition that is true.
 
@@ -71,9 +71,9 @@ else:
 ```
 
 ---
-## 💻 Program (C++)
+## 💻 Program (cpp)
 
-```c++
+```cpp
 #include <iostream> 
 using namespace std;  
 int main() {  
@@ -99,7 +99,7 @@ int main() {  
 
 ---
 
-## 🔍 Explanation of C++ Version
+## 🔍 Explanation of cpp Version
 
 - **cin** is used to get input from the user.
 - `if-else if` ladder checks each score range in descending order.

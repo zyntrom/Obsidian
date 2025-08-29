@@ -66,9 +66,9 @@ result = "You passed!" if score >= 80 else "You failed."
 print(result)
 ```
 
-### **Syntax (C++):**
+### **Syntax (cpp):**
 
-```c++
+```cpp
 int score = 72;  
 string result = (score >= 80) ? "You passed!" : "You failed.";  
 cout << result;

@@ -28,7 +28,7 @@ Row 0 → [a00, a01, a02, ...] Row 1 → [a10, a11, a12, ...] Row 2 → [a20, a2
 
 ### In Python 🐍
 
-```c++
+```cpp
 # Empty 2D array 
 matrix = []  
 # Predefined 2D array 
@@ -38,9 +38,9 @@ matrix = [
 	[7, 8, 9] 
 ]
 ```
-### In C++ 💻
+### In cpp 💻
 
-```c++
+```cpp
 // Declaration 
 int matrix[3][4]; // 3 rows, 4 columns  // Initialization 
 int matrix[3][3] = {     
@@ -69,9 +69,9 @@ for i in range(rows):
 print(row)
 ```
 
-### C++ Example
+### cpp Example
 
-```c++
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -117,7 +117,7 @@ aspectRatio: "56.25"
 ```
 
 ```embed
-title: "2D Arrays in C++ | 2D array addition & Subtraction"
+title: "2D Arrays in cpp | 2D array addition & Subtraction"
 image: "https://i.ytimg.com/vi/OJC84pYXB_U/maxresdefault.jpg"
 description: "Support Simple Snippets by Donations -Google Pay UPI ID - tanmaysakpal11@okiciciPayPal - paypal.me/tanmaysakpal11--------------------------------------------..."
 url: "https://youtu.be/OJC84pYXB_U"

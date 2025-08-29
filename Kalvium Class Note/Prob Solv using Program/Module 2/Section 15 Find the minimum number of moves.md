@@ -17,9 +17,9 @@ Use `ceil(diff / 10.0)` for that.
 
 ---
 
-### ✅ **C++ Code**
+### ✅ **cpp Code**
 
-```c++
+```cpp
 #include <iostream> 
 #include <cmath> // for abs and ceil 
 using namespace std;  

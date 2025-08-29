@@ -13,7 +13,7 @@ A **switch** statement allows a program to **choose between multiple fixed optio
 
 ---
 
-## 🔄 Structure of a Switch Statement (C++)
+## 🔄 Structure of a Switch Statement (cpp)
 
 **Parts of a switch block:**
 1. **switch(variable)** – the variable whose value is checked
@@ -32,9 +32,9 @@ A **switch** statement allows a program to **choose between multiple fixed optio
 
 ---
 
-## 🛠️ Example: Month Mapper (C++)
+## 🛠️ Example: Month Mapper (cpp)
 
-```c++
+```cpp
 #include <iostream> 
 using namespace std;  
 int main() {     

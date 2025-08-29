@@ -40,9 +40,9 @@ If the target was `12`, it would not be found, so output would be `-1`.
 
 ## 💻 Code Implementations
 
-### 🔹 C++ Code
+### 🔹 cpp Code
 
-```c++
+```cpp
 #include <iostream>
 using namespace std;
 

@@ -37,7 +37,7 @@ You **cannot** use them as identifiers.
 if, else, while, def, class, import, return, in, try, except, True, False, None
 ```
 
-#### 📌 C++ Keywords (some examples):
+#### 📌 cpp Keywords (some examples):
 
 ```
 int, float, char, if, else, switch, for, while, return, class, public, private, try, catch
@@ -54,14 +54,14 @@ int, float, char, if, else, switch, for, while, return, class, public, private, 
 - Start with a **letter or underscore (_)**
 - Can contain **letters, digits, underscores**
 - **Cannot** start with a digit
-- **Case-sensitive** in both Python and C++
+- **Case-sensitive** in both Python and cpp
 
 #### 🐍 Python Naming Convention:
 
 - **snake_case** is preferred  
     Example: `total_marks`, `student_name`
 
-#### 💻 C++ Naming Convention:
+#### 💻 cpp Naming Convention:
 
 - No enforced rule; commonly uses **camelCase** or **snake_case**  
     Example: `totalMarks`, `student_name`
@@ -91,7 +91,7 @@ They don’t have names.
 - **Arithmetic**: `+`, `-`, `*`, `/`, `%`
 - **Comparison**: == , !=, >, <, >=, <=
 - **Assignment**: =, +=, -=, *=, etc.
-- **Logical**: `and`, `or`, `not` (Python); `&&`, `||`, `!` (C++)
+- **Logical**: `and`, `or`, `not` (Python); `&&`, `||`, `!` (cpp)
 
 ---
 
@@ -99,23 +99,23 @@ They don’t have names.
 
 **Delimiters** organize code and define structure.
 
-#### Common Delimiters in Python & C++:
+#### Common Delimiters in Python & cpp:
 
 |Delimiter|Purpose|Example|
 |---|---|---|
 |`()`|Grouping / Function call|`print("Hello")`|
 |`[]`|List/Array indexing|`arr[0]`|
-|`{}`|Block in C++|`int main() { ... }`|
+|`{}`|Block in cpp|`int main() { ... }`|
 |`:`|Code block start in Python|`if a > b:`|
 |`,`|Separate arguments or items|`func(a, b, c)`|
-|`;`|End statement in C++|`int x = 5;`|
+|`;`|End statement in cpp|`int x = 5;`|
 |`.`|Access methods/attributes|`math.sqrt(16)` or `object.var`|
 
 ---
 
 ### 📝 Whitespace & Comments
 
-|Feature|Python|C++|
+|Feature|Python|cpp|
 |---|---|---|
 |**Whitespace**|Used for indentation (significant)|Used to separate code (not significant)|
 |**Single-line comment**|`# comment`|`// comment`|
@@ -127,7 +127,7 @@ They don’t have names.
 
 #### 📌 Python:
 
-```c++
+```cpp
 .
 variable = 5 + 3 
 print("Result: ", variable)
@@ -144,9 +144,9 @@ print("Result: ", variable)
 
 ---
 
-#### 📌 C++:
+#### 📌 cpp:
 
-```c++
+```cpp
 int result = 5 + 3; 
 td::cout << "Result: " << result << std::endl;
 ```
@@ -191,12 +191,12 @@ pi = 3.14         # float
 
 ---
 
-#### 💻 Variables in C++
+#### 💻 Variables in cpp
 
 - **Statically typed** — type must be declared
 - Strict rules help avoid bugs
 
-```c++
+```cpp
 int age = 25; 
 float pi = 3.14; 
 char grade = 'A';

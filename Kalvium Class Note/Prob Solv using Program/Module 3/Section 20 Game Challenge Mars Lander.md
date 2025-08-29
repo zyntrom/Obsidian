@@ -1,10 +1,10 @@
-I’ll give you **clean template codes in C++, Python, and Java** — all written in a **universal style** (no shortcuts, no cheat functions).
+I’ll give you **clean template codes in cpp, Python, and Java** — all written in a **universal style** (no shortcuts, no cheat functions).
 
 ---
 
-## ✅ C++ Solution
+## ✅ cpp Solution
 
-```c++
+```cpp
 #include <iostream>
 using namespace std;
 

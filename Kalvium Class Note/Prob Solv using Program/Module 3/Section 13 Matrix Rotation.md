@@ -89,9 +89,9 @@ def rotate_matrix(matrix):
 
 ---
 
-## 6. Implementation in C++
+## 6. Implementation in cpp
 
-```c++
+```cpp
 #include <iostream> 
 #include <vector> 
 using namespace std;  

@@ -48,11 +48,11 @@ for i in range(1, 6):
 
 ---
 
-## 💻 For Loop in C++
+## 💻 For Loop in cpp
 
 **Code:**
 
-```c++
+```cpp
 include <iostream>  
 using namespace std;  
 int main() {  
@@ -99,9 +99,9 @@ for i in range(n, 0, -1):
 	print(i)
 ```
 
-### 💻 C++ Code:
+### 💻 cpp Code:
 
-```c++
+```cpp
 include <iostream>  
 using namespace std;  
 int main() {  
@@ -120,4 +120,4 @@ int main() {
 
 - Use **for loops** when you know how many times to repeat.
 - Efficiently handle repetition without writing code multiple times.
-- Python uses `range()`, C++ uses a `(start; condition; step)` format.
+- Python uses `range()`, cpp uses a `(start; condition; step)` format.

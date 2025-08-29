@@ -41,9 +41,9 @@ else:
 	print("You need a ticket to enter.")
 ```
 
-### C++ Version
+### cpp Version
 
-```c++
+```cpp
 bool has_ticket = true; 
 int age = 12;  
 	if (has_ticket) {     
@@ -86,9 +86,9 @@ else:
 	print("y is greater.")
 ```
 
-### C++
+### cpp
 
-```c++
+```cpp
 `int x = 10, 
 y = 10;  
 if (x >= y) {     
@@ -136,9 +136,9 @@ else:
 		print("b is greater.")
 ```
 
-#### C++
+#### cpp
 
-```c++
+```cpp
 int a = 15, b = 25;  
 if (a == b) {     
 	cout << "Both numbers are equal."; 
@@ -176,4 +176,4 @@ Nested if-else works like a **decision tree**:
 |Decision Dependency|Inner condition runs **only if** outer one does|
 |Real-World Use|Logical flows like tickets + age or ID + entry|
 |Python Style|Uses **indentation** for nesting|
-|C++ Style|Uses **braces `{}`** for nesting|
+|cpp Style|Uses **braces `{}`** for nesting|

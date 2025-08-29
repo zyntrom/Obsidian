@@ -28,7 +28,7 @@
 
 ---
 
-### ✅ C++
+### ✅ cpp
 
 |Task|Code|
 |---|---|
@@ -52,7 +52,7 @@
 |Custom separator|`print("A", "B", sep="-")`|A-B|
 |No newline|`print("Loading", end="...")`|Loading...|
 
-### ✅ C++
+### ✅ cpp
 
 |Task|Code|Output|
 |---|---|---|
@@ -60,15 +60,15 @@
 |With variable|`cout << "Hello, " << name << endl;`|Hello, Alice|
 |Without newline|`cout << "A..."; cout << "Done!";`|A...Done!|
 
-📌 C++ requires manual spaces using `" "`.
+📌 cpp requires manual spaces using `" "`.
 
 ---
 
 ## 🧮 Printing with Precision
 
-### ✅ C++ (Use `<iomanip>`)
+### ✅ cpp (Use `<iomanip>`)
 
-```c++
+```cpp
 #include <iomanip> 
 cout << fixed << setprecision(2); 
 cout << "Weight: " << weight << " kg";
@@ -99,7 +99,7 @@ print(f"Weight: {weight:.2f} kg")
 print("Name:\tJohn\nQuote: \"Practice makes perfect!\"")
 ```
 
-```c++
+```cpp
 cout << "Name:\tJohn\nQuote: \"Practice makes perfect!\"\n";
 ```
 
@@ -120,9 +120,9 @@ name = input()
 print(f"{name} is {age} years old.")
 ```
 
-### ✅ C++ Code Example:
+### ✅ cpp Code Example:
 
-```c++
+```cpp
 #include <iostream> 
 #include <string> 
 using namespace std;  

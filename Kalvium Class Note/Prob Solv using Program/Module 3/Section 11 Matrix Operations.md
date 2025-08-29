@@ -26,9 +26,9 @@ def matrix_addition(A, B):
 	return C
 ```
 
-### C++ Code
+### cpp Code
 
-```c++
+```cpp
 for (int i = 0; i < rows; i++) {     
 	for (int j = 0; j < cols; j++) {         
 		C[i][j] = A[i][j] + B[i][j];     
@@ -64,9 +64,9 @@ def matrix_subtraction(A, B):
 return C
 ```
 
-### C++ Code
+### cpp Code
 
-```c++
+```cpp
 for (int i = 0; i < rows; i++) {     
 	for (int j = 0; j < cols; j++) {         
 		C[i][j] = A[i][j] - B[i][j];     
@@ -102,9 +102,9 @@ def scalar_multiplication(s, A):
 return C
 ```
 
-### C++ Code
+### cpp Code
 
-```c++
+```cpp
 for (int i = 0; i < rows; i++) {     
 	for (int j = 0; j < cols; j++) {         
 		C[i][j] = s * A[i][j];     
@@ -139,9 +139,9 @@ def matrix_transpose(A):
 return AT
 ```
 
-### C++ Code
+### cpp Code
 
-```c++
+```cpp
 for (int i = 0; i < rows; i++) {     
 	for (int j = 0; j < cols; j++) {         
 		AT[j][i] = A[i][j];     
@@ -178,9 +178,9 @@ def diagonal_sum(A):
 return primary, secondary
 ```
 
-### C++ Code
+### cpp Code
 
-```c++
+```cpp
 int primary = 0, secondary = 0; 
 for (int i = 0; i < n; i++) {     
 	primary += A[i][i];     

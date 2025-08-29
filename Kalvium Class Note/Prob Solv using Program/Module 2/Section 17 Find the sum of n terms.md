@@ -9,9 +9,9 @@ for i in range(1, n + 1):
 
 ---
 
-### 💠 C++ Code – Sum from 1 to `n`:
+### 💠 cpp Code – Sum from 1 to `n`:
 
-```c++
+```cpp
 #include <iostream> 
 using namespace std;  
 int main() {     

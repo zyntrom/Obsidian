@@ -1,6 +1,6 @@
-Here’s the clean C++ code:
+Here’s the clean cpp code:
 
-```c++
+```cpp
 #include <iostream>
 #include <string>
 using namespace std;
@@ -34,13 +34,13 @@ int main() {
 
 ---
 
-Here’s the **solution in C++, Python, and Java** for your problem:
+Here’s the **solution in cpp, Python, and Java** for your problem:
 
 ---
 
-### 🔹 C++ Solution
+### 🔹 cpp Solution
 
-```c++
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -106,5 +106,5 @@ public class Main {
 1. Take two strings as first input line.
 2. Take third string as second input line.
 3. Concatenate first two strings.
-4. Compare result with third string using == (Python, C++) or `.equals()` (Java).
+4. Compare result with third string using == (Python, cpp) or `.equals()` (Java).
 5. Print `"yes"` or `"no"`.

@@ -20,9 +20,9 @@
 
 ---
 
-## ✅ C++ Solution (using `string` class)
+## ✅ cpp Solution (using `string` class)
 
-```c++
+```cpp
 #include <iostream>
 #include <string>
 using namespace std;

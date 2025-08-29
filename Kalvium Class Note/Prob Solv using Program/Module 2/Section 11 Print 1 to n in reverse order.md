@@ -32,9 +32,9 @@ for i in range(n, 0, -1):
 
 ---
 
-## 💻 C++ Program
+## 💻 cpp Program
 
-```c++
+```cpp
 #include <iostream> 
 using namespace std;  
 int main() {     
