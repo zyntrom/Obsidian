@@ -1,4 +1,4 @@
-### ✅ C Program
+### ✅ C++ Program
 
 ```c++
 #include <iostream>
