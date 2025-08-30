@@ -5,18 +5,18 @@
 using namespace std;
 struct Node{
 	int data;
-	Node* next=NULL;
+	Node* next=nullptr;
 };
 void insertData(Node*& head,int value){
 	Node* newNode= new Node();
 	newNode->data=value;
-	newNode->next=NULL;
-	if(head==NULL){
+	newNode->next=nullptr;
+	if(head==nullptr){
 		head=newNode;
 	}
 	else{
 		Node* curr=head;
-		while(curr->next!=NULL){
+		while(curr->next!=nullptr){
 			curr=curr->next;
 		}
 		curr->next=newNode;
@@ -24,7 +24,7 @@ void insertData(Node*& head,int value){
 }
 void print(Node*& head){
 	Node* curr=head;
-	while(curr!=NULL){
+	while(curr!=nullptr){
 		cout<<curr->data<<" ";
 	}
 	cout<<endl;
