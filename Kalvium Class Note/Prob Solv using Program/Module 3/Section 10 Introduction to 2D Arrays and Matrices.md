@@ -61,12 +61,12 @@ rows = int(input("Enter rows: "))
 cols = int(input("Enter columns: "))  
 matrix = []  
 for i in range(rows):    
-	row = []     
-	for j in range(cols):         
-		val = int(input(f"Enter element at {i+1},{j+1}: ")) 
-		row.append(val)     
+	row=list(map(int,input().split()))
 	matrix.append(row)  # Print matrix for row in matrix:     
-print(row)
+
+for i in range(rows):
+	print(*matrix[i])
+	
 ```
 
 ### cpp Example
