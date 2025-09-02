@@ -64,7 +64,9 @@ Simplify: **F(A, B, C) = Σm(0, 2, 4, 5, 6)**
 ### Step 1 – 3-variable K-Map layout
 
 ```
-BC      00 01 11 10 A=0   1   0   0   1 A=1   1   1   0   1
+BC      00 01 11 10 
+A=0   1   0   0   1 
+A=1   1   1   0   1
 ```
 
 ### Step 2 – Group 1s
