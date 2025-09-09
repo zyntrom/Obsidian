@@ -202,3 +202,7 @@
 - Linked list sorting :
 
 ![[Pasted image 20250808122646.png]]
+
+Deleting Node at an index:
+
+![[Pasted image 20250909164325.png]]
