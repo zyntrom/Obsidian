@@ -145,7 +145,7 @@
 
 - Insertion Sort of an array:
 
-![[Pasted image 20250909104936.png]]
+![[Pasted image 20250909110731.png]]
 
 - Power function with recursion: 
 
