@@ -206,3 +206,7 @@
 Deleting Node at an index:
 
 ![[Pasted image 20250909164325.png]]
+
+Linked List Sorting:
+
+![[Pasted image 20250909174727.png]]
