@@ -210,3 +210,7 @@ Deleting Node at an index:
 Linked List Sorting:
 
 ![[Pasted image 20250909174727.png]]
+
+Asteroid collision Problem:
+
+![[Pasted image 20250910102041.png]]
