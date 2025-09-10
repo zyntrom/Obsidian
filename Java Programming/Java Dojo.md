@@ -203,14 +203,18 @@
 
 ![[Pasted image 20250808122646.png]]
 
-Deleting Node at an index:
+- Deleting Node at an index:
 
 ![[Pasted image 20250909164325.png]]
 
-Linked List Sorting:
+- Linked List Sorting:
 
 ![[Pasted image 20250909174727.png]]
 
-Asteroid collision Problem:
+- Asteroid collision Problem:
 
 ![[Pasted image 20250910102041.png]]
+
+- Creating the Smallest possible number with a give number after removing k digits:
+
+![[Pasted image 20250910113528.png]]
