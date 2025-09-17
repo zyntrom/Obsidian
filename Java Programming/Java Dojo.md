@@ -218,3 +218,8 @@
 - Creating the Smallest possible number with a give number after removing k digits:
 
 ![[Pasted image 20250910113528.png]]
+
+- Greatest Sliding window value  in array:
+
+![[Pasted image 20250917104336.png]]
+
