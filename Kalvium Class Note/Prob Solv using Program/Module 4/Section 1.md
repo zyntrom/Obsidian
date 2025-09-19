@@ -8,7 +8,6 @@
 - Now, the focus shifts to **modularity in programming**.
 - Just like spaceships are built from **modules**, programs can also be built from smaller building blocks.
 - **Functions** are the building blocks that help in modular programming.
-    
 
 ---
 
@@ -17,71 +16,63 @@
 By the end of this lesson, you should be able to:
 
 1. Understand **what modularity is** and why it’s important.
-    
 2. Learn how **functions act as building blocks** for modular code.
-    
 3. Decompose a **problem into smaller tasks**, each handled by a function.
-    
 4. Apply this modular approach to coding problems presented as **function requirements**.
-    
 5. Implement a program that **checks if a number is divisible by the sum of its digits using functions**.
-    
 
 ---
 
 ## 🏗️ Embracing Modularity in Programming
 
 - Modularity = **Dividing a program into independent modules**.
-    
 - Each module:
-    
     - Performs a **specific task**.
-        
     - Can be **developed, tested, and maintained independently**.
-        
 - Advantages:
-    
     - Easier to **understand**.
-        
     - Easier to **debug** (fix errors).
-        
     - Easier to **reuse**.
-        
 - Analogy:
-    
     - Building a **house**: foundation, framing, plumbing → all separate but combine to make the house.
-        
     - Similarly, in code → each function/module = one job.
-        
 
 ---
 
 ## 🔧 Functions: The Building Blocks
 
 - **Definition:** Functions are **self-contained blocks of code** that perform a specific task.
-    
 - **Inputs (Arguments):** Data provided to the function.
-    
 - **Output (Return value):** Result produced by the function.
-    
 - Functions **encapsulate complexity** → hide details inside the function.
-    
 - Benefits:
-    
     - Code becomes **cleaner and organized**.
-        
     - Code becomes **reusable**.
-        
     - Acts like **documentation** if named properly.
-        
 
 ### 📌 Example: Python
 
-`def add(x, y):     return x + y  result = add(5, 3) print(result)  # Output: 8`
+```python
+def add(x, y):     
+	return x + y  
+result = add(5, 3) 
+print(result)  # Output: 8
+```
 
 ### 📌 Example: C++
 
-`#include <iostream> using namespace std;  int add(int x, int y) {     return x + y; }  int main() {     int result = add(5, 3);     cout << result; // Output: 8     return 0; }`
+```cpp
+#include <iostream> 
+using namespace std;  
+int add(int x, int y) {     
+	return x + y; 
+}  
+int main() {     
+	int result = add(5, 3);     
+	cout << result; // Output: 8     
+	return 0; 
+}
+```
 
 ---
 
@@ -90,51 +81,71 @@ By the end of this lesson, you should be able to:
 - **Process:**
     
     1. Identify the distinct steps in a task.
-        
     2. Assign each step to a separate function.
-        
     3. Each function has **input → operation → output**.
-        
     4. Main program **orchestrates function calls**.
-        
 
 ### Example: Area of a Rectangle
 
 Steps:
 
 1. Get length.
-    
 2. Get width.
-    
 3. Multiply → area.
-    
 
 #### Python
 
-`def get_length():     return int(input("Enter length: "))  def get_width():     return int(input("Enter width: "))  def calculate_area(length, width):     return length * width  length = get_length() width = get_width() area = calculate_area(length, width) print("Area:", area)`
+```python
+def get_length():     
+	return int(input("Enter length: "))  
+def get_width():     
+	return int(input("Enter width: "))  
+def calculate_area(length, width):     
+	return length * width  
+length = get_length() 
+width = get_width() 
+area = calculate_area(length, width) 
+print("Area:", area)
+```
 
 #### C++
 
-`#include <iostream> using namespace std;  int get_length() {     int length;     cin >> length;     return length; }  int get_width() {     int width;     cin >> width;     return width; }  int calculate_area(int length, int width) {     return length * width; }  int main() {     int length = get_length();     int width = get_width();     int area = calculate_area(length, width);     cout << "Area: " << area << endl;     return 0; }`
+```cpp
+#include <iostream> 
+using namespace std;  
+int get_length() {     
+	int length;     
+	cin >> length;     
+	return length; 
+}  
+int get_width() {     
+	int width;     
+	cin >> width;     
+	return width; 
+}  
+int calculate_area(int length, int width) {     
+	return length * width; 
+}  
+int main() {     
+	int length = get_length();     
+	int width = get_width();     
+	int area = calculate_area(length, width);     
+	cout << "Area: " << area << endl;     
+	return 0; 
+}
+```
 
 ---
 
 ## 💻 Solving Problems with Function Requirements
 
 - In coding platforms, problems are often given as **function requirements**:
-    
     - Function must take **specific input parameters**.
-        
     - Function must return **specific output**.
-        
 - **Steps:**
-    
     1. Understand input & output data types.
-        
     2. Break problem into smaller tasks.
-        
     3. Implement inside functions.
-        
 
 ### Example: Factorial
 
