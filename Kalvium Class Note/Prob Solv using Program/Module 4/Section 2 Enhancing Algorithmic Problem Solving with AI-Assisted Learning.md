@@ -26,6 +26,14 @@
 - AI = tutor for **coding and problem solving**.
 
 ---
+```embed
+title: "Problem Solving with AI"
+image: "https://i.ytimg.com/vi/O_VjO1cx-No/maxresdefault.jpg"
+description: "Start learning at code.org today!Stay in touch with us on social media:• Twitter: https://twitter.com/codeorg• Facebook: https://www.facebook.com/Code.org• I..."
+url: "https://youtu.be/O_VjO1cx-No"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ## ❓ What Kinds of Questions Should You Ask AI?
 
