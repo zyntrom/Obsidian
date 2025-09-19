@@ -52,6 +52,16 @@ Output: `10005`
 
 ---
 
+```embed
+title: "Smallest number | Problem of the Day | GeeksForGeeks"
+image: "https://i.ytimg.com/vi/CgaYmx0AkGA/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGkgaShpMA8=&rs=AOn4CLALwivAMSWDM7F8b98EIICntqoHGg"
+description: "Given two integers s and d. The task is to find the smallest number such that the sum of its digits is s and the number of digits in the number are d. Return..."
+url: "https://youtu.be/CgaYmx0AkGA"
+favicon: ""
+aspectRatio: "56.25"
+```
+
+
 ### ✅ Python
 
 ```python
@@ -103,15 +113,13 @@ int main() {
 	    } else {
 	        digit = 0;
 	    }
-
-	    if (i == 0 && digit == 0 && d > 1) digit = 1; // first digit cannot be 0
+	    if (i == 0 && digit == 0 && d > 1) digit = 1; 
+	    // first digit cannot be 0
 	    remaining -= digit;
 	    cout << digit;
-}
-cout << endl;
-return 0;
-
-
+	}
+	cout << endl;
+	return 0;
 }
 
 ```
@@ -162,7 +170,5 @@ public class Main {
 ✅ **Explanation:**
 
 - **Right-to-left greedy filling** ensures the smallest number.
-    
 - Adjust the first digit if it is zero to avoid leading zeros.
-    
 - Checks handle impossible cases efficiently.
