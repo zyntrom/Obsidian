@@ -80,7 +80,26 @@ print(maximum)
 
 ### ✅ C++
 
-```
+```cpp
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string s;
+    int k;
+    cin >> s >> k;
+    int maximum = 0;
+    for (int i = 0; i <= s.size() - k; i++) {
+        string sub = s.substr(i, k);
+        int num = stoi(sub);
+        if (num > maximum) {
+            maximum = num;
+        }
+    }
+    cout << maximum << endl;
+    return 0;
+}
 
 ```
 
@@ -88,6 +107,26 @@ print(maximum)
 
 ### ✅ Java
 
-`import java.util.Scanner;  public class Main {     public static void main(String[] args) {         Scanner sc = new Scanner(System.in);         String s = sc.next();         int k = sc.nextInt();          int maximum = 0;         for (int i = 0; i <= s.length() - k; i++) {             String sub = s.substring(i, i + k);             int num = Integer.parseInt(sub);             if (num > maximum) {                 maximum = num;             }         }          System.out.println(maximum);     } }`
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.next();
+        int k = sc.nextInt();
+        int maximum = 0;
+        for (int i = 0; i <= s.length() - k; i++) {
+            String sub = s.substring(i, i + k);
+            int num = Integer.parseInt(sub);
+            if (num > maximum) {
+                maximum = num;
+            }
+        }
+        System.out.println(maximum);
+    }
+}
+
+```
 
 ---
