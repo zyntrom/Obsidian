@@ -69,7 +69,7 @@ Input: `7 3`
 
 ### **Python**
 
-```py
+```python
 import math
 
 def fraction(num, den):
@@ -98,10 +98,76 @@ fraction(num, den)
 
 ### **C++**
 
-`#include <iostream> #include <algorithm> using namespace std;  int main() {     int num, den;     cin >> num >> den;      if (num < den) {         int g = __gcd(num, den);         num /= g;         den /= g;         cout << "Proper " << num << "/" << den << endl;     } else {         int whole = num / den;         int remainder = num % den;         if (remainder == 0) {             cout << "Improper " << whole << endl;         } else {             int g = __gcd(remainder, den);             remainder /= g;             den /= g;             cout << "Improper " << whole << " " << remainder << "/" << den << endl;         }     }      return 0; }`
+```cpp
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int main() {
+    int num, den;
+    cin >> num >> den;
+    if (num < den) {
+        int g = __gcd(num, den);
+        num /= g;
+        den /= g;
+        cout << "Proper " << num << "/" << den << endl;
+    } else {
+        int whole = num / den;
+        int remainder = num % den;
+        if (remainder == 0) {
+            cout << "Improper " << whole << endl;
+        } else {
+            int g = __gcd(remainder, den);
+            remainder /= g;
+            den /= g;
+            cout << "Improper " << whole << " " << remainder << "/" << den << endl;
+        }
+    }
+
+    return 0;
+}
+
+```
 
 ---
 
 ### **Java**
 
-`import java.util.Scanner;  public class Main {     public static int gcd(int a, int b) {         while (b != 0) {             int temp = b;             b = a % b;             a = temp;         }         return a;     }      public static void main(String[] args) {         Scanner sc = new Scanner(System.in);         int num = sc.nextInt();         int den = sc.nextInt();          if (num < den) {             int g = gcd(num, den);             num /= g;             den /= g;             System.out.println("Proper " + num + "/" + den);         } else {             int whole = num / den;             int remainder = num % den;             if (remainder == 0) {                 System.out.println("Improper " + whole);             } else {                 int g = gcd(remainder, den);                 remainder /= g;                 den /= g;                 System.out.println("Improper " + whole + " " + remainder + "/" + den);             }         }          sc.close();     } }`
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static int gcd(int a, int b) {
+        while (b != 0) {
+            int temp = b;
+            b = a % b;
+            a = temp;
+        }
+        return a;
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        int den = sc.nextInt();
+        if (num < den) {
+            int g = gcd(num, den);
+            num /= g;
+            den /= g;
+            System.out.println("Proper " + num + "/" + den);
+        } else {
+            int whole = num / den;
+            int remainder = num % den;
+            if (remainder == 0) {
+                System.out.println("Improper " + whole);
+            } else {
+                int g = gcd(remainder, den);
+                remainder /= g;
+                den /= g;
+                System.out.println("Improper " + whole + " " + remainder + "/" + den);
+            }
+        }
+        sc.close();
+    }
+}
+
+```
