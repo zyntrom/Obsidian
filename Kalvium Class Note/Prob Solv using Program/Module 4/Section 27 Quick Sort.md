@@ -94,7 +94,27 @@ partition(arr, low, high):
 
 ## 🐍 Python (Quick Sort)
 
-```
+```python
+def partition(arr, low, high):
+    pivot = arr[high]   # choose last element as pivot
+    i = low - 1
+    for j in range(low, high):
+        if arr[j] <= pivot:
+            i += 1
+            arr[i], arr[j] = arr[j], arr[i]
+    arr[i+1], arr[high] = arr[high], arr[i+1]
+    return i + 1
+
+def quick_sort(arr, low, high):
+    if low < high:
+        pi = partition(arr, low, high)
+        quick_sort(arr, low, pi - 1)
+        quick_sort(arr, pi + 1, high)
+
+# Example
+arr = [78, 47, 58, 95, 76, 94]
+quick_sort(arr, 0, len(arr) - 1)
+print("Sorted:", arr)
 
 ```
 
@@ -102,10 +122,80 @@ partition(arr, low, high):
 
 ## 💻 C++ (Quick Sort with plain arrays)
 
-`#include <iostream> using namespace std;  int partition(int arr[], int low, int high) {     int pivot = arr[high]; // pivot is last element     int i = low - 1;      for (int j = low; j < high; j++) {         if (arr[j] <= pivot) {             i++;             swap(arr[i], arr[j]);         }     }     swap(arr[i + 1], arr[high]);     return i + 1; }  void quickSort(int arr[], int low, int high) {     if (low < high) {         int pi = partition(arr, low, high);         quickSort(arr, low, pi - 1);         quickSort(arr, pi + 1, high);     } }  int main() {     int arr[] = {78, 47, 58, 95, 76, 94};     int n = sizeof(arr) / sizeof(arr[0]);      quickSort(arr, 0, n - 1);      cout << "Sorted: ";     for (int i = 0; i < n; i++) cout << arr[i] << " ";     cout << endl; }`
+```cpp
+#include <iostream>
+using namespace std;
+
+int partition(int arr[], int low, int high) {
+    int pivot = arr[high]; // pivot is last element
+    int i = low - 1;
+    for (int j = low; j < high; j++) {
+        if (arr[j] <= pivot) {
+            i++;
+            swap(arr[i], arr[j]);
+        }
+    }
+    swap(arr[i + 1], arr[high]);
+    return i + 1;
+}
+
+void quickSort(int arr[], int low, int high) {
+    if (low < high) {
+        int pi = partition(arr, low, high);
+        quickSort(arr, low, pi - 1);
+        quickSort(arr, pi + 1, high);
+    }
+}
+
+int main() {
+    int arr[] = {78, 47, 58, 95, 76, 94};
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    quickSort(arr, 0, n - 1);
+
+    cout << "Sorted: ";
+    for (int i = 0; i < n; i++) cout << arr[i] << " ";
+    cout << endl;
+}
+
+```
 
 ---
 
 ## ☕ Java (Quick Sort)
 
-`import java.util.*;  public class QuickSortSimple {     public static int partition(int arr[], int low, int high) {         int pivot = arr[high];  // last element as pivot         int i = low - 1;          for (int j = low; j < high; j++) {             if (arr[j] <= pivot) {                 i++;                 int temp = arr[i];                 arr[i] = arr[j];                 arr[j] = temp;             }         }          int temp = arr[i + 1];         arr[i + 1] = arr[high];         arr[high] = temp;          return i + 1;     }      public static void quickSort(int arr[], int low, int high) {         if (low < high) {             int pi = partition(arr, low, high);             quickSort(arr, low, pi - 1);             quickSort(arr, pi + 1, high);         }     }      public static void main(String[] args) {         int arr[] = {78, 47, 58, 95, 76, 94};         quickSort(arr, 0, arr.length - 1);         System.out.println("Sorted: " + Arrays.toString(arr));     } }`
+```java
+import java.util.*;
+
+public class QuickSortSimple {
+    public static int partition(int arr[], int low, int high) {
+        int pivot = arr[high];  // last element as pivot
+        int i = low - 1;
+        for (int j = low; j < high; j++) {
+            if (arr[j] <= pivot) {
+                i++;
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+        int temp = arr[i + 1];
+        arr[i + 1] = arr[high];
+        arr[high] = temp;
+        return i + 1;
+    }
+    public static void quickSort(int arr[], int low, int high) {
+        if (low < high) {
+            int pi = partition(arr, low, high);
+            quickSort(arr, low, pi - 1);
+            quickSort(arr, pi + 1, high);
+        }
+    }
+    public static void main(String[] args) {
+        int arr[] = {78, 47, 58, 95, 76, 94};
+        quickSort(arr, 0, arr.length - 1);
+        System.out.println("Sorted: " + Arrays.toString(arr));
+    }
+}
+
+```
