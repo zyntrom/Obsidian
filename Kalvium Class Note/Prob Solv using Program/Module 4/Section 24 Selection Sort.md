@@ -76,6 +76,16 @@ selectionSort(arr, n):
 
 # 💻 Implementations
 
+```embed
+title: "Selection sort in 3 minutes"
+image: "https://i.ytimg.com/vi/g-PGLbMth_g/maxresdefault.jpg"
+description: "Step by step instructions showing how to run selection sort.Code: https://github.com/msambol/dsa/blob/master/sort/selection_sort.py (different than video, I ..."
+url: "https://youtu.be/g-PGLbMth_g"
+favicon: ""
+aspectRatio: "56.25"
+```
+
+
 ---
 
 ### **Python**
@@ -133,4 +143,30 @@ int main() {
 
 ### **Java**
 
-`import java.util.Arrays;  public class SelectionSort {     public static void selectionSort(int[] arr) {         int n = arr.length;         for (int i = 0; i < n - 1; i++) {             int minIdx = i;             for (int j = i + 1; j < n; j++) {                 if (arr[j] < arr[minIdx]) {                     minIdx = j;                 }             }             int temp = arr[i];             arr[i] = arr[minIdx];             arr[minIdx] = temp;         }     }      public static void main(String[] args) {         int[] arr = {48, 34, 12, 26};         selectionSort(arr);         System.out.println("Sorted: " + Arrays.toString(arr));     } }`
+```java
+import java.util.Arrays;
+
+public class SelectionSort {
+    public static void selectionSort(int[] arr) {
+        int n = arr.length;
+        for (int i = 0; i < n - 1; i++) {
+            int minIdx = i;
+            for (int j = i + 1; j < n; j++) {
+                if (arr[j] < arr[minIdx]) {
+                    minIdx = j;
+                }
+            }
+            int temp = arr[i];
+            arr[i] = arr[minIdx];
+            arr[minIdx] = temp;
+        }
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {48, 34, 12, 26};
+        selectionSort(arr);
+        System.out.println("Sorted: " + Arrays.toString(arr));
+    }
+}
+
+```
