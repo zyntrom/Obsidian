@@ -151,11 +151,22 @@ int main() {
 
 #### Python
 
-`def factorial(n):     if n == 0:         return 1     return n * factorial(n-1)`
+```python
+def factorial(n):     
+	if n == 0:         
+		return 1     
+	return n * factorial(n-1)
+```
 
 #### C++
 
-`int factorial(int n) {     if (n == 0) return 1;     return n * factorial(n-1); }`
+```cpp
+int factorial(int n) {     
+	if (n == 0) return 1;    
+	 
+	return n * factorial(n-1); 
+}
+```
 
 ---
 
@@ -167,86 +178,98 @@ Write a program that takes an integer as input and checks if it is divisible by 
 **Requirements:**
 
 1. `sum_of_digits(n)` → returns the sum of digits of n.
-    
 2. `is_divisible(n)` → checks if n is divisible by sum of its digits.
-    
 
 ---
 
 ### ✅ Python Solution
 
-`def sum_of_digits(n):     total = 0     while n > 0:         total += n % 10  # get last digit         n //= 10         # remove last digit     return total  def is_divisible(n):     return n % sum_of_digits(n) == 0  # Main Program num = int(input("Enter a number: ")) if is_divisible(num):     print(num, "is divisible by the sum of its digits.") else:     print(num, "is not divisible by the sum of its digits.")`
+```python
+def sum_of_digits(n):     
+	total = 0     
+	while n > 0:         
+		total += n % 10  # get last digit         
+		n //= 10         # remove last digit     
+	return total  
+def is_divisible(n):     
+	return n % sum_of_digits(n) == 0  
+# Main Program 
+num = int(input("Enter a number: ")) 
+if is_divisible(num):     
+	print(num, "is divisible by the sum of its digits.") 
+else:     
+	print(num, "is not divisible by the sum of its digits.")
+```
 
 #### 🔎 Explanation (Python)
 
 1. `sum_of_digits(n)`:
-    
     - Uses `% 10` to extract last digit.
-        
     - Adds digit to total.
-        
     - Uses `// 10` to remove last digit.
-        
     - Repeats until n becomes 0.
-        
 2. `is_divisible(n)`:
-    
     - Gets sum of digits using `sum_of_digits`.
-        
     - Checks if `n % sum == 0`.
-        
 3. Main program:
-    
     - Takes input.
-        
     - Calls function.
-        
     - Prints result.
-        
 
 ---
 
 ### ✅ C++ Solution
 
-`#include <iostream> using namespace std;  int sum_of_digits(int n) {     int total = 0;     while (n > 0) {         total += n % 10; // last digit         n /= 10;         // remove last digit     }     return total; }  bool is_divisible(int n) {     return n % sum_of_digits(n) == 0; }  int main() {     int num;     cout << "Enter a number: ";     cin >> num;      if (is_divisible(num))         cout << num << " is divisible by the sum of its digits." << endl;     else         cout << num << " is not divisible by the sum of its digits." << endl;      return 0; }`
+```cpp
+#include <iostream> 
+using namespace std;  
+int sum_of_digits(int n) {     
+	int total = 0;     
+	while (n > 0) {         
+		total += n % 10; // last digit         
+		n /= 10;         // remove last digit     
+	}     
+	return total; 
+}  
+bool is_divisible(int n) {     
+	return n % sum_of_digits(n) == 0; 
+}  
+int main() {     
+	int num;     
+	cout << "Enter a number: ";     
+	cin >> num;      
+	if (is_divisible(num)){      
+		cout << num << " is divisible by the sum of its digits." << endl;
+	}     
+	else{         
+		cout << num << " is not divisible by the sum of its digits." << endl;
+	}      
+	return 0; 
+}
+```
 
 #### 🔎 Explanation (C++)
 
 - **sum_of_digits**:
     
     - `% 10` extracts last digit.
-        
     - `n /= 10` removes last digit.
-        
     - Keeps adding digits until n becomes 0.
-        
 - **is_divisible**:
-    
     - Checks if remainder is 0 when dividing n by sum of its digits.
-        
 - **main**:
-    
     - Reads number.
-        
     - Calls function.
-        
     - Prints result.
-        
 
 ---
 
 ## 📌 Summary
 
 - **Modularity = breaking problems into smaller modules (functions).**
-    
 - **Functions = building blocks of modularity** → reusable, testable, organized.
-    
 - We learned:
-    
     - How to decompose problems.
-        
     - How to implement function-based solutions.
-        
     - How coding platforms use function requirements.
-        
 - **Hands-on challenge** (divisible by sum of digits) demonstrated modular design.
