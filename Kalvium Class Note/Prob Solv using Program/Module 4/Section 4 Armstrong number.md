@@ -50,6 +50,14 @@ Input: `123`
 - Otherwise, it’s not.
 
 ---
+```embed
+title: "Flowchart to check given number is armstrong or not? | #algorithm  & #flowchart #armstrongnumber"
+image: "https://i.ytimg.com/vi/gxeM27JTf24/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGFogYihlMA8=&rs=AOn4CLCaYtCm5Q2DFGIyyZlXRmVxOkWraQ"
+description: "In this video we are going to discuss about armstrong number, what is armstrong number, algorithm and flowchart to check given number is armstrong or not...I..."
+url: "https://youtu.be/gxeM27JTf24"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 # 💻 Solutions
 
@@ -73,17 +81,77 @@ int main() {
 	while (n > 0) {         
 		int digit = n % 10;         
 		sum += pow(digit, digits);         
-		n /= 10;     }      if (sum == num)         cout << "Armstrong number" << endl;     else         cout << "Not an Armstrong number" << endl;      return 0; }
+		n /= 10;     
+	}      
+	if (sum == num)         
+		cout << "Armstrong number" << endl;     
+	else         
+		cout << "Not an Armstrong number" << endl;      
+	return 0; 
+}
 ```
 
 ---
 
 ### ✅ Python Solution
 
-`num = int(input()) digits = len(str(num)) sum_val = sum(int(digit) ** digits for digit in str(num))  if sum_val == num:     print("Armstrong number") else:     print("Not an Armstrong number")`
+```python
+num = int(input("Enter a number: "))
+
+# Step 1: Count digits
+temp = num
+digits = 0
+while temp > 0:
+    digits += 1
+    temp //= 10
+
+# Step 2: Calculate Armstrong sum
+temp = num
+sum_val = 0
+while temp > 0:
+    digit = temp % 10
+    sum_val += digit ** digits
+    temp //= 10
+
+# Step 3: Compare
+if sum_val == num:
+    print("Armstrong number")
+else:
+    print("Not an Armstrong number")
+
+```
 
 ---
 
 ### ✅ Java Solution
 
-`import java.util.Scanner;  public class Armstrong {     public static void main(String[] args) {         Scanner sc = new Scanner(System.in);         int num = sc.nextInt();         sc.close();          int temp = num, sum = 0, digits = 0;          // Count digits         int n = num;         while (n > 0) {             digits++;             n /= 10;         }          // Calculate Armstrong sum         n = num;         while (n > 0) {             int digit = n % 10;             sum += Math.pow(digit, digits);             n /= 10;         }          if (sum == num)             System.out.println("Armstrong number");         else             System.out.println("Not an Armstrong number");     } }`
+```java
+import java.util.Scanner;
+
+public class Armstrong {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        sc.close();
+        int temp = num, sum = 0, digits = 0;
+        // Count digits
+        int n = num;
+        while (n > 0) {
+            digits++;
+            n /= 10;
+        }
+        // Calculate Armstrong sum
+        n = num;
+        while (n > 0) {
+            int digit = n % 10;
+            sum += Math.pow(digit, digits);
+            n /= 10;
+        }
+        if (sum == num)
+            System.out.println("Armstrong number");
+        else
+            System.out.println("Not an Armstrong number");
+    }
+}
+
+```
