@@ -54,6 +54,15 @@ Output: 12
 
 ---
 
+```embed
+title: "Basic Maths for DSA | Euclidean Algorithm | Strivers A2Z DSA Course"
+image: "https://i.ytimg.com/vi/1xNbjMdbjug/maxresdefault.jpg"
+description: "Check out TUF+:https://takeuforward.org/plus?source=youtubeFind DSA, LLD, OOPs, Core Subjects, 1000+ Premium Questions company wise, Aptitude, SQL, AI doubt ..."
+url: "https://youtu.be/1xNbjMdbjug"
+favicon: ""
+aspectRatio: "56.25"
+```
+
 ### ✅ Python
 
 ```python
@@ -73,12 +82,46 @@ print(total)
 
 ### ✅ C++
 
-`#include <iostream> using namespace std;  int main() {     int n;     cin >> n;     int sum = 0;      while (n > 0) {         int digit = n % 10;         sum += digit;         n = n / 10;     }      cout << sum << endl;     return 0; }`
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+    int sum = 0;
+    while (n > 0) {
+        int digit = n % 10;
+        sum += digit;
+        n = n / 10;
+    }
+    cout << sum << endl;
+    return 0;
+}
+
+```
 
 ---
 
 ### ✅ Java
 
-`import java.util.Scanner;  public class Main {     public static void main(String[] args) {         Scanner sc = new Scanner(System.in);         int n = sc.nextInt();         int sum = 0;          while (n > 0) {             int digit = n % 10;             sum += digit;             n = n / 10;         }          System.out.println(sum);     } }`
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int sum = 0;
+        while (n > 0) {
+            int digit = n % 10;
+            sum += digit;
+            n = n / 10;
+        }
+        System.out.println(sum);
+    }
+}
+
+```
 
 ---
