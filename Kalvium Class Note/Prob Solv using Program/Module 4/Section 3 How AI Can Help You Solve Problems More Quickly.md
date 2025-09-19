@@ -35,6 +35,15 @@ By the end of this lesson, you will learn:
 
 📌 Analogy: Like having a **smart sidekick** that handles repetitive coding tasks → you focus on **big picture**.
 
+```embed
+title: "JetBrains AI Assistant: Built Into Your IDE, Designed for How You Code"
+image: "https://i.ytimg.com/vi/KqXRRZiCbNg/maxresdefault.jpg"
+description: "JetBrains AI Assistant is built into your IDE and designed around how you work – helping you write, refactor, and understand code faster, without breaking yo..."
+url: "https://youtu.be/KqXRRZiCbNg"
+favicon: ""
+aspectRatio: "56.25"
+```
+
 ---
 
 ## ⚡ Using AI for Code Completion and Generation
@@ -88,6 +97,15 @@ print(divide(10, 0))  # ZeroDivisionError
 - Error: Division by 0 not allowed.
 - AI suggests → Add a check to ensure `b != 0` before dividing.
 👉 Saves time + improves learning.
+
+```embed
+title: "The Problem of Understanding Code is Solved: AI Assistant to the Rescue"
+image: "https://i.ytimg.com/vi/xfJfMIVE7mk/maxresdefault.jpg"
+description: "Struggling to understand complex code? JetBrains AI Assistant is here to help! In this video, we walk you through practical examples of how the AI Assistant ..."
+url: "https://youtu.be/xfJfMIVE7mk"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ---
 
