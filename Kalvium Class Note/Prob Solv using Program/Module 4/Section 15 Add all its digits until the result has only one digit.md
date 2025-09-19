@@ -42,6 +42,15 @@ Output: `2` ✅
 
 # 🖥 Solutions
 
+```embed
+title: "Add Digits | LeetCode problem 258"
+image: "https://i.ytimg.com/vi/gGEWzsYZalM/hqdefault.jpg"
+description: "Add DigitsLeetcode problem number 258Solution in JAVATime complexity: O(n)Space Complexity: O(1)JAVA interview programming playlist: https://youtube.com/play..."
+url: "https://youtu.be/gGEWzsYZalM"
+favicon: ""
+aspectRatio: "75"
+```
+
 ---
 
 ### ✅ Python
