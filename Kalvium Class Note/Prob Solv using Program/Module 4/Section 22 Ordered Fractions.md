@@ -1,31 +1,28 @@
-## 📒 Notes on the Problem
+### 1. Problem
 
-### 1. What is being asked?
-
-- We’re given two numbers `a` and `b`, which represent a fraction `a/b` with `a < b`.
-- We need to print **all possible reduced forms** of that fraction.
-- If the fraction is already in lowest terms (i.e., it cannot be simplified), we print `-1`.
+- Given two integers `a` and `b` representing a fraction `a/b` (where `a < b`).
+- Find all reduced forms of the fraction by dividing both numerator and denominator by the same integer.
+- If the fraction is already in lowest terms, print `-1`.
 
 ---
 
-### 2. Key Mathematical Principles
+### 2. Approach in Your Code
 
-- **Fraction reduction**: A fraction is reduced by dividing both numerator and denominator by their **greatest common divisor (GCD)**.
-- Example:
-    - `6/12` → GCD = 6 → `1/2`.
-- But the problem wants **all possible reduced forms**.
-    - That means: divide numerator and denominator by every divisor of GCD.
+1. **Input**: Read `a` and `b`.
+2. **Loop**: For every integer `i` from `2` to `b-1`:
+    - Check if `i` divides both `a` and `b` (`a % i == 0 && b % i == 0`).
+    - If true, print the fraction `(a/i)/(b/i)`.
+    - Mark that we found at least one reduced form.
+3. **Check**: If no divisor reduced the fraction → print `-1`.
 
 ---
 
-### 3. Steps to Solve
+### 3. Key Observations
 
-1. Find the GCD of `a` and `b`.
-2. If GCD = 1 → fraction is already reduced → print `-1`.
-3. Otherwise:
-    - For each divisor `d` of GCD:
-        - Print `(a/d)/(b/d)`.
-    - Order them so the fraction gets smaller step by step.
+- This approach checks **all possible divisors** of both `a` and `b`.
+- It avoids directly calculating GCD — instead, it brute-forces divisibility.
+- The loop goes up to `b-1`, but it’s safe (since denominator is always bigger).
+- A `found` flag is used to track if any reduction was printed.
 
 ---
 
@@ -33,22 +30,33 @@
 
 Input: `6 12`
 
-- GCD(6,12) = 6
-- Divisors of 6 → {1, 2, 3, 6}
-- Reduced fractions:
-    - `6/12` (d=1)
-    - `3/6` (d=2)
-    - `2/4` (d=3)
-    - `1/2` (d=6)  
-        Output: `3/6 2/4 1/2` (skip the original one, `6/12`).
+- Loop from `2` to `11`.
+- When `i=2`: both divisible → print `3/6`.
+- When `i=3`: both divisible → print `2/4`.
+- When `i=6`: both divisible → print `1/2`.
+- Output: `3/6 2/4 1/2`.
+
+Input: `4 7`
+
+- No `i` divides both.
+- Output: `-1`.
 
 ---
 
-## ✅ Final Explanation in Simple Words
+### 5. Pros and Cons
 
-We just keep dividing the numerator and denominator by **common factors** until we reach the simplest fraction. All intermediate reduced forms are included, but if the fraction is already simplest, we return `-1`.
+✅ Easy to understand.  
+✅ Doesn’t need GCD function.  
+❌ Less efficient (loops through many values even if unnecessary).  
+❌ For large `b`, it can be slow.
 
 ---
+
+### 6. General Pattern
+
+- **Brute force divisor checking**: Test all possible divisors.
+- Use a **flag** to detect if no answer was found.
+- Print results inline as you find them.
 
 ## 💻 Solutions
 
@@ -62,7 +70,6 @@ int main() {
     int a, b;
     cin >> a >> b;
     bool found = false;
-
     for (int i = 2; i < b; i++) {
         if (a % i == 0 && b % i == 0) {
             cout << a / i << "/" << b / i << " ";
@@ -88,7 +95,6 @@ for i in range(2, b):
     if a % i == 0 and b % i == 0:
         print(f"{a//i}/{b//i}", end=" ")
         found = True
-
 if not found:
     print(-1)
 
