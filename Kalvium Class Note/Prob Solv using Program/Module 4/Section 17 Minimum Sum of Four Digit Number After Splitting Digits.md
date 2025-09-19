@@ -46,6 +46,16 @@ Input: `2009`
 
 # 🖥 Solutions
 
+```embed
+title: "Minimum Sum of Four-Digit Number After Splitting Digits | 2160 LeetCode | BiWeekly Contest 71"
+image: "https://i.ytimg.com/vi/xOZizlYUKiU/hqdefault.jpg"
+description: "Here is the detailed solution of the LEETCODE MINIMUM SUM OF FOUR DIGIT NUMBER AFTER SPLITTING DIGITS Problem of the Leetcode BiWeekly Contest 71 and if you ..."
+url: "https://youtu.be/xOZizlYUKiU"
+favicon: ""
+aspectRatio: "75"
+```
+
+
 ---
 
 ### ✅ Python
@@ -90,7 +100,7 @@ int main() {
 
 ### ✅ Java
 
-```
+```java
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -116,7 +126,5 @@ public class Main {
 ✅ **Explanation:**
 
 - Sorting ensures smaller digits are at higher significance to minimize sum.
-    
 - Alternating assignment of digits forms the smallest possible sum.
-    
 - Works for any 4-digit number with leading zeros allowed.
