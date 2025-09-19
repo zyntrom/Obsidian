@@ -94,7 +94,36 @@ merge(arr, l, m, r):
 
 ## 🐍 Python (simple arrays/lists)
 
-```
+```python
+def merge_sort(arr):
+    if len(arr) <= 1:
+        return arr
+    
+    mid = len(arr) // 2
+    left = merge_sort(arr[:mid])
+    right = merge_sort(arr[mid:])
+    
+    return merge(left, right)
+
+def merge(left, right):
+    result = []
+    i = j = 0
+    
+    while i < len(left) and j < len(right):
+        if left[i] < right[j]:
+            result.append(left[i])
+            i += 1
+        else:
+            result.append(right[j])
+            j += 1
+    
+    result.extend(left[i:])
+    result.extend(right[j:])
+    return result
+
+# Example
+arr = [5, 2, 8, 1]
+print("Sorted:", merge_sort(arr))
 
 ```
 
@@ -102,10 +131,84 @@ merge(arr, l, m, r):
 
 ## 💻 C++ (without `vector`, using plain arrays)
 
-`#include <iostream> using namespace std;  void merge(int arr[], int l, int m, int r) {     int n1 = m - l + 1;     int n2 = r - m;      int L[1000], R[1000];  // temporary arrays      for (int i = 0; i < n1; i++) L[i] = arr[l + i];     for (int j = 0; j < n2; j++) R[j] = arr[m + 1 + j];      int i = 0, j = 0, k = l;     while (i < n1 && j < n2) {         if (L[i] <= R[j]) arr[k++] = L[i++];         else arr[k++] = R[j++];     }     while (i < n1) arr[k++] = L[i++];     while (j < n2) arr[k++] = R[j++]; }  void mergeSort(int arr[], int l, int r) {     if (l < r) {         int m = (l + r) / 2;         mergeSort(arr, l, m);         mergeSort(arr, m + 1, r);         merge(arr, l, m, r);     } }  int main() {     int arr[] = {5, 2, 8, 1};     int n = sizeof(arr) / sizeof(arr[0]);      mergeSort(arr, 0, n - 1);      cout << "Sorted: ";     for (int i = 0; i < n; i++) cout << arr[i] << " ";     cout << endl; }`
+```cpp
+#include <iostream>
+using namespace std;
+
+void merge(int arr[], int l, int m, int r) {
+    int n1 = m - l + 1;
+    int n2 = r - m;
+    int L[1000], R[1000];  // temporary arrays
+    for (int i = 0; i < n1; i++) L[i] = arr[l + i];
+    for (int j = 0; j < n2; j++) R[j] = arr[m + 1 + j];
+
+    int i = 0, j = 0, k = l;
+    while (i < n1 && j < n2) {
+        if (L[i] <= R[j]) arr[k++] = L[i++];
+        else arr[k++] = R[j++];
+    }
+    while (i < n1) arr[k++] = L[i++];
+    while (j < n2) arr[k++] = R[j++];
+}
+
+void mergeSort(int arr[], int l, int r) {
+    if (l < r) {
+        int m = (l + r) / 2;
+        mergeSort(arr, l, m);
+        mergeSort(arr, m + 1, r);
+        merge(arr, l, m, r);
+    }
+}
+
+int main() {
+    int arr[] = {5, 2, 8, 1};
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    mergeSort(arr, 0, n - 1);
+
+    cout << "Sorted: ";
+    for (int i = 0; i < n; i++) cout << arr[i] << " ";
+    cout << endl;
+}
+
+```
 
 ---
 
 ## ☕ Java (arrays, no extra libraries)
 
-`import java.util.*;  public class MergeSortSimple {     public static void merge(int arr[], int l, int m, int r) {         int n1 = m - l + 1;         int n2 = r - m;          int L[] = new int[n1];         int R[] = new int[n2];          for (int i = 0; i < n1; i++) L[i] = arr[l + i];         for (int j = 0; j < n2; j++) R[j] = arr[m + 1 + j];          int i = 0, j = 0, k = l;         while (i < n1 && j < n2) {             if (L[i] <= R[j]) arr[k++] = L[i++];             else arr[k++] = R[j++];         }          while (i < n1) arr[k++] = L[i++];         while (j < n2) arr[k++] = R[j++];     }      public static void mergeSort(int arr[], int l, int r) {         if (l < r) {             int m = (l + r) / 2;             mergeSort(arr, l, m);             mergeSort(arr, m + 1, r);             merge(arr, l, m, r);         }     }      public static void main(String[] args) {         int arr[] = {5, 2, 8, 1};         mergeSort(arr, 0, arr.length - 1);         System.out.println("Sorted: " + Arrays.toString(arr));     } }`
+```java
+import java.util.*;
+
+public class MergeSortSimple {
+    public static void merge(int arr[], int l, int m, int r) {
+        int n1 = m - l + 1;
+        int n2 = r - m;
+        int L[] = new int[n1];
+        int R[] = new int[n2];
+        for (int i = 0; i < n1; i++) L[i] = arr[l + i];
+        for (int j = 0; j < n2; j++) R[j] = arr[m + 1 + j];
+        int i = 0, j = 0, k = l;
+        while (i < n1 && j < n2) {
+            if (L[i] <= R[j]) arr[k++] = L[i++];
+            else arr[k++] = R[j++];
+        }
+        while (i < n1) arr[k++] = L[i++];
+        while (j < n2) arr[k++] = R[j++];
+    }
+    public static void mergeSort(int arr[], int l, int r) {
+        if (l < r) {
+            int m = (l + r) / 2;
+            mergeSort(arr, l, m);
+            mergeSort(arr, m + 1, r);
+            merge(arr, l, m, r);
+        }
+    }
+    public static void main(String[] args) {
+        int arr[] = {5, 2, 8, 1};
+        mergeSort(arr, 0, arr.length - 1);
+        System.out.println("Sorted: " + Arrays.toString(arr));
+    }
+}
+
+```
