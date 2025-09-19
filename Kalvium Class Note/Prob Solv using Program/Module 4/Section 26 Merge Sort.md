@@ -11,7 +11,6 @@
 ## 🔹 Steps of Merge Sort
 
 1. **Divide**
-    
     - Split the array into two halves until each subarray contains only **1 element**.
     - A single element is already "sorted".
 2. **Conquer (Sort subarrays)**
@@ -91,6 +90,22 @@ merge(arr, l, m, r):
 - ✅ Python (simple list handling).
 - ✅ C++ (arrays with temporary subarrays).
 - ✅ Java (arrays with `copyOfRange` or loops).
+
+```embed
+title: "CS50 Shorts - Merge Sort"
+image: ""
+description: "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+url: "https://youtu.be/Pr2Jf83_kG0"
+favicon: ""
+```
+
+```embed
+title: "Merge sort in 3 minutes"
+image: ""
+description: "Step by step instructions showing how to run merge sort.Code: https://github.com/msambol/dsa/blob/master/sort/merge_sort.py (different than video, I added th..."
+url: "https://youtu.be/4VqmGXwpLqc"
+favicon: ""
+```
 
 ## 🐍 Python (simple arrays/lists)
 
