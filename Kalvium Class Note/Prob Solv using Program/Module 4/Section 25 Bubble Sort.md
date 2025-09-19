@@ -75,6 +75,16 @@ bubbleSort(arr, n):
 
 # 💻 Implementations
 
+```embed
+title: "Bubble sort in 2 minutes"
+image: "https://i.ytimg.com/vi/xli_FI7CuzA/maxresdefault.jpg"
+description: "Step by step instructions showing how to run bubble sort.Code: https://github.com/msambol/youtube/blob/master/sort/bubble_sort.py (different than video, I ad..."
+url: "https://youtu.be/xli_FI7CuzA"
+favicon: ""
+aspectRatio: "56.25"
+```
+
+
 ---
 
 ### **Python**
