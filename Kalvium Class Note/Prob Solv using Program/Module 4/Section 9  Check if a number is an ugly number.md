@@ -57,24 +57,30 @@ Input: `7`
 ## 🔹 C++ Solution
 
 ```cpp
+#include <cmath>
+#include <cstdio>
+#include <vector>
 #include <iostream>
+#include <algorithm>
 using namespace std;
-
-bool isUgly(int num) {
-    if (num <= 0) return false; // Must be positive
-    while (num % 2 == 0) num /= 2;
-    while (num % 3 == 0) num /= 3;
-    while (num % 5 == 0) num /= 5;
-    return num == 1;
-}
 
 int main() {
     int n;
     cin >> n;
-    if (isUgly(n))
-        cout << "yes" << endl;
-    else
-        cout << "no" << endl;
+    while (n % 2 == 0) {
+        n /= 2;
+    }
+    while (n % 3 == 0) {
+        n /= 3;
+    }
+    while (n % 5 == 0) {
+        n /= 5;
+    }
+    if (n == 1) {
+        cout << "yes";
+    } else {
+        cout << "no";
+    }
     return 0;
 }
 
@@ -85,16 +91,18 @@ int main() {
 ## 🔹 Python Solution
 
 ```python
-def is_ugly(num):
-    if num <= 0:
-        return False
-    for factor in [2, 3, 5]:
-        while num % factor == 0:
-            num //= factor
-    return num == 1
-
 n = int(input())
-print("yes" if is_ugly(n) else "no")
+
+while n % 2 == 0:
+    n //= 2
+while n % 3 == 0:
+    n //= 3
+while n % 5 == 0:
+    n //= 5
+if n == 1:
+    print("yes")
+else:
+    print("no")
 
 ```
 
@@ -105,24 +113,24 @@ print("yes" if is_ugly(n) else "no")
 ```java
 import java.util.Scanner;
 
-public class UglyNumber {
-    public static boolean isUgly(int num) {
-        if (num <= 0) return false;
-        
-        while (num % 2 == 0) num /= 2;
-        while (num % 3 == 0) num /= 3;
-        while (num % 5 == 0) num /= 5;
-        
-        return num == 1;
-    }
+public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        if (isUgly(n))
-            System.out.println("yes");
-        else
-            System.out.println("no");
-        sc.close();
+        while (n % 2 == 0) {
+            n /= 2;
+        }
+        while (n % 3 == 0) {
+            n /= 3;
+        }
+        while (n % 5 == 0) {
+            n /= 5;
+        }
+        if (n == 1) {
+            System.out.print("yes");
+        } else {
+            System.out.print("no");
+        }
     }
 }
 
