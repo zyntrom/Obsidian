@@ -24,35 +24,25 @@ A number is pandigital if it contains **all digits from 1 to N exactly once**, w
 
 ```python
 def is_pandigital(num):
-    digits_seen = []
+    digits = [0] * 10
     count = 0
     temp = num
-    # Extract digits one by one
     while temp > 0:
-        digit = temp % 10
-        digits_seen.append(digit)
-        temp = temp // 10
-        count += 1  # count total digits
-    # Check if all digits are within 1..N
-    for d in digits_seen:
-        if d < 1 or d > count:
-            return False
-    # Check for uniqueness (no duplicates)
-    if len(digits_seen) != len(set(digits_seen)):
-        return False
-    # Check if all digits from 1..N are present
+        d = temp % 10
+        if d == 0:
+            return False  # 0 not allowed
+        if digits[d] > 0:
+            return False  # duplicate digit
+        digits[d] = 1
+        temp //= 10
+        count += 1
     for i in range(1, count + 1):
-        if i not in digits_seen:
+        if digits[i] == 0:
             return False
     return True
 
-# Input
 num = int(input())
-
-if is_pandigital(num):
-    print("Yes")
-else:
-    print("No")
+print("Yes" if is_pandigital(num) else "No")
 
 ```
 
@@ -97,41 +87,28 @@ int main() {
 ```java
 import java.util.Scanner;
 
-public class PandigitalCheck {
-
+public class PandigitalChecker {
     public static boolean isPandigital(int num) {
-        int[] digits = new int[10]; // index = digit, value = count
+        int[] digits = new int[10];
         int count = 0;
         int temp = num;
-        // Step 1: Extract digits and count them
         while (temp > 0) {
-            int digit = temp % 10;
-            digits[digit]++;
-            temp = temp / 10;
+            int d = temp % 10;
+            if (d == 0) return false; // 0 not allowed
+            if (digits[d] > 0) return false; // duplicate digit
+            digits[d] = 1;
+            temp /= 10;
             count++;
         }
-        // Step 2: Check if all digits are in range 1..count
         for (int i = 1; i <= count; i++) {
-            if (digits[i] != 1) {
-                return false; // digit missing or repeated
-            }
+            if (digits[i] == 0) return false;
         }
-        // Step 3: Make sure no invalid digit (like 0 or > count)
-        for (int i = count + 1; i < 10; i++) {
-            if (digits[i] > 0) return false;
-        }
-        if (digits[0] > 0) return false;
         return true;
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
-        if (isPandigital(num)) {
-            System.out.println("Yes");
-        } else {
-            System.out.println("No");
-        }
-        sc.close();
+        System.out.println(isPandigital(num) ? "Yes" : "No");
     }
 }
 
