@@ -21,6 +21,14 @@
 - **Reference Point:** Ownership becomes the status quo → losing the item is perceived as a loss.
 - **Loss Aversion:** Losses are felt roughly **twice as strongly** as equivalent gains.
 - Ownership increases **personal value**, not market value.
+```embed
+title: "Why are we so attached to our things? - Christian Jarrett"
+image: "https://i.ytimg.com/vi/H2_by0rp5q0/maxresdefault.jpg"
+description: "View full lesson: http://ed.ted.com/lessons/why-are-we-so-attached-to-our-things-christian-jarrett After witnessing the “violent rage” shown by babies whenev..."
+url: "https://youtu.be/H2_by0rp5q0"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ---
 
