@@ -63,16 +63,19 @@ Output:
 ### ✅ Python
 
 ```python
-s, k = input().split()
-k = int(k)
+s = input().strip()
+n = int(input())
 
-maximum = 0
-for i in range(len(s) - k + 1):
-    num = int(s[i:i+k])
-    if num > maximum:
-        maximum = num
+num = 0
+for i in range(len(s) - n + 1):
+    c = ""
+    for j in range(i, i + n):
+        c += s[j]
+    val = int(c)
+    if val > num:
+        num = val
 
-print(maximum)
+print(num)
 
 ```
 
@@ -130,7 +133,7 @@ public class Main {
             if (val > num) {
                 num = val;
             }
-        }
+        }`
         System.out.println(num);
     }
 }
