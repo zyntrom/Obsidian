@@ -6,6 +6,15 @@
 - Example:
     - “90% fat free” vs “Contains 10% fat” → both mean the same, but most people choose “90% fat free.”
 
+```embed
+title: "Framing Bias Explaination-  Cognitive Biases"
+image: "https://i.ytimg.com/vi/NSQr9JhesKE/maxresdefault.jpg"
+description: "In this video, you will learn about a cognitive bias known as framing bias.#framingbias #cognitivebias #wallstreetmojo #decisionmaking #humanbehaviourChapter..."
+url: "https://youtu.be/NSQr9JhesKE"
+favicon: ""
+aspectRatio: "56.25"
+```
+
 ---
 
 ## 2. How It Works
