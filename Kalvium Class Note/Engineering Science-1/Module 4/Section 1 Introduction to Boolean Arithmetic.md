@@ -55,16 +55,15 @@
 ```
 
 **Example:**  
+```
 1011 − 0110 = 0101
+```
 
 ### 1’s and 2’s Complement
 
 - 1’s complement: flip all bits (1011 → 0100)
-    
 - 2’s complement: add 1 to 1’s complement (0100 + 1 = 0101)
-    
 - Subtraction: use 2’s complement of subtrahend, then add.
-    
 
 ---
 
@@ -73,33 +72,23 @@
 ### Adders
 
 - **Half Adder:**
-    
     - Sum = a ⊕ b
-        
     - Carry = a · b
-        
 - **Full Adder:**
-    
     - Sum = (a ⊕ b) ⊕ carry-in
-        
     - Carry-out = (a · b) + (carry-in · (a ⊕ b))
-        
 
 ### Carry & Borrow
 
 - **Carry** → propagates when addition > 1
-    
 - **Borrow** → occurs when subtracting 1 from 0
-    
 - Important for **multi-bit arithmetic performance**
-    
 
 ---
 
 ## 6. Simplifying Expressions
 
 - Use **Boolean identities** to reduce circuit complexity.
-    
 
 **Example:** f = (a · b) + (a · ¬b)  
 f = a · (b + ¬b) = a · 1 = a
@@ -109,20 +98,14 @@ f = a · (b + ¬b) = a · 1 = a
 ## 7. Arithmetic Logic Units (ALUs)
 
 - Combine adders, subtractors, and logic gates.
-    
 - Found in **CPU**, perform addition, subtraction, comparisons, bitwise operations.
-    
 
 ---
-
+![[Pasted image 20250921130410.png]]
 ## 8. Summary
 
 - Boolean algebra = language of digital logic (0s & 1s).
-    
 - Binary arithmetic enables addition & subtraction in circuits.
-    
 - Logic gates implement these operations physically.
-    
 - Simplification = smaller, faster, efficient circuits.
-    
 - ALU = hardware implementation of arithmetic & logic operations.
