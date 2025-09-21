@@ -56,7 +56,6 @@ int main() {
     string arr[] = {"zero","one","two","three","four","five","six","seven","eight","nine"};
     int num;
     cin >> num;
-
     while(num > 0) {
         int digit = num % 10;
         cout << arr[digit] << " ";
