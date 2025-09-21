@@ -7,6 +7,14 @@
 - Developed by **Daniel Kahneman & Amos Tversky** to explain actual human decision-making under risk.
 
 ---
+```embed
+title: "Prospect Theory (explained in a minute) - Behavioural Finance"
+image: "https://i.ytimg.com/vi/sM91d5I36Po/maxresdefault.jpg"
+description: "Prospect Theory deals with the irrational way we process information, valuing gains and losses differently (with losses having a more profound effect on our ..."
+url: "https://youtu.be/sM91d5I36Po"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ## 2. Key Observations
 
@@ -43,22 +51,16 @@
     2. Influenced by **framing of choices**.
     3. Don’t always act in purely rational/self-interest.
 - Explains behavior beyond economics: finance, personal life, professional decisions.
-    
 - Highlights **System 1 thinking biases**: emotions and perception override logical calculation.
-    
 
 ---
 
 ## 5. Takeaways
 
 1. Always identify your **reference point** before making decisions.
-    
 2. Recognize **loss aversion** in yourself to avoid unnecessary risk-seeking.
-    
 3. Consider **framing effects**: how a choice is presented influences your decision.
-    
 4. Awareness of biases → **better, more self-aware decision-making**.
-    
 
 ---
 
