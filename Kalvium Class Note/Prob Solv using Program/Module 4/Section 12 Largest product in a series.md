@@ -72,11 +72,11 @@ max_product = 0
 
 for i in range(len(series) - k + 1):
     product = 1
-    for digit in series[i:i+k]:
-        product *= int(digit)
+    for j in range(k):
+        product *= int(series[i + j])
     if product > max_product:
         max_product = product
-
+        
 print(max_product)
 
 ```
@@ -96,7 +96,7 @@ int main() {
     cin >> k >> series;
     long long maxProduct = 0;
     for (int i = 0; i <= series.size() - k; i++) {
-        long long product = 1;
+        int product = 1;
         for (int j = 0; j < k; j++) {
             product *= (series[i + j] - '0');
         }
@@ -124,7 +124,7 @@ public class Main {
         String series = sc.next();
         long maxProduct = 0;
         for (int i = 0; i <= series.length() - k; i++) {
-            long product = 1;
+            int  product = 1;
             for (int j = 0; j < k; j++) {
                 product *= (series.charAt(i + j) - '0');
             }
