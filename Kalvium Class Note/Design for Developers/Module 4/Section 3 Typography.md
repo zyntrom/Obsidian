@@ -115,19 +115,11 @@
 
 - Typography = art of arranging letters/text.
 - Typeface = family | Font = variation.
-    
 - Good typeface → improves tone, readability, impression.
-    
 - Type scale = modular/hand-crafted.
-    
 - Fonts should be readable, distinguishable, flexible.
-    
 - Line length = 45–75 chars.
-    
 - Align text → left, right (numbers), center (short text), justify (with hyphenation).
-    
 - Line height: directly ∝ paragraph width, inversely ∝ font size.
-    
 - Letter spacing: adjust for headlines, increase for all caps.
-    
 - Links must stand out, with visited/unvisited states.
