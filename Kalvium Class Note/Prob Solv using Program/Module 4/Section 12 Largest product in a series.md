@@ -124,7 +124,7 @@ public class Main {
         String series = sc.next();
         long maxProduct = 0;
         for (int i = 0; i <= series.length() - k; i++) {
-            int  product = 1;
+            int product = 1;
             for (int j = 0; j < k; j++) {
                 product *= (series.charAt(i + j) - '0');
             }
