@@ -81,23 +81,28 @@ print(maximum)
 ### ✅ C++
 
 ```cpp
+#include <cmath>
+#include <cstdio>
+#include <vector>
 #include <iostream>
-#include <string>
+#include <algorithm>
 using namespace std;
 
 int main() {
     string s;
-    int k;
-    cin >> s >> k;
-    int maximum = 0;
-    for (int i = 0; i <= s.size() - k; i++) {
-        string sub = s.substr(i, k);
-        int num = stoi(sub);
-        if (num > maximum) {
-            maximum = num;
+    int n;
+    cin >> s >> n;
+    int num = 0;
+    for (int i = 0; i <= s.length() - n; i++) {
+        string c = "";
+        for (int j = i; j < i + n; j++) {
+            c += s[j];
+        }
+        if (stoi(c) > num) {
+            num = stoi(c);
         }
     }
-    cout << maximum << endl;
+    cout << num << endl;
     return 0;
 }
 
@@ -114,16 +119,19 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String s = sc.next();
-        int k = sc.nextInt();
-        int maximum = 0;
-        for (int i = 0; i <= s.length() - k; i++) {
-            String sub = s.substring(i, i + k);
-            int num = Integer.parseInt(sub);
-            if (num > maximum) {
-                maximum = num;
+        int n = sc.nextInt();
+        int num = 0;
+        for (int i = 0; i <= s.length() - n; i++) {
+            String c = "";
+            for (int j = i; j < i + n; j++) {
+                c += s.charAt(j);
+            }
+            int val = Integer.parseInt(c);
+            if (val > num) {
+                num = val;
             }
         }
-        System.out.println(maximum);
+        System.out.println(num);
     }
 }
 
