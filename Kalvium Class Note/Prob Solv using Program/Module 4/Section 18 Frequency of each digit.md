@@ -74,26 +74,33 @@ for i in range(10):
 ### ✅ C++
 
 ```cpp
+#include <cmath>
+#include <cstdio>
+#include <vector>
 #include <iostream>
+#include <algorithm>
+
 using namespace std;
-
 int main() {
-    int num;
-    cin >> num;
-    int freq[10] = {0};
-    while (num > 0) {
-        int digit = num % 10;
-        freq[digit]++;
-        num /= 10;
-    }
-    for (int i = 0; i < 10; i++) {
-        if (freq[i] > 0) {
-            cout << i << ":" << freq[i] << endl;
-        }
-    }
-    return 0;
+	// Enter your code below
+	int n;
+	cin>>n;
+	int fre[10];
+	for(int i=0;i<10;i++){
+		fre[i]=0;
+	}
+	while(n!=0){
+		int rem=n%10;
+		fre[rem]++;
+		n/=10;
+	}
+	for(int i=0;i<10;i++){
+	if(fre[i]>0){
+		cout<<i<<":"<<fre[i]<<endl;
+	}
+	}
+	return 0;
 }
-
 ```
 
 ---
