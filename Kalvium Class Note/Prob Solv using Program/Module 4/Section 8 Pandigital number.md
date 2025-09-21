@@ -23,26 +23,25 @@ A number is pandigital if it contains **all digits from 1 to N exactly once**, w
 ## 🔹 Universal Python Code
 
 ```python
-def is_pandigital(num):
-    digits = [0] * 10
-    count = 0
-    temp = num
-    while temp > 0:
-        d = temp % 10
-        if d == 0:
-            return False  # 0 not allowed
-        if digits[d] > 0:
-            return False  # duplicate digit
-        digits[d] = 1
-        temp //= 10
-        count += 1
-    for i in range(1, count + 1):
-        if digits[i] == 0:
-            return False
-    return True
+n = int(input())
+cpn = n
+count = 0
+sum_digits = 0
 
-num = int(input())
-print("Yes" if is_pandigital(num) else "No")
+while n != 0:
+    count += 1
+    sum_digits += n % 10
+    n //= 10
+
+n = cpn
+disum = 0
+for i in range(1, count + 1):
+    disum += i
+
+if sum_digits == disum:
+    print("Yes")
+else:
+    print("No")
 
 ```
 
@@ -51,34 +50,32 @@ print("Yes" if is_pandigital(num) else "No")
 ## C++ Program:
 
 ```cpp
+#include <cstdio>
 #include <iostream>
 using namespace std;
-
-bool isPandigital(int num) {
-    int digits[10] = {0};
-    int count = 0, temp = num;
-    
-    while (temp > 0) {
-        int d = temp % 10;
-        if (d == 0) return false;     // 0 not allowed
-        if (digits[d] > 0) return false; // duplicate digit
-        digits[d] = 1;
-        temp /= 10;
-        count++;
-    }
-    
-    // check if we have all digits from 1 to count
-    for (int i = 1; i <= count; i++) {
-        if (digits[i] == 0) return false;
-    }
-    return true;
-}
-
 int main() {
-    int num;
-    cin >> num;
-    cout << (isPandigital(num) ? "Yes" : "No") << endl;
-    return 0;
+	int n;
+	cin>>n;
+	int cpn=n;
+	int count =0;
+	int sum=0;
+	while(n!=0){
+		count++;
+		sum+=n%10;
+		n/=10;
+	}
+	n=cpn;
+	int disum=0;
+	for(int i=1;i<=count;i++){
+		disum+=i;
+	}
+	if(sum==disum){
+		cout<<"Yes";
+	}
+	else{
+		cout<<"No";
+	}
+	return 0;
 }
 ```
 
@@ -87,28 +84,28 @@ int main() {
 ```java
 import java.util.Scanner;
 
-public class PandigitalChecker {
-    public static boolean isPandigital(int num) {
-        int[] digits = new int[10];
-        int count = 0;
-        int temp = num;
-        while (temp > 0) {
-            int d = temp % 10;
-            if (d == 0) return false; // 0 not allowed
-            if (digits[d] > 0) return false; // duplicate digit
-            digits[d] = 1;
-            temp /= 10;
-            count++;
-        }
-        for (int i = 1; i <= count; i++) {
-            if (digits[i] == 0) return false;
-        }
-        return true;
-    }
+public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int num = sc.nextInt();
-        System.out.println(isPandigital(num) ? "Yes" : "No");
+        int n = sc.nextInt();
+        int cpn = n;
+        int count = 0;
+        int sum = 0;
+        while (n != 0) {
+            count++;
+            sum += n % 10;
+            n /= 10;
+        }
+        n = cpn;
+        int disum = 0;
+        for (int i = 1; i <= count; i++) {
+            disum += i;
+        }
+        if (sum == disum) {
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
+        }
     }
 }
 
