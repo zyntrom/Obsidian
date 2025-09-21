@@ -67,7 +67,6 @@ Output → `1`.
 ```cpp
 #include <iostream>
 #include <cmath>
-#include <vector>
 using namespace std;
 
 bool isPentagonal(int num) {
@@ -79,14 +78,10 @@ bool isPentagonal(int num) {
 int main() {
     int N, K;
     cin >> N >> K;
-    vector<int> pentagonal(N);
-    for (int i = 1; i < N; i++) {
-        pentagonal[i] = i * (3 * i - 1) / 2;
-    }
     int count = 0;
     for (int n = K + 1; n < N; n++) {
-        int Pn = pentagonal[n];
-        int Pnk = pentagonal[n - K]
+        int Pn = n * (3 * n - 1) / 2;
+        int Pnk = (n - K) * (3 * (n - K) - 1) / 2;
         int diff = Pn - Pnk;
         int sum = Pn + Pnk;
         if (isPentagonal(diff) || isPentagonal(sum)) {
