@@ -61,12 +61,22 @@ aspectRatio: "75"
 ### ✅ Python
 
 ```python
-num = input()
-digits = sorted([int(d) for d in num])
+num = int(input())
 
-new1 = digits[0]*10 + digits[2]
-new2 = digits[1]*10 + digits[3]
+# Extract digits into an array of size 4
+digits = [0] * 4
+for i in range(3, -1, -1):
+    digits[i] = num % 10
+    num //= 10
 
+# Sort the digits
+digits.sort()
+
+# Form two new numbers
+new1 = digits[0] * 10 + digits[2]
+new2 = digits[1] * 10 + digits[3]
+
+# Print the sum
 print(new1 + new2)
 
 ```
