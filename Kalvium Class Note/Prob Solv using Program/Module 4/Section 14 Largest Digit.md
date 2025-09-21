@@ -61,7 +61,7 @@ aspectRatio: "56.25"
 ```python
 s, d = map(int, input().split())
 
-if s > 9 * d:
+if (s > 9 * d or s <= 0 or d <= 0):
     print(-1)
 else:
     result = ""
@@ -84,7 +84,7 @@ using namespace std;
 int main() {
     int s, d;
     cin >> s >> d;
-    if (s > 9 * d) {
+    if (s > 9 * d || s <= 0 || d <= 0) {
         cout << -1 << endl;
     } else {
         string result = "";
@@ -112,7 +112,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int s = sc.nextInt();
         int d = sc.nextInt();
-        if (s > 9 * d) {
+        if (s > 9 * d || s <= 0 || d <= 0) {
             System.out.println(-1);
         } else {
             StringBuilder result = new StringBuilder();
