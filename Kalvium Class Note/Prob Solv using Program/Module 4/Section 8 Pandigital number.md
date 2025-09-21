@@ -65,41 +65,31 @@ else:
 using namespace std;
 
 bool isPandigital(int num) {
-    int digits[10] = {0}; // to track digits (index = digit, value = count)
-    int count = 0;
-    int temp = num;
-    // Step 1: Extract digits and count them
+    int digits[10] = {0};
+    int count = 0, temp = num;
+    
     while (temp > 0) {
-        int digit = temp % 10;
-        digits[digit]++;
-        temp = temp / 10;
+        int d = temp % 10;
+        if (d == 0) return false;     // 0 not allowed
+        if (digits[d] > 0) return false; // duplicate digit
+        digits[d] = 1;
+        temp /= 10;
         count++;
     }
-    // Step 2: Check if all digits are in range 1..count
+    
+    // check if we have all digits from 1 to count
     for (int i = 1; i <= count; i++) {
-        if (digits[i] != 1) {
-            return false; // digit missing or repeated
-        }
+        if (digits[i] == 0) return false;
     }
-    // Step 3: Make sure no invalid digit (like 0 or > count)
-    for (int i = count + 1; i < 10; i++) {
-        if (digits[i] > 0) return false;
-    }
-    if (digits[0] > 0) return false;
     return true;
 }
 
 int main() {
     int num;
     cin >> num;
-    if (isPandigital(num)) {
-        cout << "Yes" << endl;
-    } else {
-        cout << "No" << endl;
-    }
+    cout << (isPandigital(num) ? "Yes" : "No") << endl;
     return 0;
 }
-
 ```
 
 ## Java Program:

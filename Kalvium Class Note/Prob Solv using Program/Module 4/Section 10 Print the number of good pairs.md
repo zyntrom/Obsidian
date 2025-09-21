@@ -44,30 +44,24 @@ Output: `2`
 
 ```cpp
 #include <iostream>
-#include <unordered_map>
 using namespace std;
 
 int main() {
     int n;
     cin >> n;
     int arr[n];
-    
-    for (int i = 0; i < n; i++) {
-        cin >> arr[i];
-    }
-    unordered_map<int, int> freq;
-    for (int i = 0; i < n; i++) {
-        freq[arr[i]]++;
-    }
+    for (int i = 0; i < n; i++) cin >> arr[i];
     long long goodPairs = 0;
-    for (auto it : freq) {
-        int f = it.second;
-        goodPairs += (long long)f * (f - 1) / 2;
+    for (int i = 0; i < n; i++) {
+        for (int j = i + 1; j < n; j++) {
+            if (arr[i] == arr[j]) {
+                goodPairs++;
+            }
+        }
     }
     cout << goodPairs << endl;
     return 0;
 }
-
 ```
 ---
 
@@ -76,17 +70,14 @@ int main() {
 ```python
 n = int(input())
 arr = list(map(int, input().split()))
-
-freq = {}
-for num in arr:
-    freq[num] = freq.get(num, 0) + 1
-
 good_pairs = 0
-for f in freq.values():
-    good_pairs += f * (f - 1) // 2
+
+for i in range(n):
+    for j in range(i + 1, n):
+        if arr[i] == arr[j]:
+            good_pairs += 1
 
 print(good_pairs)
-
 ```
 
 ---
@@ -94,7 +85,7 @@ print(good_pairs)
 ## 🔹 Java Solution
 
 ```java
-import java.util.*;
+import java.util.Scanner;
 
 public class GoodPairs {
     public static void main(String[] args) {
@@ -104,19 +95,17 @@ public class GoodPairs {
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
-        HashMap<Integer, Integer> freq = new HashMap<>();
-        for (int num : arr) {
-            freq.put(num, freq.getOrDefault(num, 0) + 1);
-        }
         long goodPairs = 0;
-        for (int f : freq.values()) {
-            goodPairs += (long) f * (f - 1) / 2;
+        for (int i = 0; i < n; i++) {
+            for (int j = i + 1; j < n; j++) {
+                if (arr[i] == arr[j]) {
+                    goodPairs++;
+                }
+            }
         }
         System.out.println(goodPairs);
-        sc.close();
     }
 }
-
 ```
 
 ---
