@@ -108,17 +108,16 @@ def is_pentagonal(num):
 
 N = int(input())
 K = int(input())
-
-pentagonal = [0] * N
-for i in range(1, N):
-    pentagonal[i] = i * (3 * i - 1) // 2
 count = 0
+
 for n in range(K + 1, N):
-    Pn = pentagonal[n]
-    Pnk = pentagonal[n - K]
+    Pn = n * (3 * n - 1) // 2
+    Pnk = (n - K) * (3 * (n - K) - 1) // 2
+
     diff = Pn - Pnk
-    sum_val = Pn + Pnk
-    if is_pentagonal(diff) or is_pentagonal(sum_val):
+    sum_ = Pn + Pnk
+
+    if is_pentagonal(diff) or is_pentagonal(sum_):
         count += 1
 
 print(count)
@@ -132,25 +131,21 @@ print(count)
 ```java
 import java.util.Scanner;
 
-public class PentagonalNumbers {
-    static boolean isPentagonal(int num) {
+public class PentagonalPairs {
+    public static boolean isPentagonal(int num) {
         if (num <= 0) return false;
         double n = (1 + Math.sqrt(1 + 24 * num)) / 6;
         return n == (int)n;
     }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
         int K = sc.nextInt();
-        sc.close();
-        int[] pentagonal = new int[N];
-        for (int i = 1; i < N; i++) {
-            pentagonal[i] = i * (3 * i - 1) / 2;
-        }
         int count = 0;
         for (int n = K + 1; n < N; n++) {
-            int Pn = pentagonal[n];
-            int Pnk = pentagonal[n - K];
+            int Pn = n * (3 * n - 1) / 2;
+            int Pnk = (n - K) * (3 * (n - K) - 1) / 2;
             int diff = Pn - Pnk;
             int sum = Pn + Pnk;
             if (isPentagonal(diff) || isPentagonal(sum)) {
