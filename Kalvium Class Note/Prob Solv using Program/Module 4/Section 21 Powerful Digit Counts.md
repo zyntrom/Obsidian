@@ -64,7 +64,7 @@ int main() {
     int N;
     cin >> N;
     for(int i = 1; i < 10; i++) {
-        int ans = pow(i, N);
+        long ans = pow(i, N);
         int temp = ans, digits = 0;
         while(temp > 0) {
             temp /= 10;
@@ -92,7 +92,7 @@ public class Main {
         int N = sc.nextInt();
         for(int i = 1; i < 10; i++) {
             long ans = (long)Math.pow(i, N);
-            int digits = String.valueOf(ans).length();
+            long digits = String.valueOf(ans).length();
             if(digits == N) {
                 System.out.println(ans);
             }
