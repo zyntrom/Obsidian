@@ -55,18 +55,17 @@ Input: `231212`
 ### ✅ Python
 
 ```python
-num = int(input())
-freq = [0]*10
+n = int(input())
 
-while num > 0:
-    digit = num % 10
-    freq[digit] += 1
-    num //= 10
+fre = [0] * 10
 
+while n != 0:
+    rem = n % 10
+    fre[rem] += 1
+    n //= 10
 for i in range(10):
-    if freq[i] > 0:
-        print(f"{i}:{freq[i]}")
-
+    if fre[i] > 0:
+        print(f"{i}:{fre[i]}")
 ```
 
 ---
@@ -95,9 +94,9 @@ int main() {
 		n/=10;
 	}
 	for(int i=0;i<10;i++){
-	if(fre[i]>0){
-		cout<<i<<":"<<fre[i]<<endl;
-	}
+		if(fre[i]>0){
+			cout<<i<<":"<<fre[i]<<endl;
+		}
 	}
 	return 0;
 }
@@ -113,16 +112,19 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int num = sc.nextInt();
-        int[] freq = new int[10];
-        while (num > 0) {
-            int digit = num % 10;
-            freq[digit]++;
-            num /= 10;
+        int n = sc.nextInt();
+        int[] fre = new int[10];
+        for (int i = 0; i < 10; i++) {
+            fre[i] = 0;
+        }
+        while (n != 0) {
+            int rem = n % 10;
+            fre[rem]++;
+            n /= 10;
         }
         for (int i = 0; i < 10; i++) {
-            if (freq[i] > 0) {
-                System.out.println(i + ":" + freq[i]);
+            if (fre[i] > 0) {
+                System.out.println(i + ":" + fre[i]);
             }
         }
     }
@@ -134,7 +136,5 @@ public class Main {
 ✅ **Explanation:**
 
 - The key is **digit extraction** using `% 10` and `// 10`.
-    
 - A simple array keeps count of each digit.
-    
 - Finally, only digits that appear at least once are printed.
