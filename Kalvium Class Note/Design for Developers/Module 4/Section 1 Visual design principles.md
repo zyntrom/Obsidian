@@ -9,6 +9,7 @@
 
 ---
 
+![[Pasted image 20250921113915.png]]
 ## Definition
 
 - **Visual Design Principles** = Fundamental guidelines to create designs that are:
@@ -90,3 +91,5 @@
 - 5 Principles: Scale, Visual Hierarchy, Balance, Contrast, Gestalt
 - Application → Good & Bad examples
 - Practice → Interactive games
+
+![[Pasted image 20250921113933.png]]
