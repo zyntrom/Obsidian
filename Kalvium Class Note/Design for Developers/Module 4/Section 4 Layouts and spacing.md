@@ -79,6 +79,15 @@
 
 - Sometimes better to **centre content** rather than making it full width.
 
+```embed
+title: "Figma Tutorial: Layout Grids"
+image: "https://i.ytimg.com/vi/zd8wrAdURN0/maxresdefault.jpg"
+description: "Figma is free to use. Sign up here: http://bit.ly/2JZxCKaIn this video we'll discuss the various types of Layout Grids you can use in Figma when working on r..."
+url: "https://youtu.be/zd8wrAdURN0"
+favicon: ""
+aspectRatio: "56.25"
+```
+
 ---
 
 ✅ **Key Exam Pointers**:
