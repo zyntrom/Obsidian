@@ -95,26 +95,27 @@ partition(arr, low, high):
 ## 🐍 Python (Quick Sort)
 
 ```python
-def partition(arr, low, high):
-    pivot = arr[high]   # choose last element as pivot
-    i = low - 1
-    for j in range(low, high):
-        if arr[j] <= pivot:
+def partition(arr, start, end):
+    pivot = arr[end]
+    i = start - 1
+    for j in range(start, end):
+        if arr[j] < pivot:
             i += 1
             arr[i], arr[j] = arr[j], arr[i]
-    arr[i+1], arr[high] = arr[high], arr[i+1]
-    return i + 1
+    i += 1
+    arr[i], arr[end] = arr[end], arr[i]
+    return i
+def quickSort(arr, start, end):
+    if end <= start:
+        return
+    pivot = partition(arr, start, end)
+    quickSort(arr, start, pivot - 1)
+    quickSort(arr, pivot + 1, end)
 
-def quick_sort(arr, low, high):
-    if low < high:
-        pi = partition(arr, low, high)
-        quick_sort(arr, low, pi - 1)
-        quick_sort(arr, pi + 1, high)
-
-# Example
-arr = [78, 47, 58, 95, 76, 94]
-quick_sort(arr, 0, len(arr) - 1)
-print("Sorted:", arr)
+# Driver code
+arr = [1, 6, 3, 2, 7, 5, 8, 4, 9]
+quickSort(arr, 0, len(arr) - 1)
+print(*arr)
 
 ```
 
@@ -126,36 +127,35 @@ print("Sorted:", arr)
 #include <iostream>
 using namespace std;
 
-int partition(int arr[], int low, int high) {
-    int pivot = arr[high]; // pivot is last element
-    int i = low - 1;
-    for (int j = low; j < high; j++) {
-        if (arr[j] <= pivot) {
+int partition(int arr[], int start, int end) {
+    int pivot = arr[end];
+    int i = start - 1;
+    for (int j = start; j <= end - 1; j++) {
+        if (arr[j] < pivot) {
             i++;
             swap(arr[i], arr[j]);
         }
     }
-    swap(arr[i + 1], arr[high]);
-    return i + 1;
+    i++;
+    swap(arr[i], arr[end]);
+    return i;
 }
 
-void quickSort(int arr[], int low, int high) {
-    if (low < high) {
-        int pi = partition(arr, low, high);
-        quickSort(arr, low, pi - 1);
-        quickSort(arr, pi + 1, high);
-    }
+void quickSort(int arr[], int start, int end) {
+    if (end <= start) return;
+    int pivot = partition(arr, start, end);
+    quickSort(arr, start, pivot - 1);
+    quickSort(arr, pivot + 1, end);
 }
 
 int main() {
-    int arr[] = {78, 47, 58, 95, 76, 94};
+    int arr[] = {1, 6, 3, 2, 7, 5, 8, 4, 9};
     int n = sizeof(arr) / sizeof(arr[0]);
-
     quickSort(arr, 0, n - 1);
-
-    cout << "Sorted: ";
-    for (int i = 0; i < n; i++) cout << arr[i] << " ";
-    cout << endl;
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+    return 0;
 }
 
 ```
@@ -165,37 +165,39 @@ int main() {
 ## ☕ Java (Quick Sort)
 
 ```java
-import java.util.*;
-
-public class QuickSortSimple {
-    public static int partition(int arr[], int low, int high) {
-        int pivot = arr[high];  // last element as pivot
-        int i = low - 1;
-        for (int j = low; j < high; j++) {
-            if (arr[j] <= pivot) {
-                i++;
-                int temp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = temp;
-            }
-        }
-        int temp = arr[i + 1];
-        arr[i + 1] = arr[high];
-        arr[high] = temp;
-        return i + 1;
-    }
-    public static void quickSort(int arr[], int low, int high) {
-        if (low < high) {
-            int pi = partition(arr, low, high);
-            quickSort(arr, low, pi - 1);
-            quickSort(arr, pi + 1, high);
-        }
-    }
-    public static void main(String[] args) {
-        int arr[] = {78, 47, 58, 95, 76, 94};
-        quickSort(arr, 0, arr.length - 1);
-        System.out.println("Sorted: " + Arrays.toString(arr));
-    }
+public class SortQuick{
+	public static void main(String args[]){
+		int[] arr= {1,6,3,2,7,5,8,4,9};
+		int n= arr.length;
+		quickSort(arr,0,n-1);
+		for(int i=0;i<n;i++){
+			System.out.print(arr[i]+" ");
+		}
+	}
+	private static void quickSort(int[] arr,int start, int end){
+		if(end<=start){
+			return;
+		}
+		int pivot =partition(arr,start,end);
+		quickSort(arr, start, pivot-1);
+		quickSort(arr,pivot+1,end);
+	}
+	private static int partition(int[] arr,int start,int end){
+		int pivot= arr[end];
+		int i=start-1;
+		for(int j=start;j<=end-1;j++){
+			if(arr[j]<pivot){
+				i++;
+				int temp=arr[i];
+				arr[i]=arr[j];
+				arr[j]=temp;
+			}
+		}
+		i++;
+		int temp=arr[i];
+		arr[i]=arr[end];
+		arr[end]=temp;
+		return i;
+	}
 }
-
 ```

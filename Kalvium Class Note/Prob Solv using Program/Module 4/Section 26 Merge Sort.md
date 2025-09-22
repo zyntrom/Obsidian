@@ -114,7 +114,6 @@ def merge(leftArr, rightArr, arr):
     leftSize = len(leftArr)
     rightSize = len(rightArr)
     i = l = r = 0
-
     while l < leftSize and r < rightSize:
         if leftArr[l] < rightArr[r]:
             arr[i] = leftArr[l]
@@ -123,27 +122,21 @@ def merge(leftArr, rightArr, arr):
             arr[i] = rightArr[r]
             r += 1
         i += 1
-
     while l < leftSize:
         arr[i] = leftArr[l]
         l += 1
         i += 1
-
     while r < rightSize:
         arr[i] = rightArr[r]
         r += 1
         i += 1
-
-
 def mergeSort(arr):
     length = len(arr)
     if length <= 1:
         return
-
     middle = length // 2
     leftArr = arr[:middle]
     rightArr = arr[middle:]
-
     mergeSort(leftArr)
     mergeSort(rightArr)
     merge(leftArr, rightArr, arr)
