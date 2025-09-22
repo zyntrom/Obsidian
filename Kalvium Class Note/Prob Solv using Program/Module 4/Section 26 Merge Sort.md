@@ -110,35 +110,49 @@ favicon: ""
 ## 🐍 Python (simple arrays/lists)
 
 ```python
-def merge_sort(arr):
-    if len(arr) <= 1:
-        return arr
-    
-    mid = len(arr) // 2
-    left = merge_sort(arr[:mid])
-    right = merge_sort(arr[mid:])
-    
-    return merge(left, right)
+def merge(leftArr, rightArr, arr):
+    leftSize = len(leftArr)
+    rightSize = len(rightArr)
+    i = l = r = 0
 
-def merge(left, right):
-    result = []
-    i = j = 0
-    
-    while i < len(left) and j < len(right):
-        if left[i] < right[j]:
-            result.append(left[i])
-            i += 1
+    while l < leftSize and r < rightSize:
+        if leftArr[l] < rightArr[r]:
+            arr[i] = leftArr[l]
+            l += 1
         else:
-            result.append(right[j])
-            j += 1
-    
-    result.extend(left[i:])
-    result.extend(right[j:])
-    return result
+            arr[i] = rightArr[r]
+            r += 1
+        i += 1
 
-# Example
-arr = [5, 2, 8, 1]
-print("Sorted:", merge_sort(arr))
+    while l < leftSize:
+        arr[i] = leftArr[l]
+        l += 1
+        i += 1
+
+    while r < rightSize:
+        arr[i] = rightArr[r]
+        r += 1
+        i += 1
+
+
+def mergeSort(arr):
+    length = len(arr)
+    if length <= 1:
+        return
+
+    middle = length // 2
+    leftArr = arr[:middle]
+    rightArr = arr[middle:]
+
+    mergeSort(leftArr)
+    mergeSort(rightArr)
+    merge(leftArr, rightArr, arr)
+
+
+# Driver Code
+arr = [8, 3, 5, 6, 7, 3, 4, 1, 9]
+mergeSort(arr)
+print(*arr)
 
 ```
 
@@ -150,40 +164,47 @@ print("Sorted:", merge_sort(arr))
 #include <iostream>
 using namespace std;
 
-void merge(int arr[], int l, int m, int r) {
-    int n1 = m - l + 1;
-    int n2 = r - m;
-    int L[1000], R[1000];  // temporary arrays
-    for (int i = 0; i < n1; i++) L[i] = arr[l + i];
-    for (int j = 0; j < n2; j++) R[j] = arr[m + 1 + j];
-
-    int i = 0, j = 0, k = l;
-    while (i < n1 && j < n2) {
-        if (L[i] <= R[j]) arr[k++] = L[i++];
-        else arr[k++] = R[j++];
+void merge(int arr[], int left[], int right[], int leftSize, int rightSize) {
+    int i = 0, l = 0, r = 0;
+    while (l < leftSize && r < rightSize) {
+        if (left[l] < right[r]) {
+            arr[i++] = left[l++];
+        } else {
+            arr[i++] = right[r++];
+        }
     }
-    while (i < n1) arr[k++] = L[i++];
-    while (j < n2) arr[k++] = R[j++];
-}
-
-void mergeSort(int arr[], int l, int r) {
-    if (l < r) {
-        int m = (l + r) / 2;
-        mergeSort(arr, l, m);
-        mergeSort(arr, m + 1, r);
-        merge(arr, l, m, r);
+    while (l < leftSize) {
+        arr[i++] = left[l++];
+    }
+    while (r < rightSize) {
+        arr[i++] = right[r++];
     }
 }
-
+void mergeSort(int arr[], int n) {
+    if (n <= 1) return;
+    int middle = n / 2;
+    int* left = new int[middle];
+    int* right = new int[n - middle];
+    for (int i = 0; i < middle; i++) {
+        left[i] = arr[i];
+    }
+    for (int i = middle; i < n; i++) {
+        right[i - middle] = arr[i];
+    }
+    mergeSort(left, middle);
+    mergeSort(right, n - middle);
+    merge(arr, left, right, middle, n - middle);
+    delete[] left;
+    delete[] right;
+}
 int main() {
-    int arr[] = {5, 2, 8, 1};
+    int arr[] = {8, 3, 5, 6, 7, 3, 4, 1, 9};
     int n = sizeof(arr) / sizeof(arr[0]);
-
-    mergeSort(arr, 0, n - 1);
-
-    cout << "Sorted: ";
-    for (int i = 0; i < n; i++) cout << arr[i] << " ";
-    cout << endl;
+    mergeSort(arr, n);
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+    return 0;
 }
 
 ```
@@ -193,37 +214,65 @@ int main() {
 ## ☕ Java (arrays, no extra libraries)
 
 ```java
-import java.util.*;
+public class SortMerge{
+	public static void main(String args[]){
+		int[] arr = {8,3,5,6,7,3,4,1,9};
+		int n=arr.length;
+		mergeSort(arr);
+		for(int i=0;i<n;i++){
+			System.out.print(arr[i]+" ");
+		}
+	}
+	public static void mergeSort(int[] arr){
+		int len=arr.length;
+		if(len<=1){
+			return;
+		}
+		int middle= len/2;
+		int[] leftArr =new int[middle];
+		int[] rightArr= new int[len-middle];
+		int i=0;
+		int j=0;
+		for(;i<len;i++){
+			if(i<middle){
+				leftArr[i]=arr[i];
+			}
+			else{
+				rightArr[j]=arr[i];
+				j++;
+			}
+		}
+		mergeSort(leftArr);
+		mergeSort(rightArr);
+		merge(leftArr, rightArr, arr);
+	}
 
-public class MergeSortSimple {
-    public static void merge(int arr[], int l, int m, int r) {
-        int n1 = m - l + 1;
-        int n2 = r - m;
-        int L[] = new int[n1];
-        int R[] = new int[n2];
-        for (int i = 0; i < n1; i++) L[i] = arr[l + i];
-        for (int j = 0; j < n2; j++) R[j] = arr[m + 1 + j];
-        int i = 0, j = 0, k = l;
-        while (i < n1 && j < n2) {
-            if (L[i] <= R[j]) arr[k++] = L[i++];
-            else arr[k++] = R[j++];
-        }
-        while (i < n1) arr[k++] = L[i++];
-        while (j < n2) arr[k++] = R[j++];
-    }
-    public static void mergeSort(int arr[], int l, int r) {
-        if (l < r) {
-            int m = (l + r) / 2;
-            mergeSort(arr, l, m);
-            mergeSort(arr, m + 1, r);
-            merge(arr, l, m, r);
-        }
-    }
-    public static void main(String[] args) {
-        int arr[] = {5, 2, 8, 1};
-        mergeSort(arr, 0, arr.length - 1);
-        System.out.println("Sorted: " + Arrays.toString(arr));
-    }
+	private static void merge(int[] leftArr, int[] rightArr, int[] arr){
+		int leftSize= arr.length/2;
+		int rightSize=arr.length -leftSize;
+		int i=0, l=0, r=0;
+		while(l<leftSize && r<rightSize){
+			if(leftArr[l]<rightArr[r]){
+				arr[i]=leftArr[l];
+				i++;
+				l++;
+			}
+			else{
+				arr[i]=rightArr[r];
+				i++;
+				r++;
+			}
+		}
+		while(l<leftSize){
+			arr[i]=leftArr[l];
+			i++;
+			l++;
+		}
+		while(r<rightSize){
+			arr[i]=rightArr[r];
+			i++;
+			r++;
+		}
+	}
 }
-
 ```
