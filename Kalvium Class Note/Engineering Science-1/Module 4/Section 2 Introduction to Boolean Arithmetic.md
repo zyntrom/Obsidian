@@ -107,3 +107,5 @@ f = (a·b) + (a·¬b)
 - Logic gates implement arithmetic.
 - Simplification saves cost, power, and time.
 - ALU = core of arithmetic in processors.
+
+![[Pasted image 20250923104816.png]]
