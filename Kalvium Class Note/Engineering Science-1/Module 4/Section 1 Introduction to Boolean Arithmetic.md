@@ -1,111 +1,111 @@
-# Boolean Arithmetic – Notes
+# Boolean Arithmetic — Quick Notes (Kalvium AL 4.1)
 
-## 1. Introduction
+## 1. Boolean Algebra
 
-- Boolean algebra = branch of algebra where variables take **binary values**: 1 (true) or 0 (false).
-- Foundation of **digital circuits**, **computer arithmetic**, and **programming logic**.
-- Enables **decision-making**, **circuit simplification**, and **control flow** in digital systems.
-
----
-
-## 2. Boolean Operations
-
-|Operation|Symbol|Output|Example|
-|---|---|---|---|
-|AND|·|1 if both inputs 1|1 · 0 = 0|
-|OR|+|1 if at least one 1|1 + 0 = 1|
-|NOT|¬ or ’|Inverts input|¬1 = 0|
-|XOR|⊕|1 if inputs differ|1 ⊕ 0 = 1|
-
-- Example: Activate alarm if door open (d=1) **AND** system armed (a=1): alarm = d · a
+- Variables: **1 (true), 0 (false)**
+- Uses:
+    - Logic gate design (AND, OR, NOT, XOR)
+    - Programming decisions (if, else, while)
+    - Circuit simplification with Boolean laws
 
 ---
 
-## 3. Boolean Laws (Simplification)
+## 2. Importance
+
+- **Foundation of digital circuits** (mathematical logic for CPUs).
+- **Decision-making** in computers (logic & arithmetic).
+- **Simplification** reduces size, speed, and power of circuits.
+- **Everywhere**: phones, PCs, supercomputers.
+- Basis for **programming logic** and **ALUs**.
+
+---
+
+## 3. Boolean Operations
+
+- **AND (·)** → 1 if both inputs are 1.
+- **OR (+)** → 1 if at least one input is 1.
+- **NOT (¬)** → inverts input.
+- **XOR (⊕)** → 1 if inputs differ.
+
+_Example:_ Alarm = d · a (door open AND system armed).
+
+---
+
+## 4. Boolean Laws (Simplification)
 
 - **Identity:** a + 0 = a, a · 1 = a
 - **Null:** a + 1 = 1, a · 0 = 0
 - **Inverse:** a + ¬a = 1, a · ¬a = 0
 - **Distributive:** a · (b + c) = a·b + a·c
-- **DeMorgan's Laws:** ¬(a + b) = ¬a · ¬b, ¬(a · b) = ¬a + ¬b
+- **DeMorgan:**
+    - ¬(a + b) = ¬a · ¬b
+    - ¬(a · b) = ¬a + ¬b
 
 ---
 
-## 4. Binary Arithmetic
+## 5. Binary Arithmetic
 
-### Addition Rules
-
-```
-0 + 0 = 0  
-1 + 0 = 1  
-1 + 1 = 10 (0 carry 1)
-```
-
-**Example:**  
-```
-1011 + 0110 = 10001
-```
-
-### Subtraction Rules
-
-```
-0 − 0 = 0  
-1 − 0 = 1  
-0 − 1 = 1 (borrow 1)
-```
-
-**Example:**  
-```
-1011 − 0110 = 0101
-```
-
-### 1’s and 2’s Complement
-
-- 1’s complement: flip all bits (1011 → 0100)
-- 2’s complement: add 1 to 1’s complement (0100 + 1 = 0101)
-- Subtraction: use 2’s complement of subtrahend, then add.
+- **Addition rules:**
+    - 0+0=0, 1+0=1, 1+1=10 (carry 1).
+    - Example: 1011 + 0110 = 10001
+- **Subtraction rules:**
+    - 0−0=0, 1−0=1, 0−1=1 (borrow 1).
+    - Example: 1011 − 0110 = 0101
 
 ---
 
-## 5. Logic-Level Implementation
+## 6. Complements
 
-### Adders
+- **1’s comp:** Flip bits (1011 → 0100).
+- **2’s comp:** 1’s comp + 1 (0100 + 1 = 0101).
+- _Subtraction with 2’s comp:_  
+    1011 + (2’s comp of 0110 → 1010) = 0101 (after carry discard).
+
+---
+
+## 7. Logic-Level Circuits
 
 - **Half Adder:**
     - Sum = a ⊕ b
     - Carry = a · b
 - **Full Adder:**
-    - Sum = (a ⊕ b) ⊕ carry-in
-    - Carry-out = (a · b) + (carry-in · (a ⊕ b))
-
-### Carry & Borrow
-
-- **Carry** → propagates when addition > 1
-- **Borrow** → occurs when subtracting 1 from 0
-- Important for **multi-bit arithmetic performance**
+    - Sum = (a ⊕ b) ⊕ Cin
+    - Carry = (a · b) + (Cin · (a ⊕ b))
 
 ---
 
-## 6. Simplifying Expressions
+## 8. Carry & Borrow
 
-- Use **Boolean identities** to reduce circuit complexity.
+- **Carry:** occurs when addition > 1 (propagates).
+- **Borrow:** occurs when subtracting 1 from 0.
+- Both affect multi-bit operation speed.
 
-**Example:** f = (a · b) + (a · ¬b)  
-f = a · (b + ¬b) = a · 1 = a
+---
+
+## 9. Simplification Example
+
+```
+f = (a·b) + (a·¬b)  
+= a·(b+¬b)  
+= a·1 = a
+```
 
 ---
 
-## 7. Arithmetic Logic Units (ALUs)
+## 10. Arithmetic Logic in Circuits
 
-- Combine adders, subtractors, and logic gates.
-- Found in **CPU**, perform addition, subtraction, comparisons, bitwise operations.
+- Digital circuits = logic gates + adders/subtractors.
+- **ALU** = performs addition, subtraction, comparison, bitwise ops.
+- Found in **every CPU**.
 
 ---
-![[Pasted image 20250921130410.png]]
-## 8. Summary
 
-- Boolean algebra = language of digital logic (0s & 1s).
-- Binary arithmetic enables addition & subtraction in circuits.
-- Logic gates implement these operations physically.
-- Simplification = smaller, faster, efficient circuits.
-- ALU = hardware implementation of arithmetic & logic operations.
+## 🔑 Summary
+
+- Boolean algebra → computers work with 0s & 1s.
+- Binary addition/subtraction → via 1’s & 2’s complement.
+- Logic gates implement arithmetic.
+- Simplification saves cost, power, and time.
+- ALU = core of arithmetic in processors.
+
+![[Pasted image 20250923104816.png]]
