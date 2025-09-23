@@ -70,22 +70,16 @@ int result = op1 + op2;
 - Memory provides data.
 - ALU executes operation.
 - Result written back to memory (if needed).
-    
 - **Registers speed up this process**, but memory holds the bulk of data/instructions.
-    
 
 ---
 
 ## 6. Control Signals
 
 - Manage data flow like **traffic lights**.
-    
 - **Memory Read:** Enable fetch from memory.
-    
 - **Memory Write:** Enable store into memory.
-    
 - **ALU Enable:** Activate computation.
-    
 
 Example:  
 if (memoryRead) data = memory[address];  
@@ -96,47 +90,30 @@ if (memoryWrite) memory[address] = data;
 ## 7. Executing a Sample Instruction: `ADD A, B`
 
 1. **Fetch Instruction:** Read `ADD A, B` from instruction memory (PC → increment).
-    
 2. **Decode Instruction:** Understand operands A & B must be added.
-    
 3. **Fetch Operands:** Read values from memory addresses A and B.
-    
 4. **ALU Operation:** Perform addition → A + B.
-    
 5. **Store Result:** Write sum back to memory location C.
-    
 
 ---
 
 ## 8. Memory-Mapped I/O
 
 - CPU communicates with peripherals via **assigned memory addresses**.
-    
 - Devices behave like memory locations.
-    
 - Example:
-    
     - Write to printer’s address → sends print data.
-        
     - Read from keyboard’s address → retrieves keystrokes.
-        
 - **Advantage:** Unified method for memory + device communication.
-    
 
 ---
 
 ## 9. Summary
 
 - **Instruction Memory:** Stores program code, sequentially accessed.
-    
 - **Data Memory:** Stores variables/operands, randomly accessed.
-    
 - **PC:** Guides instruction fetch.
-    
 - **Operands:** Retrieved from data memory before ALU executes.
-    
 - **Control Signals:** Direct memory read/write and ALU enable.
-    
 - **Memory-Mapped I/O:** Integrates CPU–device communication via memory addressing.
-    
 - **Together:** Instruction memory, data memory, and ALU enable step-by-step CPU execution.
