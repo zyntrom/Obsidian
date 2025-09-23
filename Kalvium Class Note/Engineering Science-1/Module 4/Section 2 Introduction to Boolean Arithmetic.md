@@ -66,58 +66,44 @@ _Example:_ Alarm = d · a (door open AND system armed).
 ## 7. Logic-Level Circuits
 
 - **Half Adder:**
-    
     - Sum = a ⊕ b
-        
     - Carry = a · b
-        
 - **Full Adder:**
-    
     - Sum = (a ⊕ b) ⊕ Cin
-        
     - Carry = (a · b) + (Cin · (a ⊕ b))
-        
 
 ---
 
 ## 8. Carry & Borrow
 
 - **Carry:** occurs when addition > 1 (propagates).
-    
 - **Borrow:** occurs when subtracting 1 from 0.
-    
 - Both affect multi-bit operation speed.
-    
 
 ---
 
 ## 9. Simplification Example
 
+```
 f = (a·b) + (a·¬b)  
 = a·(b+¬b)  
-= a·1 = **a**
+= a·1 = a
+```
 
 ---
 
 ## 10. Arithmetic Logic in Circuits
 
 - Digital circuits = logic gates + adders/subtractors.
-    
 - **ALU** = performs addition, subtraction, comparison, bitwise ops.
-    
 - Found in **every CPU**.
-    
 
 ---
 
 ## 🔑 Summary
 
 - Boolean algebra → computers work with 0s & 1s.
-    
 - Binary addition/subtraction → via 1’s & 2’s complement.
-    
 - Logic gates implement arithmetic.
-    
 - Simplification saves cost, power, and time.
-    
 - ALU = core of arithmetic in processors.
