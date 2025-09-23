@@ -115,29 +115,38 @@ function MyComponent(props) {
 ```js
 function MyComponent() {   
 	const myStyle = {     
-		color: "white",     backgroundColor: "blue",     padding: "10px"   };   return (     <div style={myStyle}>       <h1>Hello, Kalvians!</h1>     </div>   ); }
+		color: "white",     
+		backgroundColor: "blue",     
+		padding: "10px"   
+	};   
+	return (     
+		<div style={myStyle}>       
+			<h1>Hello, Kalvians!</h1>     
+		</div>   
+	); 
+}
 ```
 
 ✔ Applies CSS styles with a JS object.
 
 ---
+```embed
+title: "ReactJS Tutorial - 8 - JSX"
+image: "https://i.ytimg.com/vi/7fPXI_MnBOY/maxresdefault.jpg"
+description: "📘 Courses - https://learn.codevolution.dev/💖 Support UPI - https://support.codevolution.dev/💖 Support PayPal - https://www.paypal.me/Codevolution💾 Github..."
+url: "https://youtu.be/7fPXI_MnBOY"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ## Summary
 
 - **JSX** blends HTML-like syntax with JavaScript.
-    
 - Benefits: **readability, familiarity, efficiency**.
-    
 - Key features:
-    
     - Write **HTML-like syntax** in JS.
-        
     - Use **`{}` for embedding JS expressions**.
-        
     - **Attributes** use camelCase & accept JS.
-        
     - **Conditional rendering** with JS operators.
-        
     - **Inline styles** use JS objects.
-        
 - Makes React components **dynamic, declarative, and interactive**.
