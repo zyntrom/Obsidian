@@ -11,7 +11,7 @@
 - Arithmetic: Addition, subtraction, multiplication, division.
 - Logical: Comparisons (>, <, =) and Boolean operations (AND, OR, NOT, XOR).
 - Data manipulation: Bitwise operations, shifting, masking.
-
+![[Pasted image 20250923110738.png]]
 ---
 
 ## 2. Operations of ALU
@@ -20,12 +20,12 @@
 
 - Work on binary numbers.
 - Example: 5 + 3 → ALU converts to binary → outputs 8 (1000).
-
+![[Pasted image 20250923110745.png]]
 ### 2.2 Logical Operations
 
 - Based on Boolean logic (TRUE/FALSE or 1/0).
 - Example: Check if `x > 10` → returns True/False.
-
+![[Pasted image 20250923110753.png]]
 ### 2.3 Bitwise Operations
 
 - Manipulate **individual bits**.
@@ -71,7 +71,7 @@
 3. ALU performs operation on input operands from registers.
 4. Result stored in register or sent back to CPU.
 5. Flags updated (e.g., Zero flag set if result = 0).
-
+![[Pasted image 20250923110807.png]]
 ---
 
 ## 6. Role of ALU in Computing Systems
@@ -88,7 +88,7 @@
 - **Registers:** Hold operands & results (e.g., accumulator).
 - **Memory (RAM/Cache):** Provides data & stores results.
 - **I/O Devices:** ALU processes input and outputs results.
-
+![[Pasted image 20250923110816.png]]
 ---
 
 ## 7. ALU in Different Systems
@@ -115,3 +115,5 @@
 - Components: Arithmetic Unit, Logic Unit, Status Register, MUX, CU Interface.
 - Works with registers, memory, and I/O for processing.
 - Found in **all systems**: from simple embedded devices to powerful supercomputers.
+
+![[Pasted image 20250923110834.png]]
