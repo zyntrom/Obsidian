@@ -117,3 +117,4 @@ if (memoryWrite) memory[address] = data;
 - **Control Signals:** Direct memory read/write and ALU enable.
 - **Memory-Mapped I/O:** Integrates CPU–device communication via memory addressing.
 - **Together:** Instruction memory, data memory, and ALU enable step-by-step CPU execution.
+![[Pasted image 20250923114702.png]]
