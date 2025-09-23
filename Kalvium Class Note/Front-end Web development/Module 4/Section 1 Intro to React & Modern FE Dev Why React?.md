@@ -108,38 +108,23 @@ const element = <h1>Hello, world!</h1>;
 ## React in Modern Frontend
 
 - Common tools used with React:
-    
     - **Create React App (CRA)** → easy project setup
-        
     - **React Router** → navigation (multi-page feel)
-        
     - **Redux** → manage global app state
-        
     - **Material UI** → prebuilt components
-        
 - Perfect for **Single Page Applications (SPAs):**
-    
     - Loads once, updates only content.
-        
     - Feels **fast & seamless**.
-        
 
 ---
 
 ## Summary
 
 - **React** = JS library for building **interactive UIs**.
-    
 - Core features:
-    
     - **Component-based**
-        
     - **Declarative**
-        
     - **Virtual DOM**
-        
 - Core concepts: **Components, JSX, Virtual DOM, Props, State**.
-    
 - Strong ecosystem, widely used in modern web apps.
-    
 - Powers **SPAs** for smooth user experiences.
