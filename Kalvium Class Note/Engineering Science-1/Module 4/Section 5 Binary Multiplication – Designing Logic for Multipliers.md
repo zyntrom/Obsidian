@@ -56,6 +56,14 @@ Used in **CPUs/ALUs** for efficient multiplication.
     - 16 AND gates for all bit combinations.
     - Multiple full adders combine results.
 - Complexity grows **quadratically** with bit size → optimized designs are crucial for speed.
+```embed
+title: "2-Bit Multiplier Using Half Adders"
+image: "https://i.ytimg.com/vi/7Bz9IgFNhDo/maxresdefault.jpg"
+description: "Digital Electronics: 2-Bit Multiplier Using Half AddersTopics discussed:1) Introduction to 2-bit Multiplier.2) Circuit for 2-bit multiplier.3) Example on 2-b..."
+url: "https://youtu.be/7Bz9IgFNhDo"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ---
 
@@ -79,6 +87,14 @@ Used in **CPUs/ALUs** for efficient multiplication.
         - (+ × –) → –
         - (– × –) → +
 - Important for real-world systems (DSP, control, AI).
+```embed
+title: "Lec-6 What are Signed & Unsigned Numbers | Arithmetic Operations | Number system"
+image: "https://i.ytimg.com/vi/XV91bg6KvmQ/maxresdefault.jpg"
+description: "👉Subscribe to our new channel:https://www.youtube.com/@varunainashotsArithmetic Operations(Addition, Subtraction, Multiplication, Division). It is of two ty..."
+url: "https://youtu.be/XV91bg6KvmQ"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ---
 
@@ -101,7 +117,7 @@ Used in **CPUs/ALUs** for efficient multiplication.
 - **Cryptography:** Secure, fast large-number multiplications.
 - **GPUs:** Matrix/vector ops in graphics and simulations.
 - **AI/ML Accelerators:** Neural network multiplications.
-
+![[Pasted image 20250923110327.png]]
 ---
 
 ### Summary
@@ -120,3 +136,4 @@ Used in **CPUs/ALUs** for efficient multiplication.
 - _Design Binary Multiplier Circuit_ | YouTube
 - _Signed vs. Unsigned_ | Testbook
 - _Binary Multiplier_ | Elprocus
+![[Pasted image 20250923110344.png]]
