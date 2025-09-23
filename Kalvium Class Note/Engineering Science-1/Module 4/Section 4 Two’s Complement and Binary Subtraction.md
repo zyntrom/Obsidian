@@ -58,6 +58,15 @@
 - Perform addition: `0101 + 1101 = 10010`
 - Discard carry: `0010 (2)` ✅
 
+```embed
+title: "Binary subtraction using 2’s complement | 2’s Complement subtraction"
+image: "https://i.ytimg.com/vi/R64AJ5dptvA/maxresdefault.jpg"
+description: "2’s complement subtraction is basically Binary subtraction using 2’s complement. The video focuses on how to do subtraction using 2’s complement. The initial..."
+url: "https://youtu.be/R64AJ5dptvA"
+favicon: ""
+aspectRatio: "56.25"
+```
+
 ---
 
 ## 5. Examples with Signed Numbers
