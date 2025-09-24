@@ -85,7 +85,7 @@ function App() {
 
 - Props make components **dynamic and reusable** by allowing different data each time.
 
-**Example: ProfileCard**
+	**Example: ProfileCard`**
 
 ```js
 function ProfileCard(props) {  
