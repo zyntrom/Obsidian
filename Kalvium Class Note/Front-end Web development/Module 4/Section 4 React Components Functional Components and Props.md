@@ -119,22 +119,33 @@ function App() {
 ### Breakdown
 
 - `ProfileCard` accepts **3 props**: `name`, `avatar`, `bio`.
-    
 - Each time `<ProfileCard />` is used → different values can be passed.
-    
 - Analogy: Component is like a **blank ID card**. Props fill in the **details** (name, photo, bio).
-    
+
+```embed
+title: "ReactJS Tutorial - 5 - Functional Components"
+image: "https://i.ytimg.com/vi/Cla1WwguArA/maxresdefault.jpg"
+description: "📘 Courses - https://learn.codevolution.dev/💖 Support UPI - https://support.codevolution.dev/💖 Support PayPal - https://www.paypal.me/Codevolution💾 Github..."
+url: "https://youtu.be/Cla1WwguArA"
+favicon: ""
+aspectRatio: "56.25"
+```
+
+```embed
+title: "ReactJS Tutorial - 9 - Props"
+image: "https://i.ytimg.com/vi/m7OWXtbiXX8/maxresdefault.jpg"
+description: "📘 Courses - https://learn.codevolution.dev/💖 Support UPI - https://support.codevolution.dev/💖 Support PayPal - https://www.paypal.me/Codevolution💾 Github..."
+url: "https://youtu.be/m7OWXtbiXX8"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ---
 
 ## Summary
 
 - **Functional Components**: JavaScript functions that return JSX → building reusable UI blocks.
-    
 - **Benefits**: Reusable, maintainable, readable, testable.
-    
 - **Creating Components**: Define a function that returns JSX.
-    
 - **Props**: Objects used to pass data into components → customize & reuse them.
-    
 - **Dynamic Components with Props**: Components display different content based on props → like blank forms filled with unique data.
