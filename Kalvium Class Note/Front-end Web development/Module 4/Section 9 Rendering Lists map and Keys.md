@@ -48,34 +48,34 @@ By the end, you’ll be able to:
 ### Example: Fruits List
 
 ```js
-const fruits = ["Apple", "Banana", "Cherry"];  fruits.map((fruit, index) =>    <li key={index}>{fruit}</li> )
+const fruits = ["Apple", "Banana", "Cherry"];  
+fruits.map((fruit, index) => <li key={index}>{fruit}</li> )
 ```
 
 ✅ Output:
 
-`<ul>   <li>Apple</li>   <li>Banana</li>   <li>Cherry</li> </ul>`
+```js
+<ul>   <li>Apple</li>   <li>Banana</li>   <li>Cherry</li> </ul>
+```
 
 ---
 
 ## 3️⃣ Why Are Keys Important?
 
 - React uses `key` to **identify elements** between renders.
-    
 - Without stable keys → React may **re-render incorrectly**.
-    
 
 ### Best Practices for Keys
 
 - Use a **unique ID** from your data (e.g., `todo.id`).
-    
 - **Avoid random values** → new key each render = performance loss.
-    
 - **Avoid array index** if list can reorder/delete → may cause bugs.
-    
 
 ✅ Example with IDs (Best):
 
-`todos.map((todo) =>    <li key={todo.id}>{todo.task}</li> )`
+```js
+todos.map((todo) => <li key={todo.id}>{todo.task}</li> )
+```
 
 ---
 
