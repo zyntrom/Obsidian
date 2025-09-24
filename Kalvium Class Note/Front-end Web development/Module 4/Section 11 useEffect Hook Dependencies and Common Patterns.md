@@ -79,26 +79,45 @@ useEffect(() => {
 	async function fetchProducts() {     
 		const res = await fetch(`https://api.example.com/products?category=${categoryId}`);     
 		const data = await res.json();     
-		setProducts(data);   }    fetchProducts(); }, [categoryId]); // runs when categoryId changes
+		setProducts(data);   
+	}    
+	fetchProducts(); 
+}, [categoryId]); // runs when categoryId changes
 ```
 
 - Fetches products only when **categoryId** changes.
-    
 - Prevents unnecessary API calls.
-    
 
 ---
 
 ### b) **Subscriptions (WebSockets, Firebase, etc.)**
 
-`function ChatRoom({ roomId }) {   const [messages, setMessages] = useState([]);    useEffect(() => {     const subscription = chatService.subscribeToMessages(       roomId,       message => setMessages(prev => [...prev, message])     );      return () => {       subscription.unsubscribe();     };   }, [roomId]);    return (     <ul>       {messages.map(msg => (         <li key={msg.id}>{msg.text}</li>       ))}     </ul>   ); }`
+```js
+function ChatRoom({ roomId }) {
+  const [messages, setMessages] = useState([]);
+
+  useEffect(() => {
+    const subscription = chatService.subscribeToMessages(
+      roomId,
+      message => setMessages(prev => [...prev, message])
+    );
+    return () => {
+      subscription.unsubscribe();
+    };
+	}, [roomId]);
+	return (
+    <ul>
+      {messages.map(msg => (
+        <li key={msg.id}>{msg.text}</li>
+      ))}
+    </ul>
+  );
+}
+```
 
 - Subscribes when `roomId` changes.
-    
 - **Cleanup** unsubscribes old room to prevent memory leaks.
-    
 - Ensures we only listen to the correct chat room.
-    
 
 ---
 
@@ -112,17 +131,20 @@ useEffect(() => {
 |Infinite loops|Effect updates state → triggers rerender → effect again|Use correct dependency control|
 
 ---
+```embed
+title: "Master React Hooks in easy way | useEffect"
+image: "https://i.ytimg.com/vi/YxkcMszKEYY/maxresdefault.jpg"
+description: "Learn the most important concepts of React JS Hook useEffect in simple and easy manner.✉️ Reach out to us at:novadesignscontact@gmail.com❤️ PDF VERSION (For ..."
+url: "https://youtu.be/YxkcMszKEYY"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ## 🎯 Summary
 
 - Dependency array = **controls when useEffect runs**.
-    
 - **Empty `[]`** → run once on mount.
-    
 - **With values `[x]`** → run only when `x` changes.
-    
 - **No array** → runs after every render.
-    
 - **Common patterns** → API fetch, subscriptions, conditional updates.
-    
 - **Best practice** → include only true dependencies to avoid stale data & infinite loops.
