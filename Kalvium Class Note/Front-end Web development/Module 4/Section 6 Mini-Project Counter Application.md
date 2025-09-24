@@ -117,7 +117,9 @@ render() {
 
 Run with:
 
-`npm run test:serve`
+```
+npm run test:serve
+```
 
 ---
 
@@ -134,32 +136,20 @@ Run with:
 ## Checklist Before Submit
 
 - ✅ UI renders with **+ , 0 , –**
-    
 - ✅ Uses **class component**
-    
 - ✅ Counter **increments/decrements correctly**
-    
 - ✅ All tests **pass**
-    
 - ✅ Code is **clean, readable, and commented**
-    
 
 ---
 
 ## Key Takeaways
 
 - **Class components** were the original way to manage state in React.
-    
 - **`this.state`** holds local component state.
-    
 - **`this.setState()`** updates state and re-renders UI.
-    
 - **Event handlers** must use arrow functions or binding.
-    
 - You just practiced:
-    
     - **State management**
-        
     - **Event handling**
-        
     - **Test-driven coding (TDD)**
