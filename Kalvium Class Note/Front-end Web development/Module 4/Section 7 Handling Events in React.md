@@ -88,6 +88,23 @@ By the end of this topic, you can:
 - **onMouseOver / onMouseOut** → Hover effects
 
 ---
+```embed
+title: "ReactJS Tutorial - 13 - Event Handling"
+image: "https://i.ytimg.com/vi/Znqv84xi8Vs/maxresdefault.jpg"
+description: "📘 Courses - https://learn.codevolution.dev/💖 Support UPI - https://support.codevolution.dev/💖 Support PayPal - https://www.paypal.me/Codevolution💾 Github..."
+url: "https://youtu.be/Znqv84xi8Vs"
+favicon: ""
+aspectRatio: "56.25"
+```
+
+```embed
+title: "ReactJS Tutorial - 14 - Binding Event Handlers"
+image: "https://i.ytimg.com/vi/kVWpBtRjkCk/maxresdefault.jpg"
+description: "📘 Courses - https://learn.codevolution.dev/💖 Support UPI - https://support.codevolution.dev/💖 Support PayPal - https://www.paypal.me/Codevolution💾 Github..."
+url: "https://youtu.be/kVWpBtRjkCk"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ## Summary
 
@@ -96,17 +113,13 @@ By the end of this topic, you can:
 - Handlers are passed as **functions** (not strings).
 - React uses **SyntheticEvent** to standardize behavior across browsers.
 - You can extract details like target, type, and coordinates from the event object.
-    
 - Essential for building **interactive UI elements** (forms, modals, validation, etc.).
-    
 
 ---
 
 ## Resources
 
 - React Official Docs: Event Handling
-    
 - Why We Use Synthetic Events in React – GeeksForGeeks
-    
 
 ---
