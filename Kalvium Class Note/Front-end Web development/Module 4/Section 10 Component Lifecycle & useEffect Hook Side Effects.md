@@ -94,8 +94,24 @@ useEffect(() => {
     - `loading` → true/false
     - `error` → error details
 
-`useEffect(() => {   const fetchData = async () => {     try {       const res = await fetch("https://api.example.com");       const json = await res.json();       setData(json);     } catch (err) {       setError(err);     } finally {       setLoading(false);     }   };   fetchData(); }, []);`
+```js
+useEffect(() => {   
+	const fetchData = async () => {     
+		try {       
+		const res = await fetch("https://api.example.com");       
+		const json = await res.json();       
+		setData(json);     
+		} 
+		catch (err) {       
+			setError(err);     
+		} finally {       
+			setLoading(false);     
+		}   
+	};   
+	fetchData(); 
+}, []);
 
+```
 ✅ Shows _“Loading…”_ until data fetched.  
 ✅ Handles errors gracefully.  
 ✅ Displays data when ready.
@@ -105,11 +121,8 @@ useEffect(() => {
 ## 4️⃣ Rules of `useEffect`
 
 - Must be called **inside a functional component** or **custom hook**.
-    
 - You can have **multiple `useEffect` hooks** in one component.
-    
 - **Dependency array** controls when effect runs.
-    
 
 ---
 
