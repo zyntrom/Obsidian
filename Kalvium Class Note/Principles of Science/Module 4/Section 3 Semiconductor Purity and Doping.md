@@ -34,8 +34,16 @@ url: "https://youtu.be/N8MuD_xu6L4"
 favicon: ""
 aspectRatio: "56.25"
 ```
-
+![[Pasted image 20250925074408.png]]
 ---
+```embed
+title: "How Does a Transistor Work?"
+image: "https://i.ytimg.com/vi/IcrBqCFLHIY/maxresdefault.jpg"
+description: "How does a transistor work? Our lives depend on this device.Support Veritasium on Patreon: http://bit.ly/VePatreonSubscribe to Veritasium - it's FREE! http:/..."
+url: "https://youtu.be/IcrBqCFLHIY"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ## 3. Types of Semiconductors
 
@@ -86,7 +94,7 @@ aspectRatio: "56.25"
 
 - **Problem**: Extra dopant atoms scatter moving electrons/holes → reduces conductivity & speed.
 - **Solution**: Controlled doping levels (balance between conductivity & scattering).
-
+![[Pasted image 20250925074437.png]]
 ---
 
 ## 6. Analogy: Salt in Water
@@ -97,6 +105,14 @@ aspectRatio: "56.25"
     - Pure silicon = pure water (few charge carriers).
     - Doped silicon = saltwater (many charge carriers).
 - **Key idea**: Impurities introduce free carriers, enabling conduction.
+```embed
+title: "Water Conducts Electricity Experiment | Electrical Conductivity with Salt Water | Salt Water |"
+image: "https://i.ytimg.com/vi/X4sQ9aENtEo/maxres2.jpg?sqp=-oaymwEoCIAKENAF8quKqQMcGADwAQH4AZQDgALQBYoCDAgAEAEYMyBhKGUwDw==&rs=AOn4CLB_CjUCOgnVI9L5TqQIYsP9UGhswA"
+description: "Salt Electricity | Bulb Experiment | Salt Water Experiment | Salt Electricity Conductivity |Incandescent Lamp Experiment | Water Conducts Electricity Experim..."
+url: "https://youtu.be/X4sQ9aENtEo"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ---
 
@@ -106,7 +122,7 @@ aspectRatio: "56.25"
     - **Processors & memory chips** → built from billions of transistors.
     - **AI hardware, smartphones, laptops, washing machines, IoT devices**.
     - Enable **switching, decision-making, and signal processing** at microscopic scale.
-
+![[Pasted image 20250925074456.png]]
 ---
 
 ## 8. Summary (Quick Revision)
@@ -120,3 +136,5 @@ aspectRatio: "56.25"
 - **PN junctions** → key to diodes & transistors.
 - **Challenges**: dopant diffusion & impurity scattering.
 - **Analogy**: Doping in semiconductors ≈ adding salt to water for conduction.
+
+![[Pasted image 20250925074503.png]]
