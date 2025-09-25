@@ -50,12 +50,12 @@ aspectRatio: "56.25"
 
 ## 3. Classification of Catalysts
 
-|Type|Definition|Analogy|Example|Applications|
-|---|---|---|---|---|
-|**Positive Catalysts (Accelerators)**|Increase rate by lowering activation energy.|Helper pushes a bicycle uphill.|Iron in Haber Process (N₂ + H₂ → NH₃)|Petroleum refining, polymerization, enzymes in cells|
-|**Negative Catalysts (Inhibitors)**|Slow down reaction by raising activation energy.|Speed breaker slows vehicles.|Acetanilide in H₂O₂ decomposition|Food preservation, prevent unwanted reactions|
-|**Promoters**|Substances that enhance catalyst efficiency.|Fitness trainer improves performance.|Mo in Haber Process (improves Fe₂O₃)|Fuel cells, petrochemical industry|
-|**Catalyst Poisons**|Substances that deactivate catalysts by blocking active sites.|Glue in a keyhole blocks the key.|BaSO₄ deactivating Pd in Lindlar’s catalyst|Selective hydrogenation, fuel processing|
+| Type                                  | Definition                                                     | Analogy                               | Example                                     | Applications                                         |
+| ------------------------------------- | -------------------------------------------------------------- | ------------------------------------- | ------------------------------------------- | ---------------------------------------------------- |
+| **Positive Catalysts (Accelerators)** | Increase rate by lowering activation energy.                   | Helper pushes a bicycle uphill.       | Iron in Haber Process (N₂ + H₂ → NH₃)       | Petroleum refining, polymerization, enzymes in cells |
+| **Negative Catalysts (Inhibitors)**   | Slow down reaction by raising activation energy.               | Speed breaker slows vehicles.         | Acetanilide in H₂O₂ decomposition           | Food preservation, prevent unwanted reactions        |
+| **Promoters**                         | Substances that enhance catalyst efficiency.                   | Fitness trainer improves performance. | Mo in Haber Process (improves Fe₂O₃)        | Fuel cells, petrochemical industry                   |
+| **Catalyst Poisons**                  | Substances that deactivate catalysts by blocking active sites. | Glue in a keyhole blocks the key.     | BaSO₄ deactivating Pd in Lindlar’s catalyst | Selective hydrogenation, fuel processing             |
 
 ---
 
