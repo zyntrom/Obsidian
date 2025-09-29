@@ -38,6 +38,14 @@ By the end of this lesson, you will be able to:
 
 - A **structured dialogue** between two or more sides presenting **viewpoints on a topic**, supported by **reasoning and evidence**.
 - It is not a fight — it’s a logical discussion.
+```embed
+title: "Debating skills - Introduction"
+image: "https://i.ytimg.com/vi/1TSkkxu8on0/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGBcgZShiMA8=&rs=AOn4CLAUANPmSrTIre1Gw8HKcBx_b-x6Yw"
+description: "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+url: "https://youtu.be/1TSkkxu8on0"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ---
 
