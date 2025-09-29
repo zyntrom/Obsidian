@@ -161,9 +161,6 @@ With each practice, you’ll become:
 - Duration: 1 Hour (Live Activity)
 - Teams: For & Against
 - Focus: Clear reasoning, evidence, rebuttals, delivery
-    
 - Prep Steps: Brainstorm → Support → Open → Close → Anticipate → Practice
-    
 - Evaluation: Content, Structure, Delivery, Rebuttal, Confidence
-    
 - Key Advice: Be calm, respectful, and persuasive
