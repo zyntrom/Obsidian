@@ -95,17 +95,30 @@ s.erase(pos, len);
 
 ### Vectors
 
-```cpp
-#include <vector>  
-vector<int> v; 
-v.push_back(10); 
-v.pop_back(); 
-v.size();
-v.clear(); 
-v.begin(); 
-v.end();
-```
+## 🧰 Commonly Used Vector Functions
 
+Below is a **complete reference table** of vector functions you’ll use most often:
+
+|Function|Description|Example|
+|---|---|---|
+|`v.size()`|Returns number of elements|`int n = v.size();`|
+|`v.empty()`|Checks if vector is empty|`if(v.empty())`|
+|`v.push_back(x)`|Adds element `x` at the end|`v.push_back(10);`|
+|`v.pop_back()`|Removes last element|`v.pop_back();`|
+|`v.front()`|Access first element|`cout << v.front();`|
+|`v.back()`|Access last element|`cout << v.back();`|
+|`v[i]`|Access i-th element (0-based index)|`v[2] = 10;`|
+|`v.at(i)`|Safe access (throws error if out of bounds)|`v.at(2)`|
+|`v.begin()`|Iterator to first element|`auto it = v.begin();`|
+|`v.end()`|Iterator to position after last element|`auto it = v.end();`|
+|`v.insert(it, x)`|Insert `x` at position `it`|`v.insert(v.begin()+2, 99);`|
+|`v.erase(it)`|Remove element at iterator position|`v.erase(v.begin()+1);`|
+|`v.clear()`|Removes all elements|`v.clear();`|
+|`v.resize(n)`|Resizes vector to `n` elements|`v.resize(10);`|
+|`v.assign(n, val)`|Fills vector with `n` copies of `val`|`v.assign(5, 0);`|
+|`v.swap(v2)`|Swap contents with another vector|`v.swap(v2);`|
+|`v.capacity()`|Returns allocated memory capacity|`cout << v.capacity();`|
+|`v.shrink_to_fit()`|Reduces capacity to current size|`v.shrink_to_fit();`|
 ### Pairs
 
 ```c++
