@@ -39,22 +39,14 @@ Write a program that prints the **Fibonacci series** up to the **nth term** (0-b
 
 ## 🌳 3. Recursion Tree Example (n = 4)
 
-```
-Fibonacci(n)
-├── Base Cases
-│   ├── F(0) = 0
-│   └── F(1) = 1
-├── Recursive Case
-│   └── F(n) = F(n-1) + F(n-2)
-├── Recursion Tree Example
-│   └── F(4) expansion
-├── Dry Run
-│   └── Stepwise calculation
-├── Complexity
-│   ├── Time → O(2ⁿ)
-│   └── Space → O(n)
-└── Optimization
-    └── Memoization / DP
+```cpp
+               F(4)
+              /    \
+         F(3)      F(2)
+        /    \     /    \
+    F(2)    F(1) F(1)   F(0)
+   /    \
+F(1)   F(0)
 
 ```
 
@@ -91,9 +83,12 @@ public class Fibonacci {
 	return fib(n-1) + fib(n-2); // Recursive step  
 }
 
-public static void main(String[] args) {     
-	int n = 5;     for (int i = 0; i <= n; i++) {         System.out.print(fib(i) + " ");     } }
-
+	public static void main(String[] args) {     
+		int n = 5;     
+		for (int i = 0; i <= n; i++) {         
+			System.out.print(fib(i) + " ");     
+		} 
+	}
 }
 ```
 
@@ -101,36 +96,40 @@ public static void main(String[] args) {
 
 ### C++
 
-#include <iostream>  
+```c++
+include <iostream>  
 using namespace std;
 
 int fib(int n) {  
-if (n == 0) return 0; // Base case  
-if (n == 1) return 1; // Base case  
-return fib(n-1) + fib(n-2); // Recursive step  
+	if (n == 0) return 0; // Base case  
+	if (n == 1) return 1; // Base case  
+	return fib(n-1) + fib(n-2); // Recursive step  
 }
 
 int main() {  
-int n = 5;  
-for (int i = 0; i <= n; i++) {  
-cout << fib(i) << " ";  
-}  
+	int n = 5;  
+	for (int i = 0; i <= n; i++) {  
+		cout << fib(i) << " ";  
+	}  
 }
+```
 
 ---
 
 ### Python
 
+```python
 def fib(n):  
-if n == 0:  
-return 0 # Base case  
-if n == 1:  
-return 1 # Base case  
-return fib(n-1) + fib(n-2) # Recursive step
+	if n == 0:  
+		return 0 # Base case  
+	if n == 1:  
+		return 1 # Base case  
+	return fib(n-1) + fib(n-2) # Recursive step
 
 n = 5  
 for i in range(n+1):  
-print(fib(i), end=" ")
+	print(fib(i), end=" ")
+```
 
 ---
 
@@ -149,20 +148,15 @@ Output: 0 1 1 2
 **Explanation:**
 
 - Start with F(0)=0, F(1)=1
-    
 - Each next term = sum of previous two terms
-    
 
 ---
 
 ## 🧩 7. Important Notes
 
 - **Time Complexity:** O(2ⁿ) — exponential due to overlapping subproblems
-    
 - **Space Complexity:** O(n) due to recursion stack
-    
 - **Limitation:** Slow for large n → use **Dynamic Programming** / **Memoization** for optimization
-    
 
 ---
 
@@ -170,14 +164,18 @@ Output: 0 1 1 2
 
 ### Memoized Fibonacci (Python Example):
 
+```python
 memo = {}  
 def fib(n):  
-if n in memo:  
-return memo[n]  
-if n == 0: return 0  
-if n == 1: return 1  
-memo[n] = fib(n-1) + fib(n-2)  
-return memo[n]
+	if n in memo:  
+		return memon  
+	if n == 0: 
+		return 0  
+	if n == 1: 
+		return 1  
+	memon = fib(n-1) + fib(n-2)  
+	return memon
+```
 
 ---
 
@@ -185,18 +183,39 @@ return memo[n]
 
 **Fibonacci Recursion**
 
-`Fibonacci(n) ├── Base Cases │   ├── F(0) = 0 │   └── F(1) = 1 ├── Recursive Case │   └── F(n) = F(n-1) + F(n-2) ├── Recursion Tree Example │   └── F(4) expansion ├── Dry Run │   └── Stepwise calculation ├── Complexity │   ├── Time → O(2ⁿ) │   └── Space → O(n) └── Optimization     └── Memoization / DP`
+```
+Fibonacci(n)
+├── Base Cases
+│   ├── F(0) = 0
+│   └── F(1) = 1
+├── Recursive Case
+│   └── F(n) = F(n-1) + F(n-2)
+├── Recursion Tree Example
+│   └── F(4) expansion
+├── Dry Run
+│   └── Stepwise calculation
+├── Complexity
+│   ├── Time → O(2ⁿ)
+│   └── Space → O(n)
+└── Optimization
+    └── Memoization / DP
+```
 
 ---
+```embed
+title: "Recursion for Beginners - Fibonacci Numbers"
+image: "https://i.ytimg.com/vi/dDokMfPpfu4/maxresdefault.jpg"
+description: "🚀 https://neetcode.io/ - A better way to prepare for Coding Interviews🥷 Discord: https://discord.gg/ddjKRXPqtk🐦 Twitter: https://twitter.com/neetcode1🐮 S..."
+url: "https://youtu.be/dDokMfPpfu4"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ## 📚 10. Resources
 
 - Fibonacci Sequence Explanation & Coding
-    
 - LeetCode: Fibonacci Problems
-    
 - [YouTube: Fibonacci Recursive Solutions](https://youtube.com)
-    
 
 ---
 
