@@ -206,6 +206,15 @@ Imagine:
 
 DSA provides **structure + logic** to make tasks fast and organized.
 
+```embed
+title: "What are Data Structures?"
+image: "https://i.ytimg.com/vi/iZmDcfTtcNg/maxresdefault.jpg"
+description: "What are Data Structures and Algorithm (DSA)Check out our courses:Java Full Stack and Spring AI - https://go.telusko.com/JavaSpringAICoupon: TELUSKO10   (10%..."
+url: "https://youtu.be/iZmDcfTtcNg"
+favicon: ""
+aspectRatio: "56.25"
+```
+
 ---
 
 ### 🚀 Why DSA is Important:
@@ -296,3 +305,5 @@ When learning DSA:
 2. Write **pseudocode** (how)
 3. Implement in **Java, C++, and Python**
 4. Analyze **time and space complexity**
+
+![[Pasted image 20250929103641.png]]
