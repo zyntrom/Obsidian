@@ -9,6 +9,15 @@ Recursion is a programming technique where a **function calls itself** to solve 
 
 It’s like **breaking a big problem into smaller, identical problems**.
 
+```embed
+title: "Re 1. Introduction to Recursion | Recursion Tree | Stack Space | Strivers A2Z DSA Course"
+image: "https://i.ytimg.com/vi/yVdKa8dnKiE/maxresdefault.jpg"
+description: "Check out TUF+:https://takeuforward.org/plus?source=youtubeFind DSA, LLD, OOPs, Core Subjects, 1000+ Premium Questions company wise, Aptitude, SQL, AI doubt ..."
+url: "https://youtu.be/yVdKa8dnKiE"
+favicon: ""
+aspectRatio: "56.25"
+```
+
 ---
 
 ### 🧩 Analogy 1 — Nested Boxes
@@ -176,12 +185,14 @@ f(n) = f(n-1) + f(n-2)
 
 #### Code (Python):
 
+```python
 def fib(n):  
-if n <= 1:  
-return n  
-return fib(n-1) + fib(n-2)
+	if n <= 1:  
+		return n  
+	return fib(n-1) + fib(n-2)
 
 print(fib(5)) # Output: 5
+```
 
 #### Recursive Tree Expansion:
 
@@ -199,16 +210,19 @@ Without a base case → infinite recursion → stack overflow.
 
 ### Example:
 
+```python
 def countdown(n):  
-if n == 0: # base case  
-print("Blast Off!")  
-return  
-print(n)  
-countdown(n-1)
-
+	if n == 0: # base case  
+		print("Blast Off!")  
+		return  
+	print(n)  
+	countdown(n-1)
 countdown(5)
+```
 
+```
 Output: 5 4 3 2 1 Blast Off!
+```
 
 ---
 
@@ -217,9 +231,15 @@ Output: 5 4 3 2 1 Blast Off!
 The **time complexity** of a recursive function depends on:
 
 - Number of recursive calls
-    
 - Work done per call
-    
+```embed
+title: "Time Complexity analysis of recursion - Fibonacci Sequence"
+image: "https://i.ytimg.com/vi/pqivnzmSbq4/maxresdefault.jpg"
+description: "See complete series on recursion herehttp://www.youtube.com/playlist?list=PL2_aWCzGMAwLz3g66WrxFGSXvSsvyfzCOIn this lesson, we will analyze time complexity o..."
+url: "https://youtu.be/pqivnzmSbq4"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ---
 
@@ -240,11 +260,8 @@ T(n) = T(n - 1) + T(n - 2) + O(1)
 If recurrence is:
 
 - T(n) = T(n-1) + c → O(n)
-    
 - T(n) = 2T(n/2) + c → O(n log n)
-    
 - T(n) = T(n/2) + c → O(log n)
-    
 
 ---
 
@@ -280,23 +297,43 @@ If yes, recursion fits well.
 ### Steps:
 
 1. Pick a pivot
-    
 2. Divide array into two parts (less than pivot, greater than pivot)
-    
 3. Recursively sort both parts
-    
 
 #### Python:
 
-def quicksort(arr):  
-if len(arr) <= 1:  
-return arr # base case  
-pivot = arr[0]  
-left = [x for x in arr[1:] if x <= pivot]  
-right = [x for x in arr[1:] if x > pivot]  
-return quicksort(left) + [pivot] + quicksort(right)
+```python
+def quicksort(arr):
+    # Base case: if array has 0 or 1 element, it’s already sorted
+    if len(arr) <= 1:
+        return arr
+    # Choose the first element as pivot
+    pivot = arr[0]
+    # Create empty lists for left and right partitions
+    left = []
+    right = []
+    # Partition the array (skip pivot itself)
+    for i in range(1, len(arr)):
+        if arr[i] <= pivot:
+            left.append(arr[i])
+        else:
+            right.append(arr[i])
+    # Recursively sort left and right parts, then combine
+    sorted_left = quicksort(left)
+    sorted_right = quicksort(right)
+    # Combine all parts (left + pivot + right)
+    result = []
+    for x in sorted_left:
+        result.append(x)
+    result.append(pivot)
+    for x in sorted_right:
+        result.append(x)
+    return result
 
-print(quicksort([3,6,1,8,2]))
+# Example call
+print(quicksort([3, 6, 1, 8, 2]))
+
+```
 
 ---
 
@@ -330,41 +367,50 @@ else return n * fact(n-1);
 
 **Recursion**
 
-`Recursion ├── Definition: Function calls itself ├── Components: │   ├── Base Case │   ├── Recursive Step │ ├── Types: │   ├── Direct │   ├── Indirect │   ├── Tail / Head / Tree / Nested │ ├── Examples: │   ├── Factorial │   ├── Fibonacci │   ├── QuickSort │   ├── Tower of Hanoi │ └── Complexity:     ├── Factorial → O(n)     ├── Fibonacci → O(2ⁿ)`
+```
+Recursion
+├── Definition: Function calls itself
+├── Components:
+│   ├── Base Case
+│   ├── Recursive Step
+│
+├── Types:
+│   ├── Direct
+│   ├── Indirect
+│   ├── Tail / Head / Tree / Nested
+│
+├── Examples:
+│   ├── Factorial
+│   ├── Fibonacci
+│   ├── QuickSort
+│   ├── Tower of Hanoi
+│
+└── Complexity:
+    ├── Factorial → O(n)
+    ├── Fibonacci → O(2ⁿ)
+```
 
 ---
 
 ## 🧩 8. Key Points for Exam
 
 - Recursion = function calling itself
-    
 - Must have **base case** (stopping condition)
-    
 - Breaks large problems into **smaller identical subproblems**
-    
 - Use recursion when:
-    
     - Problem is **naturally repetitive**
-        
     - Problem can be **broken into similar subproblems**
-        
 - Analyze time complexity using **recurrence relations**
-    
 
 ---
 
 ## 📚 9. Bonus Resources
 
 - Medium: Getting Started with Recursion
-    
 - MIT Lecture: Introduction to Recursion
-    
 - [YouTube: Solve Problems using Recursion](https://youtube.com)
-    
 - [YouTube: Time & Space Complexity in Recursive Programs](https://youtube.com)
-    
 - LeetCode Practice Problems on Recursion
-    
 
 ---
 
@@ -372,9 +418,8 @@ else return n * fact(n-1);
 If a problem:
 
 - Has a base case
-    
 - Can be divided into smaller identical problems  
     → Recursion is ideal!
-    
 
 ---
+![[Pasted image 20250929104619.png]]
