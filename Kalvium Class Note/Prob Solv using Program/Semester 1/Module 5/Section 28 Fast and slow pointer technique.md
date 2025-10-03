@@ -69,7 +69,25 @@ print(arr[slow])
 
 ## 🔹 C++ Implementation
 
-```
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+    vector<int> arr(n);
+    for(int i=0; i<n; i++) cin >> arr[i];
+
+    int slow = 0, fast = 0;
+    while(fast < n - 1){
+        slow++;
+        fast += 2;
+    }
+
+    cout << arr[slow] << endl;
+    return 0;
+}
 
 ```
 
@@ -77,23 +95,37 @@ print(arr[slow])
 
 ## 🔹 Java Implementation
 
-`import java.util.*;  public class MiddleElement {     public static void main(String[] args) {         Scanner sc = new Scanner(System.in);         int n = sc.nextInt();         int[] arr = new int[n];         for(int i=0;i<n;i++) arr[i]=sc.nextInt();          int slow = 0, fast = 0;         while(fast < n - 1){             slow++;             fast += 2;         }          System.out.println(arr[slow]);     } }`
+```java
+import java.util.*;
+
+public class MiddleElement {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for(int i=0;i<n;i++) arr[i]=sc.nextInt();
+        int slow = 0, fast = 0;
+        while(fast < n - 1){
+            slow++;
+            fast += 2;
+        }
+        System.out.println(arr[slow]);
+    }
+}
+
+```
 
 ---
 
 ## 🔹 Complexity Analysis
 
 - **Time Complexity:** O(N/2) → simplified to **O(N)**
-    
 - **Space Complexity:** O(1) → only two pointers are used
-    
 
 ---
 
 ## 🔹 Key Takeaways
 
 - The fast pointer moving **twice as fast** ensures slow reaches the **middle efficiently**
-    
 - Works for both **odd** and **even** length arrays
-    
 - Can be applied in **linked lists** to find middle nodes, detect cycles, etc.
