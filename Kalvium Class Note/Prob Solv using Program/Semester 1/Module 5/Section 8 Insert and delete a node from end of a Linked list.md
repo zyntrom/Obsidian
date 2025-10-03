@@ -197,13 +197,39 @@ Node* deleteAtEnd(Node* head) {
 
 ### ✅ Python Implementation
 
-`def delete_at_end(self):     if self.head is None:         return     if self.head.next is None:         self.head = None         return     current = self.head     while current.next.next:         current = current.next     del current.next     current.next = None`
+```python
+def delete_at_end(self):
+    if self.head is None:
+        return
+    if self.head.next is None:
+        self.head = None
+        return
+    current = self.head
+    while current.next.next:
+        current = current.next
+    del current.next
+    current.next = None
+
+```
 
 ---
 
 ### ✅ Java Implementation
 
-`void deleteAtEnd() {     if (head == null) return;     if (head.next == null) {         head = null;         return;     }      Node current = head;     while (current.next.next != null)         current = current.next;      current.next = null;  // last node removed by GC }`
+```java
+void deleteAtEnd() {
+    if (head == null) return;
+    if (head.next == null) {
+        head = null;
+        return;
+    }
+    Node current = head;
+    while (current.next.next != null)
+        current = current.next;
+    current.next = null;  // last node removed by GC
+}
+
+```
 
 ---
 
@@ -217,16 +243,43 @@ Traverse list from `head` and print each node’s data.
 
 #### C++
 
-`void display(Node* head) {     Node* current = head;     while (current != nullptr) {         cout << current->data << " ";         current = current->next;     }     cout << endl; }`
+```cpp
+void display(Node* head) {
+    Node* current = head;
+    while (current != nullptr) {
+        cout << current->data << " ";
+        current = current->next;
+    }
+    cout << endl;
+}
+
+```
 
 #### Python
 
-`def display(self):     current = self.head     while current:         print(current.data, end=" ")         current = current.next     print()`
+```python
+def display(self):
+    current = self.head
+    while current:
+        print(current.data, end=" ")
+        current = current.next
+    print()
+
+```
 
 #### Java
 
-`void display() {     Node temp = head;     while (temp != null) {         System.out.print(temp.data + " ");         temp = temp.next;     }     System.out.println(); }`
+```java
+void display() {
+    Node temp = head;
+    while (temp != null) {
+        System.out.print(temp.data + " ");
+        temp = temp.next;
+    }
+    System.out.println();
+}
 
+```
 ---
 
 ## 🧮 Dry Run Example
@@ -250,15 +303,10 @@ Traverse list from `head` and print each node’s data.
 ## 🧠 Key Points for Exams
 
 - Always check for **empty list** (`head == null`) first.
-    
 - Handle **single node** case separately.
-    
 - Traversing till **second-last node** is crucial for safe deletion.
-    
 - After deletion, make sure the **second-last node points to NULL**.
-    
 - During insertion, don’t forget to **set new node’s next = NULL**.
-    
 
 ---
 
