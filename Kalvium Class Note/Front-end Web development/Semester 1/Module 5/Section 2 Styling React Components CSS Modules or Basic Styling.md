@@ -81,7 +81,7 @@ const myStyle = {
 - File extension: `.module.css` (e.g., `my-component.module.css`)
     
 
-```
+```js
 import styles from './my-component.module.css';
 
 <div className={styles.myComponent}>
@@ -93,27 +93,35 @@ import styles from './my-component.module.css';
 **Benefits:**
 
 - Styles are **scoped locally**
-    
 - Automatically generates **unique class names**
-    
 
 ---
 
 ### 4️⃣ Styled Components (CSS-in-JS)
 
 - Write CSS directly in JavaScript using **tagged template literals**.
-    
 - Install via: `npm install styled-components`
-    
 
-``import styled from 'styled-components';  const StyledButton = styled.button`   background-color: #4CAF50;   color: white;   padding: 15px 32px;   &:hover {     background-color: #3e8e41;   } `;  <StyledButton>Click Me</StyledButton>``
+```js
+import styled from 'styled-components';
+
+const StyledButton = styled.button`
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 32px;
+  &:hover {
+    background-color: #3e8e41;
+  }
+`;
+
+<StyledButton>Click Me</StyledButton>
+
+```
 
 **Benefits:**
 
 - Encapsulates styles inside components
-    
 - Great for dynamic styles and reusable components
-    
 
 ---
 
@@ -131,11 +139,8 @@ import styles from './my-component.module.css';
 ## 🔹 Common Pitfalls
 
 - **Naming Collisions:** Use CSS Modules / Styled Components
-    
 - **Specificity Issues:** Avoid overly generic selectors; consider Sass
-    
 - **Performance:** Avoid excessive inline styles
-    
 
 ---
 
@@ -143,34 +148,44 @@ import styles from './my-component.module.css';
 
 **CSS Module (`button.module.css`)**:
 
-`.button {   background-color: #4CAF50;   color: white;   padding: 15px 32px; } .button:hover {   background-color: #3e8e41; }`
+```js
+.button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 32px;
+}
+.button:hover {
+  background-color: #3e8e41;
+}
+
+```
 
 **Button Component (`Button.js`)**:
 
-`import styles from './button.module.css';  function Button({ children, onClick }) {   return <button className={styles.button} onClick={onClick}>{children}</button>; }`
+```js
+import styles from './button.module.css';
+
+function Button({ children, onClick }) {
+  return <button className={styles.button} onClick={onClick}>{children}</button>;
+}
+
+```
 
 - Reusable button with **hover effect** and **consistent styling**.
-    
 
 ---
 
 ## 🔹 Additional Resources
 
 - React Official Documentation – Styling
-    
 - [CSS Modules Documentation](https://github.com/css-modules/css-modules)
-    
 - Styled Components Documentation
-    
 
 ---
 
 ## 🔹 Summary
 
 - **Basic CSS:** Global styles using `.css` files
-    
 - **Inline Styles:** Element-specific, dynamic styles
-    
 - **CSS Modules:** Scoped, component-level CSS
-    
 - **Styled Components:** CSS-in-JS, reusable and dynamic
