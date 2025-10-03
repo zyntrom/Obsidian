@@ -90,6 +90,15 @@ Implement a **queue** using an **array** that supports the following operations:
 
 - `O(N)`
 
+```embed
+title: "Queue Data Structure implementation using Array - C++"
+image: "https://i.ytimg.com/vi/jZ7Sds6ttZs/maxresdefault.jpg"
+description: "To implement queue data structure using array and create a program/code in C++ to understand how we can implement the logic in our code and create a queue us..."
+url: "https://youtu.be/jZ7Sds6ttZs"
+favicon: ""
+aspectRatio: "56.25"
+```
+
 ---
 
 ## 🔹 Code Implementations
