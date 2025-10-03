@@ -93,7 +93,7 @@ function About() {
 
 ### 4️⃣ Navigation with Link
 
-```
+```js
 <nav>
   <ul>
     <li><Link to="/">Home</Link></li>
@@ -103,20 +103,23 @@ function About() {
 
 ```
 - `<Link>`: creates navigation without page reload
-    
 
 ---
 
 ### 5️⃣ Dynamic Routes (Example: Blog Posts)
 
-`function Post({ match }) {   return <h2>Post {match.params.id}</h2>; }  <Route path="/post/:id" component={Post} />`
+```js
+function Post({ match }) {
+  return <h2>Post {match.params.id}</h2>;
+}
+
+<Route path="/post/:id" component={Post} />
+
+```
 
 - `:id` is a **route parameter**
-    
 - Access via `match.params.id` in the component
-    
 - Enables **dynamic URLs** without reload
-    
 
 ---
 
@@ -133,17 +136,10 @@ function About() {
 ## 🔹 Summary
 
 - **Client-Side Routing:** Navigate without page reloads
-    
 - **React Router:** Enables SPA routing
-    
 - **Components:**
-    
     - `<BrowserRouter>` → wrap app
-        
     - `<Route>` → define page routes
-        
     - `<Switch>` → ensures only one route renders
-        
     - `<Link>` → navigation links
-        
 - Supports **dynamic route parameters**
