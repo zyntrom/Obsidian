@@ -220,11 +220,7 @@ int middleElementTwoPointer(Node* head) {
 # 🔹 Key Takeaways
 
 - Two ways to find middle:
-    
     1. **Count method** → 2 passes, simple to understand.
-        
     2. **Fast & Slow pointer method** → 1 pass, more efficient.
-        
 - For even length lists, always return the **second middle node**.
-    
 - Time → `O(n)` | Space → `O(1)`
