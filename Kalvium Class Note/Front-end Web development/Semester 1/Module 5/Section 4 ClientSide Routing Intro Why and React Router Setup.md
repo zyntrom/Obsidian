@@ -86,18 +86,22 @@ function About() {
 
 ```
 - `<Route>`: defines a URL → component mapping
-    
 - `exact`: ensures **exact path match**
-    
 - `<Switch>`: renders **only the first matching route**
-    
 
 ---
 
 ### 4️⃣ Navigation with Link
 
-`<nav>   <ul>     <li><Link to="/">Home</Link></li>     <li><Link to="/about">About</Link></li>   </ul> </nav>`
+```
+<nav>
+  <ul>
+    <li><Link to="/">Home</Link></li>
+    <li><Link to="/about">About</Link></li>
+  </ul>
+</nav>
 
+```
 - `<Link>`: creates navigation without page reload
     
 
