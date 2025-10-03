@@ -36,6 +36,15 @@ Input: nums = [1,3,5,8,12], target = 8 Output: 1 2
     - **If sum > target** → move `right` left (`right--`)
 4. If pointers cross and no solution → return `-1`
 
+```embed
+title: "TWO SUM II - Amazon Coding Interview Question - Leetcode 167 - Python"
+image: "https://i.ytimg.com/vi/cQ1Oz4ckceM/maxresdefault.jpg"
+description: "🚀 https://neetcode.io/ - A better way to prepare for Coding Interviews🥷 Discord: https://discord.gg/ddjKRXPqtk🐦 Twitter: https://twitter.com/neetcode1🐮 S..."
+url: "https://youtu.be/cQ1Oz4ckceM"
+favicon: ""
+aspectRatio: "56.25"
+```
+
 ---
 
 ## 🔹 Step-by-Step Example
@@ -53,7 +62,24 @@ Input: nums = [1,3,5,8,12], target = 8 Output: 1 2
 
 ## 🔹 Pseudo Code
 
-`function twoSum(nums, target):     left = 0     right = length(nums) - 1          while left < right:         sum = nums[left] + nums[right]                  if sum == target:             return [left, right]         else if sum < target:             left = left + 1         else:             right = right - 1          return -1`
+```
+function twoSum(nums, target):
+    left = 0
+    right = length(nums) - 1
+    
+    while left < right:
+        sum = nums[left] + nums[right]
+        
+        if sum == target:
+            return [left, right]
+        else if sum < target:
+            left = left + 1
+        else:
+            right = right - 1
+    
+    return -1
+
+```
 
 ---
 
@@ -70,9 +96,6 @@ Input: nums = [1,3,5,8,12], target = 8 Output: 1 2
 ## 🔹 Key Points
 
 - Only works efficiently if **array is sorted**.
-    
 - Reduces the naive **O(n²)** approach to **O(n)**.
-    
 - Left pointer increases to increase sum; right pointer decreases to decrease sum.
-    
 - Ideal for **2-sum, two-pointer based problems** like 3-sum (fix one element, two-pointer on remainder).
