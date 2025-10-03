@@ -193,7 +193,20 @@ def insert_at_end(self, data):
 
 ### Java
 
-`void insertAtEnd(int data) {     Node newNode = new Node(data);     if (head == null) {         head = newNode;         return;     }     Node temp = head;     while (temp.next != null)         temp = temp.next;     temp.next = newNode; }`
+```java
+void insertAtEnd(int data) {
+    Node newNode = new Node(data);
+    if (head == null) {
+        head = newNode;
+        return;
+    }
+    Node temp = head;
+    while (temp.next != null)
+        temp = temp.next;
+    temp.next = newNode;
+}
+
+```
 
 ---
 
@@ -202,23 +215,60 @@ def insert_at_end(self, data):
 ### 🧠 Logic:
 
 - If list empty → return.
-    
 - If only one node → make head = null.
-    
 - Else → traverse to second-last node → set its `next = null`.
-    
 
 ### C++
 
-`void deleteAtEnd() {     if (head == nullptr) return;      if (head->next == nullptr) {         delete head;         head = nullptr;         return;     }      Node* temp = head;     while (temp->next->next != nullptr)         temp = temp->next;      delete temp->next;     temp->next = nullptr; }`
+```cpp
+void deleteAtEnd() {
+    if (head == nullptr) return;
+    if (head->next == nullptr) {
+        delete head;
+        head = nullptr;
+        return;
+    }
+    Node* temp = head;
+    while (temp->next->next != nullptr)
+        temp = temp->next;
+    delete temp->next;
+    temp->next = nullptr;
+}
+
+```
 
 ### Python
 
-`def delete_at_end(self):     if self.head is None:         return     if self.head.next is None:         self.head = None         return     temp = self.head     while temp.next.next:         temp = temp.next     temp.next = None`
+```python
+def delete_at_end(self):
+    if self.head is None:
+        return
+    if self.head.next is None:
+        self.head = None
+        return
+    temp = self.head
+    while temp.next.next:
+        temp = temp.next
+    temp.next = None
+
+```
 
 ### Java
 
-`void deleteAtEnd() {     if (head == null) return;     if (head.next == null) {         head = null;         return;     }     Node temp = head;     while (temp.next.next != null)         temp = temp.next;     temp.next = null; }`
+```java
+void deleteAtEnd() {
+    if (head == null) return;
+    if (head.next == null) {
+        head = null;
+        return;
+    }
+    Node temp = head;
+    while (temp.next.next != null)
+        temp = temp.next;
+    temp.next = null;
+}
+
+```
 
 ---
 
@@ -227,23 +277,48 @@ def insert_at_end(self, data):
 ### 🧠 Logic:
 
 - Start from head.
-    
 - Print each node’s data.
-    
 - Move to next node until null.
-    
 
 ### C++
 
-`void display() {     Node* current = head;     while (current != nullptr) {         cout << current->data << " ";         current = current->next;     }     cout << endl; }`
+```cpp
+void display() {
+    Node* current = head;
+    while (current != nullptr) {
+        cout << current->data << " ";
+        current = current->next;
+    }
+    cout << endl;
+}
+
+```
 
 ### Python
 
-`def display(self):     current = self.head     while current:         print(current.data, end=" ")         current = current.next     print()`
+```python
+def display(self):
+    current = self.head
+    while current:
+        print(current.data, end=" ")
+        current = current.next
+    print()
+
+```
 
 ### Java
 
-`void display() {     Node temp = head;     while (temp != null) {         System.out.print(temp.data + " ");         temp = temp.next;     }     System.out.println(); }`
+```java
+void display() {
+    Node temp = head;
+    while (temp != null) {
+        System.out.print(temp.data + " ");
+        temp = temp.next;
+    }
+    System.out.println();
+}
+
+```
 
 ---
 
@@ -251,34 +326,30 @@ def insert_at_end(self, data):
 
 ### Input:
 
-`6 10 20 30 40 50 60`
+```
+6 10 20 30 40 50 60
+```
 
 ### Step-by-Step Process:
 
 1. **Insert at Beginning** in order:
     
     - Start: NULL
-        
     - Insert 10 → [10]
-        
     - Insert 20 → [20 → 10]
-        
     - Insert 30 → [30 → 20 → 10]
-        
     - Insert 40 → [40 → 30 → 20 → 10]
-        
     - Insert 50 → [50 → 40 → 30 → 20 → 10]
-        
     - Insert 60 → [60 → 50 → 40 → 30 → 20 → 10]
-        
 2. **Delete at Beginning** once:
     
     - Remove 60 → [50 → 40 → 30 → 20 → 10]
-        
 
 ### Output:
 
-`50 40 30 20 10`
+```
+50 40 30 20 10
+```
 
 ---
 
