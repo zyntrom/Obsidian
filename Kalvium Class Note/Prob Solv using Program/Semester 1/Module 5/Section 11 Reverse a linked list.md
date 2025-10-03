@@ -192,9 +192,6 @@ int main() {
 # 🔹 Key Takeaways
 
 - Reversing a linked list is an **iterative pointer manipulation problem**.
-    
 - Always **save next node before breaking the link** (`next_node = curr.next`).
-    
 - At the end, **prev becomes the new head**.
-    
 - Time → `O(n)` | Space → `O(1)`
