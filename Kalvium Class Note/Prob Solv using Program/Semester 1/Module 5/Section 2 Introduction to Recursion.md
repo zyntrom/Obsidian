@@ -291,7 +291,7 @@ If yes, recursion fits well.
 🧠 Example: Sorting algorithms (Merge Sort, Quick Sort)
 
 ---
-
+# Optional example
 ## 🧩 Example: QuickSort Recursion
 
 ### Steps:
@@ -353,13 +353,20 @@ print(quicksort([3, 6, 1, 8, 2]))
 
 #### Iterative:
 
+```
 int fact = 1;  
-for(int i = 1; i <= n; i++) fact *= i;
+for(int i = 1; i <= n; i++) 
+	fact = i;
+```
 
 #### Recursive:
 
-if (n == 0) return 1;  
-else return n * fact(n-1);
+```
+if (n == 0) 
+	return 1;  
+else 
+	return n * fact(n-1);
+```
 
 ---
 
