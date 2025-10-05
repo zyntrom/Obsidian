@@ -96,34 +96,45 @@ aspectRatio: "56.25"
 ### ✅ Python Implementation
 
 ```python
-q = int(input())
-stack = []
-minStack = []
-res = []
+class Solution:
+    def __init__(self):
+        self.s = []
+        self.minstack = []
+        
+#Answer---
 
-for _ in range(q):
-    command = input().split()
-    
-    if command[0] == '1':  # push x
-        x = int(command[1])
-        stack.append(x)
-        if not minStack or x <= minStack[-1]:
-            minStack.append(x)
-    elif command[0] == '2':  # pop
-        if not stack:
-            res.append(-1)
-        else:
-            top = stack.pop()
-            if minStack and top == minStack[-1]:
-                minStack.pop()
-            res.append(top)
-    elif command[0] == '3':  # getMin
-        if not minStack:
-            res.append(-1)
-        else:
-            res.append(minStack[-1])
+    def push(self, x):
+        self.s.append(x)
+        if not self.minstack or x <= self.minstack[-1]:
+            self.minstack.append(x)
+    def pop(self):
+        if not self.s:
+            return -1
+        top = self.s.pop()
+        if top == self.minstack[-1]:
+            self.minstack.pop()
+        return top
+    def getMin(self):
+        if not self.minstack:
+            return -1
+        return self.minstack[-1]
 
-print(" ".join(map(str, res)))
+#Answe---
+
+if __name__ == "__main__":
+    q = int(input())
+    ob = Solution()
+
+    for _ in range(q):
+        parts = input().split()
+        qt = int(parts[0])
+        if qt == 1:
+            ob.push(int(parts[1]))
+        elif qt == 2:
+            print(ob.pop(), end=" ")
+        elif qt == 3:
+            print(ob.getMin(), end=" ")
+
 
 ```
 
@@ -132,6 +143,54 @@ print(" ".join(map(str, res)))
 ### ✅ Java Implementation
 
 ```java
+import java.util.Scanner;
+import java.util.Stack;
+
+class Solution {
+    private Stack<Integer> s;
+    private Stack<Integer> minstack;
+    
+    Solution() {
+        s = new Stack<>();
+        minstack = new Stack<>();
+    }
+    //Answer ---
+    
+    int getMin() {
+        if (minstack.isEmpty()) return -1;
+        return minstack.peek();
+    }
+    int pop() {
+        if (s.isEmpty()) return -1;
+        int top = s.pop();
+        if (top == minstack.peek()) minstack.pop();
+        return top;
+    }
+    void push(int x) {
+        s.push(x);
+        if (minstack.isEmpty() || x <= minstack.peek()) minstack.push(x);
+    }
+    
+    //Answer---
+    
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int q = sc.nextInt();
+        Solution ob = new Solution();
+        while (q-- > 0) {
+            int qt = sc.nextInt();
+            if (qt == 1) {
+                int att = sc.nextInt();
+                ob.push(att);
+            } else if (qt == 2) {
+                System.out.print(ob.pop() + " ");
+            } else if (qt == 3) {
+                System.out.print(ob.getMin() + " ");
+            }
+        }
+        sc.close();
+    }
+}
 
 ```
 
@@ -144,33 +203,55 @@ print(" ".join(map(str, res)))
 #include <stack>
 using namespace std;
 
+class Solution {
+    stack<int> s;
+    stack<int> minstack;
+    
+//Answer---
+
+public:
+    void push(int x) {
+        s.push(x);
+        if (minstack.empty() || x <= minstack.top())
+            minstack.push(x);
+    }
+    int pop() {
+        if (s.empty())
+            return -1;
+        int top = s.top();
+        s.pop();
+        if (top == minstack.top())
+            minstack.pop();
+        return top;
+    }
+    int getMin() {
+        if (minstack.empty())
+            return -1;
+        return minstack.top();
+    }
+};
+
+//Answer---
+
 int main() {
     int q;
     cin >> q;
-    stack<long long> st, minSt;
-    
-    while(q--) {
-        int type;
-        cin >> type;
-        if(type == 1) { // push
-            long long x;
-            cin >> x;
-            st.push(x);
-            if(minSt.empty() || x <= minSt.top())
-                minSt.push(x);
-        } else if(type == 2) { // pop
-            if(st.empty()) cout << -1 << " ";
-            else {
-                long long top = st.top();
-                st.pop();
-                if(!minSt.empty() && top == minSt.top()) minSt.pop();
-                cout << top << " ";
-            }
-        } else if(type == 3) { // getMin
-            if(minSt.empty()) cout << -1 << " ";
-            else cout << minSt.top() << " ";
+    Solution ob;
+
+    while (q--) {
+        int qt;
+        cin >> qt;
+        if (qt == 1) {
+            int att;
+            cin >> att;
+            ob.push(att);
+        } else if (qt == 2) {
+            cout << ob.pop() << " ";
+        } else if (qt == 3) {
+            cout << ob.getMin() << " ";
         }
     }
+    return 0;
 }
 
 ```
