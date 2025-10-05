@@ -132,42 +132,6 @@ print(" ".join(map(str, res)))
 ### ✅ Java Implementation
 
 ```java
-import java.util.*;
-
-public class MinStack {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int q = sc.nextInt();
-        Stack<Integer> stack = new Stack<>();
-        Stack<Integer> minStack = new Stack<>();
-        ArrayList<Integer> res = new ArrayList<>();
-        
-        for (int i = 0; i < q; i++) {
-            int op = sc.nextInt();
-            if (op == 1) { // push x
-                int x = sc.nextInt();
-                stack.push(x);
-                if (minStack.isEmpty() || x <= minStack.peek()) {
-                    minStack.push(x);
-                }
-            } else if (op == 2) { // pop
-                if (stack.isEmpty()) {
-                    res.add(-1);
-                } else {
-                    int top = stack.pop();
-                    if (!minStack.isEmpty() && top == minStack.peek()) {
-                        minStack.pop();
-                    }
-                    res.add(top);
-                }
-            } else if (op == 3) { // getMin
-                if (minStack.isEmpty()) res.add(-1);
-                else res.add(minStack.peek());
-            }
-        }
-        for (int val : res) System.out.print(val + " ");
-    }
-}
 
 ```
 
