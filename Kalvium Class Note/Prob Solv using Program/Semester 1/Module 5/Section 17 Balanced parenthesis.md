@@ -100,22 +100,29 @@ false
 ```python
 def isValid(s):
     stack = []
-    bracket_map = {')':'(', '}':'{', ']':'['}
-    
-    for char in s:
-        if char in '({[':
-            stack.append(char)
-        else:  # closing bracket
-            if not stack or stack[-1] != bracket_map[char]:
+    for c in s:
+        # Step 1: Push opening brackets
+        if c in "({[":
+            stack.append(c)
+        else:
+            # Step 2: Check for empty or mismatched
+            if not stack:
                 return False
-            stack.pop()
-    
+            top = stack.pop()
+            if (c == ')' and top != '(') or \
+               (c == '}' and top != '{') or \
+               (c == ']' and top != '['):
+                return False
+    # Step 3: Stack should be empty if valid
     return len(stack) == 0
 
-# Examples
-print(isValid("()"))       # True
-print(isValid("()[]{}"))   # True
-print(isValid("(]"))       # False
+
+# Test cases
+print(isValid("()"))        # True
+print(isValid("()[]{}"))    # True
+print(isValid("(]"))        # False
+print(isValid("([{}])"))    # True
+print(isValid("((("))       # False
 
 ```
 
@@ -125,32 +132,37 @@ print(isValid("(]"))       # False
 
 ```java
 import java.util.Stack;
-import java.util.HashMap;
 
 public class BalancedParenthesis {
     public static boolean isValid(String s) {
         Stack<Character> stack = new Stack<>();
-        HashMap<Character, Character> map = new HashMap<>();
-        map.put(')', '(');
-        map.put('}', '{');
-        map.put(']', '[');
-        
         for (char c : s.toCharArray()) {
+            // Step 1: Push opening brackets
             if (c == '(' || c == '{' || c == '[') {
                 stack.push(c);
-            } else {
-                if (stack.isEmpty() || stack.pop() != map.get(c)) {
+            } 
+            // Step 2: Handle closing brackets
+            else {
+                // If stack is empty, no matching opening
+                if (stack.isEmpty()) return false;
+                char top = stack.pop();
+                // Check if top matches closing bracket
+                if ((c == ')' && top != '(') ||
+                    (c == '}' && top != '{') ||
+                    (c == ']' && top != '[')) {
                     return false;
                 }
             }
         }
+        // Step 3: If stack empty → all matched
         return stack.isEmpty();
     }
-    
     public static void main(String[] args) {
         System.out.println(isValid("()"));       // true
         System.out.println(isValid("()[]{}"));   // true
         System.out.println(isValid("(]"));       // false
+        System.out.println(isValid("([{}])"));   // true
+        System.out.println(isValid("((("));      // false
     }
 }
 
@@ -162,28 +174,40 @@ public class BalancedParenthesis {
 ```cpp
 #include <iostream>
 #include <stack>
-#include <unordered_map>
+#include <string>
 using namespace std;
 
 bool isValid(string s) {
     stack<char> st;
-    unordered_map<char, char> map = {{')','('}, {'}','{'}, {']','['}};
-    
     for (char c : s) {
+        // Step 1: Push opening brackets
         if (c == '(' || c == '{' || c == '[') {
             st.push(c);
-        } else {
-            if (st.empty() || st.top() != map[c]) return false;
+        } 
+        // Step 2: Handle closing brackets
+        else {
+            if (st.empty()) return false;
+            char top = st.top();
             st.pop();
+            if ((c == ')' && top != '(') ||
+                (c == '}' && top != '{') ||
+                (c == ']' && top != '[')) {
+                return false;
+            }
         }
     }
+    // Step 3: Return true if all matched
     return st.empty();
 }
 
 int main() {
-    cout << isValid("()") << endl;       // 1 (true)
-    cout << isValid("()[]{}") << endl;   // 1 (true)
-    cout << isValid("(]") << endl;       // 0 (false)
+    cout << boolalpha; // print true/false instead of 1/0
+    cout << isValid("()") << endl;       // true
+    cout << isValid("()[]{}") << endl;   // true
+    cout << isValid("(]") << endl;       // false
+    cout << isValid("([{}])") << endl;   // true
+    cout << isValid("(((") << endl;      // false
+    return 0;
 }
 
 ```
