@@ -90,40 +90,35 @@ class Node:
     def __init__(self, data):
         self.data = data
         self.next = None
+def addTwoLists(first, second):
+    # Step 1: Convert first list to number
+    num1 = 0
+    while first:
+        num1 = num1 * 10 + first.data
+        first = first.next
+    # Step 2: Convert second list to number
+    num2 = 0
+    while second:
+        num2 = num2 * 10 + second.data
+        second = second.next
+    # Step 3: Add both numbers
+    total = num1 + num2
+    # Step 4: Convert total to linked list
+    if total == 0:
+        return Node(0)
+    head = None
+    tail = None
+    for ch in str(total):
+        digit = int(ch)
+        newNode = Node(digit)
+        if not head:
+            head = newNode
+            tail = newNode
+        else:
+            tail.next = newNode
+            tail = tail.next
+    return head
 
-# Function to reverse a linked list
-def reverse(head):
-    prev = None
-    curr = head
-    while curr:
-        next_node = curr.next
-        curr.next = prev
-        prev = curr
-        curr = next_node
-    return prev
-
-def addTwoLists(l1, l2):
-    # Step 1: Reverse both lists
-    l1 = reverse(l1)
-    l2 = reverse(l2)
-    
-    dummy = Node(0)
-    point = dummy
-    carry = 0
-    
-    # Step 2: Add digits
-    while l1 or l2 or carry:
-        x = l1.data if l1 else 0
-        y = l2.data if l2 else 0
-        total = x + y + carry
-        carry = total // 10
-        point.next = Node(total % 10)
-        point = point.next
-        if l1: l1 = l1.next
-        if l2: l2 = l2.next
-    
-    # Step 3: Reverse the result
-    return reverse(dummy.next)
 
 ```
 
@@ -142,45 +137,46 @@ class Node {
     }
 }
 
-public class AddTwoNumbersLinkedList {
-
-    // Reverse function
-    public static Node reverse(Node head) {
-        Node prev = null;
-        Node curr = head;
-        while (curr != null) {
-            Node nextNode = curr.next;
-            curr.next = prev;
-            prev = curr;
-            curr = nextNode;
-        }
-        return prev;
+public static Node addTwoLists(Node first, Node second) {
+    // Step 1: Convert first linked list to number
+    long num1 = 0;
+    while (first != null) {
+        num1 = num1 * 10 + first.data;
+        first = first.next;
     }
-
-    // Add two lists
-    public static Node addTwoLists(Node l1, Node l2) {
-        l1 = reverse(l1);
-        l2 = reverse(l2);
-        
-        Node dummy = new Node(0);
-        Node point = dummy;
-        int carry = 0;
-        
-        while (l1 != null || l2 != null || carry != 0) {
-            int x = (l1 != null) ? l1.data : 0;
-            int y = (l2 != null) ? l2.data : 0;
-            int sum = x + y + carry;
-            carry = sum / 10;
-            point.next = new Node(sum % 10);
-            point = point.next;
-            
-            if (l1 != null) l1 = l1.next;
-            if (l2 != null) l2 = l2.next;
-        }
-        
-        return reverse(dummy.next);
+    // Step 2: Convert second linked list to number
+    long num2 = 0;
+    while (second != null) {
+        num2 = num2 * 10 + second.data;
+        second = second.next;
     }
+    // Step 3: Add the two numbers
+    long sum = num1 + num2;
+
+    // Step 4: Convert the sum back into a linked list
+    // Edge case: if sum = 0
+    if (sum == 0) {
+        return new Node(0);
+    }
+    // Create list from digits of sum
+    Node head = null;
+    Node tail = null;
+    // Convert number to linked list
+    String sumStr = Long.toString(sum);
+    for (int i = 0; i < sumStr.length(); i++) {
+        int digit = sumStr.charAt(i) - '0';
+        Node newNode = new Node(digit);
+        if (head == null) {
+            head = newNode;
+            tail = newNode;
+        } else {
+            tail.next = newNode;
+            tail = tail.next;
+        }
+    }
+    return head;
 }
+
 
 ```
 
@@ -202,43 +198,39 @@ public:
     }
 };
 
-// Reverse linked list
-Node* reverse(Node* head) {
-    Node* prev = nullptr;
-    Node* curr = head;
-    while (curr) {
-        Node* nextNode = curr->next;
-        curr->next = prev;
-        prev = curr;
-        curr = nextNode;
+
+Node* addTwoLists(Node* first, Node* second) {
+    // Step 1: Convert first list to number
+    long long num1 = 0;
+    while (first != nullptr) {
+        num1 = num1 * 10 + first->data;
+        first = first->next;
     }
-    return prev;
-}
-
-// Add two lists
-Node* addTwoLists(Node* l1, Node* l2) {
-    l1 = reverse(l1);
-    l2 = reverse(l2);
-
-    Node* dummy = new Node(0);
-    Node* point = dummy;
-    int carry = 0;
-
-    while (l1 || l2 || carry) {
-        int x = l1 ? l1->data : 0;
-        int y = l2 ? l2->data : 0;
-        int sum = x + y + carry;
-        carry = sum / 10;
-        point->next = new Node(sum % 10);
-        point = point->next;
-
-        if (l1) l1 = l1->next;
-        if (l2) l2 = l2->next;
+    // Step 2: Convert second list to number
+    long long num2 = 0;
+    while (second != nullptr) {
+        num2 = num2 * 10 + second->data;
+        second = second->next;
     }
-
-    Node* result = reverse(dummy->next);
-    delete dummy;
-    return result;
+    // Step 3: Add both numbers
+    long long sum = num1 + num2;
+    // Step 4: Convert sum back to linked list
+    if (sum == 0) return new Node(0);
+    string s = to_string(sum);
+    Node* head = nullptr;
+    Node* tail = nullptr;
+    for (char c : s) {
+        int digit = c - '0';
+        Node* newNode = new Node(digit);
+        if (!head) {
+            head = newNode;
+            tail = newNode;
+        } else {
+            tail->next = newNode;
+            tail = newNode;
+        }
+    }
+    return head;
 }
 
 ```
