@@ -141,7 +141,6 @@ def print_list(head):
 class Node {
     int data;
     Node next;
-
     Node(int data) {
         this.data = data;
         this.next = null;
@@ -153,56 +152,44 @@ public class LinkedListOps {
     // Insert at position i
     public static Node insertAtPosition(Node head, int data, int i) {
         Node newNode = new Node(data);
-
         // Case 1: Insert at head
         if (i == 0) {
             newNode.next = head;
             return newNode;
         }
-
         Node temp = head;
         int count = 0;
-
         // Traverse to (i-1)th node
         while (temp != null && count < i - 1) {
             temp = temp.next;
             count++;
         }
-
         if (temp == null) {
             System.out.println("Position out of range!");
             return head;
         }
-
         newNode.next = temp.next;
         temp.next = newNode;
         return head;
     }
-
     // Delete at position i
     public static Node deleteAtPosition(Node head, int i) {
         if (head == null) return null;
-
         // Case 1: Delete head
         if (i == 0) return head.next;
-
         Node temp = head;
         int count = 0;
-
         while (temp != null && count < i - 1) {
             temp = temp.next;
             count++;
         }
-
         if (temp == null || temp.next == null) {
             System.out.println("Position out of range!");
             return head;
         }
-
         temp.next = temp.next.next;
         return head;
     }
-
     // Print Linked List
     public static void printList(Node head) {
         Node temp = head;

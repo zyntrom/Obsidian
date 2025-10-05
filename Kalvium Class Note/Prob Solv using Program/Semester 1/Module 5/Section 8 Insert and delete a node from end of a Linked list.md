@@ -134,7 +134,7 @@ def insert_at_end(self, data):
 
 ### ✅ Java Implementation
 
-```
+```java
 void insertAtEnd(int data) {
     Node newNode = new Node(data);
     if (head == null) {
