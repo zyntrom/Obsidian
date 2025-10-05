@@ -93,7 +93,6 @@ def print_list(head):
 class Node {
     int data;
     Node next;
-
     Node(int data) {
         this.data = data;
         this.next = null;
@@ -104,7 +103,6 @@ public class LinkedListReverse {
     public static Node reverse(Node head) {
         Node prev = null;
         Node curr = head;
-
         while (curr != null) {
             Node nextNode = curr.next; // Save next node
             curr.next = prev;          // Reverse the link
@@ -113,7 +111,6 @@ public class LinkedListReverse {
         }
         return prev; // New head
     }
-
     public static void printList(Node head) {
         Node temp = head;
         while (temp != null) {
@@ -122,12 +119,10 @@ public class LinkedListReverse {
         }
         System.out.println("null");
     }
-
     public static void main(String[] args) {
         Node head = new Node(1);
         head.next = new Node(2);
         head.next.next = new Node(3);
-
         head = reverse(head);
         printList(head); // Output: 3 → 2 → 1 → null
     }

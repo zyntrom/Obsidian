@@ -133,7 +133,6 @@ public class LinkedListCycle {
         
         Node slow = head;
         Node fast = head;
-
         while (fast != null && fast.next != null) {
             slow = slow.next;           // Move 1 step
             fast = fast.next.next;      // Move 2 steps
@@ -144,13 +143,11 @@ public class LinkedListCycle {
         }
         return false; // No cycle
     }
-
     public static void main(String[] args) {
         Node head = new Node(1);
         head.next = new Node(2);
         head.next.next = new Node(3);
         head.next.next.next = head.next; // Creates cycle
-
         System.out.println(hasCycle(head)); // true
     }
 }
