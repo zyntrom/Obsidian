@@ -138,12 +138,16 @@ for i in range(n+1):
 **Example 1:**
 
 Input: 5  
+```
 Output: 0 1 1 2 3 5
+```
 
 **Example 2:**
 
 Input: 3  
+```
 Output: 0 1 1 2
+```
 
 **Explanation:**
 
