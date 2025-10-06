@@ -151,7 +151,7 @@ export default connect(null, { fetchData })(MyComponent);
 
 ## 🧰 **Reducer Example**
 
-```js
+```js121
 const initialState = {
   loading: false,
   data: [],
@@ -228,17 +228,11 @@ This process keeps UI logic separate from API logic, improving maintainability.
 **What are the benefits of using middleware for handling asynchronous actions in React applications?**
 
 > Possible answers:
-> 
 > - Centralized logic
->     
 > - Reusable async handling
->     
 > - Easier testing
->     
 > - Cleaner components
->     
 > - Structured side-effect management
->     
 
 🧩 _Other use cases:_ Authentication, error tracking, analytics, and logging.
 
@@ -247,9 +241,7 @@ This process keeps UI logic separate from API logic, improving maintainability.
 ## 📚 **Additional Resources**
 
 - Redux Middleware Documentation
-    
 - [Redux Thunk Docs](https://github.com/reduxjs/redux-thunk)
-    
 
 ---
 
