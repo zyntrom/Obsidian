@@ -1,47 +1,59 @@
 ### ✅ `App.jsx`
 
 ```js
-import React from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { fetchGreeting } from "./greetingSlice";
+// src/App.jsx
 
-const App = () => {
-  // Access Redux store state
-  const greeting = useSelector((state) => state.greeting.greeting);
-  const loading = useSelector((state) => state.greeting.loading);
-  const error = useSelector((state) => state.greeting.error);
+import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { fetchGreeting } from './greetingSlice';
 
-  // Get dispatch to trigger actions
+export default function App() {
   const dispatch = useDispatch();
 
-  // Handle button click
+  // Safely select the greeting slice
+  const slice = useSelector((state) => (state && state.greeting) || {});
+
+  // Extract possible greeting keys (to handle different slice structures)
+  const greeting =
+    slice.greeting ?? slice.message ?? slice.value ?? slice.data ?? null;
+
+  // Extract loading and error flags with safe defaults
+  const loading = slice.loading ?? false;
+  const error = slice.error ?? false;
+
+  // Fetch greeting only once
   const handleClick = () => {
-    // Only fetch if no greeting and not loading
-    if (!greeting && !loading) {
+    if (!greeting) {
       dispatch(fetchGreeting());
     }
   };
 
   return (
-    <div style={{ textAlign: "center", marginTop: "40px", fontFamily: "sans-serif" }}>
-      {/* Loading State */}
-      {loading && <p>Loading...</p>}
+    <section role="region" aria-label="greeting section">
+      <h2 id="greeting-title">Greeting App</h2>
 
-      {/* Error State */}
-      {error && <p>Failed to load greeting</p>}
+      {/* Show button only when greeting not yet loaded */}
+      {!greeting && (
+        <button
+          onClick={handleClick}
+          disabled={!!loading}
+          aria-busy={!!loading}
+        >
+          Load Greeting
+        </button>
+      )}
 
-      {/* Success State */}
+      {/* Show loading state */}
+      {loading && <p role="status">Loading...</p>}
+
+      {/* Show greeting text if loaded */}
       {greeting && <p>{greeting}</p>}
 
-      {/* Show Button only if greeting not loaded and no error */}
-      {!greeting && !error && !loading && (
-        <button onClick={handleClick}>Load Greeting</button>
-      )}
-    </div>
-    );
-};
-
-export default App;
+      {/* Show error if API failed */}
+      {error && <p role="alert">Failed to load greeting</p>}
+    </section>
+  );
+}
 
 ```
 
