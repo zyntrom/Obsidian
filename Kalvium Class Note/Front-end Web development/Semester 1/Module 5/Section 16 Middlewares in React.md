@@ -151,7 +151,7 @@ export default connect(null, { fetchData })(MyComponent);
 
 ## 🧰 **Reducer Example**
 
-```js121
+```js
 const initialState = {
   loading: false,
   data: [],
