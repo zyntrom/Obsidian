@@ -30,7 +30,7 @@ npm install react-router-dom
 **Import Essentials:**
 
 ```js
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
 ```
 
@@ -125,11 +125,11 @@ function Post({ match }) {
 
 ## 🔹 Common Pitfalls
 
-|Issue|Solution|
-|---|---|
-|Forgetting `<BrowserRouter>`|Wrap entire app with `<Router>`|
-|Incorrect route paths|Check leading `/` and case sensitivity|
-|Not using `<Switch>`|Only first matched route will render|
+| Issue                        | Solution                               |
+| ---------------------------- | -------------------------------------- |
+| Forgetting `<BrowserRouter>` | Wrap entire app with `<Router>`        |
+| Incorrect route paths        | Check leading `/` and case sensitivity |
+| Not using `<Routes>`         | Only first matched route will render   |
 
 ---
 
@@ -140,6 +140,6 @@ function Post({ match }) {
 - **Components:**
     - `<BrowserRouter>` → wrap app
     - `<Route>` → define page routes
-    - `<Switch>` → ensures only one route renders
+    - `<Routes>` → ensures only one route renders
     - `<Link>` → navigation links
 - Supports **dynamic route parameters**
