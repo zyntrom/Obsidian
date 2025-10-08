@@ -30,6 +30,14 @@ ADD AX, 2   ; Add 2 to AX register
 
 - `MOV` and `ADD` → mnemonics (actions)
 - `AX` → CPU register (fast storage inside CPU)
+```embed
+title: "Introduction to Assembly Language Tutorial"
+image: "https://i.ytimg.com/vi/0nZauIwn-xo/maxresdefault.jpg"
+description: "Introduction to assembly language tutorial is a tutorial that covers the introduction to what is assembly language, must know basic information, and  what yo..."
+url: "https://youtu.be/0nZauIwn-xo"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ---
 
@@ -164,3 +172,5 @@ _start:
 - [Assembly Language | YouTube](https://www.youtube.com)
 - Registers and Memory | Ahirlabs
 - Components | Indeed
+
+![[Pasted image 20251008164600.png]]
