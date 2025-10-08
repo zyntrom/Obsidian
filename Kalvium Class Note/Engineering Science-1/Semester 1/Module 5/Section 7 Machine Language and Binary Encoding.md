@@ -19,6 +19,14 @@ By the end of this lesson, you should be able to:
 - Every operation (arithmetic, memory access, jump) is ultimately a **binary instruction**.
 - Assembly language is a “stepping stone”: easier to write/read, then translated to machine language.
 - Analogy: **Machine language** is like Morse code for computers—exact sequences, no ambiguity.
+```embed
+title: "[Part 1] Unit 4.1 - Machine Languages: Overview"
+image: "https://i.ytimg.com/vi/UzezuWXRRCw/hqdefault.jpg"
+description: "Created by:  Hebrew University of JerusalemTaught by: Simon Schocken and Noam NisanLinks:https://www.coursera.org/learn/build-a-computerhttp://www.nand2tetri..."
+url: "https://youtu.be/UzezuWXRRCw"
+favicon: ""
+aspectRatio: "75"
+```
 
 ---
 
@@ -157,3 +165,5 @@ Analogy: Pressing a microwave button → CPU executes machine code step by step.
 - HACK Assembly to Machine Code | Official Nand2Tetris Guide
 - Binary Encoding | Ontosight
 - Assembly Language & Machine Code Process Explained | Cratecode
+
+![[Pasted image 20251008170053.png]]
