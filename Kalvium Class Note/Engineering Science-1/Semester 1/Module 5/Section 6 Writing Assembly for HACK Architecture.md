@@ -55,63 +55,59 @@ M=D      // Store D at memory[counter]
     - **jump:** condition for program counter (JGT, JEQ, JLT, JMP)
 - **How it works:**
     - If jump condition is true → set PC to address in A-register
-        
     - Otherwise → continue to next instruction
-        
 - **Examples:**
-    
 
-`D=A+1      // Compute A+1 → D M=D        // Store D at memory[A] D;JLT      // If D < 0 → jump 0;JMP      // Unconditional jump`
-
+```c
+D=A+1      // Compute A+1 → D
+M=D        // Store D at memory[A]
+D;JLT      // If D < 0 → jump
+0;JMP      // Unconditional jump
+```
 ---
 
 ## 🔹 Using Labels & Loops
 
 - Labels: `(LOOP)` → marks a memory location
-    
 - Jumps: `@LOOP` + `0;JMP` → repeat execution
-    
 - Example loop to increment a counter:
-    
 
-`@0 M=M+1     // Increment counter @LOOP 0;JMP     // Repeat loop  (END) @END 0;JMP     // Halt`
+```c
+@0
+M=M+1     // Increment counter
+@LOOP
+0;JMP     // Repeat loop
 
+(END)
+@END
+0;JMP     // Halt
+
+```
 ---
 
 ## 🔹 Optimization & Exploration
 
 - Modify loops to count higher (e.g., up to 20)
-    
 - Use nested loops for advanced patterns (e.g., times-table)
-    
 - Reuse memory locations to save space
-    
 - Minimize jumps for efficiency
-    
 
 ---
 
 ## ✅ Summary
 
 - **A-instructions** → set addresses/constants
-    
 - **C-instructions** → arithmetic, logic, memory, and jumps
-    
 - **Labels & symbolic variables** → readable and flexible code
-    
 - **Jumps** → enable loops and conditional execution
-    
 - Combining memory and program flow → build efficient Hack programs
-    
 - Practice builds **muscle memory** for low-level programming
-    
 
 ---
 
 ## 🎁 Bonus Content
 
 - Hack's Assembly Language | jk quantified
-    
 - [How Hack Assembly Works | YouTube](https://www.youtube.com)
-    
 - [Writing an Assembler | YouTube](https://www.youtube.com)
+![[Pasted image 20251008165354.png]]
