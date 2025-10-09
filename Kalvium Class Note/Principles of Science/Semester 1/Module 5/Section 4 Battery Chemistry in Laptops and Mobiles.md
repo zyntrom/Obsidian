@@ -92,6 +92,33 @@ aspectRatio: "56.25"
 - **Solid-State Batteries:** Safer, longer-lasting, higher energy density (no liquid electrolyte).
 - **Aluminum Batteries:** Being researched — charge 100× faster, eco-friendly, safer.
 - These could **revolutionize EVs and portable electronics** in the future.
+```embed
+title: "Battery 101: The Fundamentals of How A Lithium-Ion Battery Works"
+image: "https://i.ytimg.com/vi/j_rNjiIiBKE/maxresdefault.jpg"
+description: "Anode, cathode, and electrolyte. In this video, we break down exactly how a lithium-ion battery works and compare the process to that of a lead acid battery...."
+url: "https://youtu.be/j_rNjiIiBKE"
+favicon: ""
+aspectRatio: "56.25"
+```
+
+```embed
+title: "Battery 101: The Fundamentals of How A Lithium-Ion Battery Works"
+image: "https://i.ytimg.com/vi/j_rNjiIiBKE/maxresdefault.jpg"
+description: "Anode, cathode, and electrolyte. In this video, we break down exactly how a lithium-ion battery works and compare the process to that of a lead acid battery...."
+url: "https://youtu.be/j_rNjiIiBKE"
+favicon: ""
+aspectRatio: "56.25"
+```
+
+
+```embed
+title: "The problem with recycling electric car batteries"
+image: "https://i.ytimg.com/vi/MrNmr2UAuYY/maxresdefault.jpg"
+description: "For years, we have been promised that batteries from electric vehicles are recyclable. With eye-watering efficiencies of more than 90% of recovered materials..."
+url: "https://youtu.be/MrNmr2UAuYY"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ---
 
@@ -104,3 +131,4 @@ aspectRatio: "56.25"
 5. Battery innovation continues with **solid-state** and **aluminum-based** designs for faster, safer energy.
 
 ---
+![[Pasted image 20251009161621.png]]
