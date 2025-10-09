@@ -101,13 +101,9 @@ M=D      // Store D into memory[16]
 **Step-by-step:**
 
 1. Load constants into registers.
-    
 2. Perform addition in ALU.
-    
 3. Store result in RAM.
-    
 4. Demonstrates interaction of **registers, ALU, and memory**.
-    
 
 ---
 
