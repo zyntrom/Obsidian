@@ -46,6 +46,14 @@
     - **Expensive and brittle**
 
 ---
+```embed
+title: "How Does a Transistor Work?"
+image: "https://i.ytimg.com/vi/IcrBqCFLHIY/maxresdefault.jpg"
+description: "How does a transistor work? Our lives depend on this device.Support Veritasium on Patreon: http://bit.ly/VePatreonSubscribe to Veritasium - it's FREE! http:/..."
+url: "https://youtu.be/IcrBqCFLHIY"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ## 🔌 **Case Study 1: Transistors in Computing Hardware**
 
@@ -140,6 +148,14 @@ N-type → P-type → N-type = **NPN transistor**
     - Easy integration
 
 ---
+```embed
+title: "LED working & advantages | Semiconductors | Physics | Khan Academy"
+image: "https://i.ytimg.com/vi/NUR9tebFDRc/maxresdefault.jpg"
+description: "Let's explore how LEDs - light-emitting diodes - work and their advantages over traditional light bulbs. Khan Academy is a nonprofit organization with the mi..."
+url: "https://youtu.be/NUR9tebFDRc"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ## 🧬 **Miniaturization of Transistors**
 
@@ -150,6 +166,14 @@ N-type → P-type → N-type = **NPN transistor**
 
 This **miniaturization** drives the evolution from:  
 Vacuum tubes → Integrated Circuits → Modern microprocessors
+```embed
+title: "Technology Size Comparison  🤯🤯  3D Animation"
+image: "https://i.ytimg.com/vi/gfOD-Qpl6eg/maxresdefault.jpg"
+description: "How small is a TRANSISTOR exactly?  Companies like Intel and AMD talk about transistors being 2 or 3 nanometers large, but is that actually how small they ar..."
+url: "https://youtu.be/gfOD-Qpl6eg"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ---
 
@@ -174,3 +198,5 @@ Vacuum tubes → Integrated Circuits → Modern microprocessors
 ↳ Solar Cells → Photovoltaic Effect  
 ↳ Sensors → Smart Devices  
 ↳ Miniaturization → Powerful Compact Chips
+
+![[Pasted image 20251009160203.png]]
