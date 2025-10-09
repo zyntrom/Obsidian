@@ -104,3 +104,32 @@ aspectRatio: "56.25"
 > In modern computing, **chemistry and particle control are as crucial as code**.
 
 ---
+
+```embed
+title: "What are FILTERS? How do they work? HEPA filter"
+image: "https://i.ytimg.com/vi/xpXnY8eN284/maxresdefault.jpg"
+description: "Se ti interessa guardare il nostro video in lingua italiana clicca questo link:https://youtu.be/osZIkX9o6Ww• Learn more:https://jaescompany.com/elearning_art..."
+url: "https://youtu.be/xpXnY8eN284"
+favicon: ""
+aspectRatio: "56.25"
+```
+
+```embed
+title: "Working principle of Laminar Air Flow & Biosafety Cabinets"
+image: "https://i.ytimg.com/vi/Q6qfZ2RR54Q/maxresdefault.jpg"
+description: "Laminar air flow cabinet and bio safety cabinet appear to be one and the same, But there are many differences between these two cabinets. Of course, both of ..."
+url: "https://youtu.be/Q6qfZ2RR54Q"
+favicon: ""
+aspectRatio: "56.25"
+```
+
+```embed
+title: "Positive pressure room Vs. Negative pressure room"
+image: "https://i.ytimg.com/vi/wtD4o6E22bE/maxresdefault.jpg"
+description: "Negative or positive pressure rooms are an essential part of a wide range of research environments, as they help maintain clean conditions in working areas. ..."
+url: "https://youtu.be/wtD4o6E22bE"
+favicon: ""
+aspectRatio: "56.25"
+```
+
+![[Pasted image 20251009170233.png]]
