@@ -114,24 +114,16 @@ M=D      // Store D into memory[16]
 ## ✅ Summary
 
 - Hack simplifies computer architecture: **CPU, memory, I/O**.
-    
 - Blends **Harvard** and **Von Neumann** concepts.
-    
 - Instructions: **A-instruction** → load values, **C-instruction** → computations & jumps.
-    
 - Instructions = **16-bit binary words**, executed cycle-by-cycle.
-    
 - **Program counter** manages instruction order.
-    
 - Fetch-decode-execute cycle drives all computation.
-    
 
 ---
 
 ## 🎁 Bonus Content
 
 - Hack Computer Model | Wikipedia
-    
 - Harvard vs Von Neumann Architectures Explained | Spiceworks
-    
 - Hack Computer Language and Tools | Official Project Site
