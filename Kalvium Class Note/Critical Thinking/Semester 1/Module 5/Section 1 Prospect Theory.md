@@ -18,7 +18,7 @@ aspectRatio: "56.25"
 
 ## 2. Key Observations
 
-- Scenario 1 (Gain): Most choose **sure $900** over 90% chance to win $1,000 → **risk-averse**.
+- Scenario 1 (Gain): Most choose **sure $900** over 90% chance to win $1,000 → **rishik-averse**.
 - Scenario 2 (Loss): Most choose 90% chance to lose $1,000 over **sure loss $900** → **risk-seeking**.
 - Patterns show that **perception of gains/losses** is relative, not absolute.
 
