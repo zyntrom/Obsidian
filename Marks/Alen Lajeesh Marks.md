@@ -1,7 +1,7 @@
 
 | Subject        | Module 1 | Module 2 | Module 3 | Module 4 | Module 5 | Total | Percentage |
 | -------------- | -------- | -------- | -------- | -------- | -------- | ----- | ---------- |
-| PSUP           | 50/50    |          |          |          |          |       |            |
+| PSUP           | 50/50    | 46/5     |          |          |          |       |            |
 | English        |          |          |          |          |          |       |            |
 | Front End      |          |          |          |          |          |       |            |
 | Design for dev |          |          |          |          |          |       |            |
