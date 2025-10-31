@@ -1,6 +1,7 @@
 ## Preparation:
 
 * Install the ISO and flash it to the USB .
+* [Arch Linux Download Link](https://archlinux.org/download/)
 
 ## Installation (UEFI Method)
 
