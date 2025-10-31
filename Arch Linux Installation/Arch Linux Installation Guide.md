@@ -53,6 +53,20 @@ station name connect SSID
 ping google.com
 ```
 
+## Update the system clock
+
+```bash
+timedatectl
+```
 ## Disk Partitioning 
 
-* In order to install Linux you need to need to divide your disk into  
+* In order to install Linux you need to need to divide your disk into three parts.
+* They are root (/), swap, and boot. (Optional if you already do not  have one)
+* For this we can use fdisk or cfdisk. 
+* In this case we will use cfdisk as it is easy to use.
+
+```bash
+cfdisk
+```
+
+* 
