@@ -74,4 +74,7 @@ cfdisk
 * Then select free space  with arrows and select and enter new.
 
 * First we need to make a boot partition when it ask for size give 100M as size
-* Second we need to make 
+* Second we need to make a swap (Temp ram for the OS) it can be of size  2,4,8,16 or such ( Its better to give size in powers of 2 ). If you have 16 gb ram then give swap of 8G
+* The last partition can  be as much as you want because it is the root (/) partition 
+  eg: 100G
+* Then Finally select write.
