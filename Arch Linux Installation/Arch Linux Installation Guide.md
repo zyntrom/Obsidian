@@ -191,11 +191,7 @@ hwclock --systohc
 
 ```Bash
 nano /etc/locale.gen
-```
-
-or ( Direct Command ) 
-
-```bash
+#or ( Direct Command ) 
 echo "en_US.UTF-8 UTF-8" > /etc/locale.gen
 ```
 
@@ -209,13 +205,9 @@ locale-gen
 
 ```bash
 nano /etc/locale.conf
-```
+#Then add `LANG=en_US.UTF-8`
 
-Then add `LANG=en_US.UTF-8`
-
-Or ( Direct Command )
-
-```bash
+#Or ( Direct Command )
 echo "LANG=en_US.UTF-8" > /etc/locale.conf
 ```
 
@@ -259,10 +251,8 @@ passwd username
 ```bash
 #exit the user if you entered the user with exit command  
 exit
-# in the root 
-
+#As Root User
 EDITOR=nano visudo
-
 #Then uncomment %wheel ALL=(ALL) ALL
 ```
 
