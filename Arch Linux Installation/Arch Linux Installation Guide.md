@@ -86,3 +86,21 @@ To see all the created and existing partition
 ```bash
 lsblk
 ```
+
+First we need  to Format the root partition 
+
+```bash
+mkfs.ext4 /dev/_root_partition_
+```
+
+Second we need to Format swap partition 
+
+```bash
+mkswap /dev/_swap_partition_
+```
+
+At Last we need to Format boot partition (Do not do this if you already have a boot par )
+
+```bash
+mkfs.fat -F 32 /dev/efi_system_partition
+```
