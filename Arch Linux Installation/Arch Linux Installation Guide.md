@@ -210,3 +210,23 @@ nano /etc/locale.conf
 
 Then add `LANG=en_US.UTF-8`
 
+Or ( Direct Command )
+
+```bash
+echo "LANG=en_US.UTF-8" > /etc/locale.conf
+```
+
+* ( Optional ) if you want to change keyboard layout
+
+```bash
+echo "KEYMAP=us" > /etc/vconsole.conf
+```
+
+* Next Add the hostname 
+
+```bash
+#Use nano to edit manually 
+nano /etc/hostname #give a host name (eg archii)
+
+#direct command
+```
