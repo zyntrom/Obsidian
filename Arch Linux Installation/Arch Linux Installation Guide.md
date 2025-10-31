@@ -12,7 +12,25 @@
 
 * If you want to change keyboard layout. (By default it is us)
 
+```bash
+#keyboard layout for it
+loadkeys it
+
+#keyboard layout for us
+loadkeys us
 ```
 
+## WiFi connection  
+
+* By default if you have Ethernet then it will automatically connect.
+* If you have WiFi then use iwctl to connect
+
+The Commands are:
+
+```bash
+iwctl
 ```
 
+```bash
+
+```
