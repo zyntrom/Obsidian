@@ -116,12 +116,20 @@ mount /dev/root_partition /mnt
 Mount point for boot partition
 
 ```bash
-#it makes file called boot in /mnt 
-mount --mkdir /dev/efi_system_partition /mnt/boot
+#it makes file called efi in boot in /mnt 
+mount --mkdir /dev/efi_system_partition /mnt/boot/efi
 ```
 
 At last Activate the created swap partition 
 
 ```bash
 swapon /dev/swap_partition
+```
+
+## Installation of Main System files
+
+We  now need to install most of the programs need for the base OS to run 
+
+```bash
+pacstrap -K /mnt base linux linux-firmware sof-firmware base-devel grub efibootmgr nano 
 ```
