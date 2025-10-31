@@ -294,3 +294,11 @@ lsblk -f
 
 * Mount the boot partition
 
+```bash
+mount /dev/nvme0n1p1 /mnt/boot
+```
+
+
+```
+
+```
