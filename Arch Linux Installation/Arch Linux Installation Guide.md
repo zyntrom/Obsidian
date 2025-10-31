@@ -1,7 +1,10 @@
 ## Preparation:
 
-* Install the ISO and flash it to the USB .
 * [Arch Linux Download Link](https://archlinux.org/download/)
+* [Youtube Guide](https://www.youtube.com/watch?v=68z11VAYMS8&t=1197s)
+* [Arch Linux Guide](https://wiki.archlinux.org/title/Installation_guide)
+* [iwctl WiFi Guide](https://wiki.archlinux.org/title/Iwd#iwctl)
+* Install the ISO and flash it to the USB .
 
 ## 1. Installation (UEFI Method)
 
