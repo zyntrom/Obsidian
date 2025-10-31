@@ -1,7 +1,10 @@
 ## Preparation:
 
-Install the ISO and flash it to the USB .
+* Install the ISO and flash it to the USB .
 
-## Installation 
+## Installation (UEFI Method)
 
-Plugin the USB and boot into it 
+* Plug in the USB and boot into it . (From the UEFI boot menu)
+* Select Arch Linux installation from the menu of selections.
+* 
+
