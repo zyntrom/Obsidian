@@ -336,6 +336,16 @@ grub-mkconfig -o /boot/efi/grub/grub.cfg
 ```
 
 
-* Umount all the mounted partitions finally reboot
+* Umount all the mounted partitions 
+
+```bash
+umount -a
+```
+
+* Finally reboot
+
+```bash
+reboot
+```
 
 ## 
