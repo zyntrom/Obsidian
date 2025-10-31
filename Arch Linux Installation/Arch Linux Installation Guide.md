@@ -295,10 +295,28 @@ lsblk -f
 * Mount the boot partition
 
 ```bash
-mount /dev/nvme0n1p1 /mnt/boot
+mount /dev/nvme0n1p1 /mnt/boot/efi
 ```
 
+* Install dual booting package
 
+```bash
+pacman -S grub efibootmgr os-prober
 ```
-sudo pacman -S grub efibootmgr os-prober
+
+* GRUB to EFI
+
+```bash
+grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=Arch
 ```
+
+* Edit or check /etc/default/grub and ensure this line is uncommented
+
+```bash
+nano /etc/default/grub
+```
+
+```bash
+GRUB_DISABLE_OS_PROBER=false
+```
+
