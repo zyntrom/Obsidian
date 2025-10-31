@@ -184,3 +184,14 @@ hwclock --systohc
 
 ## 12. Localization
 
+* Edit Local by removing comment on ``en_US.UTF-8 UTF-8`` from the file 
+
+```Bash
+nano /etc/locale.gen
+```
+
+or ( Direct Command ) 
+
+```bash
+echo "en_US.UTF-8 UTF-8" > /etc/locale.gen
+```
