@@ -316,7 +316,21 @@ grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=Arch
 nano /etc/default/grub
 ```
 
+edit
+
 ```bash
 GRUB_DISABLE_OS_PROBER=false
 ```
 
+* Now run 
+
+
+```bash
+os-prober
+```
+
+* Generate GRUB Configuration
+
+```bash
+grub-mkconfig -o /boot/efi/grub/grub.cfg
+```
