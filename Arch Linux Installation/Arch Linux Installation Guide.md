@@ -79,7 +79,7 @@ cfdisk
   eg: 100G
 * Then Finally select write.
   
-### Formatting created Partition
+## Formatting created Partition
 
 To see all the created and existing partition
 
@@ -99,8 +99,29 @@ Second we need to Format swap partition
 mkswap /dev/_swap_partition_
 ```
 
-At Last we need to Format boot partition (Do not do this if you already have a boot par )
+At Last we need to Format boot partition (Do not do this if you already have a boot partition by other Linux OS as it will remove the entry for the other OS)
 
 ```bash
 mkfs.fat -F 32 /dev/efi_system_partition
+```
+
+## Mount the file systems
+
+Mount point for root (/) partition 
+
+```bash
+mount /dev/root_partition /mnt
+```
+
+Mount point for boot partition
+
+```bash
+#it makes file called boot in /mnt 
+mount --mkdir /dev/efi_system_partition /mnt/boot
+```
+
+At last Activate the created swap partition 
+
+```bash
+swapon /dev/swap_partition
 ```
