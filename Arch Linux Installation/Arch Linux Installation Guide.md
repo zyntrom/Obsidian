@@ -229,4 +229,30 @@ echo "KEYMAP=us" > /etc/vconsole.conf
 nano /etc/hostname #give a host name (eg archii)
 
 #direct command
+echo "archii" > /etc/hostname
+```
+
+## Setting Root password and User
+
+* To config root password 
+
+```bash
+passwd
+#Then type the password
+```
+
+* To add a user 
+
+```bash
+useradd -m -G wheel -s /bin/bash username
+```
+
+```bash
+passwd username
+```
+
+*  Now add the user to sudo list 
+
+```
+
 ```
