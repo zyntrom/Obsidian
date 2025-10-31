@@ -304,12 +304,6 @@ mount /dev/nvme0n1p1 /mnt/boot/efi
 pacman -S grub efibootmgr os-prober
 ```
 
-* GRUB to EFI
-
-```bash
-grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=Arch
-```
-
 * Edit or check /etc/default/grub and ensure this line is uncommented
 
 ```bash
