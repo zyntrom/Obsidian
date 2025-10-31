@@ -61,7 +61,7 @@ timedatectl
 ## Disk Partitioning 
 
 * In order to install Linux you need to need to divide your disk into three parts.
-* They are root (/), swap, and boot. (Optional if you already do not  have one)
+* They are root (/), swap, and boot. ( Optional if you already do not  have one )
 * For this we can use fdisk or cfdisk. 
 * In this case we will use cfdisk as it is easy to use.
 
@@ -69,4 +69,9 @@ timedatectl
 cfdisk
 ```
 
-* 
+* If it ask for label type select gpt
+* Delete partitions that are no longer in use and make space if it does not show free space. ( If dual booting do not delete Partitions you do not recognize if could be windows or other Linux OS )
+* Then select free space  with arrows and select and enter new.
+
+* First we need to make a boot partition when it ask for size give 100M as size
+* Second we need to make 
