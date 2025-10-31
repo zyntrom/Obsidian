@@ -354,7 +354,7 @@ Command to set the font size:
 setfont -d
 ```
 
-## Setting up GUI and final setup
+## Setting up GUI
 
 * Important packages for GUI
 
