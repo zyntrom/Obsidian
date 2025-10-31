@@ -3,12 +3,12 @@
 * Install the ISO and flash it to the USB .
 * [Arch Linux Download Link](https://archlinux.org/download/)
 
-## Installation (UEFI Method)
+## 1. Installation (UEFI Method)
 
 * Plug in the USB and boot into it . (From the UEFI boot menu)
 * Select Arch Linux installation from the menu of selections.
 
-## Keyboard Layout
+## 2. Keyboard Layout
 
 * If you want to change keyboard layout. (By default it is us)
 
@@ -20,7 +20,7 @@ loadkeys it
 loadkeys us
 ```
 
-## WiFi connection  
+## 3. WiFi connection  
 
 * By default if you have Ethernet then it will automatically connect.
 * If you have WiFi then use iwctl to connect
@@ -53,12 +53,12 @@ station name connect SSID
 ping google.com
 ```
 
-## Update the system clock
+## 4. Update the system clock
 
 ```bash
 timedatectl
 ```
-## Disk Partitioning 
+## 5. Disk Partitioning 
 
 * In order to install Linux you need to need to divide your disk into three parts.
 * They are root (/), swap, and boot. ( Optional if you already do not  have one )
@@ -79,7 +79,7 @@ cfdisk
   eg: 100G
 * Then Finally select write.
   
-## Formatting created Partition
+## 6. Formatting created Partition
 
 To see all the created and existing partition
 
@@ -105,7 +105,7 @@ At Last we need to Format boot partition (Do not do this if you already have a b
 mkfs.fat -F 32 /dev/efi_system_partition
 ```
 
-## Mount the file systems
+## 7. Mount the file systems
 
 Mount point for root (/) partition 
 
@@ -126,7 +126,7 @@ At last Activate the created swap partition
 swapon /dev/swap_partition
 ```
 
-## Installation of Main System files
+## 8. Installation of Main System files
 
 We  now need to install most of the programs need for the base OS to run 
 
@@ -134,7 +134,7 @@ We  now need to install most of the programs need for the base OS to run
 pacstrap -K /mnt base linux linux-firmware sof-firmware base-devel grub efibootmgr nano networkmanager 
 ```
 
-## Generating File System and config
+## 9. Generating File System and config
 
 Now we need to create File System for the users and basic configuration for the OS to work 
 
@@ -147,5 +147,20 @@ genfstab /mnt
 Saving the info into a file
 
 ```bash
-genfstab /mnt > /mnt/
+genfstab /mnt > /mnt/etc/fstab
 ```
+
+To confirm the file write
+
+```bash
+cat /mnt/etc/fstab
+```
+
+## 10. Chroot into the System 
+
+```bash
+arch-chroot /mnt
+```
+
+## 11. OS configuration
+
