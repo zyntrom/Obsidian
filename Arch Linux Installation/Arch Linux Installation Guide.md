@@ -253,6 +253,25 @@ passwd username
 
 *  Now add the user to sudo list 
 
+```bash
+#exit the user if you entered the user with exit command  
+exit
+# in the root 
+
+EDITOR=nano visudo
+
+#Then uncomment %wheel ALL=(ALL) ALL
 ```
 
+* To enter a user profile
+
+```bash
+su username
+```
+
+* Once you entered the user update the system
+
+```bash
+#y is checking update u is install the updates
+sudo pacman -Syu
 ```
