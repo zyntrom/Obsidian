@@ -300,5 +300,5 @@ mount /dev/nvme0n1p1 /mnt/boot
 
 
 ```
-
+sudo pacman -S grub efibootmgr os-prober
 ```
