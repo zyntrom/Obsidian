@@ -348,4 +348,23 @@ umount -a
 reboot
 ```
 
-## 
+## Booting the OS
+
+* Start the computer 
+* Select the Arch Linux
+* Login to your user
+* Connect to the internet (Ethernet or WiFi with iwctl )
+
+Command to set the font size:
+
+```bash
+setfont -d
+```
+
+## Setting up GUI and final setup
+
+* Important packages for GUI
+
+```
+sudo pacman -S plas
+```
