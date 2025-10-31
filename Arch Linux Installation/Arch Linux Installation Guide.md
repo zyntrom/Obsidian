@@ -32,5 +32,27 @@ iwctl
 ```
 
 ```bash
+device list
+```
+
+```bash
+station _name_ scan
+```
+
+```bash
+station _name_ get-networks
+```
+
+```bash
+station name connect SSID
+```
+
+* To test Internet connection use: (Use ctrl - c to stop any command from running)
 
 ```
+ping google.com
+```
+
+## Disk Partitioning 
+
+* In order to install Linux you need to need to divide your disk into  
