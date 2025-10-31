@@ -78,3 +78,11 @@ cfdisk
 * The last partition can  be as much as you want because it is the root (/) partition 
   eg: 100G
 * Then Finally select write.
+  
+### Formatting created Partition
+
+To see all the created and existing partition
+
+```bash
+lsblk
+```
