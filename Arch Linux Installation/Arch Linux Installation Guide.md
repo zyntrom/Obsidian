@@ -81,25 +81,25 @@ cfdisk
   
 ## 6. Formatting created Partition
 
-To see all the created and existing partition
+* To see all the created and existing partition
 
 ```bash
 lsblk
 ```
 
-First we need  to Format the root partition 
+* First we need  to Format the root partition 
 
 ```bash
 mkfs.ext4 /dev/_root_partition_
 ```
 
-Second we need to Format swap partition 
+* Second we need to Format swap partition 
 
 ```bash
 mkswap /dev/_swap_partition_
 ```
 
-At Last we need to Format boot partition (Do not do this if you already have a boot partition by other Linux OS as it will remove the entry for the other OS)
+* At Last we need to Format boot partition (Do not do this if you already have a boot partition by other Linux OS as it will remove the entry for the other OS)
 
 ```bash
 mkfs.fat -F 32 /dev/efi_system_partition
@@ -107,20 +107,20 @@ mkfs.fat -F 32 /dev/efi_system_partition
 
 ## 7. Mount the file systems
 
-Mount point for root (/) partition 
+* Mount point for root (/) partition 
 
 ```bash
 mount /dev/root_partition /mnt
 ```
 
-Mount point for boot partition
+* Mount point for boot partition
 
 ```bash
 #it makes file called efi in boot in /mnt 
 mount --mkdir /dev/efi_system_partition /mnt/boot/efi
 ```
 
-At last Activate the created swap partition 
+* At last Activate the created swap partition 
 
 ```bash
 swapon /dev/swap_partition
@@ -128,7 +128,7 @@ swapon /dev/swap_partition
 
 ## 8. Installation of Main System files
 
-We  now need to install most of the programs need for the base OS to run 
+* We  now need to install most of the programs need for the base OS to run 
 
 ```bash
 pacstrap -K /mnt base linux linux-firmware sof-firmware base-devel grub efibootmgr nano networkmanager 
@@ -136,21 +136,21 @@ pacstrap -K /mnt base linux linux-firmware sof-firmware base-devel grub efibootm
 
 ## 9. Generating File System and config
 
-Now we need to create File System for the users and basic configuration for the OS to work 
+* Now we need to create File System for the users and basic configuration for the OS to work 
 
-To get info on the file system mounted  
+* To get info on the file system mounted  
 
 ```bash
 genfstab /mnt
 ```
 
-Saving the info into a file
+* Saving the info into a file
 
 ```bash
 genfstab /mnt > /mnt/etc/fstab
 ```
 
-To confirm the file write
+* To confirm the file write
 
 ```bash
 cat /mnt/etc/fstab
@@ -162,5 +162,25 @@ cat /mnt/etc/fstab
 arch-chroot /mnt
 ```
 
-## 11. OS configuration
+## 11.  Date, Time and Location Config
+
+* Setting up date and location 
+
+```bash
+ln -sf /usr/share/zoneinfo/Asia/India /etc/localtime
+```
+
+* To confirm date
+
+```bash
+date
+```
+
+* To sync system clock
+
+```bash
+hwclock --systohc
+```
+
+## 12. Localization
 
