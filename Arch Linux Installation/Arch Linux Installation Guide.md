@@ -272,6 +272,19 @@ su username
 * Once you entered the user update the system
 
 ```bash
-#y is checking update u is install the updates
+#y is checking update and u is install the updates
 sudo pacman -Syu
 ```
+
+## Setting up Network Manager
+
+* For you to use internet when you load the OS
+
+```bash
+systemctl enable NetworkManager
+```
+
+## Setting up Grub for dual booting
+
+
+
