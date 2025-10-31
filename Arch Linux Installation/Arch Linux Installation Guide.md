@@ -286,5 +286,11 @@ systemctl enable NetworkManager
 
 ## Setting up Grub for dual booting
 
+* Check  for existing boot partitions 
 
+```bash
+lsblk -f
+```
+
+* Mount the boot partition
 
