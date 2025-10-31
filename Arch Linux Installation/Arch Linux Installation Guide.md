@@ -131,5 +131,21 @@ swapon /dev/swap_partition
 We  now need to install most of the programs need for the base OS to run 
 
 ```bash
-pacstrap -K /mnt base linux linux-firmware sof-firmware base-devel grub efibootmgr nano 
+pacstrap -K /mnt base linux linux-firmware sof-firmware base-devel grub efibootmgr nano networkmanager 
+```
+
+## Generating File System and config
+
+Now we need to create File System for the users and basic configuration for the OS to work 
+
+To get info on the file system mounted  
+
+```bash
+genfstab /mnt
+```
+
+Saving the info into a file
+
+```bash
+genfstab /mnt > /mnt/
 ```
