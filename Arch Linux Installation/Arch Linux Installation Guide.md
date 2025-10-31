@@ -365,6 +365,16 @@ setfont -d
 
 * Important packages for GUI
 
+```bash
+sudo pacman -S plasma sddm konsole nvim kate firefox  
 ```
-sudo pacman -S plas
+
+## Final Setup and startup
+
+* As the final setup we need to start sddm our window manager 
+
+```bash
+sudo systemctl enable --now sddm
 ```
+
+Now Enjoy Arch Linux 
