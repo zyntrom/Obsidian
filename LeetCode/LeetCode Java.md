@@ -18,7 +18,7 @@ public class TwoSum {
 }
 ```
 
-## 2.
+## 2.Palindrome Number
 
 ```java
 class Solution {
