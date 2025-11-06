@@ -5,7 +5,7 @@
 
 *  [x] Guide on ArchLinux Installation.
 
-*  [ ] Bash Linux (Terminal).
+*  [x] Bash Linux (Terminal).
 
-*  [ ] Guide on Any Languages.
+*  [x] Guide on Any Languages.
 
