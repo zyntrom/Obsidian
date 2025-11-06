@@ -27,7 +27,9 @@ _A clean, well-structured, exam-ready guide_
 ### **Hello World**
 
 ```kotlin
-fun main() {     println("Hello Kotlin") }
+fun main() {     
+	println("Hello Kotlin") 
+}
 ```
 
 ### ✅ **Variables**
@@ -79,7 +81,13 @@ val max = if (a > b) a else b
 
 ### ✅ **When (Switch)**
 
-`when (x) {     1 -> println("One")     2,3 -> println("Two or Three")     in 4..10 -> println("Between 4 and 10")     else -> println("Unknown") }`
+```kotlin
+when (x) {     
+	1 -> println("One")     
+	2,3 -> println("Two or Three")     
+	in 4..10 -> println("Between 4 and 10")     
+else -> println("Unknown") }
+```
 
 ---
 
@@ -87,22 +95,23 @@ val max = if (a > b) a else b
 
 ### ✅ **For Loop**
 
-`for (i in 1..5) println(i)`
+```kotlin
+for (i in 1..5) 
+	println(i)
+```
 
 ### ✅ **While**
 
-`while (i < 5) i++`
+```kotlin
+while (i < 5) i++
+```
 
 ### ✅ **Ranges**
 
 - `1..5` (includes 5)
-    
 - `1 until 5` (excludes 5)
-    
 - `10 downTo 1`
-    
 - `1..10 step 2`
-    
 
 ---
 
@@ -110,19 +119,31 @@ val max = if (a > b) a else b
 
 ### ✅ **Basic Function**
 
-`fun add(a: Int, b: Int): Int {     return a + b }`
+```kotlin
+fun add(a: Int, b: Int): Int {     
+	return a + b 
+}
+```
 
 ### ✅ **Single Expression Function**
 
-`fun mul(a: Int, b: Int) = a * b`
+```kotlin
+fun mul(a: Int, b: Int) = a * b
+```
 
 ### ✅ **Default Parameters**
 
-`fun greet(name: String = "User") {     println("Hello $name") }`
+```kotlin
+fun greet(name: String = "User") {     
+	println("Hello $name") 
+}
+```
 
 ### ✅ **Named Arguments**
 
-`greet(name = "Alen")`
+```kotlin
+greet(name = "Alen")
+```
 
 ---
 
@@ -130,23 +151,31 @@ val max = if (a > b) a else b
 
 ### ✅ **Nullable Type**
 
-`var name: String? = null`
+```kotlin
+var name: String? = null
+```
 
 ### ✅ **Safe Call Operator “?.“**
 
-`println(name?.length)`
+```kotlin
+println(name?.length)
+```
 
 ### ✅ **Elvis Operator " ?: "**
 
 Provides default when null.
 
-`val length = name?.length ?: 0`
+```kotlin
+val length = name?.length ?: 0
+```
 
 ### ✅ **Not-Null Assertion “!!”**
 
 (Throws exception if null)
 
-`val l = name!!.length`
+```kotlin
+val l = name!!.length
+```
 
 ---
 
@@ -154,15 +183,22 @@ Provides default when null.
 
 ### ✅ **List**
 
-`val list = listOf(1,2,3)       // Immutable val mlist = mutableListOf(1,2) // Mutable`
+```kotlin
+val list = listOf(1,2,3)       // Immutable 
+val mlist = mutableListOf(1,2) // Mutable
+```
 
 ### ✅ **Set**
 
-`val set = setOf(1,2,2,3)       // Unique elements`
+```kotlin
+val set = setOf(1,2,2,3)       // Unique elements
+```
 
 ### ✅ **Map**
 
-`val map = mapOf("a" to 1, "b" to 2)`
+```kotlin
+val map = mapOf("a" to 1, "b" to 2)
+```
 
 ---
 
@@ -170,41 +206,57 @@ Provides default when null.
 
 ## ✅ **Classes**
 
-`class Person(val name: String, var age: Int)`
+```kotlin
+class Person(val name: String, var age: Int)
+```
 
 ## ✅ **Creating Objects**
 
-`val p = Person("Alen", 21)`
+```kotlin
+val p = Person("Alen", 21)
+```
 
 ## ✅ **Inheritance**
 
 - `open` keyword allows inheritance.
-    
 
-`open class Animal {     open fun sound() = println("Animal sound") }  class Dog : Animal() {     override fun sound() = println("Bark") }`
+```kotlin
+open class Animal {     
+	open fun sound() = println("Animal sound") 
+}  
+class Dog : Animal() {     
+	override fun sound() = println("Bark") 
+}
+```
 
 ## ✅ **Abstract Classes**
 
-`abstract class Shape {     abstract fun area(): Double }`
+```kotlin
+abstract class Shape {     
+	abstract fun area(): Double 
+}
+```
 
 ## ✅ **Interfaces**
 
-`interface A {     fun show() }`
+```kotlin
+interface A {     
+	fun show() 
+}
+```
 
 ## ✅ **Data Classes**
 
 Automatically generates:
 
 - equals()
-    
 - toString()
-    
 - hashCode()
-    
 - copy()
-    
 
-`data class User(val name: String, val age: Int)`
+```kotlin
+data class User(val name: String, val age: Int)
+```
 
 ---
 
@@ -212,11 +264,15 @@ Automatically generates:
 
 ### ✅ **Primary Constructor**
 
-`class Student(val name: String, val roll: Int)`
+```kotlin
+class Student(val name: String, val roll: Int)
+```
 
 ### ✅ **Secondary Constructor**
 
-`class Test {     constructor(x: Int) {         println(x)     } }`
+```kotlin
+class Test {     constructor(x: Int) {         println(x)     } }
+```
 
 ---
 
