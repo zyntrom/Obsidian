@@ -1,15 +1,15 @@
-# 🐚 Bash Scripting Full Guide
+# Bash Scripting Full Guide
 
 ---
 
-## 1. 🧠 What is Bash?
+## 1.  What is Bash?
 
 - Bash (Bourne Again SHell) is a Unix shell and scripting language.
 - Used for: automation, file management, system control.
 
 ---
 
-## 2. 📄 Basic Structure of a Bash Script
+## 2. Basic Structure of a Bash Script
 
 ```bash
 #!/bin/bash      # Shebang: defines the interpreter 
@@ -17,7 +17,7 @@
 echo "Hello, World"   # Print to terminal
 ```
 
-### ✨ Making a Script Executable
+### Making a Script Executable
 
 ```bash
 chmod +x script.sh    # Make script executable 
@@ -26,7 +26,7 @@ chmod +x script.sh    # Make script executable
 
 ---
 
-## 3. 📦 Variables
+## 3. Variables
 
 ```bash
 name="ZynTrom" 
@@ -34,7 +34,7 @@ echo "Hello $name"         # Use variable echo "Hello ${name}"
 # Safe syntax
 ```
 
-### 🔢 Arithmetic
+### Arithmetic
 
 ```bash
 a=5 
@@ -46,7 +46,7 @@ let "c = a * b"     # using let
 
 ---
 
-## 4. 📥 Input / Output
+## 4. Input / Output
 
 ```bash
 read name 
@@ -56,7 +56,7 @@ read -p "Enter your age: " age
 
 ---
 
-## 5. 🧪 Conditionals
+## 5. Conditionals
 
 ```bash
 if [ $age -ge 18 ]; then     
@@ -68,7 +68,7 @@ echo "Child"
 fi
 ```
 
-### ✅ Comparison Operators
+### Comparison Operators
 
 #### Numbers
 
@@ -88,7 +88,7 @@ fi
 
 ---
 
-## 6. 🔁 Loops
+## 6. Loops
 
 ### For Loop
 
@@ -126,7 +126,7 @@ done
 
 ---
 
-## 7. 🧰 Functions
+## 7. Functions
 
 ```bash
 greet() {     
@@ -136,7 +136,7 @@ greet "ZynTrom"
 
 ---
 
-## 8. 📂 File Handling
+## 8. File Handling
 
 ### Write and Append
 
@@ -165,7 +165,7 @@ fi
 
 ---
 
-## 9. 🧵 Command Line Arguments
+## 9. Command Line Arguments
 
 ```bash
 echo "Script name: $0" 
@@ -183,7 +183,7 @@ Run:
 
 ---
 
-## 10. 🧨 Error Handling
+## 10. Error Handling
 
 ```bash
 command || echo "Failed" 
@@ -193,27 +193,28 @@ set -e     # Exit on first error set -u     # Exit if using undefined variables
 
 ---
 
-## 11. 🧮 String Operations
+## 11. String Operations
 
-bash
 
-CopyEdit
-
-`str="Hello World" echo "${str:0:5}"       # Substring echo "${#str}"          # Length echo "${str/World/Unix}" # Replace`
-
----
-
-## 12. ⏳ Timing and Sleep
-
-bash
-
-CopyEdit
-
-`sleep 5                # Wait 5 seconds date                   # Current date/time`
+```bash
+str="Hello World" 
+echo "${str:0:5}"       # Substring 
+echo "${#str}"          # Length 
+echo "${str/World/Unix}" # Replace
+```
 
 ---
 
-## 13. 🧹 Useful Commands in Scripts
+## 12. Timing and Sleep
+
+```bash
+sleep 5                # Wait 5 seconds 
+date                   # Current date/time
+```
+
+---
+
+## 13. Useful Commands in Scripts
 
 |Command|Use|
 |---|---|
@@ -227,13 +228,14 @@ CopyEdit
 
 ---
 
-## 14. 📦 Arrays
+## 14. Arrays
 
-bash
-
-CopyEdit
-
-`arr=(one two three) echo ${arr[0]}         # one echo ${arr[@]}         # all echo ${#arr[@]}        # length  arr+=(four)            # append`
+```bash
+arr=(one two three) 
+echo ${arr[0]}         # one 
+echo ${arr[@]}         # all 
+echo ${#arr[@]}        # length  arr+=(four)            # append
+```
 
 ---
 
