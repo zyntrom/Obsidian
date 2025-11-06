@@ -171,6 +171,8 @@ git checkout -b new_branch
 
 ```bash
 git branch -m new_name
+
+#-M to force rename
 ```
 
 - Merge branch into current:
