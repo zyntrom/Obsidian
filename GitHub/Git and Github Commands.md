@@ -359,83 +359,140 @@ git stash drop
 ```
 
 - Clear all stashes:
-- git stash clear
 
-Create and switch to new branch from stash:
+```bash
+git stash clear
+```
+
+- Create and switch to new branch from stash:
+
+```bash
 git stash branch new_branch_name
+```
 
-🧭 10. TAGGING
+## 10. TAGGING
 
-List tags:
+- List tags:
+
+```bash
 git tag
+```
 
-Create tag:
+- Create tag:
+
+```bash
 git tag v1.0
+```
 
-Create tag with message (annotated):
+- Create tag with message (annotated):
+
+```bash
 git tag -a v1.0 -m "Version 1.0 release"
+```
 
-Push all tags to remote:
+- Push all tags to remote:
+
+```bash
 git push origin --tags
+```
 
-Delete tag locally:
+- Delete tag locally:
+
+```bash
 git tag -d v1.0
+```
 
 Delete tag remotely:
+
+```bash
 git push origin --delete tag v1.0
+```
 
-🧰 11. INSPECTING & COMPARING
+## 11. INSPECTING & COMPARING
 
-Compare working directory with last commit:
+- Compare working directory with last commit:
+
+```bash
 git diff
+```
 
-Compare staged with last commit:
+- Compare staged with last commit:
+
+```bash
 git diff --staged
+```
 
-Compare two commits:
+- Compare two commits:
+
+```bash
 git diff commit1 commit2
+```
 
-Show which commit introduced a line:
+- Show which commit introduced a line:
+
+```bash
 git blame filename
+```
 
-Show who changed what and when (detailed blame):
+- Show who changed what and when (detailed blame):
+
+```bash
 git annotate filename
+```
 
-🧩 12. REMOTE TROUBLESHOOTING & FIXES
+## 12. REMOTE TROUBLESHOOTING & FIXES
 
-Force push changes:
+- Force push changes:
+
+```bash
 git push origin branch_name --force
+```
 
-Pull with rebase (clean history):
+- Pull with rebase (clean history):
+
+```bash
 git pull --rebase
+```
 
-Change remote URL:
+- Change remote URL:
+
+```bash
 git remote set-url origin https://github.com/user/new_repo.git
+```
 
-Prune deleted remote branches:
+- Prune deleted remote branches:
+
+```bash
 git fetch -p
+```
 
-🧱 13. SUBMODULES (for nested repos)
+## 13. SUBMODULES (for nested repos)
 
-Add submodule:
-git submodule add https://github.com/user/lib.git
- libs/libname
+- Add submodule:
 
-Init and update submodules:
+```bash
+git submodule add https://github.com/user/lib.git libs/libname
+```
+
+- Init and update submodules:
+
+```bash
 git submodule update --init --recursive
+```
 
-Update submodules to latest commit:
+- Update submodules to latest commit:
+
+```bash
 git submodule update --remote
+```
 
-Remove submodule:
+- Remove submodule:
 
-Delete the entry from .gitmodules
+1. Delete the entry from .gitmodules
+2. Run → git rm --cached path/to/submodule
+3. Delete folder manually
 
-Run → git rm --cached path/to/submodule
-
-Delete folder manually
-
-🧮 14. PATCHES & EXPORTING
+## 14. PATCHES & EXPORTING
 
 Create patch file:
 git format-patch -1 commit_id
