@@ -585,13 +585,8 @@ assert(age > 0);
 ## 24. 🧠 Best Practices
 
 - Use `const` wherever possible.
-    
 - Use `late` keyword for deferred initialization.
-    
 - Prefer immutable data.
-    
 - Always handle null safely.
-    
 - Use `async`/`await` properly to avoid callback hell.
-    
 - Use lint tools and formatters (`dart analyze`, `dart format`).
