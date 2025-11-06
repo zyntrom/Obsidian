@@ -31,5 +31,29 @@ git config --global core.editor "nano"
 
 ```bash
 git config user.name
-git 
+git config core.editor
 ```
+
+## Initialization & Cloning
+
+* Create a new repo in current folder:
+
+```bash
+git init
+```
+
+* Create a new repo in specific folder
+
+```bash
+git init my-project
+```
+
+* Clone a remote repository:
+
+```bash
+git clone https://github.com/user/repo.git
+git clone git@github.com:user/repo.git (SSH)
+```
+
+* Clone into a specific directory name:
+
