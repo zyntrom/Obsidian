@@ -30,8 +30,8 @@ chmod +x script.sh    # Make script executable
 
 ```bash
 name="ZynTrom" 
-echo "Hello $name"         # Use variable echo "Hello ${name}"       
-# Safe syntax
+echo "Hello $name"         # Use variable 
+echo "Hello ${name}"       # Safe syntax
 ```
 
 ### Arithmetic
