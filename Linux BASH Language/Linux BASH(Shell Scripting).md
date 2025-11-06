@@ -234,103 +234,93 @@ date                   # Current date/time
 arr=(one two three) 
 echo ${arr[0]}         # one 
 echo ${arr[@]}         # all 
-echo ${#arr[@]}        # length  arr+=(four)            # append
+echo ${#arr[@]}        # length  
+arr+=(four)            # append
 ```
 
 ---
 
-## 15. 🧭 Loops with Arrays
+## 15. Loops with Arrays
 
-bash
+```bash
+for item in "${arr[@]}"; do     
+	echo $item done
+```
 
-CopyEdit
-
-`for item in "${arr[@]}"; do     echo $item done`
-
----
-
-## 16. 🗂️ File and Directory Operations
-
-bash
-
-CopyEdit
-
-`mkdir new_folder touch file.txt rm file.txt rm -r folder/ mv a.txt b.txt cp a.txt b.txt`
 
 ---
 
-## 17. 🧩 Cron Jobs (Automate Scripts)
+## 16. File and Directory Operations
+
+```bash
+mkdir new_folder 
+touch file.txt 
+rm file.txt 
+rm -r folder/ 
+mv a.txt b.txt 
+cp a.txt b.txt
+```
+
+---
+
+## 17. Cron Jobs (Automate Scripts)
 
 Edit crontab:
 
-bash
-
-CopyEdit
-
-`crontab -e`
+```bash
+crontab -e
+```
 
 Example: Run every day at 9 AM
-
-bash
-
-CopyEdit
 
 `0 9 * * * /path/to/script.sh`
 
 ---
 
-## 18. 📊 Real Script Examples
+## 18. Real Script Examples
 
-### ✔️ Backup Script
+###  Backup Script
 
-bash
+```
+#!/bin/bash 
+tar -czf backup-$(date +%F).tar.gz /home/user
+```
 
-CopyEdit
+### Batch Rename `.txt` to `.bak`
 
-`#!/bin/bash tar -czf backup-$(date +%F).tar.gz /home/user`
-
-### ✔️ Batch Rename `.txt` to `.bak`
-
-bash
-
-CopyEdit
-
-`for file in *.txt; do     mv "$file" "${file%.txt}.bak" done`
+```bash
+for file in *.txt; do     
+	mv "$file" "${file%.txt}.bak" 
+	done
+```
 
 ---
 
-## 19. 📛 Exit Codes
+## 19. Exit Codes
 
-bash
-
-CopyEdit
-
-`exit 0      # success exit 1      # error`
+```bash
+exit 0      # success 
+exit 1      # error
+```
 
 Check exit code:
 
-bash
-
-CopyEdit
-
-`echo $?`
+```bash
+echo $?
+```
 
 ---
 
-## 20. 🔁 Include Other Scripts
+## 20. Include Other Scripts
 
-bash
-
-CopyEdit
-
-`source other_script.sh . other_script.sh`
+```bash
+source other_script.sh . other_script.sh
+```
 
 ---
 
-## ✅ Tips
+##  Tips
 
 - Use `#!/bin/bash` at the top.
-    
 - Quote variables: `"$var"` to prevent word splitting.
-    
 - Always test your script with `bash -x script.sh` for debug.
