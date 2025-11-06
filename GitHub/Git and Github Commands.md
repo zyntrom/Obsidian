@@ -494,58 +494,103 @@ git submodule update --remote
 
 ## 14. PATCHES & EXPORTING
 
-Create patch file:
+- Create patch file:
+
+```bash
 git format-patch -1 commit_id
+```
 
-Apply patch file:
+- Apply patch file:
+
+```bash
 git apply patchfile.patch
+```
 
-Archive repo as zip/tar:
+- Archive repo as zip/tar:
+
+```bash
 git archive --format=zip HEAD > repo.zip
+```
 
-🧩 15. DEBUGGING & MAINTENANCE
+## 15. DEBUGGING & MAINTENANCE
 
-Check repository integrity:
-git fsck
+- Check repository integrity:
 
-Optimize local repo:
+```bash
+git fsck 
+```
+
+- Optimize local repo:
+
+```bash
 git gc --prune=now --aggressive
+```
 
-Find broken references:
+- Find broken references:
+
+```bash
 git reflog
+```
 
-Recover deleted commits:
+- Recover deleted commits:
+
+```bash
 git reflog
 git checkout commit_id
+```
 
-🧾 16. ALIASES (SHORTCUT COMMANDS)
+## 16. ALIASES (SHORTCUT COMMANDS)
 
-Set alias example:
+- Set alias example:
+
+```bash
 git config --global alias.co checkout
 git config --global alias.br branch
 git config --global alias.cm "commit -m"
 git config --global alias.st status
+```
 
-Use alias:
+- Use alias:
+
+```bash
 git co main
 git cm "message"
+```
 
-⚡ 17. MISCELLANEOUS USEFUL COMMANDS
+## 17. MISCELLANEOUS USEFUL COMMANDS
 
-List ignored files:
+- List ignored files:
+
+```bash
 git status --ignored
+```
 
-List tracked files:
+- List tracked files:
+
+```bash
 git ls-files
+```
 
-Check current branch:
+- Check current branch:
+
+```bash
 git branch --show-current
+```
 
-See remotes and branches:
+- See remotes and branches:
+
+```bash
 git remote show origin
+```
 
-Show current HEAD commit:
+- Show current HEAD commit:
+
+```bash
 git rev-parse HEAD
+```
 
-Show current branch’s upstream:
+- Show current branch’s upstream:
+
+```bash
 git rev-parse --abbrev-ref --symbolic-full-name @{u}
+```
