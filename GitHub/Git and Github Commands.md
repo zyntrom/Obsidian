@@ -81,6 +81,8 @@ git add . (all changes)
 
 ```bash
 git reset filename
+
+# remove the file from staging agrea
 ```
 
 - Commit changes with message:  
@@ -93,12 +95,16 @@ git commit -m "Commit message"
 
 ```bash
 git commit -am "Message"
+
+#-a will stage all the modified files and commit it (Will not touch new files which are not tracked before)
 ```
 
 - Amend the last commit (edit message or add files):  
 
 ```bash
 git commit --amend
+# modify the latest commit without losing it 
+# use --no-edit to keep the old message
 ```
 
 ## 4. VIEWING HISTORY
