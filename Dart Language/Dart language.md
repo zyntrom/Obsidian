@@ -323,52 +323,64 @@ list.forEach((item) {
 
 ---
 
-## 11. 🧱 Object-Oriented Programming (OOP)
+## 11. Object-Oriented Programming (OOP)
 
 ### Class and Object
 
+```dart
 class Person {  
-String name;  
-int age;  
-Person(this.name, this.age);  
-void show() => print('$name, $age');  
+	String name;  
+	int age;  
+	Person(this.name, this.age);  
+	void show() => print('$name, $age');  
 }
+```
 
+```dart
 main() {  
-var p = Person('John', 30);  
-p.show();  
+	var p = Person('John', 30);  
+	p.show();  
 }
+```
 
 ### Constructors
 
 - Default constructor
-    
 - Named constructor  
     Example:  
     Person.named(this.name, this.age);
-    
 
 ### Getters and Setters
 
+```dart
 get info => '$name is $age';  
 set changeName(String n) => name = n;
+```
 
 ### Inheritance
 
+```dart
 class Student extends Person { ... }
+```
 
 ### Method Overriding
 
+```dart
 @override  
 void show() { ... }
+```
 
 ### Abstract Class
 
+```dart
 abstract class Shape { void draw(); }
+```
 
 ### Interfaces
 
+```dart
 class Dog implements Animal { ... }
+```
 
 ### Mixins
 
