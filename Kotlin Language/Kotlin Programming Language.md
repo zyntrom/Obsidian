@@ -282,7 +282,7 @@ class Test {
 
 # 11. **Objects and Companion Objects**
 
-### ✅ **Singleton**
+### **Singleton**
 
 ```kotlin
 object Database {     
@@ -290,7 +290,7 @@ object Database {
 }
 ```
 
-### ✅ **Companion Object**
+### **Companion Object**
 
 ```kotlin
 class Utils {     
@@ -304,13 +304,13 @@ class Utils {
 
 # 12. **Lambda Expressions & Functional Programming**
 
-### ✅ **Lambda**
+### **Lambda**
 
 ```kotlin
 val sum = { a: Int, b: Int -> a + b }
 ```
 
-### ✅ **Higher-Order Function**
+### **Higher-Order Function**
 
 ```kotlin
 fun operate(a: Int, b: Int, op: (Int, Int) -> Int): Int {
@@ -318,7 +318,7 @@ fun operate(a: Int, b: Int, op: (Int, Int) -> Int): Int {
 }
 ```
 
-### ✅ **Calling**
+### **Calling**
 
 ```kotlin
 operate(2, 3, sum)
@@ -348,7 +348,7 @@ class Box<T>(val item: T)
 
 Used for asynchronous programming.
 
-### ✅ **Basic Coroutine**
+### **Basic Coroutine**
 
 ```kotlin
 import kotlinx.coroutines.*  fun main() = runBlocking {     
@@ -360,7 +360,7 @@ import kotlinx.coroutines.*  fun main() = runBlocking {
 }
 ```
 
-### ✅ **Coroutine Builders**
+### **Coroutine Builders**
 
 - `launch` → Fire & forget
 - `async` → Returns result (like future)
@@ -369,7 +369,7 @@ import kotlinx.coroutines.*  fun main() = runBlocking {
 
 # 16. **Kotlin in Android**
 
-### ✅ **Key Features**
+### **Key Features**
 
 - View Binding / Data Binding
 - Coroutines
@@ -402,7 +402,7 @@ sealed class Result data class Success(val data: String): Result() object Error:
 
 # 19. **Delegation**
 
-### ✅ **Class Delegation**
+### **Class Delegation**
 
 ```kotlin
 interface Base { fun print() }  
