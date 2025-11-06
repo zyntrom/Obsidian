@@ -231,12 +231,21 @@ map.remove('age');
 
 ---
 
-## 9. 🧠 Control Flow
+## 9. Control Flow
 
 ### If / Else
 
-if (a > b) { ... } else if (...) { ... } else { ... }
-
+```dart
+if (a > b) { 
+	... 
+} 
+else if (...) { 
+	... 
+} 
+else { 
+	... 
+}
+```
 ### Switch
 
 switch(day) {  
