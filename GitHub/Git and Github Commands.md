@@ -132,3 +132,112 @@ git log filename
 ```bash 
 git show commit_id
 ```
+
+## 5. BRANCHING & MERGING
+
+- List branches:
+
+```bash
+git branch
+```
+
+- Create new branch:
+
+```bash
+git branch branch_name
+```
+
+- Switch branch:
+
+```bash
+git checkout branch_name
+#(Or new way → git switch branch_name)
+```
+
+- Create & switch to new branch:
+
+```bash
+git checkout -b new_branch
+#(Or → git switch -c new_branch)
+```
+
+- Rename current branch:
+
+```bash
+git branch -m new_name
+```
+
+- Merge branch into current:
+
+```bash
+git merge branch_name
+```
+
+- Abort a merge in progress:
+
+```bash
+git merge --abort
+```
+
+- Delete branch:
+
+```bash
+git branch -d branch_name
+#(force delete → -D)
+```
+
+## 6. REMOTE REPOSITORIES
+
+- Show remotes:
+
+```bash
+git remote -v
+```
+
+- Add new remote:
+
+```bash
+git remote add origin https://github.com/user/repo.git
+```
+
+- Rename remote:
+
+```bash
+git remote rename oldname newname
+```
+
+- Remove remote:
+
+```bash
+git remote remove origin
+```
+
+- Fetch all branches from remote:
+
+```bash
+git fetch origin
+```
+
+- Push local branch to remote:
+
+```bash
+git push origin branch_name
+```
+
+- Push all branches:
+
+```bash
+git push --all origin
+```
+
+- Pull changes from remote:
+
+```bash
+git pull origin branch_name
+```
+
+- Set upstream (for tracking):
+
+```bash
+git push -u origin branch_name
+```
