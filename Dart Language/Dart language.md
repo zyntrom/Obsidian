@@ -413,48 +413,54 @@ throw Exception('Custom error');
 
 ### Future
 
+```dart
 Future<String> fetchData() async {  
-return 'Data loaded';  
+	return 'Data loaded';  
 }
+```
 
+```dart
 main() async {  
-var data = await fetchData();  
-print(data);  
+	var data = await fetchData();  
+	print(data);  
 }
+```
 
 ### Stream
 
+```dart
 Stream<int> counter() async* {  
-for (int i = 1; i <= 3; i++) yield i;  
+	for (int i = 1; i <= 3; i++) yield i;  
 }
 
 await for (var value in counter()) print(value);
 
+```
 ---
 
 ## 14. 🧰 Collections & Iterables
 
 ### Useful Methods:
 
+```dart
 list.where((x) => x > 2);  
 list.map((x) => x * 2).toList();  
 list.reduce((a, b) => a + b);  
 list.every((x) => x > 0);  
 list.any((x) => x < 0);  
 list.forEach(print);
+```
 
 ---
 
 ## 15. 🧩 Null Safety
 
 - Variables cannot be null unless explicitly marked `?`
-    
 - Example:  
     String? name;  
     name = null; ✅  
     String nonNull = 'Hi';  
     nonNull = null; ❌
-    
 
 Use `!` to assert non-null: `name!.length`  
 Use `?.` for safe access: `name?.length`
@@ -463,33 +469,41 @@ Use `?.` for safe access: `name?.length`
 
 ## 16. 📦 Libraries & Imports
 
+```dart
 import 'dart:math';  
 import 'dart:io';  
 import 'package:http/http.dart' as http;
+```
 
 ### Creating Library
 
+```dart
 library mylib;  
 part 'file.dart';  
 export 'utils.dart';
+```
 
 ---
 
 ## 17. 🧮 File I/O (dart:io)
 
+```dart
 import 'dart:io';
 
 File file = File('data.txt');  
 await file.writeAsString('Hello');  
 String text = await file.readAsString();  
 print(text);
+```
 
 ---
 
 ## 18. 🔄 Generics
 
+```dart
 List<int> numbers = [1, 2, 3];  
 T getFirst<T>(List<T> list) => list.first;
+```
 
 ---
 
