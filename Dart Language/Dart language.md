@@ -81,41 +81,52 @@ const pi = 3.1415;
 
 ### Comparison
 
-```
+```dart
 == != > < >= <=
 ```
 
 ### Logical
 
-`&& || !`
+```dart
+&& || !
+```
 
 ### Assignment
 
-`= += -= *= /= %=`
+```dart
+= += -= *= /= %=
+```
 
 ### Type Test
 
-`is`, `is!`
+```dart
+is, is!
+```
 
 Example:  
+
+```dart
 if (x is int) print('Integer');
+```
 
 ### Conditional / Ternary
 
-`condition ? expr1 : expr2`
+```dart
+condition ? expr1 : expr2
+```
 
 ### Null-aware Operators
 
 - `??` → if null, use right value
-    
 - `??=` → assign if null  
     Example:  
+
     name ??= 'Guest';
-    
+
 
 ---
 
-## 5. 🧮 Strings
+## 5. Strings
 
 ### Declaration
 
@@ -124,7 +135,9 @@ Multi-line: `'''hello'''` or `"""hello"""`
 
 ### Interpolation
 
+```
 'Hello $name' or 'Sum = ${a + b}'
+```
 
 ### String methods:
 
@@ -141,14 +154,17 @@ Multi-line: `'''hello'''` or `"""hello"""`
 
 ---
 
-## 6. 🧰 Lists (Arrays)
+## 6. Lists (Arrays)
 
 ### Declaration
 
-var list = [1, 2, 3];
+```dart
+var list = 1, 2, 3;
+```
 
 ### Operations
 
+```dart
 list.add(4);  
 list.remove(2);  
 list.insert(0, 10);  
@@ -157,14 +173,19 @@ list.length;
 list.isEmpty;  
 list.sort();  
 list.clear();
+```
 
 ### Spread Operator
 
-var list2 = [0, ...list];
+```dart
+var list2 = 0, ...list;
+```
 
 ### Fixed-length list
 
+```dart
 var fixed = List.filled(3, 0);
+```
 
 ---
 
@@ -172,33 +193,41 @@ var fixed = List.filled(3, 0);
 
 ### Declaration
 
+```dart
 var set = {1, 2, 3};
+```
 
 ### Operations
 
+```dart
 set.add(4);  
 set.remove(2);  
 set.contains(1);  
 set.union(otherSet);  
 set.intersection(otherSet);  
 set.difference(otherSet);
+```
 
 ---
 
-## 8. 🧾 Maps (Key-Value)
+## 8. Maps (Key-Value)
 
 ### Declaration
 
+```dart
 var map = {'name': 'John', 'age': 20};
+```
 
 ### Access & Modify
 
-map['name'];  
-map['city'] = 'Delhi';  
+```dart
+map'name';  
+map'city' = 'Delhi';  
 map.containsKey('name');  
 map.keys;  
 map.values;  
 map.remove('age');
+```
 
 ---
 
