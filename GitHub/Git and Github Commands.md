@@ -17,15 +17,16 @@ git config --list
 
 # 📁 2. Local Git Basics
 
-|Action|Command|
-|---|---|
-|Initialize a repo|`git init`|
-|Check status|`git status`|
-|Add specific file|`git add filename.ext`|
-|Add all files|`git add .`|
-|Unstage a file|`git reset filename.ext`|
-|Commit changes|`git commit -m "your message"`|
-|See commit history|`git log`|
+| Action             | Command                        |
+| ------------------ | ------------------------------ |
+| Initialize a repo  | `git init`                     |
+| Check status       | `git status`                   |
+| Add specific file  | `git add filename.ext`         |
+| Add all files      | `git add .`                    |
+| Unstage a file     | `git reset filename.ext`       |
+| Commit changes     | `git commit -m "your message"` |
+| See commit history | `git log`                      |
+|                    |                                |
 
 ---
 
