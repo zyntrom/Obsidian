@@ -384,25 +384,28 @@ class Dog implements Animal { ... }
 
 ### Mixins
 
+```dart
 mixin Runner { void run() => print('Running'); }
-
 class Athlete with Runner { ... }
+```
 
 ---
 
 ## 12. ⚙️ Exception Handling
 
+```dart
 try {  
-var result = 10 ~/ 0;  
+	var result = 10 ~/ 0;  
 } on IntegerDivisionByZeroException {  
-print('Cannot divide by zero');  
+	print('Cannot divide by zero');  
 } catch (e) {  
-print('Error: $e');  
+	print('Error: $e');  
 } finally {  
-print('Done');  
+	print('Done');  
 }
 
 throw Exception('Custom error');
+```
 
 ---
 
