@@ -248,24 +248,40 @@ else {
 ```
 ### Switch
 
+```dart
 switch(day) {  
-case 'Mon': print('Start'); break;  
-default: print('Unknown');  
+	case 'Mon': 
+		print('Start'); 
+		break;  
+	default: 
+		print('Unknown');  
 }
+```
 
 ### Loops
 
-for (var i = 0; i < 5; i++) { ... }  
-for (var x in list) { ... }  
-while (condition) { ... }  
-do { ... } while (condition);
+```dart
+for (var i = 0; i < 5; i++) { 
+	...
+}  
+
+for (var x in list) { 
+	... 
+}  
+
+while (condition) { 
+	... 
+}  
+
+do { 
+	... 
+} while (condition);
+```
 
 ### Break & Continue
 
 - `break` exits loop
-    
 - `continue` skips iteration
-    
 
 ---
 
@@ -276,20 +292,34 @@ do { ... } while (condition);
 ReturnType name(parameters) { ... }
 
 Example:  
-int add(int a, int b) { return a + b; }
 
+```dart
+int add(int a, int b) { return a + b; }
+```
 ### Arrow Function
 
+```dart
 int add(int a, int b) => a + b;
+```
 
 ### Optional & Named Parameters
 
-void greet({String name = 'Guest'}) { print('Hello $name'); }  
-void show([String? message]) { print(message ?? 'none'); }
+```dart
+void greet({String name = 'Guest'}) { 
+	print('Hello $name'); 
+}  
+void show(String? message) { 
+	print(message ?? 'none'); 
+}
+```
 
 ### Anonymous Functions
 
-list.forEach((item) { print(item); });
+```dart
+list.forEach((item) { 
+	print(item); 
+});
+```
 
 ---
 
