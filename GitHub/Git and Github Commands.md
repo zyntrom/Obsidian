@@ -241,3 +241,63 @@ git pull origin branch_name
 ```bash
 git push -u origin branch_name
 ```
+
+##  7. UPDATING & SYNCHRONIZING
+
+- Fetch latest changes (no merge):  
+
+```bash
+git fetch
+```
+
+- Merge fetched branch:  
+
+```bash
+git merge origin/main
+```
+
+- Pull = fetch + merge:  
+
+```bash
+git pull
+```
+
+- Rebase on top of latest main branch:  
+
+```bash
+git fetch origin  
+git rebase origin/main
+```
+
+- Cancel rebase:  
+
+```bash
+git rebase --abort
+```
+
+- Continue rebase after fixing conflicts:  
+
+```bash
+git rebase --continue
+```
+
+🧹 8. UNDOING CHANGES
+
+Unstage file:
+git reset filename
+
+Discard uncommitted changes:
+git checkout -- filename
+
+Undo last commit (keep changes):
+git reset --soft HEAD~1
+
+Undo last commit (discard changes):
+git reset --hard HEAD~1
+
+Revert a specific commit (create opposite commit):
+git revert commit_id
+
+Clean untracked files:
+git clean -f
+(clean directories too → git clean -fd)
