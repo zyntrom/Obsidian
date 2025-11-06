@@ -285,7 +285,7 @@ do {
 
 ---
 
-## 10. 🧩 Functions
+## 10. Functions
 
 ### Syntax
 
@@ -391,7 +391,7 @@ class Athlete with Runner { ... }
 
 ---
 
-## 12. ⚙️ Exception Handling
+## 12. Exception Handling
 
 ```dart
 try {  
@@ -409,7 +409,7 @@ throw Exception('Custom error');
 
 ---
 
-## 13. ⚡ Asynchronous Programming (Future, async, await)
+## 13. Asynchronous Programming (Future, async, await)
 
 ### Future
 
@@ -438,7 +438,7 @@ await for (var value in counter()) print(value);
 ```
 ---
 
-## 14. 🧰 Collections & Iterables
+## 14. Collections & Iterables
 
 ### Useful Methods:
 
@@ -453,7 +453,7 @@ list.forEach(print);
 
 ---
 
-## 15. 🧩 Null Safety
+## 15. Null Safety
 
 - Variables cannot be null unless explicitly marked `?`
 - Example:  
@@ -467,7 +467,7 @@ Use `?.` for safe access: `name?.length`
 
 ---
 
-## 16. 📦 Libraries & Imports
+## 16. Libraries & Imports
 
 ```dart
 import 'dart:math';  
@@ -485,7 +485,7 @@ export 'utils.dart';
 
 ---
 
-## 17. 🧮 File I/O (dart:io)
+## 17. File I/O (dart:io)
 
 ```dart
 import 'dart:io';
@@ -498,7 +498,7 @@ print(text);
 
 ---
 
-## 18. 🔄 Generics
+## 18. Generics
 
 ```dart
 List<int> numbers = [1, 2, 3];  
@@ -507,22 +507,26 @@ T getFirst<T>(List<T> list) => list.first;
 
 ---
 
-## 19. 🧱 Enums
+## 19. Enums
 
+```dart
 enum Color { red, green, blue }  
 var c = Color.red;  
 print(c.index);  
 print(Color.values);
+```
 
 ---
 
 ## 20. 🧩 Extension Methods
 
+```dart
 extension StringExtension on String {  
-String capitalize() => this[0].toUpperCase() + substring(1);  
+	String capitalize() => this0.toUpperCase() + substring(1);  
 }
 
 'hello'.capitalize();
+```
 
 ---
 
@@ -530,19 +534,25 @@ String capitalize() => this[0].toUpperCase() + substring(1);
 
 ### Isolates
 
+```dart
 Parallel threads for heavy tasks.  
 import 'dart:isolate';  
 Isolate.spawn(task, message);
+```
 
 ### Typedefs
 
+```dart
 typedef Operation = int Function(int, int);
 
 Operation add = (a, b) => a + b;
+```
 
 ### Assert
 
+```dart
 assert(age > 0);
+```
 
 ---
 
