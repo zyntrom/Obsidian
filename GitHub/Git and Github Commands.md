@@ -12,7 +12,7 @@ git config --global user.email "your@example.com"
 * Check current config:
 
 ```bash
-git cofig --list
+git config --list
 ```
 
 * Set default branch name
