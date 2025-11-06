@@ -32,21 +32,21 @@ fun main() {
 }
 ```
 
-### ✅ **Variables**
+### **Variables**
 
 |Type|Keyword|Example|
 |---|---|---|
 |Mutable|`var`|`var age = 21`|
 |Immutable|`val`|`val pi = 3.14`|
 
-### ✅ **Data Types**
+### **Data Types**
 
 - Numeric: `Int`, `Long`, `Float`, `Double`
 - Character: `Char`
 - String: `String`
 - Boolean: `Boolean`
 
-### ✅ **Type Inference**
+### **Type Inference**
 
 ```kotlin
 val name = "Alen"   // Kotlin automatically infers type String
@@ -306,17 +306,23 @@ class Utils {
 
 ### ✅ **Lambda**
 
-```
+```kotlin
 val sum = { a: Int, b: Int -> a + b }
 ```
 
 ### ✅ **Higher-Order Function**
 
-`fun operate(a: Int, b: Int, op: (Int, Int) -> Int): Int {     return op(a, b) }`
+```kotlin
+fun operate(a: Int, b: Int, op: (Int, Int) -> Int): Int {
+	return op(a, b) 
+}
+```
 
 ### ✅ **Calling**
 
-`operate(2, 3, sum)`
+```kotlin
+operate(2, 3, sum)
+```
 
 ---
 
@@ -324,13 +330,17 @@ val sum = { a: Int, b: Int -> a + b }
 
 Add new functions to existing classes.
 
-`fun String.lastChar(): Char = this[this.length - 1]  println("Hello".lastChar())`
+```kotlin
+fun String.lastChar(): Char = this[this.length - 1]  println("Hello".lastChar())
+```
 
 ---
 
 # 14. **Generics**
 
-`class Box<T>(val item: T)`
+```kotlin
+class Box<T>(val item: T)
+```
 
 ---
 
@@ -340,14 +350,20 @@ Used for asynchronous programming.
 
 ### ✅ **Basic Coroutine**
 
-`import kotlinx.coroutines.*  fun main() = runBlocking {     launch {         delay(1000)         println("World")     }     println("Hello") }`
+```kotlin
+import kotlinx.coroutines.*  fun main() = runBlocking {     
+	launch {         
+		delay(1000)         
+		println("World")     
+	}     
+	println("Hello") 
+}
+```
 
 ### ✅ **Coroutine Builders**
 
 - `launch` → Fire & forget
-    
 - `async` → Returns result (like future)
-    
 
 ---
 
@@ -356,13 +372,9 @@ Used for asynchronous programming.
 ### ✅ **Key Features**
 
 - View Binding / Data Binding
-    
 - Coroutines
-    
 - Kotlin Extensions
-    
 - Jetpack Compose support
-    
 
 ---
 
@@ -370,7 +382,11 @@ Used for asynchronous programming.
 
 Gradle uses Kotlin DSL.
 
-`plugins {     kotlin("jvm") version "2.0.0" }`
+```kotlin
+plugins {     
+	kotlin("jvm") version "2.0.0" 
+}
+```
 
 ---
 
@@ -378,7 +394,9 @@ Gradle uses Kotlin DSL.
 
 Used for representing restricted hierarchies (useful in MVVM).
 
-`sealed class Result data class Success(val data: String): Result() object Error: Result()`
+```kotlin
+sealed class Result data class Success(val data: String): Result() object Error: Result()
+```
 
 ---
 
@@ -386,7 +404,13 @@ Used for representing restricted hierarchies (useful in MVVM).
 
 ### ✅ **Class Delegation**
 
-`interface Base { fun print() }  class BaseImpl : Base {     override fun print() = println("Hello") }  class Derived(b: Base) : Base by b`
+```kotlin
+interface Base { fun print() }  
+class BaseImpl : Base {     
+	override fun print() = println("Hello") 
+}  
+class Derived(b: Base) : Base by b
+```
 
 ---
 
