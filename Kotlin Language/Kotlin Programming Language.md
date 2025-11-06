@@ -271,7 +271,11 @@ class Student(val name: String, val roll: Int)
 ### ✅ **Secondary Constructor**
 
 ```kotlin
-class Test {     constructor(x: Int) {         println(x)     } }
+class Test {     
+	constructor(x: Int) {         
+		println(x)     
+	} 
+}
 ```
 
 ---
@@ -280,11 +284,21 @@ class Test {     constructor(x: Int) {         println(x)     } }
 
 ### ✅ **Singleton**
 
-`object Database {     fun connect() = println("Connected") }`
+```kotlin
+object Database {     
+	fun connect() = println("Connected") 
+}
+```
 
 ### ✅ **Companion Object**
 
-`class Utils {     companion object {         fun msg() = println("Static-like method")     } }`
+```kotlin
+class Utils {     
+	companion object {         
+		fun msg() = println("Static-like method")     
+	} 
+}
+```
 
 ---
 
@@ -292,7 +306,9 @@ class Test {     constructor(x: Int) {         println(x)     } }
 
 ### ✅ **Lambda**
 
-`val sum = { a: Int, b: Int -> a + b }`
+```
+val sum = { a: Int, b: Int -> a + b }
+```
 
 ### ✅ **Higher-Order Function**
 
