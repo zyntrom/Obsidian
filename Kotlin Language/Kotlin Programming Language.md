@@ -56,13 +56,13 @@ val name = "Alen"   // Kotlin automatically infers type String
 
 # 3. **Strings**
 
-### ✅ **String Templates**
+### **String Templates**
 
 ```kotlin
 val name = "Alen" println("Hello $name")
 ```
 
-### ✅ **Multiline Strings**
+### **Multiline Strings**
 
 ```kotlin
 val text = 
@@ -79,7 +79,7 @@ val text =
 val max = if (a > b) a else b
 ```
 
-### ✅ **When (Switch)**
+### **When (Switch)**
 
 ```kotlin
 when (x) {     
@@ -93,20 +93,20 @@ else -> println("Unknown") }
 
 # 5. **Loops**
 
-### ✅ **For Loop**
+### **For Loop**
 
 ```kotlin
 for (i in 1..5) 
 	println(i)
 ```
 
-### ✅ **While**
+### **While**
 
 ```kotlin
 while (i < 5) i++
 ```
 
-### ✅ **Ranges**
+### **Ranges**
 
 - `1..5` (includes 5)
 - `1 until 5` (excludes 5)
@@ -117,7 +117,7 @@ while (i < 5) i++
 
 # 6. **Functions**
 
-### ✅ **Basic Function**
+### **Basic Function**
 
 ```kotlin
 fun add(a: Int, b: Int): Int {     
@@ -125,13 +125,13 @@ fun add(a: Int, b: Int): Int {
 }
 ```
 
-### ✅ **Single Expression Function**
+### **Single Expression Function**
 
 ```kotlin
 fun mul(a: Int, b: Int) = a * b
 ```
 
-### ✅ **Default Parameters**
+### **Default Parameters**
 
 ```kotlin
 fun greet(name: String = "User") {     
@@ -139,7 +139,7 @@ fun greet(name: String = "User") {
 }
 ```
 
-### ✅ **Named Arguments**
+### **Named Arguments**
 
 ```kotlin
 greet(name = "Alen")
@@ -149,19 +149,19 @@ greet(name = "Alen")
 
 # 7. **Null Safety (Kotlin’s Superpower)**
 
-### ✅ **Nullable Type**
+### **Nullable Type**
 
 ```kotlin
 var name: String? = null
 ```
 
-### ✅ **Safe Call Operator “?.“**
+### **Safe Call Operator “?.“**
 
 ```kotlin
 println(name?.length)
 ```
 
-### ✅ **Elvis Operator " ?: "**
+### **Elvis Operator " ?: "**
 
 Provides default when null.
 
@@ -169,7 +169,7 @@ Provides default when null.
 val length = name?.length ?: 0
 ```
 
-### ✅ **Not-Null Assertion “!!”**
+### **Not-Null Assertion “!!”**
 
 (Throws exception if null)
 
@@ -181,20 +181,20 @@ val l = name!!.length
 
 # 8. **Collections**
 
-### ✅ **List**
+### **List**
 
 ```kotlin
 val list = listOf(1,2,3)       // Immutable 
 val mlist = mutableListOf(1,2) // Mutable
 ```
 
-### ✅ **Set**
+### **Set**
 
 ```kotlin
 val set = setOf(1,2,2,3)       // Unique elements
 ```
 
-### ✅ **Map**
+### **Map**
 
 ```kotlin
 val map = mapOf("a" to 1, "b" to 2)
@@ -204,19 +204,19 @@ val map = mapOf("a" to 1, "b" to 2)
 
 # 9. **Object-Oriented Programming**
 
-## ✅ **Classes**
+## **Classes**
 
 ```kotlin
 class Person(val name: String, var age: Int)
 ```
 
-## ✅ **Creating Objects**
+## **Creating Objects**
 
 ```kotlin
 val p = Person("Alen", 21)
 ```
 
-## ✅ **Inheritance**
+## **Inheritance**
 
 - `open` keyword allows inheritance.
 
@@ -229,7 +229,7 @@ class Dog : Animal() {
 }
 ```
 
-## ✅ **Abstract Classes**
+## **Abstract Classes**
 
 ```kotlin
 abstract class Shape {     
@@ -237,7 +237,7 @@ abstract class Shape {
 }
 ```
 
-## ✅ **Interfaces**
+## **Interfaces**
 
 ```kotlin
 interface A {     
@@ -245,7 +245,7 @@ interface A {
 }
 ```
 
-## ✅ **Data Classes**
+## **Data Classes**
 
 Automatically generates:
 
@@ -262,13 +262,13 @@ data class User(val name: String, val age: Int)
 
 # 10. **Constructors**
 
-### ✅ **Primary Constructor**
+### **Primary Constructor**
 
 ```kotlin
 class Student(val name: String, val roll: Int)
 ```
 
-### ✅ **Secondary Constructor**
+### **Secondary Constructor**
 
 ```kotlin
 class Test {     
