@@ -185,9 +185,9 @@ fn divide(a: i32, b: i32) -> Result<i32, String> {
 ```
 
 ---
-
 ## 11. Collections
-- Vec<T>
+
+- Vec< T>
 - HashMap<K, V>
 - String
 
@@ -350,4 +350,5 @@ use std::sync::Arc;
 - Rust is strict but rewarding.
 
 ---
+
 
