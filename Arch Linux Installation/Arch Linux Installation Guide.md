@@ -69,7 +69,8 @@ timedatectl
 * In this case we will use cfdisk as it is easy to use.
 
 ```bash
-cfdisk
+lsblk
+cfdisk /dev/<partition>
 ```
 
 * If it ask for label type select gpt
