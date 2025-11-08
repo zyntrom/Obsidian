@@ -275,7 +275,7 @@ sudo pacman -Syu
 * For you to use internet when you load the OS
 
 ```bash
-systemctl enable NetworkManager
+sudo systemctl enable NetworkManager
 ```
 
 ## Setting up Grub for dual booting
