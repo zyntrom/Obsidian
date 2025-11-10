@@ -291,17 +291,17 @@ lsblk -f
 ```bash
 mount /dev/nvme0n1p1 /mnt/boot/efi
 ```
-
+* Chroot into arch
 * Install dual booting package
 
 ```bash
-pacman -S grub efibootmgr os-prober
+sudo pacman -S grub efibootmgr os-prober
 ```
 
 * Edit or check /etc/default/grub and ensure this line is uncommented
 
 ```bash
-nano /etc/default/grub
+sudo nano /etc/default/grub
 ```
 
 edit
@@ -314,19 +314,19 @@ GRUB_DISABLE_OS_PROBER=false
 
 
 ```bash
-os-prober
+sudo os-prober
 ```
 
 * GRUB to EFI
 
 ```bash
-grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=Arch
+sudo grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=Arch
 ```
 
 * Generate GRUB Configuration
 
 ```bash
-grub-mkconfig -o /boot/efi/grub/grub.cfg
+sudo grub-mkconfig -o /boot/efi/grub/grub.cfg
 ```
 
 
