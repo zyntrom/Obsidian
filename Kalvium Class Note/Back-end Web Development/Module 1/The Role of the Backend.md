@@ -200,6 +200,14 @@ This activity demonstrates:
 - Response generation
 
 ---
+```embed
+title: "How the Backend works? Server, Application, Database, and API ( by CodeON Jason K )"
+image: "https://i.ytimg.com/vi/gOghS3BmaxI/maxresdefault.jpg"
+description: "We have talked a lot about the front end so far. You know what HTML, CSS, and JavaScript are and how they work on a website with some examples [https://youtu..."
+url: "https://youtu.be/gOghS3BmaxI"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ## **7. Key Terms (Precise Definitions)**
 
