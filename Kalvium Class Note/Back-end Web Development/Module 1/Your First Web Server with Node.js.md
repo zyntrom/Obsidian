@@ -170,18 +170,21 @@ node server.js
 
 Open browser and go to:
 
-```
+```bash
 http://localhost:3000
 ```
 
 Output:
 
-`Hello, World!`
+```bash
+Hello, World!
+```
 
 Stop server:
 
-`Ctrl + C`
-
+```bash
+Ctrl + C
+```
 ---
 
 # ✅ **10. Assignment Answers (req and res Explanation)**
@@ -189,30 +192,18 @@ Stop server:
 ### **req (Request Object)**
 
 - Represents the incoming HTTP request.
-    
 - Contains details like:
-    
     - URL path (`req.url`)
-        
     - HTTP method (`req.method`)
-        
     - Headers (`req.headers`)
-        
     - Body data (for POST/PUT)
-        
 - Used to determine what the client is asking for.
-    
 
 ### **res (Response Object)**
 
 - Represents the outgoing HTTP response.
-    
 - Contains methods to build and send the reply.
-    
 - Main methods:
-    
     - `res.writeHead()` to set status code and headers.
-        
     - `res.end()` to send the body and finish the response.
-        
 - Used to control exactly what is returned to the client.
