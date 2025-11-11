@@ -77,13 +77,17 @@ Specifically:
 
 Example of the mistake:
 
-`exports = function() { ... }`
+```js
+exports = function() { ... }
+```
 
 This does **not** export anything because it breaks the reference to `module.exports`.
 
 Correct pattern:
 
-`module.exports = function() { ... }`
+```js
+module.exports = function() { ... }
+```
 
 ---
 
@@ -107,17 +111,11 @@ This teaches real-world debugging habits.
 ## 7. Key Concepts (Exam Points)
 
 - AI tools can interpret error messages and stack traces.
-    
 - Debugging always begins with reproducing the error.
-    
 - Copilot Chat can explain errors, suggest fixes, and clarify concepts.
-    
 - `module.exports` and `exports` behave differently when exporting single values.
-    
 - A faulty export strategy can break module functionality.
-    
 - Creating a separate branch and Pull Request is standard professional workflow.
-    
 
 ---
 
