@@ -154,13 +154,9 @@ async function showData() {
 ### **Benefits**
 
 - Linear, readable flow.
-    
 - Natural error handling with try/catch.
-    
 - Easiest to maintain and reason about.
-    
 - Standard for modern Node.js development.
-    
 
 ---
 
@@ -169,33 +165,22 @@ async function showData() {
 ### **Callbacks**
 
 - Deeply nested.
-    
 - Error handling per callback.
-    
 - Hard to maintain.
-    
 - Causes callback hell.
-    
 
 ### **Promises**
 
 - Flat structure using chaining.
-    
 - Single `.catch()` for errors.
-    
 - Better readability.
-    
 
 ### **async/await**
 
 - Looks synchronous but remains non-blocking.
-    
 - Uses try/catch.
-    
 - Cleanest and most intuitive.
-    
 - Preferred in all modern JavaScript/Node.js codebases.
-    
 
 ---
 
@@ -221,18 +206,11 @@ async function showData() {
 # ✅ **8. Lesson Recap (Short, Exam-Oriented)**
 
 - JavaScript is **single-threaded**, so async operations prevent blocking.
-    
 - **Callbacks** introduced async behavior but created callback hell.
-    
 - **Promises** improved readability, structure, and error handling.
-    
 - **async/await** is syntactic sugar built on Promises and is the current standard.
-    
 - All modern asynchronous JavaScript uses **Promises internally**.
-    
 - `await` makes async code look synchronous while remaining non-blocking.
-    
 - Use `try/catch` with async/await for centralized error handling.
-    
 
 ---
