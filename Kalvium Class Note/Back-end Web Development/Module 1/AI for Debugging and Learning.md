@@ -77,7 +77,7 @@ Specifically:
 
 Example of the mistake:
 
-```js
+```jsp
 exports = function() { ... }
 ```
 
