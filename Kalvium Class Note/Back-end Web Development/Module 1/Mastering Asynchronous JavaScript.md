@@ -25,33 +25,40 @@ A callback is a function passed as an argument to another function, executed **a
 
 ### **Example**
 
-`setTimeout(() => {   console.log("Task complete"); }, 2000);`
+```js
+setTimeout(() => {   
+	console.log("Task complete"); 
+}, 2000);
+```
 
 ### **Benefits**
 
 - Simple mechanism.
-    
 - Works for basic asynchronous tasks.
-    
 
 ### **Problems**
 
 1. **Callback Hell / Pyramid of Doom**
-    
     - Nested callbacks for dependent tasks become unreadable.
-        
 2. **Difficult Error Handling**
-    
     - Must check `error` at every level.
-        
 3. **Inversion of Control**
-    
     - You're giving control to external code, which may misuse or fail to call your callback.
-        
 
 ### **Callback Hell Example**
 
-`db.getUser(id, (err, user) => {   if (err) return handle(err);   db.getPosts(user.id, (err, posts) => {     if (err) return handle(err);     db.getComments(posts[0].id, (err, comments) => {       if (err) return handle(err);       console.log(comments);     });   }); });`
+```js
+db.getUser(id, (err, user) => {   
+	if (err) return handle(err);   
+	db.getPosts(user.id, (err, posts) => {     
+		if (err) return handle(err);     
+		db.getComments(posts[0].id, (err, comments) => {       
+			if (err) return handle(err);       
+			console.log(comments);     
+			});   
+		}); 
+	});
+```
 
 ---
 
@@ -64,24 +71,25 @@ A Promise is an object representing the **result of an asynchronous operation** 
 ### **Promise States**
 
 1. `pending`: Initial state.
-    
 2. `fulfilled`: Operation completed successfully.
-    
 3. `rejected`: Operation failed.
-    
 
 ### **How a Promise Works**
 
 A Promise constructor gets two functions:
 
 - `resolve(value)` for success.
-    
 - `reject(error)` for failure.
-    
 
 ### **Example**
 
-`function fetchData() {   return new Promise((resolve, reject) => {     setTimeout(() => resolve("done"), 1000);   }); }`
+```js
+function fetchData() {   
+	return new Promise((resolve, reject) => {     
+		setTimeout(() => resolve("done"), 1000);   
+	}); 
+}
+```
 
 ---
 
@@ -89,22 +97,29 @@ A Promise constructor gets two functions:
 
 ### **Syntax**
 
-`fetchData()   .then(result => console.log(result))   .catch(error => console.error(error));`
+```js
+fetchData()   
+.then(result => console.log(result))   
+.catch(error => console.error(error));
+```
 
 ### **Promise Chaining**
 
 Allows flattening nested callbacks.
 
-`db.getUser(id)   .then(user => db.getPosts(user.id))   .then(posts => db.getComments(posts[0].id))   .then(comments => console.log(comments))   .catch(err => console.error(err));`
+```js
+db.getUser(id)   
+.then(user => db.getPosts(user.id))   
+.then(posts => db.getComments(posts[0].id))   
+.then(comments => console.log(comments))   
+.catch(err => console.error(err));
+```
 
 ### **Benefits of Promises**
 
 - Flat structure instead of deep nesting.
-    
 - Centralized error handling (`.catch()`).
-    
 - More predictable flow.
-    
 
 ---
 
@@ -117,17 +132,24 @@ Allows flattening nested callbacks.
 ### **Rules**
 
 - `async` before a function means it returns a Promise.
-    
 - `await` can only be used **inside an async function**.
-    
 - `await` pauses execution until the Promise settles.
-    
 - Uses `try/catch` for error handling.
-    
 
 ### **Example**
 
-`async function showData() {   try {     const user = await db.getUser(id);     const posts = await db.getPosts(user.id);     const comments = await db.getComments(posts[0].id);     console.log(comments);   } catch (err) {     console.error(err);   } }`
+```js
+async function showData() {   
+	try {     
+		const user = await db.getUser(id);     
+		const posts = await db.getPosts(user.id);     
+		const comments = await db.getComments(posts[0].id); 
+		console.log(comments);   } 
+	catch (err) {     
+		console.error(err);   
+	} 
+}
+```
 
 ### **Benefits**
 
