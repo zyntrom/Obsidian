@@ -49,6 +49,14 @@ We’ll discover relationships using **3 questions**:
 |Users & Profiles|User ↔ Profile|**1-to-1**|One user → One profile|
 |Users & Posts|User ↔ Posts|**1-to-Many**|One user → Many posts|
 |Users & Groups|User ↔ Groups|**Many-to-Many**|Many users can join many groups|
+```embed
+title: "DBMS 1 to many,many to many,1 to 1 relationships"
+image: "https://i.ytimg.com/vi/O1bi5MjqsAc/maxresdefault.jpg"
+description: "DBMS 1 to many,many to many,1 to 1 relationships"
+url: "https://youtu.be/O1bi5MjqsAc"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ---
 
@@ -110,26 +118,29 @@ One bookshelf holds many books, but each book belongs to one bookshelf.
 #### Author Document:
 
 ```json
-
+{
+  "_id": "authorABC",
+  "name": "Alice",
+  "posts": ["post1", "post2", "post3"]
+}
 ```
 
 #### Post Documents:
 
-`{ "_id": "post1", "title": "My First Post" }, { "_id": "post2", "title": "My Second Post" }, { "_id": "post3", "title": "My Third Post" }`
-
+```json
+{ "_id": "post1", "title": "My First Post" },
+{ "_id": "post2", "title": "My Second Post" },
+{ "_id": "post3", "title": "My Third Post" }
+```
 ### 🔗 Relationship:
 
 - One Author → Many Posts
-    
 - Each Post → One Author
-    
 
 ### ⚙️ **How to Model:**
 
 - Parent (Author) stores an **array of child IDs** (`posts`).
-    
 - Ideal for moderate “many” counts where you often fetch children from parent.
-    
 
 ---
 
@@ -140,28 +151,59 @@ One bookshelf holds many books, but each book belongs to one bookshelf.
 Many documents in one collection relate to **many documents** in another.
 
 💡 Analogy: Students ↔ Courses
-
 - A student can enroll in multiple courses.
-    
 - A course can have multiple students.
-    
+
+```embed
+title: "SQL Server Tutorial - One-to-many and many-to-many table relationships"
+image: "https://i.ytimg.com/vi/4q-keGvUnag/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYACzAWKAgwIABABGGUgZShlMA8=&rs=AOn4CLBDWMXbpBPoPHjNvOwD3ibGv2ar4w"
+description: "LinkedIn Learning is the next generation of Lynda.com. Grow your skills by exploring more SQL Server courses today: https://www.linkedin.com/learning/topics/..."
+url: "https://youtu.be/4q-keGvUnag"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ### 💾 Example: Students ↔ Courses
 
 #### Student Documents:
 
-`{   "_id": "student1",   "name": "Bob",   "courses": ["courseA", "courseC"] }, {   "_id": "student2",   "name": "Charlie",   "courses": ["courseB", "courseC"] }`
+```json
+{
+  "_id": "student1",
+  "name": "Bob",
+  "courses": ["courseA", "courseC"]
+},
+{
+  "_id": "student2",
+  "name": "Charlie",
+  "courses": ["courseB", "courseC"]
+}
+```
 
 #### Course Documents:
 
-`{   "_id": "courseA",   "name": "History 101",   "students": ["student1"] }, {   "_id": "courseB",   "name": "Math 202",   "students": ["student2"] }, {   "_id": "courseC",   "name": "Art 303",   "students": ["student1", "student2"] }`
+```json
+{
+  "_id": "courseA",
+  "name": "History 101",
+  "students": ["student1"]
+},
+{
+  "_id": "courseB",
+  "name": "Math 202",
+  "students": ["student2"]
+},
+{
+  "_id": "courseC",
+  "name": "Art 303",
+  "students": ["student1", "student2"]
+}
+```
 
 ### 🔗 Relationship:
 
 - Two-way referencing (arrays of IDs in both entities).
-    
 - Used when both sides need to quickly know their connections.
-    
 
 ---
 
@@ -173,11 +215,8 @@ Many documents in one collection relate to **many documents** in another.
 It answers the question **“How many?”**
 
 It helps decide whether to:
-
 - **Embed** documents (put inside parent)
-    
 - **Reference** documents (link via IDs)
-    
 
 ---
 
@@ -202,26 +241,23 @@ It helps decide whether to:
 
 1. **Identify Entities**  
     From your workload characterization (e.g., User, Product, Order, Comment)
-    
 2. **Draw Boxes**  
     Each entity = one box.
-    
 3. **Connect Entities**  
     Draw lines to represent relationships.
-    
 4. **Label Relationship Type**  
     Write on each line:
-    
     - “1-to-1”
-        
     - “1-to-Many”
-        
     - “Many-to-Many”
-        
 
 ### 💡 Example: Blog App
 
-`User (1) ──────> (Many) Post Post (1) ──────> (Many) Comment User (Many) <────> (Many) Group`
+```json
+User (1) ──────> (Many) Post
+Post (1) ──────> (Many) Comment
+User (Many) <────> (Many) Group
+```
 
 Can be drawn in Excalidraw or similar tools.
 
@@ -254,9 +290,7 @@ Can be drawn in Excalidraw or similar tools.
 ## 📘 **References**
 
 - **MongoDB Blog**: _6 Rules of Thumb for Schema Design_
-    
 - **MongoDB Docs**: _Modeling Relationships in NoSQL_
-    
 
 ---
 
