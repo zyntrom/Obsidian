@@ -107,26 +107,33 @@ console.log(greetFunction('Architect'));
 
 Output:
 
-`Hello, Architect! Welcome to the world of modules.`
+```bash
+Hello, Architect! Welcome to the world of modules.
+```
 
 ---
 
 ### **(B) Importing an Object (Multiple Exports)**
 
-`// server.js const mathUtils = require('./utils.js'); console.log(mathUtils.add(5, 3)); // 8  // OR destructure directly const { add, subtract } = require('./utils.js'); console.log(subtract(10, 4)); // 6`
+```js
+// server.js
+const mathUtils = require('./utils.js');
+console.log(mathUtils.add(5, 3)); // 8
+
+// OR destructure directly
+const { add, subtract } = require('./utils.js');
+console.log(subtract(10, 4)); // 6
+
+```
 
 ---
 
 ### **Key Points**
 
 - Always include `./` when importing **local** files.
-    
     - ✅ `require('./utils.js')`
-        
     - ❌ `require('utils')` (this looks for a package in node_modules)
-        
 - `require()` executes the module once and **caches** it — efficient reuse.
-    
 
 ---
 
@@ -166,11 +173,27 @@ The **fs (File System)** module allows Node.js to interact with the computer’s
 
 Create a file `data.txt`:
 
-`This is a secret message from the file system!`
-
+```txt
+This is a secret message from the file system!
+```
 Now create `server.js`:
 
-`// server.js const fs = require('fs').promises; // Import the Promise-based fs  async function readFileContent() {   try {     const data = await fs.readFile('data.txt', 'utf8'); // Read as text     console.log("File content:", data);   } catch (error) {     console.error("Error reading the file:", error);   } }  readFileContent();`
+```js
+// server.js
+const fs = require('fs').promises; // Import the Promise-based fs
+
+async function readFileContent() {
+  try {
+    const data = await fs.readFile('data.txt', 'utf8'); // Read as text
+    console.log("File content:", data);
+  } catch (error) {
+    console.error("Error reading the file:", error);
+  }
+}
+
+readFileContent();
+
+```
 
 ### **Explanation**
 
@@ -182,7 +205,9 @@ Now create `server.js`:
 
 **Output:**
 
-`File content: This is a secret message from the file system!`
+```
+File content: This is a secret message from the file system!
+```
 
 ---
 
@@ -194,23 +219,56 @@ Goal: Build a modular server that reads a message from a text file and serves it
 
 ### **Step 1: Create greeting.txt**
 
-`Hello from a modular server!`
+```
+Hello from a modular server!
+```
 
 ---
 
 ### **Step 2: utils.js**
 
-`const fs = require('fs').promises;  // Exported async function that reads greeting from file async function getGreeting() {   try {     const message = await fs.readFile('greeting.txt', 'utf8');     return message;   } catch (error) {     console.error("Error reading greeting:", error);   } }  module.exports = { getGreeting };`
+```js
+const fs = require('fs').promises;
+
+// Exported async function that reads greeting from file
+async function getGreeting() {
+  try {
+    const message = await fs.readFile('greeting.txt', 'utf8');
+    return message;
+  } catch (error) {
+    console.error("Error reading greeting:", error);
+  }
+}
+
+module.exports = { getGreeting };
+
+```
 
 ---
 
 ### **Step 3: server.js**
 
-`const http = require('http'); const { getGreeting } = require('./utils.js');  const server = http.createServer(async (req, res) => {   const greeting = await getGreeting(); // Read message from file   res.writeHead(200, { 'Content-Type': 'text/plain' });   res.end(greeting); });  server.listen(3000, () => {   console.log('Server running on http://localhost:3000'); });`
+```js
+const http = require('http');
+const { getGreeting } = require('./utils.js');
+
+const server = http.createServer(async (req, res) => {
+  const greeting = await getGreeting(); // Read message from file
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
+  res.end(greeting);
+});
+
+server.listen(3000, () => {
+  console.log('Server running on http://localhost:3000');
+});
+
+```
 
 **Output (on visiting browser):**
 
-`Hello from a modular server!`
+```
+Hello from a modular server!
+```
 
 ---
 
@@ -219,23 +277,34 @@ Goal: Build a modular server that reads a message from a text file and serves it
 ### **Task**
 
 - Create `data.json` with structured data.
-    
 - Use `fs.promises.readFile()` to read it.
-    
 - Convert text to an object using `JSON.parse()`.
-    
 
 **Example:**
 
-`const fs = require('fs').promises;  async function readJSON() {   const data = await fs.readFile('data.json', 'utf8');   const parsed = JSON.parse(data);   console.log(parsed); }  readJSON();`
+```js
+const fs = require('fs').promises;
 
+async function readJSON() {
+  const data = await fs.readFile('data.json', 'utf8');
+  const parsed = JSON.parse(data);
+  console.log(parsed);
+}
+
+readJSON();
+
+```
 **data.json**
 
-`{   "name": "Kalvium",   "course": "Full Stack Web Development" }`
+```json
+{   "name": "Kalvium",   "course": "Full Stack Web Development" }
+```
 
 **Output**
 
-`{ name: 'Kalvium', course: 'Full Stack Web Development' }`
+```json
+{ name: 'Kalvium', course: 'Full Stack Web Development' }
+```
 
 ---
 
