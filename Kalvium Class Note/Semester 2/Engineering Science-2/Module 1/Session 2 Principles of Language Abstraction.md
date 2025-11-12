@@ -18,6 +18,15 @@ Language abstraction hides unnecessary complexity and exposes only **essential f
 - Reduce cognitive overload
 - Enable reuse and scalability
 
+```embed
+title: "What is abstraction in programming?"
+image: "https://i.ytimg.com/vi/L1-zCdrx8Lk/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLDF6OLER54gocooqzduBPailRwSVA"
+description: "Get \"Ultimate bGuide to Software Freelancing\" - a FREE roadmap for a very, very lucrative career. CLICK HERE: https://iamdev.net/free------------------------..."
+url: "https://youtu.be/L1-zCdrx8Lk"
+favicon: ""
+aspectRatio: "56.25"
+```
+
 ---
 
 ## 🏗 **Fundamental Principles of Abstraction**
@@ -123,7 +132,6 @@ def calculate_discounted_price(price, discount):
 ## 🎁 **Bonus Content**
 
 - [Abstraction | Medium](https://medium.com/)
-    
 - [Data Abstraction in DBMS | Hero Vired](https://www.herovired.com/)
-    
 - OS Resource Management | Learnlearn
+![[Pasted image 20251112155345.png]]
