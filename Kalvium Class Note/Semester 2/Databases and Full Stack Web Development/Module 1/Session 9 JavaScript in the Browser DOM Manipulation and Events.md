@@ -111,7 +111,7 @@ box.classList.contains('active'); // returns true/false
 
 ### **a. Create Elements**
 
-```
+```js
 const newDiv = document.createElement('div');
 newDiv.textContent = 'I am new!';
 newDiv.classList.add('cool-div');
@@ -119,7 +119,9 @@ newDiv.classList.add('cool-div');
 
 ### **b. Add to DOM**
 
-`document.querySelector('.container').appendChild(newDiv);`
+```js
+document.querySelector('.container').appendChild(newDiv);
+```
 
 ### **c. Insertion Methods**
 
@@ -129,6 +131,14 @@ newDiv.classList.add('cool-div');
 |`prepend()`|Beginning|`parent.prepend(child)`|
 |`before()`|Before element|`element.before(newEl)`|
 |`after()`|After element|`element.after(newEl)`|
+```embed
+title: "The JavaScript DOM explained in 5 minutes! 🌳"
+image: "https://i.ytimg.com/vi/NO5kUNxGIu0/maxresdefault.jpg"
+description: "#JavaScript #tutorial #course// DOM = DOCUMENT OBJECT MODEL//              Object{} that represents the page you see in the web browser //              and p..."
+url: "https://youtu.be/NO5kUNxGIu0"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ---
 
@@ -137,16 +147,15 @@ newDiv.classList.add('cool-div');
 ### **Definition**
 
 - **Events** are actions (clicks, key presses, submissions) users perform.
-    
 - **Event listeners** make JS respond to these actions.
-    
 
 ---
 
 ### **a. `addEventListener()` Syntax**
 
-`element.addEventListener('eventType', callbackFunction);`
-
+```js
+element.addEventListener('eventType', callbackFunction);
+```
 ---
 
 ### **b. Common Event Types**
@@ -163,25 +172,41 @@ newDiv.classList.add('cool-div');
 
 ### **c. Click Event Example**
 
-`button.addEventListener('click', () => {     alert('Button clicked!'); });`
+```js
+button.addEventListener('click', () => {
+    alert('Button clicked!');
+});
+```
 
 ---
 
 ### **d. Form Event Example**
 
-`form.addEventListener('submit', (e) => {     e.preventDefault(); // stop page reload     console.log('Form submitted!'); });`
+```js
+form.addEventListener('submit', (e) => {
+    e.preventDefault(); // stop page reload
+    console.log('Form submitted!');
+});
+```
 
 ---
 
 ### **e. Input Event Example**
 
-`searchBox.addEventListener('input', (e) => {     console.log(e.target.value); });`
+```js
+searchBox.addEventListener('input', (e) => {
+    console.log(e.target.value);
+});
+```
 
 ---
 
 ### **f. Mouse Events Example**
 
-`box.addEventListener('mouseenter', () => box.classList.add('hovered')); box.addEventListener('mouseleave', () => box.classList.remove('hovered'));`
+```js
+box.addEventListener('mouseenter', () => box.classList.add('hovered'));
+box.addEventListener('mouseleave', () => box.classList.remove('hovered'));
+```
 
 ---
 
@@ -189,7 +214,15 @@ newDiv.classList.add('cool-div');
 
 Each event listener automatically receives an **event object**.
 
-`button.addEventListener('click', (e) => {     console.log(e.target);    // element clicked     console.log(e.type);      // 'click'     console.log(e.clientX);   // X position     e.preventDefault();       // stops default action     e.stopPropagation();      // prevents bubbling });`
+```js
+button.addEventListener('click', (e) => {
+    console.log(e.target);    // element clicked
+    console.log(e.type);      // 'click'
+    console.log(e.clientX);   // X position
+    e.preventDefault();       // stops default action
+    e.stopPropagation();      // prevents bubbling
+});
+```
 
 |Property|Meaning|
 |---|---|
@@ -205,15 +238,47 @@ Each event listener automatically receives an **event object**.
 
 ### **Project 1: Interactive Todo**
 
-`addButton.addEventListener('click', () => {   const li = document.createElement('li');   li.textContent = todoInput.value;   li.classList.add('todo-item');   li.addEventListener('click', () => li.remove());   todoList.appendChild(li);   todoInput.value = ''; });`
+```js
+addButton.addEventListener('click', () => {
+  const li = document.createElement('li');
+  li.textContent = todoInput.value;
+  li.classList.add('todo-item');
+  li.addEventListener('click', () => li.remove());
+  todoList.appendChild(li);
+  todoInput.value = '';
+});
+```
 
 ### **Project 2: Dark Mode Toggle**
 
-`toggleButton.addEventListener('click', () => {   document.body.classList.toggle('dark-mode');   toggleButton.textContent =     document.body.classList.contains('dark-mode')       ? '☀️ Light Mode'       : '🌙 Dark Mode'; });`
+```js
+toggleButton.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+  toggleButton.textContent =
+    document.body.classList.contains('dark-mode')
+      ? '☀️ Light Mode'
+      : '🌙 Dark Mode';
+});
+```
 
 ### **Project 3: Form Validation**
 
-`form.addEventListener('submit', (e) => {   e.preventDefault();   const email = emailInput.value;    if (!email.includes('@')) {     errorMsg.textContent = 'Enter a valid email';     errorMsg.classList.add('visible');     emailInput.classList.add('error');   } else {     errorMsg.classList.remove('visible');     emailInput.classList.remove('error');   } });`
+```js
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const email = emailInput.value;
+
+  if (!email.includes('@')) {
+    errorMsg.textContent = 'Enter a valid email';
+    errorMsg.classList.add('visible');
+    emailInput.classList.add('error');
+  } else {
+    errorMsg.classList.remove('visible');
+    emailInput.classList.remove('error');
+  }
+});
+
+```
 
 ---
 
@@ -225,7 +290,26 @@ A counter with **Increment**, **Decrement**, and **Reset** buttons.
 
 ### **Steps**
 
-`function setupCounterApp() {   const countDisplay = document.getElementById('count');   const incrementBtn = document.getElementById('increment');   const decrementBtn = document.getElementById('decrement');   const resetBtn = document.getElementById('reset');    let count = 0;    const updateDisplay = () => {     countDisplay.textContent = count;   };    incrementBtn.addEventListener('click', () => { count++; updateDisplay(); });   decrementBtn.addEventListener('click', () => { count--; updateDisplay(); });   resetBtn.addEventListener('click', () => { count = 0; updateDisplay(); });    updateDisplay(); }`
+```js
+function setupCounterApp() {
+  const countDisplay = document.getElementById('count');
+  const incrementBtn = document.getElementById('increment');
+  const decrementBtn = document.getElementById('decrement');
+  const resetBtn = document.getElementById('reset');
+
+  let count = 0;
+
+  const updateDisplay = () => {
+    countDisplay.textContent = count;
+  };
+
+  incrementBtn.addEventListener('click', () => { count++; updateDisplay(); });
+  decrementBtn.addEventListener('click', () => { count--; updateDisplay(); });
+  resetBtn.addEventListener('click', () => { count = 0; updateDisplay(); });
+
+  updateDisplay();
+}
+```
 
 ### **Checklist**
 
@@ -258,13 +342,8 @@ A counter with **Increment**, **Decrement**, and **Reset** buttons.
 ## **10. Key Technical Tips**
 
 - Use **`const`** for DOM elements.
-    
 - Use **arrow functions** for clean callbacks.
-    
 - Always check `if (element)` before modifying.
-    
 - Prefer **`classList`** over direct `className` changes.
-    
 - Use **`preventDefault()`** in form events.
-    
 - Debug using `console.log()` at key points.
