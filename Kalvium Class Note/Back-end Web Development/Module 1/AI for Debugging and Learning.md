@@ -1,4 +1,4 @@
-# ✅ **AI FOR DEBUGGING AND LEARNING — EXAM-READY NOTES**
+# ✅ **AI FOR DEBUGGING AND LEARNING
 
 ## 1. Purpose of This Lesson
 
