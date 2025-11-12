@@ -17,6 +17,23 @@ To use **interactive rebase** to:
 - Fix or rewrite commit messages
 - Reorder commits for logical clarity
 - Maintain a **professional, easy-to-read Git history**
+```embed
+title: "Learn Git Squash in 3 minutes // explained with live animations!"
+image: "https://i.ytimg.com/vi/V5KrD7CmO4o/maxresdefault.jpg"
+description: "40+ additional videos at https://learngit.io/--I'll show you how to combine commits using Git's squash tool. Squash is one of several tools available under G..."
+url: "https://youtu.be/V5KrD7CmO4o"
+favicon: ""
+aspectRatio: "56.25"
+```
+
+```embed
+title: "Learn Git Rebase in 6 minutes // explained with live animations!"
+image: "https://i.ytimg.com/vi/f1wnYdLEpgI/maxresdefault.jpg"
+description: "40+ additional Git lessons: https://learngit.io/Newsletter readers get my videos early: https://newsletter.themoderncoder.com/----LINKSWritten rebase referen..."
+url: "https://youtu.be/f1wnYdLEpgI"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ---
 
@@ -202,7 +219,11 @@ fix: Add login form validation
 
 ### Given Git Log
 
-`commit 333c3c3 "oops forgot a file" commit 222b2b2 "wip on nav" commit 111a1a1 "started nav bar"`
+```bash
+commit 333c3c3 "oops forgot a file"
+commit 222b2b2 "wip on nav"
+commit 111a1a1 "started nav bar"
+```
 
 ---
 
@@ -215,10 +236,15 @@ git rebase -i HEAD~3
 ### **Step 2 — Combine Commits**
 
 ```bash
+pick 111a1a1 started nav bar
+squash 222b2b2 wip on nav
+squash 333c3c3 oops forgot a file
 ```
 ### **Step 3 — Final Clean Message**
 
-`feat: Add responsive navigation bar`
+```
+feat: Add responsive navigation bar
+```
 
 ✅ **Result:** One neat commit summarizing the feature.
 
@@ -239,22 +265,15 @@ git rebase -i HEAD~3
 ## 💡 **Best Practices**
 
 1. Always **backup or branch** before rebasing.
-    
 2. Use **squash** to group “Work in Progress” commits into one final commit per feature.
-    
 3. Use **reword** for minor message improvements.
-    
 4. **Never** rebase commits others may already have pulled.
-    
 5. Keep commit messages **clear, imperative, and meaningful**.
-    
 
 ---
 
 ## 📚 **References**
 
 - Git Documentation – Interactive Rebase
-    
 - Atlassian Git Tutorials – _“Rewriting History with Rebase”_
-    
 - Pro Git Book, Chapter 3.6 – _Git Tools: Rewriting History_
