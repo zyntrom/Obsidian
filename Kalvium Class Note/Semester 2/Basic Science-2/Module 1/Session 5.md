@@ -1,5 +1,7 @@
 # 🧬 **1.5 — Evolving Solutions: Nature’s Optimization Lab**
 
+_(Kalvium AL — Natural Selection meets Computing)_
+
 ---
 
 ## 📘 **Overview**
@@ -16,15 +18,6 @@ The **same principles of variation, selection, and adaptation** inspire **algori
 - Traits that improve fitness are **kept**, while less useful traits are **eliminated**.
 
 💡 **Example:** Street dogs adapting to city life — instinctively smarter and more agile over generations.
-
-```embed
-title: "Darwin's Theory of Evolution: Natural Selection"
-image: "https://i.ytimg.com/vi/qt2f5_Pg_QE/maxresdefault.jpg"
-description: "Most people in the western world used to have a solid idea about our origins: all living organisms were deliberately formed by a single creator. Then, in 183..."
-url: "https://youtu.be/qt2f5_Pg_QE"
-favicon: ""
-aspectRatio: "56.25"
-```
 
 ---
 
@@ -67,14 +60,6 @@ aspectRatio: "56.25"
 - **Result:** Population becomes better adapted to its environment.
 
 💡 **Example:** Giraffes’ long necks evolved for reaching high leaves.
-```embed
-title: "The 4 Principles of Natural Selection"
-image: "https://i.ytimg.com/vi/C7QmjugSqKc/maxresdefault.jpg"
-description: "This video gives a quick overview of the 4 principles of natural selection— overproduction, variation, adaptation, and selection.Teachers, print out these no..."
-url: "https://youtu.be/C7QmjugSqKc"
-favicon: ""
-aspectRatio: "56.25"
-```
 
 ---
 
@@ -104,14 +89,6 @@ aspectRatio: "56.25"
 
 - Both extremes favored → population splits.
 - **Example:** Birds with very large or very small beaks survive better.
-```embed
-title: "Types of Natural Selection"
-image: "https://i.ytimg.com/vi/64JUJdZdDQo/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGEEgZShSMA8=&rs=AOn4CLDI6QtnJta9ujhvkUF-VyuWX-km-w"
-description: "Learn about the types of natural selection (directional, stabilizing and disruptive) in this video!"
-url: "https://youtu.be/64JUJdZdDQo"
-favicon: ""
-aspectRatio: "56.25"
-```
 
 ---
 
@@ -178,5 +155,3 @@ aspectRatio: "56.25"
 - **How Natural Selection is Present in Genetic Algorithms**
 - **Inspired by Nature: An Introduction to Genetic Algorithms**
 - **Why Evolution Isn’t Just Optimization**
-
-![[Pasted image 20251112152828.png]]
