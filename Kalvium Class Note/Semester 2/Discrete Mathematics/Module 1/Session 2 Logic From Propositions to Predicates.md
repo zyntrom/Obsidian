@@ -308,3 +308,5 @@ Explore how logic appears in real-world technologies like:
 - [Predicate Logic – GeeksforGeeks](https://www.geeksforgeeks.org)
 - [Difference between Propositions & Predicates – Tutorialspoint](https://www.tutorialspoint.com)
 - [Brilliant.org – Propositional Logic](https://brilliant.org)
+
+![[Pasted image 20251112142343.png]]
