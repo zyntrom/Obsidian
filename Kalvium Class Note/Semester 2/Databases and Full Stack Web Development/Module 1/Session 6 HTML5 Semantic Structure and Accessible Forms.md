@@ -48,6 +48,13 @@ Using only generic `<div>` tags gives **no meaning** to the content.
 Modern HTML uses **purpose-driven tags** that describe content meaningfully:
 
 ```html
+<header>
+  <h1>My Awesome Blog</h1>
+</header>
+
+<main>
+  <p>This is my first paragraph...</p>
+</main>
 
 ```
 
@@ -60,16 +67,12 @@ Modern HTML uses **purpose-driven tags** that describe content meaningfully:
 ### 🔉 **Accessibility**
 
 - Screen readers use semantic tags to help visually impaired users **navigate quickly**.
-    
 - Instead of hearing “group, group,” they’ll hear “header,” “main content,” or “navigation.”
-    
 
 ### 🕷️ **SEO (Search Engine Optimization)**
 
 - Search engines “crawl” pages to understand structure.
-    
 - Using semantic tags gives them a **clear map** — improving ranking and discoverability.
-    
 
 ---
 
@@ -98,22 +101,38 @@ Let’s see how to make them **semantic and accessible**.
 
 ### ❌ **Bad Example – Placeholder-Only Form**
 
-`<form>   <input type="text" placeholder="Name" />   <textarea placeholder="Comment"></textarea> </form>`
+```html
+<form>
+  <input type="text" placeholder="Name" />
+  <textarea placeholder="Comment"></textarea>
+</form>
+```
 
 🔎 **What’s Wrong:**
 
 - Placeholders **disappear** when typing, confusing users.
-    
 - Screen readers often **ignore placeholders**.
-    
 - No validation — form can be submitted empty.
-    
 
 ---
 
 ### ✅ **Good Example – Labeled and Accessible Form**
 
-`<form>   <label for="username">Your Name:</label>   <input id="username" type="text" required>    <label for="email">Your Email:</label>   <input id="email" type="email" required>    <label for="comment">Your Comment:</label>   <textarea id="comment" required></textarea>    <button type="submit">Post Comment</button> </form>`
+```html
+<form>
+  <label for="username">Your Name:</label>
+  <input id="username" type="text" required>
+
+  <label for="email">Your Email:</label>
+  <input id="email" type="email" required>
+
+  <label for="comment">Your Comment:</label>
+  <textarea id="comment" required></textarea>
+
+  <button type="submit">Post Comment</button>
+</form>
+
+```
 
 ---
 
@@ -141,23 +160,63 @@ Build a **semantic blog page** using HTML5 structure and accessible forms.
 
 #### 🧩 **1. Base Structure**
 
-`<header></header> <main></main> <footer></footer>`
+```html
+<header></header>
+<main></main>
+<footer></footer>
+```
 
 #### 🏗️ **2. Header Section**
 
-`<header>   <h1>Adventures in Stargazing</h1>   <nav>     <a href="#">Home</a>     <a href="#">Gallery</a>   </nav> </header>`
+```html
+<header>
+  <h1>Adventures in Stargazing</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Gallery</a>
+  </nav>
+</header>
+```
 
 #### 📖 **3. Main Content**
 
-`<main>   <article>     <h1>My First Night with a Telescope</h1>     <p>Last weekend, I finally tried stargazing...</p>     <p>It was magical to see Saturn’s rings...</p>   </article>`
+```html
+<main>
+  <article>
+    <h1>My First Night with a Telescope</h1>
+    <p>Last weekend, I finally tried stargazing...</p>
+    <p>It was magical to see Saturn’s rings...</p>
+  </article>
+
+```
 
 #### 💬 **4. Comment Form**
 
-  `<form>     <label for="visitor_name">Your Name:</label>     <input type="text" id="visitor_name" required>      <label for="visitor_email">Your Email:</label>     <input type="email" id="visitor_email" required>      <label for="visitor_comment">Your Comment:</label>     <textarea id="visitor_comment" required></textarea>      <button type="submit">Post Comment</button>   </form> </main>`
+```html
+  <form>
+    <label for="visitor_name">Your Name:</label>
+    <input type="text" id="visitor_name" required>
+
+    <label for="visitor_email">Your Email:</label>
+    <input type="email" id="visitor_email" required>
+
+    <label for="visitor_comment">Your Comment:</label>
+    <textarea id="visitor_comment" required></textarea>
+
+    <button type="submit">Post Comment</button>
+  </form>
+</main>
+
+```
 
 #### ⚓ **5. Footer**
 
-`<footer>   <p>&copy; 2025 Your Name</p> </footer>`
+```html
+<footer>
+  <p>&copy; 2025 Your Name</p>
+</footer>
+
+```
 
 ---
 
@@ -187,14 +246,9 @@ Build a **semantic blog page** using HTML5 structure and accessible forms.
 ## 🧭 **9. Summary**
 
 - HTML is the **language of structure** for the web.
-    
 - Use **semantic tags** to make content meaningful.
-    
 - Always use **labels with inputs** for accessibility.
-    
 - **Placeholders ≠ labels** — never rely on them alone.
-    
 - HTML5 gives developers a clean, logical way to build accessible, SEO-friendly websites.
-    
 
 You’ve officially built your **first semantic, accessible webpage** — the foundation of every great web developer. 🏗️💻
