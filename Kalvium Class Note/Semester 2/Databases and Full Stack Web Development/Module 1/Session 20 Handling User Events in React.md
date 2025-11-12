@@ -29,6 +29,11 @@ Implement interactive behavior in React using **event handlers** such as `onClic
 ### Example:
 
 ```html
+// HTML way
+<button onclick="alert('Hi')">Click</button>
+
+// React way
+<button onClick={handleClick}>Click</button>
 
 ```
 ### Common React Event Handlers
@@ -58,22 +63,29 @@ Implement interactive behavior in React using **event handlers** such as `onClic
 ## 4️⃣ Defining Event Handler Functions Inside Components
 
 - Define event handlers **inside the same component** they belong to.
-    
 - This is called **co-location** — keeping logic and UI together for readability.
-    
 - These handlers can access the component’s **state and props**.
-    
 
 ### Example: Simple Alert Button
 
-`function AlertButton() {   function handleAlertClick() {     alert("You clicked the button!");   }    return (     <button onClick={handleAlertClick}>       Click Me     </button>   ); }`
+```js
+function AlertButton() {
+  function handleAlertClick() {
+    alert("You clicked the button!");
+  }
+
+  return (
+    <button onClick={handleAlertClick}>
+      Click Me
+    </button>
+  );
+}
+```
 
 ### Key Notes
 
 - Function names typically follow `handle<Event>` pattern → `handleClick`, `handleChange`, etc.
-    
 - Event handlers are **pure JS functions** that React executes when an event occurs.
-    
 
 ---
 
@@ -84,11 +96,8 @@ This allows a **child component** to trigger behavior defined by its **parent**.
 ### Concept
 
 - Parent defines **what should happen**.
-    
 - Child defines **when it should happen**.
-    
 - The handler is **passed as a prop** from parent → child.
-    
 
 ---
 
@@ -96,11 +105,32 @@ This allows a **child component** to trigger behavior defined by its **parent**.
 
 #### Child Component (Generic Button)
 
-`function Button({ onCustomClick, children }) {   return (     <button onClick={onCustomClick}>       {children}     </button>   ); }`
+```js
+function Button({ onCustomClick, children }) {
+  return (
+    <button onClick={onCustomClick}>
+      {children}
+    </button>
+  );
+}
 
+```
 #### Parent Component
 
-`function Toolbar() {   const handlePlayMovie = () => alert("Playing movie!");   const handleUploadImage = () => alert("Uploading image!");    return (     <div>       <Button onCustomClick={handlePlayMovie}>Play Movie</Button>       <Button onCustomClick={handleUploadImage}>Upload Image</Button>     </div>   ); }`
+```js
+function Toolbar() {
+  const handlePlayMovie = () => alert("Playing movie!");
+  const handleUploadImage = () => alert("Uploading image!");
+
+  return (
+    <div>
+      <Button onCustomClick={handlePlayMovie}>Play Movie</Button>
+      <Button onCustomClick={handleUploadImage}>Upload Image</Button>
+    </div>
+  );
+}
+
+```
 
 ### Analysis
 
@@ -121,23 +151,27 @@ When an event occurs, React passes a special **SyntheticEvent object** to your h
 > **SyntheticEvent** – React’s cross-browser wrapper around the native browser event object.
 
 - Provides consistent behavior across browsers.
-    
 - Contains event data like:
-    
     - `e.target` → The element that triggered the event.
-        
     - `e.target.value` → For inputs, current text value.
-        
     - `e.preventDefault()` → Prevent default browser behavior (e.g., form submission reload).
-        
     - `e.stopPropagation()` → Stop event bubbling to parent elements.
-        
 
 ---
 
 ### Example: Accessing Event Data
 
-`function LogEvent() {   function handleClick(e) {     console.log("Event type:", e.type);     console.log("Target element:", e.target);   }    return <button onClick={handleClick}>Log Event</button>; }`
+```js
+function LogEvent() {
+  function handleClick(e) {
+    console.log("Event type:", e.type);
+    console.log("Target element:", e.target);
+  }
+
+  return <button onClick={handleClick}>Log Event</button>;
+}
+
+```
 
 ---
 
@@ -148,7 +182,24 @@ This is the standard pattern for managing form input data.
 
 ### Example: Live Typing Component
 
-`import { useState } from 'react';  function LiveTyper() {   const [text, setText] = useState("");    function handleChange(e) {     setText(e.target.value);   }    return (     <div>       <input type="text" value={text} onChange={handleChange} />       <p>You are typing: {text}</p>     </div>   ); }`
+```js
+import { useState } from 'react';
+
+function LiveTyper() {
+  const [text, setText] = useState("");
+
+  function handleChange(e) {
+    setText(e.target.value);
+  }
+
+  return (
+    <div>
+      <input type="text" value={text} onChange={handleChange} />
+      <p>You are typing: {text}</p>
+    </div>
+  );
+}
+```
 
 ---
 
@@ -182,19 +233,22 @@ This is the standard pattern for managing form input data.
 ## 9️⃣ Key Rules for Event Handling in React
 
 1. **Use camelCase** for all event names (`onClick`, `onChange`).
-    
 2. **Pass functions**, never call them directly.
-    
 3. Define handler functions **inside components** for access to local state/props.
-    
 4. Always use the **SyntheticEvent object** to access event data.
-    
 5. For form fields, use **controlled components** — tie input value to state.
-    
 6. You can pass handler functions as **props** to child components for reuse.
-    
 
 ---
+
+```embed
+title: "Handling Events in React.js | onClick, onChange & More Explained with Examples"
+image: "https://i.ytimg.com/vi/bEKL_4uEXAo/maxresdefault.jpg"
+description: "How Does Event Handling Work in React.js? In this tutorial, you’ll master the fundamentals of event handling in React, including how to respond to user actio..."
+url: "https://youtu.be/bEKL_4uEXAo"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ## 🔟 Summary — Core Takeaways
 
@@ -224,5 +278,4 @@ This is the standard pattern for managing form input data.
 ## 🔹 References
 
 - React Docs: [Responding to Events](https://react.dev/learn/responding-to-events)
-    
 - React Docs: Event Handlers
