@@ -75,7 +75,32 @@ if (value.trim() === '') {
 
 `useEffect()` re-runs when input values change, automatically validating the form in real-time.
 
-```
+```js
+useEffect(() => {
+  let hasErrors = false;
+
+  if (username.trim() === '') {
+    setUsernameError('Username is required.');
+    hasErrors = true;
+  } else if (username.length < 3) {
+    setUsernameError('Username must be at least 3 characters.');
+    hasErrors = true;
+  } else {
+    setUsernameError('');
+  }
+
+  if (age === '' || age === 0) {
+    setAgeError('Age is required.');
+    hasErrors = true;
+  } else if (age < 18) {
+    setAgeError('You must be 18 or older.');
+    hasErrors = true;
+  } else {
+    setAgeError('');
+  }
+
+  setIsFormValid(!hasErrors); // Only valid if no errors
+}, [username, age]); // Dependencies
 
 ```
 
@@ -87,17 +112,30 @@ if (value.trim() === '') {
 
 Render messages dynamically:
 
-`{usernameError && <p className="error">{usernameError}</p>}`
+```js
+{usernameError && <p className="error">{usernameError}</p>}
+```
 
 Apply dynamic class names to highlight invalid fields:
 
-`<input   className={usernameError ? 'input-error' : ''}   value={username}   onChange={(e) => setUsername(e.target.value)} />`
+```js
+<input
+  className={usernameError ? 'input-error' : ''}
+  value={username}
+  onChange={(e) => setUsername(e.target.value)}
+/>
+```
 
 ---
 
 ### **(5) Button State — Disable until valid**
 
-`<button type="submit" disabled={!isFormValid}>   Sign Up </button>`
+```js
+<button type="submit" disabled={!isFormValid}>
+  Sign Up
+</button>
+
+```
 
 ✅ Prevents invalid form submission.
 
@@ -107,7 +145,18 @@ Apply dynamic class names to highlight invalid fields:
 
 Use **ARIA attributes** so screen readers can interpret errors correctly:
 
-`<input   type="text"   id="username"   aria-invalid={usernameError ? "true" : "false"}   aria-describedby={usernameError ? "username-error" : undefined} />  {usernameError && (   <p id="username-error" className="error">{usernameError}</p> )}`
+```js
+<input
+  type="text"
+  id="username"
+  aria-invalid={usernameError ? "true" : "false"}
+  aria-describedby={usernameError ? "username-error" : undefined}
+/>
+
+{usernameError && (
+  <p id="username-error" className="error">{usernameError}</p>
+)}
+```
 
 |Attribute|Purpose|
 |---|---|
@@ -133,11 +182,27 @@ Use **ARIA attributes** so screen readers can interpret errors correctly:
 
 Reusable function for validating multiple rules:
 
-`function validateUsername(username) {   if (username.trim() === '') return 'Username cannot be empty.';   if (username.length < 3) return 'Username must be at least 3 characters.';   if (username.length > 15) return 'Username cannot exceed 15 characters.';   if (!/^[a-zA-Z0-9_]+$/.test(username))     return 'Username can only contain letters, numbers, and underscores.';   return ''; // ✅ Valid input }`
+```js
+function validateUsername(username) {
+  if (username.trim() === '') return 'Username cannot be empty.';
+  if (username.length < 3) return 'Username must be at least 3 characters.';
+  if (username.length > 15) return 'Username cannot exceed 15 characters.';
+  if (!/^[a-zA-Z0-9_]+$/.test(username))
+    return 'Username can only contain letters, numbers, and underscores.';
+  return ''; // ✅ Valid input
+}
+
+```
 
 Used in component:
 
-`useEffect(() => {   const error = validateUsername(username);   setUsernameError(error);   setIsFormValid(error === ''); }, [username]);`
+```js
+useEffect(() => {
+  const error = validateUsername(username);
+  setUsernameError(error);
+  setIsFormValid(error === '');
+}, [username]);
+```
 
 ---
 
@@ -151,24 +216,89 @@ Used in component:
 
 **Hybrid Example:**
 
-`const [touched, setTouched] = useState(false);  useEffect(() => {   if (touched) validateField(value); }, [value, touched]);  <input   onBlur={() => setTouched(true)}   onChange={(e) => setValue(e.target.value)} />`
+```js
+const [touched, setTouched] = useState(false);
+
+useEffect(() => {
+  if (touched) validateField(value);
+}, [value, touched]);
+
+<input
+  onBlur={() => setTouched(true)}
+  onChange={(e) => setValue(e.target.value)}
+/>
+```
 
 ---
 
 ## **9️⃣ Putting It All Together – Validated Login Form**
 
-`function LoginForm() {   const [email, setEmail] = useState('');   const [password, setPassword] = useState('');   const [emailError, setEmailError] = useState('');   const [passwordError, setPasswordError] = useState('');   const [isFormValid, setIsFormValid] = useState(false);    useEffect(() => {     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;     let valid = true;      if (!emailPattern.test(email)) {       setEmailError('Invalid email format.');       valid = false;     } else setEmailError('');      if (password.length < 6) {       setPasswordError('Password must be at least 6 characters.');       valid = false;     } else setPasswordError('');      setIsFormValid(valid);   }, [email, password]);    const handleSubmit = (e) => {     e.preventDefault();     if (!isFormValid) return;     alert('Form submitted!');   };    return (     <form onSubmit={handleSubmit}>       <input         type="email"         value={email}         onChange={(e) => setEmail(e.target.value)}         aria-invalid={!!emailError}         aria-describedby="email-error"         placeholder="Email"       />       {emailError && <p id="email-error">{emailError}</p>}        <input         type="password"         value={password}         onChange={(e) => setPassword(e.target.value)}         aria-invalid={!!passwordError}         aria-describedby="password-error"         placeholder="Password"       />       {passwordError && <p id="password-error">{passwordError}</p>}        <button disabled={!isFormValid}>Login</button>     </form>   ); }`
+```js
+function LoginForm() {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [emailError, setEmailError] = useState('');
+  const [passwordError, setPasswordError] = useState('');
+  const [isFormValid, setIsFormValid] = useState(false);
+
+  useEffect(() => {
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    let valid = true;
+
+    if (!emailPattern.test(email)) {
+      setEmailError('Invalid email format.');
+      valid = false;
+    } else setEmailError('');
+
+    if (password.length < 6) {
+      setPasswordError('Password must be at least 6 characters.');
+      valid = false;
+    } else setPasswordError('');
+
+    setIsFormValid(valid);
+  }, [email, password]);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!isFormValid) return;
+    alert('Form submitted!');
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <input
+        type="email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        aria-invalid={!!emailError}
+        aria-describedby="email-error"
+        placeholder="Email"
+      />
+      {emailError && <p id="email-error">{emailError}</p>}
+
+      <input
+        type="password"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+        aria-invalid={!!passwordError}
+        aria-describedby="password-error"
+        placeholder="Password"
+      />
+      {passwordError && <p id="password-error">{passwordError}</p>}
+
+      <button disabled={!isFormValid}>Login</button>
+    </form>
+  );
+}
+
+```
 
 ✅ Features:
 
 - Real-time validation
-    
 - Clear error messages
-    
 - Accessible inputs
-    
 - Button disabled until valid
-    
 
 ---
 
@@ -186,8 +316,33 @@ Used in component:
 
 ## **1️⃣1️⃣ Cheat Sheet – Quick Reference**
 
-`// State setup const [value, setValue] = useState(''); const [error, setError] = useState(''); const [isValid, setIsValid] = useState(false);  // Validation logic useEffect(() => {   if (value === '') setError('Required field');   else if (value.length < 3) setError('Too short');   else setError('');   setIsValid(error === ''); }, [value]);  // Conditional rendering {error && <p className="error">{error}</p>}  // Accessibility <input   aria-invalid={!!error}   aria-describedby={error ? "error-id" : undefined} />  // Button <button disabled={!isValid}>Submit</button>`
+```js
+// State setup
+const [value, setValue] = useState('');
+const [error, setError] = useState('');
+const [isValid, setIsValid] = useState(false);
 
+// Validation logic
+useEffect(() => {
+  if (value === '') setError('Required field');
+  else if (value.length < 3) setError('Too short');
+  else setError('');
+  setIsValid(error === '');
+}, [value]);
+
+// Conditional rendering
+{error && <p className="error">{error}</p>}
+
+// Accessibility
+<input
+  aria-invalid={!!error}
+  aria-describedby={error ? "error-id" : undefined}
+/>
+
+// Button
+<button disabled={!isValid}>Submit</button>
+
+```
 ---
 
 ## **1️⃣2️⃣ Summary – Key Takeaways**
@@ -207,7 +362,5 @@ Used in component:
 ## **1️⃣3️⃣ References**
 
 - React Docs: [Forms](https://react.dev/reference/react-dom/components/input)
-    
 - React Docs: [useEffect Hook](https://react.dev/reference/react/useEffect)
-    
 - W3C: [Accessible Form Validation Techniques](https://www.w3.org/WAI/tutorials/forms/validation/)
