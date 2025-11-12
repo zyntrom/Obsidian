@@ -218,7 +218,17 @@ async function getUserDetails(id) {
 
 ### 🧩 Real Example: Fetch API
 
-```
+```js
+async function getUser(id) {
+  try {
+    const res = await fetch(`https://api.example.com/users/${id}`);
+    if (!res.ok) throw new Error(res.status);
+    const user = await res.json();
+    return user;
+  } catch (err) {
+    console.error("Failed:", err);
+    return null;
+  }
 
 ```
 
@@ -226,7 +236,13 @@ async function getUserDetails(id) {
 
 ### ⚡ Parallel Execution with Promise.all()
 
-`const [user, posts, comments] = await Promise.all([   fetchUser(1),   fetchPosts(1),   fetchComments(1) ]);`
+```js
+const [user, posts, comments] = await Promise.all([
+  fetchUser(1),
+  fetchPosts(1),
+  fetchComments(1)
+]);
+```
 
 ✅ Runs all async tasks simultaneously — faster.
 
@@ -234,13 +250,55 @@ async function getUserDetails(id) {
 
 ## 🧱 Mini Integration Example
 
-``const products = [   { id: 1, name: "Laptop", price: 1200, category: "electronics" },   { id: 2, name: "Phone", price: 800, category: "electronics" },   { id: 3, name: "Desk", price: 300, category: "furniture" }, ];  const fetchProducts = () =>   new Promise(resolve => setTimeout(() => resolve(products), 1000));  async function getAffordableElectronics(maxPrice) {   const all = await fetchProducts();   const results = all     .filter(p => p.category === "electronics" && p.price <= maxPrice)     .map(p => `${p.name} - $${p.price}`);   const total = results.reduce((sum, p) => sum + parseInt(p.match(/\d+/)[0]), 0);   return { results, total }; }  const { results, total } = await getAffordableElectronics(1000); console.log(results, total);``
+```js
+const products = [
+  { id: 1, name: "Laptop", price: 1200, category: "electronics" },
+  { id: 2, name: "Phone", price: 800, category: "electronics" },
+  { id: 3, name: "Desk", price: 300, category: "furniture" },
+];
+
+const fetchProducts = () =>
+  new Promise(resolve => setTimeout(() => resolve(products), 1000));
+
+async function getAffordableElectronics(maxPrice) {
+  const all = await fetchProducts();
+  const results = all
+    .filter(p => p.category === "electronics" && p.price <= maxPrice)
+    .map(p => `${p.name} - $${p.price}`);
+  const total = results.reduce((sum, p) => sum + parseInt(p.match(/\d+/)[0]), 0);
+  return { results, total };
+}
+
+const { results, total } = await getAffordableElectronics(1000);
+console.log(results, total);
+
+```
 
 ---
 
 ## 🧠 Practice Project: Student Grade Manager
 
-`const students = [   { name: "Alice", scores: [85, 90, 92], isActive: true },   { name: "Bob", scores: [60, 65, 70], isActive: false },   { name: "Charlie", scores: [95, 88, 91], isActive: true }, ];  async function getTopStudents() {   const data = await new Promise(res => setTimeout(() => res(students), 500));   return data     .filter(s => s.isActive)     .map(s => ({       name: s.name,       avg: s.scores.reduce((a, b) => a + b, 0) / s.scores.length     }))     .filter(s => s.avg > 70); }  getTopStudents().then(console.log);`
+```js
+const students = [
+  { name: "Alice", scores: [85, 90, 92], isActive: true },
+  { name: "Bob", scores: [60, 65, 70], isActive: false },
+  { name: "Charlie", scores: [95, 88, 91], isActive: true },
+];
+
+async function getTopStudents() {
+  const data = await new Promise(res => setTimeout(() => res(students), 500));
+  return data
+    .filter(s => s.isActive)
+    .map(s => ({
+      name: s.name,
+      avg: s.scores.reduce((a, b) => a + b, 0) / s.scores.length
+    }))
+    .filter(s => s.avg > 70);
+}
+
+getTopStudents().then(console.log);
+
+```
 
 ---
 
@@ -263,11 +321,7 @@ async function getUserDetails(id) {
 ## 📘 Summary
 
 - `const`, `let` provide modern variable control.
-    
 - Arrow functions make syntax concise and handle `this` lexically.
-    
 - Template literals simplify dynamic string construction.
-    
 - `.map()`, `.filter()`, `.reduce()` are essential for data handling.
-    
 - Async operations are central in modern JS — use `async/await` for clarity.
