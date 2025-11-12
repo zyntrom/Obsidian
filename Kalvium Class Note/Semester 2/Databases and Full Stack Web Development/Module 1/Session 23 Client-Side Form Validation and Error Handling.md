@@ -41,7 +41,11 @@ We need to track:
 - Error messages
 - Form validity
 
-`const [username, setUsername] = useState(''); const [usernameError, setUsernameError] = useState(''); const [isFormValid, setIsFormValid] = useState(false);`
+```js
+const [username, setUsername] = useState('');
+const [usernameError, setUsernameError] = useState('');
+const [isFormValid, setIsFormValid] = useState(false);
+```
 
 ---
 
@@ -50,7 +54,20 @@ We need to track:
 Each input has validation criteria.  
 Example rules:
 
-`if (value.trim() === '') {   setError('This field is required.'); } else if (value.length < 6) {   setError('Must be at least 6 characters.'); } else if (value.length > 20) {   setError('Cannot exceed 20 characters.'); } else if (!/\d/.test(value)) {   setError('Must contain at least one number.'); } else {   setError(''); // ✅ Valid input }`
+```js
+if (value.trim() === '') {
+  setError('This field is required.');
+} else if (value.length < 6) {
+  setError('Must be at least 6 characters.');
+} else if (value.length > 20) {
+  setError('Cannot exceed 20 characters.');
+} else if (!/\d/.test(value)) {
+  setError('Must contain at least one number.');
+} else {
+  setError(''); // ✅ Valid input
+}
+
+```
 
 ---
 
@@ -58,7 +75,9 @@ Example rules:
 
 `useEffect()` re-runs when input values change, automatically validating the form in real-time.
 
-`useEffect(() => {   let hasErrors = false;    if (username.trim() === '') {     setUsernameError('Username is required.');     hasErrors = true;   } else if (username.length < 3) {     setUsernameError('Username must be at least 3 characters.');     hasErrors = true;   } else {     setUsernameError('');   }    if (age === '' || age === 0) {     setAgeError('Age is required.');     hasErrors = true;   } else if (age < 18) {     setAgeError('You must be 18 or older.');     hasErrors = true;   } else {     setAgeError('');   }    setIsFormValid(!hasErrors); // Only valid if no errors }, [username, age]); // Dependencies`
+```
+
+```
 
 ✅ Dependencies array ensures the validation re-runs when any input changes.
 
