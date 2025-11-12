@@ -17,6 +17,24 @@ All programmers use Python.
 Alex uses Python.  
 ∴ Alex is a programmer. ❌ (Conclusion doesn’t necessarily follow.)
 
+```embed
+title: "The Resolution Principle (Preliminaries)"
+image: "https://i.ytimg.com/vi/SjEQNOV5FMk/maxresdefault.jpg"
+description: "Discrete Mathematics: The Resolution Principle (Preliminaries)Topics discussed:1) The preliminaries of the Resolution Principle.2) The use of the Resolution ..."
+url: "https://youtu.be/SjEQNOV5FMk"
+favicon: ""
+aspectRatio: "56.25"
+```
+
+```embed
+title: "The Resolution Principle (Proof of Theorem)"
+image: "https://i.ytimg.com/vi/TTImfNmhwsQ/maxresdefault.jpg"
+description: "Discrete Mathematics: The Resolution Principle (Proof of Theorem)Topics discussed:1) Proof of the below theorem:\"Given two clauses C1 and C2, a resolvant C o..."
+url: "https://youtu.be/TTImfNmhwsQ"
+favicon: ""
+aspectRatio: "56.25"
+```
+
 ---
 
 ### **2️⃣ What Is Disproof?**
@@ -30,6 +48,7 @@ Alex uses Python.
 **Key Idea:**  
 ✅ A single counterexample is enough to disprove a universal statement.
 
+![[Pasted image 20251112150213.png]]
 ---
 
 ### **3️⃣ Techniques of Disproof**
@@ -116,9 +135,8 @@ Alex uses Python.
     - Logical inconsistency
     - Contradiction
     - Reductio ad Absurdum
-        
     - Inductive Counterexample
-        
     - Empirical Observation
-        
 - **Goal:** Strengthen reasoning and debug logical errors.
+
+![[Pasted image 20251112150232.png]]
