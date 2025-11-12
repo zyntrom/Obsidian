@@ -259,10 +259,8 @@ function Greeting({ name }) {
 **Explanation:**
 
 - `{ name }` destructures the prop directly.
-    
 - When rendered, it outputs:  
     → `<h1>Hello, Bob!</h1>`
-    
 
 ---
 
@@ -283,5 +281,4 @@ function Greeting({ name }) {
 ## 🧩 Reference Links
 
 - React Docs: [Writing Markup with JSX](https://react.dev/learn/writing-markup-with-jsx)
-    
 - React Docs: [Passing Props to a Component](https://react.dev/learn/passing-props-to-a-component)
