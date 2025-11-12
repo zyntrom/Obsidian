@@ -25,16 +25,22 @@ Redis uses the simplest possible structure:
 
 #### Basic Commands:
 
-```
+```bash
+# Store data
+SET session:xyz123 { "userId": 950, "cartItems": [] }
+
+# Retrieve data instantly
+GET session:xyz123
+
+# Auto-expire data after 30 minutes (1800 seconds)
+EXPIRE session:xyz123 1800
 
 ```
 
 **Properties:**
 
 - **O(1)** average-time complexity for SET/GET operations.
-    
 - Keys are usually namespaced using `:` for logical grouping (e.g., `session:userId`, `cache:deals:today`).
-    
 
 ---
 
@@ -50,9 +56,7 @@ Redis uses the simplest possible structure:
 **Volatility:**
 
 - RAM data is erased if power is lost.
-    
 - Redis can optionally persist snapshots (`RDB`) or logs (`AOF`) to disk, but its primary purpose is **speed**, not durability.
-    
 
 ---
 
@@ -63,32 +67,23 @@ Redis uses the simplest possible structure:
 **Scenario:**
 
 - Homepage shows “Today’s Deals,” fetched by a complex DB query.
-    
 - Thousands of users load this page every minute.
-    
 
 **Without Redis:**
 
 - Every page load triggers a slow query → DB overload.
-    
 
 **With Redis:**
 
 1. First request → query DB → store result in Redis (`deals:today`).
-    
 2. Set an expiry (e.g., 5 minutes).
-    
 3. All subsequent requests → read directly from Redis (instant).
-    
 4. After expiry → Redis auto-removes → new data is fetched and cached again.
-    
 
 **Result:**
 
 - Drastically reduces DB load.
-    
 - Sub-millisecond response times for cached endpoints.
-    
 
 ---
 
@@ -97,23 +92,22 @@ Redis uses the simplest possible structure:
 **Scenario:**
 
 - User logs in → session ID, user ID, and cart items must be stored and updated quickly.
-    
 
 **Without Redis:**
 
 - Each click reads/writes to main DB → slow & inefficient.
-    
 
 **With Redis:**
 
 - Store session data as a key (`session:<id>`) with expiration time.
-    
 - Read/write operations happen in **microseconds**.
-    
 
 **Example:**
 
-`SET session:950 { "isLoggedIn": true, "cartItems": [101,102] } EXPIRE session:950 3600`
+```bash
+SET session:950 { "isLoggedIn": true, "cartItems": [101,102] }
+EXPIRE session:950 3600
+```
 
 ---
 
@@ -122,28 +116,29 @@ Redis uses the simplest possible structure:
 **Scenario:**
 
 - Social media post gets thousands of likes per second.
-    
 
 **Problem (without Redis):**
 
 - Every update locks the database row to ensure ACID safety → massive slowdowns.
-    
 
 **Redis Solution:**
 
 - Use **atomic** counter commands like:
-    
 
-`INCR post:123:likes`
+```
+INCR post:123:likes
+```
 
 - Each increment is isolated and instantaneous (no locking).
-    
 - For leaderboards, use **Sorted Sets (ZADD)** — automatically maintain ranking by score.
-    
 
 **Example:**
 
-`ZADD leaderboard 500 "user:allen" ZADD leaderboard 450 "user:john" ZRANGE leaderboard 0 1 WITHSCORES  # Top users`
+```bash
+ZADD leaderboard 500 "user:allen"
+ZADD leaderboard 450 "user:john"
+ZRANGE leaderboard 0 1 WITHSCORES  # Top users
+```
 
 ---
 
@@ -165,19 +160,12 @@ Redis uses the simplest possible structure:
 When an app requests data from Redis:
 
 1. **Check Redis for Key**
-    
     - If found → “Cache Hit” → return data instantly.
-        
     - If not found → “Cache Miss.”
-        
 2. **On Cache Miss:**
-    
     - Query the main database.
-        
     - Send result to the user.
-        
     - Store result in Redis for next time (with an expiry).
-        
 
 **Result:**  
 Future requests will be served from Redis (faster) until expiry or eviction.
@@ -215,15 +203,10 @@ Future requests will be served from Redis (faster) until expiry or eviction.
 ## ⚠️ 8. Volatility and Persistence
 
 - **Volatile:** Data disappears when Redis restarts unless persistence is enabled.
-    
 - **Persistence Options:**
-    
     - **RDB (Redis Database Backup):** Periodic snapshot of in-memory data.
-        
     - **AOF (Append-Only File):** Logs every operation — can rebuild exact dataset.
-        
 - Typically used in combination for balance between **performance and safety**.
-    
 
 ---
 
@@ -231,16 +214,12 @@ Future requests will be served from Redis (faster) until expiry or eviction.
 
 1. **Why is Redis faster than traditional databases?**  
     → It stores data in RAM (nanosecond access) instead of disk (millisecond access).
-    
 2. **What does “volatile” mean in Redis?**  
     → Data is temporary and erased if power is lost unless persisted manually.
-    
 3. **What happens on a cache miss?**  
     → The app queries the main DB, gets the data, returns it, and stores it back in Redis for next time.
-    
 4. **Give an example of data not suitable for Redis.**  
     → Financial transactions — require guaranteed durability and ACID compliance.
-    
 
 ---
 
@@ -251,6 +230,14 @@ Future requests will be served from Redis (faster) until expiry or eviction.
 |**1. What is the main advantage of Redis?**  <br>a) Stores more data than disk DB  <br>b) Complex query support  <br>✅ **c) Ultra-fast access via RAM**  <br>d) More secure by default|✅ c|
 |**2. Ideal Redis use case?**  <br>a) Store full transaction history  <br>✅ **b) Cache product data**  <br>c) Archive user data  <br>d) Run complex calculations|✅ b|
 |**3. Redis vs MongoDB?**  <br>a) Redis is disk-based  <br>b) Redis handles multi-field queries  <br>✅ **c) Redis = in-memory speed layer; MongoDB = persistent DB**  <br>d) Both identical|✅ c|
+```embed
+title: "Redis in 100 Seconds"
+image: "https://i.ytimg.com/vi/G1rOthIU-uo/maxresdefault.jpg"
+description: "Use the special link https://redis.info/fireship (or code: MATRIX200) to try Redis Enterprise Cloud to get a $200 credit, become part of a weekly raffle, and..."
+url: "https://youtu.be/G1rOthIU-uo"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ---
 
@@ -259,10 +246,7 @@ Future requests will be served from Redis (faster) until expiry or eviction.
 **Redis is an Accelerator, Not a Replacement.**
 
 - Acts as a **speed buffer** between the user and the main database.
-    
 - Handles high-frequency, low-durability data (sessions, caches, counts).
-    
 - Allows the persistent DB to remain efficient, consistent, and durable.
-    
 
 ---
