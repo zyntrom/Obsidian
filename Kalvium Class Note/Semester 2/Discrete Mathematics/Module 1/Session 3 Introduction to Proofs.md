@@ -21,6 +21,7 @@ A **proof** is a logical explanation that demonstrates why a statement is _alway
 
 It ensures that results in math and computer science are **universally valid**, not just observed.
 
+![[Pasted image 20251112143851.png]]
 ---
 
 ### 💡 Why Do Proofs Matter?
@@ -121,6 +122,14 @@ This is **even**, which contradicts our assumption that 3n + 2 is odd. ❌
 Hence, n must be odd. ✅
 
 ---
+```embed
+title: "Methods of Proof"
+image: "https://i.ytimg.com/vi/WXNKxMhj9pE/maxresdefault.jpg"
+description: "This video was made with Clipchamp"
+url: "https://youtu.be/WXNKxMhj9pE"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ## 🔹 3. Proof by Contrapositive
 
@@ -190,6 +199,9 @@ If n is an integer, then n² + 3n + 4 is even.
 **Case 1:** n is even → n = 2k
 
 ```
+n² + 3n + 4 = (2k)² + 3(2k) + 4
+             = 4k² + 6k + 4
+             = 2(2k² + 3k + 2)
 
 ```
 
@@ -197,7 +209,12 @@ If n is an integer, then n² + 3n + 4 is even.
 
 **Case 2:** n is odd → n = 2k + 1
 
-`n² + 3n + 4 = (2k + 1)² + 3(2k + 1) + 4              = 4k² + 10k + 8              = 2(2k² + 5k + 4)`
+```
+n² + 3n + 4 = (2k + 1)² + 3(2k + 1) + 4
+             = 4k² + 10k + 8
+             = 2(2k² + 5k + 4)
+
+```
 
 ✅ Even
 
@@ -213,7 +230,10 @@ Therefore, for both cases, n² + 3n + 4 is even. ✔
 
 **Proof:**
 
-`m = 2a + 1, n = 2b + 1 m + n = 2a + 1 + 2b + 1 = 2(a + b + 1)`
+```
+m = 2a + 1, n = 2b + 1
+m + n = 2a + 1 + 2b + 1 = 2(a + b + 1)
+```
 
 ✅ Hence, m + n is even.
 
@@ -226,7 +246,10 @@ Therefore, for both cases, n² + 3n + 4 is even. ✔
 **Proof:**  
 Contrapositive: If m and n are both odd, then mn is odd.
 
-`m = 2a + 1, n = 2b + 1 mn = (2a + 1)(2b + 1) = 4ab + 2a + 2b + 1 = 2(2ab + a + b) + 1`
+```
+m = 2a + 1, n = 2b + 1
+mn = (2a + 1)(2b + 1) = 4ab + 2a + 2b + 1 = 2(2ab + a + b) + 1
+```
 
 ✅ mn is odd, proving the contrapositive true.
 
@@ -239,7 +262,9 @@ Contrapositive: If m and n are both odd, then mn is odd.
 **Proof:**  
 Assume x and y are integers.
 
-`5(x + 5y) = 1723`
+```
+5(x + 5y) = 1723
+```
 
 Then 1723 must be divisible by 5. But 1723 ÷ 5 = 344.6 ❌ (not integer).  
 Contradiction!  
@@ -287,9 +312,8 @@ Hence, result holds for either x > 1 or −2 < x < −1.
 ## 📚 Bonus Resources
 
 - How to Write Mathematical Proofs – Hamilton
-    
 - [Proofs and Types of Proofs – Medium](https://medium.com)
-    
 - [Introduction to Mathematical Proofs – GeeksforGeeks](https://www.geeksforgeeks.org)
-    
 - [Types of Proof – YouTube](https://www.youtube.com)
+
+![[Pasted image 20251112143921.png]]
