@@ -16,6 +16,8 @@ This lesson covers the **compilation pipeline**, the step-by-step process that t
 
 ---
 
+![[Pasted image 20251112155631.png]]
+
 ## 🏭 **The Compilation Pipeline as a Factory Assembly Line**
 
 Your code (raw material) undergoes transformations to become an executable (final product).  
@@ -89,3 +91,5 @@ Your code (raw material) undergoes transformations to become an executable (fina
 
 - [Stages of Compilation | Medium](https://medium.com/)
 - [Program Compilation | YouTube](https://www.youtube.com/)
+
+![[Pasted image 20251112155642.png]]
