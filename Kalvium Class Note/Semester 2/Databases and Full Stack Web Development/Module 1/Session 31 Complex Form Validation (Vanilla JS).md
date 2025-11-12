@@ -303,7 +303,6 @@ console.log('Regex test:', pattern.test(password));
 ```
 - Check `elementId` in `showError()` to ensure correct targeting.
 - Test each validation individually before integration.
-    
 
 ---
 
@@ -364,7 +363,5 @@ console.log('Regex test:', pattern.test(password));
 ## 📚 **12. References**
 
 - **MDN Docs:** [Client-Side Form Validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation)
-    
 - **Regex101:** [Test and debug regular expressions](https://regex101.com/)
-    
 - **W3C Web Accessibility Initiative:** [Form Validation Best Practices](https://www.w3.org/WAI/tutorials/forms/validation/)
