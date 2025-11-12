@@ -140,25 +140,17 @@ Two week-long hackathons:
 ### **Weeks 1–3 (After finishing Blogify)**
 
 - Build a simple frontend connected to Blogify
-    
 - Add new features (file uploads, roles)
-    
 - Start writing tests (Jest)
-    
 
 ### **Months 1–6**
 
 - Learn a new framework/language (Nest.js, Django, Go)
-    
 - Learn SQL/PostgreSQL
-    
 - Start DevOps basics (Docker, CI/CD)
-    
 
 ### **Long Term**
 
 - Get certifications (JSNAD)
-    
 - Build 1–2 more backend projects
-    
 - Target jobs like Backend Dev, Full-stack Dev, API Engineer, Junior DevOps
