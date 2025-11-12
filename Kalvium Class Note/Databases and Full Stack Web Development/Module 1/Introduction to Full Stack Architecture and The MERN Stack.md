@@ -61,6 +61,14 @@ MERN = **MongoDB + Express + React + Node.js**
 |**Front-End (Client)**|React|User Interface|What the user sees and interacts with.|
 |**Back-End (Server)**|Node.js + Express|Application Logic|Receives requests, performs logic, sends responses.|
 |**Database**|MongoDB|Data Storage|Permanently stores user data, posts, comments, etc.|
+```embed
+title: "MERN Stack Tutorial #1 - What is the MERN Stack?"
+image: "https://i.ytimg.com/vi/98BzS5Oz5E4/maxresdefault.jpg"
+description: "Learn how to create a web app using the MERN stack (MongoDB, Express, React & Node.js).⭐⭐ Get the full course now (without ads) on the Net Ninja Pro site:htt..."
+url: "https://youtu.be/98BzS5Oz5E4"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ---
 
@@ -164,11 +172,9 @@ To understand the flow of data between Client, Server, and Database — just lik
 5. **Server** sends back success response:
     
 ```json
-    { "message": "Product added successfully!" }
-    
+{ "message": "Product added successfully!" }    
 ```
 2. **Client** updates the cart UI immediately.
-    
 
 ---
 
@@ -198,5 +204,4 @@ To understand the flow of data between Client, Server, and Database — just lik
 ## 📖 **References**
 
 - _Intro: Full Stack Web Development_
-    
 - _MongoDB: MERN Stack Explained_
