@@ -113,12 +113,25 @@ const handleChange = (e) => {
   console.log(e.target.name);  // Input name
   console.log(e.target.type);  // Input type (text/email/etc)
 };
-
 ```
 
 **Use case:** Handling multiple inputs using one handler.
 
-`const [formData, setFormData] = useState({ email: '', password: '' });  const handleChange = (e) => {   setFormData({     ...formData,     [e.target.name]: e.target.value,   }); };  // Inputs <input name="email" value={formData.email} onChange={handleChange} /> <input name="password" value={formData.password} onChange={handleChange} />`
+```js
+const [formData, setFormData] = useState({ email: '', password: '' });
+
+const handleChange = (e) => {
+  setFormData({
+    ...formData,
+    [e.target.name]: e.target.value,
+  });
+};
+
+// Inputs
+<input name="email" value={formData.email} onChange={handleChange} />
+<input name="password" value={formData.password} onChange={handleChange} />
+
+```
 
 This uses **computed property names** (`[e.target.name]`) to dynamically update the correct key.
 
@@ -162,25 +175,69 @@ Controlled components = full synchronization between UI and state.
 
 ## **🔟 Real Example – Login Form**
 
-`function LoginForm() {   const [email, setEmail] = useState('');   const [password, setPassword] = useState('');      const isValid = email.includes('@') && password.length >= 6;    return (     <form>       <input         type="email"         value={email}         onChange={(e) => setEmail(e.target.value)}         placeholder="Email"       />        <input         type="password"         value={password}         onChange={(e) => setPassword(e.target.value)}         placeholder="Password"       />        <button disabled={!isValid}>Login</button>       <p>{!isValid && "Please enter valid email and password (min 6 chars)"}</p>     </form>   ); }`
+```js
+function LoginForm() {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  
+  const isValid = email.includes('@') && password.length >= 6;
+
+  return (
+    <form>
+      <input
+        type="email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        placeholder="Email"
+      />
+
+      <input
+        type="password"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+        placeholder="Password"
+      />
+
+      <button disabled={!isValid}>Login</button>
+      <p>{!isValid && "Please enter valid email and password (min 6 chars)"}</p>
+    </form>
+  );
+}
+
+```
 
 **Working:**
 
 1. `onChange` triggers on typing.
-    
 2. State updates instantly.
-    
 3. React re-renders with new values.
-    
 4. Validation and UI update in real time.
-    
 
 ---
 
 ## **1️⃣1️⃣ One Handler for Multiple Inputs (Best Practice)**
 
-`const [formData, setFormData] = useState({   name: '',   email: '' });  const handleChange = (e) => {   setFormData({     ...formData,     [e.target.name]: e.target.value,   }); };  return (   <form>     <input name="name" value={formData.name} onChange={handleChange} />     <input name="email" value={formData.email} onChange={handleChange} />   </form> );`
+```js
+const [formData, setFormData] = useState({
+  name: '',
+  email: ''
+});
 
+const handleChange = (e) => {
+  setFormData({
+    ...formData,
+    [e.target.name]: e.target.value,
+  });
+};
+
+return (
+  <form>
+    <input name="name" value={formData.name} onChange={handleChange} />
+    <input name="email" value={formData.email} onChange={handleChange} />
+  </form>
+);
+
+```
 ✅ Clean  
 ✅ Scalable  
 ✅ Easy for multi-input forms
@@ -205,24 +262,16 @@ Controlled components = full synchronization between UI and state.
 ## **1️⃣3️⃣ Quick Checklist (Before Exam)**
 
 -  Do I know what “controlled” means in React?
-    
 -  Can I create state variables with `useState()`?
-    
 -  Can I connect `value` and `onChange` correctly?
-    
 -  Can I handle multiple inputs dynamically?
-    
 -  Do I know difference between `checked` and `value`?
-    
 -  Can I explain why controlled components are preferred?
-    
 
 ---
 
 ## **References**
 
 - React Docs: Controlled Components
-    
 - [React Docs: Forms](https://react.dev/reference/react-dom/components/input)
-    
 - [useState Hook](https://react.dev/reference/react/useState)
