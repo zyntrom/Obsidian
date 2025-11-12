@@ -355,7 +355,25 @@ Start with styles for **small screens**, then expand for larger screens using **
 
 ### **Responsive Grid Example**
 
-`.grid {   display: grid;   grid-template-columns: 1fr;   gap: 1rem; }  @media (min-width: 768px) {   .grid {     grid-template-columns: repeat(2, 1fr);   } }  @media (min-width: 1024px) {   .grid {     grid-template-columns: repeat(3, 1fr);   } }`
+```css
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+```
 
 ---
 
@@ -378,52 +396,33 @@ Start with styles for **small screens**, then expand for larger screens using **
 ### **Flexbox Properties**
 
 - `display: flex`
-    
 - `flex-direction`
-    
 - `justify-content`
-    
 - `align-items`
-    
 - `align-content`
-    
 - `gap`
-    
 - `flex: grow shrink basis`
-    
 
 ### **Grid Properties**
 
 - `display: grid`
-    
 - `grid-template-columns`
-    
 - `grid-template-rows`
-    
 - `gap / row-gap / column-gap`
-    
 - `grid-column`, `grid-row`
-    
 
 ### **Responsive Design**
 
 - Use `@media (min-width: …)` queries.
-    
 - Always start **mobile-first**.
-    
 - Test at all major breakpoints.
-    
 
 ---
 
 ✅ **Exam Key Points to Remember**
 
 - **Flexbox:** One-dimensional layout → `justify-content` (main axis) and `align-items` (cross axis).
-    
 - **Grid:** Two-dimensional → rows and columns.
-    
 - **border-box** is preferred for easier sizing.
-    
 - Always verify with browser resizing.
-    
 - Combine Grid + Flexbox for optimal responsive design.
