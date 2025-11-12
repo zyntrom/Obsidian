@@ -36,16 +36,10 @@ function BrokenCounter() {
 ### What Happens
 
 - Clicking the button **updates the variable** `count`, but **UI doesn’t update**.
-    
 - Because React:
-    
     - Runs the component function **once per render**.
-        
     - **Does not track** local variables.
-        
     - **Renders once**, then discards all local variables.
-        
-
 ### Key Takeaway
 
 > Changing a normal variable **does not trigger re-render** in React.  
@@ -56,17 +50,11 @@ function BrokenCounter() {
 ## 3️⃣ What is “State”?
 
 - **State** = Component’s private, reactive memory.
-    
 - React **watches** state variables for changes.
-    
 - When state changes, React:
-    
     1. **Updates** the state value internally.
-        
     2. **Re-renders** the component.
-        
     3. **Updates the UI** with the new data.
-        
 
 ---
 
@@ -78,7 +66,13 @@ function BrokenCounter() {
 
 ### Syntax
 
-`import { useState } from 'react';  function MyComponent() {   const [stateVariable, setStateVariable] = useState(initialValue); }`
+```js
+import { useState } from 'react';
+
+function MyComponent() {
+  const [stateVariable, setStateVariable] = useState(initialValue);
+}
+```
 
 ### Explanation of Syntax
 
@@ -96,17 +90,32 @@ function BrokenCounter() {
 Calling the setter function (`setCount` in this case):
 
 1. **Schedules an update:** tells React to store a new value for this piece of state.
-    
 2. **Triggers a re-render:** React re-runs the component with the new value, producing new JSX.
-    
 3. **Updates the UI:** old output is replaced with the new one.
-    
 
 ---
 
 ## 6️⃣ The Working Counter Example
 
-`import { useState } from 'react';  function WorkingCounter() {   const [count, setCount] = useState(0);    function handleClick() {     setCount(count + 1);   }    return (     <div>       <h1>Count: {count}</h1>       <button onClick={handleClick}>Increment</button>     </div>   ); }`
+```js
+import { useState } from 'react';
+
+function WorkingCounter() {
+  const [count, setCount] = useState(0);
+
+  function handleClick() {
+    setCount(count + 1);
+  }
+
+  return (
+    <div>
+      <h1>Count: {count}</h1>
+      <button onClick={handleClick}>Increment</button>
+    </div>
+  );
+}
+
+```
 
 ### Step-by-Step Breakdown
 
@@ -146,8 +155,24 @@ Decide if each belongs to **props** or **state**:
 
 ## 8️⃣ Example: Light Switch Component
 
-`import { useState } from 'react';  function LightSwitch() {   const [isOn, setIsOn] = useState(false);    const handleToggle = () => {     setIsOn(!isOn);   };    return (     <div className="light-switch-box">       <p>The light is currently {isOn ? "ON" : "OFF"}</p>       <button onClick={handleToggle}>Toggle Light</button>     </div>   ); }`
+```js
+import { useState } from 'react';
 
+function LightSwitch() {
+  const [isOn, setIsOn] = useState(false);
+
+  const handleToggle = () => {
+    setIsOn(!isOn);
+  };
+
+  return (
+    <div className="light-switch-box">
+      <p>The light is currently {isOn ? "ON" : "OFF"}</p>
+      <button onClick={handleToggle}>Toggle Light</button>
+    </div>
+  );
+}
+```
 ### Concept Breakdown
 
 |Concept|Explanation|
@@ -162,14 +187,10 @@ Decide if each belongs to **props** or **state**:
 ## 9️⃣ Key Rules of `useState`
 
 1. Must be called **inside the top level** of a functional component (not inside loops or conditions).
-    
 2. Can be used **multiple times** in one component for multiple states.
-    
 3. **Never modify state directly** (`count = 5 ❌`).  
     Always use the setter function (`setCount(5) ✅`).
-    
 4. **Re-render** happens automatically — no need to manually update the DOM.
-    
 
 ---
 
@@ -200,5 +221,4 @@ Decide if each belongs to **props** or **state**:
 ## 🔹 Reference Links
 
 - [React Official Docs – State: A Component’s Memory](https://react.dev/learn/state-a-components-memory)
-    
 - [React Official Docs – useState Hook](https://react.dev/reference/react/useState)
