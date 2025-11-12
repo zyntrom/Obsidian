@@ -34,49 +34,47 @@ Visual Studio Code is a lightweight, open-source code editor by Microsoft with b
 #### **Windows**
 
 1. Go to [https://code.visualstudio.com](https://code.visualstudio.com)
-    
 2. Download → **“Download for Windows”** (~80–90 MB).
-    
 3. Run installer → accept license → choose location.
-    
 4. **Enable these options:**
-    
     - ✅ Add “Open with Code” to Explorer context menu
-        
     - ✅ Register as editor for file types
-        
     - ✅ Add to PATH (for command-line launch)
-        
 5. Click **Install**, then **Launch VS Code**.
-    
 
 #### **macOS**
 
 1. Download from the same site → choose Intel or Apple Silicon build.
-    
 2. Extract `.zip`, drag app to Applications.
-    
 3. Launch VS Code.
-    
 4. Add to PATH:
-    
     - Press `Cmd + Shift + P` → type “shell command” → choose  
         **Shell Command: Install ‘code’ command in PATH**.
-        
 
 #### **Linux (Ubuntu/Debian)**
 
 **Option A – .deb package**
 
-`sudo dpkg -i code_*.deb sudo apt-get install -f`
+```bash
+sudo dpkg -i code_*.deb 
+sudo apt-get install -f
+```
 
 **Option B – apt repository (recommended)**
 
-`sudo apt update sudo apt install software-properties-common apt-transport-https wget wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add - sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" sudo apt update && sudo apt install code`
+```bash
+sudo apt update 
+sudo apt install software-properties-common apt-transport-https wget 
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add - 
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" 
+sudo apt update && sudo apt install code
+```
 
 #### **Verify**
 
-`code --version`
+```bash
+code --version
+```
 
 ---
 
@@ -85,16 +83,12 @@ Visual Studio Code is a lightweight, open-source code editor by Microsoft with b
 ### **Definition**
 
 - **Node.js** – JavaScript runtime built on V8 engine; runs JS outside the browser.
-    
 - **npm (Node Package Manager)** – Installs and manages libraries, frameworks, and tools.
-    
 
 ### **Importance**
 
 - Powers frontend build tools (webpack, vite, babel) and backend servers (Express.js).
-    
 - npm enables dependency management and project automation.
-    
 
 ---
 
@@ -103,33 +97,40 @@ Visual Studio Code is a lightweight, open-source code editor by Microsoft with b
 #### **Windows**
 
 1. Visit [https://nodejs.org](https://nodejs.org) → download **LTS (Long Term Support)** version.
-    
 2. Run `.msi` installer.
-    
     - Check **“npm package manager”**.
-        
     - Allow “Automatically install necessary tools”.
-        
 3. Complete setup → restart system.
-    
 4. **Verify:**
-    
-    `node --version npm --version`
-    
+```bash
+node --version npm --version
+```
 
 #### **macOS**
 
 **Option 1 – Official Installer**
 
-`# After downloading .pkg node --version npm --version`
+```bash
+# After downloading .pkg 
+node --version npm --version
+```
 
 **Option 2 – Homebrew (Recommended)**
 
-`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" brew install node node --version npm --version`
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" brew install node node --version npm --version
+```
 
 #### **Linux (Ubuntu/Debian)**
 
-`sudo apt update sudo apt install curl curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash - sudo apt install -y nodejs node --version npm --version`
+```bash
+sudo apt update 
+sudo apt install curl 
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash - 
+sudo apt install -y nodejs 
+node --version 
+npm --version
+```
 
 ---
 
