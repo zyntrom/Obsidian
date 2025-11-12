@@ -15,6 +15,14 @@ Real-world example → **Google Maps**
 
 📍 **Insight:**  
 Google Maps doesn’t just “know” the best path — it **computes** it using discrete mathematical models (graphs) and algorithms.
+```embed
+title: "Discrete Mathematics for Computer Science"
+image: "https://i.ytimg.com/vi/q4L-wUF3yig/maxresdefault.jpg"
+description: "Discrete Mathematics for Computer ScienceThis subject introduction is from Didasko Group's award-winning, 100% online IT and Business courses. Find out more ..."
+url: "https://youtu.be/q4L-wUF3yig"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ---
 
@@ -77,7 +85,7 @@ Used for:
 
 **Example Equation:**
 
-```bash
+```math
 P → Q   (If P, then Q)
 ¬Q → ¬P (Contrapositive)
 ```
@@ -92,28 +100,22 @@ Enable **efficient calculation of possibilities** in algorithms and data generat
 **Topics:**
 
 - **Counting Rules:** Addition, Multiplication, Inclusion-Exclusion.
-    
 - **Permutations and Combinations:**
-    
 
-`Permutations: nPr = n! / (n − r)! Combinations: nCr = n! / [r!(n − r)!]`
-
+```math
+Permutations: nPr = n! / (n − r)!
+Combinations: nCr = n! / [r!(n − r)!]
+```
 - **Binomial Theorem** and **Pascal’s Triangle**.
-    
 - **Recurrence Relations** for recursive algorithms.
-    
 
 **Outcome:**  
 Used for:
 
 - Password generation
-    
 - Scheduling
-    
 - Probability simulation
-    
 - Complexity analysis
-    
 
 ---
 
@@ -125,36 +127,27 @@ Teach how data and relationships are **structured and represented**.
 **Topics:**
 
 - **Set Theory:**
-    
     - Union, Intersection, Complement
-        
     - De Morgan’s Laws:
-        
 
-`¬(A ∪ B) = ¬A ∩ ¬B ¬(A ∩ B) = ¬A ∪ ¬B`
+```
+Permutations: nPr = n! / (n − r)!
+Combinations: nCr = n! / [r!(n − r)!]
+```
 
 - **Relations:**
-    
     - Reflexive, Symmetric, Transitive, Equivalence Classes
-        
 - **Functions:**
-    
     - Domain, Range
-        
     - Injective (One-to-One), Surjective (Onto), Bijective, Composition
-        
 
 **Outcome:**  
 Used in:
 
 - Database design (relations & tables)
-    
 - Networking (connections)
-    
 - Programming (function mappings)
-    
 - Logical grouping of data
-    
 
 ---
 
@@ -166,35 +159,22 @@ Model **networks, hierarchies, and connections** used in real-world systems.
 **Topics:**
 
 - **Graph Theory:**
-    
     - Vertices (Nodes) & Edges (Connections)
-        
     - Paths, Cycles, Connectivity
-        
     - Subgraphs, Isomorphism
-        
 - **Trees:**
-    
     - Preorder, Inorder, Postorder Traversals
-        
 - **Optimization:**
-    
     - Minimum Spanning Tree (Kruskal, Prim)
-        
     - Shortest Path (Dijkstra, Bellman-Ford)
-        
 
 **Outcome:**  
 Used in:
 
 - Internet routing algorithms
-    
 - File system hierarchy
-    
 - Social network analysis
-    
 - AI pathfinding (A* algorithm)
-    
 
 ---
 
@@ -206,28 +186,23 @@ Model **uncertainty and predictions** in computing systems.
 **Topics:**
 
 - Basic Probability Rules:
-    
 
-`P(A ∪ B) = P(A) + P(B) − P(A ∩ B) P(A | B) = P(A ∩ B) / P(B)`
+```
+P(A ∪ B) = P(A) + P(B) − P(A ∩ B)
+P(A | B) = P(A ∩ B) / P(B)
+```
 
 - **Conditional Probability** and **Bayes’ Theorem**
-    
 - **Random Variables** and **Distributions**
-    
 - **Expectation (E[X])**, **Variance**, and **Standard Deviation**
-    
 
 **Outcome:**  
 Used in:
 
 - Machine learning models
-    
 - Cryptography
-    
 - Simulations & risk analysis
-    
 - Predictive algorithms
-    
 
 ---
 
@@ -253,13 +228,9 @@ Identify 3 technologies and explain their **underlying discrete math principles*
 **Example: Google Maps**
 
 - Concept → Graph Theory
-    
 - Structure → Nodes (cities), Edges (roads)
-    
 - Algorithm → Shortest Path (Dijkstra, Bellman-Ford)
-    
 - Application → Route optimization
-    
 
 🔍 You’ll repeat this for two other technologies (like encryption → number theory, social media → graph theory).
 
@@ -288,9 +259,8 @@ Identify 3 technologies and explain their **underlying discrete math principles*
 ## 📚 **9. Recommended Resources**
 
 - **GeeksforGeeks:** Discrete Mathematics Concepts
-    
 - **Brilliant.org:** Interactive visual math problems
-    
 - **YouTube:** Discrete Math crash courses
-    
 - **University of Houston:** Lecture series on discrete structures
+
+![[Pasted image 20251112141424.png]]
