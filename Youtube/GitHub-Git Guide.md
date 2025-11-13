@@ -8,9 +8,11 @@
 	2. email
 	3. default branch
 4. Basic Things: 
-	1. git status
-	2. git add
-	3. git commit 
-	4. git push
-	5. git clone
-	6. git pul
+	1. git init
+	2. git status
+	3. git add
+	4. git commit 
+	5. git push
+	6. git log
+	7. git clone
+	8. git pull
