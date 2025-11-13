@@ -147,6 +147,15 @@ Each branch played its role: enforcement, lawmaking, and review.
 
 💡 “Every tech decision has a legal shadow behind it.”
 
+```embed
+title: "How the Indian Government Works"
+image: "https://i.ytimg.com/vi/vCnhmvUsec4/maxresdefault.jpg"
+description: "India is, as many will remind you, the biggest democracy on the planet, but how exactly does its government work?MUSIC:“Goddess of Destruction” by Banaras Ba..."
+url: "https://youtu.be/vCnhmvUsec4"
+favicon: ""
+aspectRatio: "56.25"
+```
+
 ---
 
 ### **9️⃣ Summary / Recap**
@@ -154,11 +163,8 @@ Each branch played its role: enforcement, lawmaking, and review.
 1️⃣ **Three Branches:**
 
 - **Legislature** → Makes laws
-    
 - **Executive** → Implements laws
-    
 - **Judiciary** → Reviews laws
-    
 
 2️⃣ **Checks and Balances:** Prevents misuse of power.
 
@@ -171,7 +177,7 @@ Each branch played its role: enforcement, lawmaking, and review.
 ### **🎁 Bonus Insight – Council of Ministers**
 
 - A group of ministers who assist the **Prime Minister** in governing the nation.
-    
 - Includes ministers for **Finance, Defence, Education, IT**, etc.
-    
 - They form part of the **Executive**, helping implement national policies and decisions.
+
+![[Pasted image 20251113101727.png]]
