@@ -49,8 +49,9 @@ while (i < 10)
 ## ✅ 5. **Functions**
 
 ```javascript
-function add(a, b) 
-	{   return a + b; }  
+function add(a, b) {   
+	return a + b; 
+}  
 // Arrow Function
 const add = (a, b) => a + b;
 ```
