@@ -220,19 +220,31 @@ If recursion depth grows too large:
 ### **Pseudocode**
 
 ```c
+LOAD R1, 3
+CALL factorial
+PRINT result
 
+factorial:
+  CMP R1, 0
+  JE base_case
+  PUSH R1
+  DEC R1
+  CALL factorial
+  POP R1
+  MUL R1, result
+  RET
+
+base_case:
+  LOAD result, 1
+  RET
 ```
 
 ### **Task Steps**
 
 1. Trace each instruction.
-    
 2. Record stack growth (`PUSH` operations).
-    
 3. Track return addresses and register states.
-    
 4. Visualize how stack frames unwind (`POP` + `RET`).
-    
 
 ---
 
@@ -261,3 +273,4 @@ If recursion depth grows too large:
 |**Tail Recursion**|Recursive call at function’s end, enabling optimization|
 |**Memoization**|Optimization to store results of subcalls|
 |**Turing Equivalence**|Concept showing recursion can express all computable tasks|
+![[Pasted image 20251113092216.png]]
