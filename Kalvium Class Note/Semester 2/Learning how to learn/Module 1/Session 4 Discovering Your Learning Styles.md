@@ -131,9 +131,7 @@ He proposed that intelligence is **a set of multiple abilities**, and each perso
 ### 🧭 The Two Axes in Kolb’s Model
 
 - **Processing Continuum (East–West):** How you approach a task (active ↔ reflective).
-    
 - **Perception Continuum (North–South):** How you think/feel about the task (concrete ↔ abstract).
-    
 
 ---
 
@@ -144,18 +142,12 @@ He proposed that intelligence is **a set of multiple abilities**, and each perso
 **Characteristics:**
 
 - Imaginative, emotional, and creative.
-    
 - Enjoys gathering information and viewing ideas from different perspectives.  
     **Learns best through:**
-    
 - Brainstorming 💭
-    
 - Group discussions 👥
-    
 - Reflective journals 📓
-    
 - Creative projects 🎨
-    
 
 ---
 
@@ -164,18 +156,12 @@ He proposed that intelligence is **a set of multiple abilities**, and each perso
 **Characteristics:**
 
 - Logical, precise, and theory-focused.
-    
 - Enjoys analyzing and organizing information.  
     **Learns best through:**
-    
 - Lectures 🎓
-    
 - Reading 📖
-    
 - Theoretical models 🧠
-    
 - Conceptual discussions 💬
-    
 
 ---
 
@@ -184,18 +170,12 @@ He proposed that intelligence is **a set of multiple abilities**, and each perso
 **Characteristics:**
 
 - Practical problem solvers.
-    
 - Enjoy technical tasks and applying theories.  
     **Learns best through:**
-    
 - Case studies 📚
-    
 - Hands-on experiments 🔬
-    
 - Problem-solving tasks 🧮
-    
 - Applying concepts to real-world scenarios 🌍
-    
 
 ---
 
@@ -204,18 +184,12 @@ He proposed that intelligence is **a set of multiple abilities**, and each perso
 **Characteristics:**
 
 - Risk-takers and action-oriented.
-    
 - Prefer hands-on experiences over theory.  
     **Learns best through:**
-    
 - Fieldwork 🌳
-    
 - Group projects 🤝
-    
 - Simulations 🧩
-    
 - Real-world applications 🛠️
-    
 
 ---
 
@@ -245,11 +219,8 @@ Experiment, explore, and blend multiple styles.
 ## 🎁 Bonus Content (Optional Exploration)
 
 - 🧭 Discover Your Learning Style – **Self-Assessment**
-    
 - 📚 Understanding **Gardner’s Multiple Intelligences**
-    
 - 🔄 **Kolb’s Experiential Learning Cycle** Explained
-    
 
 ---
 
