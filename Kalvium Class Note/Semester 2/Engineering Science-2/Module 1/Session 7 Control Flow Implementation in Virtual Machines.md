@@ -99,21 +99,28 @@ Executed only if condition flags match a certain state after a `CMP`.
 
 Example:
 
-```
-d
+```c
+CMP R1, 5
+JGT higher     ; Jump if R1 > 5
 ```
 
 ### 5️⃣ **INC / DEC**
 
 Increase or decrease a register by 1 (commonly used in loops).
 
-`INC R1   ; R1 = R1 + 1   DEC R1   ; R1 = R1 - 1`
-
+```c
+INC R1   ; R1 = R1 + 1  
+DEC R1   ; R1 = R1 - 1
+```
 ### 6️⃣ **Labels**
 
 Markers identifying specific points in code for jumps.
 
-`loopStart:   INC R1   JMP loopStart`
+```c
+loopStart:
+  INC R1
+  JMP loopStart
+```
 
 ---
 
@@ -123,7 +130,17 @@ Branching allows the VM to **choose between execution paths**.
 
 ### Example:
 
-`LOAD R1, x CMP R1, 10 JGT positiveLabel     ; If R1 > 10 → jump ; Else block JMP endLabel positiveLabel: ; If block endLabel: ; Continue here`
+```c
+LOAD R1, x
+CMP R1, 10
+JGT positiveLabel     ; If R1 > 10 → jump
+; Else block
+JMP endLabel
+positiveLabel:
+; If block
+endLabel:
+; Continue here
+```
 
 ➡ Represents a high-level `if-else` condition.
 
@@ -135,18 +152,24 @@ Loops repeatedly execute code until a condition becomes false.
 
 ### Example: Count from 0 to 4
 
-`LOAD R1, 0 loopStart: CMP R1, 5 JGE loopEnd ; Loop body INC R1 JMP loopStart loopEnd: ; Continue execution`
+```c
+LOAD R1, 0
+loopStart:
+CMP R1, 5
+JGE loopEnd
+; Loop body
+INC R1
+JMP loopStart
+loopEnd:
+; Continue execution
+```
 
 🧩 This simulates a `while (i < 5)` loop.
 
 - `CMP` checks condition
-    
 - `JGE` exits when false
-    
 - `INC` increments loop variable
-    
 - `JMP` repeats
-    
 
 ---
 
@@ -156,11 +179,8 @@ Labels act as **anchors** for jump instructions.
 They ensure the VM can correctly locate where to jump during:
 
 - **Loops** (return points)
-    
 - **Conditionals** (target blocks)
-    
 - **Program exits or breaks**
-    
 
 ---
 
@@ -181,19 +201,24 @@ This translation demonstrates how **logic structures map to low-level jumps**.
 
 Simulate a VM executing this code:
 
-`LOAD R1, 2 CMP R1, 5 JLT increment JMP end increment: INC R1 JMP end end: PRINT R1`
+```c
+LOAD R1, 2
+CMP R1, 5
+JLT increment
+JMP end
+increment:
+INC R1
+JMP end
+end:
+PRINT R1
+```
 
 **Execution Steps:**
-
 1. `R1 = 2`
-    
 2. Compare `2 < 5` → true → jump to `increment`
-    
 3. `R1 = 3`
-    
 4. Jump to `end`  
     ✅ Output: `3`
-    
 
 This demonstrates **conditional jumping** and **label navigation.**
 
@@ -216,16 +241,14 @@ This demonstrates **conditional jumping** and **label navigation.**
 ## 🧩 Real-World Relevance
 
 - **Virtualization:** Enables efficient instruction sequencing in hypervisors.
-    
 - **Compilers:** Translate high-level code into VM-style instruction flows.
-    
 - **Game Engines & Scripting:** Implement control flow for AI and event systems.
-    
 - **Debugging Tools:** Rely on instruction pointer tracking for code analysis.
-    
 
 ---
 
 ✅ **Final Takeaway:**  
 Control flow is the **heart of a virtual machine’s logic system**.  
 By mastering jumps, comparisons, and instruction pointers, you understand **how VMs execute complex programs** step by step — from human logic to machine precision.
+
+![[Pasted image 20251113091810.png]]
