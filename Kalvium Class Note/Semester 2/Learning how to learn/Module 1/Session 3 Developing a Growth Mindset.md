@@ -126,35 +126,23 @@ Mistakes and failures are **not signs of inability**, but **opportunities for gr
 #### **Group 2: “Tragic and Catastrophic”**
 
 - Responded negatively (“This is tragic!”)
-    
 - Saw difficulty as proof of inability.
-    
 - Represented a **fixed mindset**.
-    
 
 ### **Results**
 
 - **Fixed mindset students**:
-    
     - Gave up or cheated.
-        
     - Compared themselves to others to feel better.
-        
     - Showed little to no brain activity when facing errors.
-        
 - **Growth mindset students**:
-    
     - Showed **high brain activity**, processed mistakes, and learned from them.
-        
     - Treated failure as feedback.
-        
 
 ### **Conclusion**
 
 - Growth mindset literally **activates your brain** during challenges.
-    
 - Fixed mindset **shuts down learning mechanisms**.
-    
 
 ---
 
@@ -172,11 +160,8 @@ Below are **research-backed strategies** with **actions you can apply immediatel
 **Action Plan:**
 
 - Choose one difficult task.
-    
 - Break it into small, achievable steps.
-    
 - Track progress and celebrate small wins.
-    
 
 ---
 
@@ -188,11 +173,8 @@ Below are **research-backed strategies** with **actions you can apply immediatel
 **Action Plan:**
 
 - Request feedback regularly.
-    
 - Note specific improvement points.
-    
 - Act on one area at a time.
-    
 
 ---
 
@@ -204,11 +186,8 @@ Below are **research-backed strategies** with **actions you can apply immediatel
 **Action Plan:**
 
 - Keep a journal recording your efforts.
-    
 - Reflect weekly on persistence and consistency.
-    
 - Reward effort, not just outcomes.
-    
 
 ---
 
@@ -220,13 +199,9 @@ Below are **research-backed strategies** with **actions you can apply immediatel
 **Action Plan:**
 
 - Reframe negative self-talk:
-    
     - ❌ “I can’t do this.”
-        
     - ✅ “I can’t do this **yet**.”
-        
 - Keep “YET” visible (sticky notes, wallpaper, reminders).
-    
 
 ---
 
@@ -238,11 +213,8 @@ Below are **research-backed strategies** with **actions you can apply immediatel
 **Action Plan:**
 
 - Pick one new topic weekly.
-    
 - Read or watch something outside your comfort zone.
-    
 - Discuss it or teach it to others.
-    
 
 ---
 
@@ -254,11 +226,8 @@ Below are **research-backed strategies** with **actions you can apply immediatel
 **Action Plan:**
 
 - Reflect daily on your thoughts.
-    
 - Identify fixed-mindset triggers.
-    
 - Use journaling or short meditations to reset.
-    
 
 ---
 
@@ -270,11 +239,8 @@ Below are **research-backed strategies** with **actions you can apply immediatel
 **Action Plan:**
 
 - Research people who overcame failure.
-    
 - Note what habits helped them grow.
-    
 - Reflect: “How can I apply this mindset in my life?”
-    
 
 ---
 
@@ -295,20 +261,14 @@ Below are **research-backed strategies** with **actions you can apply immediatel
 ## **10. Bonus Resources (Optional Deep Dive)**
 
 - 🎥 **TED Talk:** _“The Power of Believing You Can Improve”_ — Carol Dweck
-    
 - 📘 **Article:** _How to Cultivate a Growth Mindset_ — Harvard Business Review
-    
 - 🧩 **Guide:** _Neuroplasticity and the Brain’s Ability to Change_ — Verywell Mind
-    
 
 ---
 
 ## **11. Final Takeaways**
 
 - **Mindset shapes destiny.**
-    
 - A **growth mindset activates neuroplasticity**, helping your brain strengthen pathways for success.
-    
 - Replace _“I can’t”_ with _“I can’t yet.”_
-    
 - Remember: **Effort, persistence, and curiosity** are the real signs of intelligence.
