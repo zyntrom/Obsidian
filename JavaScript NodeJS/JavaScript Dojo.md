@@ -54,6 +54,3 @@
 
 ![[Pasted image 20250712095709.png]] 
 
-- Removing words from sentence : 
-
-![[Pasted image 20250717150719.png]]
