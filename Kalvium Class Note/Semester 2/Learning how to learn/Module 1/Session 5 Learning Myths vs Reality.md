@@ -212,6 +212,15 @@ Older adults can learn new skills, adapt to technology, and master new knowledge
 |More study = better|Study smarter, not harder|
 |Old = can’t learn|Brain adapts at all ages|
 
+```embed
+title: "'I Started Playing Guitar at 60 Years Old' The Process Review by Ian Bush"
+image: "https://i.ytimg.com/vi/PR8EQfa04-s/hqdefault.jpg"
+description: "Here's where to get your free Django Chord Sheet to get playing and making progress:  https://theiomprocess.com/lp-6-beginner-chords/"
+url: "https://youtu.be/PR8EQfa04-s"
+favicon: ""
+aspectRatio: "75"
+```
+
 ---
 
 ## 🌟 **Final Takeaway**
