@@ -225,7 +225,7 @@ public:
 
 ```
 
-## 10. 
+## 10. Search Insert Position
 
 ```java
 class Solution {
@@ -242,3 +242,4 @@ public:
 };
 
 ```
+
