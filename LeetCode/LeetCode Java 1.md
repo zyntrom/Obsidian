@@ -202,7 +202,7 @@ public:
 };
 ```
 
-## 9. 
+## 9. Find the Index of the First Occurrence in a String
 
 ```java
 
