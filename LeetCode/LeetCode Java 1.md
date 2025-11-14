@@ -205,5 +205,22 @@ public:
 ## 9. Find the Index of the First Occurrence in a String
 
 ```java
+class Solution {
+public:
+    int strStr(string haystack, string needle) {
+        int nh = haystack.length();
+        int nn = needle.length(); 
+        for (int i = 0; i <= nh - nn; i++) {
+            int j = 0;
+            while (j < nn && haystack[i + j] == needle[j]) {
+                j++;
+            }
+            if (j == nn) {
+                return i;
+            }
+        }
+        return -1;
+    }
+};
 
 ```
