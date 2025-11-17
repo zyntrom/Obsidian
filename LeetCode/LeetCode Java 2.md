@@ -107,4 +107,85 @@ class Solution {
 
 ```
 
-## 15.
+## 15. Climbing Stairs
+
+```java
+class Solution {
+    public int climbStairs(int n) {
+        if (n <= 2) return n;
+        int a = 1; // ways to reach step 1
+        int b = 2; // ways to reach step 2
+        for (int i = 3; i <= n; i++) {
+            int c = a + b; // current ways
+            a = b;        // shift
+            b = c;        // shift
+        }
+        return b;
+    }
+}
+
+```
+
+## 16. Remove Duplicates from Sorted List
+
+```java
+class Solution {
+    public ListNode deleteDuplicates(ListNode head) {
+        if (head == null) return null;
+        ListNode current = head;
+        while (current != null && current.next != null) {
+            if (current.val == current.next.val) {
+                // skip the duplicate
+                current.next = current.next.next;
+            } else {
+                current = current.next; // move forward
+            }
+        }
+        return head;
+    }
+}
+
+```
+
+## 17. Merge Sorted Array
+
+```java
+class Solution {
+    public void merge(int[] nums1, int m, int[] nums2, int n) {
+        int i = m - 1;      // pointer for nums1
+        int j = n - 1;      // pointer for nums2
+        int k = m + n - 1;  // pointer for final position
+        while (i >= 0 && j >= 0) {
+            if (nums1[i] > nums2[j]) {
+                nums1[k--] = nums1[i--];
+            } else {
+                nums1[k--] = nums2[j--];
+            }
+        }
+        // If nums2 still has remaining elements
+        while (j >= 0) {
+            nums1[k--] = nums2[j--];
+        }
+    }
+}
+
+```
+
+## 18.
+
+```java
+
+```
+
+## 19.
+
+```java
+
+```
+
+## 20.
+
+```java
+
+```
+
