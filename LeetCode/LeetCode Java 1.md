@@ -20,7 +20,7 @@ public class TwoSum {
 
 ## 2. Palindrome Number
 
-```java
+```cpp
 class Solution {
     public boolean isPalindrome(int x) {
         int rev = 0;
@@ -43,7 +43,7 @@ class Solution {
 
 ## 3. Roman to integer
 
-```java
+```cpp
 class Solution {
     public int romanToInt(String s) {
         HashMap<Character, Integer> map = new HashMap<>();
@@ -76,7 +76,7 @@ class Solution {
 
 ## 4. Longest Common Prefix
 
-```java
+```cpp
 class Solution {
     public String longestCommonPrefix(String[] strs) {
         if (strs.length == 0) return "";
@@ -96,7 +96,7 @@ class Solution {
 
 ## 5. Valid Parentheses
 
-```java
+```cpp
 class Solution {
     public boolean isValid(String s) {
         int l = s.length();
@@ -128,7 +128,7 @@ class Solution {
 
 ## 6. Merge Two Sorted Lists
 
-```java
+```cpp
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -167,7 +167,7 @@ class Solution {
 
 ## 7.  Remove Duplicates from Sorted Array
 
-```java
+```cpp
 class Solution {
 public:
     int removeDuplicates(vector<int>& nums) {
@@ -185,7 +185,7 @@ public:
 
 ## 8. Remove Element
 
-```java
+```cpp
 class Solution {
 public:
     int removeElement(vector<int>& nums, int val) {
@@ -204,7 +204,7 @@ public:
 
 ## 9. Find the Index of the First Occurrence in a String
 
-```java
+```cpp
 class Solution {
 public:
     int strStr(string haystack, string needle) {
@@ -227,7 +227,7 @@ public:
 
 ## 10. Search Insert Position
 
-```java
+```cpp
 class Solution {
 public:
     int searchInsert(vector<int>& nums, int target) {
