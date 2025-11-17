@@ -171,21 +171,62 @@ class Solution {
 
 ```
 
-## 18.
+## 18. Binary Tree Inorder Traversal
 
 ```java
+class Solution {
+    public List<Integer> inorderTraversal(TreeNode root) {
+        List<Integer> result = new ArrayList<>();
+        inorder(root, result);
+        return result;
+    }
+    private void inorder(TreeNode node, List<Integer> result) {
+        if (node == null) return;
+        
+        inorder(node.left, result);   // Left
+        result.add(node.val);         // Root
+        inorder(node.right, result);  // Right
+    }
+}
 
 ```
 
-## 19.
+## 19. Same Tree
 
 ```java
+class Solution {
+    public boolean isSameTree(TreeNode p, TreeNode q) {
+        // Both nodes are null → trees match here
+        if (p == null && q == null) return true;
+        // One is null and the other is not → mismatch
+        if (p == null || q == null) return false;
+        // Values don't match → mismatch
+        if (p.val != q.val) return false;
+        // Check left subtree AND right subtree
+        return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
+    }
+}
 
 ```
 
-## 20.
+## 20. Symmetric Tree
 
 ```java
+class Solution {
+    public boolean isSymmetric(TreeNode root) {
+        return isMirror(root.left, root.right);
+    }
+    private boolean isMirror(TreeNode t1, TreeNode t2) {
+        // If both nodes are null → symmetric
+        if (t1 == null && t2 == null) return true;
+        // One is null but not the other → not symmetric
+        if (t1 == null || t2 == null) return false;
+        // Values must match AND subtrees must be mirrors
+        return (t1.val == t2.val)
+            && isMirror(t1.left, t2.right)
+            && isMirror(t1.right, t2.left);
+    }
+}
 
 ```
 
