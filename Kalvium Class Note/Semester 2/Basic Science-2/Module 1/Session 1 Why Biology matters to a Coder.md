@@ -12,7 +12,8 @@ Understanding biology helps coders design _intelligent, self-learning, and self-
 
 ## **2. The Core Idea: Nature as the Original Programmer**
 
-Nature has been “coding” for billions of years through **DNA**, a biochemical instruction set that defines how organisms function.  
+Nature has been “coding” for billions of years through ￼￼DNA￼￼, a biochemical instruction set that defines how organisms function.  
+Similarly, coders use programming languages to create digital systems that behave predictablyNature has been “coding” for billions of years through **DNA**, a biochemical instruction set that defines how organisms function.  
 Similarly, coders use programming languages to create digital systems that behave predictably and efficiently.
 
 |Biological System|Computer Analogy|Function|
