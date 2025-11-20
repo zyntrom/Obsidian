@@ -78,7 +78,13 @@ Segmentation is widely used in **OSes, VMs, embedded systems, and cloud computin
 **Example C snippet:**
 
 ```c
-
+int global_var = 10;
+void myFunction(int arg) {
+  int local_var = arg * 2;
+  static int static_var = 5;
+  static_var++;
+  int temp_var = local_var + static_var;
+}
 ```
 - `global_var` → static segment
 - `arg` → argument segment
