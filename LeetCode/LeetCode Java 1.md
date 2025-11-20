@@ -168,11 +168,12 @@ class Solution {
 ## 7.  Remove Duplicates from Sorted Array
 
 ```cpp
+
 class Solution {
-public:
-    int removeDuplicates(vector<int>& nums) {
+    public int removeDuplicates(int[] nums) {
+        if (nums.length == 0) return 0;
         int i = 0;
-        for (int j = 1; j < nums.size(); j++) {
+        for (int j = 1; j < nums.length; j++) {
             if (nums[j] != nums[i]) {
                 i++;
                 nums[i] = nums[j];
@@ -180,18 +181,17 @@ public:
         }
         return i + 1;
     }
-};
+}
+
 ```
 
 ## 8. Remove Element
 
 ```cpp
 class Solution {
-public:
-    int removeElement(vector<int>& nums, int val) {
-        int n = nums.size();
+    public int removeElement(int[] nums, int val) {
         int k = 0;
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < nums.length; i++) {
             if (nums[i] != val) {
                 nums[k] = nums[i];
                 k++;
@@ -199,20 +199,21 @@ public:
         }
         return k;
     }
-};
+}
+
 ```
 
 ## 9. Find the Index of the First Occurrence in a String
 
 ```cpp
 class Solution {
-public:
-    int strStr(string haystack, string needle) {
+    public int strStr(String haystack, String needle) {
         int nh = haystack.length();
-        int nn = needle.length(); 
+        int nn = needle.length();
+        if (nn == 0) return 0; // optional: LeetCode expects this
         for (int i = 0; i <= nh - nn; i++) {
             int j = 0;
-            while (j < nn && haystack[i + j] == needle[j]) {
+            while (j < nn && haystack.charAt(i + j) == needle.charAt(j)) {
                 j++;
             }
             if (j == nn) {
@@ -221,7 +222,7 @@ public:
         }
         return -1;
     }
-};
+}
 
 ```
 
@@ -229,17 +230,16 @@ public:
 
 ```cpp
 class Solution {
-public:
-    int searchInsert(vector<int>& nums, int target) {
-        int n = nums.size();
+    public int searchInsert(int[] nums, int target) {
+        int n = nums.length;
         for (int i = 0; i < n; i++) {
             if (nums[i] >= target) {
                 return i;
             }
         }
-        return n;  // insert at the end
+        return n; // insert at the end
     }
-};
+}
 
 ```
 

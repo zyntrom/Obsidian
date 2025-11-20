@@ -2,25 +2,26 @@
 
 ```cpp
 class Solution {
-public:
-    int lengthOfLastWord(string s) {
+    public int lengthOfLastWord(String s) {
         int n = s.length();
         int count = 0;
         int p = n - 1;
+        // Find the index of the last non-space character
         for (int i = 0; i < n; i++) {
-            if (s[i] != ' ') {
+            if (s.charAt(i) != ' ') {
                 p = i;
             }
         }
+        // Count characters of the last word backwards
         for (int i = p; i >= 0; i--) {
-            if (s[i] == ' ') {
+            if (s.charAt(i) == ' ') {
                 break;
             }
             count++;
         }
         return count;
     }
-};
+}
 
 ```
 
